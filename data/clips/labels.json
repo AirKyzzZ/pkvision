@@ -1,1 +1,137 @@
-[]
+{
+  "labels": [
+    {
+      "file": "back_flip_000.mp4",
+      "trick_id": "back_flip",
+      "start_ms": 0
+    },
+    {
+      "file": "02702976-4d5b-4961-acb2-56405de81f1d.mp4",
+      "trick_id": "tak_full",
+      "start_ms": 14600,
+      "end_ms": 16300
+    },
+    {
+      "file": "02702976-4d5b-4961-acb2-56405de81f1d.mp4",
+      "trick_id": "double_pike",
+      "start_ms": 32299.999999999996,
+      "end_ms": 33500
+    },
+    {
+      "file": "042c23bd-9ba2-4929-b8ec-f8700e8311b1.mp4",
+      "trick_id": "castaway",
+      "start_ms": 7200,
+      "end_ms": 9000
+    },
+    {
+      "file": "049ce0f3-6cc6-4616-ac68-2dafe778e65a.mp4",
+      "trick_id": "double_cork",
+      "start_ms": 1400,
+      "end_ms": 2900
+    },
+    {
+      "file": "100_0103.AVI",
+      "trick_id": "side_flip",
+      "start_ms": 2500,
+      "end_ms": 3800
+    },
+    {
+      "file": "100_0107.AVI",
+      "trick_id": "side_flip",
+      "start_ms": 1600,
+      "end_ms": 2900
+    },
+    {
+      "file": "100_0108.AVI",
+      "trick_id": "back_flip",
+      "start_ms": 800,
+      "end_ms": 2600
+    },
+    {
+      "file": "100_0109.AVI",
+      "trick_id": "back_flip",
+      "start_ms": 700,
+      "end_ms": 2300
+    },
+    {
+      "file": "1ce70166-d107-48e1-a5b2-087009769a07.mp4",
+      "trick_id": "double_full",
+      "start_ms": 1700,
+      "end_ms": 2900
+    },
+    {
+      "file": "23130bb9-cfda-477d-a65d-4efe0b3e496d.mp4",
+      "trick_id": "side_flip",
+      "start_ms": 5200,
+      "end_ms": 6400
+    },
+    {
+      "file": "23130bb9-cfda-477d-a65d-4efe0b3e496d.mp4",
+      "trick_id": "double_cork",
+      "start_ms": 9700,
+      "end_ms": 11100
+    },
+    {
+      "file": "23130bb9-cfda-477d-a65d-4efe0b3e496d.mp4",
+      "trick_id": "krok",
+      "start_ms": 15700,
+      "end_ms": 16800
+    },
+    {
+      "file": "23130bb9-cfda-477d-a65d-4efe0b3e496d.mp4",
+      "trick_id": "b_twist",
+      "start_ms": 27000,
+      "end_ms": 28700
+    },
+    {
+      "file": "23130bb9-cfda-477d-a65d-4efe0b3e496d.mp4",
+      "trick_id": "double_full",
+      "start_ms": 31000,
+      "end_ms": 32400
+    },
+    {
+      "file": "2cbea06c-5956-4f2d-925c-7010f5de5428.mp4",
+      "trick_id": "b_twist",
+      "start_ms": 1300,
+      "end_ms": 3100
+    },
+    {
+      "file": "2cbea06c-5956-4f2d-925c-7010f5de5428.mp4",
+      "trick_id": "palm_flip",
+      "start_ms": 6100,
+      "end_ms": 7400
+    },
+    {
+      "file": "2cbea06c-5956-4f2d-925c-7010f5de5428.mp4",
+      "trick_id": "double_cork",
+      "start_ms": 10100,
+      "end_ms": 11500
+    },
+    {
+      "file": "2cbea06c-5956-4f2d-925c-7010f5de5428.mp4",
+      "trick_id": "krok",
+      "start_ms": 14000,
+      "end_ms": 15500
+    },
+    {
+      "file": "2cbea06c-5956-4f2d-925c-7010f5de5428.mp4",
+      "trick_id": "raiz",
+      "start_ms": 18800,
+      "end_ms": 19800
+    }
+  ],
+  "done_files": [
+    "02702976-4d5b-4961-acb2-56405de81f1d.mp4",
+    "042c23bd-9ba2-4929-b8ec-f8700e8311b1.mp4",
+    "049ce0f3-6cc6-4616-ac68-2dafe778e65a.mp4",
+    "08933e14-99e9-4637-849b-780844f07114.mp4",
+    "0b101ac7-a4e0-4770-9f6b-9d56018daa6e.mp4",
+    "100_0103.AVI",
+    "100_0107.AVI",
+    "100_0108.AVI",
+    "100_0109.AVI",
+    "1ce70166-d107-48e1-a5b2-087009769a07.mp4",
+    "23130bb9-cfda-477d-a65d-4efe0b3e496d.mp4",
+    "2cbea06c-5956-4f2d-925c-7010f5de5428.mp4"
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tak_full",
+    "name": "Tak full",
+    "cat": "twist",
+    "key": ""
+  },
+  {
+    "id": "double_pike",
+    "name": "Double Pike",
+    "cat": "flip",
+    "key": ""
+  },
+  {
+    "id": "castaway",
+    "name": "Castaway",
+    "cat": "flip",
+    "key": ""
+  },
+  {
+    "id": "double_full",
+    "name": "Double Full",
+    "cat": "flip",
+    "key": ""
+  },
+  {
+    "id": "krok",
+    "name": "Krok",
+    "cat": "flip",
+    "key": ""
+  },
+  {
+    "id": "wall_full",
+    "name": "Wall full",
+    "cat": "flip",
+    "key": ""
+  },
+  {
+    "id": "palm_flip",
+    "name": "Palm flip",
+    "cat": "flip",
+    "key": ""
+  }
+]

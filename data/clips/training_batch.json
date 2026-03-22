@@ -1,0 +1,9 @@
+[
+  {
+    "_comment": "INSTRUCTIONS: Add YouTube URLs with timestamps for each trick.",
+    "_comment2": "Each entry downloads a short clip (1-3 seconds) of a single trick.",
+    "_comment3": "You need at least 10 clips per trick class for decent training.",
+    "_format": "{ url, trick_id, start (seconds), end (seconds) }",
+    "_example": { "url": "https://www.youtube.com/watch?v=VIDEOID", "trick_id": "back_flip", "start": 2.5, "end": 4.0 }
+  }
+]
