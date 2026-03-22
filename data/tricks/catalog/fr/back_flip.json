@@ -1,0 +1,161 @@
+{
+  "trick_id": "back_flip",
+  "category": "flip",
+  "tags": ["acrobatic", "backward_rotation", "aerial", "tuck"],
+  "difficulty": 3.5,
+  "detection_method": "angle_threshold",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [100, 500],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 150,
+          "max": 175,
+          "description": "Legs nearly straight, slight pre-bend"
+        },
+        {
+          "joint": "hip",
+          "min": 155,
+          "max": 180,
+          "description": "Upright stance with slight backward lean"
+        },
+        {
+          "joint": "spine",
+          "min": 155,
+          "max": 180,
+          "description": "Spine mostly vertical with subtle backward lean"
+        },
+        {
+          "joint": "neck",
+          "min": 150,
+          "max": 180,
+          "description": "Head neutral to slight backward tilt"
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [80, 200],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 100,
+          "max": 150,
+          "description": "Deep knee bend for explosive vertical jump"
+        },
+        {
+          "joint": "hip",
+          "min": 130,
+          "max": 170,
+          "description": "Hips load then extend powerfully upward"
+        },
+        {
+          "joint": "shoulder",
+          "min": 150,
+          "max": 180,
+          "description": "Arms swing aggressively upward and back"
+        },
+        {
+          "joint": "spine",
+          "min": 150,
+          "max": 180,
+          "description": "Torso extends fully for maximum height"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 3.5
+        },
+        {
+          "joint": "left_wrist",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 4.0
+        }
+      ]
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [280, 580],
+      "angle_rules": [
+        {
+          "joint": "hip",
+          "min": 30,
+          "max": 95,
+          "description": "Tight hip tuck for fast backward rotation"
+        },
+        {
+          "joint": "knee",
+          "min": 25,
+          "max": 75,
+          "description": "Knees pulled in tight to chest"
+        },
+        {
+          "joint": "neck",
+          "min": 120,
+          "max": 180,
+          "description": "Head tilted back to spot landing"
+        },
+        {
+          "joint": "elbow",
+          "min": 30,
+          "max": 85,
+          "description": "Arms wrapped around tucked legs"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "nose",
+          "axis": "angular",
+          "direction": "backward",
+          "min_speed": 5.0
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "backward",
+        "min_rotation_degrees": 340
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 350],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 115,
+          "max": 170,
+          "description": "Legs extending downward to absorb landing"
+        },
+        {
+          "joint": "hip",
+          "min": 130,
+          "max": 175,
+          "description": "Hips opening to upright stance"
+        },
+        {
+          "joint": "spine",
+          "min": 140,
+          "max": 175,
+          "description": "Torso returning to vertical with slight forward lean"
+        },
+        {
+          "joint": "neck",
+          "min": 140,
+          "max": 175,
+          "description": "Head returning to neutral, eyes forward"
+        }
+      ]
+    }
+  ],
+  "composable_with": ["twist_180", "twist_360"],
+  "names": {
+    "en": "Back Flip",
+    "fr": "Salto Arri\u00e8re"
+  }
+}

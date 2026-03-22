@@ -1,0 +1,168 @@
+{
+  "trick_id": "flip_360",
+  "category": "twist",
+  "tags": ["acrobatic", "forward_rotation", "twist", "aerial", "combined"],
+  "difficulty": 5.0,
+  "detection_method": "temporal_model",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [400, 900],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 150,
+          "max": 180,
+          "description": "Running stride with leg extension"
+        },
+        {
+          "joint": "hip",
+          "min": 155,
+          "max": 180,
+          "description": "Upright posture during run-up"
+        },
+        {
+          "joint": "spine",
+          "min": 160,
+          "max": 180,
+          "description": "Straight spine in approach"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 2.5
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [80, 200],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 150,
+          "max": 180,
+          "description": "Full leg extension for vertical power"
+        },
+        {
+          "joint": "hip",
+          "min": 145,
+          "max": 180,
+          "description": "Hips extended at takeoff"
+        },
+        {
+          "joint": "shoulder",
+          "min": 100,
+          "max": 170,
+          "description": "Asymmetric arm placement to initiate twist"
+        },
+        {
+          "joint": "elbow",
+          "min": 130,
+          "max": 180,
+          "description": "Arms mostly extended to set rotation"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 3.5
+        },
+        {
+          "joint": "shoulder_mid",
+          "axis": "angular",
+          "direction": "clockwise",
+          "min_speed": 2.0
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "forward",
+        "min_rotation_degrees": 0
+      }
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [400, 750],
+      "angle_rules": [
+        {
+          "joint": "hip",
+          "min": 40,
+          "max": 130,
+          "description": "Hip flexion varies: tighter for faster rotation"
+        },
+        {
+          "joint": "knee",
+          "min": 50,
+          "max": 140,
+          "description": "Knees tucked or piked depending on variant"
+        },
+        {
+          "joint": "elbow",
+          "min": 20,
+          "max": 90,
+          "description": "Arms pulled tight to body axis to accelerate twist"
+        },
+        {
+          "joint": "shoulder",
+          "min": 20,
+          "max": 80,
+          "description": "Shoulders locked close to torso for twist control"
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "longitudinal",
+        "rotation_direction": "clockwise",
+        "min_rotation_degrees": 340
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 300],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 95,
+          "max": 155,
+          "description": "Knees flexed for impact absorption"
+        },
+        {
+          "joint": "hip",
+          "min": 125,
+          "max": 170,
+          "description": "Torso extending back to upright"
+        },
+        {
+          "joint": "elbow",
+          "min": 100,
+          "max": 170,
+          "description": "Arms extending out for balance"
+        },
+        {
+          "joint": "spine",
+          "min": 140,
+          "max": 180,
+          "description": "Spine returning to vertical alignment"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "down",
+          "min_speed": 1.5
+        }
+      ]
+    }
+  ],
+  "composable_with": [],
+  "names": {
+    "en": "360 Flip",
+    "fr": "Vrille Complète"
+  }
+}

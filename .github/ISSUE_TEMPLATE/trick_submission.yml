@@ -1,0 +1,83 @@
+name: Propose New Trick
+description: Suggest a new parkour trick for the detection catalog
+title: "[Trick] "
+labels: ["trick-proposal", "catalog"]
+body:
+  - type: input
+    id: trick-name-en
+    attributes:
+      label: Trick Name (English)
+      description: Name of the trick in English.
+      placeholder: Lazy Vault
+    validations:
+      required: true
+
+  - type: input
+    id: trick-name-fr
+    attributes:
+      label: Trick Name (French)
+      description: Name of the trick in French, if applicable.
+      placeholder: Saut de paresseux
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What category does this trick belong to?
+      options:
+        - Flip
+        - Vault
+        - Twist
+        - Combo
+        - Spin
+        - Precision
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Estimate (1-10)
+      description: How difficult is this trick to perform?
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+        - "6"
+        - "7"
+        - "8"
+        - "9"
+        - "10"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Movement
+      description: Describe the trick — body mechanics, takeoff, rotation, landing, etc.
+      placeholder: A front-facing vault where the athlete places both hands on the obstacle and tucks their legs through...
+    validations:
+      required: true
+
+  - type: input
+    id: reference-video
+    attributes:
+      label: Reference Video Link
+      description: Link to a video showing this trick.
+      placeholder: https://www.youtube.com/watch?v=...
+    validations:
+      required: false
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated tags to help classify this trick.
+      placeholder: acrobatic, advanced, aerial, rotation
+    validations:
+      required: false

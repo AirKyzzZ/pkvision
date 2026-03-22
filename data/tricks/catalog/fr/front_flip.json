@@ -1,0 +1,157 @@
+{
+  "trick_id": "front_flip",
+  "category": "flip",
+  "tags": ["acrobatic", "forward_rotation", "aerial", "tuck"],
+  "difficulty": 3.5,
+  "detection_method": "angle_threshold",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [200, 600],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 155,
+          "max": 180,
+          "description": "Legs nearly straight during run-up"
+        },
+        {
+          "joint": "hip",
+          "min": 155,
+          "max": 180,
+          "description": "Upright posture during approach"
+        },
+        {
+          "joint": "spine",
+          "min": 160,
+          "max": 180,
+          "description": "Spine straight and tall"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 2.0
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [60, 180],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 110,
+          "max": 155,
+          "description": "Knee bends to load for explosive jump"
+        },
+        {
+          "joint": "hip",
+          "min": 130,
+          "max": 170,
+          "description": "Hips slightly flexed before extension"
+        },
+        {
+          "joint": "shoulder",
+          "min": 140,
+          "max": 180,
+          "description": "Arms swing upward to generate lift"
+        },
+        {
+          "joint": "spine",
+          "min": 150,
+          "max": 180,
+          "description": "Torso upright to near-upright at takeoff"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 3.0
+        },
+        {
+          "joint": "left_hip",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 1.5
+        }
+      ]
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [250, 550],
+      "angle_rules": [
+        {
+          "joint": "hip",
+          "min": 30,
+          "max": 90,
+          "description": "Tight hip tuck below 90 degrees"
+        },
+        {
+          "joint": "knee",
+          "min": 25,
+          "max": 70,
+          "description": "Knees pulled in tight for fast rotation"
+        },
+        {
+          "joint": "neck",
+          "min": 100,
+          "max": 160,
+          "description": "Chin tucked toward chest to initiate and maintain rotation"
+        },
+        {
+          "joint": "elbow",
+          "min": 30,
+          "max": 80,
+          "description": "Arms gripping shins in tuck position"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "nose",
+          "axis": "angular",
+          "direction": "forward",
+          "min_speed": 5.0
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "forward",
+        "min_rotation_degrees": 340
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 350],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 120,
+          "max": 170,
+          "description": "Legs extending to reach ground and absorb impact"
+        },
+        {
+          "joint": "hip",
+          "min": 130,
+          "max": 175,
+          "description": "Hips opening to upright stance"
+        },
+        {
+          "joint": "spine",
+          "min": 145,
+          "max": 180,
+          "description": "Torso returning to vertical"
+        }
+      ]
+    }
+  ],
+  "composable_with": ["twist_180", "twist_360"],
+  "names": {
+    "en": "Front Flip",
+    "fr": "Salto Avant"
+  }
+}

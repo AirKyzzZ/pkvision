@@ -1,0 +1,144 @@
+{
+  "trick_id": "webster",
+  "category": "flip",
+  "tags": ["acrobatic", "forward_rotation", "aerial", "single_leg", "elevation"],
+  "difficulty": 4.0,
+  "detection_method": "angle_threshold",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [300, 800],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 150,
+          "max": 180,
+          "description": "Standing leg nearly straight on edge"
+        },
+        {
+          "joint": "hip",
+          "min": 140,
+          "max": 175,
+          "description": "Upright torso, slight forward lean"
+        },
+        {
+          "joint": "spine",
+          "min": 155,
+          "max": 180,
+          "description": "Spine mostly extended while standing on edge"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 0.0
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [80, 200],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 130,
+          "max": 170,
+          "description": "Single leg push-off, moderate bend"
+        },
+        {
+          "joint": "hip",
+          "min": 100,
+          "max": 150,
+          "description": "Body tipping forward off the edge"
+        },
+        {
+          "joint": "shoulder",
+          "min": 120,
+          "max": 180,
+          "description": "Arms swinging up to generate momentum"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 2.0
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "forward",
+        "min_rotation_degrees": 0
+      }
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [300, 600],
+      "angle_rules": [
+        {
+          "joint": "hip",
+          "min": 40,
+          "max": 120,
+          "description": "Hip flexed during forward rotation, one leg leading"
+        },
+        {
+          "joint": "knee",
+          "min": 60,
+          "max": 150,
+          "description": "Knees partially tucked during rotation"
+        },
+        {
+          "joint": "neck",
+          "min": 100,
+          "max": 180,
+          "description": "Head follows forward rotation, spotting the landing"
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "forward",
+        "min_rotation_degrees": 340
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 300],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 100,
+          "max": 160,
+          "description": "Both knees bent to absorb impact"
+        },
+        {
+          "joint": "hip",
+          "min": 120,
+          "max": 170,
+          "description": "Torso slightly forward on landing"
+        },
+        {
+          "joint": "spine",
+          "min": 140,
+          "max": 175,
+          "description": "Spine extending back to upright"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "down",
+          "min_speed": 1.0
+        }
+      ]
+    }
+  ],
+  "composable_with": [],
+  "names": {
+    "en": "Webster",
+    "fr": "Webster"
+  }
+}

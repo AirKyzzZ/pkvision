@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Data (large files)
+data/clips/*.mp4
+data/clips/*.avi
+data/clips/*.mov
+data/clips/*.mkv
+data/clips/keypoints/
+data/models/*.pt
+data/models/*.pth
+data/models/*.onnx
+!data/models/.gitkeep
+
+# YOLO model cache
+*.pt
+!data/models/.gitkeep
+
+# Database
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage

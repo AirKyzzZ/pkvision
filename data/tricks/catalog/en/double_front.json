@@ -1,0 +1,150 @@
+{
+  "trick_id": "double_front",
+  "category": "flip",
+  "tags": ["acrobatic", "forward_rotation", "aerial", "double", "advanced"],
+  "difficulty": 6.0,
+  "detection_method": "temporal_model",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [400, 1000],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 150,
+          "max": 180,
+          "description": "Running stride with full leg extension"
+        },
+        {
+          "joint": "hip",
+          "min": 155,
+          "max": 180,
+          "description": "Upright torso during run-up"
+        },
+        {
+          "joint": "spine",
+          "min": 160,
+          "max": 180,
+          "description": "Straight spine in approach"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 3.0
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [80, 180],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 155,
+          "max": 180,
+          "description": "Explosive full leg extension for maximum height"
+        },
+        {
+          "joint": "hip",
+          "min": 150,
+          "max": 180,
+          "description": "Fully extended hips to maximize vertical launch"
+        },
+        {
+          "joint": "shoulder",
+          "min": 150,
+          "max": 180,
+          "description": "Arms driven high overhead for maximum lift"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 4.5
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "forward",
+        "min_rotation_degrees": 0
+      }
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [500, 900],
+      "angle_rules": [
+        {
+          "joint": "hip",
+          "min": 15,
+          "max": 70,
+          "description": "Extremely tight hip flexion for rapid double rotation"
+        },
+        {
+          "joint": "knee",
+          "min": 15,
+          "max": 60,
+          "description": "Knees pulled maximally tight to chest"
+        },
+        {
+          "joint": "spine",
+          "min": 30,
+          "max": 90,
+          "description": "Spine fully curled into tight ball"
+        },
+        {
+          "joint": "neck",
+          "min": 70,
+          "max": 150,
+          "description": "Head tucked to maintain rotation speed"
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "forward",
+        "min_rotation_degrees": 680
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 350],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 90,
+          "max": 150,
+          "description": "Deep knee bend for controlled impact absorption"
+        },
+        {
+          "joint": "hip",
+          "min": 110,
+          "max": 165,
+          "description": "Torso extending out of tuck for landing"
+        },
+        {
+          "joint": "spine",
+          "min": 130,
+          "max": 175,
+          "description": "Spine opening back up to near-upright"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "down",
+          "min_speed": 2.0
+        }
+      ]
+    }
+  ],
+  "composable_with": [],
+  "names": {
+    "en": "Double Front Flip",
+    "fr": "Double Salto Avant"
+  }
+}

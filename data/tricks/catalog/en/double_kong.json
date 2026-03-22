@@ -1,0 +1,163 @@
+{
+  "trick_id": "double_kong",
+  "category": "vault",
+  "tags": ["vault", "obstacle", "forward", "double", "hand_placement"],
+  "difficulty": 3.0,
+  "detection_method": "angle_threshold",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [300, 800],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 155,
+          "max": 180,
+          "description": "Legs nearly straight during running approach"
+        },
+        {
+          "joint": "hip",
+          "min": 150,
+          "max": 180,
+          "description": "Upright torso while running"
+        },
+        {
+          "joint": "elbow",
+          "min": 60,
+          "max": 120,
+          "description": "Arms swinging naturally during run"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 3.0
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [80, 200],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 125,
+          "max": 160,
+          "description": "Slight knee bend for powerful takeoff"
+        },
+        {
+          "joint": "shoulder",
+          "min": 140,
+          "max": 180,
+          "description": "Arms reaching forward to first contact"
+        },
+        {
+          "joint": "hip",
+          "min": 100,
+          "max": 150,
+          "description": "Body diving forward toward obstacle"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 3.5
+        },
+        {
+          "joint": "left_hip",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 1.8
+        }
+      ]
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [300, 700],
+      "angle_rules": [
+        {
+          "joint": "elbow",
+          "min": 145,
+          "max": 180,
+          "description": "Arms extended during first push-off"
+        },
+        {
+          "joint": "hip",
+          "min": 35,
+          "max": 110,
+          "description": "Hips flexed as body passes over obstacle"
+        },
+        {
+          "joint": "knee",
+          "min": 70,
+          "max": 140,
+          "description": "Knees tucked between arms during flight"
+        },
+        {
+          "joint": "shoulder",
+          "min": 140,
+          "max": 180,
+          "description": "Shoulders extended for both push-off contacts"
+        },
+        {
+          "joint": "spine",
+          "min": 100,
+          "max": 160,
+          "description": "Torso angled forward through both contacts"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_wrist",
+          "axis": "vertical",
+          "direction": "down",
+          "min_speed": 1.2
+        },
+        {
+          "joint": "left_hip",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 2.0
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "forward",
+        "min_rotation_degrees": 20
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 350],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 110,
+          "max": 165,
+          "description": "Legs extending to absorb landing"
+        },
+        {
+          "joint": "hip",
+          "min": 125,
+          "max": 175,
+          "description": "Body returning to upright on landing"
+        },
+        {
+          "joint": "spine",
+          "min": 140,
+          "max": 175,
+          "description": "Torso fairly upright on landing"
+        }
+      ]
+    }
+  ],
+  "composable_with": [],
+  "names": {
+    "en": "Double Kong",
+    "fr": "Double Saut de Chat"
+  }
+}

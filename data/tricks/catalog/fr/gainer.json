@@ -1,0 +1,162 @@
+{
+  "trick_id": "gainer",
+  "category": "flip",
+  "tags": ["acrobatic", "backward_rotation", "aerial", "forward_momentum"],
+  "difficulty": 4.5,
+  "detection_method": "angle_threshold",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [400, 1000],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 150,
+          "max": 180,
+          "description": "Running stride, legs extending"
+        },
+        {
+          "joint": "hip",
+          "min": 155,
+          "max": 180,
+          "description": "Upright posture during forward run"
+        },
+        {
+          "joint": "spine",
+          "min": 160,
+          "max": 180,
+          "description": "Spine straight during approach"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 2.5
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [80, 200],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 140,
+          "max": 175,
+          "description": "Strong single-leg push from ground"
+        },
+        {
+          "joint": "hip",
+          "min": 130,
+          "max": 170,
+          "description": "Slight backward lean initiating rotation"
+        },
+        {
+          "joint": "shoulder",
+          "min": 130,
+          "max": 180,
+          "description": "Arms thrown upward and backward"
+        },
+        {
+          "joint": "neck",
+          "min": 140,
+          "max": 180,
+          "description": "Head tilting back to initiate backward rotation"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 3.0
+        },
+        {
+          "joint": "hip_mid",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 2.0
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "backward",
+        "min_rotation_degrees": 0
+      }
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [350, 650],
+      "angle_rules": [
+        {
+          "joint": "hip",
+          "min": 30,
+          "max": 110,
+          "description": "Tight tuck during backward rotation"
+        },
+        {
+          "joint": "knee",
+          "min": 30,
+          "max": 100,
+          "description": "Knees pulled tight to chest for fast rotation"
+        },
+        {
+          "joint": "spine",
+          "min": 60,
+          "max": 130,
+          "description": "Spine curled in tuck position"
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "backward",
+        "min_rotation_degrees": 340
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 300],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 100,
+          "max": 155,
+          "description": "Both knees bent to absorb landing"
+        },
+        {
+          "joint": "hip",
+          "min": 130,
+          "max": 175,
+          "description": "Torso opening up from tuck"
+        },
+        {
+          "joint": "spine",
+          "min": 145,
+          "max": 180,
+          "description": "Spine extending to upright"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "down",
+          "min_speed": 1.5
+        },
+        {
+          "joint": "hip_mid",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 0.5
+        }
+      ]
+    }
+  ],
+  "composable_with": ["twist_180"],
+  "names": {
+    "en": "Gainer",
+    "fr": "Gainer"
+  }
+}

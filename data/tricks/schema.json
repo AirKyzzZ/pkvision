@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "PkVision Trick Configuration",
+  "description": "Schema for defining a parkour trick with detection rules, phases, and metadata.",
+  "type": "object",
+  "required": ["trick_id", "category", "difficulty", "detection_method", "phases", "names"],
+  "properties": {
+    "trick_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Unique identifier (snake_case)"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["flip", "vault", "twist", "combo", "spin", "precision"],
+      "description": "Movement category"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Searchable tags for the trick"
+    },
+    "difficulty": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "description": "Difficulty rating (0-10 scale)"
+    },
+    "detection_method": {
+      "type": "string",
+      "enum": ["angle_threshold", "temporal_model"],
+      "description": "Which detection strategy to use"
+    },
+    "phases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": ["approach", "takeoff", "execution", "landing", "recovery"]
+          },
+          "duration_range_ms": {
+            "type": "array",
+            "items": { "type": "integer", "minimum": 0 },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "angle_rules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["joint", "min", "max"],
+              "properties": {
+                "joint": { "type": "string" },
+                "min": { "type": "number" },
+                "max": { "type": "number" },
+                "description": { "type": "string" }
+              }
+            }
+          },
+          "velocity_rules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["joint", "axis", "direction", "min_speed"],
+              "properties": {
+                "joint": { "type": "string" },
+                "axis": { "type": "string", "enum": ["vertical", "horizontal", "angular"] },
+                "direction": { "type": "string" },
+                "min_speed": { "type": "number", "minimum": 0 }
+              }
+            }
+          },
+          "trajectory": {
+            "type": "object",
+            "properties": {
+              "rotation_axis": { "type": "string", "enum": ["lateral", "longitudinal", "sagittal"] },
+              "rotation_direction": { "type": "string", "enum": ["forward", "backward", "clockwise", "counterclockwise"] },
+              "min_rotation_degrees": { "type": "number", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    "composable_with": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Trick IDs this can combine with"
+    },
+    "names": {
+      "type": "object",
+      "required": ["en"],
+      "additionalProperties": { "type": "string" },
+      "description": "Localized display names keyed by language code"
+    }
+  }
+}

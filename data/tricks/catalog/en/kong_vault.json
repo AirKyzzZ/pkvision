@@ -1,0 +1,151 @@
+{
+  "trick_id": "kong_vault",
+  "category": "vault",
+  "tags": ["vault", "obstacle", "forward", "hand_placement"],
+  "difficulty": 2.0,
+  "detection_method": "angle_threshold",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [300, 800],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 155,
+          "max": 180,
+          "description": "Legs nearly straight during running approach"
+        },
+        {
+          "joint": "hip",
+          "min": 150,
+          "max": 180,
+          "description": "Upright torso while running"
+        },
+        {
+          "joint": "elbow",
+          "min": 60,
+          "max": 120,
+          "description": "Arms swinging naturally during run"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 2.5
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [80, 200],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 130,
+          "max": 165,
+          "description": "Slight knee bend for takeoff"
+        },
+        {
+          "joint": "shoulder",
+          "min": 140,
+          "max": 180,
+          "description": "Arms reaching forward and upward"
+        },
+        {
+          "joint": "hip",
+          "min": 110,
+          "max": 155,
+          "description": "Body begins to lean forward and dive"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 3.0
+        },
+        {
+          "joint": "left_hip",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 1.5
+        }
+      ]
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [150, 400],
+      "angle_rules": [
+        {
+          "joint": "elbow",
+          "min": 150,
+          "max": 180,
+          "description": "Arms fully extended to push off obstacle"
+        },
+        {
+          "joint": "hip",
+          "min": 40,
+          "max": 100,
+          "description": "Hips flexed as legs pass through arms"
+        },
+        {
+          "joint": "knee",
+          "min": 80,
+          "max": 140,
+          "description": "Knees tucked to clear obstacle between arms"
+        },
+        {
+          "joint": "shoulder",
+          "min": 150,
+          "max": 180,
+          "description": "Shoulders extended with hands on obstacle"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_wrist",
+          "axis": "vertical",
+          "direction": "down",
+          "min_speed": 1.0
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "lateral",
+        "rotation_direction": "forward",
+        "min_rotation_degrees": 15
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 350],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 110,
+          "max": 165,
+          "description": "Legs extending to absorb landing"
+        },
+        {
+          "joint": "hip",
+          "min": 120,
+          "max": 170,
+          "description": "Body returning to upright position"
+        },
+        {
+          "joint": "spine",
+          "min": 140,
+          "max": 175,
+          "description": "Torso fairly upright on landing"
+        }
+      ]
+    }
+  ],
+  "composable_with": [],
+  "names": {
+    "en": "Kong Vault",
+    "fr": "Saut de Chat"
+  }
+}

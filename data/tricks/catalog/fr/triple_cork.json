@@ -1,0 +1,174 @@
+{
+  "trick_id": "triple_cork",
+  "category": "combo",
+  "tags": ["acrobatic", "corkscrew", "off_axis", "triple", "elite", "aerial"],
+  "difficulty": 8.0,
+  "detection_method": "temporal_model",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [500, 1200],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 145,
+          "max": 180,
+          "description": "Powerful running stride"
+        },
+        {
+          "joint": "hip",
+          "min": 155,
+          "max": 180,
+          "description": "Upright posture during aggressive run-up"
+        },
+        {
+          "joint": "spine",
+          "min": 160,
+          "max": 180,
+          "description": "Spine aligned and ready for explosive takeoff"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 4.0
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [60, 180],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 155,
+          "max": 180,
+          "description": "Explosive full leg extension for maximum height"
+        },
+        {
+          "joint": "hip",
+          "min": 140,
+          "max": 175,
+          "description": "Hips driving upward with slight off-axis tilt"
+        },
+        {
+          "joint": "shoulder",
+          "min": 90,
+          "max": 170,
+          "description": "Asymmetric arm drive to initiate corkscrew axis"
+        },
+        {
+          "joint": "neck",
+          "min": 120,
+          "max": 175,
+          "description": "Head turning to set off-axis rotation direction"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 5.0
+        },
+        {
+          "joint": "shoulder_mid",
+          "axis": "angular",
+          "direction": "clockwise",
+          "min_speed": 4.0
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "sagittal",
+        "rotation_direction": "clockwise",
+        "min_rotation_degrees": 0
+      }
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [600, 1100],
+      "angle_rules": [
+        {
+          "joint": "hip",
+          "min": 20,
+          "max": 100,
+          "description": "Core locked tight for off-axis triple rotation"
+        },
+        {
+          "joint": "knee",
+          "min": 30,
+          "max": 110,
+          "description": "Legs controlled to manage angular momentum across rotations"
+        },
+        {
+          "joint": "elbow",
+          "min": 10,
+          "max": 70,
+          "description": "Arms pulled extremely tight to body for maximum spin speed"
+        },
+        {
+          "joint": "shoulder",
+          "min": 10,
+          "max": 60,
+          "description": "Shoulders locked against torso for corkscrew control"
+        },
+        {
+          "joint": "spine",
+          "min": 40,
+          "max": 120,
+          "description": "Spine held in controlled flexion throughout rotations"
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "sagittal",
+        "rotation_direction": "clockwise",
+        "min_rotation_degrees": 1020
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 400],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 80,
+          "max": 145,
+          "description": "Deep bend for high-impact absorption"
+        },
+        {
+          "joint": "hip",
+          "min": 100,
+          "max": 160,
+          "description": "Torso opening from tight rotation"
+        },
+        {
+          "joint": "elbow",
+          "min": 90,
+          "max": 170,
+          "description": "Arms extending for balance recovery"
+        },
+        {
+          "joint": "spine",
+          "min": 120,
+          "max": 170,
+          "description": "Spine decompressing back toward upright"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "hip_mid",
+          "axis": "vertical",
+          "direction": "down",
+          "min_speed": 2.5
+        }
+      ]
+    }
+  ],
+  "composable_with": [],
+  "names": {
+    "en": "Triple Cork",
+    "fr": "Triple Vrille"
+  }
+}

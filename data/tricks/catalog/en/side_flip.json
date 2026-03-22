@@ -1,0 +1,145 @@
+{
+  "trick_id": "side_flip",
+  "category": "flip",
+  "tags": ["acrobatic", "lateral_rotation", "aerial"],
+  "difficulty": 3.0,
+  "detection_method": "angle_threshold",
+  "phases": [
+    {
+      "name": "approach",
+      "duration_range_ms": [150, 500],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 150,
+          "max": 180,
+          "description": "Legs mostly straight during lateral approach"
+        },
+        {
+          "joint": "hip",
+          "min": 155,
+          "max": 180,
+          "description": "Upright torso, body moving sideways"
+        },
+        {
+          "joint": "spine",
+          "min": 155,
+          "max": 180,
+          "description": "Spine vertical during side-facing movement"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "horizontal",
+          "direction": "forward",
+          "min_speed": 1.5
+        }
+      ]
+    },
+    {
+      "name": "takeoff",
+      "duration_range_ms": [70, 180],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 105,
+          "max": 155,
+          "description": "Knee bend for lateral push-off"
+        },
+        {
+          "joint": "hip",
+          "min": 135,
+          "max": 175,
+          "description": "Hips load for lateral jump"
+        },
+        {
+          "joint": "shoulder",
+          "min": 130,
+          "max": 180,
+          "description": "Arms swing laterally and upward to initiate rotation"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "left_hip",
+          "axis": "vertical",
+          "direction": "up",
+          "min_speed": 2.8
+        }
+      ]
+    },
+    {
+      "name": "execution",
+      "duration_range_ms": [250, 550],
+      "angle_rules": [
+        {
+          "joint": "hip",
+          "min": 40,
+          "max": 110,
+          "description": "Hips flexed in sideways tuck"
+        },
+        {
+          "joint": "knee",
+          "min": 35,
+          "max": 90,
+          "description": "Knees pulled toward chest in lateral tuck"
+        },
+        {
+          "joint": "elbow",
+          "min": 35,
+          "max": 90,
+          "description": "Arms tight to body or gripping legs in tuck"
+        },
+        {
+          "joint": "spine",
+          "min": 90,
+          "max": 155,
+          "description": "Spine curved laterally during rotation"
+        }
+      ],
+      "velocity_rules": [
+        {
+          "joint": "nose",
+          "axis": "angular",
+          "direction": "forward",
+          "min_speed": 4.5
+        }
+      ],
+      "trajectory": {
+        "rotation_axis": "longitudinal",
+        "rotation_direction": "clockwise",
+        "min_rotation_degrees": 340
+      }
+    },
+    {
+      "name": "landing",
+      "duration_range_ms": [100, 350],
+      "angle_rules": [
+        {
+          "joint": "knee",
+          "min": 115,
+          "max": 170,
+          "description": "Legs extending to reach ground"
+        },
+        {
+          "joint": "hip",
+          "min": 130,
+          "max": 175,
+          "description": "Hips opening to upright stance"
+        },
+        {
+          "joint": "spine",
+          "min": 145,
+          "max": 180,
+          "description": "Torso returning to vertical"
+        }
+      ]
+    }
+  ],
+  "composable_with": [],
+  "names": {
+    "en": "Side Flip",
+    "fr": "Salto Lat\u00e9ral"
+  }
+}

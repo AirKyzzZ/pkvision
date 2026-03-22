@@ -1,0 +1,74 @@
+name: Submit Training Clip
+description: Share a parkour video clip to help train the AI
+title: "[Clip] "
+labels: ["clip-submission", "data"]
+body:
+  - type: dropdown
+    id: trick-name
+    attributes:
+      label: Trick Name
+      description: Which trick is performed in the clip?
+      options:
+        - Kong Vault
+        - Double Kong
+        - Front Flip
+        - Back Flip
+        - Side Flip
+        - Webster
+        - Gainer
+        - Double Front Flip
+        - 360 Flip
+        - Triple Cork
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: video-link
+    attributes:
+      label: Video Link
+      description: Link to the video (Google Drive, YouTube, Dropbox, etc.)
+      placeholder: https://www.youtube.com/watch?v=...
+    validations:
+      required: true
+
+  - type: input
+    id: timestamp
+    attributes:
+      label: Timestamp of Trick
+      description: When does the trick occur in the video?
+      placeholder: "0:02-0:04"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: camera-angle
+    attributes:
+      label: Camera Angle
+      description: From what angle is the trick filmed?
+      options:
+        - Side
+        - Front
+        - Diagonal
+        - Overhead
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: contributor-name
+    attributes:
+      label: Your Name
+      description: Optional — for credit in contributors list.
+      placeholder: Jane Doe
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else we should know about this clip?
+      placeholder: e.g. lighting conditions, athlete skill level, multiple tricks in sequence...
+    validations:
+      required: false
