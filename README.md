@@ -27,18 +27,165 @@ Parkour is evolving from a street discipline into a competitive sport with struc
 
 ## How It Works
 
-The pipeline is straightforward:
+### Pipeline Overview
+
+```mermaid
+flowchart LR
+    A["Video Input"] --> B["Pose Estimation\n(YOLO11n-pose)"]
+    B --> C["Joint Angles\n& Velocities"]
+    C --> D{"Detection\nStrategy"}
+    D -->|Baseline| E["Angle Threshold\nMatching"]
+    D -->|Primary| F["VideoMAE /\nST-GCN Model"]
+    E --> G["Trick\nDetections"]
+    F --> G
+    G --> H["Scoring Engine\n(Top 3)"]
+    H --> I["Audit Trail"]
+    I --> J["Results\n+ Confidence"]
+
+    style A fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style B fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style C fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style D fill:#0d1b2a,stroke:#f59e0b,color:#fff
+    style E fill:#1a1a2e,stroke:#888,color:#ccc
+    style F fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style G fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style H fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style I fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style J fill:#0d3b2a,stroke:#4ade80,color:#fff
+```
+
+### Step by Step
 
 1. **Video input** -- A parkour clip is submitted (file upload or API).
 2. **Pose estimation** -- YOLO11n-pose tracks 17 body keypoints frame by frame.
 3. **Angle computation** -- Joint angles (knee, hip, elbow, shoulder, spine) and angular velocities are calculated from the keypoints.
-4. **Trick detection** -- Movements are matched against a catalog of known tricks. Two detection methods are available:
+4. **Trick detection** -- Movements are matched against a catalog of known tricks using one of two strategies:
    - **Angle threshold** (baseline) -- Matches angle rules across trick phases using a sliding window. Reliable, interpretable, works without training data.
-   - **ST-GCN neural network** (primary) -- A Spatio-Temporal Graph Convolutional Network that learns to classify tricks from labeled keypoint sequences. More accurate for complex movements.
+   - **VideoMAE / ST-GCN** (primary) -- Pre-trained on Kinetics-400 (400 human actions), fine-tuned on parkour clips. Learns movement patterns from video frames or skeleton sequences.
 5. **Scoring** -- The top 3 tricks are selected by difficulty, with each score weighted by detection confidence.
 6. **Audit trail** -- Every detection includes full reasoning: which angles matched, which strategy was used, confidence levels, and phase-by-phase breakdowns.
 
 Every decision is explainable. No black boxes.
+
+### Detection Strategy Pattern
+
+The detection layer is designed to be swappable. Different tricks can use different strategies simultaneously:
+
+```mermaid
+classDiagram
+    class DetectionStrategy {
+        <<protocol>>
+        +evaluate(trick, frames) TrickDetection?
+    }
+    class AngleThresholdStrategy {
+        +evaluate(trick, frames) TrickDetection?
+        -match_phases()
+        -evaluate_angle_rules()
+    }
+    class TemporalModelStrategy {
+        +run_inference(trick, frames) TrickDetection?
+        -load_model()
+        -prepare_input()
+    }
+    class VideoMAEStrategy {
+        +classify(video) dict
+        -fine_tuned_model
+        -kinetics_pretrained
+    }
+
+    DetectionStrategy <|.. AngleThresholdStrategy : implements
+    DetectionStrategy <|.. TemporalModelStrategy : implements
+    DetectionStrategy <|.. VideoMAEStrategy : implements
+
+    class TrickClassifier {
+        +classify(frames) List~TrickDetection~
+        -get_strategy(trick) DetectionStrategy
+        -tricks: List~TrickConfig~
+    }
+
+    TrickClassifier --> DetectionStrategy : dispatches to
+```
+
+### Training Pipeline
+
+```mermaid
+flowchart TB
+    subgraph Data Collection
+        A1["Your Video Clips\n(iPhone / Camera)"] --> B1["Auto-Label\n(VideoMAE Kinetics-400)"]
+        B1 --> C1["Review & Correct\n(Labeler UI)"]
+        A2["Community Submissions\n(GitHub Issues)"] --> C1
+    end
+
+    subgraph Training
+        C1 --> D1["Prepare Training Data\n(merge labels + extract frames)"]
+        D1 --> E1["Fine-tune VideoMAE\n(transfer learning)"]
+        E1 --> F1["Trained Model\n(.pt checkpoint)"]
+    end
+
+    subgraph Inference
+        G1["New Video"] --> H1["PkVision Pipeline"]
+        F1 --> H1
+        H1 --> I1["Trick: Back Flip\nConfidence: 87%\nDifficulty: 3.5"]
+    end
+
+    style A1 fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style A2 fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style E1 fill:#1a1a2e,stroke:#f59e0b,color:#fff
+    style F1 fill:#0d3b2a,stroke:#4ade80,color:#fff
+    style I1 fill:#0d3b2a,stroke:#4ade80,color:#fff
+```
+
+### Neural Network Architecture
+
+PkVision uses two complementary neural network approaches:
+
+```mermaid
+flowchart TB
+    subgraph VideoMAE ["VideoMAE (Primary — Transfer Learning)"]
+        direction TB
+        V1["Video Frames\n(16 frames sampled)"] --> V2["Patch Embedding\n(divide into 3D patches)"]
+        V2 --> V3["Vision Transformer\n(12 self-attention layers)"]
+        V3 --> V4["Pre-trained on\nKinetics-400\n(400 human actions)"]
+        V4 --> V5["Fine-tuned\nClassifier Head"]
+        V5 --> V6["Parkour Classes\n(flip, twist_cork,\nvault, tumbling...)"]
+    end
+
+    subgraph STGCN ["ST-GCN (Skeleton-Based)"]
+        direction TB
+        S1["Keypoint Sequence\n(x, y, confidence)\nper frame"] --> S2["Skeleton Graph\n(17 joints as nodes,\nbones as edges)"]
+        S2 --> S3["Spatial Graph Conv\n(learn joint relationships)"]
+        S3 --> S4["Temporal Conv\n(learn movement patterns\nacross frames)"]
+        S4 --> S5["5 ST-GCN Blocks\n(64→64→128→128→256)"]
+        S5 --> S6["Global Avg Pool\n+ Classifier"]
+        S6 --> S7["Trick Class\n+ Confidence"]
+    end
+
+    style V4 fill:#1a1a2e,stroke:#f59e0b,color:#fff
+    style V5 fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style S3 fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style S4 fill:#1a1a2e,stroke:#4361ee,color:#fff
+```
+
+### Scoring and Audit Flow
+
+```mermaid
+flowchart LR
+    A["All Detections"] --> B["Filter by\nConfidence\n(>50%)"]
+    B --> C["Deduplicate\n(overlapping\ntime ranges)"]
+    C --> D["Rank by\nDifficulty"]
+    D --> E["Select\nTop 3"]
+    E --> F["Score =\nDifficulty x\nConfidence"]
+    F --> G["Audit Trail\n(immutable log)"]
+    G --> H{"Judge\nOverride?"}
+    H -->|Yes| I["New Audit Entry\n(original preserved)"]
+    H -->|No| J["Final Score"]
+    I --> J
+
+    style E fill:#1a1a2e,stroke:#f59e0b,color:#fff
+    style G fill:#1a1a2e,stroke:#4361ee,color:#fff
+    style I fill:#1a1a2e,stroke:#f55,color:#fff
+    style J fill:#0d3b2a,stroke:#4ade80,color:#fff
+```
 
 ---
 
@@ -103,7 +250,7 @@ PkVision is built with competition integrity in mind.
 ### Quick Start
 
 ```bash
-git clone https://github.com/your-org/pkvision.git
+git clone https://github.com/AirKyzzZ/pkvision.git
 cd pkvision
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
@@ -252,48 +399,59 @@ For a French translation, create the same file in `data/tricks/catalog/fr/` with
 
 ## Training the Model
 
-The ST-GCN model learns to classify tricks from labeled keypoint sequences. The workflow:
+PkVision uses transfer learning from a model pre-trained on Kinetics-400 (400 human actions including somersaulting, gymnastics tumbling, parkour). This means you don't need thousands of labeled clips to get started.
 
-### 1. Collect clips
-
-Place video clips in `data/clips/`. Any format supported by OpenCV works (mp4, avi, mov, mkv, webm).
-
-### 2. Label clips
+### Quick Start (Recommended)
 
 ```bash
-python scripts/label.py --clips-dir data/clips/ --output data/clips/labels.json
+# 1. Place your video clips in data/clips/
+#    (any format: mp4, mov, avi, mkv)
+
+# 2. Auto-label with pre-trained Kinetics-400 model
+python scripts/auto_label.py
+
+# 3. Review and correct labels (web UI at localhost:8501)
+python scripts/labeler_ui.py
+
+# 4. Prepare training data (merges auto + manual labels)
+python scripts/prepare_training.py
+
+# 5. Fine-tune the model
+python scripts/finetune.py --epochs 20
+
+# 6. Test on a new video
+python scripts/test_model.py --input your_video.mp4
 ```
 
-The interactive labeler shows available tricks from the catalog and lets you assign trick IDs and time ranges to each clip.
+### Labeler UI
 
-### 3. Extract keypoints
+A web-based tool for fast clip labeling at `http://localhost:8501`:
+
+- 40+ trick categories with category filters
+- Multiple tricks per video (each with start/end timestamps)
+- Add custom tricks directly from the UI
+- Keyboard shortcuts: `1-0` select, `A` add tag, `D` done, `S` skip, `Space` play/pause
+- Progress persists across sessions
+
+### Training Approaches
+
+| Approach | Data Needed | Accuracy | Use When |
+|----------|-------------|----------|----------|
+| Pre-trained only | 0 clips | Coarse (flip vs vault vs parkour) | Quick demo |
+| Fine-tuned head | 50-200 clips | Good (back flip vs front flip) | Standard training |
+| Full fine-tune | 500+ clips | Best (double cork vs b-twist) | Production model |
+
+### Advanced: ST-GCN Skeleton Training
+
+For skeleton-based training (complementary to VideoMAE):
 
 ```bash
 python scripts/extract_poses.py \
   --clips-dir data/clips/ \
   --labels data/clips/labels.json \
   --output data/clips/keypoints/
-```
 
-This runs YOLO pose estimation on every labeled clip and saves normalized keypoint sequences as `.npy` files in the format expected by the ST-GCN model (`3 x T x 17` -- x, y, confidence).
-
-### 4. Train
-
-```bash
 python scripts/train.py --epochs 100 --batch-size 16
-```
-
-Additional options:
-
-```bash
-python scripts/train.py \
-  --epochs 100 \
-  --batch-size 16 \
-  --lr 0.001 \
-  --frames 64 \
-  --val-split 0.2 \
-  --device mps       # Force device: mps (Apple Silicon), cuda, or cpu
-  --output data/models/stgcn_best.pt
 ```
 
 ### Hardware support
