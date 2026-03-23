@@ -137,6 +137,17 @@ def main():
             train_class = TRICK_TO_TRAIN_CLASS.get(trick_id, trick_id)
             manual_by_file[filename] = train_class
 
+    # Load Round 2 relabels (highest priority — specific trick names)
+    relabels_path = Path("data/training/relabels.json")
+    relabel_by_file: dict[str, str] = {}
+    if relabels_path.exists():
+        with open(relabels_path) as f:
+            relabels = json.load(f)
+        for filename, trick_id in relabels.items():
+            if trick_id != "not_a_flip":
+                relabel_by_file[filename] = trick_id
+        print(f"Loaded {len(relabel_by_file)} Round 2 relabels (specific tricks)")
+
     # Load auto labels
     auto_by_file: dict[str, str] = {}
     if auto_labels_path.exists():
@@ -149,18 +160,14 @@ def main():
             train_class = KINETICS_TO_TRAIN_CLASS.get(kinetics_label, "other")
             auto_by_file[entry["file"]] = train_class
 
-    # Merge: manual takes priority
+    # Merge: relabels > manual > auto
     merged: dict[str, str] = {}
     for filename in auto_by_file:
-        if filename in manual_by_file:
-            merged[filename] = manual_by_file[filename]
-        else:
-            merged[filename] = auto_by_file[filename]
-
-    # Add any manual labels not in auto
+        merged[filename] = auto_by_file[filename]
     for filename, cls in manual_by_file.items():
-        if filename not in merged:
-            merged[filename] = cls
+        merged[filename] = cls
+    for filename, cls in relabel_by_file.items():
+        merged[filename] = cls  # Highest priority
 
     # Count per class
     class_counts: dict[str, int] = {}
