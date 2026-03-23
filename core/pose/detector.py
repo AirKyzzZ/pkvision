@@ -18,7 +18,7 @@ class PoseDetector:
     def __init__(self, model_path: str | None = None, confidence_threshold: float = 0.3):
         from ultralytics import YOLO
 
-        self.model_path = model_path or "yolo11n-pose.pt"
+        self.model_path = model_path or "yolo26n-pose.pt"
         self.model = YOLO(self.model_path)
         self.confidence_threshold = confidence_threshold
 

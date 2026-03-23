@@ -46,10 +46,27 @@ def train_model(
     device = torch.device(device_override) if device_override else get_device()
     print(f"Training on device: {device}")
 
-    # Discover trick classes from labels
+    # Discover trick classes from labels (supports both manifest and flat formats)
     with open(labels_path) as f:
-        labels = json.load(f)
-    trick_classes = sorted(set(entry["trick_id"] for entry in labels))
+        raw = json.load(f)
+
+    if isinstance(raw, dict) and "classes" in raw:
+        # Manifest format from synthetic generator or prepare_training
+        trick_classes = raw["classes"]
+        labels = raw.get("samples", [])
+        # Remap "class" key to "trick_id" for dataset compatibility
+        for entry in labels:
+            if "trick_id" not in entry and "class" in entry:
+                entry["trick_id"] = entry["class"]
+    elif isinstance(raw, dict) and "labels" in raw:
+        # Old labeler format
+        labels = raw["labels"]
+        trick_classes = sorted(set(entry["trick_id"] for entry in labels))
+    else:
+        # Flat list format
+        labels = raw
+        trick_classes = sorted(set(entry["trick_id"] for entry in labels))
+
     print(f"Found {len(trick_classes)} trick classes: {trick_classes}")
 
     if len(trick_classes) < 2:

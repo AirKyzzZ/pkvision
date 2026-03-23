@@ -36,9 +36,16 @@ class TrickDataset(Dataset):
         self.target_frames = target_frames
         self.augment = augment
 
-        # Load labels
+        # Load labels (supports manifest format and flat list)
         with open(labels_path) as f:
-            self.labels = json.load(f)
+            raw = json.load(f)
+
+        if isinstance(raw, dict) and "samples" in raw:
+            self.labels = raw["samples"]
+        elif isinstance(raw, dict) and "labels" in raw:
+            self.labels = raw["labels"]
+        else:
+            self.labels = raw
 
         # Build samples: (keypoints_file, class_index)
         self.samples: list[tuple[Path, int]] = []
@@ -46,7 +53,7 @@ class TrickDataset(Dataset):
 
     def _build_sample_list(self) -> None:
         for entry in self.labels:
-            trick_id = entry.get("trick_id", "")
+            trick_id = entry.get("trick_id", "") or entry.get("class", "")
             if trick_id not in self.trick_classes:
                 continue
 
