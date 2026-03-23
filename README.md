@@ -54,6 +54,16 @@ flowchart LR
     style J fill:#0d3b2a,stroke:#4ade80,color:#fff
 ```
 
+### Pose Estimation (YOLO11n-pose)
+
+PkVision uses YOLO11n-pose to track 17 body keypoints on every frame. The skeleton is extracted and used for angle computation and trick detection.
+
+<p align="center">
+  <img src="assets/pose_estimation.png" alt="YOLO Pose Estimation" width="350">
+  <br>
+  <em>YOLO pose estimation: 17 keypoints tracked per frame with confidence scores</em>
+</p>
+
 ### Step by Step
 
 1. **Video input** -- A parkour clip is submitted (file upload or API).
