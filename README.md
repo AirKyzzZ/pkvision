@@ -15,6 +15,31 @@
 
 ---
 
+## Table of Contents
+
+- [What is PkVision?](#what-is-pkvision)
+- [How It Works](#how-it-works)
+  - [Pipeline Overview](#pipeline-overview)
+  - [Pose Estimation](#pose-estimation-yolo11n-pose)
+  - [Detection Strategy Pattern](#detection-strategy-pattern)
+  - [Training Pipeline](#training-pipeline)
+  - [Neural Network Architecture](#neural-network-architecture)
+  - [Scoring and Audit Flow](#scoring-and-audit-flow)
+- [For Athletes and Coaches](#for-athletes-and-coaches)
+- [For Judges and Federations](#for-judges-and-federations)
+- [For Developers](#for-developers)
+  - [Quick Start](#quick-start)
+  - [Architecture Overview](#architecture-overview)
+  - [How to Add a Trick](#how-to-add-a-trick)
+  - [API Endpoints](#api-endpoints)
+- [Training the Model](#training-the-model)
+- [Context: Parkour and the Olympics](#context-parkour-and-the-olympics)
+- [Contributing](#contributing)
+- [References](#references)
+- [License](#license)
+
+---
+
 ## What is PkVision?
 
 PkVision is an open-source artificial intelligence system that analyzes parkour videos, identifies tricks performed by athletes, scores the top 3 tricks by difficulty, and generates fully explainable audit trails for every decision. It is designed to bring standardized, transparent notation to parkour competition judging -- supporting the discipline's path toward Olympic inclusion through the FIG (Federation Internationale de Gymnastique). The project is backed by coaches with connections to international parkour federations and built by a community of developers, athletes, and judges.
