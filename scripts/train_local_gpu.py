@@ -39,7 +39,7 @@ class PhysicsGenerator:
             r=d.copy(); r[0]=1.-d[0]
             for l,ri in MIRROR_PAIRS: r[:,:,l],r[:,:,ri]=r[:,:,ri].copy(),r[:,:,l].copy()
             d=r
-        if s.rng.random()<.5: d[2]*=s.rng.uniform(.75,1.,size=(1,d.shape[1],1))
+        if s.rng.random()<.5: d[2]=d[2]*s.rng.uniform(.75,1.,size=(d.shape[1],1))
         return s._rsz(d,s.tf)
     def _speed(s,d,f):
         C,T,V=d.shape; nT=max(8,int(T/f)); idx=np.linspace(0,T-1,nT); r=np.zeros((C,nT,V),dtype=d.dtype)
