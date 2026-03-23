@@ -31,7 +31,7 @@ class PhysicsGenerator:
             r[0]=x*co-y*si+cx; r[1]=x*si+y*co+cy; d=np.clip(r,0,1)
         if s.rng.random()<.5:
             r=d.copy(); f=s.rng.uniform(.9,1.1)
-            cx=np.mean(d[0,:,[5,6,11,12]],axis=1,keepdims=True); cy=np.mean(d[1,:,[5,6,11,12]],axis=1,keepdims=True)
+            cx=d[0].mean(axis=1,keepdims=True); cy=d[1].mean(axis=1,keepdims=True)
             r[0]=cx+(d[0]-cx)*f; r[1]=cy+(d[1]-cy)*f; d=np.clip(r,0,1)
         if s.rng.random()<.7: r=d.copy(); r[0]=np.clip(d[0]+s.rng.uniform(-.1,.1),0,1); r[1]=np.clip(d[1]+s.rng.uniform(-.1,.1),0,1); d=r
         if s.rng.random()<.7: r=d.copy(); r[:2]=np.clip(d[:2]+s.rng.normal(0,.004,size=(2,d.shape[1],1))+s.rng.normal(0,.003,size=(2,d.shape[1],17)),0,1); d=r
