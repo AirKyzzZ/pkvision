@@ -1,0 +1,1621 @@
+{
+  "classes": [
+    "parkour_movement",
+    "tumbling",
+    "flip",
+    "double_full",
+    "other",
+    "back_flip",
+    "triple_full",
+    "double_cork",
+    "castaway",
+    "vault",
+    "twist_cork",
+    "side_flip",
+    "raiz",
+    "krok",
+    "back_full",
+    "front_flip",
+    "tak_full",
+    "trampoline_flip",
+    "bouncing_on_trampoline",
+    "capoeira",
+    "cartwheeling",
+    "gymnastics_tumbling",
+    "parkour",
+    "somersaulting"
+  ],
+  "samples": [
+    {
+      "file": "02702976-4d5b-4961-acb2-56405de81f1d.npy",
+      "original": "02702976-4d5b-4961-acb2-56405de81f1d.mp4",
+      "class": "front_flip"
+    },
+    {
+      "file": "042c23bd-9ba2-4929-b8ec-f8700e8311b1.npy",
+      "original": "042c23bd-9ba2-4929-b8ec-f8700e8311b1.mp4",
+      "class": "twist_cork"
+    },
+    {
+      "file": "049ce0f3-6cc6-4616-ac68-2dafe778e65a.npy",
+      "original": "049ce0f3-6cc6-4616-ac68-2dafe778e65a.mp4",
+      "class": "twist_cork"
+    },
+    {
+      "file": "100_0103.npy",
+      "original": "100_0103.AVI",
+      "class": "side_flip"
+    },
+    {
+      "file": "100_0107.npy",
+      "original": "100_0107.AVI",
+      "class": "side_flip"
+    },
+    {
+      "file": "100_0108.npy",
+      "original": "100_0108.AVI",
+      "class": "back_flip"
+    },
+    {
+      "file": "100_0109.npy",
+      "original": "100_0109.AVI",
+      "class": "back_flip"
+    },
+    {
+      "file": "1ce70166-d107-48e1-a5b2-087009769a07.npy",
+      "original": "1ce70166-d107-48e1-a5b2-087009769a07.mp4",
+      "class": "twist_cork"
+    },
+    {
+      "file": "23130bb9-cfda-477d-a65d-4efe0b3e496d.npy",
+      "original": "23130bb9-cfda-477d-a65d-4efe0b3e496d.mp4",
+      "class": "twist_cork"
+    },
+    {
+      "file": "2cbea06c-5956-4f2d-925c-7010f5de5428.npy",
+      "original": "2cbea06c-5956-4f2d-925c-7010f5de5428.mp4",
+      "class": "twist_cork"
+    },
+    {
+      "file": "3ee7c7c6-96eb-4c3f-9ad7-481dddda5cf7.npy",
+      "original": "3ee7c7c6-96eb-4c3f-9ad7-481dddda5cf7.mp4",
+      "class": "back_flip"
+    },
+    {
+      "file": "46a023e7-68f8-42a3-b1b0-18e9a27e1543.npy",
+      "original": "46a023e7-68f8-42a3-b1b0-18e9a27e1543.mp4",
+      "class": "raiz"
+    },
+    {
+      "file": "47a355f5-95e2-4939-9b01-895fac2824d3.npy",
+      "original": "47a355f5-95e2-4939-9b01-895fac2824d3.mp4",
+      "class": "double_cork"
+    },
+    {
+      "file": "4887a8c5-5014-4ebe-9252-16b716c2fdc5.npy",
+      "original": "4887a8c5-5014-4ebe-9252-16b716c2fdc5.mp4",
+      "class": "double_cork"
+    },
+    {
+      "file": "614a09ed-5f08-4359-b62a-bfcb20cabc4a.npy",
+      "original": "614a09ed-5f08-4359-b62a-bfcb20cabc4a.mp4",
+      "class": "double_full"
+    },
+    {
+      "file": "673709b8-3e16-4af2-a216-7530a69906bd.npy",
+      "original": "673709b8-3e16-4af2-a216-7530a69906bd.mp4",
+      "class": "other"
+    },
+    {
+      "file": "708a844e-72f6-43ef-b541-b17930a59286.npy",
+      "original": "708a844e-72f6-43ef-b541-b17930a59286.mp4",
+      "class": "tak_full"
+    },
+    {
+      "file": "70f833e1-6014-4b1f-a2d3-063a17c4940c.npy",
+      "original": "70f833e1-6014-4b1f-a2d3-063a17c4940c.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "74f11e8d-0f41-43c5-ac23-ac8231e83432.npy",
+      "original": "74f11e8d-0f41-43c5-ac23-ac8231e83432.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "81a67a34-a7cf-46e6-a4ef-83167a1fd102.npy",
+      "original": "81a67a34-a7cf-46e6-a4ef-83167a1fd102.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "82a6e1b3-2224-4905-98b2-7dbacbe4c123.npy",
+      "original": "82a6e1b3-2224-4905-98b2-7dbacbe4c123.mp4",
+      "class": "double_cork"
+    },
+    {
+      "file": "92a1257e-5464-4e4d-bc78-03f09900a801.npy",
+      "original": "92a1257e-5464-4e4d-bc78-03f09900a801.mp4",
+      "class": "krok"
+    },
+    {
+      "file": "935825E0-629B-4500-8383-172E9375ED0E.npy",
+      "original": "935825E0-629B-4500-8383-172E9375ED0E.mov",
+      "class": "tumbling"
+    },
+    {
+      "file": "972d4487-2051-4859-bb38-662e302ca491.npy",
+      "original": "972d4487-2051-4859-bb38-662e302ca491.mp4",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_0153.npy",
+      "original": "IMG_0153.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_0158.npy",
+      "original": "IMG_0158.mov",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_0260.npy",
+      "original": "IMG_0260.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_0265.npy",
+      "original": "IMG_0265.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_0266.npy",
+      "original": "IMG_0266.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_0267.npy",
+      "original": "IMG_0267.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_0271.npy",
+      "original": "IMG_0271.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_0277.npy",
+      "original": "IMG_0277.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_0278.npy",
+      "original": "IMG_0278.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_0294.npy",
+      "original": "IMG_0294.MOV",
+      "class": "raiz"
+    },
+    {
+      "file": "IMG_0295.npy",
+      "original": "IMG_0295.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_0296.npy",
+      "original": "IMG_0296.MOV",
+      "class": "vault"
+    },
+    {
+      "file": "IMG_0297.npy",
+      "original": "IMG_0297.MOV",
+      "class": "vault"
+    },
+    {
+      "file": "IMG_0298.npy",
+      "original": "IMG_0298.MOV",
+      "class": "vault"
+    },
+    {
+      "file": "IMG_0299.npy",
+      "original": "IMG_0299.MOV",
+      "class": "vault"
+    },
+    {
+      "file": "IMG_0301.npy",
+      "original": "IMG_0301.MOV",
+      "class": "castaway"
+    },
+    {
+      "file": "IMG_0303.npy",
+      "original": "IMG_0303.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_0304.npy",
+      "original": "IMG_0304.MOV",
+      "class": "castaway"
+    },
+    {
+      "file": "IMG_0305.npy",
+      "original": "IMG_0305.MOV",
+      "class": "castaway"
+    },
+    {
+      "file": "IMG_0306.npy",
+      "original": "IMG_0306.MOV",
+      "class": "castaway"
+    },
+    {
+      "file": "IMG_0307.npy",
+      "original": "IMG_0307.MOV",
+      "class": "castaway"
+    },
+    {
+      "file": "IMG_0429.TRIM.npy",
+      "original": "IMG_0429.TRIM.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_0725.npy",
+      "original": "IMG_0725.MOV",
+      "class": "raiz"
+    },
+    {
+      "file": "IMG_0816.npy",
+      "original": "IMG_0816.MOV",
+      "class": "double_cork"
+    },
+    {
+      "file": "IMG_0819.npy",
+      "original": "IMG_0819.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_1056.npy",
+      "original": "IMG_1056.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_1372.npy",
+      "original": "IMG_1372.mp4",
+      "class": "back_flip"
+    },
+    {
+      "file": "IMG_2063.npy",
+      "original": "IMG_2063.MOV",
+      "class": "front_flip"
+    },
+    {
+      "file": "IMG_2065.npy",
+      "original": "IMG_2065.MOV",
+      "class": "side_flip"
+    },
+    {
+      "file": "IMG_2066.npy",
+      "original": "IMG_2066.MOV",
+      "class": "side_flip"
+    },
+    {
+      "file": "IMG_2068.npy",
+      "original": "IMG_2068.MOV",
+      "class": "back_flip"
+    },
+    {
+      "file": "IMG_2069.npy",
+      "original": "IMG_2069.MOV",
+      "class": "side_flip"
+    },
+    {
+      "file": "IMG_2073.npy",
+      "original": "IMG_2073.MOV",
+      "class": "vault"
+    },
+    {
+      "file": "IMG_2740.npy",
+      "original": "IMG_2740.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_2741.npy",
+      "original": "IMG_2741.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_2743.npy",
+      "original": "IMG_2743.MOV",
+      "class": "double_cork"
+    },
+    {
+      "file": "IMG_2876.npy",
+      "original": "IMG_2876.MOV",
+      "class": "back_full"
+    },
+    {
+      "file": "IMG_3216.npy",
+      "original": "IMG_3216.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_3466.npy",
+      "original": "IMG_3466.MOV",
+      "class": "back_flip"
+    },
+    {
+      "file": "IMG_3467.npy",
+      "original": "IMG_3467.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_3468.npy",
+      "original": "IMG_3468.MOV",
+      "class": "back_flip"
+    },
+    {
+      "file": "IMG_3471.npy",
+      "original": "IMG_3471.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_3680.npy",
+      "original": "IMG_3680.mov",
+      "class": "tak_full"
+    },
+    {
+      "file": "IMG_3811.npy",
+      "original": "IMG_3811.MOV",
+      "class": "vault"
+    },
+    {
+      "file": "IMG_3812.npy",
+      "original": "IMG_3812.MOV",
+      "class": "back_flip"
+    },
+    {
+      "file": "IMG_3813.npy",
+      "original": "IMG_3813.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_3815.npy",
+      "original": "IMG_3815.MOV",
+      "class": "vault"
+    },
+    {
+      "file": "IMG_3816.npy",
+      "original": "IMG_3816.MOV",
+      "class": "tak_full"
+    },
+    {
+      "file": "IMG_4012.npy",
+      "original": "IMG_4012.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_4125.npy",
+      "original": "IMG_4125.MOV",
+      "class": "krok"
+    },
+    {
+      "file": "IMG_4202.npy",
+      "original": "IMG_4202.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_4219.npy",
+      "original": "IMG_4219.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4220.npy",
+      "original": "IMG_4220.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4222.npy",
+      "original": "IMG_4222.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4237.npy",
+      "original": "IMG_4237.MOV",
+      "class": "castaway"
+    },
+    {
+      "file": "IMG_4238.npy",
+      "original": "IMG_4238.MOV",
+      "class": "castaway"
+    },
+    {
+      "file": "IMG_4269.npy",
+      "original": "IMG_4269.MOV",
+      "class": "back_full"
+    },
+    {
+      "file": "IMG_4353.npy",
+      "original": "IMG_4353.MOV",
+      "class": "krok"
+    },
+    {
+      "file": "IMG_4354.npy",
+      "original": "IMG_4354.MOV",
+      "class": "double_cork"
+    },
+    {
+      "file": "IMG_4356.npy",
+      "original": "IMG_4356.MOV",
+      "class": "back_full"
+    },
+    {
+      "file": "IMG_4635.npy",
+      "original": "IMG_4635.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4638.npy",
+      "original": "IMG_4638.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_4641.npy",
+      "original": "IMG_4641.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_4643.npy",
+      "original": "IMG_4643.MOV",
+      "class": "trampoline_flip"
+    },
+    {
+      "file": "IMG_4644.npy",
+      "original": "IMG_4644.MOV",
+      "class": "back_full"
+    },
+    {
+      "file": "IMG_4647.npy",
+      "original": "IMG_4647.MOV",
+      "class": "front_flip"
+    },
+    {
+      "file": "IMG_4648.npy",
+      "original": "IMG_4648.MOV",
+      "class": "trampoline_flip"
+    },
+    {
+      "file": "IMG_4650.npy",
+      "original": "IMG_4650.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4652.npy",
+      "original": "IMG_4652.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4653.npy",
+      "original": "IMG_4653.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4654.npy",
+      "original": "IMG_4654.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4655.npy",
+      "original": "IMG_4655.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4656.npy",
+      "original": "IMG_4656.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4657.npy",
+      "original": "IMG_4657.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4658.npy",
+      "original": "IMG_4658.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4659.npy",
+      "original": "IMG_4659.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4660.npy",
+      "original": "IMG_4660.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_4661.npy",
+      "original": "IMG_4661.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4662.npy",
+      "original": "IMG_4662.MOV",
+      "class": "trampoline_flip"
+    },
+    {
+      "file": "IMG_4663.npy",
+      "original": "IMG_4663.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4664.npy",
+      "original": "IMG_4664.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4665.npy",
+      "original": "IMG_4665.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_4666.npy",
+      "original": "IMG_4666.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4667.npy",
+      "original": "IMG_4667.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_4668.npy",
+      "original": "IMG_4668.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_4669.npy",
+      "original": "IMG_4669.MOV",
+      "class": "triple_full"
+    },
+    {
+      "file": "IMG_4736.npy",
+      "original": "IMG_4736.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_4738.npy",
+      "original": "IMG_4738.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_4767.npy",
+      "original": "IMG_4767.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_4953.npy",
+      "original": "IMG_4953.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_4955.npy",
+      "original": "IMG_4955.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_5035.npy",
+      "original": "IMG_5035.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_5040.npy",
+      "original": "IMG_5040.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_5041.npy",
+      "original": "IMG_5041.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_5042.npy",
+      "original": "IMG_5042.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_5044.npy",
+      "original": "IMG_5044.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_5282.npy",
+      "original": "IMG_5282.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_5403.npy",
+      "original": "IMG_5403.MOV",
+      "class": "double_cork"
+    },
+    {
+      "file": "IMG_5407.npy",
+      "original": "IMG_5407.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_5906.npy",
+      "original": "IMG_5906.MOV",
+      "class": "castaway"
+    },
+    {
+      "file": "IMG_5920.npy",
+      "original": "IMG_5920.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_6461.npy",
+      "original": "IMG_6461.MOV",
+      "class": "raiz"
+    },
+    {
+      "file": "IMG_6463.npy",
+      "original": "IMG_6463.MOV",
+      "class": "raiz"
+    },
+    {
+      "file": "IMG_6476.npy",
+      "original": "IMG_6476.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_6478.npy",
+      "original": "IMG_6478.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_6488.npy",
+      "original": "IMG_6488.MOV",
+      "class": "double_cork"
+    },
+    {
+      "file": "IMG_6490.npy",
+      "original": "IMG_6490.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_6491.npy",
+      "original": "IMG_6491.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_6492.npy",
+      "original": "IMG_6492.MOV",
+      "class": "krok"
+    },
+    {
+      "file": "IMG_6494.npy",
+      "original": "IMG_6494.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_6497.npy",
+      "original": "IMG_6497.MOV",
+      "class": "flip"
+    },
+    {
+      "file": "IMG_6584.npy",
+      "original": "IMG_6584.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_6589.npy",
+      "original": "IMG_6589.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_6615.npy",
+      "original": "IMG_6615.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_6616.npy",
+      "original": "IMG_6616.MOV",
+      "class": "other"
+    },
+    {
+      "file": "IMG_6618.npy",
+      "original": "IMG_6618.MOV",
+      "class": "double_full"
+    },
+    {
+      "file": "IMG_6619.npy",
+      "original": "IMG_6619.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_6621.npy",
+      "original": "IMG_6621.MOV",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "IMG_6983.npy",
+      "original": "IMG_6983.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_6987.npy",
+      "original": "IMG_6987.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_6990.npy",
+      "original": "IMG_6990.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_6991.npy",
+      "original": "IMG_6991.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_6992.npy",
+      "original": "IMG_6992.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_6994.npy",
+      "original": "IMG_6994.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "IMG_6995.npy",
+      "original": "IMG_6995.MOV",
+      "class": "tumbling"
+    },
+    {
+      "file": "StorySaver.net-david.andro_pk.gym-Video-1742809825900.npy",
+      "original": "StorySaver.net-david.andro_pk.gym-Video-1742809825900.mp4",
+      "class": "tumbling"
+    },
+    {
+      "file": "a4311042-af73-4588-b5e3-0fbb119d2e4f.npy",
+      "original": "a4311042-af73-4588-b5e3-0fbb119d2e4f.mp4",
+      "class": "tumbling"
+    },
+    {
+      "file": "a76b729a-7662-4832-bdab-e37cf838ff0d.npy",
+      "original": "a76b729a-7662-4832-bdab-e37cf838ff0d.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "aacd9ff7-5100-4bc2-977c-dbaeb2bb1068.npy",
+      "original": "aacd9ff7-5100-4bc2-977c-dbaeb2bb1068.mp4",
+      "class": "castaway"
+    },
+    {
+      "file": "ac54fab9-da56-4984-b2a5-7783b2c78cf9.npy",
+      "original": "ac54fab9-da56-4984-b2a5-7783b2c78cf9.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "af3dc8dc-9539-4c2d-b579-759b3543f2d5.npy",
+      "original": "af3dc8dc-9539-4c2d-b579-759b3543f2d5.mp4",
+      "class": "flip"
+    },
+    {
+      "file": "b0698516-a67a-4144-ad3c-f0eddee0fb8c.npy",
+      "original": "b0698516-a67a-4144-ad3c-f0eddee0fb8c.mp4",
+      "class": "tumbling"
+    },
+    {
+      "file": "b1588725-bc8d-41f2-ac21-524863ee7c4f.npy",
+      "original": "b1588725-bc8d-41f2-ac21-524863ee7c4f.mp4",
+      "class": "tumbling"
+    },
+    {
+      "file": "back_flip_000.npy",
+      "original": "back_flip_000.mp4",
+      "class": "back_flip"
+    },
+    {
+      "file": "bc41a80d-2f31-4a15-b909-d0cab762fe80.npy",
+      "original": "bc41a80d-2f31-4a15-b909-d0cab762fe80.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "bccfb6cb-225d-4fbb-b15c-11801d9706d9.npy",
+      "original": "bccfb6cb-225d-4fbb-b15c-11801d9706d9.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "ce72a086-3f38-4871-84e3-5c46e0522504.npy",
+      "original": "ce72a086-3f38-4871-84e3-5c46e0522504.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "cee8f196-7028-4e48-860f-2808e21000d5.npy",
+      "original": "cee8f196-7028-4e48-860f-2808e21000d5.mp4",
+      "class": "double_full"
+    },
+    {
+      "file": "copy_37DD0618-9D84-41A1-80AA-973D2293F754.npy",
+      "original": "copy_37DD0618-9D84-41A1-80AA-973D2293F754.mov",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "copy_7B1740EC-38F2-468E-B469-17734C585DBB.npy",
+      "original": "copy_7B1740EC-38F2-468E-B469-17734C585DBB.mov",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "copy_C9B1AF1B-638B-4E34-9E82-6E6519158CB4.npy",
+      "original": "copy_C9B1AF1B-638B-4E34-9E82-6E6519158CB4.mov",
+      "class": "tumbling"
+    },
+    {
+      "file": "d0fdfd0a-15b2-4ea1-8b67-50b4510a9ddb.npy",
+      "original": "d0fdfd0a-15b2-4ea1-8b67-50b4510a9ddb.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "d4030ef8-e2e0-49f0-9677-ff762f5cc38d.npy",
+      "original": "d4030ef8-e2e0-49f0-9677-ff762f5cc38d.mp4",
+      "class": "parkour_movement"
+    },
+    {
+      "file": "e275f961-6d5b-4811-aae1-fdf5a5548a31.npy",
+      "original": "e275f961-6d5b-4811-aae1-fdf5a5548a31.mp4",
+      "class": "double_cork"
+    },
+    {
+      "file": "ea119a6d-b102-49d9-a610-5df50c44c327.npy",
+      "original": "ea119a6d-b102-49d9-a610-5df50c44c327.mp4",
+      "class": "tumbling"
+    },
+    {
+      "file": "f3105324-7ff6-484f-96dc-c5109a1b5cfa.npy",
+      "original": "f3105324-7ff6-484f-96dc-c5109a1b5cfa.mp4",
+      "class": "flip"
+    },
+    {
+      "file": "f73e666e-122f-4635-acf2-c687f1b26811.npy",
+      "original": "f73e666e-122f-4635-acf2-c687f1b26811.mp4",
+      "class": "back_flip"
+    },
+    {
+      "file": "faafd007-268d-4fb5-b58b-86fd84d2ab5b.npy",
+      "original": "faafd007-268d-4fb5-b58b-86fd84d2ab5b.mp4",
+      "class": "flip"
+    },
+    {
+      "file": "k400_-I_-vcckw2Q_4_14.npy",
+      "original": "bouncing_on_trampoline/-I_-vcckw2Q_4_14.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_-KJ-21e-nzs_2_12.npy",
+      "original": "bouncing_on_trampoline/-KJ-21e-nzs_2_12.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_-nOh1X6WRfM_36_46.npy",
+      "original": "bouncing_on_trampoline/-nOh1X6WRfM_36_46.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_-Rky7GPTdk4_1_11.npy",
+      "original": "bouncing_on_trampoline/-Rky7GPTdk4_1_11.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_-w8PlhC-GyA_11_21.npy",
+      "original": "bouncing_on_trampoline/-w8PlhC-GyA_11_21.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_09R7dZ9eg0g_0_10.npy",
+      "original": "bouncing_on_trampoline/09R7dZ9eg0g_0_10.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_0c1fjT6Jc54_0_10.npy",
+      "original": "bouncing_on_trampoline/0c1fjT6Jc54_0_10.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_0hpca_nFLWI_29_39.npy",
+      "original": "bouncing_on_trampoline/0hpca_nFLWI_29_39.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_0vAYwJDvH60_13_23.npy",
+      "original": "bouncing_on_trampoline/0vAYwJDvH60_13_23.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_0Yd2aGc496E_6_16.npy",
+      "original": "bouncing_on_trampoline/0Yd2aGc496E_6_16.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_0_BBTQTktn0_34_44.npy",
+      "original": "bouncing_on_trampoline/0_BBTQTktn0_34_44.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_14E5qEtAJ0o_135_145.npy",
+      "original": "bouncing_on_trampoline/14E5qEtAJ0o_135_145.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_1al4jWs8hX4_222_232.npy",
+      "original": "bouncing_on_trampoline/1al4jWs8hX4_222_232.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_1I9ddotblIw_0_10.npy",
+      "original": "bouncing_on_trampoline/1I9ddotblIw_0_10.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_1I9HsCKi-j0_4_14.npy",
+      "original": "bouncing_on_trampoline/1I9HsCKi-j0_4_14.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_2ECQLcJoQl0_0_10.npy",
+      "original": "bouncing_on_trampoline/2ECQLcJoQl0_0_10.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_2G1U1rGtCVo_7_17.npy",
+      "original": "bouncing_on_trampoline/2G1U1rGtCVo_7_17.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_2m9NVV8fx34_21_31.npy",
+      "original": "bouncing_on_trampoline/2m9NVV8fx34_21_31.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_2PXCiFeDY4o_119_129.npy",
+      "original": "bouncing_on_trampoline/2PXCiFeDY4o_119_129.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_354Z1mT16iA_65_75.npy",
+      "original": "bouncing_on_trampoline/354Z1mT16iA_65_75.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_364JT6r4asE_318_328.npy",
+      "original": "bouncing_on_trampoline/364JT6r4asE_318_328.mp4",
+      "class": "bouncing_on_trampoline"
+    },
+    {
+      "file": "k400_-5xDkBUtWyk_102_112.npy",
+      "original": "capoeira/-5xDkBUtWyk_102_112.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-cHcQm0zNDc_58_68.npy",
+      "original": "capoeira/-cHcQm0zNDc_58_68.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-CineIdVOV0_461_471.npy",
+      "original": "capoeira/-CineIdVOV0_461_471.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-HukMpQbvJ0_0_10.npy",
+      "original": "capoeira/-HukMpQbvJ0_0_10.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-HvEH5HeTBc_11_21.npy",
+      "original": "capoeira/-HvEH5HeTBc_11_21.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-idxvdgyOPo_27_37.npy",
+      "original": "capoeira/-idxvdgyOPo_27_37.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-sDM842gLsw_284_294.npy",
+      "original": "capoeira/-sDM842gLsw_284_294.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-xccz8S0qTE_324_334.npy",
+      "original": "capoeira/-xccz8S0qTE_324_334.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-yaOMCekFug_107_117.npy",
+      "original": "capoeira/-yaOMCekFug_107_117.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_02haHiGAEWA_164_174.npy",
+      "original": "capoeira/02haHiGAEWA_164_174.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_03VkL6u0mw4_7_17.npy",
+      "original": "capoeira/03VkL6u0mw4_7_17.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_078GCsqoETo_13_23.npy",
+      "original": "capoeira/078GCsqoETo_13_23.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_07x5GdbDpsU_0_10.npy",
+      "original": "capoeira/07x5GdbDpsU_0_10.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_08d7K499qsY_239_249.npy",
+      "original": "capoeira/08d7K499qsY_239_249.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0f5t69o7dE4_13_23.npy",
+      "original": "capoeira/0f5t69o7dE4_13_23.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0gtH41PqUJs_74_84.npy",
+      "original": "capoeira/0gtH41PqUJs_74_84.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0i1B1sRQkj8_227_237.npy",
+      "original": "capoeira/0i1B1sRQkj8_227_237.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0i1WKiD0RG8_2_12.npy",
+      "original": "capoeira/0i1WKiD0RG8_2_12.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0LAj9SQt8Rk_84_94.npy",
+      "original": "capoeira/0LAj9SQt8Rk_84_94.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0LATFxsbguE_3_13.npy",
+      "original": "capoeira/0LATFxsbguE_3_13.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0rjz79WV_Ko_0_10.npy",
+      "original": "capoeira/0rjz79WV_Ko_0_10.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0s7WgsH62E8_10_20.npy",
+      "original": "capoeira/0s7WgsH62E8_10_20.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0sDBF0E1M-U_74_84.npy",
+      "original": "capoeira/0sDBF0E1M-U_74_84.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0vYHQv4fQhE_1237_1247.npy",
+      "original": "capoeira/0vYHQv4fQhE_1237_1247.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_0X67oew51Nw_13_23.npy",
+      "original": "capoeira/0X67oew51Nw_13_23.mp4",
+      "class": "capoeira"
+    },
+    {
+      "file": "k400_-2IvRufK7uc_19_29.npy",
+      "original": "cartwheeling/-2IvRufK7uc_19_29.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_-cHcdrL3upI_1_11.npy",
+      "original": "cartwheeling/-cHcdrL3upI_1_11.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_-kNuIQKh_Aw_28_38.npy",
+      "original": "cartwheeling/-kNuIQKh_Aw_28_38.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_-wX6O9fkmm0_1_11.npy",
+      "original": "cartwheeling/-wX6O9fkmm0_1_11.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_02KL2MkN2X8_0_10.npy",
+      "original": "cartwheeling/02KL2MkN2X8_0_10.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_03XaKfcbTlA_1_11.npy",
+      "original": "cartwheeling/03XaKfcbTlA_1_11.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_08KSXZ6uTzU_2_12.npy",
+      "original": "cartwheeling/08KSXZ6uTzU_2_12.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_0ATL5vd5Oks_0_10.npy",
+      "original": "cartwheeling/0ATL5vd5Oks_0_10.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_0DH97RkBp3M_298_308.npy",
+      "original": "cartwheeling/0DH97RkBp3M_298_308.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_0m1klw4C9XA_5_15.npy",
+      "original": "cartwheeling/0m1klw4C9XA_5_15.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_0PStjrGD_-A_1_11.npy",
+      "original": "cartwheeling/0PStjrGD_-A_1_11.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_14RZeKXUlAs_0_10.npy",
+      "original": "cartwheeling/14RZeKXUlAs_0_10.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_16xyTOyqzS4_1_11.npy",
+      "original": "cartwheeling/16xyTOyqzS4_1_11.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_17EYIb8cuAY_4_14.npy",
+      "original": "cartwheeling/17EYIb8cuAY_4_14.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_19TE_hjj92Q_0_10.npy",
+      "original": "cartwheeling/19TE_hjj92Q_0_10.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_1cEDrNvnecg_6_16.npy",
+      "original": "cartwheeling/1cEDrNvnecg_6_16.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_1nyiuXtT7kk_4_14.npy",
+      "original": "cartwheeling/1nyiuXtT7kk_4_14.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_1PTYcRRZGrg_80_90.npy",
+      "original": "cartwheeling/1PTYcRRZGrg_80_90.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_1RufCxxo3s8_1_11.npy",
+      "original": "cartwheeling/1RufCxxo3s8_1_11.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_2-_0lzmVaqs_0_10.npy",
+      "original": "cartwheeling/2-_0lzmVaqs_0_10.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_22fCjQlAuls_126_136.npy",
+      "original": "cartwheeling/22fCjQlAuls_126_136.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_2aVyT2iDZF0_1_11.npy",
+      "original": "cartwheeling/2aVyT2iDZF0_1_11.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_2gzadLLP7hU_3_13.npy",
+      "original": "cartwheeling/2gzadLLP7hU_3_13.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_2zvSBSQ6XDQ_4_14.npy",
+      "original": "cartwheeling/2zvSBSQ6XDQ_4_14.mp4",
+      "class": "cartwheeling"
+    },
+    {
+      "file": "k400_-7vg39JRcOI_0_10.npy",
+      "original": "gymnastics_tumbling/-7vg39JRcOI_0_10.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-hVnrChn_lo_0_10.npy",
+      "original": "gymnastics_tumbling/-hVnrChn_lo_0_10.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-ii0SZZLqVs_20_30.npy",
+      "original": "gymnastics_tumbling/-ii0SZZLqVs_20_30.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-juc59KzjSs_1_11.npy",
+      "original": "gymnastics_tumbling/-juc59KzjSs_1_11.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-k4lBf6A6v8_2_12.npy",
+      "original": "gymnastics_tumbling/-k4lBf6A6v8_2_12.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-NFoRz3ikVA_9_19.npy",
+      "original": "gymnastics_tumbling/-NFoRz3ikVA_9_19.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-NqZhPTz2mw_37_47.npy",
+      "original": "gymnastics_tumbling/-NqZhPTz2mw_37_47.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-oJKzQOSoyI_22_32.npy",
+      "original": "gymnastics_tumbling/-oJKzQOSoyI_22_32.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-qemAFCmsGs_0_10.npy",
+      "original": "gymnastics_tumbling/-qemAFCmsGs_0_10.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-W0na7a56Os_4_14.npy",
+      "original": "gymnastics_tumbling/-W0na7a56Os_4_14.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-xtAJQQ5UiI_155_165.npy",
+      "original": "gymnastics_tumbling/-xtAJQQ5UiI_155_165.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0083lvylGBs_165_175.npy",
+      "original": "gymnastics_tumbling/0083lvylGBs_165_175.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_03GrMS9ZC7M_73_83.npy",
+      "original": "gymnastics_tumbling/03GrMS9ZC7M_73_83.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_05_Xyv48uXE_2_12.npy",
+      "original": "gymnastics_tumbling/05_Xyv48uXE_2_12.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0aCz8M2qMMQ_0_10.npy",
+      "original": "gymnastics_tumbling/0aCz8M2qMMQ_0_10.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0BPu1XNLCLI_221_231.npy",
+      "original": "gymnastics_tumbling/0BPu1XNLCLI_221_231.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0dqLGo2mX0k_0_10.npy",
+      "original": "gymnastics_tumbling/0dqLGo2mX0k_0_10.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0ETKAA_TCr0_8_18.npy",
+      "original": "gymnastics_tumbling/0ETKAA_TCr0_8_18.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0f1Q1JW5IHU_13_23.npy",
+      "original": "gymnastics_tumbling/0f1Q1JW5IHU_13_23.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0lyO6baOdo0_36_46.npy",
+      "original": "gymnastics_tumbling/0lyO6baOdo0_36_46.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0P30A-kxQGo_1_11.npy",
+      "original": "gymnastics_tumbling/0P30A-kxQGo_1_11.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0qOJYBSGdB4_181_191.npy",
+      "original": "gymnastics_tumbling/0qOJYBSGdB4_181_191.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0uVlzvZkGEU_2_12.npy",
+      "original": "gymnastics_tumbling/0uVlzvZkGEU_2_12.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_0XR3XLnjUh0_4_14.npy",
+      "original": "gymnastics_tumbling/0XR3XLnjUh0_4_14.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_17iNFBWzqOg_12_22.npy",
+      "original": "gymnastics_tumbling/17iNFBWzqOg_12_22.mp4",
+      "class": "gymnastics_tumbling"
+    },
+    {
+      "file": "k400_-9dPwyABzFQ_156_166.npy",
+      "original": "parkour/-9dPwyABzFQ_156_166.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_-JQvySyrkt4_12_22.npy",
+      "original": "parkour/-JQvySyrkt4_12_22.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_-OLJniOW9GA_15_25.npy",
+      "original": "parkour/-OLJniOW9GA_15_25.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_07zkHLVSmGU_138_148.npy",
+      "original": "parkour/07zkHLVSmGU_138_148.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_0KRBoxyYp80_32_42.npy",
+      "original": "parkour/0KRBoxyYp80_32_42.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_0t7dUcSKsMw_66_76.npy",
+      "original": "parkour/0t7dUcSKsMw_66_76.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_113alpZldjE_13_23.npy",
+      "original": "parkour/113alpZldjE_13_23.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_1ZPU2ysFfOQ_0_10.npy",
+      "original": "parkour/1ZPU2ysFfOQ_0_10.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_2EI7nlBAZTU_3_13.npy",
+      "original": "parkour/2EI7nlBAZTU_3_13.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_2qfD5trYBNA_44_54.npy",
+      "original": "parkour/2qfD5trYBNA_44_54.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_30wEtnEKkqk_99_109.npy",
+      "original": "parkour/30wEtnEKkqk_99_109.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_3BrKOXk_f8g_2_12.npy",
+      "original": "parkour/3BrKOXk_f8g_2_12.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_3cwbQmQ_plE_101_111.npy",
+      "original": "parkour/3cwbQmQ_plE_101_111.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_3KulMKWfFXo_50_60.npy",
+      "original": "parkour/3KulMKWfFXo_50_60.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_3kUWKs3tXbs_18_28.npy",
+      "original": "parkour/3kUWKs3tXbs_18_28.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_3q1Ga1HT_sQ_4_14.npy",
+      "original": "parkour/3q1Ga1HT_sQ_4_14.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_48HU9GvJNFo_5_15.npy",
+      "original": "parkour/48HU9GvJNFo_5_15.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_53mTRflwO9Y_34_44.npy",
+      "original": "parkour/53mTRflwO9Y_34_44.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_5jzLalRstQE_56_66.npy",
+      "original": "parkour/5jzLalRstQE_56_66.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_5MIC_ZaBAAg_462_472.npy",
+      "original": "parkour/5MIC_ZaBAAg_462_472.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_5OW9YopRXf8_18_28.npy",
+      "original": "parkour/5OW9YopRXf8_18_28.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_5unu_IlrT7E_77_87.npy",
+      "original": "parkour/5unu_IlrT7E_77_87.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_5wcgiFnLMdc_1_11.npy",
+      "original": "parkour/5wcgiFnLMdc_1_11.mp4",
+      "class": "parkour"
+    },
+    {
+      "file": "k400_-00fzD4K6aw_7_17.npy",
+      "original": "somersaulting/-00fzD4K6aw_7_17.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-aUeapRZyAQ_3_13.npy",
+      "original": "somersaulting/-aUeapRZyAQ_3_13.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-emK9kUP5DQ_44_54.npy",
+      "original": "somersaulting/-emK9kUP5DQ_44_54.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-eqU7IfCqTY_78_88.npy",
+      "original": "somersaulting/-eqU7IfCqTY_78_88.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-fX441F749s_9_19.npy",
+      "original": "somersaulting/-fX441F749s_9_19.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-GLZZFXAjFI_13_23.npy",
+      "original": "somersaulting/-GLZZFXAjFI_13_23.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-ljBnVgOYyE_7_17.npy",
+      "original": "somersaulting/-ljBnVgOYyE_7_17.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-m7aRR79BdA_0_10.npy",
+      "original": "somersaulting/-m7aRR79BdA_0_10.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-O2RdJGmEeM_42_52.npy",
+      "original": "somersaulting/-O2RdJGmEeM_42_52.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-PIssR271kw_2_12.npy",
+      "original": "somersaulting/-PIssR271kw_2_12.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-qc8qz_5idM_191_201.npy",
+      "original": "somersaulting/-qc8qz_5idM_191_201.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-REB2eH3ssM_142_152.npy",
+      "original": "somersaulting/-REB2eH3ssM_142_152.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-sYxPsHXThs_0_10.npy",
+      "original": "somersaulting/-sYxPsHXThs_0_10.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-u7lMPwWSHI_143_153.npy",
+      "original": "somersaulting/-u7lMPwWSHI_143_153.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_-VdI4J0KXbg_52_62.npy",
+      "original": "somersaulting/-VdI4J0KXbg_52_62.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_04DC9uX15tA_3_13.npy",
+      "original": "somersaulting/04DC9uX15tA_3_13.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_06ypJ8nriiQ_38_48.npy",
+      "original": "somersaulting/06ypJ8nriiQ_38_48.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_08ROL1VcO4A_3_13.npy",
+      "original": "somersaulting/08ROL1VcO4A_3_13.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_0Gw5t9AH50Y_30_40.npy",
+      "original": "somersaulting/0Gw5t9AH50Y_30_40.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_0HhadJDjIrg_4_14.npy",
+      "original": "somersaulting/0HhadJDjIrg_4_14.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_0oI8cNxRrdE_22_32.npy",
+      "original": "somersaulting/0oI8cNxRrdE_22_32.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_0ovgum9F9-Y_2_12.npy",
+      "original": "somersaulting/0ovgum9F9-Y_2_12.mp4",
+      "class": "somersaulting"
+    },
+    {
+      "file": "k400_0WiOY3ke0QQ_67_77.npy",
+      "original": "somersaulting/0WiOY3ke0QQ_67_77.mp4",
+      "class": "somersaulting"
+    }
+  ],
+  "class_counts": {
+    "front_flip": 3,
+    "twist_cork": 5,
+    "side_flip": 5,
+    "back_flip": 10,
+    "raiz": 5,
+    "double_cork": 9,
+    "double_full": 15,
+    "other": 13,
+    "tak_full": 3,
+    "parkour_movement": 28,
+    "krok": 4,
+    "tumbling": 22,
+    "flip": 17,
+    "vault": 7,
+    "castaway": 9,
+    "triple_full": 10,
+    "back_full": 4,
+    "trampoline_flip": 3,
+    "bouncing_on_trampoline": 21,
+    "capoeira": 25,
+    "cartwheeling": 24,
+    "gymnastics_tumbling": 25,
+    "parkour": 23,
+    "somersaulting": 23
+  }
+}

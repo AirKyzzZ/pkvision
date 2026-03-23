@@ -1,0 +1,1970 @@
+{
+  "accuracy": 1.0,
+  "total": 89,
+  "correct": 89,
+  "per_class": {
+    "gainer_double_full": {
+      "correct": 2,
+      "total": 2
+    },
+    "back_flip": {
+      "correct": 10,
+      "total": 10
+    },
+    "raiz": {
+      "correct": 5,
+      "total": 5
+    },
+    "double_cork": {
+      "correct": 9,
+      "total": 9
+    },
+    "double_full": {
+      "correct": 15,
+      "total": 15
+    },
+    "tak_full": {
+      "correct": 3,
+      "total": 3
+    },
+    "tak_double_full": {
+      "correct": 1,
+      "total": 1
+    },
+    "krok": {
+      "correct": 4,
+      "total": 4
+    },
+    "kong_gainer": {
+      "correct": 1,
+      "total": 1
+    },
+    "castaway": {
+      "correct": 9,
+      "total": 9
+    },
+    "cody": {
+      "correct": 1,
+      "total": 1
+    },
+    "double_pike": {
+      "correct": 1,
+      "total": 1
+    },
+    "front_flip": {
+      "correct": 2,
+      "total": 2
+    },
+    "side_flip": {
+      "correct": 3,
+      "total": 3
+    },
+    "cork": {
+      "correct": 1,
+      "total": 1
+    },
+    "triple_full": {
+      "correct": 10,
+      "total": 10
+    },
+    "back_full": {
+      "correct": 4,
+      "total": 4
+    },
+    "double_back": {
+      "correct": 2,
+      "total": 2
+    },
+    "double_side": {
+      "correct": 1,
+      "total": 1
+    },
+    "side_full": {
+      "correct": 1,
+      "total": 1
+    },
+    "triple_cork": {
+      "correct": 1,
+      "total": 1
+    },
+    "cork_in": {
+      "correct": 1,
+      "total": 1
+    },
+    "wall_side": {
+      "correct": 2,
+      "total": 2
+    }
+  },
+  "results": [
+    {
+      "file": "08933e14-99e9-4637-849b-780844f07114.mp4",
+      "true": "gainer_double_full",
+      "pred": "gainer_double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "gainer_double_full",
+          1.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ],
+        [
+          "triple_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "100_0108.AVI",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "krok",
+          0.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "100_0109.AVI",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "back_full",
+          0.0
+        ],
+        [
+          "double_pike",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "3ee7c7c6-96eb-4c3f-9ad7-481dddda5cf7.mp4",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "krok",
+          0.0
+        ],
+        [
+          "side_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "46a023e7-68f8-42a3-b1b0-18e9a27e1543.mp4",
+      "true": "raiz",
+      "pred": "raiz",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "raiz",
+          1.0
+        ],
+        [
+          "castaway",
+          0.0
+        ],
+        [
+          "krok",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "47a355f5-95e2-4939-9b01-895fac2824d3.mp4",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "castaway",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "4887a8c5-5014-4ebe-9252-16b716c2fdc5.mp4",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "castaway",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "614a09ed-5f08-4359-b62a-bfcb20cabc4a.mp4",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "double_back",
+          0.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "708a844e-72f6-43ef-b541-b17930a59286.mp4",
+      "true": "tak_full",
+      "pred": "tak_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "tak_full",
+          1.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ],
+        [
+          "double_back",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "82a6e1b3-2224-4905-98b2-7dbacbe4c123.mp4",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "castaway",
+          0.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "928b3442-65fd-4cf9-9284-9a77aa6477b4.mov",
+      "true": "tak_double_full",
+      "pred": "tak_double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "tak_double_full",
+          1.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ],
+        [
+          "side_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "92a1257e-5464-4e4d-bc78-03f09900a801.mp4",
+      "true": "krok",
+      "pred": "krok",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "krok",
+          1.0
+        ],
+        [
+          "double_side",
+          0.0
+        ],
+        [
+          "cody",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0158.mov",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "side_flip",
+          0.0
+        ],
+        [
+          "double_back",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0191.MOV",
+      "true": "kong_gainer",
+      "pred": "kong_gainer",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "kong_gainer",
+          1.0
+        ],
+        [
+          "side_flip",
+          0.0
+        ],
+        [
+          "tak_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0294.MOV",
+      "true": "raiz",
+      "pred": "raiz",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "raiz",
+          1.0
+        ],
+        [
+          "krok",
+          0.0
+        ],
+        [
+          "cork_in",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0301.MOV",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "double_side",
+          0.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0304.MOV",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "double_pike",
+          0.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0305.MOV",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "double_pike",
+          0.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0306.MOV",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ],
+        [
+          "double_pike",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0307.MOV",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "wall_side",
+          0.0
+        ],
+        [
+          "double_pike",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0630.MOV",
+      "true": "cody",
+      "pred": "cody",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "cody",
+          1.0
+        ],
+        [
+          "castaway",
+          0.0
+        ],
+        [
+          "krok",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0725.MOV",
+      "true": "raiz",
+      "pred": "raiz",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "raiz",
+          1.0
+        ],
+        [
+          "castaway",
+          0.0
+        ],
+        [
+          "triple_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0814.MOV",
+      "true": "double_pike",
+      "pred": "double_pike",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_pike",
+          1.0
+        ],
+        [
+          "triple_cork",
+          0.0
+        ],
+        [
+          "cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_0816.MOV",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "castaway",
+          0.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_1372.mp4",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "cody",
+          0.0
+        ],
+        [
+          "double_side",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2063.MOV",
+      "true": "front_flip",
+      "pred": "front_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "front_flip",
+          1.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ],
+        [
+          "cork_in",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2065.MOV",
+      "true": "side_flip",
+      "pred": "side_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "side_flip",
+          1.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2066.MOV",
+      "true": "side_flip",
+      "pred": "side_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "side_flip",
+          1.0
+        ],
+        [
+          "wall_side",
+          0.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2068.MOV",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "back_full",
+          0.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2069.MOV",
+      "true": "side_flip",
+      "pred": "side_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "side_flip",
+          1.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ],
+        [
+          "double_back",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2071.MOV",
+      "true": "cork",
+      "pred": "cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "cork",
+          1.0
+        ],
+        [
+          "double_pike",
+          0.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2740.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ],
+        [
+          "double_side",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2743.MOV",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_2876.MOV",
+      "true": "back_full",
+      "pred": "back_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_full",
+          1.0
+        ],
+        [
+          "tak_full",
+          0.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_3466.MOV",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "krok",
+          0.0
+        ],
+        [
+          "side_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_3468.MOV",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "krok",
+          0.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_3680.mov",
+      "true": "tak_full",
+      "pred": "tak_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "tak_full",
+          1.0
+        ],
+        [
+          "double_side",
+          0.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_3812.MOV",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "krok",
+          0.0
+        ],
+        [
+          "back_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_3813.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ],
+        [
+          "double_back",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_3816.MOV",
+      "true": "tak_full",
+      "pred": "tak_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "tak_full",
+          1.0
+        ],
+        [
+          "cork",
+          0.0
+        ],
+        [
+          "double_back",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4013.MOV",
+      "true": "double_back",
+      "pred": "double_back",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_back",
+          1.0
+        ],
+        [
+          "tak_full",
+          0.0
+        ],
+        [
+          "cody",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4125.MOV",
+      "true": "krok",
+      "pred": "krok",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "krok",
+          1.0
+        ],
+        [
+          "double_side",
+          0.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4219.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "double_back",
+          0.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4220.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "double_back",
+          0.0
+        ],
+        [
+          "cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4222.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "double_back",
+          0.0
+        ],
+        [
+          "side_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4237.MOV",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "double_full",
+          0.0
+        ],
+        [
+          "double_pike",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4238.MOV",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4269.MOV",
+      "true": "back_full",
+      "pred": "back_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_full",
+          1.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ],
+        [
+          "tak_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4353.MOV",
+      "true": "krok",
+      "pred": "krok",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "krok",
+          1.0
+        ],
+        [
+          "double_side",
+          0.0
+        ],
+        [
+          "cody",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4354.MOV",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "castaway",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4356.MOV",
+      "true": "back_full",
+      "pred": "back_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_full",
+          1.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4635.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ],
+        [
+          "double_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4640.MOV",
+      "true": "double_side",
+      "pred": "double_side",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_side",
+          1.0
+        ],
+        [
+          "back_full",
+          0.0
+        ],
+        [
+          "tak_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4644.MOV",
+      "true": "back_full",
+      "pred": "back_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_full",
+          1.0
+        ],
+        [
+          "back_flip",
+          0.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4647.MOV",
+      "true": "front_flip",
+      "pred": "front_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "front_flip",
+          1.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ],
+        [
+          "side_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4649.MOV",
+      "true": "side_full",
+      "pred": "side_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "side_full",
+          1.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4650.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4652.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4653.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "double_back",
+          0.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4654.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "double_full",
+          0.0
+        ],
+        [
+          "side_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4655.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "double_back",
+          0.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4656.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ],
+        [
+          "cody",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4657.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ],
+        [
+          "double_side",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4658.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "cody",
+          0.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4659.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "cody",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4661.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "double_full",
+          0.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4663.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "cody",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4664.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "double_full",
+          0.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4665.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4666.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4669.MOV",
+      "true": "triple_full",
+      "pred": "triple_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_full",
+          1.0
+        ],
+        [
+          "double_cork",
+          0.0
+        ],
+        [
+          "double_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_4954.MOV",
+      "true": "gainer_double_full",
+      "pred": "gainer_double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "gainer_double_full",
+          1.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ],
+        [
+          "triple_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_5281.MOV",
+      "true": "triple_cork",
+      "pred": "triple_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "triple_cork",
+          1.0
+        ],
+        [
+          "double_pike",
+          0.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_5403.MOV",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "castaway",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_5906.MOV",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "wall_side",
+          0.0
+        ],
+        [
+          "raiz",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_6461.MOV",
+      "true": "raiz",
+      "pred": "raiz",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "raiz",
+          1.0
+        ],
+        [
+          "krok",
+          0.0
+        ],
+        [
+          "side_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_6463.MOV",
+      "true": "raiz",
+      "pred": "raiz",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "raiz",
+          1.0
+        ],
+        [
+          "castaway",
+          0.0
+        ],
+        [
+          "triple_cork",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_6488.MOV",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "castaway",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_6492.MOV",
+      "true": "krok",
+      "pred": "krok",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "krok",
+          1.0
+        ],
+        [
+          "cody",
+          0.0
+        ],
+        [
+          "double_side",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_6618.MOV",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "IMG_6988.MOV",
+      "true": "cork_in",
+      "pred": "cork_in",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "cork_in",
+          1.0
+        ],
+        [
+          "front_flip",
+          0.0
+        ],
+        [
+          "side_full",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "a9bf2ffa-2fd6-49ae-9fdf-20402f7c449d.mp4",
+      "true": "wall_side",
+      "pred": "wall_side",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "wall_side",
+          1.0
+        ],
+        [
+          "castaway",
+          0.0
+        ],
+        [
+          "side_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "aacd9ff7-5100-4bc2-977c-dbaeb2bb1068.mp4",
+      "true": "castaway",
+      "pred": "castaway",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "castaway",
+          1.0
+        ],
+        [
+          "cody",
+          0.0
+        ],
+        [
+          "kong_gainer",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "back_flip_000.mp4",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "gainer_double_full",
+          0.0
+        ],
+        [
+          "wall_side",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "cee8f196-7028-4e48-860f-2808e21000d5.mp4",
+      "true": "double_full",
+      "pred": "double_full",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_full",
+          1.0
+        ],
+        [
+          "cork",
+          0.0
+        ],
+        [
+          "raiz",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "e275f961-6d5b-4811-aae1-fdf5a5548a31.mp4",
+      "true": "double_cork",
+      "pred": "double_cork",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_cork",
+          1.0
+        ],
+        [
+          "triple_full",
+          0.0
+        ],
+        [
+          "castaway",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "f73e666e-122f-4635-acf2-c687f1b26811.mp4",
+      "true": "back_flip",
+      "pred": "back_flip",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "back_flip",
+          1.0
+        ],
+        [
+          "krok",
+          0.0
+        ],
+        [
+          "side_flip",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "f92cd44f-47e8-4b2e-8605-e8522b75aa97.mp4",
+      "true": "wall_side",
+      "pred": "wall_side",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "wall_side",
+          1.0
+        ],
+        [
+          "side_flip",
+          0.0
+        ],
+        [
+          "castaway",
+          0.0
+        ]
+      ]
+    },
+    {
+      "file": "tikmate.app_7232728644215377178_hd.mp4",
+      "true": "double_back",
+      "pred": "double_back",
+      "conf": 1.0,
+      "ok": true,
+      "top3": [
+        [
+          "double_back",
+          1.0
+        ],
+        [
+          "tak_full",
+          0.0
+        ],
+        [
+          "side_full",
+          0.0
+        ]
+      ]
+    }
+  ]
+}
