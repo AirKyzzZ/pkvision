@@ -11,6 +11,9 @@
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
   <img src="https://img.shields.io/badge/Python-3.11%2B-blue.svg" alt="Python 3.11+">
   <img src="https://img.shields.io/badge/Contributions-Welcome-orange.svg" alt="Contributions Welcome">
+  <a href="https://colab.research.google.com/github/AirKyzzZ/pkvision/blob/main/notebooks/train_colab.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+  </a>
 </p>
 
 ---
@@ -33,6 +36,9 @@
   - [How to Add a Trick](#how-to-add-a-trick)
   - [API Endpoints](#api-endpoints)
 - [Training the Model](#training-the-model)
+  - [Quick Start](#quick-start-recommended)
+  - [Train on Google Colab](#train-on-google-colab-recommended)
+  - [Training Approaches](#training-approaches)
 - [Context: Parkour and the Olympics](#context-parkour-and-the-olympics)
 - [Contributing](#contributing)
 - [References](#references)
@@ -475,6 +481,94 @@ A web-based tool for fast clip labeling at `http://localhost:8501`:
 | Pre-trained only | 0 clips | Coarse (flip vs vault vs parkour) | Quick demo |
 | Fine-tuned head | 50-200 clips | Good (back flip vs front flip) | Standard training |
 | Full fine-tune | 500+ clips | Best (double cork vs b-twist) | Production model |
+
+### Train on Google Colab (Recommended)
+
+Training on GPU is 50-100x faster than CPU. Use Google Colab for free GPU access:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AirKyzzZ/pkvision/blob/main/notebooks/train_colab.ipynb)
+
+**Step-by-step:**
+
+**1. Prepare locally (one-time)**
+
+Run these commands on your machine to prepare the training data:
+
+```bash
+cd pkvision
+
+# Auto-label your clips with the pre-trained model
+python scripts/auto_label.py
+
+# (Optional) Review labels in the web UI
+python scripts/labeler_ui.py
+
+# Prepare training data
+python scripts/prepare_training.py
+
+# Package for upload
+zip -r training_data.zip data/training/
+```
+
+**2. Upload to Google Drive**
+
+Drag `training_data.zip` into your Google Drive (drive.google.com). This avoids slow browser uploads in Colab.
+
+**3. Open the notebook**
+
+Click the "Open in Colab" badge above, or go to [colab.research.google.com](https://colab.research.google.com) > File > Open notebook > GitHub > paste `AirKyzzZ/pkvision` > select `notebooks/train_colab.ipynb`.
+
+**4. Set GPU runtime**
+
+In Colab: Runtime > Change runtime type > select **T4 GPU** (free) or **A100** (Pro).
+
+**5. Run all cells**
+
+The notebook will:
+- Clone the PkVision repo
+- Prompt you to upload `training_data.zip` (or mount Google Drive)
+- Load the pre-trained VideoMAE model
+- Fine-tune the classifier head on your parkour data
+- Show training curves (loss + accuracy)
+- Let you test on a sample video
+
+Training takes ~30 seconds on A100, ~2 minutes on T4.
+
+**6. Download the trained model**
+
+The last cell downloads `pkvision_videomae.pt`. Save it to your local machine:
+
+```bash
+# Move the downloaded model into place
+mv ~/Downloads/pkvision_videomae.pt data/models/pkvision_videomae.pt
+```
+
+**7. Test locally**
+
+```bash
+python scripts/test_model.py --input path/to/any_parkour_video.mp4
+```
+
+You should see output like:
+```
+  RESULTS:
+  ---------------------------------------------
+  1. flip                       72.3% ###################### << TOP
+  2. tumbling                   15.1% ####
+  3. twist_cork                  5.2% #
+  ...
+  ---------------------------------------------
+
+  DETECTED: FLIP (72%)
+```
+
+**8. Iterate**
+
+To improve accuracy:
+- Label more clips with specific trick names in the labeler UI
+- Re-run `prepare_training.py` to update the dataset
+- Re-upload and retrain on Colab
+- Each iteration gets more accurate as you add data
 
 ### Advanced: ST-GCN Skeleton Training
 
