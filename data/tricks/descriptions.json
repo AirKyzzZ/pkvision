@@ -1,0 +1,99 @@
+{
+  "_description": "Natural language descriptions of parkour tricks for CLIP-based auto-labeling. Each trick has multiple descriptions to improve matching accuracy. Write descriptions as if explaining to someone who has never seen the trick.",
+
+  "back_flip": [
+    "a person jumping and rotating backward in the air, landing on their feet",
+    "backward somersault with knees tucked to chest during rotation",
+    "standing or running backflip, one complete backward rotation"
+  ],
+  "front_flip": [
+    "a person jumping and rotating forward in the air, landing on their feet",
+    "forward somersault with body tucked during rotation",
+    "a front flip with forward rotation, one complete somersault forward"
+  ],
+  "side_flip": [
+    "a person flipping sideways through the air, lateral rotation",
+    "sideways somersault with body rotating along the lateral axis",
+    "a side flip or side somersault, body rotating sideways"
+  ],
+  "double_full": [
+    "a person doing a backflip with two complete twists along the body axis",
+    "backward somersault with a double twist, the body spins twice while flipping",
+    "backflip with two full twists, rotating backward and spinning simultaneously"
+  ],
+  "triple_full": [
+    "a person doing a backflip with three complete twists along the body axis",
+    "backward somersault with a triple twist, extremely fast spinning during the flip",
+    "backflip with three full twists, advanced acrobatic trick with rapid rotation"
+  ],
+  "back_full": [
+    "a person doing a backflip with one complete twist along the body axis",
+    "backward somersault with a single full twist, body spins once while flipping backward",
+    "a back full twist, one rotation backward with one complete body twist"
+  ],
+  "double_cork": [
+    "a person performing two off-axis corkscrew rotations in the air",
+    "double corkscrew flip, body rotates in a tilted spiral pattern twice",
+    "two cork rotations combining flip and twist in an off-axis pattern"
+  ],
+  "castaway": [
+    "a person doing a raiz or aerial followed by a backward flip in one sequence",
+    "a castaway trick combining a side aerial into a back rotation",
+    "an acrobatic combination starting with a side rotation into a back flip"
+  ],
+  "raiz": [
+    "a person performing a no-handed cartwheel that dips backward, an inverted aerial kick",
+    "a raiz or slant gainer, the body goes sideways and backward with legs kicking overhead",
+    "an aerial cartwheel that leans backward with a leg whipping over"
+  ],
+  "krok": [
+    "a person performing a swing through aerial with legs splitting in the air",
+    "a krok trick with the body horizontal and legs extended in a split position mid-air",
+    "an acrobatic swing-through with horizontal body position and extended legs"
+  ],
+  "cork": [
+    "a person doing a single off-axis corkscrew rotation in the air",
+    "one corkscrew rotation combining a flip with a twist in an off-axis spiral",
+    "a cork or corkscrew, the body rotates in a tilted spinning pattern"
+  ],
+  "b_twist": [
+    "a person performing a horizontal spinning rotation with the body nearly parallel to the ground",
+    "a butterfly twist with the body flat and spinning horizontally in the air",
+    "b-twist or butterfly twist, horizontal rotation with arms and legs extended"
+  ],
+  "tak_full": [
+    "a person doing a takeoff into a full twisting backflip from one leg",
+    "a cheat setup into a full twist backflip, initiated from a turning takeoff",
+    "a tak full combining a cheat takeoff with a back full twist"
+  ],
+  "gainer": [
+    "a person doing a backflip while moving forward, often from a ledge or platform",
+    "a gainer backflip where forward momentum carries the body while rotating backward",
+    "backward flip performed while traveling forward, typically from an elevated surface"
+  ],
+  "webster": [
+    "a person doing a front flip from one leg standing on an elevated edge",
+    "a webster front flip initiated by tipping forward off a ledge with one leg",
+    "single leg front flip from the edge of a platform or wall"
+  ],
+  "kong_vault": [
+    "a person diving forward over an obstacle, pushing off with both hands, legs passing through arms",
+    "a kong vault or monkey vault over a wall or railing with a forward diving motion",
+    "hands placed on obstacle, body dives over with legs passing between the arms"
+  ],
+  "speed_vault": [
+    "a person placing one hand on an obstacle and vaulting over sideways at speed",
+    "a fast sideways vault over a low wall with one hand placement while running",
+    "speed vault with one hand on the obstacle, body passes sideways at running speed"
+  ],
+  "precision_jump": [
+    "a person jumping and landing precisely on a small target like a rail or ledge",
+    "a precision jump in parkour, landing exactly on a narrow surface with both feet",
+    "a standing or running jump to land precisely on a specific spot"
+  ],
+  "wall_flip": [
+    "a person running at a wall, planting feet on the wall, then flipping backward off it",
+    "a wall flip where the athlete runs up the wall and backflips off",
+    "wall-assisted backflip, feet kick off the wall to gain rotation"
+  ]
+}
