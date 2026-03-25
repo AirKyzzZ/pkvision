@@ -1,0 +1,7350 @@
+[
+  {
+    "name": "Shoulder Roll",
+    "alias": "Parkour Roll"
+  },
+  {
+    "name": "Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "540 Dive Roll",
+    "alias": "One and a half twisting Dive Roll."
+  },
+  {
+    "name": "720 Dive Roll",
+    "alias": "Double Twisting Dive Roll"
+  },
+  {
+    "name": "Gainer Arabian Inward Down Monkey Half",
+    "alias": null
+  },
+  {
+    "name": "Wall Back Spin",
+    "alias": null
+  },
+  {
+    "name": "Back Spin",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Roll Bomb",
+    "alias": "Morph Bomb"
+  },
+  {
+    "name": "540 Dive Roll Bomb",
+    "alias": "540 Morph Bomb"
+  },
+  {
+    "name": "Shoulder Vault",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Roll Bomb",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Pistol Side-In Pistol Side-Out",
+    "alias": "Bar Gainer Pistol Side-In Pistol Side-Out, Swing Gainer Pistol Side-In Pistol Side-Out"
+  },
+  {
+    "name": "270 Dive Side Sumi",
+    "alias": "Sloppy Joe"
+  },
+  {
+    "name": "360 Dive Handstand",
+    "alias": "Vortex Handstand"
+  },
+  {
+    "name": "Monkey Vault",
+    "alias": null
+  },
+  {
+    "name": "Reverse Kong",
+    "alias": "Push Kong, Push Vault, Reverse, Cat Pass, Reverse King Kong"
+  },
+  {
+    "name": "Dive Kong",
+    "alias": "Dive Cat Pass"
+  },
+  {
+    "name": "One-Hand Double Kong",
+    "alias": "One-Hand Double Cat Pass"
+  },
+  {
+    "name": "Kong Dive Roll",
+    "alias": "Cat Pass Dive Roll"
+  },
+  {
+    "name": "Kong Precision",
+    "alias": "Cat Pass Precision"
+  },
+  {
+    "name": "Kong Cat",
+    "alias": "Cat Pass Cat Hang"
+  },
+  {
+    "name": "Toe Shoot Side Full",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Kong",
+    "alias": "One-Hand Cat Pass"
+  },
+  {
+    "name": "Double Kong",
+    "alias": "Double Cat Pass"
+  },
+  {
+    "name": "Kong Reverse Kong",
+    "alias": "Cat Pass Reverse Cat Pass"
+  },
+  {
+    "name": "Kong Handstand",
+    "alias": "Cat Pass Handstand"
+  },
+  {
+    "name": "Gainer One-Hand Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-In Kick Full-Out",
+    "alias": "Bar Gainer Full-In Kick Full-out, Swing Gainer Full-In Kick Full-out"
+  },
+  {
+    "name": "Frog Front",
+    "alias": null
+  },
+  {
+    "name": "Kong One And A Half Full",
+    "alias": "Cat Pass Rudi, Kong Rudi"
+  },
+  {
+    "name": "Kong Front Full",
+    "alias": "Cat Pass Front Full"
+  },
+  {
+    "name": "Kong Front Dash",
+    "alias": "Cat Pass Front Dash"
+  },
+  {
+    "name": "Kong Front Dash Bomb",
+    "alias": "Cat Pass Front Dash Bomb"
+  },
+  {
+    "name": "360 Dash",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Kong Gainer",
+    "alias": "One-Hand Cat Pass Gainer"
+  },
+  {
+    "name": "Inward Back Handspring Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Castaway Back Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Cast Bomb",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Kick Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Worm Gainer",
+    "alias": null
+  },
+  {
+    "name": "Kong Tunnel",
+    "alias": "Cat Pass Tunnel"
+  },
+  {
+    "name": "Kong 360",
+    "alias": "Cat Pass 360, Screwdriver"
+  },
+  {
+    "name": "Kong 360 Side Vault",
+    "alias": "Cat Pass 360 Side Vault, Screwdriver Side Vault"
+  },
+  {
+    "name": "360 Kong 360",
+    "alias": "360 Cat Pass 360, Kamikaze"
+  },
+  {
+    "name": "Toehook Shun",
+    "alias": null
+  },
+  {
+    "name": "Dash Roll",
+    "alias": null
+  },
+  {
+    "name": "Drop Dash Bomb",
+    "alias": "Drop Bomb"
+  },
+  {
+    "name": "Dash Precision",
+    "alias": null
+  },
+  {
+    "name": "Dash Cat",
+    "alias": null
+  },
+  {
+    "name": "Inward Back Handspring",
+    "alias": null
+  },
+  {
+    "name": "Gainer Full-Down",
+    "alias": "Gainer Gyro"
+  },
+  {
+    "name": "Dash Bomb",
+    "alias": null
+  },
+  {
+    "name": "Kash Vault",
+    "alias": null
+  },
+  {
+    "name": "Dash Handstand",
+    "alias": "Dash Rack"
+  },
+  {
+    "name": "Flyaway-In Stall-Mid Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Reverse 360",
+    "alias": null
+  },
+  {
+    "name": "Reverse Cat",
+    "alias": null
+  },
+  {
+    "name": "Reverse Precision",
+    "alias": null
+  },
+  {
+    "name": "Back Full-In Full-Out",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Safety",
+    "alias": "One-Hand Reverse Speed Step, One-Hand Reverse Step Vault"
+  },
+  {
+    "name": "Reverse Dash",
+    "alias": null
+  },
+  {
+    "name": "Kong Side Full",
+    "alias": "Cat Pass Side Full, Helix"
+  },
+  {
+    "name": "Speed Vault",
+    "alias": null
+  },
+  {
+    "name": "360 Speed Vault",
+    "alias": null
+  },
+  {
+    "name": "Speed Precision",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Double Leg Twist",
+    "alias": "Barrel Full"
+  },
+  {
+    "name": "Speed Safety",
+    "alias": null
+  },
+  {
+    "name": "Speed Cat",
+    "alias": null
+  },
+  {
+    "name": "Speed Vault 360",
+    "alias": null
+  },
+  {
+    "name": "Speed Pimp",
+    "alias": null
+  },
+  {
+    "name": "Double Speed",
+    "alias": null
+  },
+  {
+    "name": "Speed Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Precision",
+    "alias": null
+  },
+  {
+    "name": "Kong Safety",
+    "alias": "Cat Pass Speed Step, Kong Speed Step, Kong Step Vault"
+  },
+  {
+    "name": "720 Precision",
+    "alias": null
+  },
+  {
+    "name": "360 Precision",
+    "alias": null
+  },
+  {
+    "name": "360 Regrab",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full Catch",
+    "alias": "Bar Gainer Full Lache, Pak Full, Bhardwaj, Swing Gainer Full Lache, Swing Gainer Full Catch"
+  },
+  {
+    "name": "360 Precision Trapdoor Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Front Full",
+    "alias": "Loser Full"
+  },
+  {
+    "name": "Stomach Webster",
+    "alias": "Sideways Pushup Webster"
+  },
+  {
+    "name": "Front Cat",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse",
+    "alias": null
+  },
+  {
+    "name": "Pistol Squat Masterswipe",
+    "alias": null
+  },
+  {
+    "name": "Slant Kong Gainer Full",
+    "alias": "Slant Cat Pass Gainer Full"
+  },
+  {
+    "name": "Inward Front Half",
+    "alias": null
+  },
+  {
+    "name": "Precision Trapdoor Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Randi",
+    "alias": null
+  },
+  {
+    "name": "Tic Tac Front",
+    "alias": "Wall Front, Tac Front, Tic Front, Pop Front"
+  },
+  {
+    "name": "Back Flip Precision",
+    "alias": null
+  },
+  {
+    "name": "Back Cat",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Running Caster Gainer X-Out",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Inward Front",
+    "alias": "Two-Foot Wall Inward Front"
+  },
+  {
+    "name": "Pop Castaway Back",
+    "alias": "Pop Palm Drop"
+  },
+  {
+    "name": "Korbut Flip",
+    "alias": "Back Layout Catch"
+  },
+  {
+    "name": "Wall Full",
+    "alias": "Waffle, Wall Flip 360"
+  },
+  {
+    "name": "Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Wall Double Back",
+    "alias": null
+  },
+  {
+    "name": "Wall Double Full",
+    "alias": "Double Waffle, Wall Flip 720"
+  },
+  {
+    "name": "Angel Drop Full",
+    "alias": null
+  },
+  {
+    "name": "Palm Flip Layout",
+    "alias": null
+  },
+  {
+    "name": "Back Full",
+    "alias": null
+  },
+  {
+    "name": "Wall Stall Layout",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Layout",
+    "alias": "Swing Gainer Layout, Bar Gainer Layout"
+  },
+  {
+    "name": "Inward Webster Front 180 Dive Roll",
+    "alias": "Loser 180 Dive Roll"
+  },
+  {
+    "name": "Gainer Precision",
+    "alias": null
+  },
+  {
+    "name": "Ceiling Palm Flip Half",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Inward Double Side",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Full",
+    "alias": null
+  },
+  {
+    "name": "Kumquat",
+    "alias": "Ping"
+  },
+  {
+    "name": "Kumquat Full",
+    "alias": "Ping Full"
+  },
+  {
+    "name": "Running Caster Gainer",
+    "alias": null
+  },
+  {
+    "name": "Tsukahara Vault",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Layout-Out",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Roll Kip-Up Half-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Drop Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Sitting Caster Gainer",
+    "alias": "Sitting Caster Back"
+  },
+  {
+    "name": "Sitting Caster Gainer Full",
+    "alias": "Sitting Caster Gainer Full"
+  },
+  {
+    "name": "Inward Flyaway Double Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Corkscrew Arabian 1 1/2 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Double Full",
+    "alias": null
+  },
+  {
+    "name": "Scoot Pimp Flip",
+    "alias": null
+  },
+  {
+    "name": "Sitting Pimp Flip",
+    "alias": null
+  },
+  {
+    "name": "Double Back Flip",
+    "alias": null
+  },
+  {
+    "name": "360 Dive One-Hand Reverse",
+    "alias": null
+  },
+  {
+    "name": "Triple Aerial Twist-In Back-Out",
+    "alias": "Triple A-Twist-In Back-Out"
+  },
+  {
+    "name": "Triple Flyaway",
+    "alias": "Andrianov"
+  },
+  {
+    "name": "Double Flyaway Cat",
+    "alias": "Bar Double Gainer Cat, Swing Double Gainer Cat"
+  },
+  {
+    "name": "Gainer Full Precision",
+    "alias": "Gainer 360 Precision"
+  },
+  {
+    "name": "Lazy Gainer",
+    "alias": null
+  },
+  {
+    "name": "Corner Palm Layout",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Palm Gainer",
+    "alias": "Ginger Flip, Hi-Five Gainer"
+  },
+  {
+    "name": "Elbow Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Elbow Kong Gainer",
+    "alias": "Elbow Cat Pass Gainer"
+  },
+  {
+    "name": "Gaet Pimp Catch",
+    "alias": null
+  },
+  {
+    "name": "Wall Cork Zero",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Cat",
+    "alias": "Cat Pass Cat Hang"
+  },
+  {
+    "name": "Side Flip Precision",
+    "alias": null
+  },
+  {
+    "name": "Shin Slide",
+    "alias": "Conveyor Belt"
+  },
+  {
+    "name": "Penny Drop Gainer",
+    "alias": null
+  },
+  {
+    "name": "Aerial Spin",
+    "alias": null
+  },
+  {
+    "name": "Chair Spin Gainer",
+    "alias": null
+  },
+  {
+    "name": "Chair Spin Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Human Flag Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Half-Down",
+    "alias": "Swing Gainer Half-Down"
+  },
+  {
+    "name": "Knee Gainer",
+    "alias": null
+  },
+  {
+    "name": "Knee Front Flip",
+    "alias": null
+  },
+  {
+    "name": "Knee Side Flip",
+    "alias": null
+  },
+  {
+    "name": "Corkscrew Arabian",
+    "alias": null
+  },
+  {
+    "name": "Palm Spin Raiz Twist",
+    "alias": null
+  },
+  {
+    "name": "Handstand Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Side Cat",
+    "alias": null
+  },
+  {
+    "name": "Running Caster Gainer Layout Touchdown",
+    "alias": null
+  },
+  {
+    "name": "Side Full",
+    "alias": null
+  },
+  {
+    "name": "Tunnel Flip",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Zero-In Palm Flip-Out",
+    "alias": "Bar Zero-In Palm Flip-Out, Swing Zero-In Palm Flip-Out"
+  },
+  {
+    "name": "Wall Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Palm Side",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Catch",
+    "alias": "Flyaway Catch"
+  },
+  {
+    "name": "Lache Handstand",
+    "alias": null
+  },
+  {
+    "name": "Toe Shoot Dark Arabian",
+    "alias": null
+  },
+  {
+    "name": "Palm Spin",
+    "alias": "Rail Spin"
+  },
+  {
+    "name": "360 Cat Leap",
+    "alias": null
+  },
+  {
+    "name": "Toe Hang Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Lache Scissor 180 Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Sitting Helicoptero",
+    "alias": null
+  },
+  {
+    "name": "Palm Spin Gainer",
+    "alias": "Broken Arm Spin"
+  },
+  {
+    "name": "Wall Spin Twist",
+    "alias": null
+  },
+  {
+    "name": "Reverse Palm Spin 360 Pimp",
+    "alias": null
+  },
+  {
+    "name": "Butterfly Twist Vault",
+    "alias": "Rail Butterfly Twist"
+  },
+  {
+    "name": "Quadruple Kong",
+    "alias": "Quadruple Cat Pass"
+  },
+  {
+    "name": "Palm Butterfly Twist",
+    "alias": "Palm B-twist"
+  },
+  {
+    "name": "Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Wall Pop 360",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Front Half",
+    "alias": "Wall Loser Half"
+  },
+  {
+    "name": "Touchup Raiz Touchdown Twist",
+    "alias": "Sailor Moon Touchdown Twist"
+  },
+  {
+    "name": "Webster Half",
+    "alias": "Webster 180"
+  },
+  {
+    "name": "One-Step Raiden Half",
+    "alias": null
+  },
+  {
+    "name": "Wall One-Hand Raiz",
+    "alias": null
+  },
+  {
+    "name": "Tic Tac",
+    "alias": "Tic Tak"
+  },
+  {
+    "name": "Three-Step Ceiling Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Horizontal Wall Run",
+    "alias": null
+  },
+  {
+    "name": "Turn Vault",
+    "alias": null
+  },
+  {
+    "name": "Rail Front Handspring",
+    "alias": "Rail Flip"
+  },
+  {
+    "name": "Reverse Giant",
+    "alias": null
+  },
+  {
+    "name": "Wall Flare",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Aerial Twist",
+    "alias": "Wall Inward A-twist"
+  },
+  {
+    "name": "Roll Kip-Up Handstand",
+    "alias": null
+  },
+  {
+    "name": "Roll Kip-Up Front",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Front Palm Pistol",
+    "alias": null
+  },
+  {
+    "name": "Gainer-In Stall-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Gainer One-Hand Down Monkey",
+    "alias": "Dragonfly"
+  },
+  {
+    "name": "Side Flip Handplant 360",
+    "alias": null
+  },
+  {
+    "name": "Back Full Cat",
+    "alias": null
+  },
+  {
+    "name": "Castaway Inward Front Regrab",
+    "alias": "Alleyoop"
+  },
+  {
+    "name": "Stall Tunnel",
+    "alias": ""
+  },
+  {
+    "name": "Inward Dark Arabian Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Dive Front Unwind Half",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Raiden",
+    "alias": null
+  },
+  {
+    "name": "Raiden Half",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Precision",
+    "alias": "Cat Pass Gainer Precision"
+  },
+  {
+    "name": "Stall Side Flip",
+    "alias": "Suicide Side Flip"
+  },
+  {
+    "name": "Giant",
+    "alias": null
+  },
+  {
+    "name": "Double Gainer",
+    "alias": null
+  },
+  {
+    "name": "One-Step Wall Flare Back",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Catch",
+    "alias": "Madrid"
+  },
+  {
+    "name": "Lazy Vault",
+    "alias": null
+  },
+  {
+    "name": "Castaway Pimp",
+    "alias": null
+  },
+  {
+    "name": "Kong Double Front",
+    "alias": "Cat Pass Double Front"
+  },
+  {
+    "name": "Lache Precision",
+    "alias": null
+  },
+  {
+    "name": "Lache Cat",
+    "alias": null
+  },
+  {
+    "name": "Lache Crane",
+    "alias": null
+  },
+  {
+    "name": "Palm Spin Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Thief Vault",
+    "alias": null
+  },
+  {
+    "name": "Kong Side",
+    "alias": "Cat Pass Side"
+  },
+  {
+    "name": "Wall Corkscrew Arabian Pistol Gyro",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Helicoptero Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Palm Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Castaway Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "Flyaway 3/4 Full-Down-In Side-Out",
+    "alias": "Bar Gainer 3/4 Full-Down-In Side-Out, Swing Gainer 3/4 Full-Down-In Side-Out"
+  },
+  {
+    "name": "Triple Kong",
+    "alias": "Triple Cat Pass"
+  },
+  {
+    "name": "Cast Bomb Arabian",
+    "alias": null
+  },
+  {
+    "name": "Shoulder Vault 360",
+    "alias": "Sky Vault"
+  },
+  {
+    "name": "Kash Bomb",
+    "alias": null
+  },
+  {
+    "name": "Scoot Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "Sitting Turn Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Down Monkey Full",
+    "alias": null
+  },
+  {
+    "name": "Hang Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Sitting Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "Sitting Turn Castaway Full",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Zero",
+    "alias": null
+  },
+  {
+    "name": "Human Flag Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Mukhametshin Gargoyle Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Front",
+    "alias": null
+  },
+  {
+    "name": "Inward Double Front",
+    "alias": null
+  },
+  {
+    "name": "Inward Double Aerial Twist",
+    "alias": "Inward Double A-twist"
+  },
+  {
+    "name": "Palm Double Butterfly Twist",
+    "alias": "Palm Double B-twist"
+  },
+  {
+    "name": "Double Devil Drop",
+    "alias": null
+  },
+  {
+    "name": "Cast Front",
+    "alias": null
+  },
+  {
+    "name": "Wall Kong",
+    "alias": "Wall Cat Pass"
+  },
+  {
+    "name": "Inward Flyaway Double Side",
+    "alias": null
+  },
+  {
+    "name": "Castaway Double Full",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Rudi",
+    "alias": "Loser Rudi"
+  },
+  {
+    "name": "Double Inward Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Kong Front Half",
+    "alias": "Cat Pass Barani, Kong Barani"
+  },
+  {
+    "name": "Reverse Palm Spin Inward Frisbee Vault",
+    "alias": "Powdered Donut"
+  },
+  {
+    "name": "One-Hand Palm Gainer Full",
+    "alias": "Ginger Flip Full, Hi-Five Gainer Full"
+  },
+  {
+    "name": "Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Knee Side Full",
+    "alias": null
+  },
+  {
+    "name": "270 Cat Leap",
+    "alias": null
+  },
+  {
+    "name": "Double Kong Precision",
+    "alias": "Double Cat Pass Precision"
+  },
+  {
+    "name": "Triple Aerial Twist Vault",
+    "alias": "Rail Triple A-twist"
+  },
+  {
+    "name": "Reverse Double Kong",
+    "alias": "Reverse Double Cat Pass"
+  },
+  {
+    "name": "Full-Up Gainer",
+    "alias": "Vortex Gainer"
+  },
+  {
+    "name": "Lache Punch Dark Arabian Wall Gainer",
+    "alias": null
+  },
+  {
+    "name": "540 Regrab",
+    "alias": null
+  },
+  {
+    "name": "Back Roll Half Down",
+    "alias": null
+  },
+  {
+    "name": "Wall Tunnel Cat",
+    "alias": null
+  },
+  {
+    "name": "Inward 360 Dive Roll Bomb",
+    "alias": "Inward Morph Bomb"
+  },
+  {
+    "name": "Kneel Gainer Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Wall Back Handspring",
+    "alias": "Wall BHS"
+  },
+  {
+    "name": "Castaway Double Back",
+    "alias": null
+  },
+  {
+    "name": "Kong Cast Bomb",
+    "alias": "Cat Pass Cast Bomb"
+  },
+  {
+    "name": "Cheat Devil Drop",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway One And A Half Full",
+    "alias": "Inward Flyaway 540"
+  },
+  {
+    "name": "Wall Tunnel Flip",
+    "alias": "Trinity Flip"
+  },
+  {
+    "name": "Baby Knee Giant",
+    "alias": null
+  },
+  {
+    "name": "Lache Double Side",
+    "alias": null
+  },
+  {
+    "name": "Dive Reverse Underbar",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Double Aerial Twist",
+    "alias": "Wall Inward Double A-twist"
+  },
+  {
+    "name": "Aerial",
+    "alias": null
+  },
+  {
+    "name": "Lache 180 Wall Front",
+    "alias": null
+  },
+  {
+    "name": "Double Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "360 Kong",
+    "alias": "Vortex Cat Pass, Vortex Kong"
+  },
+  {
+    "name": "Wall Roll Punch Wall Flip",
+    "alias": ""
+  },
+  {
+    "name": "Elbow Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-In Trapdoor-Out",
+    "alias": null
+  },
+  {
+    "name": "Kong Outside-Hand Pimp Flip",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Stall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Double Elbow Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "Palm Side Pistol Palm Twist",
+    "alias": null
+  },
+  {
+    "name": "Castaway Back-In Punch Wall Layout-Out",
+    "alias": null
+  },
+  {
+    "name": "Backward Roll Bomb",
+    "alias": null
+  },
+  {
+    "name": "Cast Kash Bomb",
+    "alias": null
+  },
+  {
+    "name": "Touchdown Side Flip",
+    "alias": null
+  },
+  {
+    "name": "Frisbee Vault Gyro",
+    "alias": null
+  },
+  {
+    "name": "Sitting Touchup Butterfly Twist",
+    "alias": "Sitting Td B-twist"
+  },
+  {
+    "name": "Frog Pimp",
+    "alias": null
+  },
+  {
+    "name": "Pimp Spin Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Dash Bomb Half",
+    "alias": "Dash Barani"
+  },
+  {
+    "name": "Cheat Angel Drop",
+    "alias": null
+  },
+  {
+    "name": "Corner Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Palm Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Palm Double Leg Twist",
+    "alias": null
+  },
+  {
+    "name": "Lotus Giant",
+    "alias": null
+  },
+  {
+    "name": "Wall Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Outside-Hand Pimp Flip",
+    "alias": null
+  },
+  {
+    "name": "Dyno",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Dark Arabian Stall Wall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Knee Giant",
+    "alias": null
+  },
+  {
+    "name": "Single Ankle Front",
+    "alias": "Pop Top"
+  },
+  {
+    "name": "Inward 720 Dive Roll",
+    "alias": "Inward Double Vortex"
+  },
+  {
+    "name": "Shoulder Mount Gainer",
+    "alias": "Shoulder Gainer"
+  },
+  {
+    "name": "Straddle Palm Full",
+    "alias": null
+  },
+  {
+    "name": "Dive Kong Gainer",
+    "alias": "Dive Cat Pass Gainer"
+  },
+  {
+    "name": "Wall Front Two-Foot Wall Flip",
+    "alias": "Dolphin Rebound"
+  },
+  {
+    "name": "Knee 360 Dive Front Flip",
+    "alias": "Knee Vortex Front, Knee Pig Skin, Knee Psycho Crusher"
+  },
+  {
+    "name": "Hang Castaway Layout",
+    "alias": null
+  },
+  {
+    "name": "Wall Pop",
+    "alias": null
+  },
+  {
+    "name": "EW Gainer Walkdown",
+    "alias": "EW Gainer Stepdown"
+  },
+  {
+    "name": "Webster Half-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Safety Gainer",
+    "alias": "Speed Step Gainer, Step Vault Gainer"
+  },
+  {
+    "name": "Devil Drop Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Pimp Spin Gainer",
+    "alias": null
+  },
+  {
+    "name": "Toe Shoot Handstand",
+    "alias": null
+  },
+  {
+    "name": "Russian Double Front",
+    "alias": null
+  },
+  {
+    "name": "Double Reverse Vault",
+    "alias": null
+  },
+  {
+    "name": "Kong Front Cat",
+    "alias": "Cat Pass Front Cat Hang"
+  },
+  {
+    "name": "Hang Gainer",
+    "alias": null
+  },
+  {
+    "name": "Gainer Double Full",
+    "alias": "Gainer 720"
+  },
+  {
+    "name": "One-Step Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Pimp Full",
+    "alias": "Gargoyle Corkscrew"
+  },
+  {
+    "name": "Safety Vault",
+    "alias": "Speed Step, Step Vault"
+  },
+  {
+    "name": "Lache 180 Punch Wall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Inward Down Monkey Half",
+    "alias": null
+  },
+  {
+    "name": "Gainer Triple Full",
+    "alias": "Gainer 1080"
+  },
+  {
+    "name": "Two-Step Wall One And A Half Full",
+    "alias": "Two-Step Wall Flip 540"
+  },
+  {
+    "name": "Corner Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Regrab",
+    "alias": "Jaeger"
+  },
+  {
+    "name": "Cast One-And-A-Half Front Flip Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Shoulder Giant",
+    "alias": null
+  },
+  {
+    "name": "Inverted Human Flag",
+    "alias": null
+  },
+  {
+    "name": "Rail Macaco",
+    "alias": "Rail Valdez"
+  },
+  {
+    "name": "Safety Vault 360",
+    "alias": "Speed Step 360, Step Vault 360"
+  },
+  {
+    "name": "One-Hand Palm Gainer Full-Down",
+    "alias": "Ginger Flip Full-Down, Hi-Five Gainer Full-Down"
+  },
+  {
+    "name": "Webster One And A Half Full",
+    "alias": "Webster 540"
+  },
+  {
+    "name": "Sitting Touchdown Tunnel Flip",
+    "alias": null
+  },
+  {
+    "name": "Knee Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Side Vault",
+    "alias": null
+  },
+  {
+    "name": "One-Step One-Hand Palm Gainer",
+    "alias": "One-Step Ginger Flip, One-Step Hi-Five Gainer"
+  },
+  {
+    "name": "One-Step Cast Gainer",
+    "alias": "One-Step Cast Gainer"
+  },
+  {
+    "name": "Wall Pike",
+    "alias": null
+  },
+  {
+    "name": "Lache Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Russian Front Flip",
+    "alias": null
+  },
+  {
+    "name": "Knee Double Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Handstand",
+    "alias": null
+  },
+  {
+    "name": "Turn Castaway Full",
+    "alias": null
+  },
+  {
+    "name": "Gainer Layout",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Double Full",
+    "alias": "Two-Step Double Waffle, Two-Step Wall Flip 720"
+  },
+  {
+    "name": "Flyaway Double Layout",
+    "alias": "Swing Gainer Double Layout, Bar Gainer Double Layout"
+  },
+  {
+    "name": "Shoulder Vault-In Back-Out",
+    "alias": "Mask Bomb"
+  },
+  {
+    "name": "Double Layout",
+    "alias": null
+  },
+  {
+    "name": "Castaway Layout",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Cat",
+    "alias": null
+  },
+  {
+    "name": "Elbow Flyaway Double Full",
+    "alias": null
+  },
+  {
+    "name": "Full-Up Side",
+    "alias": "360 Dive Side, Vortex Side"
+  },
+  {
+    "name": "Elbow Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Full",
+    "alias": "Two-Step Waffle, Two-Step Wall Flip 360"
+  },
+  {
+    "name": "Elbow Flyaway Full",
+    "alias": null
+  },
+  {
+    "name": "One-Step 360 Palm Flip",
+    "alias": "Wall Pop 360 Palm Flip, Wall Run 360 Palm Flip"
+  },
+  {
+    "name": "One-Step Palm Snapuswipe",
+    "alias": null
+  },
+  {
+    "name": "Tsukahara Half Dismount",
+    "alias": null
+  },
+  {
+    "name": "Skin The Cat Gainer",
+    "alias": "Shrimp Gainer"
+  },
+  {
+    "name": "Elbow Gargoyle Gainer",
+    "alias": null
+  },
+  {
+    "name": "Alley Webster Raiden",
+    "alias": null
+  },
+  {
+    "name": "Palm Macaco Twist",
+    "alias": "Palm Valdez Twist"
+  },
+  {
+    "name": "Thief Precision",
+    "alias": null
+  },
+  {
+    "name": "Macaco Full",
+    "alias": "Valdez Full"
+  },
+  {
+    "name": "Punch Wall Inward Front Half",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Full",
+    "alias": null
+  },
+  {
+    "name": "Lache Catch",
+    "alias": null
+  },
+  {
+    "name": "Back Dash",
+    "alias": null
+  },
+  {
+    "name": "Climb Up",
+    "alias": null
+  },
+  {
+    "name": "Three-Step Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Inward Side Straddle",
+    "alias": null
+  },
+  {
+    "name": "270 Dive Kong 360 Dive Roll",
+    "alias": "270 Dive Cat Pass 270 Dive Roll"
+  },
+  {
+    "name": "Wall Inward Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Seat Circle Gainer",
+    "alias": "Champion, L-sit Circle Gainer"
+  },
+  {
+    "name": "Parallel Bar Caster Gainer Layout Dismount",
+    "alias": "Parallel Bar Bio Gainer Layout, Parallel Bar Caster Gainer Layout, Parallel Bar Lateral Gainer Layout, Parallel Bar Strafe Gainer Layout"
+  },
+  {
+    "name": "Palm Side Palm Twist",
+    "alias": null
+  },
+  {
+    "name": "One-Step Wall Spring",
+    "alias": null
+  },
+  {
+    "name": "180 Cat Leap",
+    "alias": null
+  },
+  {
+    "name": "Running Double Gainer",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Full",
+    "alias": "Inward Flyaway 360"
+  },
+  {
+    "name": "Frog Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "One-Step Thread Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Shoulder Mount Side",
+    "alias": null
+  },
+  {
+    "name": "One-Step Touchdown Raiz Twist Vault",
+    "alias": null
+  },
+  {
+    "name": "Stride Precision",
+    "alias": null
+  },
+  {
+    "name": "Palm Spin Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Macaco Twist",
+    "alias": "One-Step Palm Valdez Twist"
+  },
+  {
+    "name": "Cheat 360 Safety Vault",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Catch",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Gainer Down Monkey",
+    "alias": "Devil Gainer Down Monkey, Cat Wall Gainer Down Monkey"
+  },
+  {
+    "name": "Double Frisbee Vault",
+    "alias": null
+  },
+  {
+    "name": "Frisbee Vault",
+    "alias": null
+  },
+  {
+    "name": "Palm Gainer",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Dash Roll",
+    "alias": null
+  },
+  {
+    "name": "720 Dive Roll Bomb",
+    "alias": "720 Morph Bomb"
+  },
+  {
+    "name": "Wall Double Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Turn Gaet Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Triple Full",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Kong",
+    "alias": "360 Dive Cat Pass, Vortex Cat Pass, Vortex Kong"
+  },
+  {
+    "name": "Wall Spin 540",
+    "alias": null
+  },
+  {
+    "name": "One-Step One-Hand Palm Gainer Full",
+    "alias": "One-Step Ginger Flip Full, One-Step Hi-Five Gainer Full"
+  },
+  {
+    "name": "Gargoyle Pimp",
+    "alias": null
+  },
+  {
+    "name": "Elbow Gargoyle Pimp",
+    "alias": null
+  },
+  {
+    "name": "Double Butterfly Twist Vault",
+    "alias": "Rail Double Butterfly Twist"
+  },
+  {
+    "name": "Pimp Double Full",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Pimp Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Japan Grab Caster Gainer",
+    "alias": "Japan Grab Bio Gainer, Japan Grab Lateral Gainer, Japan Grab Strafe Gainer"
+  },
+  {
+    "name": "One-Hand Wall Spin Palm Twist",
+    "alias": "Dk Flip, Diddy Flip, One-Hand Palm Front Palm Half-Down"
+  },
+  {
+    "name": "Knee Double Aerial Twist",
+    "alias": "Knee Double A-twist"
+  },
+  {
+    "name": "Wall One And A Half Full",
+    "alias": "Wall Flip 540"
+  },
+  {
+    "name": "Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Inward Aerial Twist",
+    "alias": "Inward A-twist"
+  },
+  {
+    "name": "Reverse Lache Two-Foot Wall Front",
+    "alias": null
+  },
+  {
+    "name": "Dive Palm Spin Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "Inward Tunnel Flip",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Roll",
+    "alias": "Full Twisting Dive Roll, Vortex"
+  },
+  {
+    "name": "180 Regrab",
+    "alias": null
+  },
+  {
+    "name": "Inward Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Gainer Layout",
+    "alias": null
+  },
+  {
+    "name": "Kong 360 Dive Roll",
+    "alias": "Cat Pass 360 Dive Roll, Screwdriver Dive Roll"
+  },
+  {
+    "name": "Reverse Speed",
+    "alias": null
+  },
+  {
+    "name": "Gainer Cat",
+    "alias": "Gainer Arm Jump"
+  },
+  {
+    "name": "540 Dive Front Flip",
+    "alias": "Filipino, 540 Vortex Front, 540 Pig Skin, 540 Psycho Crusher"
+  },
+  {
+    "name": "Inward Dive Touchdown Twist",
+    "alias": null
+  },
+  {
+    "name": "Elbow Wall Spin Palm Twist",
+    "alias": "Elbow Dk Flip, Elbow Diddy Flip"
+  },
+  {
+    "name": "Corner One-Hand Wall Spin Palm Twist",
+    "alias": "Corner Dk Flip, Corner Diddy Flip"
+  },
+  {
+    "name": "One-Step Wall Spin 540",
+    "alias": null
+  },
+  {
+    "name": "Palm Side Half",
+    "alias": null
+  },
+  {
+    "name": "Lache 360 Catch",
+    "alias": null
+  },
+  {
+    "name": "Side-In Side Full-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Roundoff",
+    "alias": null
+  },
+  {
+    "name": "Kong 360 Front",
+    "alias": "Cat Pass 360 Front, Screwdriver Front"
+  },
+  {
+    "name": "Sitting Touchdown Aerial Twist",
+    "alias": "Sitting Td A-twist"
+  },
+  {
+    "name": "Side Vault Pimp",
+    "alias": null
+  },
+  {
+    "name": "Slant Kong Gainer Cat",
+    "alias": "Cheat Cat Pass Gainer Cat Hang, Cheat Kong Gainer Cat, Slant Kong Gainer Cat"
+  },
+  {
+    "name": "Standing Cast Gainer",
+    "alias": null
+  },
+  {
+    "name": "Monkey Gainer",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Full-Up",
+    "alias": "Back Uprise Full-Up"
+  },
+  {
+    "name": "Swing Castaway Full-Down",
+    "alias": "Back Uprise Full-Down"
+  },
+  {
+    "name": "Sitting Touchup Double Butterfly Twist",
+    "alias": null
+  },
+  {
+    "name": "Rail Roll Kip-Up 270",
+    "alias": null
+  },
+  {
+    "name": "Sitting Dash Bomb Half",
+    "alias": "Sitting Dash Barani"
+  },
+  {
+    "name": "Inward Wall Flip Cat",
+    "alias": null
+  },
+  {
+    "name": "270 Dive Down Monkey Quarter",
+    "alias": null
+  },
+  {
+    "name": "Gainer Arabian",
+    "alias": null
+  },
+  {
+    "name": "Yurchenko",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Half",
+    "alias": "Cat Belle Half, Cat Loser Half, Cat Front Half"
+  },
+  {
+    "name": "Two-Step Palm Wall Full",
+    "alias": null
+  },
+  {
+    "name": "Dive Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Kong Dive Palm Gainer",
+    "alias": "Cat Pass Dive Two-Hand Palm Gainer"
+  },
+  {
+    "name": "Slant Palm Gainer",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Rudi",
+    "alias": "Devil Drop 540"
+  },
+  {
+    "name": "Down Monkey Handstand",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Flyaway Full",
+    "alias": null
+  },
+  {
+    "name": "Handstand Castaway Back",
+    "alias": "Quasimodo"
+  },
+  {
+    "name": "270 Dive Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm X-Out",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway X-Out",
+    "alias": "Back Uprise Straddle"
+  },
+  {
+    "name": "One-Hand Handstand Castaway Back",
+    "alias": "One-Hand Quasimodo"
+  },
+  {
+    "name": "Devil Drop Full",
+    "alias": "Cat Belle Full, Cat Loser Full, Cat Front Full"
+  },
+  {
+    "name": "Inward Flyaway-In Half-Out",
+    "alias": null
+  },
+  {
+    "name": "Back Hip Circle Gainer",
+    "alias": null
+  },
+  {
+    "name": "Shushunova",
+    "alias": "Full Twisting Tkatchev, Half-Turn Markelov"
+  },
+  {
+    "name": "Running Gainer Full-Up",
+    "alias": null
+  },
+  {
+    "name": "Thief Cat",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Inward Front",
+    "alias": "Two-Step Wall Loser"
+  },
+  {
+    "name": "Back Flip Wall Dive Roll",
+    "alias": "Back Flip Wall Suicide"
+  },
+  {
+    "name": "Corner Worm Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Arabian Half",
+    "alias": null
+  },
+  {
+    "name": "Gainer Arabian Half",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Pop Castaway Double Back",
+    "alias": "Cat Hang Double Palm Drop"
+  },
+  {
+    "name": "Dive Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Raiden Half",
+    "alias": null
+  },
+  {
+    "name": "Front-In Half-Out",
+    "alias": "Front-In Barani-Out"
+  },
+  {
+    "name": "Inward Macaco",
+    "alias": "Inward Valdez"
+  },
+  {
+    "name": "Front Half-In Back-Out",
+    "alias": "Barani-In Back-Out"
+  },
+  {
+    "name": "360 Dive Front Dash-Out",
+    "alias": "Vortex Front Dash-Out, Pigskin Dash-Out, Psycho Crusher Dash-Out"
+  },
+  {
+    "name": "Toe Shoot Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Lazy Roll",
+    "alias": null
+  },
+  {
+    "name": "Reverse Palm Spin Inward Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Wall Flip 540 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Rodeo",
+    "alias": "Back Uprise Rodeo"
+  },
+  {
+    "name": "Gumbi 360 Twist-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Half",
+    "alias": "Swing Gainer Half"
+  },
+  {
+    "name": "Devil Drop",
+    "alias": "Cat Belle, Cat Loser, Cat Front"
+  },
+  {
+    "name": "Inward Flyaway Side",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Side Regrab",
+    "alias": null
+  },
+  {
+    "name": "Dive One-Hand Palm Gainer",
+    "alias": "Dive Ginger Flip, Dive Hi-Five Gainer"
+  },
+  {
+    "name": "Parallel Bar Gainer Full Dismount",
+    "alias": null
+  },
+  {
+    "name": "Giant Release Half Twist Handstand Catch",
+    "alias": null
+  },
+  {
+    "name": "Toe Shoot Side",
+    "alias": null
+  },
+  {
+    "name": "Giant Pimp",
+    "alias": null
+  },
+  {
+    "name": "Inward 540 Roll",
+    "alias": null
+  },
+  {
+    "name": "Inward 1080 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Speed Vault 540",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Pimp",
+    "alias": "Vortex Pimp"
+  },
+  {
+    "name": "Dive Double Front",
+    "alias": null
+  },
+  {
+    "name": "Gumbi 360 Twist",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Kong",
+    "alias": "Lache Gainer Kong, Swing Gainer Cat Pass, Swing Gainer Kong"
+  },
+  {
+    "name": "Lazy Cat",
+    "alias": null
+  },
+  {
+    "name": "Flyaway One And A Half-In Unwind Half-Out",
+    "alias": "Swing Gainer One And A Half-In Unwind Half-Out"
+  },
+  {
+    "name": "One-Hand Reverse Double Leg Gyro",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Half-Out Regrab",
+    "alias": "Double Gienger, Flyaway-In Gienger-Out"
+  },
+  {
+    "name": "Wall Inward Front Full",
+    "alias": "Wall Loser Full"
+  },
+  {
+    "name": "Circle Pimp Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Circle",
+    "alias": null
+  },
+  {
+    "name": "Corkscrew-In Back-Out",
+    "alias": "Cork-In Back-Out, Snatch Cannon"
+  },
+  {
+    "name": "Kong Gainer X-Out",
+    "alias": "Cat Pass Gainer X-Out"
+  },
+  {
+    "name": "Caster Double Gainer",
+    "alias": "Bio Double Gainer, Lateral Double Gainer, Strafe Double Gainer"
+  },
+  {
+    "name": "Gumbi",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Pike",
+    "alias": "Back Uprise Pike"
+  },
+  {
+    "name": "Swipe Drop Castaway Side",
+    "alias": "Your mom"
+  },
+  {
+    "name": "Palm Back Handspring",
+    "alias": null
+  },
+  {
+    "name": "Front Double Full",
+    "alias": null
+  },
+  {
+    "name": "Sitting Dash Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Double Front Flip",
+    "alias": null
+  },
+  {
+    "name": "Slant Kong Double Gainer",
+    "alias": "Cheat Cat Pass Double Gainer, Cheat Kong Double Gainer, Slant Kong Double Gainer"
+  },
+  {
+    "name": "Two-Step Wall Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp-In Punch Wall Flip-Out",
+    "alias": null
+  },
+  {
+    "name": "Parallel Bar Caster Gainer Dismount",
+    "alias": "Parallel Bar Bio Gainer, Parallel Bar Lateral Gainer, Parallel Bar Strafe Gainer"
+  },
+  {
+    "name": "Lache Punch Tic Tac",
+    "alias": null
+  },
+  {
+    "name": "Korbut Full",
+    "alias": "Mukhina Flip"
+  },
+  {
+    "name": "Punch Wall Inward Rudi",
+    "alias": "Wall Loser One and a Half"
+  },
+  {
+    "name": "Turn Gaet Pimp Pike",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Cat",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Catch",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop Double Full",
+    "alias": null
+  },
+  {
+    "name": "Wall Arabian Unwind Half",
+    "alias": "Wall Arabian Unhalf"
+  },
+  {
+    "name": "Palm Double Full",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Front Dark Arabian Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Side Full",
+    "alias": null
+  },
+  {
+    "name": "Turn Castaway Back Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "Split Sole Circle Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Turn Gaet Double Pimp",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Side Half",
+    "alias": null
+  },
+  {
+    "name": "Double Aerial Twist Vault",
+    "alias": "Rail Double A-twist"
+  },
+  {
+    "name": "Rail Aú De Frente",
+    "alias": null
+  },
+  {
+    "name": "Reverse Hyperhook",
+    "alias": null
+  },
+  {
+    "name": "Turn Gaet Pimp Double Full",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Back Regrab",
+    "alias": "Back Uprise Back Tuck Catch"
+  },
+  {
+    "name": "Wall Inward Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Dash Bomb",
+    "alias": null
+  },
+  {
+    "name": "Hang Toe Shoot Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Hang Toe Shoot Front",
+    "alias": null
+  },
+  {
+    "name": "Machine Pimp",
+    "alias": "Powerground Pimp, Spindle Pimp, Whirl Spin Pimp, Windup Pimp"
+  },
+  {
+    "name": "Kip Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Double Devil Drop Side",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Front Pike",
+    "alias": null
+  },
+  {
+    "name": "Split Sole Circle Gainer",
+    "alias": null
+  },
+  {
+    "name": "Macaco Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Pike Double Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Double Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Punch Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Kip Inward Side",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Palm Gainer Double Full",
+    "alias": "Ginger Flip Double Full, Hi-Five Gainer Double Full"
+  },
+  {
+    "name": "Pimp Wall Wrap Full",
+    "alias": null
+  },
+  {
+    "name": "Trapdoor Wall Full",
+    "alias": null
+  },
+  {
+    "name": "Trapdoor Wall Double Full",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Arabian",
+    "alias": null
+  },
+  {
+    "name": "Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Yurchenko Dismount",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Pimp Layout",
+    "alias": null
+  },
+  {
+    "name": "Lache Scissor 180",
+    "alias": null
+  },
+  {
+    "name": "Pimp Punch Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Side Vault Pimp Layout",
+    "alias": null
+  },
+  {
+    "name": "Aú De Frente",
+    "alias": null
+  },
+  {
+    "name": "Knee Frog Gainer",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Half Catch",
+    "alias": "Inward Flyaway 180"
+  },
+  {
+    "name": "Inward Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Side Vault Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "Turn Gaet Pimp Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Wall Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Dive Half Double Back",
+    "alias": null
+  },
+  {
+    "name": "Double Kong Slant Gainer",
+    "alias": "Double Cat Pass Slant Gainer, Double Kong Cheat Gainer"
+  },
+  {
+    "name": "Slant Kong Gainer Full-Down",
+    "alias": "Cheat Cat Pass Gainer Full-Down, Cheat Kong Gainer Full-Down, Slant Cat Pass Gainer Full-Down"
+  },
+  {
+    "name": "Two-Step Palm Full-Down",
+    "alias": null
+  },
+  {
+    "name": "One-Step Half-Up Back",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Castaway Back",
+    "alias": "One-Hand Palm Drop"
+  },
+  {
+    "name": "Castaway Stall Back",
+    "alias": "Stall Palm Drop"
+  },
+  {
+    "name": "Flyaway Full Unwind Full-Down",
+    "alias": "Flyaway Unfull-Down"
+  },
+  {
+    "name": "Wall Flash Kick",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Kong One-Hand Reverse",
+    "alias": "One-Hand Cat Pass One-Hand Reverse"
+  },
+  {
+    "name": "Inward Flyaway Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Palm Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Palm Inward Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Toe-On Inward Roll",
+    "alias": null
+  },
+  {
+    "name": "Toe-On Inward 360 Roll",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Stall Half-Down-Out",
+    "alias": "Bar Gainer-In Stall Half-Down-Out, Swing Gainer-In Stall Half-Down-Out"
+  },
+  {
+    "name": "Turn Gaet Pimp Layout",
+    "alias": null
+  },
+  {
+    "name": "Chest Wall Spin Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Slant Punch Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Cat",
+    "alias": null
+  },
+  {
+    "name": "Webster Double Front",
+    "alias": null
+  },
+  {
+    "name": "Side Flip One And A Half Dive Roll",
+    "alias": "Side 1 in 3"
+  },
+  {
+    "name": "Reverse Hyper",
+    "alias": null
+  },
+  {
+    "name": "Touchdown Raiz Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Wrap Full",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Wrap Double Full",
+    "alias": null
+  },
+  {
+    "name": "Scoot Pimp Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Webster Front",
+    "alias": null
+  },
+  {
+    "name": "Knee Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Backward Roll Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Elbow Swing Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Slant Kong Gainer Layout",
+    "alias": "Slant Cat Pass Gainer Layout"
+  },
+  {
+    "name": "One-Hand Swing Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Slant Frog Gainer",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Flyaway Double Full",
+    "alias": null
+  },
+  {
+    "name": "Cat Leap",
+    "alias": "Arm Jump"
+  },
+  {
+    "name": "One-Hand Reverse Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Touchdown Raiz",
+    "alias": null
+  },
+  {
+    "name": "Kumquat One And A Half Full",
+    "alias": "Ping One and a Half Full"
+  },
+  {
+    "name": "One-Hand Toe Shoot Front",
+    "alias": null
+  },
+  {
+    "name": "Wall Arabian Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "One-Step Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Gainer Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway X-Out Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Side Wall Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Flip Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Castaway Inward Double Front",
+    "alias": null
+  },
+  {
+    "name": "Chest Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Rodeo",
+    "alias": "Swing Gainer Rodeo, Bar Gainer Rodeo"
+  },
+  {
+    "name": "Wall Roll",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Stall Side",
+    "alias": null
+  },
+  {
+    "name": "Arabian One-And-A-Half Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Gainer Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "EW Stall Gainer",
+    "alias": "Eugene Wall Stall Gainer, Erik Wall Stall Gainer"
+  },
+  {
+    "name": "One-Step Wall Roll Half",
+    "alias": null
+  },
+  {
+    "name": "One-Step Wall Spin Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Pistol Squat Back Flip",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Inward Double Front",
+    "alias": null
+  },
+  {
+    "name": "Sitting Turn Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Parallel Bar Gainer Dismount",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop Wall Back Handspring",
+    "alias": null
+  },
+  {
+    "name": "Tsukahara Arabian Vault",
+    "alias": null
+  },
+  {
+    "name": "Wall Layout One-Hand Down Monkey Full",
+    "alias": null
+  },
+  {
+    "name": "Reverse Bomb",
+    "alias": null
+  },
+  {
+    "name": "Double Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "Shoulder Vault Twist Dive Roll",
+    "alias": "Trident Dive"
+  },
+  {
+    "name": "Roll Bomb 360 Dive Roll",
+    "alias": "Roll Bomb Vortex"
+  },
+  {
+    "name": "Devil Drop Gainer Pike",
+    "alias": null
+  },
+  {
+    "name": "One-Step Two-Hand Palm Inward Aerial Twist Double Leg Twist",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Wall Flip Switch",
+    "alias": null
+  },
+  {
+    "name": "Straddle Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Kip Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Back Layout-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Flip Walkdown",
+    "alias": "Wall Flip Stepdown"
+  },
+  {
+    "name": "Ankle Rudi",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Stall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Kong Rebound",
+    "alias": "Cat Pass Rebound"
+  },
+  {
+    "name": "Double Leg Twist",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Trapdoor Double Full-Out",
+    "alias": "Bar Gainer-In Trapdoor Double Full-Out, Swing Gainer-In Trapdoor Double Full-Out"
+  },
+  {
+    "name": "Front Half Dismount Catch",
+    "alias": "Barani Dismount Catch"
+  },
+  {
+    "name": "Reverse Lache",
+    "alias": null
+  },
+  {
+    "name": "Inward Dive Roll Bomb",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Caster Wall Flip",
+    "alias": "Bio Wall Flip, Caster Wall Flip, Lateral Wall Flip, Strafe Wall Flip"
+  },
+  {
+    "name": "Caster Wall Double Back",
+    "alias": "Wall Bio Double Back, Wall Caster Double Back, Wall Lateral Double Back, Wall Strafe Double Back"
+  },
+  {
+    "name": "Webster Full",
+    "alias": "Webster 360"
+  },
+  {
+    "name": "Back Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Skin The Cat 180",
+    "alias": "Shrimp Flip 180"
+  },
+  {
+    "name": "One-Hand Tsukahara Double Full Dismount",
+    "alias": null
+  },
+  {
+    "name": "Trapdoor Wall Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Frog Gainer",
+    "alias": "Pasha Gainer"
+  },
+  {
+    "name": "Castaway Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Hang Toe Shoot Side",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Double Back",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Tsukahara Full Dismount",
+    "alias": null
+  },
+  {
+    "name": "Human Flag Gainer",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Hang Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Straddle Sole Circle Stall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Corner Wall Lonestar",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Stall Back",
+    "alias": null
+  },
+  {
+    "name": "Human Flag Gainer Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Side Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Straddle Sole Circle Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Straddle Sole Circle Gainer Layout",
+    "alias": null
+  },
+  {
+    "name": "Front Pike",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Touchup Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Touchup Double Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Punch Layout",
+    "alias": null
+  },
+  {
+    "name": "Kick 540 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "540 Dive Back Handspring",
+    "alias": null
+  },
+  {
+    "name": "Single Ankle Rudi",
+    "alias": "Pop Top 540"
+  },
+  {
+    "name": "Pendulum",
+    "alias": null
+  },
+  {
+    "name": "Kong Front-In Punch Wall Flip-Out",
+    "alias": "Kong Front-In Trapdoor-Out"
+  },
+  {
+    "name": "EW Gainer Arabian",
+    "alias": "Eugene Wall Gainer Arabian, Erik Wall Gainer Arabian"
+  },
+  {
+    "name": "Flash Kick Full",
+    "alias": null
+  },
+  {
+    "name": "Cast Monkey Side",
+    "alias": null
+  },
+  {
+    "name": "Kong Front Kong",
+    "alias": "Cat Pass Front Cat Pass"
+  },
+  {
+    "name": "Dive Gumbi",
+    "alias": null
+  },
+  {
+    "name": "Webster Precision",
+    "alias": "Loser Precision"
+  },
+  {
+    "name": "Cat Hang EW Gainer",
+    "alias": "Cat Hang Wall Gainer"
+  },
+  {
+    "name": "Inward Front Catch",
+    "alias": null
+  },
+  {
+    "name": "Lache Stall Front",
+    "alias": null
+  },
+  {
+    "name": "Kovac",
+    "alias": null
+  },
+  {
+    "name": "Peter Pan Running Gainer Layout",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Pike",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Stall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Gainer One-Hand Down Monkey Full",
+    "alias": null
+  },
+  {
+    "name": "Wall Wrap Arabian Inward Down Monkey Half",
+    "alias": null
+  },
+  {
+    "name": "Tac Side Full",
+    "alias": null
+  },
+  {
+    "name": "Kong Front",
+    "alias": "Cat Pass Front"
+  },
+  {
+    "name": "Wall Rocketboi",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Side Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Reverse Palm Spin Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Wall Inward Front Half",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Punch Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Side Full",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Castaway Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Wall Arabian Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Russian Front One And A Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Parallel Bar Pimp",
+    "alias": null
+  },
+  {
+    "name": "Wall Gainer Down Monkey Half",
+    "alias": "Two-Hand Dragonfly Half"
+  },
+  {
+    "name": "Lache Punch Wall Inward Front Full",
+    "alias": null
+  },
+  {
+    "name": "Turn Gaet Pimp Wall Wrap Full",
+    "alias": null
+  },
+  {
+    "name": "270 Tic Tac Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Dive Palm Inward Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Back Hip Circle Dismount",
+    "alias": null
+  },
+  {
+    "name": "Back Hip Circle Handstand",
+    "alias": null
+  },
+  {
+    "name": "Shoulder Mount",
+    "alias": null
+  },
+  {
+    "name": "Sole Circle",
+    "alias": "Toe-On"
+  },
+  {
+    "name": "One-Hand Palm Double Gainer",
+    "alias": "Double Ginger Flip, Hi-Five Double Gainer"
+  },
+  {
+    "name": "Devil Drop Side",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Arabian Layout",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Stall Back",
+    "alias": null
+  },
+  {
+    "name": "Backward Gate Vault",
+    "alias": null
+  },
+  {
+    "name": "Seat Circle",
+    "alias": "L-sit Circle"
+  },
+  {
+    "name": "One-Elbow Palm Double Gainer",
+    "alias": "Elbow Double Ginger Flip, Elbow Hi-Five Double Gainer"
+  },
+  {
+    "name": "Gargoyle 270 Palm Side",
+    "alias": null
+  },
+  {
+    "name": "Circle Castaway Full",
+    "alias": null
+  },
+  {
+    "name": "Lazy Bomb",
+    "alias": null
+  },
+  {
+    "name": "Penny Drop Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Wall Roll Half",
+    "alias": null
+  },
+  {
+    "name": "Kong Trapdoor Wall Flip",
+    "alias": "Cat Pass Trapdoor Wall Flip"
+  },
+  {
+    "name": "Kip Full-Up Front",
+    "alias": "Kip 360 Front"
+  },
+  {
+    "name": "Swing Castaway Arabian Half",
+    "alias": null
+  },
+  {
+    "name": "Aerial Twist-In Back-Out",
+    "alias": "A-Twist-In"
+  },
+  {
+    "name": "Cork Zero Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Back Handcuffs",
+    "alias": null
+  },
+  {
+    "name": "Double Leg Counter Half",
+    "alias": "Double Leg Anti-Half"
+  },
+  {
+    "name": "Roll Kip-Up",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Two-And-A-Half Full Regrab",
+    "alias": "Gienger Double Full"
+  },
+  {
+    "name": "Palm Spin Gaet Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "Gainer Quadruple Full",
+    "alias": "Gainer 1440"
+  },
+  {
+    "name": "Dive Castaway Back",
+    "alias": "Dive Palm Drop"
+  },
+  {
+    "name": "Inward Double Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Palm Gainer-Out",
+    "alias": "Bar Gainer-In Palm Gainer Full-Out, Swing Gainer-In Palm Gainer Full-Out"
+  },
+  {
+    "name": "Lache Precision Punch Wall Full",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-In Double Full-Out",
+    "alias": "Swing Gainer Full-In Double Full-Out"
+  },
+  {
+    "name": "Wall Rocketboi Wall Touchdown",
+    "alias": null
+  },
+  {
+    "name": "Kovac Half",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Arabian Unwind Half",
+    "alias": "Flyaway Arabian Unhalf"
+  },
+  {
+    "name": "Knee Giant Pimp Flip",
+    "alias": "Penny Drop Pimp Flip"
+  },
+  {
+    "name": "Wall Corkscrew Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Penny Drop",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Double Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Arabian One And A Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Trapdoor Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Lotus Flyaway",
+    "alias": "Lotus Swing Gainer"
+  },
+  {
+    "name": "Castaway Arabian",
+    "alias": "Palm Drop Arabian"
+  },
+  {
+    "name": "Pendulum Full-Down",
+    "alias": null
+  },
+  {
+    "name": "One-Step Corner Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Wall Punch Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Wall Spin Flip",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Layout",
+    "alias": null
+  },
+  {
+    "name": "Dive One-Hand Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Precision-In Punch Wall Flip-Out",
+    "alias": "Swing Gainer Precision Punch Wall Flip"
+  },
+  {
+    "name": "Sitting Dash Bomb Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Slant Kong Gainer Double Full",
+    "alias": "Slant Cat Pass Gainer Double Full"
+  },
+  {
+    "name": "One-Step Palm Punch Layout",
+    "alias": null
+  },
+  {
+    "name": "Wall Arabian Wall Punch Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Lazy Boy Running Gainer",
+    "alias": null
+  },
+  {
+    "name": "540 Precision",
+    "alias": null
+  },
+  {
+    "name": "Kick Side Full",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Kick-Out",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Castaway Arabian Unwind Half",
+    "alias": "Castaway Arabian Unhalf"
+  },
+  {
+    "name": "Corner Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Wall Side Flip",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Pike",
+    "alias": "Cat Pass Gainer Pike"
+  },
+  {
+    "name": "Tsukahara Layout Dismount",
+    "alias": null
+  },
+  {
+    "name": "Pop Cast Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Side Catch",
+    "alias": null
+  },
+  {
+    "name": "Front Kong",
+    "alias": null
+  },
+  {
+    "name": "Wall Full Snapu",
+    "alias": null
+  },
+  {
+    "name": "Standing Double Front Flip",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Frisbee Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Reverse Safety",
+    "alias": null
+  },
+  {
+    "name": "Turn Wall Hang Drop",
+    "alias": null
+  },
+  {
+    "name": "Wall Pounce Drop",
+    "alias": null
+  },
+  {
+    "name": "Standing Pike Double Front Flip",
+    "alias": null
+  },
+  {
+    "name": "Pimp Spin Gainer Pike",
+    "alias": null
+  },
+  {
+    "name": "Cast Vault",
+    "alias": null
+  },
+  {
+    "name": "360 Shoulder Vault 360",
+    "alias": "360 Shoulder Vault 360"
+  },
+  {
+    "name": "Back Full Unwind Full",
+    "alias": null
+  },
+  {
+    "name": "Sitting Dash Bomb",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Wall Inward Front Regrab",
+    "alias": null
+  },
+  {
+    "name": "Human Flag Castaway Wall Full",
+    "alias": null
+  },
+  {
+    "name": "Human Flag Castaway Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Wall Spin Half",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Turn Gargoyle Front",
+    "alias": null
+  },
+  {
+    "name": "Back One And A Half Full",
+    "alias": null
+  },
+  {
+    "name": "Back Two And A Half Full",
+    "alias": null
+  },
+  {
+    "name": "Back Triple Full",
+    "alias": null
+  },
+  {
+    "name": "Back Three And A Half Full",
+    "alias": null
+  },
+  {
+    "name": "Back Quadruple Full",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Gainer One-Hand Down Monkey Flash Kick",
+    "alias": null
+  },
+  {
+    "name": "Quadruple Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Kick Full",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Palm Gainer Full-Out",
+    "alias": "Bar Gainer-In Palm Gainer Full-Out, Swing Gainer-In Palm Gainer Full-Out"
+  },
+  {
+    "name": "Gainer Pike",
+    "alias": null
+  },
+  {
+    "name": "Double Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Back 270 Down Monkey Quarter",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Punch Wall Side",
+    "alias": null
+  },
+  {
+    "name": "Flyaway One-And-A-Half Full Regrab",
+    "alias": "Deff, Gienger Full"
+  },
+  {
+    "name": "Tsukahara Double Full Dismount",
+    "alias": "Kasamatsu Full Dismount"
+  },
+  {
+    "name": "Speed Tunnel Pike",
+    "alias": "Bullet Vault"
+  },
+  {
+    "name": "Palm Wall Inward Tunnel Pike Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Stall Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "360 Safety Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "Inward Tunnel Full",
+    "alias": null
+  },
+  {
+    "name": "Triple Kong Gainer",
+    "alias": "Triple Cat Pass Gainer"
+  },
+  {
+    "name": "Double Safety Vault",
+    "alias": "Double Speed Step"
+  },
+  {
+    "name": "Lache Double Dark Arabian",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Inward 360 Dive Roll-Out",
+    "alias": "Bar Gainer-In Inward 360 Dive Roll, Swing Gainer-In Inward 360 Dive Roll,"
+  },
+  {
+    "name": "Castaway Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Triple Safety Vault",
+    "alias": "Triple Speed Step"
+  },
+  {
+    "name": "Backward Precision",
+    "alias": null
+  },
+  {
+    "name": "Hurdle Precision",
+    "alias": null
+  },
+  {
+    "name": "Safety Precision",
+    "alias": "Speed Step Precision"
+  },
+  {
+    "name": "Punch Tic Tac",
+    "alias": null
+  },
+  {
+    "name": "Punch Tic Tac Precision",
+    "alias": null
+  },
+  {
+    "name": "Kong 180 Precision",
+    "alias": "Cat Pass 180 Precision"
+  },
+  {
+    "name": "Kong Triple Safety Vault",
+    "alias": "Cat Pass Triple Speed Step Vault"
+  },
+  {
+    "name": "Speed Double Safety Precision",
+    "alias": "Speed Double Speed Step Precision"
+  },
+  {
+    "name": "Speed Double Safety",
+    "alias": "Speed Double Speed Step"
+  },
+  {
+    "name": "Turn Gaet Pimp Wall Full",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop Wall Full",
+    "alias": null
+  },
+  {
+    "name": "Dive Half Back Unwind Full-Down",
+    "alias": "Jonah Unfull-Down"
+  },
+  {
+    "name": "One-Hand Palm Gainer Pike",
+    "alias": "Ginger Flip Pike, Hi-Five Gainer Pike"
+  },
+  {
+    "name": "Ankle Front",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop Wall Double Full",
+    "alias": null
+  },
+  {
+    "name": "Tunnel Pike",
+    "alias": "Bullet Flip"
+  },
+  {
+    "name": "Palm Wall Inward Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Palm Wall Inward Tunnel Pike",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Gainer One-Hand Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Side Quarter Layout",
+    "alias": null
+  },
+  {
+    "name": "Wall Full Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Front",
+    "alias": "Loser"
+  },
+  {
+    "name": "Side One And A Quarter Full",
+    "alias": null
+  },
+  {
+    "name": "Side Quarter Back",
+    "alias": null
+  },
+  {
+    "name": "Dive Half Back Full-Down",
+    "alias": "Jonah Full-Down"
+  },
+  {
+    "name": "Devil Drop Gainer One-Hand Down Monkey Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Wall Full Double Leg Full Twist",
+    "alias": null
+  },
+  {
+    "name": "Side Unwind Half",
+    "alias": "Side Unhalf"
+  },
+  {
+    "name": "One-Leg Two-Step Wall Flip",
+    "alias": "Skip-Step Wall Flip"
+  },
+  {
+    "name": "360 Safety Pimp",
+    "alias": null
+  },
+  {
+    "name": "Elbow Gaet Pimp Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "360 Safety",
+    "alias": null
+  },
+  {
+    "name": "Dyno Pull Palm Wall Punch Layout",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Stall",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Hang Gainer",
+    "alias": null
+  },
+  {
+    "name": "Castaway Pike",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Raiz Dismount",
+    "alias": "Sailor Moon"
+  },
+  {
+    "name": "2D Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Ascent",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Layout-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full Cat",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew Shuriken Cutter",
+    "alias": null
+  },
+  {
+    "name": "Dyno Pull Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "EW Gainer Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Elbow Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "Side-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Side Pistol",
+    "alias": null
+  },
+  {
+    "name": "Trapdoor Punch Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Wall Full Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "One-Elbow Palm Gainer",
+    "alias": "Ginger Flip, Hi-Five Gainer"
+  },
+  {
+    "name": "One-Step Corner Wall Flare",
+    "alias": null
+  },
+  {
+    "name": "Castaway Pistol Side",
+    "alias": null
+  },
+  {
+    "name": "Wall Safety Step Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Pistol Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Palm Spin Aerial",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Pop Castaway Pistol Side",
+    "alias": null
+  },
+  {
+    "name": "Side Pistol",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Wall Punch Layout",
+    "alias": null
+  },
+  {
+    "name": "One-Step Straddle Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Double Pistol Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Pop Cast Gainer",
+    "alias": null
+  },
+  {
+    "name": "Baby Knee Giant Gainer",
+    "alias": null
+  },
+  {
+    "name": "Dyno Palm Wall Punch Layout",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Inward Illusion Twist",
+    "alias": null
+  },
+  {
+    "name": "Alley Bridge Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "180 Splat",
+    "alias": null
+  },
+  {
+    "name": "Horizontal Wall Run 180 Dive Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Hutson Gargoyle Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Alien",
+    "alias": null
+  },
+  {
+    "name": "Double Alien",
+    "alias": null
+  },
+  {
+    "name": "Corner Wall Arabian",
+    "alias": null
+  },
+  {
+    "name": "Splat",
+    "alias": null
+  },
+  {
+    "name": "Crowd Awakener Speed Vault",
+    "alias": null
+  },
+  {
+    "name": "540 One-Hand Reverse Crescent Kick Vault",
+    "alias": null
+  },
+  {
+    "name": "Au Batido Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Back Hip Circle Quarter Twist Dismount",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Twist",
+    "alias": null
+  },
+  {
+    "name": "Back Hip Circle Half Knee Giant",
+    "alias": null
+  },
+  {
+    "name": "Two-Hand Palm Butterfly Twist",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Palm Spin",
+    "alias": null
+  },
+  {
+    "name": "Cat Split Angel Drop",
+    "alias": null
+  },
+  {
+    "name": "Dive Shoulder Mount",
+    "alias": null
+  },
+  {
+    "name": "One-Step Front 1 1/3 Dive Kong Gainer",
+    "alias": "One-Step Front 1 1/3 Dive Cat Pass Gainer"
+  },
+  {
+    "name": "Flare Castaway Side",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Handstand",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Down Monkey Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Tripod Angel Drop",
+    "alias": null
+  },
+  {
+    "name": "Aerial Twist Vault Method Grab",
+    "alias": null
+  },
+  {
+    "name": "Gainer Half Inward Down Monkey Half",
+    "alias": null
+  },
+  {
+    "name": "Helicoptero Dismount",
+    "alias": null
+  },
+  {
+    "name": "Kick The Moon Palm Spin",
+    "alias": null
+  },
+  {
+    "name": "Lache Half Handstand",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Palm Gainer Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "One-Step Wall Flare",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Crowd Awakener",
+    "alias": null
+  },
+  {
+    "name": "Palm Punch Wall Roll",
+    "alias": null
+  },
+  {
+    "name": "Palm Tac Dive Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Palm Gainer Wall Back Walkover",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Mute Grab",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Kong Gainer",
+    "alias": "Vortex Cat Pass Gainer, Vortex Kong Gainer"
+  },
+  {
+    "name": "Wall Inward Front One And A Half",
+    "alias": "Wall Inward Rudi, Wall Loser One And A Half"
+  },
+  {
+    "name": "Toe Shoot Front Half",
+    "alias": null
+  },
+  {
+    "name": "Palm Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Coffee Grinder Hyper",
+    "alias": null
+  },
+  {
+    "name": "Coffee Grinder Alien",
+    "alias": null
+  },
+  {
+    "name": "Rail Coffee Grinder",
+    "alias": null
+  },
+  {
+    "name": "Raiz Twist Dismount",
+    "alias": null
+  },
+  {
+    "name": "Reverse Knee Giant Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Reverse Palm Spin Front Kick",
+    "alias": null
+  },
+  {
+    "name": "Reverse Palm Spin Windmill",
+    "alias": null
+  },
+  {
+    "name": "Tunnel Handspring",
+    "alias": null
+  },
+  {
+    "name": "Reverse One-Hand Reverse Crescent",
+    "alias": null
+  },
+  {
+    "name": "Reverse One-Hand Reverse",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Pop Castaway Pike",
+    "alias": null
+  },
+  {
+    "name": "Running Drop Dash Bomb",
+    "alias": null
+  },
+  {
+    "name": "Sitting Touchup Butterfly Twist Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Slant Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Takuraba Scissor",
+    "alias": null
+  },
+  {
+    "name": "Triple Butterfly Twist Vault",
+    "alias": null
+  },
+  {
+    "name": "Tunnel Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Tunnel One-Hand Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Turn Castaway Side",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Turtle Twist",
+    "alias": null
+  },
+  {
+    "name": "Wall Flip Back Handspring",
+    "alias": null
+  },
+  {
+    "name": "Wall Boxcutter",
+    "alias": null
+  },
+  {
+    "name": "Touchdown Raiz Roll",
+    "alias": null
+  },
+  {
+    "name": "Wall Flip Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Webster Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Pull Palm Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Cast Gainer Side",
+    "alias": null
+  },
+  {
+    "name": "Cast Gainer Side Vault",
+    "alias": null
+  },
+  {
+    "name": "Arabian Double Side",
+    "alias": null
+  },
+  {
+    "name": "Inward 360 Dive One-Hand Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Running Dash Gainer",
+    "alias": null
+  },
+  {
+    "name": "Safety Double Parsva Balasana Twist",
+    "alias": null
+  },
+  {
+    "name": "One-Step Two-Hand Palm Inward Aerial Twist Double Leg",
+    "alias": "We Don't Know What It Is Flip"
+  },
+  {
+    "name": "Wall Wrap Arabian Au De Frente",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Arabian Inward Down Monkey Half",
+    "alias": null
+  },
+  {
+    "name": "Tsukahara Full Vault",
+    "alias": "Kasamatsu Vault"
+  },
+  {
+    "name": "Tucked Macaco",
+    "alias": null
+  },
+  {
+    "name": "Pop Snapu Twist",
+    "alias": null
+  },
+  {
+    "name": "Caster 360 Down Monkey Dismount",
+    "alias": null
+  },
+  {
+    "name": "Wall Pop 360 Front Kick",
+    "alias": null
+  },
+  {
+    "name": "One-Step Wall Spin Double Full",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Layout-In Pike-Out",
+    "alias": null
+  },
+  {
+    "name": "Double Raiz Twist Dismount",
+    "alias": null
+  },
+  {
+    "name": "Tunnel Double Leg Full",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Pike",
+    "alias": null
+  },
+  {
+    "name": "Swing Cast Gainer",
+    "alias": "Back Uprise Cast Gainer"
+  },
+  {
+    "name": "Forward Split Caster Back",
+    "alias": null
+  },
+  {
+    "name": "Wall Touchdown Raiz",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Touchdown Raiz",
+    "alias": null
+  },
+  {
+    "name": "Arabian Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Wall Pistol Side Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Arabian Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Wrap 360 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Shant",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Down Monkey-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Palm Side Pistol Half",
+    "alias": null
+  },
+  {
+    "name": "Spider-Man Stall Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Full-Up Arabian Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Ghost Step Stride Precision",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Tinsica",
+    "alias": null
+  },
+  {
+    "name": "Tucked Shant",
+    "alias": null
+  },
+  {
+    "name": "Crucifix Flyaway Full",
+    "alias": null
+  },
+  {
+    "name": "Safety Aerial Twist",
+    "alias": null
+  },
+  {
+    "name": "One-Step Front 1 1/3 Dive Kong",
+    "alias": "One-Step Front 1 1/3 Dive Cat Pass"
+  },
+  {
+    "name": "Tripod Gainer",
+    "alias": null
+  },
+  {
+    "name": "Lache Front Regrab",
+    "alias": null
+  },
+  {
+    "name": "Standing Russian Front One-And-A-Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "One-Step 180 Palm Side",
+    "alias": "Wall Pop 180 Palm Side"
+  },
+  {
+    "name": "Castaway Inward Front Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "One-Step Punch Wall Full",
+    "alias": null
+  },
+  {
+    "name": "Standing Russian Front Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "EW Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Arabian Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Castaway Inward Front Catch",
+    "alias": null
+  },
+  {
+    "name": "Sitting Safety Turn Cast Side",
+    "alias": null
+  },
+  {
+    "name": "180 Palm Inward Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Double Full",
+    "alias": null
+  },
+  {
+    "name": "Lache Side Quarter Back",
+    "alias": null
+  },
+  {
+    "name": "Wall Tornado Kick Gyro",
+    "alias": null
+  },
+  {
+    "name": "Tsukahara Double Arabian Vault",
+    "alias": "Kasamatsu Double Arabian Vault"
+  },
+  {
+    "name": "Shoulder Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Caster Inward Front Inward Down Monkey Dismount",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Double Alien",
+    "alias": null
+  },
+  {
+    "name": "Reverse Lever Inward Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Wall Wrap Arabian One-Hand Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse 360 Crescent Kick",
+    "alias": null
+  },
+  {
+    "name": "Parallel Bar Gainer Dismount Suicide Roll",
+    "alias": null
+  },
+  {
+    "name": "Kong 180 Dive Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Double Figure 4 Twist Dismount",
+    "alias": null
+  },
+  {
+    "name": "Crucifix Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Raiz Dismount Push Half Twist",
+    "alias": null
+  },
+  {
+    "name": "Inward Frisbee Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Front Handspring-In Front Half-Out Dismount",
+    "alias": null
+  },
+  {
+    "name": "Running Shant Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Double Pistol Back",
+    "alias": null
+  },
+  {
+    "name": "Front Handspring-In Front Full-Out Dismount",
+    "alias": null
+  },
+  {
+    "name": "Wall Touch Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Running Shant Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Sit Turn Castaway Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Three-Step Tic Tac Precision",
+    "alias": null
+  },
+  {
+    "name": "Inward Front Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Dyno Pull Palm Wall Punch Full",
+    "alias": null
+  },
+  {
+    "name": "Wall Tunnel Wall Cartwheel",
+    "alias": "Trinity Wall Cartwheel"
+  },
+  {
+    "name": "Castaway Straddle Back",
+    "alias": "Straddle Palm Drop"
+  },
+  {
+    "name": "Standing Russian Front",
+    "alias": null
+  },
+  {
+    "name": "Spider-Man Swing Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Kong One-Hand Palm Gainer",
+    "alias": null
+  },
+  {
+    "name": "Kip Half Punch Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Sitting Gainer",
+    "alias": null
+  },
+  {
+    "name": "Angel Pull Palm",
+    "alias": null
+  },
+  {
+    "name": "Wall Safety Step",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Flash Kick Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Wall Flip Wall Punch Arabian Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "One-Step Double Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Palm Flip Precision",
+    "alias": null
+  },
+  {
+    "name": "Running Slant Gainer Precision",
+    "alias": null
+  },
+  {
+    "name": "Gallop Cast Gainer",
+    "alias": null
+  },
+  {
+    "name": "Two-Hand Butterfly Twist Vault",
+    "alias": null
+  },
+  {
+    "name": "Rail Hige Flare",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Quadruple Full",
+    "alias": null
+  },
+  {
+    "name": "Spider-Man Gainer",
+    "alias": null
+  },
+  {
+    "name": "Castaway Full-Up",
+    "alias": "Palm Drop Full-Up"
+  },
+  {
+    "name": "Dark Arabian Unwind Full",
+    "alias": null
+  },
+  {
+    "name": "Double Butterfly Twist",
+    "alias": "Double B-twist"
+  },
+  {
+    "name": "Gainer Full Down Monkey",
+    "alias": "Gainer 360 Down Monkey"
+  },
+  {
+    "name": "Glitch Gainer",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Webster One-And-A-Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Raiden",
+    "alias": null
+  },
+  {
+    "name": "Back Double Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-In Double Back-Out",
+    "alias": "Belle, Flyaway Full-In Triff"
+  },
+  {
+    "name": "Flyaway Full-In Unwind Full-Out",
+    "alias": "Flyaway Full-In Unfull-Out"
+  },
+  {
+    "name": "360 Dive Front Full-Down",
+    "alias": "Vortex Front Full-Down, Pig Skin Full-Down, Psycho Crusher Full-Down"
+  },
+  {
+    "name": "Caster 360 Down Monkey Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Aerial Twist Vault Method Grab Shuriken",
+    "alias": null
+  },
+  {
+    "name": "Running Stall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Arabian",
+    "alias": null
+  },
+  {
+    "name": "Pop Snapu",
+    "alias": null
+  },
+  {
+    "name": "One-Step Wall Spin Full",
+    "alias": null
+  },
+  {
+    "name": "Tunnel Double Leg",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Alien",
+    "alias": null
+  },
+  {
+    "name": "Running Shant",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Tic Tac Precision",
+    "alias": null
+  },
+  {
+    "name": "Lache Lonestar",
+    "alias": null
+  },
+  {
+    "name": "Caster Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Running Slant Gainer",
+    "alias": null
+  },
+  {
+    "name": "Reverse Vault",
+    "alias": null
+  },
+  {
+    "name": "Caster 360 Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Sailor Moon Snapu Vault",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Flash Kick",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Arabian Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Arabian Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Wall Wrap Arabian Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Layout Catch",
+    "alias": null
+  },
+  {
+    "name": "Wall Double Flash Kick",
+    "alias": null
+  },
+  {
+    "name": "Wall Flip Palm Walk",
+    "alias": "Wall Flip Palm Walking"
+  },
+  {
+    "name": "Backward Palm Walk",
+    "alias": "Backward Palm Walking"
+  },
+  {
+    "name": "Dive Palm Walk",
+    "alias": "Dive Palm Walking"
+  },
+  {
+    "name": "Hurdle Dive Front Flip",
+    "alias": "Hurdle Superman Front"
+  },
+  {
+    "name": "Lache Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Palm Walk-Out",
+    "alias": "The Torhall"
+  },
+  {
+    "name": "Caster Gainer Quarter",
+    "alias": "Bio Gainer Quarter, Strafe Gainer Quarter"
+  },
+  {
+    "name": "Flyaway-In Pistol-Out",
+    "alias": "Bar Gainer-In Pistol-Out, Swing Gainer-In Pistol-Out"
+  },
+  {
+    "name": "Flyaway Flash Kick-In Full-Out",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Layout",
+    "alias": null
+  },
+  {
+    "name": "Handstand Castaway Layout",
+    "alias": "Quasimodo Layout"
+  },
+  {
+    "name": "Butterfly Helicoptero Vault",
+    "alias": null
+  },
+  {
+    "name": "Front Handspring Switch",
+    "alias": null
+  },
+  {
+    "name": "Macaco",
+    "alias": "Valdez"
+  },
+  {
+    "name": "Swing Caster Gainer",
+    "alias": null
+  },
+  {
+    "name": "Wall Macaco",
+    "alias": "Wall Valdez"
+  },
+  {
+    "name": "180 Dive Down Monkey",
+    "alias": "Sunny Side Up"
+  },
+  {
+    "name": "Dive Front Flip",
+    "alias": "Stall Front, Superman Front"
+  },
+  {
+    "name": "Kong Gainer Kong",
+    "alias": "Cat Pass Gainer Cat Pass"
+  },
+  {
+    "name": "Flyaway Full-In Full-Out",
+    "alias": "Flyaway Double Double, Watanabe"
+  },
+  {
+    "name": "Wall Spring",
+    "alias": null
+  },
+  {
+    "name": "Sitting Dash Gainer Pike",
+    "alias": null
+  },
+  {
+    "name": "Macaco Scissor Switch",
+    "alias": null
+  },
+  {
+    "name": "1080 Dive Roll",
+    "alias": "Triple Twisting Dive Roll"
+  },
+  {
+    "name": "Dive Half Back",
+    "alias": "Jonah"
+  },
+  {
+    "name": "Side Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Flare Pimp Flip",
+    "alias": null
+  },
+  {
+    "name": "Toe Shoot Front Full",
+    "alias": null
+  },
+  {
+    "name": "Turn Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Palm Spin Raiz",
+    "alias": null
+  },
+  {
+    "name": "Back Double Full",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "One-Step Raiden",
+    "alias": null
+  },
+  {
+    "name": "Two-Hand Butterfly Vault",
+    "alias": null
+  },
+  {
+    "name": "Butterfly Vault",
+    "alias": "Rail Butterfly"
+  },
+  {
+    "name": "Aerial Twist",
+    "alias": "A-twist"
+  },
+  {
+    "name": "Devil Drop Raiden",
+    "alias": null
+  },
+  {
+    "name": "Webster Front One-And-A-Half Dive Roll",
+    "alias": "Webster 3/2 Dive Roll"
+  },
+  {
+    "name": "One-Step 360 Horizontal Wall Run",
+    "alias": null
+  },
+  {
+    "name": "Flare",
+    "alias": "Thomas Flare"
+  },
+  {
+    "name": "Gargoyle Gainer Quarter Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Cast Mount",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Tic Tac Trapdoor Precision Full",
+    "alias": null
+  },
+  {
+    "name": "Wall Bridge",
+    "alias": null
+  },
+  {
+    "name": "Wall Pirouette",
+    "alias": null
+  },
+  {
+    "name": "Wall Swivel Gumbi",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Tic Tac Trapdoor Precision",
+    "alias": null
+  },
+  {
+    "name": "Wall Pistol Side",
+    "alias": null
+  },
+  {
+    "name": "Backward Roll",
+    "alias": null
+  },
+  {
+    "name": "Macaco Quarter Unwind Quarter",
+    "alias": "Macaco Unhalf"
+  },
+  {
+    "name": "Backward Shoulder Roll",
+    "alias": null
+  },
+  {
+    "name": "Dyno Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Slant Kong Gainer Safety",
+    "alias": "Slant Cat Pass Safety"
+  },
+  {
+    "name": "Gaet Pimp-In Stall-Out",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Valdez",
+    "alias": ""
+  },
+  {
+    "name": "Kash Roll",
+    "alias": null
+  },
+  {
+    "name": "Lache Precision Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Pirouette",
+    "alias": null
+  },
+  {
+    "name": "Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Front Full",
+    "alias": null
+  },
+  {
+    "name": "Front Half",
+    "alias": "Barani"
+  },
+  {
+    "name": "Banol Drop Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Back 1 1/2 Dive Roll",
+    "alias": "Thomas"
+  },
+  {
+    "name": "Double Kong Gainer",
+    "alias": "Double Cat Pass Gainer"
+  },
+  {
+    "name": "Parallel Bar Front",
+    "alias": null
+  },
+  {
+    "name": "Lache Front",
+    "alias": null
+  },
+  {
+    "name": "Flyaway 1 3/4 Full-In Side-Out",
+    "alias": null
+  },
+  {
+    "name": "Kong Double Gainer",
+    "alias": "Cat Pass Double Gainer"
+  },
+  {
+    "name": "Swing Castaway Stall Back",
+    "alias": "Back Uprise Stall Back"
+  },
+  {
+    "name": "Castaway Full",
+    "alias": "Palm Drop Full"
+  },
+  {
+    "name": "Punch Wall Inward Double Side",
+    "alias": null
+  },
+  {
+    "name": "Flyaway X-Out",
+    "alias": "Swing Gainer X-Out"
+  },
+  {
+    "name": "Wall Corkscrew Down Monkey 450",
+    "alias": null
+  },
+  {
+    "name": "Quarter Unwind Half Dive Kong Gainer",
+    "alias": "Quarter Unwind Half Dive Cat Pass Gainer"
+  },
+  {
+    "name": "Tunnel Full",
+    "alias": null
+  },
+  {
+    "name": "360 Dive One-Hand Reverse Double Alien",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Full Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Gate Vault",
+    "alias": null
+  },
+  {
+    "name": "Caster Valdez-In Back-Out",
+    "alias": "Caster Macaco Bomb, Caster Valdez Bomb"
+  },
+  {
+    "name": "Punch Wall Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Macaco-In Full-Out",
+    "alias": null
+  },
+  {
+    "name": "Back Quarter Side",
+    "alias": null
+  },
+  {
+    "name": "Gate Castaway Back",
+    "alias": "Gate Bomb"
+  },
+  {
+    "name": "Wall Gainer Wall Punch Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "360 Descent",
+    "alias": null
+  },
+  {
+    "name": "Butt Vault",
+    "alias": null
+  },
+  {
+    "name": "Backward Shoulder Roll Twist Dismount",
+    "alias": null
+  },
+  {
+    "name": "Inward Tunnel Double Leg Full",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Side Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Wall Lonestar",
+    "alias": null
+  },
+  {
+    "name": "Wall Tornado Kick",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Wall Inward Double Side",
+    "alias": null
+  },
+  {
+    "name": "Dive Handstand",
+    "alias": null
+  },
+  {
+    "name": "Pimp Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Descent",
+    "alias": null
+  },
+  {
+    "name": "Wall Layout One-Hand Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "EW Gainer Full Down Monkey",
+    "alias": "Erik Wall Gainer Full Down Monkey"
+  },
+  {
+    "name": "Figure 4 Twist Dismount",
+    "alias": null
+  },
+  {
+    "name": "EW Gainer Full",
+    "alias": "Eugene Wall Gainer Full, Erik Wall Gainer Full"
+  },
+  {
+    "name": "Front Flip Precision",
+    "alias": null
+  },
+  {
+    "name": "Cast Stall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Double Side Dismount",
+    "alias": null
+  },
+  {
+    "name": "Dive Front Flip Precision",
+    "alias": null
+  },
+  {
+    "name": "Double Split Vault",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Inward Side Double Full",
+    "alias": null
+  },
+  {
+    "name": "Sitting Full-Up Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Double Full",
+    "alias": null
+  },
+  {
+    "name": "Wall Gumbi Half",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full Spider Climb",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Double Flyaway Catch",
+    "alias": "Swing Double Gainer Catch, Bar Double Gainer Catch"
+  },
+  {
+    "name": "EW Gainer Double Full",
+    "alias": "Eugene Wall Gainer Double Full"
+  },
+  {
+    "name": "Flyaway Full Double Leg Twist",
+    "alias": "Bar Gainer Double Leg Twist, Swing Gainer Double Leg Twist"
+  },
+  {
+    "name": "Turn Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Double Full",
+    "alias": null
+  },
+  {
+    "name": "Webster Side",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Wall Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Kong Punch Wall Inward Front Half Kong",
+    "alias": null
+  },
+  {
+    "name": "Caster Gainer-In Stall-Out",
+    "alias": "Bio Gainer-In Stall-Out, Lateral Gainer-In Stall-Out, Strafe Gainer-In Stall-Out"
+  },
+  {
+    "name": "EW Gainer Unwind Half",
+    "alias": null
+  },
+  {
+    "name": "Banol",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Double Flyaway",
+    "alias": "Double Bar Gainer, Double Swing Gainer"
+  },
+  {
+    "name": "Full-Up Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Banol Drop Castaway Side",
+    "alias": ""
+  },
+  {
+    "name": "Swing Castaway Back Half Regrab",
+    "alias": "Back Uprise Half Regrab"
+  },
+  {
+    "name": "Punch Wall Inward Side Full",
+    "alias": null
+  },
+  {
+    "name": "Double Kong Gainer Full",
+    "alias": "Double Cat Pass Gainer Full"
+  },
+  {
+    "name": "Flyaway-In Punch Wall Inward Front-Out",
+    "alias": "Bar Gainer-In Punch Wall Inward Front-Out, Swing Gainer-In Punch Wall Inward Front-Out"
+  },
+  {
+    "name": "Cork Zero",
+    "alias": null
+  },
+  {
+    "name": "Gainer Full",
+    "alias": "Gainer 360"
+  },
+  {
+    "name": "Front Flip Splat",
+    "alias": null
+  },
+  {
+    "name": "Swingthru Caster Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Korbut 3/2 Full",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Flash Kick",
+    "alias": null
+  },
+  {
+    "name": "720 Dive Kong",
+    "alias": "720 Cat Pass, 720 Vortex Kong"
+  },
+  {
+    "name": "180 Precision",
+    "alias": null
+  },
+  {
+    "name": "Double Dash Vault",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Side",
+    "alias": "Loser Side"
+  },
+  {
+    "name": "Full-Up Side Precision",
+    "alias": null
+  },
+  {
+    "name": "Reverse Lever 360 Regrab",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Double Full",
+    "alias": "Cat Pass Gainer Double Full"
+  },
+  {
+    "name": "Misleg Webster Side",
+    "alias": null
+  },
+  {
+    "name": "Tripod Side Flip",
+    "alias": null
+  },
+  {
+    "name": "Starfish Webster Side",
+    "alias": ""
+  },
+  {
+    "name": "Two-Step Wall Inward Double Side",
+    "alias": null
+  },
+  {
+    "name": "Rodeo Webster Side",
+    "alias": null
+  },
+  {
+    "name": "Wall 270 Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Toe-On Inward 720 Roll",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew Wall Back Handspring Half",
+    "alias": null
+  },
+  {
+    "name": "Toehook Down Monkey Cat",
+    "alias": null
+  },
+  {
+    "name": "Frog Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "360 Speed 180 Twist",
+    "alias": null
+  },
+  {
+    "name": "Crane Step",
+    "alias": null
+  },
+  {
+    "name": "Two-Step 360 Horizontal Wall Run",
+    "alias": null
+  },
+  {
+    "name": "Butterfly Twist-In Back-Out",
+    "alias": "B-Twist-In"
+  },
+  {
+    "name": "Dive Front Splat-In Punch Wall Layout-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Palm Side-Out",
+    "alias": "Bar Gainer-In Palm Side-Out, Swing Gainer-In Palm Side-Out"
+  },
+  {
+    "name": "Triple Side Flip",
+    "alias": "Trip Side"
+  },
+  {
+    "name": "Flyaway Layout-In Full-Out",
+    "alias": null
+  },
+  {
+    "name": "Russian Front Dash Bomb",
+    "alias": null
+  },
+  {
+    "name": "Triple Kash",
+    "alias": null
+  },
+  {
+    "name": "Alley Upward Plank Down Monkey",
+    "alias": "Alley Purvottanasana Down Monkey"
+  },
+  {
+    "name": "Flyaway Spider-Man-In Layout-Out",
+    "alias": "Bar Gainer Spider-Man-In Layout-Out, Swing Gainer Spider-Man-In Layout-Out"
+  },
+  {
+    "name": "Swing Castaway Stall Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Gainer Quarter Side",
+    "alias": null
+  },
+  {
+    "name": "Korbut Side",
+    "alias": ""
+  },
+  {
+    "name": "Castaway Layout Full-Down",
+    "alias": "Palm Drop Layout Full-Down"
+  },
+  {
+    "name": "Touchup Aerial Twist-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full",
+    "alias": "Bar Gainer Full, Swing Gainer Full"
+  },
+  {
+    "name": "Gaet Pimp Layout-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Tac 180 Trapdoor Wall Flip",
+    "alias": "Cat Hang Tac 180 Trapdoor"
+  },
+  {
+    "name": "Kip-Up Half",
+    "alias": null
+  },
+  {
+    "name": "Lache Dark Arabian Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Double Kash",
+    "alias": null
+  },
+  {
+    "name": "Castaway Back Regrab",
+    "alias": null
+  },
+  {
+    "name": "Back 270 Full Down Monkey 90",
+    "alias": ""
+  },
+  {
+    "name": "Gargoyle Front Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Back 270 Full Down Monkey 450",
+    "alias": null
+  },
+  {
+    "name": "360 Dive One-And-A-Half Front Flip Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Lotus L-Sit Press Front Handspring",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Inward Stall Side",
+    "alias": null
+  },
+  {
+    "name": "Double Full-Up Side",
+    "alias": "720 Dive Side"
+  },
+  {
+    "name": "Lache Punch Dark Arabian Wall Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Straddle Sole Circle",
+    "alias": "Straddle Toe-On"
+  },
+  {
+    "name": "Thief Double Kash",
+    "alias": null
+  },
+  {
+    "name": "Caster 360 Back Handspring Twist",
+    "alias": null
+  },
+  {
+    "name": "Caster 360 Back Handspring",
+    "alias": null
+  },
+  {
+    "name": "Palm Full",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Frog Gainer",
+    "alias": null
+  },
+  {
+    "name": "Butterfly Kick",
+    "alias": null
+  },
+  {
+    "name": "450 Precision",
+    "alias": null
+  },
+  {
+    "name": "Two-Step 360 Horizontal Wall Run Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Flyaway 270 Down Monkey 90",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew Shuriken",
+    "alias": null
+  },
+  {
+    "name": "Stall One-Hand Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "360 Back Handspring",
+    "alias": null
+  },
+  {
+    "name": "Wall Triple Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Two-Step 360 Horizontal Wall Run Gainer",
+    "alias": null
+  },
+  {
+    "name": "Lache Step One-Hand Palm Walk",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Arabian Regrab",
+    "alias": "Back Uprise Arabian Regrab"
+  },
+  {
+    "name": "One-Hand Turtle Twist Vault",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Double Turtle Twist Vault",
+    "alias": null
+  },
+  {
+    "name": "Lache Side Quarter Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Double Full",
+    "alias": "Back Uprise Double Full"
+  },
+  {
+    "name": "Gaet Pimp Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Corner Pop Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Tsukahara Dismount",
+    "alias": null
+  },
+  {
+    "name": "Pop Cast Double Gainer",
+    "alias": null
+  },
+  {
+    "name": "Lache Side Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Lache Side Full",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Arabian",
+    "alias": "Back Uprise Arabian"
+  },
+  {
+    "name": "Flyaway Palm Walk Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Side Double Full",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Stall Layout",
+    "alias": "Back Uprise Stall Layout"
+  },
+  {
+    "name": "Double Corkscrew-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Double Side Flip",
+    "alias": "Dub Side"
+  },
+  {
+    "name": "Flyaway Half Regrab",
+    "alias": "Gienger"
+  },
+  {
+    "name": "Two-Step Wall Flash Kick",
+    "alias": null
+  },
+  {
+    "name": "Triple Back Flip",
+    "alias": null
+  },
+  {
+    "name": "Slant Gainer",
+    "alias": "Cheat Gainer"
+  },
+  {
+    "name": "Wall Corkscrew Arabian 1 1/3 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Kong Side Precision",
+    "alias": "Cat Pass Side Precision"
+  },
+  {
+    "name": "Dive Half Back Unwind Double Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew-In Back-Out",
+    "alias": "Wall Snatch Cannon"
+  },
+  {
+    "name": "Two-Step Wall Flash Kick Full",
+    "alias": null
+  },
+  {
+    "name": "Reverse Straddle Sole Circle Inward Front Half",
+    "alias": null
+  },
+  {
+    "name": "Palm Cork Zero",
+    "alias": null
+  },
+  {
+    "name": "Ceiling Palm Pike",
+    "alias": null
+  },
+  {
+    "name": "Reverse Underbar 180",
+    "alias": "360 Underbar"
+  },
+  {
+    "name": "Back-In Arabian Dive Roll-Out",
+    "alias": null
+  },
+  {
+    "name": "Giant Over 180 Trapdoor Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Lache Kong Gainer",
+    "alias": "Lache Cat Pass Gainer"
+  },
+  {
+    "name": "Toe-On Trapdoor Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Layout-In Layout-Out",
+    "alias": "Flyaway Double Layout"
+  },
+  {
+    "name": "Safety Parsva Balasana Twist",
+    "alias": null
+  },
+  {
+    "name": "Full-Up Gainer Arabian",
+    "alias": "Gainer Filipino"
+  },
+  {
+    "name": "Gargoyle Gainer",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Pop Castaway Side",
+    "alias": null
+  },
+  {
+    "name": "Double Aerial Twist-In Back-Out",
+    "alias": "Double A-Twist-In Back-Out"
+  },
+  {
+    "name": "Tsukahara Dismount",
+    "alias": null
+  },
+  {
+    "name": "Reverse Palm Spin Palm Twist",
+    "alias": null
+  },
+  {
+    "name": "Lache Punch Tic Tac Trapdoor Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Lache Wall One-Hand Cartwheel Twist",
+    "alias": null
+  },
+  {
+    "name": "Cast Half Pirouette Gainer",
+    "alias": null
+  },
+  {
+    "name": "Toeshoot Trapdoor Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Wall Spin-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Side Full-In Side-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Half-In Half-Out",
+    "alias": "Bar Gainer Half-In Half-Out,Flyaway Arabian-In Dark Arabian-Out, Swing Gainer Half-In Half-Out"
+  },
+  {
+    "name": "Gallop Kong Gainer",
+    "alias": null
+  },
+  {
+    "name": "Stall Side-In Side-Out",
+    "alias": null
+  },
+  {
+    "name": "Handstand",
+    "alias": null
+  },
+  {
+    "name": "Reverse Palm Spin 360",
+    "alias": "J-Spin"
+  },
+  {
+    "name": "Dash 180",
+    "alias": null
+  },
+  {
+    "name": "Dash Turn Vault",
+    "alias": null
+  },
+  {
+    "name": "Dash X-Out 360",
+    "alias": null
+  },
+  {
+    "name": "Corner Thread",
+    "alias": null
+  },
+  {
+    "name": "Ground Assisted Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Dash 360",
+    "alias": null
+  },
+  {
+    "name": "Dash X-Out",
+    "alias": null
+  },
+  {
+    "name": "Side-In Stall-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Full-Down-Out",
+    "alias": "Bar Gainer-In Full-Down-Out, Swing Gainer-In Full-Down-Out"
+  },
+  {
+    "name": "Devil Drop Inward Tunnel",
+    "alias": "Hammer Drop"
+  },
+  {
+    "name": "Horizontal Wall Shoulder Roll",
+    "alias": null
+  },
+  {
+    "name": "Wall Assisted Chair Freeze",
+    "alias": null
+  },
+  {
+    "name": "Double Flyaway-In Trapdoor-Out",
+    "alias": "Double Bar Gainer-In Trapdoor-Out, Double Swing Gainer-In Trapdoor-Out"
+  },
+  {
+    "name": "Sitting Helicoptero Front Kick",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Gainer One-Hand Down Monkey Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Inward 360 Dive Roll",
+    "alias": "Cat Pass Gainer Inward 360 Dive Roll"
+  },
+  {
+    "name": "Wall Layout Down Monkey Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Corkscrew Counter Full",
+    "alias": "Kroc, Corkscrew Anti-Full"
+  },
+  {
+    "name": "Punch Wall Double Gainer",
+    "alias": null
+  },
+  {
+    "name": "Macaco Twist",
+    "alias": null
+  },
+  {
+    "name": "Double Split Vault Switch",
+    "alias": null
+  },
+  {
+    "name": "Double Split Vault Late Switch",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Inward 360 Dive Roll",
+    "alias": "Inward Vortex"
+  },
+  {
+    "name": "Rail Helicoptero Twist",
+    "alias": null
+  },
+  {
+    "name": "Quadruple Flyaway",
+    "alias": null
+  },
+  {
+    "name": "Rail Helicoptero",
+    "alias": "Rail Leg Swipe"
+  },
+  {
+    "name": "Helicoptero",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Reverse Side Cat",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Cat",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Stall Gainer",
+    "alias": "Devil Drop Stall Jonah"
+  },
+  {
+    "name": "Half Wall Spin Bounce 360",
+    "alias": null
+  },
+  {
+    "name": "Dive Catch Reverse Giant",
+    "alias": null
+  },
+  {
+    "name": "Reverse Side Cat",
+    "alias": null
+  },
+  {
+    "name": "Henglin",
+    "alias": null
+  },
+  {
+    "name": "Aerial Twist Double Leg Precision",
+    "alias": "A-Twist D-Leg Precision"
+  },
+  {
+    "name": "Raiden Side",
+    "alias": null
+  },
+  {
+    "name": "Raiz-In Frisbee-Out",
+    "alias": null
+  },
+  {
+    "name": "Alley Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "Front Handspring",
+    "alias": null
+  },
+  {
+    "name": "Castaway Inward Front-In Punch Wall Front-Out",
+    "alias": null
+  },
+  {
+    "name": "Double Kong Front",
+    "alias": "Double Cat Pass Front"
+  },
+  {
+    "name": "Reverse Baby Knee Giant",
+    "alias": null
+  },
+  {
+    "name": "Knee Aerial Twist",
+    "alias": "Knee A-twist"
+  },
+  {
+    "name": "Front Handspring Vault",
+    "alias": null
+  },
+  {
+    "name": "Drop Kumquat",
+    "alias": "Drop Ping"
+  },
+  {
+    "name": "Shoulder Spring Vault",
+    "alias": null
+  },
+  {
+    "name": "Reverse Straddle Sole Circle",
+    "alias": null
+  },
+  {
+    "name": "Straddle Kong Gainer",
+    "alias": "Straddle Cat Pass Gainer"
+  },
+  {
+    "name": "Hang Castaway Straddle Full",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Rudi-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Palm Flip-In Wall Punch-Out",
+    "alias": null
+  },
+  {
+    "name": "Straddle Vault",
+    "alias": ""
+  },
+  {
+    "name": "Shun Cat Leap",
+    "alias": null
+  },
+  {
+    "name": "Back Flip",
+    "alias": "Back Tuck"
+  },
+  {
+    "name": "Back Quarter Side-In Side-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Reverse Wall Spin",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Layout",
+    "alias": null
+  },
+  {
+    "name": "Wall Flip Down Monkey Walkdown Cat",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Full",
+    "alias": "Cat Pass Gainer Full, Fish"
+  },
+  {
+    "name": "Gaet Pimp Arabian",
+    "alias": null
+  },
+  {
+    "name": "360 Dive Catch Reverse Giant",
+    "alias": null
+  },
+  {
+    "name": "Pop Castaway Full-Up",
+    "alias": null
+  },
+  {
+    "name": "Cast Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Arabian",
+    "alias": "Swing Gainer Arabian"
+  },
+  {
+    "name": "Sitting Pimp Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Alley Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway X-Out Full-Down",
+    "alias": "Back Uprise Straddle Full-Down"
+  },
+  {
+    "name": "Kong Gainer-In Punch Wall Flip-Out",
+    "alias": null
+  },
+  {
+    "name": "Palm Pivot Step Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Triple Flash Kick",
+    "alias": null
+  },
+  {
+    "name": "Lache Lonestar Twist",
+    "alias": null
+  },
+  {
+    "name": "Wall Gainer Down Monkey",
+    "alias": "Two-Hand Dragonfly"
+  },
+  {
+    "name": "One-Step Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Raiden",
+    "alias": ""
+  },
+  {
+    "name": "Circle Inward Front Dismount",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Front Dark Arabian Down Monkey-In Back-Out",
+    "alias": "Inward Tsukahara"
+  },
+  {
+    "name": "Pop Castaway Full",
+    "alias": null
+  },
+  {
+    "name": "Kong Reverse Kong Castaway Arabian Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Double Flash Kick",
+    "alias": null
+  },
+  {
+    "name": "One-Step 360 Horizontal Wall Run Precision",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew Psychocrusher",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Half",
+    "alias": "Inward Flyaway 180"
+  },
+  {
+    "name": "Webster Two-And-A-Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Front Raiden",
+    "alias": "Loser Raiden"
+  },
+  {
+    "name": "Inward Flyaway Half Unwind Full",
+    "alias": null
+  },
+  {
+    "name": "Dive Palm Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Dive Palm Gainer",
+    "alias": null
+  },
+  {
+    "name": "Castaway Arabian Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Double Aerial Twist Headspin",
+    "alias": null
+  },
+  {
+    "name": "Circle Palm Spin",
+    "alias": null
+  },
+  {
+    "name": "Split Vault Precision",
+    "alias": null
+  },
+  {
+    "name": "Double Frisbee",
+    "alias": null
+  },
+  {
+    "name": "Lache Kong",
+    "alias": "Lache Cat Pass"
+  },
+  {
+    "name": "One-Hand Reverse Double Leg",
+    "alias": "Barrel Vault"
+  },
+  {
+    "name": "Ceiling Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Reverse Underbar",
+    "alias": null
+  },
+  {
+    "name": "Triple Corkscrew",
+    "alias": null
+  },
+  {
+    "name": "Over-Hand Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "Kong Stall Front",
+    "alias": "Cat Pass Stall Front, Gato Stall Front"
+  },
+  {
+    "name": "Elbow Hang Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Front Flip",
+    "alias": "Front Tuck"
+  },
+  {
+    "name": "Inward Webster Double Front",
+    "alias": null
+  },
+  {
+    "name": "Headspin Castaway Full",
+    "alias": null
+  },
+  {
+    "name": "Running Tunnel Flip",
+    "alias": "Running Side Gainer"
+  },
+  {
+    "name": "Side Roll",
+    "alias": "Log Roll"
+  },
+  {
+    "name": "Swing Castaway Back-In Wall Punch Front-Out",
+    "alias": null
+  },
+  {
+    "name": "One-Step Kong Front",
+    "alias": "One-Step Cat Pass Front"
+  },
+  {
+    "name": "Kip-Up",
+    "alias": null
+  },
+  {
+    "name": "Backward Dive Stronghold Pole Slide",
+    "alias": "Suicide Koala"
+  },
+  {
+    "name": "Running Stall Tunnel Flip",
+    "alias": "Running Stall Side Gainer"
+  },
+  {
+    "name": "Swing Castaway Back-In Wall Punch Dive Roll-Out",
+    "alias": null
+  },
+  {
+    "name": "Aerial Twist Snapu Vault",
+    "alias": "Rail A-Twist Snapu "
+  },
+  {
+    "name": "Wall Front Pole Slide",
+    "alias": "Wall Front Koala"
+  },
+  {
+    "name": "Palm Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Ceiling Punch Full",
+    "alias": "Swing Gainer Ceiling Punch Full"
+  },
+  {
+    "name": "Dash Vault",
+    "alias": null
+  },
+  {
+    "name": "Dash Pole Slide",
+    "alias": "Dash Koala"
+  },
+  {
+    "name": "Sitting Dash Pole Slide",
+    "alias": "Sitting Dash Koala"
+  },
+  {
+    "name": "Arabian-In Half-Out",
+    "alias": null
+  },
+  {
+    "name": "Dyno Palm Layout",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Spider Climb",
+    "alias": "Swing Gainer Spider Climb"
+  },
+  {
+    "name": "Underbar Pole Slide",
+    "alias": "Underbar Koala"
+  },
+  {
+    "name": "Wall Front",
+    "alias": null
+  },
+  {
+    "name": "Underbar",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle Pole Slide",
+    "alias": "Gargoyle Koala"
+  },
+  {
+    "name": "Lache Pole Slide",
+    "alias": "Lache Koala"
+  },
+  {
+    "name": "Kong Pole Slide",
+    "alias": "Cat Pass Pole Slide, Kong Koala"
+  },
+  {
+    "name": "Palm Spin Raiz 180 Inward Roll",
+    "alias": null
+  },
+  {
+    "name": "Horizontal Wall Roll",
+    "alias": null
+  },
+  {
+    "name": "Pole Slide",
+    "alias": "Koala"
+  },
+  {
+    "name": "Chimney Slide",
+    "alias": null
+  },
+  {
+    "name": "Tic Tac Precision",
+    "alias": "Tic Tak Precision"
+  },
+  {
+    "name": "Hang Toe Front",
+    "alias": null
+  },
+  {
+    "name": "Rudi",
+    "alias": null
+  },
+  {
+    "name": "Parallel Bar Front One And A Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Double Aerial Twist",
+    "alias": "Double A-twist"
+  },
+  {
+    "name": "Palm Double Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-In Unwind Half-Out",
+    "alias": "Bar Gainer Full-In Unwind Half-Out, Swing Gainer  Full-In Unwind Half-Out"
+  },
+  {
+    "name": "Circle Castaway",
+    "alias": null
+  },
+  {
+    "name": "Arabian One-And-A-Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Front Two And A Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Devil Drop Side Full",
+    "alias": null
+  },
+  {
+    "name": "Double Arabian",
+    "alias": null
+  },
+  {
+    "name": "Gaet Stall Pimp",
+    "alias": null
+  },
+  {
+    "name": "Stall Inward Webster Front",
+    "alias": "Stall Loser Front"
+  },
+  {
+    "name": "Devil Drop Side Double Full",
+    "alias": null
+  },
+  {
+    "name": "Dive Down Monkey Walkdown",
+    "alias": "Dive Down Monkey Stepdown"
+  },
+  {
+    "name": "Hang Castaway Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Full Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Dyno 360",
+    "alias": null
+  },
+  {
+    "name": "Inward Front Pike",
+    "alias": null
+  },
+  {
+    "name": "Arabian",
+    "alias": null
+  },
+  {
+    "name": "Press Handstand Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Pop Castaway Side",
+    "alias": "Palm Drop Side"
+  },
+  {
+    "name": "Swing Castaway Double Back",
+    "alias": "Back Uprise Double Back"
+  },
+  {
+    "name": "360 Dive Front Handcuffs",
+    "alias": null
+  },
+  {
+    "name": "Two-Hand Wall Touch Down Raiz",
+    "alias": null
+  },
+  {
+    "name": "Triple Aerial Twist",
+    "alias": "Triple A-twist"
+  },
+  {
+    "name": "Forward Roll Bomb",
+    "alias": null
+  },
+  {
+    "name": "One-Step Stall Palm Side",
+    "alias": null
+  },
+  {
+    "name": "Castaway Inward Front Half",
+    "alias": "Cast Inward Barani"
+  },
+  {
+    "name": "Forward Roll",
+    "alias": null
+  },
+  {
+    "name": "Wall Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Cat Hang Pop Castaway Back",
+    "alias": "Cat Hang Pop Palm Drop"
+  },
+  {
+    "name": "One-Step Palm Side",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Double Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Aerial Twist-In Full-Out",
+    "alias": "A-Twist-In Full-Out"
+  },
+  {
+    "name": "Caster Castaway Back",
+    "alias": "Bio Castaway Back, Caster Castaway Back, Lateral Castaway Back, Strafe Castaway Back"
+  },
+  {
+    "name": "Circle Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Full-Out",
+    "alias": "Bar Gainer Full-Out, Swing Gainer Full-Out"
+  },
+  {
+    "name": "Wall Layout Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Stride 540 Precision",
+    "alias": null
+  },
+  {
+    "name": "One-Step Pop Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Stall Side",
+    "alias": null
+  },
+  {
+    "name": "360 Splat",
+    "alias": null
+  },
+  {
+    "name": "Split Vault",
+    "alias": null
+  },
+  {
+    "name": "Palm Side",
+    "alias": null
+  },
+  {
+    "name": "Pull Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Palm Inward Tunnel",
+    "alias": null
+  },
+  {
+    "name": "Pimp Full",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Inward Double Aerial Twist",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Inward Aerial Twist",
+    "alias": "One-Step Palm Inward A-twist"
+  },
+  {
+    "name": "Kong One-Hand Kong Gainer",
+    "alias": "Cat Pass One-Hand Kong Gainer"
+  },
+  {
+    "name": "Lazy Boy Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Wall Wrap Full",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Hang Castaway Wall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Kumquat Double Full",
+    "alias": "Ping Double Full"
+  },
+  {
+    "name": "Two-Step Wall Double Back",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Layout",
+    "alias": "Back Uprise Layout"
+  },
+  {
+    "name": "Wall Corkscrew Feilong",
+    "alias": null
+  },
+  {
+    "name": "Spider-Man Kong Gainer",
+    "alias": null
+  },
+  {
+    "name": "Pimp Punch Wall Full",
+    "alias": null
+  },
+  {
+    "name": "One-Step Pop Castaway Side",
+    "alias": "One-Step Palm Drop Side"
+  },
+  {
+    "name": "Swing Castaway Side",
+    "alias": null
+  },
+  {
+    "name": "Aerial Twist Vault Dive Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Thief Side",
+    "alias": ""
+  },
+  {
+    "name": "Aerial Twist Vault",
+    "alias": "Rail A-twist"
+  },
+  {
+    "name": "Lache Side",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Full",
+    "alias": "Back Uprise Full"
+  },
+  {
+    "name": "One-Hand Swing Castaway Full",
+    "alias": "One-Hand Back Uprise Full"
+  },
+  {
+    "name": "Devil Drop Gainer",
+    "alias": "Devil Drop Jonah"
+  },
+  {
+    "name": "Gaet Pimp Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Castaway Side",
+    "alias": null
+  },
+  {
+    "name": "Arabian Unwind Half Unwind Half",
+    "alias": "Arabian Unhalf Unhalf"
+  },
+  {
+    "name": "Side Quarter Unwind Full",
+    "alias": "Side Quarter Unfull"
+  },
+  {
+    "name": "360 Dive Front Flip",
+    "alias": "Vortex Front, Pig Skin, Psycho Crusher"
+  },
+  {
+    "name": "Russian Gainer",
+    "alias": null
+  },
+  {
+    "name": "Wall Wrap Full",
+    "alias": null
+  },
+  {
+    "name": "Tsukahara Full Dismount",
+    "alias": "Kasamatsu Dismount"
+  },
+  {
+    "name": "Flyaway Full Straddle Double Double Leg",
+    "alias": null
+  },
+  {
+    "name": "Arabian Unwind Half",
+    "alias": "Arabian Unhalf"
+  },
+  {
+    "name": "Skin The Cat-In Back-Out",
+    "alias": "Shrimp-In Back-Out"
+  },
+  {
+    "name": "Roll Bomb Full",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Corner Wall Lonestar Half",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Double Full-Out",
+    "alias": "Bar Gainer Double Full-Out, Swing Gainer Double Full-Out"
+  },
+  {
+    "name": "Lache Punch Wall Inward Front Layout",
+    "alias": null
+  },
+  {
+    "name": "Glitch Inward Side",
+    "alias": null
+  },
+  {
+    "name": "Lache Front Half",
+    "alias": null
+  },
+  {
+    "name": "Skin The Cat",
+    "alias": "Shrimp Flip"
+  },
+  {
+    "name": "Human Flag Front",
+    "alias": null
+  },
+  {
+    "name": "Lache Double Front",
+    "alias": null
+  },
+  {
+    "name": "Human Flag",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Tic Tac 180 Regrab",
+    "alias": null
+  },
+  {
+    "name": "Castaway Inward Front Sideways Catch",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Full-Down",
+    "alias": "Cat Pass Gainer Full-Down"
+  },
+  {
+    "name": "Trapdoor Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Layout",
+    "alias": "Cat Pass Gainer Layout"
+  },
+  {
+    "name": "Wall Inward Side Walkdown",
+    "alias": "Wall Inward Side Stepdown"
+  },
+  {
+    "name": "Dong Gainer",
+    "alias": ""
+  },
+  {
+    "name": "Back-In Stall-Out",
+    "alias": null
+  },
+  {
+    "name": "Toe Shoot 360 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Dong Vault",
+    "alias": null
+  },
+  {
+    "name": "Back One-And-A-Half-In Half-Out",
+    "alias": null
+  },
+  {
+    "name": "Inward Flyaway Donut Boy",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Front 540 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Toe Shoot Front One And Half Full",
+    "alias": "Toe Shoot Rudi"
+  },
+  {
+    "name": "Circle Double Gaet Pimp",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Reverse Front Kick",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Walkdown",
+    "alias": "Flyaway Stepdown"
+  },
+  {
+    "name": "Rolling Reverse Vault",
+    "alias": null
+  },
+  {
+    "name": "540 Dive Dismount Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Pistol Squat Back Full",
+    "alias": null
+  },
+  {
+    "name": "Back Layout",
+    "alias": null
+  },
+  {
+    "name": "Wall X-Out",
+    "alias": null
+  },
+  {
+    "name": "Reverse Straddle Sole Circle Inward Front",
+    "alias": null
+  },
+  {
+    "name": "Gainer-In Punch Wall Flip-Out",
+    "alias": null
+  },
+  {
+    "name": "Cast Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Inward Webster Front Dark Arabian Dismount",
+    "alias": "Loser Dark Arabian Dismount"
+  },
+  {
+    "name": "Gainer",
+    "alias": null
+  },
+  {
+    "name": "Pimp Flip",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Sitting Dash Gainer",
+    "alias": "L-sit Gainer"
+  },
+  {
+    "name": "Kong Front One And A Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "540 Dive Front Unwind Half",
+    "alias": "Filipino Unwind Half"
+  },
+  {
+    "name": "Gaet Pimp Cork Zero",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Ceiling Wall Flip",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer-In Full-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Arabian-In Front-Out",
+    "alias": "Bar Gainer Arabian-In Front-Out, Flyaway Double Arabian, Swing Gainer Arabian-In Front-Out"
+  },
+  {
+    "name": "Inward Webster Front Half",
+    "alias": "Loser Half"
+  },
+  {
+    "name": "Wall Inward Front",
+    "alias": "Wall Loser"
+  },
+  {
+    "name": "Palm Side Pistol",
+    "alias": null
+  },
+  {
+    "name": "Palm Spin Raiz",
+    "alias": null
+  },
+  {
+    "name": "Reverse Palm Spin",
+    "alias": null
+  },
+  {
+    "name": "Wall Wrap Arabian Down Monkey",
+    "alias": ""
+  },
+  {
+    "name": "Castaway Back",
+    "alias": "Palm Drop"
+  },
+  {
+    "name": "Wall Triple Full",
+    "alias": null
+  },
+  {
+    "name": "Full-Up Gainer Full-Down",
+    "alias": "Full-Up Full-Down Gainer, Vortex Gainer Gyro,"
+  },
+  {
+    "name": "Spider-Man Pop Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Alley Gaet Pimp Layout",
+    "alias": null
+  },
+  {
+    "name": "Side Vault Stall Pimp",
+    "alias": null
+  },
+  {
+    "name": "Circle Inward Front Half-Down Dismount",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Front Half Handcuffs",
+    "alias": "Wall Loser Half Handcuffs"
+  },
+  {
+    "name": "Spider-Man Webster Side",
+    "alias": "Black Widow Webster Side"
+  },
+  {
+    "name": "Frog Gainer Layout",
+    "alias": "Frog Gainer Layout"
+  },
+  {
+    "name": "Stall Back Flip",
+    "alias": "Suicide Back Flip"
+  },
+  {
+    "name": "One-Step Kong Front One And A Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Angel Drop Wall Back Handspring Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Raiz-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-In Trapdoor Arabian Dive Roll-Out",
+    "alias": "Bar Gainer Full-In Trapdoor Arabian Dive Roll-Out, Swing Gainer Full-In Trapdoor Arabian Dive Roll-Out"
+  },
+  {
+    "name": "Side Half-Down",
+    "alias": null
+  },
+  {
+    "name": "Lache Front Layout",
+    "alias": null
+  },
+  {
+    "name": "One-Step Wall Spin Frisbee Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Tsukahara Counter Full Dismount",
+    "alias": null
+  },
+  {
+    "name": "Wall Full-Up",
+    "alias": null
+  },
+  {
+    "name": "Corkscrew-In Full-Out",
+    "alias": "Cork-In Full-Out"
+  },
+  {
+    "name": "Butterfly Twist",
+    "alias": null
+  },
+  {
+    "name": "Castaway Back Quarter Side",
+    "alias": null
+  },
+  {
+    "name": "Toe Shoot Front Regrab",
+    "alias": null
+  },
+  {
+    "name": "Toe Shoot Front",
+    "alias": null
+  },
+  {
+    "name": "EW Step 270 EW Gainer",
+    "alias": null
+  },
+  {
+    "name": "Wall Roll Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Toe Hang Side",
+    "alias": null
+  },
+  {
+    "name": "Shoulder Macaco-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "EW Gainer",
+    "alias": "Eugene Wall Gainer, Erik Wall Gainer"
+  },
+  {
+    "name": "180 Dive Kong Gainer",
+    "alias": "180 Dive Cat Pass Gainer"
+  },
+  {
+    "name": "Kip Gainer",
+    "alias": null
+  },
+  {
+    "name": "Lache",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Flyaway Full-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-In Back-Out",
+    "alias": "Swing Gainer Full-In Back-Out, Bar Gainer Full-In Back-Out"
+  },
+  {
+    "name": "Supinated Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew Arabian Scissor",
+    "alias": null
+  },
+  {
+    "name": "Side Flip",
+    "alias": "Side Tuck"
+  },
+  {
+    "name": "Corkscrew Counter Triple Full",
+    "alias": "Triple Kroc"
+  },
+  {
+    "name": "Flyaway Helicoptero",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew Gyro",
+    "alias": null
+  },
+  {
+    "name": "Wall Gainer X-Out",
+    "alias": null
+  },
+  {
+    "name": "Kong Front-In Half-Out",
+    "alias": "Cat Pass Front-In Half-Out"
+  },
+  {
+    "name": "Parallel Bar Pimp Full-Down",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Palm Gainer Layout",
+    "alias": "Ginger Flip Layout, Hi-Five Gainer Layout"
+  },
+  {
+    "name": "Wall Inward Aerial Twist-In Back-Out",
+    "alias": "Wall Inward A-Twist-In Back-Out"
+  },
+  {
+    "name": "Hang Castaway Pistol",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Double Flash Kick-In Full-Out",
+    "alias": "Bar Gainer Double Flash Kick-In Full-Out, Swing Gainer Double Flash Kick-In Full-Out"
+  },
+  {
+    "name": "Wall Gainer One-Hand Down Monkey Full-Down",
+    "alias": "Dragonfly Full"
+  },
+  {
+    "name": "Reverse Hyper Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Cartwheel Full",
+    "alias": null
+  },
+  {
+    "name": "Kong Glitch Gainer",
+    "alias": "Cat Pass Glitch Gainer"
+  },
+  {
+    "name": "Castaway 180 Gainer",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Cartwheel",
+    "alias": ""
+  },
+  {
+    "name": "Sitting Double Gainer",
+    "alias": null
+  },
+  {
+    "name": "Sitting Gainer Walkdown",
+    "alias": "Sitting Gainer Stepdown"
+  },
+  {
+    "name": "Gainer Stall-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Handstand Stall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Glitch Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Gainer Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Sitting Dash Double Gainer",
+    "alias": null
+  },
+  {
+    "name": "Parallel Bar Double Gainer Dismount",
+    "alias": null
+  },
+  {
+    "name": "Corkscrew Counter Arabian",
+    "alias": "Corkscrew Anti-Half Front, Kroc Arabian"
+  },
+  {
+    "name": "One-Step Ceiling Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Reverse Speed Hyper",
+    "alias": "Tornado Vault"
+  },
+  {
+    "name": "Corkscrew Counter Full Down Monkey",
+    "alias": "Corkscrew Anti-Full Down Monkey, Kroc Down Monkey"
+  },
+  {
+    "name": "One-Step Kong Side",
+    "alias": "One-Step Cat Pass Side"
+  },
+  {
+    "name": "One-Step Kong Double Side",
+    "alias": "One-Step Cat Pass Double Side"
+  },
+  {
+    "name": "Wall Corkscrew Arabian",
+    "alias": null
+  },
+  {
+    "name": "Lache Dark Arabian",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Wall Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Kong Vault",
+    "alias": "King Kong Vault, Cat Pass"
+  },
+  {
+    "name": "Back 270 Full Down Monkey-In Wall Spin-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Corkscrew Counter Full",
+    "alias": "Wall Kroc, Wall Corkscrew Anti-Full"
+  },
+  {
+    "name": "Kong Palm Walk",
+    "alias": "Kong Palm Walking"
+  },
+  {
+    "name": "Front Handspring-In Front-Out Dismount",
+    "alias": null
+  },
+  {
+    "name": "Caster Down Monkey-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Palm Walk",
+    "alias": "Palm Walking"
+  },
+  {
+    "name": "Gaet Pimp Counter Full",
+    "alias": "Gaet Pimp Kroc, Gaet Pimp Anti-Full"
+  },
+  {
+    "name": "Caster Wall Corkscrew Counter Full",
+    "alias": "Caster Wall Corkscrew Anti-Full, Caster Wall Kroc"
+  },
+  {
+    "name": "Corkscrew Counter Double Full",
+    "alias": "Double Corkscrew Anti-Full, Double Kroc"
+  },
+  {
+    "name": "Caster Gainer",
+    "alias": "Bio Gainer, Lateral Gainer, Strafe Gainer"
+  },
+  {
+    "name": "Wall Gainer Down Monkey-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Full-Up Inward Side",
+    "alias": "Two-Foot Wall Vortex Inward Side, Two-Foot Wall 360 Inward Side"
+  },
+  {
+    "name": "Flyaway Full-Down-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Half Unwind Half-Out",
+    "alias": "Bar Gainer-In Half Unwind Half-Out, Swing Gainer-In Half Unwind Half-Out"
+  },
+  {
+    "name": "Flyaway-In Kong Gainer Full-Out",
+    "alias": "Swing Gainer-In Cat Pass Gainer Full-Out"
+  },
+  {
+    "name": "One-Step Palm Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Castaway Full-Out",
+    "alias": "Bar Gainer-In Castaway Full-Out, Swing Gainer-In Castaway Full-Out"
+  },
+  {
+    "name": "Flyaway-In Flat 180-Out",
+    "alias": "Bar Gainer-In Flat 180-Out, Swing Gainer-In Flat 180-Out"
+  },
+  {
+    "name": "Flyaway Full Double Leg Twist-In Back-Out",
+    "alias": "Bar Gainer Full Double Leg Twist, Swing Gainer Full Double Leg Twist"
+  },
+  {
+    "name": "Inward Back Handspring Down Monkey-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Aerial Twist Double Leg",
+    "alias": "A-Twist D-Leg"
+  },
+  {
+    "name": "One-Hand Reverse Double Leg Double Twist",
+    "alias": "Barrel Double Full"
+  },
+  {
+    "name": "Parallel Bar Caster Gainer Full-Down Dismount",
+    "alias": "Parallel Bar Bio Gainer Full-Down, Parallel Bar Caster Gainer Full-Down, Parallel Bar Lateral Gainer Full-Down, Parallel Bar Strafe Gainer Full-Down"
+  },
+  {
+    "name": "Kong Stall Gainer",
+    "alias": "Cat Pass Stall Gainer"
+  },
+  {
+    "name": "Lache Scissor 180 Double Leg-In Double Leg-Out",
+    "alias": null
+  },
+  {
+    "name": "Straddle Sole Circle Gainer",
+    "alias": null
+  },
+  {
+    "name": "Kip Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "EW Gainer Pike",
+    "alias": null
+  },
+  {
+    "name": "Dive Wall Cartwheel Walkdown Cat",
+    "alias": "Dive Rotor Wall Walkdown Cat, Dive Wall Cartwheel Stepdown Cat\n"
+  },
+  {
+    "name": "Wall Corkscrew Hyper",
+    "alias": null
+  },
+  {
+    "name": "One-Step Palm Layout",
+    "alias": null
+  },
+  {
+    "name": "Wall Tripod Psychocrusher Spiral Knuckle",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Down Monkey Counter Full",
+    "alias": null
+  },
+  {
+    "name": "Wall Full-Up Inward Front",
+    "alias": "Wall 360 Inward Front, Wall Vortex Inward Front, Wall Inward Pig Skin, Wall Inward Psycho Crusher"
+  },
+  {
+    "name": "Stall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Kong Gainer-Out",
+    "alias": "Flyaway-In Cat Pass Gainer-Out"
+  },
+  {
+    "name": "Side Vault Cork Zero",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Spider-Man Flat 180-In Half-Out",
+    "alias": "Bar Gainer Spider-Man Flat 180-In Half-Out, Swing Gainer Spider-Man Flat 180-In Half-Out"
+  },
+  {
+    "name": "Speed Japan Grab Swipe",
+    "alias": null
+  },
+  {
+    "name": "Gainer Half Unwind Half",
+    "alias": "Gainer Half Unhalf, Gainer Unhalf"
+  },
+  {
+    "name": "360 Dive Front Unwind Half",
+    "alias": "360 Dive Front Unhalf"
+  },
+  {
+    "name": "EW Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Wall Donut Boy",
+    "alias": ""
+  },
+  {
+    "name": "Wall Corkscrew Shuriken Gyro",
+    "alias": null
+  },
+  {
+    "name": "EW Gainer Arabian Quarter-Down",
+    "alias": "Erik Wall Gainer Arabian Quarter-Down"
+  },
+  {
+    "name": "Two-Step Wall Gainer Layout",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Full-Down-In Full-Out",
+    "alias": null
+  },
+  {
+    "name": "Frisbee Full-Down",
+    "alias": null
+  },
+  {
+    "name": "EW Gainer Layout",
+    "alias": null
+  },
+  {
+    "name": "Chair Spin Gainer Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Flyaway-In Stall-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Inward Front Handcuffs",
+    "alias": null
+  },
+  {
+    "name": "Wall Pistol Side Full-Down",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Full-Up Inward Front",
+    "alias": "Two-Foot Wall 360 Inward Front, Two-Foot Wall Vortex Inward Front"
+  },
+  {
+    "name": "Hang Double Leg",
+    "alias": "Hang D-Leg"
+  },
+  {
+    "name": "Elbow Macaco-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Three-Step Ceiling Wall Flip Two-Step Walkdown",
+    "alias": "Vertical Loop Run, Human Loop Run, Loop The Loop"
+  },
+  {
+    "name": "Wall Corkscrew-In Arabian Dive Roll-Out",
+    "alias": null
+  },
+  {
+    "name": "Double Flyaway",
+    "alias": "Swing Double Gainer, Bar Double Gainer"
+  },
+  {
+    "name": "Overbar Double Flyaway",
+    "alias": "Overbar Double Swing Gainer"
+  },
+  {
+    "name": "Swing Castaway Back",
+    "alias": "Back Uprise Back Tuck"
+  },
+  {
+    "name": "Kong Gainer",
+    "alias": "Cat Pass Gainer"
+  },
+  {
+    "name": "Webster Front One-And-A-Half 360 Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Inward 360 Dive Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Swing Castaway Step Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Ceiling Punch Layout",
+    "alias": "Swing Gainer Ceiling Punch Layout"
+  },
+  {
+    "name": "Roundoff",
+    "alias": null
+  },
+  {
+    "name": "Front Handspring Half",
+    "alias": null
+  },
+  {
+    "name": "Raiz",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle EW Gainer",
+    "alias": null
+  },
+  {
+    "name": "Front One-And-A-Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Penny Drop Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Running Gainer Rodeo",
+    "alias": ""
+  },
+  {
+    "name": "Corkscrew Counter Full-In Back-Out",
+    "alias": "Kroc-In Back-Out"
+  },
+  {
+    "name": "Inverted Hang Spider-Man Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Webster Half-In Punch Wall Flip-Out",
+    "alias": null
+  },
+  {
+    "name": "Wall Gainer Unwind Half",
+    "alias": null
+  },
+  {
+    "name": "Palm Flip",
+    "alias": null
+  },
+  {
+    "name": "Crucifix Gargoyle Gainer",
+    "alias": "Shoulder Gargoyle Gainer"
+  },
+  {
+    "name": "Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Gaet Pimp",
+    "alias": "Gaetan Pimp Flip"
+  },
+  {
+    "name": "Wall Wrap Arabian",
+    "alias": null
+  },
+  {
+    "name": "Wall Arabian",
+    "alias": null
+  },
+  {
+    "name": "Gargoyle EW Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Full-Up Side-In Side-Out",
+    "alias": "360 Dive Double Side, Full-Up Double Side"
+  },
+  {
+    "name": "Back Handspring",
+    "alias": null
+  },
+  {
+    "name": "Spider-Man Handstand Gainer",
+    "alias": null
+  },
+  {
+    "name": "Sit Turn",
+    "alias": null
+  },
+  {
+    "name": "Two-Step Wall Inward Roundoff Counter Full",
+    "alias": null
+  },
+  {
+    "name": "One-Hand Raiz Twist",
+    "alias": "Jango Twist, Sailor Moon Twist"
+  },
+  {
+    "name": "Swing Castaway Down Monkey",
+    "alias": "Back Uprise Down Monkey"
+  },
+  {
+    "name": "Flyaway",
+    "alias": "Swing Gainer, Bar Gainer"
+  },
+  {
+    "name": "Running Gainer",
+    "alias": null
+  },
+  {
+    "name": "Kong Gainer Catch",
+    "alias": "Cat Pass Catch"
+  },
+  {
+    "name": "Slant Kong Gainer",
+    "alias": "Cheat Cat Pass Gainer, Cheat Kong Gainer, Slant Cat Pass Gainer"
+  },
+  {
+    "name": "Aerial Twist-In Back-Out Vault",
+    "alias": "Rail A-Twist-In Back-Out"
+  },
+  {
+    "name": "Punch Dark Arabian Wall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Spider Freeze Castaway Back",
+    "alias": ""
+  },
+  {
+    "name": "Sitting Gainer Full",
+    "alias": null
+  },
+  {
+    "name": "Wall Gainer",
+    "alias": null
+  },
+  {
+    "name": "Sitting Dash Regrab",
+    "alias": null
+  },
+  {
+    "name": "Cast Double Gainer",
+    "alias": null
+  },
+  {
+    "name": "Punch Wall Full-Up Gainer",
+    "alias": null
+  },
+  {
+    "name": "Inverted Hang Castaway Back",
+    "alias": null
+  },
+  {
+    "name": "Flyaway Half-In Punch Wall Gainer-Out",
+    "alias": "Swing Gainer Half Punch Wall Gainer, Bar Gainer Half Punch Wall Gainer\n"
+  },
+  {
+    "name": "Handstand Gainer",
+    "alias": null
+  },
+  {
+    "name": "Side Half-In Stall-Out",
+    "alias": null
+  },
+  {
+    "name": "Cast Gainer",
+    "alias": null
+  },
+  {
+    "name": "Parallel Bar Caster Gainer Quarter Regrab",
+    "alias": "Parallel Bar Bio Gainer Quarter Regrab, Parallel Bar Lateral Gainer Quarter Regrab, Parallel Bar Strafe Gainer Quarter Regrab"
+  },
+  {
+    "name": "Side One-And-A-Half Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Glitch Handstand Gainer",
+    "alias": ""
+  },
+  {
+    "name": "Inward Cork Zero",
+    "alias": null
+  },
+  {
+    "name": "Stride 360 Precision",
+    "alias": "Lunar Eclipse"
+  },
+  {
+    "name": "Cartwheel",
+    "alias": null
+  },
+  {
+    "name": "Full-Up Gainer Pike",
+    "alias": "Vortex Gainer Pike"
+  },
+  {
+    "name": "Stride 360 False Unwind Gyro",
+    "alias": null
+  },
+  {
+    "name": "Toe Hang Front",
+    "alias": null
+  },
+  {
+    "name": "Touchdown Raiz-In Back-Out",
+    "alias": null
+  },
+  {
+    "name": "Inward Down Monkey",
+    "alias": null
+  },
+  {
+    "name": "Double Leg Dive Roll",
+    "alias": null
+  },
+  {
+    "name": "Macaco-In Back-Out",
+    "alias": "Macaco Bomb, Valdez Bomb"
+  },
+  {
+    "name": "Pushup Castaway",
+    "alias": null
+  },
+  {
+    "name": "Thief Kash",
+    "alias": null
+  }
+]

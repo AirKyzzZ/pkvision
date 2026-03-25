@@ -158,5 +158,14 @@
   "names": {
     "en": "Gainer",
     "fr": "Gainer"
+  },
+  "primitives": {
+    "rotation_sagittal": "backward",
+    "rotation_sagittal_count": 1,
+    "rotation_lateral": "none",
+    "twist_count": 0,
+    "takeoff": "one_foot",
+    "landing": "two_feet",
+    "obstacle_interaction": false
   }
 }

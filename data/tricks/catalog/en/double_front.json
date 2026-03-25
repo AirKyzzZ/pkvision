@@ -146,5 +146,14 @@
   "names": {
     "en": "Double Front Flip",
     "fr": "Double Salto Avant"
+  },
+  "primitives": {
+    "rotation_sagittal": "forward",
+    "rotation_sagittal_count": 2,
+    "rotation_lateral": "none",
+    "twist_count": 0,
+    "takeoff": "two_feet",
+    "landing": "two_feet",
+    "obstacle_interaction": false
   }
 }

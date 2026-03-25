@@ -8,7 +8,7 @@ from pathlib import Path
 import jsonschema
 import pytest
 
-from core.models import TrickConfig
+from core.models import TrickConfig, TrickPrimitives
 
 CATALOG_DIR = Path(__file__).parent.parent.parent / "data" / "tricks" / "catalog"
 SCHEMA_PATH = Path(__file__).parent.parent.parent / "data" / "tricks" / "schema.json"
@@ -129,6 +129,180 @@ def test_all_tricks_have_angle_rules(en_tricks: list[dict]):
         config = TrickConfig(**trick_data)
         total_rules = sum(len(phase.angle_rules) for phase in config.phases)
         assert total_rules > 0, f"{config.trick_id} has no angle rules in any phase"
+
+
+VALID_ROTATION_SAGITTAL = {"forward", "backward", "none"}
+VALID_ROTATION_LATERAL = {"left", "right", "none"}
+VALID_TAKEOFF = {"two_feet", "one_foot", "hands", "wall", "edge"}
+VALID_LANDING = {"two_feet", "one_foot", "hands", "other"}
+
+EXPECTED_PRIMITIVES = {
+    "kong_vault": {
+        "rotation_sagittal": "forward",
+        "rotation_sagittal_count": 0,
+        "rotation_lateral": "none",
+        "twist_count": 0,
+        "takeoff": "two_feet",
+        "landing": "two_feet",
+        "obstacle_interaction": True,
+    },
+    "double_kong": {
+        "rotation_sagittal": "forward",
+        "rotation_sagittal_count": 0,
+        "rotation_lateral": "none",
+        "twist_count": 0,
+        "takeoff": "two_feet",
+        "landing": "two_feet",
+        "obstacle_interaction": True,
+    },
+    "front_flip": {
+        "rotation_sagittal": "forward",
+        "rotation_sagittal_count": 1,
+        "rotation_lateral": "none",
+        "twist_count": 0,
+        "takeoff": "two_feet",
+        "landing": "two_feet",
+        "obstacle_interaction": False,
+    },
+    "back_flip": {
+        "rotation_sagittal": "backward",
+        "rotation_sagittal_count": 1,
+        "rotation_lateral": "none",
+        "twist_count": 0,
+        "takeoff": "two_feet",
+        "landing": "two_feet",
+        "obstacle_interaction": False,
+    },
+    "side_flip": {
+        "rotation_sagittal": "none",
+        "rotation_sagittal_count": 0,
+        "rotation_lateral": "left",
+        "twist_count": 0,
+        "takeoff": "two_feet",
+        "landing": "two_feet",
+        "obstacle_interaction": False,
+    },
+    "webster": {
+        "rotation_sagittal": "forward",
+        "rotation_sagittal_count": 1,
+        "rotation_lateral": "none",
+        "twist_count": 0,
+        "takeoff": "one_foot",
+        "landing": "two_feet",
+        "obstacle_interaction": False,
+    },
+    "gainer": {
+        "rotation_sagittal": "backward",
+        "rotation_sagittal_count": 1,
+        "rotation_lateral": "none",
+        "twist_count": 0,
+        "takeoff": "one_foot",
+        "landing": "two_feet",
+        "obstacle_interaction": False,
+    },
+    "double_front": {
+        "rotation_sagittal": "forward",
+        "rotation_sagittal_count": 2,
+        "rotation_lateral": "none",
+        "twist_count": 0,
+        "takeoff": "two_feet",
+        "landing": "two_feet",
+        "obstacle_interaction": False,
+    },
+    "flip_360": {
+        "rotation_sagittal": "backward",
+        "rotation_sagittal_count": 1,
+        "rotation_lateral": "none",
+        "twist_count": 1,
+        "takeoff": "two_feet",
+        "landing": "two_feet",
+        "obstacle_interaction": False,
+    },
+    "triple_cork": {
+        "rotation_sagittal": "backward",
+        "rotation_sagittal_count": 1,
+        "rotation_lateral": "left",
+        "twist_count": 3,
+        "takeoff": "one_foot",
+        "landing": "two_feet",
+        "obstacle_interaction": False,
+    },
+}
+
+
+def test_all_tricks_have_primitives(en_tricks: list[dict]):
+    """Every trick must have a primitives field with all required keys."""
+    for trick_data in en_tricks:
+        trick_id = trick_data["trick_id"]
+        assert "primitives" in trick_data, f"{trick_id} missing primitives field"
+        prims = trick_data["primitives"]
+        for key in [
+            "rotation_sagittal",
+            "rotation_sagittal_count",
+            "rotation_lateral",
+            "twist_count",
+            "takeoff",
+            "landing",
+            "obstacle_interaction",
+        ]:
+            assert key in prims, f"{trick_id} primitives missing key: {key}"
+
+
+def test_primitives_have_valid_values(en_tricks: list[dict]):
+    """All primitive enum values must be within the allowed sets."""
+    for trick_data in en_tricks:
+        trick_id = trick_data["trick_id"]
+        prims = trick_data["primitives"]
+        assert prims["rotation_sagittal"] in VALID_ROTATION_SAGITTAL, (
+            f"{trick_id}: invalid rotation_sagittal '{prims['rotation_sagittal']}'"
+        )
+        assert prims["rotation_lateral"] in VALID_ROTATION_LATERAL, (
+            f"{trick_id}: invalid rotation_lateral '{prims['rotation_lateral']}'"
+        )
+        assert prims["takeoff"] in VALID_TAKEOFF, (
+            f"{trick_id}: invalid takeoff '{prims['takeoff']}'"
+        )
+        assert prims["landing"] in VALID_LANDING, (
+            f"{trick_id}: invalid landing '{prims['landing']}'"
+        )
+        assert isinstance(prims["rotation_sagittal_count"], int) and prims["rotation_sagittal_count"] >= 0
+        assert isinstance(prims["twist_count"], int) and prims["twist_count"] >= 0
+        assert isinstance(prims["obstacle_interaction"], bool)
+
+
+def test_primitives_match_expected_values(en_tricks: list[dict]):
+    """Each trick's primitives must match the expected values exactly."""
+    for trick_data in en_tricks:
+        trick_id = trick_data["trick_id"]
+        expected = EXPECTED_PRIMITIVES.get(trick_id)
+        assert expected is not None, f"No expected primitives for {trick_id}"
+        prims = trick_data["primitives"]
+        for key, val in expected.items():
+            assert prims[key] == val, (
+                f"{trick_id}.primitives.{key}: expected {val}, got {prims[key]}"
+            )
+
+
+def test_primitives_load_as_pydantic(en_tricks: list[dict]):
+    """Primitives should parse into TrickPrimitives via TrickConfig."""
+    for trick_data in en_tricks:
+        config = TrickConfig(**trick_data)
+        assert config.primitives is not None, f"{config.trick_id} primitives is None"
+        assert isinstance(config.primitives, TrickPrimitives)
+
+
+def test_fr_tricks_have_same_primitives_as_en():
+    """French catalog primitives must match English catalog primitives."""
+    for trick_id in EXPECTED_TRICKS:
+        en_path = CATALOG_DIR / "en" / f"{trick_id}.json"
+        fr_path = CATALOG_DIR / "fr" / f"{trick_id}.json"
+        with open(en_path) as f:
+            en_prims = json.load(f).get("primitives")
+        with open(fr_path) as f:
+            fr_prims = json.load(f).get("primitives")
+        assert en_prims == fr_prims, (
+            f"{trick_id}: EN and FR primitives differ"
+        )
 
 
 def test_get_name_method():

@@ -164,5 +164,14 @@
   "names": {
     "en": "360 Flip",
     "fr": "Vrille Complète"
+  },
+  "primitives": {
+    "rotation_sagittal": "backward",
+    "rotation_sagittal_count": 1,
+    "rotation_lateral": "none",
+    "twist_count": 1,
+    "takeoff": "two_feet",
+    "landing": "two_feet",
+    "obstacle_interaction": false
   }
 }

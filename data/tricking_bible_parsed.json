@@ -1,0 +1,362 @@
+[
+  {
+    "name": "540",
+    "type": "Kick",
+    "origin": "Wushu/TKD",
+    "prerequisites_text": "outside/inside crescent kick & tornado kick",
+    "difficulty_class": "A",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Pop 360 Wheel Kick",
+    "type": "Kick",
+    "origin": "TKD/Karate",
+    "prerequisites_text": "spin crescent kick & jump front kick",
+    "difficulty_class": "A",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Au-Batido",
+    "type": "Invert/Kick",
+    "origin": "Capoeira",
+    "prerequisites_text": "cartwheel/au",
+    "difficulty_class": "A",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Butterfly Kick",
+    "type": "Kick",
+    "origin": "Wushu",
+    "prerequisites_text": "",
+    "difficulty_class": "A",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Feilong",
+    "type": "Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Hyper Pop 360",
+    "difficulty_class": "A",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Aerial",
+    "type": "Invert/Flip",
+    "origin": "Wushu/Gymnastics",
+    "prerequisites_text": "strong cartwheel/au",
+    "difficulty_class": "A",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Backflip",
+    "type": "Flip",
+    "origin": "Gymnastics/Capoeira",
+    "prerequisites_text": "good back handspring & some nerve",
+    "difficulty_class": "A",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Kip-up",
+    "type": "Invert",
+    "origin": "Wushu",
+    "prerequisites_text": "",
+    "difficulty_class": "A",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Cheat 720/540 Wheel Kick",
+    "type": "Kick",
+    "origin": "Capoeira",
+    "prerequisites_text": "good 540",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Aerial Switch",
+    "type": "Invert/Flip",
+    "origin": "Tricking",
+    "prerequisites_text": "decent aerial",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Pop 720 Wheel Kick",
+    "type": "Spin/Kick",
+    "origin": "TKD",
+    "prerequisites_text": "good Pop 360",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Butterfly Twist",
+    "type": "Twist",
+    "origin": "Wushu",
+    "prerequisites_text": "Butterfly Kick",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Shuriken Twist",
+    "type": "Twist/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Butterfly Kick or Illusion Twist",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Singleleg",
+    "type": "Invert/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Feilong",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Doubleleg",
+    "type": "Invert/Kick",
+    "origin": "Capoeira",
+    "prerequisites_text": "Feilong",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Flash Kick",
+    "type": "Flip/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "decent Backflip",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Raiz",
+    "type": "Kick/Invert",
+    "origin": "Capoeira",
+    "prerequisites_text": "tornado kick & compasso",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Parafuso",
+    "type": "Kick",
+    "origin": "Capoeira",
+    "prerequisites_text": "good 540",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Crowd Awakener",
+    "type": "Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "high 540",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Illusion Twist",
+    "type": "Twist/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Gainer",
+    "type": "Flip",
+    "origin": "Capoeira",
+    "prerequisites_text": "good Backflip",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Moon Kick",
+    "type": "Flip/Kick",
+    "origin": "Capoeira",
+    "prerequisites_text": "",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Masterswipe",
+    "type": "Invert/Flip",
+    "origin": "Bboying",
+    "prerequisites_text": "good cartwheel/au",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Gumby/Gumbi",
+    "type": "Flip",
+    "origin": "Capoeira",
+    "prerequisites_text": "cartwheel/au (on opposite side)",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Pop Swipe",
+    "type": "Invert/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Flash Kick & Side Sommi",
+    "difficulty_class": "B",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Hyper Aerial",
+    "type": "Invert/Flip",
+    "origin": "Tricking",
+    "prerequisites_text": "powerful aerial",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Sideswipe",
+    "type": "Invert/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "good 540 & Raiz",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Hypertwist",
+    "type": "Twist",
+    "origin": "Wushu",
+    "prerequisites_text": "good Butterfly Twist",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Envergado",
+    "type": "Invert/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "good Parafuso & Raiz",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Corkscrew",
+    "type": "Twist",
+    "origin": "Capoeira",
+    "prerequisites_text": "",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Gainer Arabian",
+    "type": "Flip",
+    "origin": "Tricking",
+    "prerequisites_text": "straight gainer",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Gainer Full",
+    "type": "Flip",
+    "origin": "Capoeira",
+    "prerequisites_text": "good gainer",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Webster/Loser",
+    "type": "Flip",
+    "origin": "Capoeira",
+    "prerequisites_text": "strong Aerial or Frontflip",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Touchdown Raiz",
+    "type": "Invert/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Raiz & Gumby/Gumbi",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Cheat 900",
+    "type": "Spin/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "good Cheat 720",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Triple Flash Kick",
+    "type": "Flip/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "good Flash",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Terada Grab",
+    "type": "Flip/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Side Sommi",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "X-Out",
+    "type": "Flip/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "high Flash Kick",
+    "difficulty_class": "C",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Shuriken Corkscrew Feilong",
+    "type": "Invert/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Shuriken Corkscrew",
+    "difficulty_class": "D",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Cheat 720 Twist/540 Twist",
+    "type": "Invert/Twist",
+    "origin": "Tricking",
+    "prerequisites_text": "strong Raiz",
+    "difficulty_class": "D",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Pop 1080 Wheel Kick",
+    "type": "Spin/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Pop 900",
+    "difficulty_class": "D",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Boxcutter",
+    "type": "Twist/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "Hyper Corkscrew",
+    "difficulty_class": "D",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Swipeknife",
+    "type": "Invert/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "quick Sideswipe",
+    "difficulty_class": "D",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Switchblade",
+    "type": "Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "good Parafuso",
+    "difficulty_class": "D",
+    "source": "tricking_bible"
+  },
+  {
+    "name": "Scissorswipe",
+    "type": "Invert/Kick",
+    "origin": "Tricking",
+    "prerequisites_text": "powerful Aerial & front kick",
+    "difficulty_class": "D",
+    "source": "tricking_bible"
+  }
+]

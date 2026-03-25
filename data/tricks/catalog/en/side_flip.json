@@ -141,5 +141,14 @@
   "names": {
     "en": "Side Flip",
     "fr": "Salto Lat\u00e9ral"
+  },
+  "primitives": {
+    "rotation_sagittal": "none",
+    "rotation_sagittal_count": 0,
+    "rotation_lateral": "left",
+    "twist_count": 0,
+    "takeoff": "two_feet",
+    "landing": "two_feet",
+    "obstacle_interaction": false
   }
 }

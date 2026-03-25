@@ -95,6 +95,55 @@
       "required": ["en"],
       "additionalProperties": { "type": "string" },
       "description": "Localized display names keyed by language code"
+    },
+    "primitives": {
+      "type": "object",
+      "description": "Semantic primitives describing the trick's movement components",
+      "properties": {
+        "rotation_sagittal": {
+          "type": "string",
+          "enum": ["forward", "backward", "none"],
+          "description": "Direction of flip rotation in the sagittal plane"
+        },
+        "rotation_sagittal_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of full flip rotations (0 if none)"
+        },
+        "rotation_lateral": {
+          "type": "string",
+          "enum": ["left", "right", "none"],
+          "description": "Direction of lateral (side) rotation"
+        },
+        "twist_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of full twists around the longitudinal axis"
+        },
+        "takeoff": {
+          "type": "string",
+          "enum": ["two_feet", "one_foot", "hands", "wall", "edge"],
+          "description": "Takeoff method"
+        },
+        "landing": {
+          "type": "string",
+          "enum": ["two_feet", "one_foot", "hands", "other"],
+          "description": "Landing method"
+        },
+        "obstacle_interaction": {
+          "type": "boolean",
+          "description": "Whether the trick involves interaction with an obstacle"
+        }
+      },
+      "required": [
+        "rotation_sagittal",
+        "rotation_sagittal_count",
+        "rotation_lateral",
+        "twist_count",
+        "takeoff",
+        "landing",
+        "obstacle_interaction"
+      ]
     }
   }
 }

@@ -47,6 +47,16 @@ class DetectionMethod(str, Enum):
     TEMPORAL_MODEL = "temporal_model"
 
 
+class TrickPrimitives(BaseModel):
+    rotation_sagittal: str = "none"  # "forward", "backward", "none"
+    rotation_sagittal_count: int = 0
+    rotation_lateral: str = "none"  # "left", "right", "none"
+    twist_count: int = 0
+    takeoff: str = "two_feet"
+    landing: str = "two_feet"
+    obstacle_interaction: bool = False
+
+
 class TrickConfig(BaseModel):
     trick_id: str
     category: str  # "flip", "vault", "twist", "combo"
@@ -56,6 +66,7 @@ class TrickConfig(BaseModel):
     phases: list[TrickPhase]
     composable_with: list[str] = Field(default_factory=list)
     names: dict[str, str]  # {"en": "Front Flip", "fr": "Salto Avant"}
+    primitives: TrickPrimitives | None = None
 
     def get_name(self, lang: str = "en") -> str:
         return self.names.get(lang, self.names.get("en", self.trick_id))
@@ -204,3 +215,108 @@ class Submission(BaseModel):
     created_at: datetime = Field(default_factory=datetime.utcnow)
     reviewed_at: datetime | None = None
     reviewer_notes: str = ""
+
+
+# ── 3D Biomechanics Models (v2 Pipeline) ─────────────────────────────
+
+
+class SMPLFrame(BaseModel):
+    """SMPL body mesh parameters for a single frame from GVHMR."""
+
+    model_config = {"arbitrary_types_allowed": True}
+
+    frame_idx: int
+    timestamp_ms: float
+    global_orient: Any  # np.ndarray (3,) axis-angle — body root rotation in world frame
+    body_pose: Any      # np.ndarray (23, 3) axis-angle — joint rotations relative to parent
+    transl: Any         # np.ndarray (3,) — world translation in meters
+    betas: Any          # np.ndarray (10,) — body shape parameters
+    joints_3d: Any = None  # np.ndarray (24, 3) — 3D joint positions in world frame (optional)
+
+
+class BiomechanicalFrame(BaseModel):
+    """Biomechanical features extracted from SMPL parameters for one frame."""
+
+    model_config = {"arbitrary_types_allowed": True}
+
+    frame_idx: int
+    timestamp_ms: float
+
+    # Rotation state (from global_orient swing-twist decomposition)
+    rotation_axis: Any       # np.ndarray (3,) — instantaneous rotation axis in world frame
+    accumulated_flip_deg: float = 0.0    # Total flip rotation (around lateral/sagittal axis)
+    accumulated_twist_deg: float = 0.0   # Total twist rotation (around longitudinal axis)
+
+    # Joint angles (from SMPL body_pose, in degrees)
+    knee_angle: float = 180.0
+    hip_angle: float = 180.0
+    spine_angle: float = 180.0
+    shoulder_angle: float = 0.0
+    elbow_angle: float = 180.0
+
+    # Center of mass (from SMPL transl)
+    com_position: Any = None  # np.ndarray (3,) — x, y, z in meters
+    com_velocity: Any = None  # np.ndarray (3,) — velocity in m/s
+    com_height_m: float = 0.0
+    is_airborne: bool = False
+
+    # Body shape classification (soft scores)
+    body_shape_scores: dict[str, float] = Field(
+        default_factory=lambda: {"tuck": 0.0, "pike": 0.0, "layout": 0.0, "open": 0.0}
+    )
+
+
+class TrickSignature3D(BaseModel):
+    """Complete 3D biomechanical signature of a trick segment.
+
+    This is what gets matched against TrickDefinitions for zero-shot recognition.
+    """
+
+    model_config = {"arbitrary_types_allowed": True}
+
+    # Rotation (the primary discriminators)
+    primary_rotation_axis: Any  # np.ndarray (3,) — averaged rotation axis during aerial phase
+    total_flip_deg: float       # Total flip rotation (0=none, 360=single, 720=double, etc.)
+    total_twist_deg: float      # Total longitudinal twist (0=none, 360=full, 720=double full)
+    rotation_direction: str     # "forward" or "backward" (sign of flip relative to facing direction)
+
+    # Body shape (dominant during aerial phase)
+    body_shape: str             # "tuck", "pike", "layout", or "open"
+    avg_knee_angle: float = 180.0
+    avg_hip_angle: float = 180.0
+
+    # Entry and exit
+    entry_type: str = "standing"  # "standing", "running", "one_leg", "wall", "edge"
+    peak_height_m: float = 0.0
+    duration_s: float = 0.0
+
+    # Timing
+    start_frame: int = 0
+    end_frame: int = 0
+    start_time_ms: float = 0.0
+    end_time_ms: float = 0.0
+
+    # Derived axis classification (for matching)
+    @property
+    def axis_classification(self) -> str:
+        """Classify the primary rotation axis into a named category."""
+        if self.primary_rotation_axis is None:
+            return "lateral"
+        ax = np.abs(self.primary_rotation_axis)
+        if ax[0] > 0.6:  # Dominant x-component = lateral axis (flip)
+            return "lateral"
+        if ax[2] > 0.6:  # Dominant z-component = sagittal axis (side flip)
+            return "sagittal"
+        if ax[1] > 0.6:  # Dominant y-component = longitudinal (pure twist)
+            return "longitudinal"
+        return "off_axis"  # Mixed = cork
+
+    @property
+    def flip_count(self) -> float:
+        """Number of complete flips (360° = 1.0)."""
+        return round(abs(self.total_flip_deg) / 360.0, 1)
+
+    @property
+    def twist_count(self) -> float:
+        """Number of complete twists (360° = 1.0)."""
+        return round(abs(self.total_twist_deg) / 360.0, 1)
