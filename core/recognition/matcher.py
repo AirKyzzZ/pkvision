@@ -20,6 +20,7 @@ from core.models import TrickSignature3D
 from ml.trick_physics import (
     TRICK_DEFINITIONS,
     TrickDefinition,
+    TrickContext,
     RotationAxis,
     Direction,
     BodyShape,
@@ -102,16 +103,17 @@ class Matcher3D:
         self,
         trick_definitions: dict[str, TrickDefinition] | None = None,
         # Matching weights (sum to 1.0)
-        w_rotation: float = 0.30,   # Rotation count — strongest discriminator
-        w_axis: float = 0.25,       # Rotation axis
-        w_twist: float = 0.20,      # Twist count
-        w_shape: float = 0.10,      # Body shape
-        w_entry: float = 0.10,      # Entry type
-        w_direction: float = 0.05,  # Forward/backward
-        # Tolerances
-        rotation_tolerance_deg: float = 45.0,  # How many degrees off before distance = 1
-        twist_tolerance_deg: float = 45.0,
-        axis_tolerance_deg: float = 35.0,
+        w_rotation: float = 0.35,   # Rotation count — strongest discriminator
+        w_twist: float = 0.30,      # Twist count — second strongest
+        w_direction: float = 0.15,  # Forward/backward — critical for trick identity
+        w_axis: float = 0.10,       # Rotation axis
+        w_shape: float = 0.05,      # Body shape (unreliable from GVHMR)
+        w_entry: float = 0.05,      # Entry type (partially detectable)
+        # Tolerances: how far off before distance = 1.0
+        # 180° = 0.5 rotations → being 0.5 flips/twists off = complete mismatch
+        rotation_tolerance_deg: float = 180.0,
+        twist_tolerance_deg: float = 180.0,
+        axis_tolerance_deg: float = 45.0,
     ):
         self.definitions = trick_definitions or TRICK_DEFINITIONS
         self.w_rotation = w_rotation
@@ -129,19 +131,41 @@ class Matcher3D:
         signature: TrickSignature3D,
         top_k: int = 5,
         min_confidence: float = 0.1,
+        context: TrickContext | None = None,
     ) -> list[TrickMatch]:
-        """Match a 3D signature against all TrickDefinitions.
+        """Match a 3D signature against TrickDefinitions.
+
+        Args:
+            signature: The measured trick physics.
+            top_k: Return this many matches.
+            min_confidence: Minimum confidence threshold.
+            context: If set, only match tricks from this context (ground/wall/bar).
+                     If None, matches all contexts.
 
         Returns top_k matches sorted by confidence (highest first).
         """
         matches = []
 
         for trick_id, trick_def in self.definitions.items():
+            # Filter by context (Layer 1)
+            if context is not None and hasattr(trick_def, "context"):
+                if trick_def.context != context:
+                    continue
+
             match = self._compare(signature, trick_id, trick_def)
             if match.confidence >= min_confidence:
                 matches.append(match)
 
-        matches.sort(key=lambda m: m.confidence, reverse=True)
+        # Sort by confidence (primary). For ties, prefer the most basic trick
+        # (lowest FIG score) since without Layer 3 disambiguation we can't tell
+        # apart variants in the same physics family. A "Backflip" (D=1.5) is more
+        # likely than "Handstand Gainer" (D=4.5) when both match at 99%.
+        def sort_key(m: TrickMatch):
+            td = self.definitions.get(m.trick_id)
+            fig_score = td.fig_score if td and hasattr(td, "fig_score") else 0
+            return (-m.confidence, fig_score, m.trick_name)
+
+        matches.sort(key=sort_key)
         return matches[:top_k]
 
     def _compare(

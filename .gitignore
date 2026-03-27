@@ -26,19 +26,41 @@ env/
 .env.*.local
 
 # Data (large files)
-data/clips/*.mp4
-data/clips/*.avi
-data/clips/*.mov
-data/clips/*.mkv
-data/clips/keypoints/
+data/clips/
+data/final_clips/
+data/run_testing/*.mp4
+data/run_testing/*.mov
+data/run_testing/*.avi
 data/models/*.pt
 data/models/*.pth
 data/models/*.onnx
 !data/models/.gitkeep
 
+# GVHMR outputs (large .pt files, regenerate from video)
+data/gvhmr_outputs/
+
+# SMPL body models (download separately)
+data/body_models/
+
+# Parkourtheory scraped clips (copyrighted)
+data/parkourtheory_clips/
+data/scrape_chunks/
+
+# Kinetics dataset clips
+data/kinetics/
+
+# Training data (large)
+data/training/
+data/synthetic/
+data/references/
+training_data.zip
+
 # YOLO model cache
 *.pt
 !data/models/.gitkeep
+
+# Tricking Bible PDF (copyrighted)
+data/tricking_bible.pdf
 
 # Database
 *.db

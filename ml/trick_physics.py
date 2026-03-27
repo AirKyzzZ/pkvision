@@ -57,6 +57,14 @@ class EntryType(str, Enum):
     EDGE = "edge"       # Off a ledge/platform
 
 
+class TrickContext(str, Enum):
+    """What apparatus/environment the trick is performed on."""
+    GROUND = "ground"           # Acrobatics moves
+    WALL = "wall"               # Wall moves
+    BAR_OR_RAIL = "bar_or_rail" # Swing moves
+    OBSTACLE = "obstacle"       # PK Basics (vaults, climbs)
+
+
 @dataclass
 class TrickDefinition:
     """Physics-based definition of a parkour trick."""
@@ -75,6 +83,20 @@ class TrickDefinition:
     # Entry/exit
     entry: EntryType = EntryType.STANDING
 
+    # FIG Code of Points
+    fig_score: float = 0.0       # Base difficulty value from FIG Table of Tricks
+    fig_category: str = ""       # "swing", "wall", "acrobatics", "pk_basics"
+    context: TrickContext = TrickContext.GROUND
+
+    # Aliases (same trick, different name)
+    aliases: list[str] = field(default_factory=list)
+
+    # Layer 3 disambiguation features
+    hand_contact: bool | None = None   # Does the trick involve hand contact with ground/wall?
+    takeoff_type: str | None = None    # "two_foot", "one_leg", "running_forward", "gainer", etc.
+    entry_pattern: str | None = None   # "castaway", "caster", "pop", "kong", "roundoff", etc.
+    kick: bool = False                 # Kick during rotation (frisbee, butterfly)
+
     # Timing (relative)
     takeoff_duration: float = 0.15   # Fraction of total time
     air_duration: float = 0.6        # Fraction of total time
@@ -86,9 +108,114 @@ class TrickDefinition:
     typical_duration_s: float = 0.8  # Typical trick duration
 
 
-# ── Trick Catalog ────────────────────────────────────────────────
+# ── FIG Trick Loader ─────────────────────────────────────────────
 
-TRICK_DEFINITIONS: dict[str, TrickDefinition] = {
+def load_fig_tricks(json_path: str | None = None) -> dict[str, TrickDefinition]:
+    """Load trick definitions from the FIG Code of Points JSON.
+
+    Returns a dict of TrickDefinition objects keyed by trick_id (snake_case name).
+    Falls back to legacy hardcoded definitions if JSON not found.
+    """
+    import json
+    from pathlib import Path
+
+    if json_path is None:
+        json_path = str(Path(__file__).parent.parent / "data" / "fig_tricks_2025.json")
+
+    path = Path(json_path)
+    if not path.exists():
+        # Fall back to legacy definitions
+        return _legacy_trick_definitions()
+
+    with open(path) as f:
+        data = json.load(f)
+
+    axis_map = {
+        "lateral": RotationAxis.LATERAL,
+        "sagittal": RotationAxis.SAGITTAL,
+        "longitudinal": RotationAxis.LONGITUDINAL,
+        "off_axis": RotationAxis.OFF_AXIS,
+    }
+    dir_map = {
+        "forward": Direction.FORWARD,
+        "backward": Direction.BACKWARD,
+        "side": Direction.LEFT,
+    }
+    shape_map_rev = {
+        "tuck": BodyShape.TUCK,
+        "pike": BodyShape.PIKE,
+        "layout": BodyShape.LAYOUT,
+        "open": BodyShape.OPEN,
+    }
+    context_map = {
+        "ground": TrickContext.GROUND,
+        "wall": TrickContext.WALL,
+        "bar_or_rail": TrickContext.BAR_OR_RAIL,
+        "obstacle": TrickContext.OBSTACLE,
+    }
+
+    definitions: dict[str, TrickDefinition] = {}
+
+    for cat_key, cat_data in data.get("categories", {}).items():
+        context_str = cat_data.get("context", "ground")
+        context = context_map.get(context_str, TrickContext.GROUND)
+
+        for trick in cat_data.get("tricks", []):
+            name = trick["name"]
+            trick_id = name.lower().replace(" ", "_").replace("(", "").replace(")", "").replace("-", "_")
+
+            # Skip tricks with no rotation data (PK basics locomotion)
+            axis_str = trick.get("axis")
+            dir_str = trick.get("direction")
+
+            axis = axis_map.get(axis_str, RotationAxis.LATERAL) if axis_str else RotationAxis.LATERAL
+            direction = dir_map.get(dir_str, Direction.BACKWARD) if dir_str else Direction.BACKWARD
+
+            flip = trick.get("flip", 0)
+            twist = trick.get("twist", 0)
+            score = trick.get("score", 0)
+
+            # Determine entry type
+            entry = EntryType.STANDING
+            if context == TrickContext.WALL:
+                entry = EntryType.WALL
+            takeoff = trick.get("takeoff")
+            if takeoff == "one_leg":
+                entry = EntryType.ONE_LEG
+            elif takeoff in ("running_forward", "gainer"):
+                entry = EntryType.RUNNING
+
+            td = TrickDefinition(
+                trick_id=trick_id,
+                name=name,
+                rotation_axis=axis,
+                direction=direction,
+                rotation_count=flip,
+                twist_count=twist,
+                body_shape=BodyShape.TUCK,
+                entry=entry,
+                fig_score=score,
+                fig_category=cat_key,
+                context=context,
+                aliases=trick.get("aliases", []),
+                hand_contact=trick.get("hand_contact"),
+                takeoff_type=trick.get("takeoff"),
+                entry_pattern=trick.get("entry"),
+                kick=trick.get("kick", False),
+            )
+            definitions[trick_id] = td
+
+    return definitions
+
+
+# Load FIG tricks by default; fall back to legacy if JSON missing
+TRICK_DEFINITIONS: dict[str, TrickDefinition] = load_fig_tricks()
+
+
+# ── Legacy Trick Catalog (fallback) ──────────────────────────────
+
+def _legacy_trick_definitions() -> dict[str, TrickDefinition]:
+    return {
     # Basic flips
     "back_flip": TrickDefinition("back_flip", "Back Flip",
         RotationAxis.LATERAL, Direction.BACKWARD, 1.0, body_shape=BodyShape.TUCK),
@@ -170,7 +297,200 @@ TRICK_DEFINITIONS: dict[str, TrickDefinition] = {
         RotationAxis.SAGITTAL, Direction.LEFT, 1.0, twist_count=1.0),
     "double_side": TrickDefinition("double_side", "Double Side",
         RotationAxis.SAGITTAL, Direction.LEFT, 2.0),
-}
+
+    # ── Expanded definitions (auto-generated from unified_tricks.json) ──
+
+    # --- Flip tricks ---
+    "gumbi": TrickDefinition("gumbi", "Gumbi",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        typical_height_m=0.7),
+    "double_aerial_twist": TrickDefinition("double_aerial_twist", "Double Aerial Twist",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 2.0,
+        typical_height_m=1.1, typical_duration_s=1.2),
+    "double_gainer": TrickDefinition("double_gainer", "Double Gainer",
+        RotationAxis.LATERAL, Direction.BACKWARD, 2.0,
+        entry=EntryType.RUNNING, typical_height_m=1.1, typical_duration_s=1.2),
+    "triple_corkscrew": TrickDefinition("triple_corkscrew", "Triple Corkscrew",
+        RotationAxis.OFF_AXIS, Direction.BACKWARD, 3.0,
+        twist_count=1.0, typical_height_m=1.4, typical_duration_s=1.6),
+    "double_corkscrew": TrickDefinition("double_corkscrew", "Double Corkscrew",
+        RotationAxis.OFF_AXIS, Direction.BACKWARD, 2.0,
+        twist_count=1.0, typical_height_m=1.1, typical_duration_s=1.3),
+    "double_arabian": TrickDefinition("double_arabian", "Double Arabian",
+        RotationAxis.LATERAL, Direction.FORWARD, 2.0,
+        twist_count=0.5, typical_height_m=1.1, typical_duration_s=1.2),
+    "helicoptero": TrickDefinition("helicoptero", "Helicoptero",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 0.5,
+        typical_height_m=0.5),
+    "corkscrew_in_back_out": TrickDefinition("corkscrew_in_back_out", "Corkscrew-In Back-Out",
+        RotationAxis.OFF_AXIS, Direction.BACKWARD, 1.0,
+        twist_count=1.0, typical_height_m=0.7),
+    "double_butterfly_twist": TrickDefinition("double_butterfly_twist", "Double Butterfly Twist",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 2.0,
+        twist_count=1.0, body_shape=BodyShape.LAYOUT, typical_height_m=1.3, typical_duration_s=1.3),
+    "triple_aerial_twist": TrickDefinition("triple_aerial_twist", "Triple Aerial Twist",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 3.0,
+        typical_height_m=1.4, typical_duration_s=1.5),
+    "cat_leap": TrickDefinition("cat_leap", "Cat Leap",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.WALL, typical_height_m=0.7),
+    "cheat_1440": TrickDefinition("cheat_1440", "Cheat 1440",
+        RotationAxis.LONGITUDINAL, Direction.LEFT, 4.0,
+        typical_height_m=1.8, typical_duration_s=1.8),
+    "cheat_900": TrickDefinition("cheat_900", "Cheat 900",
+        RotationAxis.LONGITUDINAL, Direction.LEFT, 2.5,
+        typical_height_m=1.3, typical_duration_s=1.4),
+    "quadruple_corkscrew": TrickDefinition("quadruple_corkscrew", "Quadruple Corkscrew",
+        RotationAxis.OFF_AXIS, Direction.BACKWARD, 1.0,
+        twist_count=1.0, typical_height_m=0.7),
+    "kip_up": TrickDefinition("kip_up", "Kip-Up",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        typical_height_m=0.7),
+    "540_kick": TrickDefinition("540_kick", "540",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 1.5,
+        typical_height_m=0.9),
+    "webster_half": TrickDefinition("webster_half", "Webster Half",
+        RotationAxis.LATERAL, Direction.FORWARD, 0.5,
+        entry=EntryType.ONE_LEG, typical_height_m=0.5),
+    "butterfly_kick": TrickDefinition("butterfly_kick", "Butterfly Kick",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 0.5,
+        typical_height_m=0.5),
+    "butterfly_twist": TrickDefinition("butterfly_twist", "Butterfly Twist",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 1.0,
+        twist_count=1.0, typical_height_m=0.7),
+    "aerial": TrickDefinition("aerial", "Aerial",
+        RotationAxis.SAGITTAL, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+    "aerial_twist": TrickDefinition("aerial_twist", "Aerial Twist",
+        RotationAxis.LONGITUDINAL, Direction.FORWARD, 1.0,
+        typical_height_m=0.7),
+    "corkscrew": TrickDefinition("corkscrew", "Corkscrew",
+        RotationAxis.OFF_AXIS, Direction.BACKWARD, 1.0,
+        twist_count=1.0, typical_height_m=0.7),
+    "arabian": TrickDefinition("arabian", "Arabian",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        twist_count=0.5, typical_height_m=0.7),
+    "gainer_full": TrickDefinition("gainer_full", "Gainer Full",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        twist_count=1.0, entry=EntryType.RUNNING, typical_height_m=0.7),
+    "gainer_arabian": TrickDefinition("gainer_arabian", "Gainer Arabian",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        twist_count=0.5, entry=EntryType.RUNNING, typical_height_m=0.7),
+    # double_back_flip → use double_back (above)
+    # double_front_flip → use double_front (above)
+    "back_layout": TrickDefinition("back_layout", "Back Layout",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        body_shape=BodyShape.LAYOUT, typical_height_m=0.9),
+    "double_layout": TrickDefinition("double_layout", "Double Layout",
+        RotationAxis.LATERAL, Direction.BACKWARD, 2.0,
+        body_shape=BodyShape.LAYOUT, typical_height_m=1.3, typical_duration_s=1.2),
+    "front_double_full": TrickDefinition("front_double_full", "Front Double Full",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        twist_count=2.0, body_shape=BodyShape.LAYOUT, typical_height_m=0.9, typical_duration_s=1.1),
+    "double_side_flip": TrickDefinition("double_side_flip", "Double Side Flip",
+        RotationAxis.LATERAL, Direction.LEFT, 2.0,
+        typical_height_m=1.1, typical_duration_s=1.2),
+    "inward_side": TrickDefinition("inward_side", "Inward Side",
+        RotationAxis.SAGITTAL, Direction.LEFT, 1.0,
+        typical_height_m=0.7),
+    "rudi": TrickDefinition("rudi", "Rudi",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        twist_count=0.5, typical_height_m=0.7),
+    "front_half": TrickDefinition("front_half", "Front Half",
+        RotationAxis.LATERAL, Direction.FORWARD, 0.5,
+        twist_count=0.5, body_shape=BodyShape.LAYOUT, typical_height_m=0.7),
+    "flash_kick": TrickDefinition("flash_kick", "Flash Kick",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+    "touchdown_raiz": TrickDefinition("touchdown_raiz", "Touchdown Raiz",
+        RotationAxis.OFF_AXIS, Direction.BACKWARD, 0.5,
+        twist_count=0.5, typical_height_m=0.5),
+    "boxcutter": TrickDefinition("boxcutter", "Boxcutter",
+        RotationAxis.OFF_AXIS, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+    "sideswipe": TrickDefinition("sideswipe", "Sideswipe",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.5,
+        typical_height_m=0.9),
+    "masterswipe": TrickDefinition("masterswipe", "Masterswipe",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+    "pimp_flip": TrickDefinition("pimp_flip", "Pimp Flip",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+    "gainer_switch": TrickDefinition("gainer_switch", "Gainer Switch",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.RUNNING, typical_height_m=0.7),
+    "slant_gainer": TrickDefinition("slant_gainer", "Slant Gainer",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.RUNNING, typical_height_m=0.7),
+    "palm_flip": TrickDefinition("palm_flip", "Palm Flip",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.WALL, typical_height_m=0.7),
+    "tic_tac": TrickDefinition("tic_tac", "Tic Tac",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        entry=EntryType.WALL, typical_height_m=0.7),
+
+    # --- Bar tricks ---
+    "lache": TrickDefinition("lache", "Lache",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.EDGE, typical_height_m=0.7),
+    "flyaway_full": TrickDefinition("flyaway_full", "Flyaway Full",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 1.0,
+        twist_count=1.0, entry=EntryType.EDGE, typical_height_m=0.7),
+
+    # --- Vault tricks ---
+    "speed_vault": TrickDefinition("speed_vault", "Speed Vault",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        entry=EntryType.RUNNING, typical_height_m=0.7),
+    "dash_vault": TrickDefinition("dash_vault", "Dash Vault",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        entry=EntryType.RUNNING, typical_height_m=0.7),
+    "kong_vault": TrickDefinition("kong_vault", "Kong Vault",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.RUNNING, typical_height_m=0.7),
+    "lazy_vault": TrickDefinition("lazy_vault", "Lazy Vault",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.RUNNING, typical_height_m=0.7),
+    "reverse_vault": TrickDefinition("reverse_vault", "Reverse Vault",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.RUNNING, typical_height_m=0.7),
+
+    # --- Ground tricks ---
+    "cartwheel": TrickDefinition("cartwheel", "Cartwheel",
+        RotationAxis.LATERAL, Direction.LEFT, 1.0,
+        typical_height_m=0.7),
+    "roundoff": TrickDefinition("roundoff", "Roundoff",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+    "macaco": TrickDefinition("macaco", "Macaco",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+    "back_handspring": TrickDefinition("back_handspring", "Back Handspring",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+    "front_handspring": TrickDefinition("front_handspring", "Front Handspring",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        typical_height_m=0.7),
+    "handstand": TrickDefinition("handstand", "Handstand",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        body_shape=BodyShape.LAYOUT, typical_height_m=0.9),
+
+    # --- Roll tricks ---
+    "dive_roll": TrickDefinition("dive_roll", "Dive Roll",
+        RotationAxis.LATERAL, Direction.FORWARD, 1.0,
+        typical_height_m=0.7),
+    "backward_roll": TrickDefinition("backward_roll", "Backward Roll",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        typical_height_m=0.7),
+
+    # --- Wall tricks ---
+    "wall_spin": TrickDefinition("wall_spin", "Wall Spin",
+        RotationAxis.LONGITUDINAL, Direction.BACKWARD, 1.0,
+        entry=EntryType.WALL, typical_height_m=0.7),
+    "wall_full": TrickDefinition("wall_full", "Wall Full",
+        RotationAxis.LATERAL, Direction.BACKWARD, 1.0,
+        twist_count=1.0, entry=EntryType.WALL, typical_height_m=0.7),
+    }
 
 
 class PhysicsGenerator:

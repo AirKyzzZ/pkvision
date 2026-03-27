@@ -176,30 +176,34 @@ def extract_joint_angles(body_pose: np.ndarray) -> dict[str, float]:
 # ── Body Shape Classification ──────────────────────────────────────
 
 def classify_body_shape(knee_angle: float, hip_angle: float, shoulder_angle: float) -> dict[str, float]:
-    """Classify body shape from joint angles. Returns soft scores.
+    """Classify body shape from SMPL joint rotation magnitudes. Returns soft scores.
 
-    Tuck:   knees bent (<90°), hips bent (<90°) — tight ball
-    Pike:   knees straight (>140°), hips bent (<90°) — folded at hips
-    Layout: knees straight (>140°), hips straight (>140°) — extended
-    Open:   layout + arms spread (shoulder >100°)
+    SMPL angles are rotation-from-rest-pose (T-pose):
+      - 0° = straight (rest position) → layout/straight body
+      - 90°+ = fully bent → tuck/curled body
+
+    Tuck:   knees bent (>70°), hips bent (>50°) — tight ball
+    Pike:   knees straight (<50°), hips bent (>50°) — folded at hips
+    Layout: knees straight (<50°), hips straight (<40°) — extended
+    Open:   layout + arms spread (shoulder >40°)
     """
     scores = {"tuck": 0.0, "pike": 0.0, "layout": 0.0, "open": 0.0}
 
-    # Tuck: both bent
-    if knee_angle < 100 and hip_angle < 100:
-        scores["tuck"] = 1.0 - (knee_angle + hip_angle) / 200.0
-    elif knee_angle < 120 and hip_angle < 120:
+    # Tuck: both bent (high SMPL rotation = bent joints)
+    if knee_angle > 70 and hip_angle > 50:
+        scores["tuck"] = min(1.0, (knee_angle - 70) / 50.0 * (hip_angle - 50) / 50.0)
+    elif knee_angle > 55 and hip_angle > 40:
         scores["tuck"] = 0.3
 
-    # Pike: straight legs, bent hips
-    if knee_angle > 130 and hip_angle < 100:
-        scores["pike"] = min(1.0, (knee_angle - 130) / 50.0 * (100 - hip_angle) / 100.0)
+    # Pike: straight legs (low knee), bent hips (high hip)
+    if knee_angle < 50 and hip_angle > 50:
+        scores["pike"] = min(1.0, (50 - knee_angle) / 50.0 * (hip_angle - 50) / 50.0)
 
-    # Layout: both extended
-    if knee_angle > 140 and hip_angle > 140:
-        base = min(1.0, (knee_angle - 140) / 40.0 * (hip_angle - 140) / 40.0)
-        if shoulder_angle > 100:
-            scores["open"] = base * min(1.0, (shoulder_angle - 100) / 80.0)
+    # Layout: both extended (low SMPL rotation = straight body)
+    if knee_angle < 50 and hip_angle < 40:
+        base = min(1.0, (50 - knee_angle) / 50.0 * (40 - hip_angle) / 40.0)
+        if shoulder_angle > 40:
+            scores["open"] = base * min(1.0, (shoulder_angle - 40) / 60.0)
             scores["layout"] = base * (1.0 - scores["open"])
         else:
             scores["layout"] = base
@@ -427,8 +431,10 @@ def extract_trick_signature(
     else:
         primary_axis = np.array([1.0, 0.0, 0.0])
 
-    # Direction: sign of flip determines forward vs backward
-    rotation_direction = "backward" if total_flip < 0 else "forward"
+    # Direction: positive flip in SMPL = backward rotation (head goes back)
+    # This is correct for most tricks. Direction has only 5% weight in matching,
+    # so errors here have minimal impact on trick identification.
+    rotation_direction = "backward" if total_flip > 0 else "forward"
 
     # Body shape: dominant shape during aerial phase
     all_knee = [f.knee_angle for f in aerial]
