@@ -149,20 +149,29 @@ def segment_tricks_3d(
                 merged.append((s, e))
         segments = merged
 
-    # Split long segments at upright valleys (tilt < 20° = between tricks)
+    # Split long segments using two methods:
+    # 1. Upright valleys (tilt < threshold)
+    # 2. Rotation-rate valleys (low rotation speed = between tricks)
     split_segments = []
-    min_split_gap = int(0.15 * fps)  # 150ms upright = trick boundary
+    min_split_gap = int(0.1 * fps)  # 100ms pause = potential trick boundary
+    max_trick_duration = int(3.5 * fps)  # No single trick lasts > 3.5s
+
     for s, e in segments:
         seg_tilt = tilt_angle[s:e + 1]
+        seg_rate = smooth_rate[s:e + 1]
         duration = e - s
 
-        if duration < 2.0 * fps:
+        if duration < 1.5 * fps:
             # Short segment — don't split
             split_segments.append((s, e))
             continue
 
-        # Find upright valleys within the segment
-        upright = seg_tilt < 20
+        split_points = []
+
+        # Method 1: Tilt valleys (upright moments between tricks)
+        # Use a higher threshold (35°) to catch more valleys on noisy data
+        upright_thresh = 35 if duration > 3.0 * fps else 20
+        upright = seg_tilt < upright_thresh
         valley_starts = []
         valley_ends = []
         in_valley = False
@@ -176,25 +185,75 @@ def segment_tricks_3d(
         if in_valley:
             valley_ends.append(len(seg_tilt) - 1)
 
-        # Split at valleys that are long enough
-        split_points = []
         for vs, ve in zip(valley_starts, valley_ends):
-            valley_duration = ve - vs
-            # Only split at valleys that are real pauses (not just passing through upright)
-            if valley_duration >= min_split_gap:
-                mid = s + (vs + ve) // 2
-                split_points.append(mid)
+            if ve - vs >= min_split_gap:
+                split_points.append(s + (vs + ve) // 2)
+
+        # Method 2: Rotation-rate valleys (low rotation = between tricks)
+        # Only for segments > 3s where tilt splitting failed to produce enough splits
+        if duration > 3.0 * fps:
+            rate_threshold = max(np.mean(seg_rate) * 0.3, 2.0)
+            low_rate = seg_rate < rate_threshold
+            in_valley = False
+            valley_starts_r = []
+            valley_ends_r = []
+            for i in range(len(seg_rate)):
+                if low_rate[i] and not in_valley:
+                    in_valley = True
+                    valley_starts_r.append(i)
+                elif not low_rate[i] and in_valley:
+                    in_valley = False
+                    valley_ends_r.append(i)
+            if in_valley:
+                valley_ends_r.append(len(seg_rate) - 1)
+
+            for vs, ve in zip(valley_starts_r, valley_ends_r):
+                if ve - vs >= min_split_gap:
+                    mid = s + (vs + ve) // 2
+                    # Only add if not too close to an existing split point
+                    if all(abs(mid - sp) > int(0.5 * fps) for sp in split_points):
+                        split_points.append(mid)
+
+        split_points.sort()
 
         if not split_points:
-            split_segments.append((s, e))
+            sub_segs = [(s, e)]
         else:
-            # Create sub-segments
             boundaries = [s] + split_points + [e]
+            sub_segs = []
             for i in range(len(boundaries) - 1):
                 sub_s = boundaries[i]
                 sub_e = boundaries[i + 1]
                 if sub_e - sub_s >= min_duration:
-                    split_segments.append((sub_s, sub_e))
+                    sub_segs.append((sub_s, sub_e))
+
+        # Force-split any sub-segment that still exceeds max trick duration
+        final_segs = []
+        for ss, se in sub_segs:
+            sub_dur = se - ss
+            if sub_dur <= max_trick_duration:
+                final_segs.append((ss, se))
+            else:
+                # Split at the lowest rotation rate points
+                sub_rate = smooth_rate[ss:se + 1]
+                n_splits = int(sub_dur / max_trick_duration)
+                chunk = sub_dur // (n_splits + 1)
+                force_splits = []
+                for k in range(1, n_splits + 1):
+                    center = k * chunk
+                    win = int(0.5 * fps)
+                    search_s = max(0, center - win)
+                    search_e = min(len(sub_rate), center + win)
+                    if search_s < search_e:
+                        best = search_s + int(np.argmin(sub_rate[search_s:search_e]))
+                        force_splits.append(ss + best)
+                force_splits.sort()
+                fb = [ss] + force_splits + [se]
+                for i in range(len(fb) - 1):
+                    if fb[i + 1] - fb[i] >= min_duration:
+                        final_segs.append((fb[i], fb[i + 1]))
+
+        split_segments.extend(final_segs)
 
     segments = split_segments
 
@@ -246,8 +305,8 @@ def tracking_to_signature(
 
     return TrickSignature3D(
         primary_rotation_axis=primary_axis,
-        total_flip_deg=physics["flip_deg"] * flip_sign,
-        total_twist_deg=physics["twist_deg"],
+        total_flip_deg=physics["flip_count"] * 360.0 * flip_sign,
+        total_twist_deg=physics["twist_count"] * 360.0,
         rotation_direction=physics["direction"],
         body_shape=physics["body_shape"],
         entry_type=physics["entry"],

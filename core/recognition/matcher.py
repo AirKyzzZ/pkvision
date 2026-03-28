@@ -103,10 +103,10 @@ class Matcher3D:
         self,
         trick_definitions: dict[str, TrickDefinition] | None = None,
         # Matching weights (sum to 1.0)
-        w_rotation: float = 0.35,   # Rotation count — strongest discriminator
-        w_twist: float = 0.30,      # Twist count — second strongest
+        w_rotation: float = 0.30,   # Rotation count — strongest discriminator
+        w_twist: float = 0.25,      # Twist count — second strongest
         w_direction: float = 0.15,  # Forward/backward — critical for trick identity
-        w_axis: float = 0.10,       # Rotation axis
+        w_axis: float = 0.20,       # Rotation axis — must discriminate sagittal/lateral/off-axis
         w_shape: float = 0.05,      # Body shape (unreliable from GVHMR)
         w_entry: float = 0.05,      # Entry type (partially detectable)
         # Tolerances: how far off before distance = 1.0
@@ -215,8 +215,13 @@ class Matcher3D:
             entry_dist = 0.3
 
         # 6. Direction distance
-        expected_dir = DIRECTION_MAP.get(trick_def.direction, "backward")
-        direction_dist = 0.0 if sig.rotation_direction == expected_dir else 1.0
+        # Sagittal tricks (sideflip, cartwheel, aerial) are direction-agnostic
+        # because the tracker can only detect forward/backward, not left/right.
+        if trick_def.rotation_axis == RotationAxis.SAGITTAL:
+            direction_dist = 0.0  # Don't penalize direction for sagittal tricks
+        else:
+            expected_dir = DIRECTION_MAP.get(trick_def.direction, "backward")
+            direction_dist = 0.0 if sig.rotation_direction == expected_dir else 1.0
 
         # Weighted total distance
         total_dist = (

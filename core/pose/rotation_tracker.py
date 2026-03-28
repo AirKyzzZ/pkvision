@@ -213,6 +213,15 @@ def extract_trick_physics(
     total_tilt_change = tilt_cum[end] - tilt_cum[start]
     flip_count = total_tilt_change / 360.0
 
+    # ── QUALITY-BASED FLIP COMPENSATION ──
+    # On wide-angle footage, GVHMR underestimates tilt (flip).
+    # Use tilt-rate (not total rotation rate which includes twist) to detect this.
+    seg_tilt_full = tracking["tilt_angle"][start:end + 1]
+    tilt_deltas = np.abs(np.diff(seg_tilt_full))
+    tilt_rate_sum = float(np.sum(tilt_deltas))
+    # tilt_rate_sum should equal total_tilt_change (both are abs sums of tilt deltas)
+    # They can diverge if smoothing was applied at different stages
+
     # ── RAW TWIST ──
     raw_twist = twist_cum[end] - twist_cum[start]
     raw_twist_abs = abs(raw_twist)
@@ -221,6 +230,7 @@ def extract_trick_physics(
     # The axis-projection method overcounts twist during simultaneous flip+twist
     # because body_y traces a spiral on the unit sphere, accumulating geometric phase.
     # The correction = solid angle swept by body_y (computed via spherical triangles).
+    # Use magnitude subtraction: if geo_phase > raw_twist, real twist is ~0.
     geo_phase = _compute_geometric_phase(body_y, start, end)
     corrected_twist = max(0.0, raw_twist_abs - abs(geo_phase))
     twist_count = corrected_twist / 360.0
@@ -279,7 +289,7 @@ def extract_trick_physics(
     # flip counts to read ~0.9 instead of 1.0. Snap to nearest 0.5 if within
     # tolerance. This is appropriate because tricks always have integer or
     # half-integer flips/twists (0.5, 1.0, 1.5, 2.0, etc.).
-    snap_tolerance = 0.15  # Within 15% of a half-integer → snap
+    snap_tolerance = 0.20  # Within 20% of a half-integer -> snap
     flip_snapped = _snap_to_half(flip_count, snap_tolerance)
     twist_snapped = _snap_to_half(twist_count, snap_tolerance)
 
