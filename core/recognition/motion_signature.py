@@ -162,22 +162,33 @@ class SignatureDatabase:
         q_rot_speed = self._compute_rotation_speed(body_axis)
         q_inverted, q_n_inv = self._detect_inversion(body_axis)
 
-        matches = []
+        # First pass: compute all DTW distances for normalization
+        raw_dists = []
         for ref in self.references:
-            # Trajectory distance (DTW-lite: just MSE on normalized trajectories)
-            traj_dist = self._trajectory_distance(query_norm, ref.trajectory)
+            d = self._trajectory_distance(query_norm, ref.trajectory)
+            raw_dists.append(d)
+
+        # Normalize distances to [0, 1] using min-max relative to this query
+        min_dist = min(raw_dists) if raw_dists else 0
+        max_dist = max(raw_dists) if raw_dists else 1
+        dist_range = max(max_dist - min_dist, 0.01)
+
+        matches = []
+        for idx, ref in enumerate(self.references):
+            traj_dist = raw_dists[idx]
+            # Normalize: best match = 0.0, worst = 1.0
+            norm_dist = (traj_dist - min_dist) / dist_range
 
             # Physics similarity bonus
             physics_bonus = 0.0
 
-            # Duration similarity (same trick should have similar duration)
+            # Duration similarity
             dur_ratio = min(q_duration, ref.duration_s) / max(q_duration, ref.duration_s, 0.1)
             physics_bonus += 0.1 * dur_ratio
 
             # Inversion match
             if q_inverted == ref.went_inverted:
                 physics_bonus += 0.15
-            # Inversion count match
             if q_n_inv == ref.num_inversions:
                 physics_bonus += 0.1
 
@@ -189,10 +200,10 @@ class SignatureDatabase:
             height_ratio = min(q_height, ref.max_height_change) / max(q_height, ref.max_height_change, 0.01)
             physics_bonus += 0.05 * height_ratio
 
-            # Combined confidence
-            # traj_dist is typically 0.0 (perfect) to 1.0+ (very different)
-            confidence = max(0.0, 1.0 - traj_dist * 0.7 + physics_bonus)
-            confidence = min(1.0, confidence)
+            # Combined confidence: trajectory similarity + physics hints
+            traj_similarity = max(0.0, 1.0 - norm_dist)
+            confidence = traj_similarity * 0.5 + physics_bonus
+            confidence = min(1.0, max(0.0, confidence))
 
             matches.append(SignatureMatch(
                 name=ref.name,
