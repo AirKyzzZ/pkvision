@@ -70,3 +70,7 @@ Thumbs.db
 .pytest_cache/
 htmlcov/
 .coverage
+data/reference_clips/
+outputs/
+*.bat
+*.log
