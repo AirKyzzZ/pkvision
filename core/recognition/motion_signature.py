@@ -200,9 +200,9 @@ class SignatureDatabase:
             height_ratio = min(q_height, ref.max_height_change) / max(q_height, ref.max_height_change, 0.01)
             physics_bonus += 0.05 * height_ratio
 
-            # Combined confidence: trajectory similarity + physics hints
+            # Combined confidence: trajectory similarity (primary) + physics hints (secondary)
             traj_similarity = max(0.0, 1.0 - norm_dist)
-            confidence = traj_similarity * 0.5 + physics_bonus
+            confidence = traj_similarity * 0.7 + physics_bonus * 0.6
             confidence = min(1.0, max(0.0, confidence))
 
             matches.append(SignatureMatch(

@@ -257,7 +257,7 @@ def segment_tricks_3d(
 
     segments = split_segments
 
-    # Filter: only keep segments with significant total rotation
+    # Filter: only keep segments that look like real tricks
     tilt_cum = tracking["tilt_cumulative"]
     twist_cum = tracking["twist_cumulative"]
     filtered = []
@@ -265,8 +265,26 @@ def segment_tricks_3d(
         total_tilt = abs(tilt_cum[e] - tilt_cum[s])
         total_twist = abs(twist_cum[e] - twist_cum[s])
         total_rotation = total_tilt + total_twist * 0.7
-        if total_rotation >= min_rotation_deg:
-            filtered.append((s, e))
+        duration_s = (e - s) / fps
+
+        # Must have enough total rotation
+        if total_rotation < min_rotation_deg:
+            continue
+
+        # Must have significant peak rotation rate (not just slow movement)
+        seg_rate = smooth_rate[s:e + 1]
+        peak_rate = float(np.max(seg_rate))
+        if peak_rate < 8.0:
+            continue
+
+        # Short segments (< 0.5s) or segments without inversion and low rotation are likely transitions
+        max_tilt = float(np.max(tilt_angle[s:e + 1]))
+        if duration_s < 0.5 and total_tilt < 200:
+            continue
+        if duration_s < 0.8 and max_tilt < 60 and total_tilt < 180:
+            continue
+
+        filtered.append((s, e))
 
     return filtered
 

@@ -81,38 +81,57 @@ def extract_vitpose_simple(video_path: str, yolo_model_path: str) -> np.ndarray 
     return np.stack(all_kps).astype(np.float32)
 
 
-def map_fig_to_parkourtheory(fig_path: str, pt_path: str) -> list[dict]:
-    """Map FIG tricks to parkourtheory video URLs."""
+def map_fig_to_parkourtheory(fig_path: str, pt_path: str, map_path: str = "data/fig_to_parkourtheory_map.json") -> list[dict]:
+    """Map FIG tricks to parkourtheory video URLs using manual mapping."""
     with open(fig_path, encoding="utf-8") as f:
         fig = json.load(f)
     with open(pt_path, encoding="utf-8") as f:
         pt = json.load(f)
 
-    # Build parkourtheory index (only entries with videos)
+    # Build parkourtheory index (case insensitive)
     pt_index = {}
     for t in pt:
         name = t.get("name", "").strip()
         if name and t.get("video_url"):
             pt_index[name.lower()] = t
 
+    # Load manual mapping if available
+    manual = {}
+    if os.path.exists(map_path):
+        with open(map_path) as f:
+            manual_data = json.load(f)
+        for cat_name, mappings in manual_data.items():
+            if cat_name.startswith("_"):
+                continue
+            for fig_name, pt_name in mappings.items():
+                if not fig_name.startswith("_") and pt_name != "NO MATCH":
+                    manual[fig_name] = pt_name
+
+    # Track used videos to avoid duplicates
+    used_videos = set()
     mapped = []
+
     for cat_name, cat in fig["categories"].items():
         for trick in cat["tricks"]:
             fig_name = trick["name"]
-            fig_lower = fig_name.lower()
 
-            # Find parkourtheory match
+            # Use manual mapping first, then fallback to auto
+            pt_name = manual.get(fig_name)
             match = None
-            if fig_lower in pt_index:
-                match = pt_index[fig_lower]
-            else:
-                # Partial match
-                for pt_name, pt_entry in pt_index.items():
-                    if fig_lower in pt_name or pt_name in fig_lower:
-                        match = pt_entry
-                        break
+
+            if pt_name:
+                match = pt_index.get(pt_name.lower())
+
+            if not match:
+                # Fallback: exact name match only (no partial)
+                match = pt_index.get(fig_name.lower())
 
             if match:
+                url = match["video_url"]
+                if url in used_videos:
+                    continue  # Skip duplicate videos
+                used_videos.add(url)
+
                 mapped.append({
                     "fig_name": fig_name,
                     "fig_id": fig_name.lower().replace(" ", "_").replace("(", "").replace(")", "").replace("-", "_"),
