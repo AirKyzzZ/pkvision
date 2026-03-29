@@ -27,10 +27,6 @@ env/
 
 # Data (large files)
 data/clips/
-data/final_clips/
-data/run_testing/*.mp4
-data/run_testing/*.mov
-data/run_testing/*.avi
 data/models/*.pt
 data/models/*.pth
 data/models/*.onnx
