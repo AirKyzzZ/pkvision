@@ -18,7 +18,7 @@ def test_known_trick_returns_ontology_attributes(book):
     assert cues["flip"] == trick["flip"]
     assert cues["twist"] == trick["twist"]
     for k in ("direction", "axis", "entry", "takeoff", "hand_contact", "kick"):
-        if k in trick:
+        if k in trick and trick[k] is not None:
             assert cues[k] == trick[k]
         else:
             assert k not in cues

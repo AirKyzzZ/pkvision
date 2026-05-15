@@ -46,7 +46,7 @@ class OracleCueBook:
         trick, context = self._lookup(trick_name)
         cues: dict = {"context": context}
         for k in _ONTOLOGY_CUE_KEYS:
-            if k in trick:
+            if k in trick and trick[k] is not None:
                 cues[k] = trick[k]
         return cues
 
