@@ -1,5 +1,6 @@
+import pytest
 from pathlib import Path
-from core.data.decontam import is_contaminated, filter_clean
+from core.data.decontam import is_contaminated, filter_clean, assert_clean
 
 CONTAMINATED = [
     "data/final_clips/backflip.mp4",
@@ -30,3 +31,11 @@ def test_filter_clean_removes_only_contaminated():
 def test_test_prefix_anywhere_in_stem_is_flagged():
     assert is_contaminated(Path("data/parkourtheory_clips/test_foo.mp4")) is True
     assert is_contaminated(Path("data/x/contest_jump.mp4")) is False  # 'test' substring must not false-positive
+
+def test_assert_clean_raises_on_contaminated():
+    with pytest.raises(AssertionError, match="De-contamination violation"):
+        assert_clean([Path("data/final_clips/foo.mp4")])
+
+def test_assert_clean_passes_and_returns_input_list():
+    paths = [Path("data/parkourtheory_clips/gainer.mp4")]
+    assert assert_clean(paths) == paths

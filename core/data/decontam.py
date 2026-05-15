@@ -17,8 +17,10 @@ CONTAMINATED_DIR_PARTS: tuple[str, ...] = (
 # Same-type near-duplicates of benchmark tricks (different performer/clip,
 # same trick TYPE as a POOL-B clip). Keep as explicit substrings on the stem.
 NEAR_DUP_STEM_SUBSTRINGS: tuple[str, ...] = (
+    # Over-excludes ALL *_in_back_out variants (not only the exact benchmark
+    # clip) — intentional, conservative contamination guard.
     "_in_back_out",
-    "double_corkscrew_in_back_out",
+    "double_corkscrew_in_back_out",  # already covered by _in_back_out above; kept as explicit benchmark alias
     "tripod_gainer",
 )
 
