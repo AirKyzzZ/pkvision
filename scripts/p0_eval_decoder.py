@@ -14,6 +14,9 @@ import statistics
 from dataclasses import dataclass
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # repo root on path when run directly
+
 from core.data.decontam import assert_clean
 from core.recognition.oracle_cues import OracleCueBook, OracleCueError, _norm
 from core.recognition.fig_decoder import FIGDecoder

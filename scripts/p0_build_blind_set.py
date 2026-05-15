@@ -21,6 +21,9 @@ import random
 from dataclasses import dataclass
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # repo root on path when run directly
+
 from core.data.decontam import is_contaminated
 from core.recognition.oracle_cues import OracleCueBook, _norm
 
