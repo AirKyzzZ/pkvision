@@ -572,6 +572,9 @@ git commit -m "feat(recognition): backward-compatible decoder ablation switches 
 
 ## Task 5: Blind-decoder evaluation harness
 
+> **REVISION 2026-05-15 (applied during execution — supersedes the Step 1–5 code below):**
+> The verified `DecoderCandidate` API is `.fig_name` (predicted trick name, str), `.d_score` (FIG base D-score), `.score` (ranking total), `.group_bonus`, `.breakdown`. The original Step-3 harness used `getattr(c, "trick", ...)` (a `FIGTrick` object, wrong) and a `_FakeDecoder` `_true`-in-cues hack. Corrected design: use `c.fig_name` for identity; D-score MAE = mean(|top1 `c.d_score` − row.d_score|) over ALL rows; `rank()` signature is `rank(cues, k=5, candidate_filter=None, *, disable_canonical=False, disable_group_bonus=False)`; `verified.csv` has a `source` column (DictReader-tolerant); rows whose human-typed `verified_fig_trick` doesn't resolve in the ontology are skipped with a WARNING + counted (one typo must not nuke the gate). The exact corrected spec is delivered to the implementer.
+
 Reads `verified.csv`, builds oracle cues per clip, runs the frozen decoder in 4 configs, writes a JSON + markdown report with the gate-relevant metrics.
 
 **Files:**
