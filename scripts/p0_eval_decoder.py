@@ -76,6 +76,7 @@ def evaluate_rows(rows: list[Row], decoder=None) -> dict:
     for cfg_name, cfg in CONFIGS.items():
         n = len(rows)
         top1 = top3 = 0
+        dscore_hits = 0
         abs_err: list[float] = []
         per_group: dict[str, list[int]] = {}
         for row in rows:
@@ -87,7 +88,10 @@ def evaluate_rows(rows: list[Row], decoder=None) -> dict:
             top1 += int(hit1)
             top3 += int(hit3)
             if cands:
-                abs_err.append(abs(float(cands[0].d_score) - float(row.d_score)))
+                pred_d = float(cands[0].d_score)
+                abs_err.append(abs(pred_d - float(row.d_score)))
+                dscore_hit = abs(pred_d - float(row.d_score)) <= 1e-9
+                dscore_hits += int(dscore_hit)
             g = row.disambig_group or "_none"
             per_group.setdefault(g, []).append(int(hit1))
         out[cfg_name] = {
@@ -96,6 +100,7 @@ def evaluate_rows(rows: list[Row], decoder=None) -> dict:
             "top3": (top3 / n) if n else 0.0,
             "d_score_mae": statistics.fmean(abs_err) if abs_err else None,
             "per_group_top1": {g: sum(v) / len(v) for g, v in per_group.items()},
+            "dscore_correct": (dscore_hits / n) if n else 0.0,
         }
     return out
 
@@ -123,6 +128,7 @@ def main() -> None:
     for cfg, m in res.items():
         lines.append(
             f"- **{cfg}**: top1={m['top1']:.1%} top3={m['top3']:.1%} "
+            f"dscore_correct={m['dscore_correct']:.1%} "
             f"d_score_MAE={m['d_score_mae']}")
     gate = res["full"]["top1"] >= 0.80
     canon_drop = res["full"]["top1"] - res["no_canonical"]["top1"]
