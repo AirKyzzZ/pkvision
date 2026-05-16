@@ -44,7 +44,7 @@ def test_same_dscore_groups_real_cluster():
     # consistently (equal-D pairs return True, unequal return False).
     for a, c in [("Cork", "Cork"), ("Backflip", "Backflip")]:
         assert b.same_dscore(a, c) is True
-    assert b.same_dscore("Stride", "Miller") is False  # 0.1 vs 7.7-class
+    assert b.same_dscore("Stride", "Swing Double Gainer 1080 (Miller)") is False  # 0.1 vs 7.7
 
 def test_unknown_raises():
     b = DScoreBook("data/fig_tricks_2025.json")
