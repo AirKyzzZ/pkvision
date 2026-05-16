@@ -39,3 +39,25 @@ def test_metrics_and_config_differentiation():
     assert res["no_canonical"]["d_score_mae"] == 5.0   # WRONG trick d_score off by 5
     assert "g1" in res["full"]["per_group_top1"]
     assert res["full"]["per_group_top1"]["g1"] == 1.0
+
+
+def test_dscore_correct_metric_counts_equal_dscore_as_correct():
+    from scripts.p0_eval_decoder import evaluate_rows, Row
+
+    class _C:
+        def __init__(s, fig_name, d):
+            s.fig_name = fig_name; s.d_score = d; s.score = 1.0
+            s.group_bonus = 0.0; s.breakdown = {}
+
+    class _D:  # wrong NAME, identical D-score to the true trick
+        def __init__(s, true_name, true_d): s.t, s.d = true_name, true_d
+        def rank(s, cues, k=5, candidate_filter=None, *,
+                 disable_canonical=False, disable_group_bonus=False):
+            return [_C("WrongName", s.d), _C(s.t, s.d)][:k]
+
+    rows = [Row(clip="a", true_trick="Cork",
+                cues={"context": "acrobatics"}, d_score=2.3,
+                disambig_group="g")]
+    res = evaluate_rows(rows, decoder=_D("Cork", 2.3))
+    assert res["full"]["top1"] == 0.0            # raw top-1 name wrong
+    assert res["full"]["dscore_correct"] == 1.0  # but D-score-equivalent -> scoring-correct

@@ -29,7 +29,8 @@
         "acrobatics|flip=2|twist=0|dir=backward|axis=lateral": 1.0,
         "acrobatics|flip=1|twist=0.5|dir=forward|axis=lateral": 0.0,
         "acrobatics|flip=2|twist=1|dir=backward|axis=lateral": 0.0
-      }
+      },
+      "dscore_correct": 0.746268656716418
     },
     "no_canonical": {
       "n": 67,
@@ -57,7 +58,8 @@
         "acrobatics|flip=2|twist=0|dir=backward|axis=lateral": 1.0,
         "acrobatics|flip=1|twist=0.5|dir=forward|axis=lateral": 0.0,
         "acrobatics|flip=2|twist=1|dir=backward|axis=lateral": 0.0
-      }
+      },
+      "dscore_correct": 0.7313432835820896
     },
     "no_group_bonus": {
       "n": 67,
@@ -85,7 +87,8 @@
         "acrobatics|flip=2|twist=0|dir=backward|axis=lateral": 1.0,
         "acrobatics|flip=1|twist=0.5|dir=forward|axis=lateral": 0.0,
         "acrobatics|flip=2|twist=1|dir=backward|axis=lateral": 0.0
-      }
+      },
+      "dscore_correct": 0.746268656716418
     },
     "ontology_only": {
       "n": 67,
@@ -113,7 +116,8 @@
         "acrobatics|flip=2|twist=0|dir=backward|axis=lateral": 1.0,
         "acrobatics|flip=1|twist=0.5|dir=forward|axis=lateral": 0.0,
         "acrobatics|flip=2|twist=1|dir=backward|axis=lateral": 0.0
-      }
+      },
+      "dscore_correct": 0.7313432835820896
     }
   }
 }
