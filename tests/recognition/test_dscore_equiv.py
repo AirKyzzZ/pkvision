@@ -17,3 +17,10 @@ def test_unknown_raises():
     import pytest
     with pytest.raises(KeyError):
         b.d_score_for("not a real trick zzz")
+
+def test_distinct_tricks_same_dscore_are_equivalent():
+    b = DScoreBook("data/fig_tricks_2025.json")
+    # two DIFFERENT tricks sharing a D-score -> scoring-equivalent (the core use case)
+    # Pole Swing = 0.4, Side Vault = 0.4, Backflip = 1.5
+    assert b.same_dscore("Pole Swing", "Side Vault") is True
+    assert b.same_dscore("Pole Swing", "Backflip") is False
