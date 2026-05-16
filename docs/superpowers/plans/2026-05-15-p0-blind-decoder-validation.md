@@ -305,6 +305,14 @@ git commit -m "feat(recognition): oracle-cue extractor from FIG ontology (P0 tas
 
 ## Task 3: Build the blind test set (stratified, decontaminated) for human label verification
 
+> **REVISION 2026-05-15 (applied during execution — supersedes the Step 1–5 design below):**
+> First implementation yielded only 47 candidates / 8 hard because (a) clip→FIG used exact filename↔name/alias match (only 3% of 1,618 clips resolve) and (b) "hard" = membership in the ontology's `disambiguation_needed`, which has only 3 groups. Corrected design:
+> 1. **"hard" = physics-collision group**: group all 149 FIG tricks by signature `(category, flip, twist, direction, axis)`; any signature shared by ≥2 tricks is a hard group. Real data: **25 groups, 106/149 tricks hard**. A `physics_collision_groups()` function replaces `_disambig_index()`; `disambig_group` = a stable signature key or `None` (unique-signature tricks are "easy").
+> 2. **Candidate sources (union, decontaminated, deduped):** (a) the **99 `fig_name`-grounded entries** in `data/v5_attribute_training/attribute_manifest.json` — reliable labels, identity/path = each item's `npy_path`, proposed trick = its `fig_name`; (b) filename-resolved `data/parkourtheory_clips/*.mp4` via the existing `map_clip_to_fig`.
+> 3. Stratify (`stratified_sample`, target ~75, ≥60% hard) and emit the same CSV columns for human verification. P0 feeds *oracle cues* (not pixels) to the decoder, so `(clip_id, true_fig_trick)` is all that's needed.
+>
+> The exact reworked spec is delivered to the implementer; the Step 1–5 text below is retained only for history and is NOT the build target.
+
 The test set must be **dominated by disambiguation-group members** (the hard confusions where coarse physics is identical) — otherwise high accuracy is meaningless (easy uniquely-determined tricks are trivially correct). Output a CSV for the user to verify the true FIG trick per clip (fast label check, not cue annotation).
 
 **Files:**
@@ -563,6 +571,9 @@ git commit -m "feat(recognition): backward-compatible decoder ablation switches 
 ---
 
 ## Task 5: Blind-decoder evaluation harness
+
+> **REVISION 2026-05-15 (applied during execution — supersedes the Step 1–5 code below):**
+> The verified `DecoderCandidate` API is `.fig_name` (predicted trick name, str), `.d_score` (FIG base D-score), `.score` (ranking total), `.group_bonus`, `.breakdown`. The original Step-3 harness used `getattr(c, "trick", ...)` (a `FIGTrick` object, wrong) and a `_FakeDecoder` `_true`-in-cues hack. Corrected design: use `c.fig_name` for identity; D-score MAE = mean(|top1 `c.d_score` − row.d_score|) over ALL rows; `rank()` signature is `rank(cues, k=5, candidate_filter=None, *, disable_canonical=False, disable_group_bonus=False)`; `verified.csv` has a `source` column (DictReader-tolerant); rows whose human-typed `verified_fig_trick` doesn't resolve in the ontology are skipped with a WARNING + counted (one typo must not nuke the gate). The exact corrected spec is delivered to the implementer.
 
 Reads `verified.csv`, builds oracle cues per clip, runs the frozen decoder in 4 configs, writes a JSON + markdown report with the gate-relevant metrics.
 
