@@ -12,3 +12,15 @@ def test_finds_self_referential_alias_duplicates():
     assert ("Cork-in Backflip", "Double Backflip 360") in [
         (d["duplicate"], d["canonical"]) for d in dups]
     assert all(d["duplicate"] != "Backflip" for d in dups)
+
+
+def test_normalized_name_collision_reports_all_matches():
+    from scripts.fig_ontology_audit import find_alias_duplicates
+    fig = {"categories": {"acro": {"tricks": [
+        {"name": "Double-Backflip", "score": 5.0},
+        {"name": "Double Backflip", "score": 5.0},
+        {"name": "X", "score": 1.0, "aliases": ["double backflip"]},
+    ]}}}
+    dups = find_alias_duplicates(fig)
+    reported = sorted(d["duplicate"] for d in dups if d["canonical"] == "X")
+    assert reported == ["Double Backflip", "Double-Backflip"]  # BOTH, not last-wins
