@@ -94,6 +94,9 @@ class CueModel(nn.Module):
         h = self.drop(self.enc(self.proj(x) + self.pos).mean(1))
         return {c: self.heads[c](h) for c in self.heads}
 
+    def predict(self, skeleton, t: int = 48) -> dict:
+        return predict_cues(self, skeleton, t)
+
 
 def predict_cues(model: "CueModel", skeleton: np.ndarray, t: int = 48) -> dict:
     """skeleton (T,17,3) -> {cue: value, '<cue>_conf': float}. Twist bin 3 abstains."""

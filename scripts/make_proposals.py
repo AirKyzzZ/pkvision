@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from core.labeling.clip_ref import ClipRef
-from core.labeling.cue_model import CueModel, CUE_CLASSES, predict_cues
+from core.labeling.cue_model import CueModel, CUE_CLASSES
 from core.labeling.proposer import LocalModelProposer
 
 POSE_GLOB = str(ROOT / "data" / "keypoints" / "**" / "shard_*.npz")
@@ -50,18 +50,20 @@ def main() -> None:
     model = CueModel(CUE_CLASSES, t=48)
     if args.ckpt:
         model.load_state_dict(torch.load(args.ckpt, map_location="cpu", weights_only=True))
+    model.eval()
 
-    class _Adapter:
-        def predict(self, s):
-            return predict_cues(model, s)
-
-    proposer = LocalModelProposer(model=_Adapter())
+    proposer = LocalModelProposer(model=model)
     slugs = sorted(skel)[: args.limit]
+    written = 0
     for s in slugs:
+        dst = out / f"{s}.json"
+        if dst.exists():
+            continue
         ref = ClipRef(s, video_path=CLIPS / f"{s}.mp4", frames_path=None, skeleton=skel[s])
         prop = proposer.propose(ref)
-        (out / f"{s}.json").write_text(json.dumps(asdict(prop), indent=2))
-    print(f"wrote {len(slugs)} proposals to {out}")
+        dst.write_text(json.dumps(asdict(prop), indent=2))
+        written += 1
+    print(f"wrote {written} proposals to {out}")
 
 
 if __name__ == "__main__":

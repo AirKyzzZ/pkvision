@@ -29,7 +29,10 @@ class LocalModelProposer(Proposer):
         self.matcher = matcher or FIGMatcher()
 
     def propose(self, clip: ClipRef) -> Proposal:
-        cues = self.model.predict(clip.get_skeleton())
+        skeleton = clip.get_skeleton()
+        if skeleton is None:
+            raise ValueError(f"clip {clip.slug!r} has no skeleton — cannot propose")
+        cues = self.model.predict(skeleton)
         confs = [v for k, v in cues.items() if k.endswith("_conf")]
         confidence = float(sum(confs) / len(confs)) if confs else 0.0
         clean = {k: v for k, v in cues.items() if not k.endswith("_conf")}

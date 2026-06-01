@@ -90,7 +90,7 @@ h1 { font-size: 1.4em; margin-bottom: 5px; color: #fff; }
   <div id="card"></div>
   <div class="keyboard-hint">
     Enter=confirm &nbsp;|&nbsp; S=skip &nbsp;|&nbsp; ← →=navigate &nbsp;|&nbsp;
-    1-4=direction &nbsp;|&nbsp; 5-7=flip &nbsp;|&nbsp; Q/W/E/R=twist &nbsp;|&nbsp; 8/9/0/-=context
+    1-4=direction &nbsp;|&nbsp; 5-9=flip &nbsp;|&nbsp; q/w/e/r/t=twist &nbsp;|&nbsp; Q/W/E/R=context
   </div>
 </div>
 <script>
@@ -327,20 +327,26 @@ def _build_montage(frames: np.ndarray, target_h: int = 240) -> bytes:
     for i in range(len(frames)):
         frame = frames[i]
         h, w = frame.shape[:2]
+        if h == 0 or w == 0:
+            continue
         scale = target_h / h
         new_w = int(w * scale)
+        if new_w == 0:
+            continue
         resized = cv2.resize(frame, (new_w, target_h))
         bgr = cv2.cvtColor(resized, cv2.COLOR_RGB2BGR)
         strips.append(bgr)
 
+    if not strips:
+        blank = np.zeros((target_h, 320, 3), np.uint8)
+        _, buf = cv2.imencode(".png", blank)
+        return bytes(buf)
     montage = np.concatenate(strips, axis=1)
     _, buf = cv2.imencode(".png", montage)
     return bytes(buf)
 
 
 class VerifyHandler(SimpleHTTPRequestHandler):
-    _proposals_cache: dict | None = None
-
     def _load_proposals(self) -> dict[str, dict]:
         if not PROPOSALS_DIR.exists():
             return {}
@@ -389,7 +395,14 @@ class VerifyHandler(SimpleHTTPRequestHandler):
             if not slug:
                 self._respond(400, "text/plain", b"missing slug")
                 return
+            proposals = self._get_proposals()
+            if slug not in proposals:
+                self._respond(404, "text/plain", b"unknown slug")
+                return
             video_path = CLIPS_DIR / f"{slug}.mp4"
+            if not video_path.resolve().is_relative_to(CLIPS_DIR.resolve()):
+                self._respond(400, "text/plain", b"bad slug")
+                return
             ref = ClipRef(slug, video_path=video_path if video_path.exists() else None, frames_path=None)
             try:
                 frames = ref.get_frames(max_frames=8)
@@ -403,11 +416,18 @@ class VerifyHandler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         if self.path == "/api/verify":
-            length = int(self.headers.get("Content-Length", 0))
-            body = json.loads(self.rfile.read(length))
+            try:
+                body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
+            except (ValueError, json.JSONDecodeError):
+                self._respond(400, "application/json", b'{"error":"invalid JSON"}')
+                return
 
-            slug = body["slug"]
-            action = body["action"]
+            slug = body.get("slug", "")
+            action = body.get("action", "")
+            if not slug or action not in {"confirm", "correct_trick", "override_cue"}:
+                self._respond(400, "application/json", b'{"error":"invalid slug or action"}')
+                return
+
             trick = body.get("trick")
             cues = body.get("cues", {})
 

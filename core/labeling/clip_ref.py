@@ -27,6 +27,8 @@ class ClipRef:
 
     def get_frames(self, max_frames: int = 8) -> np.ndarray:
         """Uniformly sampled RGB frames (N,H,W,3) uint8, for VLM + UI preview."""
+        if self.frames_path is None and self.video_path is None:
+            raise ValueError(f"ClipRef {self.slug!r}: no frames_path or video_path")
         if self.frames_path is not None:
             arr = np.load(self.frames_path)
         else:
