@@ -16,6 +16,11 @@ GOLD = ROOT / "data" / "p0_blind_set" / "verified.csv"
 NUMERIC = {"flip", "twist"}
 CUES = ("flip", "twist", "direction", "axis", "context")
 
+# FIG labels contexts/directions in its own vocab; the parser + manifest use another.
+# Normalize FIG -> manifest vocab so the comparison is apples-to-apples.
+FIG_CONTEXT_MAP = {"bar_or_rail": "swing", "ground": "acrobatics", "obstacle": "pk_basics", "wall": "wall"}
+FIG_DIR_MAP = {"left": "side", "right": "side", "sideways": "side"}
+
 
 def _eq(cue, a, b) -> bool:
     if cue in NUMERIC:
@@ -42,11 +47,12 @@ def load_fig_rows() -> list:
     fig = json.loads(FIG.read_text())
     rows = []
     for cat in fig["categories"].values():
+        ctx = FIG_CONTEXT_MAP.get(cat.get("context"), cat.get("context"))
         for t in cat["tricks"]:
             rows.append({"slug": t["name"], "cues": {
                 "flip": t.get("flip"), "twist": t.get("twist"),
-                "direction": t.get("direction"), "axis": t.get("axis"),
-                "context": cat.get("context")}})
+                "direction": FIG_DIR_MAP.get(t.get("direction"), t.get("direction")),
+                "axis": t.get("axis"), "context": ctx}})
     return rows
 
 
