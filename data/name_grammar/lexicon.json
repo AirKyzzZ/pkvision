@@ -1,0 +1,37 @@
+{
+  "moves": {
+    "gainer":    {"direction": "backward", "flip": 1, "family": "flip", "conf": 0.9},
+    "cork":      {"axis": "off_axis", "flip": 1, "family": "flip", "conf": 0.9},
+    "corkscrew": {"axis": "off_axis", "flip": 1, "family": "flip", "conf": 0.9},
+    "raiz":      {"direction": "backward", "axis": "off_axis", "conf": 0.7},
+    "layout":    {"body_shape": "layout", "conf": 0.9},
+    "tuck":      {"body_shape": "tuck", "conf": 0.9},
+    "pike":      {"body_shape": "pike", "conf": 0.9},
+    "arabian":   {"direction": "forward", "twist": 0.5, "family": "flip", "conf": 0.85},
+    "frontflip": {"direction": "forward", "flip": 1, "family": "flip", "conf": 0.9},
+    "backflip":  {"direction": "backward", "flip": 1, "family": "flip", "conf": 0.9},
+    "sideflip":  {"direction": "side", "flip": 1, "family": "flip", "conf": 0.85},
+    "front":     {"direction": "forward", "conf": 0.6},
+    "back":      {"direction": "backward", "conf": 0.6},
+    "side":      {"direction": "side", "conf": 0.6},
+    "cat":       {"context": "pk_basics", "conf": 0.8},
+    "kong":      {"context": "pk_basics", "conf": 0.8},
+    "dash":      {"context": "pk_basics", "conf": 0.8},
+    "vault":     {"context": "pk_basics", "conf": 0.9},
+    "precision": {"context": "pk_basics", "conf": 0.9},
+    "wall":      {"context": "wall", "conf": 0.9},
+    "palm":      {"context": "wall", "conf": 0.7},
+    "pimp":      {"context": "wall", "conf": 0.7},
+    "flyaway":   {"context": "swing", "conf": 0.85},
+    "castaway":  {"context": "swing", "conf": 0.8},
+    "giant":     {"context": "swing", "conf": 0.85},
+    "gainer_flip": {"direction": "backward", "flip": 1, "family": "flip", "conf": 0.9}
+  },
+  "twist_words": {"full": 1.0, "double_full": 2.0, "triple_full": 3.0, "half": 0.5},
+  "flip_words":  {"double": 2.0, "triple": 3.0, "quad": 4.0, "one_and_a_half": 1.5},
+  "numeric": {
+    "flip_families": ["flip", "dive", "roll", "handspring", "tinsica"],
+    "deg": {"180": 0.5, "360": 1.0, "540": 1.5, "720": 2.0, "900": 2.5, "1080": 3.0, "1260": 3.5, "1440": 4.0}
+  },
+  "phase_boundaries": ["in", "out", "unwind", "down"]
+}

@@ -25,3 +25,12 @@ def test_gibberish_abstains_completely():
 def test_tokenize_folds_multiword_and_splits():
     assert tokenize("back_one_and_a_half_full") == ["back", "one_and_a_half", "full"]
     assert tokenize("Dash Vault") == ["dash", "vault"]
+
+
+def test_lexicon_loads_anchor_moves():
+    from core.recognition.trick_name_parser import _load_lexicon
+    _load_lexicon.cache_clear()
+    lex = _load_lexicon()
+    assert lex["moves"]["gainer"]["direction"] == "backward"
+    assert lex["twist_words"]["full"] == 1.0
+    assert "in" in lex["phase_boundaries"]
