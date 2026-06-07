@@ -26,6 +26,12 @@ POSE_GLOB = str(ROOT / "data" / "keypoints" / "**" / "shard_*.npz")
 CLIPS = ROOT / "data" / "parkourtheory_clips_cropped"
 
 
+def changed_slugs_first(slugs: list[str], changes: list[dict]) -> list[str]:
+    from collections import Counter
+    weight = Counter(c["slug"] for c in changes)
+    return sorted(slugs, key=lambda s: (-weight.get(s, 0), s))
+
+
 def load_skeletons() -> dict:
     skel = {}
     for sh in sorted(glob.glob(POSE_GLOB, recursive=True)):
@@ -53,7 +59,13 @@ def main() -> None:
     model.eval()
 
     proposer = LocalModelProposer(model=model)
-    slugs = sorted(skel)[: args.limit]
+    all_slugs = sorted(skel)
+    changes_path = ROOT / "data" / "name_grammar" / "changes.json"
+    if changes_path.exists():
+        import json as _json
+        changes = _json.loads(changes_path.read_text())
+        all_slugs = changed_slugs_first(all_slugs, changes)
+    slugs = all_slugs[: args.limit]
     written = 0
     for s in slugs:
         dst = out / f"{s}.json"
