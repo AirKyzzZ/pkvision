@@ -33,3 +33,19 @@ def test_untrusted_cue_is_never_merged():
     merged, prov, changes = merge_layered("x", base, "unified", parsed, conf_thresh=0.7)
     assert merged["context"] == "acrobatics"
     assert all(c["cue"] != "context" for c in changes)
+
+
+def test_int_float_flip_not_a_false_correction():
+    base = {"flip": 1, "direction": "backward"}
+    parsed = {"cues": {"flip": 1.0}, "confidence": {"flip": 0.95}}
+    merged, prov, changes = merge_layered("x", base, "fig", parsed)
+    assert changes == []
+    assert prov.get("flip") == "fig"
+
+
+def test_low_confidence_flip_not_merged():
+    base = {"flip": 1.0, "direction": "backward"}
+    parsed = {"cues": {"flip": 2.5}, "confidence": {"flip": 0.7}}
+    merged, prov, changes = merge_layered("x", base, "unified", parsed)
+    assert merged["flip"] == 1.0
+    assert changes == []

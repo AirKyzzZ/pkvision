@@ -1,14 +1,5 @@
 [
   {
-    "slug": "360_dive_one_and_a_half_front_flip_dive_roll",
-    "cue": "flip",
-    "old_value": 1.0,
-    "old_source": "unified",
-    "parser_value": 2.5,
-    "parser_conf": 0.7,
-    "kind": "correct"
-  },
-  {
     "slug": "arabian",
     "cue": "direction",
     "old_value": "backward",
@@ -18,33 +9,6 @@
     "kind": "fig_disagree"
   },
   {
-    "slug": "arabian_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "back_one_and_a_half_in_half_out",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "cast_gainer",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "cast_gainer",
     "cue": "direction",
     "old_value": "forward",
@@ -54,47 +18,11 @@
     "kind": "fig_disagree"
   },
   {
-    "slug": "caster_double_gainer",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "caster_gainer",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "caster_gainer",
     "cue": "direction",
     "old_value": "forward",
     "old_source": "fig",
     "parser_value": "backward",
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "cork_zero",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "corkscrew",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
     "parser_conf": 0.9,
     "kind": "fig_disagree"
   },
@@ -114,51 +42,6 @@
     "old_source": "fig",
     "parser_value": 1.0,
     "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "double_back_flip",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "double_corkscrew",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "double_frisbee",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "double_front_flip",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "double_side_flip",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
     "kind": "fig_disagree"
   },
   {
@@ -189,15 +72,6 @@
     "kind": "correct"
   },
   {
-    "slug": "gainer",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "gainer_arabian_half",
     "cue": "flip",
     "old_value": 0.5,
@@ -205,15 +79,6 @@
     "parser_value": 1.0,
     "parser_conf": 0.9,
     "kind": "correct"
-  },
-  {
-    "slug": "gainer_full",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
   },
   {
     "slug": "gainer_half_unwind_half",
@@ -225,24 +90,6 @@
     "kind": "correct"
   },
   {
-    "slug": "gainer_triple_full",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "handstand_gainer",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "knee_frog_gainer",
     "cue": "direction",
     "old_value": "forward",
@@ -250,15 +97,6 @@
     "parser_value": "backward",
     "parser_conf": 0.9,
     "kind": "correct"
-  },
-  {
-    "slug": "kong_gainer_full",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
   },
   {
     "slug": "lache_dark_arabian",
@@ -270,60 +108,6 @@
     "kind": "fig_disagree"
   },
   {
-    "slug": "running_gainer",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "running_gainer_triple_flash_kick",
-    "cue": "flip",
-    "old_value": 3.0,
-    "old_source": "unified",
-    "parser_value": 4.0,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "russian_front_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "side_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "sitting_dash_gainer",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "standing_russian_front_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
     "slug": "test_backflip",
     "cue": "flip",
     "old_value": 0,
@@ -342,15 +126,6 @@
     "kind": "fill"
   },
   {
-    "slug": "test_double_cork",
-    "cue": "flip",
-    "old_value": 0,
-    "old_source": "unmatched",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
     "slug": "test_frontflip",
     "cue": "flip",
     "old_value": 0,
@@ -367,42 +142,6 @@
     "parser_value": "forward",
     "parser_conf": 0.9,
     "kind": "fill"
-  },
-  {
-    "slug": "triple_corkscrew",
-    "cue": "flip",
-    "old_value": 4,
-    "old_source": "fig",
-    "parser_value": 3.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "webster_front_one_and_a_half_360_dive_roll",
-    "cue": "flip",
-    "old_value": 1.0,
-    "old_source": "unified",
-    "parser_value": 2.5,
-    "parser_conf": 0.7,
-    "kind": "correct"
-  },
-  {
-    "slug": "webster_front_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "castaway_double_back",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
   },
   {
     "slug": "dive_one_hand_palm_gainer",
@@ -432,27 +171,9 @@
     "kind": "correct"
   },
   {
-    "slug": "double_palm_flip",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "ew_gainer_unwind_half",
     "cue": "flip",
     "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "correct"
-  },
-  {
-    "slug": "ew_step_270_ew_gainer",
-    "cue": "flip",
-    "old_value": 0.75,
     "old_source": "unified",
     "parser_value": 1.0,
     "parser_conf": 0.9,
@@ -513,42 +234,6 @@
     "kind": "correct"
   },
   {
-    "slug": "wall_arabian_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "wall_cork_zero",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "wall_corkscrew_double_leg",
-    "cue": "flip",
-    "old_value": 2.0,
-    "old_source": "unified",
-    "parser_value": 3.0,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "wall_corkscrew_down_monkey_450",
-    "cue": "flip",
-    "old_value": 1.25,
-    "old_source": "unified",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "correct"
-  },
-  {
     "slug": "wall_corkscrew_wall_back_handspring_half",
     "cue": "flip",
     "old_value": 0.5,
@@ -558,33 +243,6 @@
     "kind": "correct"
   },
   {
-    "slug": "wall_double_back",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "wall_double_corkscrew",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "wall_gainer",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "wall_gainer_down_monkey_half",
     "cue": "flip",
     "old_value": 0.5,
@@ -592,15 +250,6 @@
     "parser_value": 1.0,
     "parser_conf": 0.9,
     "kind": "correct"
-  },
-  {
-    "slug": "wall_gainer_full",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
   },
   {
     "slug": "wall_gainer_unwind_half",
@@ -621,15 +270,6 @@
     "kind": "correct"
   },
   {
-    "slug": "wall_triple_corkscrew",
-    "cue": "flip",
-    "old_value": 3,
-    "old_source": "fig",
-    "parser_value": 3.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "cast_half_pirouette_gainer",
     "cue": "flip",
     "old_value": 0.5,
@@ -645,24 +285,6 @@
     "old_source": "unified",
     "parser_value": 1.0,
     "parser_conf": 0.9,
-    "kind": "correct"
-  },
-  {
-    "slug": "double_gainer",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "flyaway_one_and_a_half_in_unwind_half_out",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
     "kind": "correct"
   },
   {
@@ -684,33 +306,6 @@
     "kind": "correct"
   },
   {
-    "slug": "lache_scissor_180_double_leg_in_double_leg_out",
-    "cue": "flip",
-    "old_value": 2.0,
-    "old_source": "unified",
-    "parser_value": 4.0,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "parallel_bar_front_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "straddle_sole_circle_gainer",
-    "cue": "flip",
-    "old_value": 1,
-    "old_source": "fig",
-    "parser_value": 1.0,
-    "parser_conf": 0.9,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "swing_castaway_arabian",
     "cue": "direction",
     "old_value": "side",
@@ -729,15 +324,6 @@
     "kind": "correct"
   },
   {
-    "slug": "swing_castaway_double_back",
-    "cue": "flip",
-    "old_value": 2,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
     "slug": "180_dive_kong_gainer",
     "cue": "flip",
     "old_value": 0.5,
@@ -756,57 +342,12 @@
     "kind": "correct"
   },
   {
-    "slug": "360_dive_one_hand_reverse_double_alien",
-    "cue": "flip",
-    "old_value": 2.0,
-    "old_source": "unified",
-    "parser_value": 3.0,
-    "parser_conf": 0.7,
-    "kind": "correct"
-  },
-  {
     "slug": "dive_kong_gainer",
     "cue": "direction",
     "old_value": "forward",
     "old_source": "unified",
     "parser_value": "backward",
     "parser_conf": 0.9,
-    "kind": "correct"
-  },
-  {
-    "slug": "double_kong",
-    "cue": "flip",
-    "old_value": 0,
-    "old_source": "fig",
-    "parser_value": 2.0,
-    "parser_conf": 0.75,
-    "kind": "fig_disagree"
-  },
-  {
-    "slug": "double_kong_gainer",
-    "cue": "flip",
-    "old_value": 2.0,
-    "old_source": "unified",
-    "parser_value": 3.0,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "double_kong_gainer_full",
-    "cue": "flip",
-    "old_value": 2.0,
-    "old_source": "unified",
-    "parser_value": 3.0,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
-    "slug": "double_kong_slant_gainer",
-    "cue": "flip",
-    "old_value": 2.0,
-    "old_source": "unified",
-    "parser_value": 3.0,
-    "parser_conf": 0.75,
     "kind": "correct"
   },
   {
@@ -828,15 +369,6 @@
     "kind": "correct"
   },
   {
-    "slug": "kong_front_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
     "slug": "kong_gainer_inward_360_dive_roll",
     "cue": "direction",
     "old_value": "forward",
@@ -855,15 +387,6 @@
     "kind": "correct"
   },
   {
-    "slug": "one_step_kong_front_one_and_a_half_dive_roll",
-    "cue": "flip",
-    "old_value": 0.5,
-    "old_source": "unified",
-    "parser_value": 1.5,
-    "parser_conf": 0.75,
-    "kind": "correct"
-  },
-  {
     "slug": "quarter_unwind_half_dive_kong_gainer",
     "cue": "flip",
     "old_value": 0.5,
@@ -879,15 +402,6 @@
     "old_source": "unified",
     "parser_value": "backward",
     "parser_conf": 0.9,
-    "kind": "correct"
-  },
-  {
-    "slug": "triple_kong_gainer",
-    "cue": "flip",
-    "old_value": 3.0,
-    "old_source": "unified",
-    "parser_value": 4.0,
-    "parser_conf": 0.75,
     "kind": "correct"
   }
 ]

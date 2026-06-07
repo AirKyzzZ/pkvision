@@ -22,12 +22,24 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from core.recognition.trick_name_parser import parse_trick_name
 
 TRUSTED_CUES = ("flip", "direction")
+NUMERIC_CUES = ("flip", "twist")
 
 
-def merge_layered(slug, base, base_source, parsed, conf_thresh=0.7):
+def _cue_eq(cue, a, b) -> bool:
+    if cue in NUMERIC_CUES:
+        try:
+            return abs(float(a) - float(b)) < 0.26
+        except (TypeError, ValueError):
+            return str(a) == str(b)
+    return str(a) == str(b)
+
+
+def merge_layered(slug, base, base_source, parsed, conf_thresh=0.8):
     cues = parsed["cues"]
     conf = parsed["confidence"]
     merged = dict(base)
@@ -39,7 +51,7 @@ def merge_layered(slug, base, base_source, parsed, conf_thresh=0.7):
         pv = cues[cue]
         cur = base.get(cue)
         missing = cue not in base or cur in (None, "none", "unknown")
-        if not missing and str(cur) != str(pv):
+        if not missing and not _cue_eq(cue, cur, pv):
             if base_source == "fig":
                 changes.append({"slug": slug, "cue": cue, "old_value": cur,
                                 "old_source": "fig", "parser_value": pv,
@@ -231,6 +243,7 @@ def main():
 
     # Label each clip using priority: FIG > unified > name
     dataset = []
+    dataset_v2 = []
     sources = Counter()
     conflicts = []
     all_changes = []
@@ -292,18 +305,22 @@ def main():
             }
             sources["unmatched"] += 1
 
+        # Baseline (pre-merge) record — keeps attribute_manifest.json untouched by the parser.
+        base_attrs = dict(attrs)
+        base_attrs["flip_bin"] = bin_flip(base_attrs["flip"])
+        base_attrs["twist_bin"] = bin_twist(base_attrs["twist"])
+        dataset.append({"slug": slug, "npy_path": npy_path, "frame_cat": frame_cat, **base_attrs})
+
+        # Parser-cleaned (v2) record — flip/direction filled/corrected, with provenance.
         parsed = parse_trick_name(slug)
-        attrs, prov, clip_changes = merge_layered(
+        merged, prov, clip_changes = merge_layered(
             slug, attrs, attrs.get("source", "unmatched"),
             {"cues": parsed.cues, "confidence": parsed.confidence})
-        attrs["label_provenance"] = prov
+        merged["label_provenance"] = prov
+        merged["flip_bin"] = bin_flip(merged["flip"])
+        merged["twist_bin"] = bin_twist(merged["twist"])
         all_changes.extend(clip_changes)
-
-        # Bin for classification
-        attrs["flip_bin"] = bin_flip(attrs["flip"])
-        attrs["twist_bin"] = bin_twist(attrs["twist"])
-
-        dataset.append({"slug": slug, "npy_path": npy_path, "frame_cat": frame_cat, **attrs})
+        dataset_v2.append({"slug": slug, "npy_path": npy_path, "frame_cat": frame_cat, **merged})
 
     # Stats
     print(f"\n  Sources: FIG={sources['fig']}, unified={sources['unified']}, unmatched={sources['unmatched']}")
@@ -326,26 +343,29 @@ def main():
 
     # Save
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    manifest = {
-        "type": "attribute_classification",
-        "total_clips": len(dataset),
-        "sources": dict(sources),
-        "attribute_classes": {
-            "direction": sorted(set(d["direction"] for d in dataset)),
-            "flip_bin": sorted(set(d["flip_bin"] for d in dataset)),
-            "twist_bin": sorted(set(d["twist_bin"] for d in dataset)),
-            "body_shape": sorted(set(d["body_shape"] for d in dataset)),
-            "entry": sorted(set(d["entry"] for d in dataset)),
-            "context": sorted(set(d["context"] for d in dataset)),
-        },
-        "clips": dataset,
-    }
+
+    def _manifest(clips):
+        return {
+            "type": "attribute_classification",
+            "total_clips": len(clips),
+            "sources": dict(sources),
+            "attribute_classes": {
+                "direction": sorted(set(d["direction"] for d in clips)),
+                "flip_bin": sorted(set(d["flip_bin"] for d in clips)),
+                "twist_bin": sorted(set(d["twist_bin"] for d in clips)),
+                "body_shape": sorted(set(d["body_shape"] for d in clips)),
+                "entry": sorted(set(d["entry"] for d in clips)),
+                "context": sorted(set(d["context"] for d in clips)),
+            },
+            "clips": clips,
+        }
+
     with open(OUTPUT_PATH, "w") as f:
-        json.dump(manifest, f, indent=2)
+        json.dump(_manifest(dataset), f, indent=2)
 
     v2 = OUTPUT_PATH.parent / "attribute_manifest_v2.json"
     with open(v2, "w") as f:
-        json.dump(manifest, f, indent=2)
+        json.dump(_manifest(dataset_v2), f, indent=2)
     changes_path = ROOT / "data" / "name_grammar" / "changes.json"
     changes_path.parent.mkdir(parents=True, exist_ok=True)
     changes_path.write_text(json.dumps(all_changes, indent=2))
