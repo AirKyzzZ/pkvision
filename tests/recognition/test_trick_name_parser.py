@@ -34,3 +34,13 @@ def test_lexicon_loads_anchor_moves():
     assert lex["moves"]["gainer"]["direction"] == "backward"
     assert lex["twist_words"]["full"] == 1.0
     assert "in" in lex["phase_boundaries"]
+
+
+def test_segment_phases_splits_on_boundaries():
+    from core.recognition.trick_name_parser import segment_phases
+    assert segment_phases(["back", "full", "in", "full", "out"]) == [["back", "full"], ["full"], []]
+
+
+def test_twist_sums_across_phases():
+    out = parse_trick_name("back_full_in_full_out")
+    assert out.cues["twist"] == 2.0

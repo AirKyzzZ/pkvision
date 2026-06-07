@@ -53,12 +53,67 @@ def tokenize(name: str) -> list:
     return out
 
 
+@dataclass
+class _Contrib:
+    cue: str
+    value: object
+    conf: float
+    rule: str
+
+
+def segment_phases(tokens: list) -> list:
+    lex = _load_lexicon()
+    bounds = set(lex["phase_boundaries"])
+    phases, cur = [], []
+    for t in tokens:
+        if t in bounds:
+            phases.append(cur)
+            cur = []
+        else:
+            cur.append(t)
+    phases.append(cur)
+    return phases
+
+
+def _twist_contribs(tokens: list, lex: dict) -> list:
+    tw = lex["twist_words"]
+    return [_Contrib("twist", float(tw[t]), 0.8, f"twist_word:{t}") for t in tokens if t in tw]
+
+
+def _aggregate(contribs: list, unparsed: list) -> ParsedCues:
+    by_cue: dict = {}
+    for c in contribs:
+        by_cue.setdefault(c.cue, []).append(c)
+    cues, conf, trace = {}, {}, []
+    NUMERIC = {"flip", "twist"}
+    for cue, cs in by_cue.items():
+        if cue in NUMERIC:
+            val = float(sum(c.value for c in cs))
+            cconf = min(c.conf for c in cs)
+        else:
+            vals = {c.value for c in cs}
+            if len(vals) > 1:
+                trace.append(f"conflict:{cue}:{sorted(map(str, vals))}->abstain")
+                continue
+            best = max(cs, key=lambda c: c.conf)
+            val, cconf = best.value, best.conf
+        trace.extend(c.rule for c in cs)
+        if cconf >= ABSTAIN_THRESHOLD:
+            cues[cue] = val
+            conf[cue] = cconf
+    return ParsedCues(cues=cues, confidence=conf, trace=trace, unparsed_tokens=unparsed)
+
+
 def parse_trick_name(name: str) -> ParsedCues:
     if not isinstance(name, str):
         raise TypeError(f"trick name must be str, got {type(name).__name__}")
     tokens = tokenize(name)
     lex = _load_lexicon()
     known = set(lex["moves"]) | set(lex["twist_words"]) | set(lex["flip_words"]) \
-        | set(lex["numeric"]) | set(lex["phase_boundaries"])
+        | set(lex["numeric"]["deg"]) | set(lex["phase_boundaries"]) | set(lex["numeric"]["flip_families"])
     unparsed = [t for t in tokens if t not in known]
-    return ParsedCues(cues={}, confidence={}, trace=[], unparsed_tokens=unparsed)
+    phases = segment_phases(tokens)
+    contribs: list = []
+    for ph in phases:
+        contribs += _twist_contribs(ph, lex)
+    return _aggregate(contribs, unparsed)
