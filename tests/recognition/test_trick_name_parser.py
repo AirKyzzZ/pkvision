@@ -74,3 +74,22 @@ def test_numeric_routes_to_twist_for_turning_family():
 def test_numeric_abstains_when_family_ambiguous():
     out = parse_trick_name("360")
     assert "flip" not in out.cues and "twist" not in out.cues
+
+
+def test_categorical_cues_from_moves():
+    out = parse_trick_name("wall_gainer")
+    assert out.cues["context"] == "wall"
+    assert out.cues["direction"] == "backward"
+    assert out.cues["flip"] == 1.0
+
+
+def test_layout_sets_body_shape():
+    out = parse_trick_name("back_layout_full")
+    assert out.cues["body_shape"] == "layout"
+    assert out.cues["twist"] == 1.0
+
+
+def test_conflicting_context_abstains():
+    out = parse_trick_name("wall_vault_flyaway")
+    assert "context" not in out.cues
+    assert any("conflict:context" in t for t in out.trace)

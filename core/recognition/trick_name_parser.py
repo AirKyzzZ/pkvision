@@ -100,6 +100,21 @@ def _flip_contribs(tokens: list, lex: dict) -> list:
     return out
 
 
+def _categorical_contribs(tokens: list, lex: dict) -> list:
+    moves = lex["moves"]
+    out = []
+    for t in tokens:
+        m = moves.get(t)
+        if not m:
+            continue
+        for cue in ("direction", "axis", "context", "body_shape", "entry"):
+            if cue in m:
+                out.append(_Contrib(cue, m[cue], float(m["conf"]), f"move_{cue}:{t}"))
+        if "twist" in m:
+            out.append(_Contrib("twist", float(m["twist"]), float(m["conf"]), f"move_twist:{t}"))
+    return out
+
+
 def _numeric_contribs(tokens: list, lex: dict) -> list:
     deg = lex["numeric"]["deg"]
     fam = set(lex["numeric"]["flip_families"])
@@ -156,4 +171,5 @@ def parse_trick_name(name: str) -> ParsedCues:
         contribs += _twist_contribs(ph, lex)
         contribs += _flip_contribs(ph, lex)
     contribs += _numeric_contribs(tokens, lex)
+    contribs += _categorical_contribs(tokens, lex)
     return _aggregate(contribs, unparsed)
