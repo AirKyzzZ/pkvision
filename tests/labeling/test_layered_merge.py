@@ -49,3 +49,11 @@ def test_low_confidence_flip_not_merged():
     merged, prov, changes = merge_layered("x", base, "unified", parsed)
     assert merged["flip"] == 1.0
     assert changes == []
+
+
+def test_twist_is_never_merged():
+    base = {"twist": 0.0, "direction": "backward"}
+    parsed = {"cues": {"twist": 1.0}, "confidence": {"twist": 0.95}}
+    merged, prov, changes = merge_layered("x", base, "unified", parsed)
+    assert merged["twist"] == 0.0
+    assert all(c["cue"] != "twist" for c in changes)

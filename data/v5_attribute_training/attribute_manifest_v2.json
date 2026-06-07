@@ -7328,7 +7328,7 @@
       "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/v5_full_training/frames/acrobatics/running_gainer_triple_flash_kick.npy",
       "frame_cat": "acrobatics",
       "direction": "backward",
-      "flip": 3.0,
+      "flip": 1.0,
       "twist": 0.0,
       "body_shape": "tuck",
       "entry": "running",
@@ -7338,7 +7338,7 @@
       "source": "unified",
       "label_provenance": {
         "direction": "unified",
-        "flip": "unified",
+        "flip": "parser",
         "twist": "unified",
         "body_shape": "unified",
         "entry": "unified",
@@ -7347,7 +7347,7 @@
         "family": "unified",
         "source": "unified"
       },
-      "flip_bin": "3+",
+      "flip_bin": "1",
       "twist_bin": "0"
     },
     {
@@ -23134,7 +23134,7 @@
       "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/v5_full_training/frames/wall/wall_corkscrew_double_leg.npy",
       "frame_cat": "wall",
       "direction": "backward",
-      "flip": 2.0,
+      "flip": 1.0,
       "twist": 1.0,
       "body_shape": "tuck",
       "entry": "wall",
@@ -23144,7 +23144,7 @@
       "source": "unified",
       "label_provenance": {
         "direction": "unified",
-        "flip": "unified",
+        "flip": "parser",
         "twist": "unified",
         "body_shape": "unified",
         "entry": "unified",
@@ -23153,7 +23153,7 @@
         "family": "unified",
         "source": "unified"
       },
-      "flip_bin": "2",
+      "flip_bin": "1",
       "twist_bin": "1"
     },
     {
@@ -38146,7 +38146,7 @@
       "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/v5_full_training/frames/pk_basics/double_kong_gainer.npy",
       "frame_cat": "pk_basics",
       "direction": "backward",
-      "flip": 2.0,
+      "flip": 1.0,
       "twist": 0.0,
       "body_shape": "tuck",
       "entry": "running",
@@ -38156,7 +38156,7 @@
       "source": "unified",
       "label_provenance": {
         "direction": "unified",
-        "flip": "unified",
+        "flip": "parser",
         "twist": "unified",
         "body_shape": "unified",
         "entry": "unified",
@@ -38165,7 +38165,7 @@
         "family": "unified",
         "source": "unified"
       },
-      "flip_bin": "2",
+      "flip_bin": "1",
       "twist_bin": "0"
     },
     {
@@ -38173,7 +38173,7 @@
       "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/v5_full_training/frames/pk_basics/double_kong_gainer_full.npy",
       "frame_cat": "pk_basics",
       "direction": "backward",
-      "flip": 2.0,
+      "flip": 1.0,
       "twist": 1.0,
       "body_shape": "tuck",
       "entry": "running",
@@ -38183,7 +38183,7 @@
       "source": "unified",
       "label_provenance": {
         "direction": "unified",
-        "flip": "unified",
+        "flip": "parser",
         "twist": "unified",
         "body_shape": "unified",
         "entry": "unified",
@@ -38192,7 +38192,7 @@
         "family": "unified",
         "source": "unified"
       },
-      "flip_bin": "2",
+      "flip_bin": "1",
       "twist_bin": "1"
     },
     {
@@ -38227,7 +38227,7 @@
       "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/v5_full_training/frames/pk_basics/double_kong_slant_gainer.npy",
       "frame_cat": "pk_basics",
       "direction": "backward",
-      "flip": 2.0,
+      "flip": 1.0,
       "twist": 0.0,
       "body_shape": "tuck",
       "entry": "running",
@@ -38237,7 +38237,7 @@
       "source": "unified",
       "label_provenance": {
         "direction": "unified",
-        "flip": "unified",
+        "flip": "parser",
         "twist": "unified",
         "body_shape": "unified",
         "entry": "unified",
@@ -38246,7 +38246,7 @@
         "family": "unified",
         "source": "unified"
       },
-      "flip_bin": "2",
+      "flip_bin": "1",
       "twist_bin": "0"
     },
     {
@@ -43573,7 +43573,7 @@
       "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/v5_full_training/frames/pk_basics/triple_kong_gainer.npy",
       "frame_cat": "pk_basics",
       "direction": "backward",
-      "flip": 3.0,
+      "flip": 1.0,
       "twist": 0.0,
       "body_shape": "tuck",
       "entry": "running",
@@ -43583,7 +43583,7 @@
       "source": "unified",
       "label_provenance": {
         "direction": "unified",
-        "flip": "unified",
+        "flip": "parser",
         "twist": "unified",
         "body_shape": "unified",
         "entry": "unified",
@@ -43592,7 +43592,7 @@
         "family": "unified",
         "source": "unified"
       },
-      "flip_bin": "3+",
+      "flip_bin": "1",
       "twist_bin": "0"
     },
     {

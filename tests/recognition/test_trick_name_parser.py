@@ -93,3 +93,13 @@ def test_conflicting_context_abstains():
     out = parse_trick_name("wall_vault_flyaway")
     assert "context" not in out.cues
     assert any("conflict:context" in t for t in out.trace)
+
+
+def test_count_word_not_a_flip_when_no_flip_noun():
+    assert "flip" not in parse_trick_name("double_leg").cues
+    assert "flip" not in parse_trick_name("double_alien").cues
+
+
+def test_count_word_still_flips_for_direction_noun():
+    assert parse_trick_name("double_back").cues["flip"] == 2.0
+    assert parse_trick_name("one_and_a_half_front_flip").cues["flip"] == 1.5

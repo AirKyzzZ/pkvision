@@ -108,6 +108,15 @@
     "kind": "fig_disagree"
   },
   {
+    "slug": "running_gainer_triple_flash_kick",
+    "cue": "flip",
+    "old_value": 3.0,
+    "old_source": "unified",
+    "parser_value": 1.0,
+    "parser_conf": 0.9,
+    "kind": "correct"
+  },
+  {
     "slug": "test_backflip",
     "cue": "flip",
     "old_value": 0,
@@ -234,6 +243,15 @@
     "kind": "correct"
   },
   {
+    "slug": "wall_corkscrew_double_leg",
+    "cue": "flip",
+    "old_value": 2.0,
+    "old_source": "unified",
+    "parser_value": 1.0,
+    "parser_conf": 0.9,
+    "kind": "correct"
+  },
+  {
     "slug": "wall_corkscrew_wall_back_handspring_half",
     "cue": "flip",
     "old_value": 0.5,
@@ -351,6 +369,33 @@
     "kind": "correct"
   },
   {
+    "slug": "double_kong_gainer",
+    "cue": "flip",
+    "old_value": 2.0,
+    "old_source": "unified",
+    "parser_value": 1.0,
+    "parser_conf": 0.9,
+    "kind": "correct"
+  },
+  {
+    "slug": "double_kong_gainer_full",
+    "cue": "flip",
+    "old_value": 2.0,
+    "old_source": "unified",
+    "parser_value": 1.0,
+    "parser_conf": 0.9,
+    "kind": "correct"
+  },
+  {
+    "slug": "double_kong_slant_gainer",
+    "cue": "flip",
+    "old_value": 2.0,
+    "old_source": "unified",
+    "parser_value": 1.0,
+    "parser_conf": 0.9,
+    "kind": "correct"
+  },
+  {
     "slug": "frog_gainer_layout",
     "cue": "direction",
     "old_value": "forward",
@@ -401,6 +446,15 @@
     "old_value": "forward",
     "old_source": "unified",
     "parser_value": "backward",
+    "parser_conf": 0.9,
+    "kind": "correct"
+  },
+  {
+    "slug": "triple_kong_gainer",
+    "cue": "flip",
+    "old_value": 3.0,
+    "old_source": "unified",
+    "parser_value": 1.0,
     "parser_conf": 0.9,
     "kind": "correct"
   }

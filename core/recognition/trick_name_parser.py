@@ -31,7 +31,7 @@ class ParsedCues:
 def _load_lexicon() -> dict:
     if not _LEXICON_PATH.exists():
         return {"moves": {}, "twist_words": {}, "flip_words": {},
-                "numeric": {}, "phase_boundaries": []}
+                "numeric": {"deg": {}, "flip_families": []}, "phase_boundaries": []}
     return json.loads(_LEXICON_PATH.read_text())
 
 
@@ -80,13 +80,24 @@ def _twist_contribs(tokens: list, lex: dict) -> list:
     return [_Contrib("twist", float(tw[t]), 0.8, f"twist_word:{t}") for t in tokens if t in tw]
 
 
+FLIP_DIRECTION_NOUNS = {"front", "back", "side"}
+
+
+def _is_flip_noun(tok, lex) -> bool:
+    if tok is None:
+        return False
+    return (tok in set(lex["numeric"]["flip_families"])
+            or tok in FLIP_DIRECTION_NOUNS
+            or (tok in lex["moves"] and "flip" in lex["moves"][tok]))
+
+
 def _flip_contribs(tokens: list, lex: dict) -> list:
-    fw, moves, tw = lex["flip_words"], lex["moves"], lex["twist_words"]
+    fw, moves = lex["flip_words"], lex["moves"]
     out, suppress = [], set()
     for i, t in enumerate(tokens):
         if t in fw:
             nxt = tokens[i + 1] if i + 1 < len(tokens) else None
-            if nxt in tw:
+            if not _is_flip_noun(nxt, lex):
                 continue
             out.append(_Contrib("flip", float(fw[t]), 0.75, f"flip_count:{t}"))
             if nxt in moves and "flip" in moves[nxt]:
