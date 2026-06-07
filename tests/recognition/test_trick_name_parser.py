@@ -59,3 +59,18 @@ def test_double_back_is_two_flips():
 def test_one_and_a_half_is_flip():
     out = parse_trick_name("one_and_a_half_frontflip")
     assert out.cues["flip"] == 1.5
+
+
+def test_numeric_routes_to_flip_for_somersault_family():
+    out = parse_trick_name("1080_dive_roll")
+    assert out.cues["flip"] == 3.0
+
+
+def test_numeric_routes_to_twist_for_turning_family():
+    out = parse_trick_name("180_cat")
+    assert out.cues["twist"] == 0.5
+
+
+def test_numeric_abstains_when_family_ambiguous():
+    out = parse_trick_name("360")
+    assert "flip" not in out.cues and "twist" not in out.cues
