@@ -80,6 +80,26 @@ def _twist_contribs(tokens: list, lex: dict) -> list:
     return [_Contrib("twist", float(tw[t]), 0.8, f"twist_word:{t}") for t in tokens if t in tw]
 
 
+def _flip_contribs(tokens: list, lex: dict) -> list:
+    fw, moves, tw = lex["flip_words"], lex["moves"], lex["twist_words"]
+    out, suppress = [], set()
+    for i, t in enumerate(tokens):
+        if t in fw:
+            nxt = tokens[i + 1] if i + 1 < len(tokens) else None
+            if nxt in tw:
+                continue
+            out.append(_Contrib("flip", float(fw[t]), 0.75, f"flip_count:{t}"))
+            if nxt in moves and "flip" in moves[nxt]:
+                suppress.add(i + 1)
+    for i, t in enumerate(tokens):
+        if i in suppress:
+            continue
+        m = moves.get(t)
+        if m and "flip" in m:
+            out.append(_Contrib("flip", float(m["flip"]), float(m["conf"]), f"move_flip:{t}"))
+    return out
+
+
 def _aggregate(contribs: list, unparsed: list) -> ParsedCues:
     by_cue: dict = {}
     for c in contribs:
@@ -116,4 +136,5 @@ def parse_trick_name(name: str) -> ParsedCues:
     contribs: list = []
     for ph in phases:
         contribs += _twist_contribs(ph, lex)
+        contribs += _flip_contribs(ph, lex)
     return _aggregate(contribs, unparsed)

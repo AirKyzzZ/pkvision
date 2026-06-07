@@ -44,3 +44,18 @@ def test_segment_phases_splits_on_boundaries():
 def test_twist_sums_across_phases():
     out = parse_trick_name("back_full_in_full_out")
     assert out.cues["twist"] == 2.0
+
+
+def test_double_full_is_two_twists():
+    out = parse_trick_name("back_double_full")
+    assert out.cues["twist"] == 2.0
+
+
+def test_double_back_is_two_flips():
+    out = parse_trick_name("double_backflip")
+    assert out.cues["flip"] == 2.0
+
+
+def test_one_and_a_half_is_flip():
+    out = parse_trick_name("one_and_a_half_frontflip")
+    assert out.cues["flip"] == 1.5
