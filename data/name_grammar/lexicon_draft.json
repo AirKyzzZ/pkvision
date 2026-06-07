@@ -1,0 +1,10115 @@
+{
+  "full": {
+    "direction": {
+      "backward": 385,
+      "forward": 26,
+      "left": 72
+    },
+    "rotation_axis": {
+      "lateral": 293,
+      "longitudinal": 127,
+      "sagittal": 39,
+      "off_axis": 24
+    },
+    "body_shape": {
+      "layout": 88,
+      "tuck": 382,
+      "pike": 7,
+      "open": 6
+    },
+    "entry": {
+      "standing": 230,
+      "wall": 90,
+      "running": 63,
+      "edge": 97,
+      "one_leg": 3
+    },
+    "family": {
+      "flip": 301,
+      "wall": 66,
+      "roll": 2,
+      "ground": 4,
+      "vault": 31,
+      "bar": 79
+    },
+    "_support": 483
+  },
+  "wall": {
+    "direction": {
+      "backward": 243,
+      "forward": 64,
+      "left": 32
+    },
+    "rotation_axis": {
+      "longitudinal": 54,
+      "lateral": 232,
+      "off_axis": 31,
+      "sagittal": 22
+    },
+    "body_shape": {
+      "tuck": 301,
+      "layout": 32,
+      "open": 2,
+      "pike": 4
+    },
+    "entry": {
+      "wall": 339
+    },
+    "family": {
+      "wall": 200,
+      "flip": 69,
+      "bar": 37,
+      "vault": 29,
+      "roll": 2,
+      "ground": 2
+    },
+    "_support": 339
+  },
+  "gainer": {
+    "direction": {
+      "backward": 278,
+      "forward": 34,
+      "left": 5
+    },
+    "rotation_axis": {
+      "lateral": 295,
+      "longitudinal": 7,
+      "off_axis": 10,
+      "sagittal": 5
+    },
+    "body_shape": {
+      "tuck": 281,
+      "pike": 10,
+      "open": 6,
+      "layout": 20
+    },
+    "entry": {
+      "running": 239,
+      "standing": 1,
+      "edge": 25,
+      "wall": 52
+    },
+    "family": {
+      "flip": 165,
+      "bar": 34,
+      "ground": 4,
+      "vault": 79,
+      "wall": 35
+    },
+    "_support": 317
+  },
+  "double": {
+    "direction": {
+      "backward": 212,
+      "left": 44,
+      "forward": 23
+    },
+    "rotation_axis": {
+      "lateral": 171,
+      "longitudinal": 70,
+      "off_axis": 23,
+      "sagittal": 15
+    },
+    "body_shape": {
+      "tuck": 201,
+      "layout": 70,
+      "pike": 7,
+      "open": 1
+    },
+    "entry": {
+      "standing": 137,
+      "running": 49,
+      "edge": 50,
+      "wall": 41,
+      "one_leg": 2
+    },
+    "family": {
+      "flip": 160,
+      "roll": 1,
+      "vault": 37,
+      "bar": 46,
+      "wall": 35
+    },
+    "_support": 279
+  },
+  "twist": {
+    "direction": {
+      "backward": 172,
+      "left": 13,
+      "forward": 8
+    },
+    "rotation_axis": {
+      "longitudinal": 190,
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 183,
+      "pike": 4,
+      "layout": 6
+    },
+    "entry": {
+      "standing": 131,
+      "running": 25,
+      "wall": 27,
+      "edge": 10
+    },
+    "family": {
+      "flip": 130,
+      "ground": 8,
+      "wall": 22,
+      "bar": 11,
+      "vault": 22
+    },
+    "_support": 193
+  },
+  "back": {
+    "direction": {
+      "backward": 174,
+      "left": 13
+    },
+    "rotation_axis": {
+      "lateral": 102,
+      "longitudinal": 34,
+      "off_axis": 43,
+      "sagittal": 8
+    },
+    "body_shape": {
+      "tuck": 168,
+      "layout": 17,
+      "pike": 1,
+      "open": 1
+    },
+    "entry": {
+      "running": 10,
+      "standing": 92,
+      "wall": 44,
+      "edge": 39,
+      "one_leg": 2
+    },
+    "family": {
+      "vault": 14,
+      "flip": 101,
+      "ground": 16,
+      "roll": 6,
+      "wall": 14,
+      "bar": 36
+    },
+    "_support": 187
+  },
+  "inward": {
+    "direction": {
+      "forward": 83,
+      "left": 34,
+      "backward": 69
+    },
+    "rotation_axis": {
+      "lateral": 105,
+      "sagittal": 33,
+      "longitudinal": 34,
+      "off_axis": 14
+    },
+    "body_shape": {
+      "tuck": 176,
+      "open": 3,
+      "pike": 5,
+      "layout": 2
+    },
+    "entry": {
+      "standing": 33,
+      "wall": 86,
+      "edge": 47,
+      "running": 8,
+      "one_leg": 12
+    },
+    "family": {
+      "roll": 13,
+      "flip": 40,
+      "wall": 58,
+      "bar": 36,
+      "vault": 36,
+      "ground": 3
+    },
+    "_support": 186
+  },
+  "front": {
+    "direction": {
+      "forward": 178,
+      "backward": 2,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 150,
+      "longitudinal": 20,
+      "off_axis": 11
+    },
+    "body_shape": {
+      "tuck": 166,
+      "pike": 5,
+      "open": 4,
+      "layout": 6
+    },
+    "entry": {
+      "standing": 61,
+      "running": 25,
+      "edge": 40,
+      "wall": 41,
+      "one_leg": 14
+    },
+    "family": {
+      "roll": 10,
+      "flip": 85,
+      "vault": 34,
+      "ground": 6,
+      "bar": 27,
+      "wall": 19
+    },
+    "_support": 181
+  },
+  "out": {
+    "direction": {
+      "backward": 141,
+      "forward": 22,
+      "left": 17
+    },
+    "rotation_axis": {
+      "lateral": 114,
+      "longitudinal": 40,
+      "off_axis": 11,
+      "sagittal": 15
+    },
+    "body_shape": {
+      "tuck": 156,
+      "pike": 2,
+      "open": 6,
+      "layout": 16
+    },
+    "entry": {
+      "standing": 72,
+      "running": 20,
+      "edge": 58,
+      "one_leg": 3,
+      "wall": 27
+    },
+    "family": {
+      "flip": 75,
+      "roll": 3,
+      "bar": 70,
+      "vault": 17,
+      "wall": 10,
+      "ground": 5
+    },
+    "_support": 180
+  },
+  "one": {
+    "direction": {
+      "forward": 29,
+      "backward": 137,
+      "left": 13
+    },
+    "rotation_axis": {
+      "lateral": 116,
+      "longitudinal": 39,
+      "off_axis": 12,
+      "sagittal": 12
+    },
+    "body_shape": {
+      "tuck": 166,
+      "pike": 2,
+      "layout": 10,
+      "open": 1
+    },
+    "entry": {
+      "standing": 21,
+      "running": 42,
+      "wall": 86,
+      "edge": 26,
+      "one_leg": 4
+    },
+    "family": {
+      "roll": 9,
+      "vault": 54,
+      "wall": 57,
+      "ground": 6,
+      "flip": 34,
+      "bar": 19
+    },
+    "_support": 179
+  },
+  "down": {
+    "direction": {
+      "backward": 123,
+      "forward": 35,
+      "left": 17
+    },
+    "rotation_axis": {
+      "longitudinal": 26,
+      "lateral": 124,
+      "off_axis": 15,
+      "sagittal": 10
+    },
+    "body_shape": {
+      "tuck": 166,
+      "layout": 8,
+      "pike": 1
+    },
+    "entry": {
+      "wall": 78,
+      "standing": 21,
+      "edge": 42,
+      "running": 32,
+      "one_leg": 2
+    },
+    "family": {
+      "wall": 13,
+      "flip": 38,
+      "roll": 1,
+      "vault": 106,
+      "bar": 17
+    },
+    "_support": 175
+  },
+  "in": {
+    "direction": {
+      "backward": 131,
+      "forward": 18,
+      "left": 18
+    },
+    "rotation_axis": {
+      "lateral": 101,
+      "longitudinal": 35,
+      "off_axis": 13,
+      "sagittal": 18
+    },
+    "body_shape": {
+      "tuck": 150,
+      "pike": 2,
+      "layout": 15
+    },
+    "entry": {
+      "standing": 64,
+      "edge": 65,
+      "running": 13,
+      "one_leg": 2,
+      "wall": 23
+    },
+    "family": {
+      "flip": 72,
+      "roll": 4,
+      "ground": 6,
+      "vault": 13,
+      "bar": 66,
+      "wall": 6
+    },
+    "_support": 167
+  },
+  "side": {
+    "direction": {
+      "left": 155,
+      "backward": 4
+    },
+    "rotation_axis": {
+      "sagittal": 134,
+      "lateral": 17,
+      "longitudinal": 7,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 151,
+      "open": 1,
+      "layout": 7
+    },
+    "entry": {
+      "wall": 48,
+      "standing": 46,
+      "running": 20,
+      "edge": 39,
+      "one_leg": 6
+    },
+    "family": {
+      "wall": 30,
+      "flip": 77,
+      "roll": 2,
+      "vault": 18,
+      "bar": 32
+    },
+    "_support": 159
+  },
+  "palm": {
+    "direction": {
+      "left": 20,
+      "backward": 117,
+      "forward": 14
+    },
+    "rotation_axis": {
+      "sagittal": 16,
+      "longitudinal": 38,
+      "lateral": 96,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 133,
+      "pike": 4,
+      "layout": 11,
+      "open": 3
+    },
+    "entry": {
+      "wall": 138,
+      "running": 4,
+      "edge": 7,
+      "standing": 2
+    },
+    "family": {
+      "wall": 99,
+      "vault": 13,
+      "bar": 9,
+      "flip": 30
+    },
+    "_support": 151
+  },
+  "dive": {
+    "direction": {
+      "forward": 128,
+      "backward": 12,
+      "left": 6
+    },
+    "rotation_axis": {
+      "lateral": 133,
+      "longitudinal": 6,
+      "sagittal": 3,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 142,
+      "layout": 3,
+      "open": 1
+    },
+    "entry": {
+      "standing": 64,
+      "running": 25,
+      "edge": 13,
+      "wall": 38,
+      "one_leg": 6
+    },
+    "family": {
+      "flip": 39,
+      "roll": 44,
+      "vault": 37,
+      "ground": 4,
+      "wall": 16,
+      "bar": 6
+    },
+    "_support": 146
+  },
+  "half": {
+    "direction": {
+      "backward": 75,
+      "forward": 59,
+      "left": 12
+    },
+    "rotation_axis": {
+      "lateral": 81,
+      "longitudinal": 53,
+      "sagittal": 8,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 139,
+      "open": 1,
+      "layout": 5,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 41,
+      "running": 18,
+      "edge": 41,
+      "wall": 38,
+      "one_leg": 8
+    },
+    "family": {
+      "flip": 56,
+      "roll": 13,
+      "ground": 3,
+      "vault": 18,
+      "wall": 23,
+      "bar": 33
+    },
+    "_support": 146
+  },
+  "flip": {
+    "direction": {
+      "backward": 94,
+      "left": 16,
+      "forward": 27
+    },
+    "rotation_axis": {
+      "lateral": 136,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 130,
+      "pike": 1,
+      "layout": 4,
+      "open": 2
+    },
+    "entry": {
+      "standing": 37,
+      "wall": 91,
+      "edge": 4,
+      "running": 5
+    },
+    "family": {
+      "flip": 119,
+      "bar": 11,
+      "vault": 6,
+      "ground": 1
+    },
+    "_support": 137
+  },
+  "flyaway": {
+    "direction": {
+      "forward": 11,
+      "backward": 116,
+      "left": 9
+    },
+    "rotation_axis": {
+      "lateral": 92,
+      "longitudinal": 34,
+      "sagittal": 9,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 115,
+      "layout": 18,
+      "pike": 2,
+      "open": 1
+    },
+    "entry": {
+      "edge": 126,
+      "wall": 5,
+      "running": 5
+    },
+    "family": {
+      "bar": 130,
+      "vault": 6
+    },
+    "_support": 136
+  },
+  "castaway": {
+    "direction": {
+      "backward": 67,
+      "left": 48,
+      "forward": 16
+    },
+    "rotation_axis": {
+      "off_axis": 64,
+      "sagittal": 11,
+      "longitudinal": 37,
+      "lateral": 19
+    },
+    "body_shape": {
+      "tuck": 113,
+      "layout": 13,
+      "pike": 3,
+      "open": 2
+    },
+    "entry": {
+      "running": 6,
+      "standing": 14,
+      "edge": 75,
+      "wall": 36
+    },
+    "family": {
+      "flip": 59,
+      "bar": 57,
+      "vault": 8,
+      "wall": 3,
+      "roll": 1,
+      "ground": 3
+    },
+    "_support": 131
+  },
+  "roll": {
+    "direction": {
+      "backward": 40,
+      "forward": 68,
+      "left": 6
+    },
+    "rotation_axis": {
+      "lateral": 92,
+      "longitudinal": 15,
+      "sagittal": 3,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 113,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 57,
+      "running": 13,
+      "edge": 13,
+      "wall": 25,
+      "one_leg": 6
+    },
+    "family": {
+      "roll": 71,
+      "vault": 13,
+      "flip": 8,
+      "wall": 14,
+      "bar": 8
+    },
+    "_support": 114
+  },
+  "step": {
+    "direction": {
+      "backward": 89,
+      "forward": 6,
+      "left": 15
+    },
+    "rotation_axis": {
+      "lateral": 77,
+      "longitudinal": 18,
+      "sagittal": 14,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 101,
+      "open": 2,
+      "layout": 7
+    },
+    "entry": {
+      "standing": 5,
+      "wall": 92,
+      "running": 10,
+      "edge": 3
+    },
+    "family": {
+      "flip": 30,
+      "wall": 66,
+      "vault": 10,
+      "bar": 4
+    },
+    "_support": 110
+  },
+  "kong": {
+    "direction": {
+      "forward": 35,
+      "backward": 67,
+      "left": 6
+    },
+    "rotation_axis": {
+      "lateral": 96,
+      "sagittal": 6,
+      "longitudinal": 6
+    },
+    "body_shape": {
+      "tuck": 100,
+      "layout": 5,
+      "pike": 1,
+      "open": 2
+    },
+    "entry": {
+      "running": 103,
+      "wall": 5
+    },
+    "family": {
+      "vault": 108
+    },
+    "_support": 108
+  },
+  "monkey": {
+    "direction": {
+      "backward": 71,
+      "forward": 29,
+      "left": 6
+    },
+    "rotation_axis": {
+      "lateral": 80,
+      "longitudinal": 13,
+      "sagittal": 3,
+      "off_axis": 10
+    },
+    "body_shape": {
+      "tuck": 101,
+      "layout": 5
+    },
+    "entry": {
+      "wall": 63,
+      "running": 18,
+      "edge": 21,
+      "standing": 2,
+      "one_leg": 2
+    },
+    "family": {
+      "vault": 106
+    },
+    "_support": 106
+  },
+  "hand": {
+    "direction": {
+      "backward": 87,
+      "forward": 9,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 63,
+      "longitudinal": 21,
+      "off_axis": 12,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 89,
+      "pike": 2,
+      "layout": 6
+    },
+    "entry": {
+      "standing": 7,
+      "running": 35,
+      "edge": 18,
+      "wall": 37
+    },
+    "family": {
+      "ground": 3,
+      "vault": 47,
+      "bar": 15,
+      "flip": 11,
+      "wall": 21
+    },
+    "_support": 97
+  },
+  "corkscrew": {
+    "direction": {
+      "backward": 88,
+      "forward": 8
+    },
+    "rotation_axis": {
+      "off_axis": 91,
+      "longitudinal": 3,
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 90,
+      "open": 2,
+      "layout": 2,
+      "pike": 2
+    },
+    "entry": {
+      "standing": 71,
+      "wall": 25
+    },
+    "family": {
+      "flip": 90,
+      "vault": 2,
+      "roll": 3,
+      "ground": 1
+    },
+    "_support": 96
+  },
+  "arabian": {
+    "direction": {
+      "forward": 82,
+      "left": 7,
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 77,
+      "longitudinal": 5,
+      "sagittal": 2,
+      "off_axis": 8
+    },
+    "body_shape": {
+      "pike": 2,
+      "tuck": 88,
+      "open": 1,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 29,
+      "running": 16,
+      "edge": 17,
+      "wall": 28,
+      "one_leg": 2
+    },
+    "family": {
+      "flip": 41,
+      "bar": 15,
+      "vault": 17,
+      "roll": 9,
+      "wall": 10
+    },
+    "_support": 92
+  },
+  "pimp": {
+    "direction": {
+      "backward": 38,
+      "forward": 3,
+      "left": 46
+    },
+    "rotation_axis": {
+      "lateral": 49,
+      "sagittal": 30,
+      "longitudinal": 7,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 71,
+      "layout": 14,
+      "pike": 2
+    },
+    "entry": {
+      "wall": 30,
+      "edge": 7,
+      "standing": 37,
+      "running": 13
+    },
+    "family": {
+      "flip": 66,
+      "wall": 10,
+      "vault": 9,
+      "bar": 2
+    },
+    "_support": 87
+  },
+  "punch": {
+    "direction": {
+      "backward": 44,
+      "forward": 26,
+      "left": 15
+    },
+    "rotation_axis": {
+      "lateral": 66,
+      "longitudinal": 9,
+      "off_axis": 2,
+      "sagittal": 8
+    },
+    "body_shape": {
+      "tuck": 68,
+      "layout": 17
+    },
+    "entry": {
+      "running": 11,
+      "wall": 74
+    },
+    "family": {
+      "flip": 16,
+      "wall": 34,
+      "bar": 32,
+      "vault": 3
+    },
+    "_support": 85
+  },
+  "vault": {
+    "direction": {
+      "backward": 62,
+      "forward": 8,
+      "left": 9
+    },
+    "rotation_axis": {
+      "lateral": 43,
+      "longitudinal": 29,
+      "sagittal": 6,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 75,
+      "layout": 3,
+      "open": 1
+    },
+    "entry": {
+      "running": 75,
+      "standing": 2,
+      "wall": 2
+    },
+    "family": {
+      "vault": 79
+    },
+    "_support": 79
+  },
+  "drop": {
+    "direction": {
+      "backward": 56,
+      "forward": 6,
+      "left": 13
+    },
+    "rotation_axis": {
+      "lateral": 35,
+      "longitudinal": 5,
+      "off_axis": 25,
+      "sagittal": 10
+    },
+    "body_shape": {
+      "tuck": 70,
+      "layout": 4,
+      "pike": 1
+    },
+    "entry": {
+      "edge": 63,
+      "wall": 10,
+      "running": 2
+    },
+    "family": {
+      "flip": 52,
+      "ground": 1,
+      "vault": 10,
+      "bar": 4,
+      "wall": 8
+    },
+    "_support": 75
+  },
+  "layout": {
+    "direction": {
+      "backward": 55,
+      "forward": 6,
+      "left": 9
+    },
+    "rotation_axis": {
+      "lateral": 67,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "layout": 69,
+      "pike": 1
+    },
+    "entry": {
+      "wall": 30,
+      "running": 13,
+      "edge": 18,
+      "standing": 9
+    },
+    "family": {
+      "flip": 23,
+      "bar": 20,
+      "vault": 7,
+      "wall": 19,
+      "ground": 1
+    },
+    "_support": 70
+  },
+  "reverse": {
+    "direction": {
+      "backward": 53,
+      "forward": 13,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 44,
+      "longitudinal": 21,
+      "sagittal": 3,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 65,
+      "open": 3,
+      "pike": 1
+    },
+    "entry": {
+      "running": 39,
+      "edge": 15,
+      "standing": 2,
+      "wall": 13
+    },
+    "family": {
+      "vault": 69
+    },
+    "_support": 69
+  },
+  "kick": {
+    "direction": {
+      "backward": 49,
+      "left": 8,
+      "forward": 6
+    },
+    "rotation_axis": {
+      "lateral": 37,
+      "longitudinal": 23,
+      "off_axis": 1,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 60,
+      "open": 1,
+      "layout": 2
+    },
+    "entry": {
+      "running": 8,
+      "standing": 39,
+      "wall": 10,
+      "edge": 6
+    },
+    "family": {
+      "flip": 43,
+      "vault": 5,
+      "wall": 9,
+      "bar": 5,
+      "roll": 1
+    },
+    "_support": 63
+  },
+  "butterfly": {
+    "direction": {
+      "forward": 1,
+      "backward": 59
+    },
+    "rotation_axis": {
+      "lateral": 12,
+      "longitudinal": 48
+    },
+    "body_shape": {
+      "tuck": 58,
+      "pike": 1,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 49,
+      "running": 7,
+      "wall": 4
+    },
+    "family": {
+      "flip": 49,
+      "vault": 8,
+      "wall": 3
+    },
+    "_support": 60
+  },
+  "pop": {
+    "direction": {
+      "left": 48,
+      "backward": 11,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 47,
+      "lateral": 5,
+      "sagittal": 3,
+      "off_axis": 5
+    },
+    "body_shape": {
+      "tuck": 58,
+      "pike": 2
+    },
+    "entry": {
+      "standing": 41,
+      "wall": 9,
+      "edge": 7,
+      "running": 3
+    },
+    "family": {
+      "flip": 52,
+      "wall": 3,
+      "bar": 5
+    },
+    "_support": 60
+  },
+  "spin": {
+    "direction": {
+      "backward": 52,
+      "left": 4,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 54,
+      "sagittal": 1,
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 56,
+      "layout": 1,
+      "pike": 1
+    },
+    "entry": {
+      "wall": 50,
+      "standing": 2,
+      "running": 6
+    },
+    "family": {
+      "wall": 34,
+      "flip": 10,
+      "bar": 2,
+      "vault": 12
+    },
+    "_support": 58
+  },
+  "lache": {
+    "direction": {
+      "backward": 25,
+      "forward": 23,
+      "left": 7
+    },
+    "rotation_axis": {
+      "lateral": 38,
+      "longitudinal": 10,
+      "sagittal": 7
+    },
+    "body_shape": {
+      "tuck": 52,
+      "layout": 2,
+      "pike": 1
+    },
+    "entry": {
+      "edge": 31,
+      "running": 5,
+      "wall": 19
+    },
+    "family": {
+      "vault": 6,
+      "bar": 49
+    },
+    "_support": 55
+  },
+  "cheat": {
+    "direction": {
+      "left": 51,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 52
+    },
+    "body_shape": {
+      "tuck": 50,
+      "pike": 1,
+      "open": 1
+    },
+    "entry": {
+      "standing": 49,
+      "running": 1,
+      "edge": 2
+    },
+    "family": {
+      "flip": 51,
+      "vault": 1
+    },
+    "_support": 52
+  },
+  "aerial": {
+    "direction": {
+      "backward": 49,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 37,
+      "sagittal": 13,
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 50,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 29,
+      "running": 10,
+      "wall": 11,
+      "edge": 1
+    },
+    "family": {
+      "flip": 34,
+      "wall": 8,
+      "vault": 9
+    },
+    "_support": 51
+  },
+  "doubleleg": {
+    "direction": {
+      "backward": 41,
+      "left": 8
+    },
+    "rotation_axis": {
+      "lateral": 22,
+      "longitudinal": 22,
+      "off_axis": 5
+    },
+    "body_shape": {
+      "tuck": 43,
+      "pike": 3,
+      "layout": 3
+    },
+    "entry": {
+      "standing": 49
+    },
+    "family": {
+      "flip": 49
+    },
+    "_support": 49
+  },
+  "cat": {
+    "direction": {
+      "backward": 39,
+      "forward": 4,
+      "left": 6
+    },
+    "rotation_axis": {
+      "lateral": 38,
+      "longitudinal": 3,
+      "sagittal": 6,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 47,
+      "pike": 2
+    },
+    "entry": {
+      "wall": 22,
+      "standing": 3,
+      "running": 14,
+      "edge": 10
+    },
+    "family": {
+      "flip": 20,
+      "vault": 13,
+      "bar": 14,
+      "wall": 2
+    },
+    "_support": 49
+  },
+  "precision": {
+    "direction": {
+      "backward": 43,
+      "forward": 3,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 40,
+      "longitudinal": 7,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 49
+    },
+    "entry": {
+      "standing": 19,
+      "running": 18,
+      "wall": 10,
+      "edge": 1,
+      "one_leg": 1
+    },
+    "family": {
+      "flip": 31,
+      "vault": 11,
+      "bar": 6,
+      "wall": 1
+    },
+    "_support": 49
+  },
+  "round": {
+    "direction": {
+      "backward": 41,
+      "left": 6,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 9,
+      "longitudinal": 16,
+      "lateral": 23
+    },
+    "body_shape": {
+      "tuck": 44,
+      "pike": 1,
+      "layout": 3
+    },
+    "entry": {
+      "standing": 45,
+      "running": 3
+    },
+    "family": {
+      "flip": 48
+    },
+    "_support": 48
+  },
+  "swing": {
+    "direction": {
+      "backward": 7,
+      "left": 40
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 40,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 41,
+      "layout": 5,
+      "pike": 1
+    },
+    "entry": {
+      "edge": 44,
+      "wall": 2,
+      "running": 1
+    },
+    "family": {
+      "vault": 4,
+      "bar": 43
+    },
+    "_support": 47
+  },
+  "stall": {
+    "direction": {
+      "backward": 29,
+      "forward": 4,
+      "left": 14
+    },
+    "rotation_axis": {
+      "lateral": 29,
+      "longitudinal": 4,
+      "sagittal": 10,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 44,
+      "open": 1,
+      "layout": 2
+    },
+    "entry": {
+      "running": 14,
+      "edge": 11,
+      "standing": 9,
+      "one_leg": 1,
+      "wall": 12
+    },
+    "family": {
+      "bar": 43,
+      "vault": 4
+    },
+    "_support": 47
+  },
+  "two": {
+    "direction": {
+      "backward": 38,
+      "left": 4,
+      "forward": 5
+    },
+    "rotation_axis": {
+      "lateral": 35,
+      "longitudinal": 7,
+      "off_axis": 1,
+      "sagittal": 4
+    },
+    "body_shape": {
+      "tuck": 43,
+      "open": 1,
+      "layout": 3
+    },
+    "entry": {
+      "running": 2,
+      "wall": 41,
+      "edge": 1,
+      "one_leg": 1,
+      "standing": 2
+    },
+    "family": {
+      "vault": 4,
+      "wall": 30,
+      "flip": 8,
+      "bar": 3,
+      "roll": 2
+    },
+    "_support": 47
+  },
+  "gaet": {
+    "direction": {
+      "left": 42,
+      "forward": 1,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "sagittal": 27,
+      "lateral": 13,
+      "longitudinal": 4,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 37,
+      "layout": 7,
+      "pike": 1
+    },
+    "entry": {
+      "wall": 16,
+      "standing": 26,
+      "edge": 2,
+      "running": 1
+    },
+    "family": {
+      "flip": 35,
+      "wall": 6,
+      "vault": 2,
+      "bar": 2
+    },
+    "_support": 45
+  },
+  "hyperhook": {
+    "direction": {
+      "backward": 38,
+      "left": 4,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 30,
+      "longitudinal": 10,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 38,
+      "layout": 6
+    },
+    "entry": {
+      "standing": 41,
+      "running": 2,
+      "one_leg": 1
+    },
+    "family": {
+      "flip": 43,
+      "vault": 1
+    },
+    "_support": 44
+  },
+  "leg": {
+    "direction": {
+      "backward": 36,
+      "left": 3,
+      "forward": 4
+    },
+    "rotation_axis": {
+      "longitudinal": 21,
+      "off_axis": 2,
+      "lateral": 19,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 36,
+      "pike": 5,
+      "layout": 1,
+      "open": 1
+    },
+    "entry": {
+      "standing": 21,
+      "running": 5,
+      "edge": 7,
+      "wall": 10
+    },
+    "family": {
+      "flip": 20,
+      "roll": 1,
+      "vault": 4,
+      "bar": 8,
+      "wall": 10
+    },
+    "_support": 43
+  },
+  "shuriken": {
+    "direction": {
+      "backward": 36,
+      "left": 5
+    },
+    "rotation_axis": {
+      "longitudinal": 16,
+      "off_axis": 17,
+      "lateral": 8
+    },
+    "body_shape": {
+      "tuck": 38,
+      "layout": 3
+    },
+    "entry": {
+      "standing": 37,
+      "running": 1,
+      "wall": 3
+    },
+    "family": {
+      "flip": 40,
+      "vault": 1
+    },
+    "_support": 41
+  },
+  "hang": {
+    "direction": {
+      "backward": 28,
+      "forward": 8,
+      "left": 5
+    },
+    "rotation_axis": {
+      "lateral": 19,
+      "longitudinal": 2,
+      "sagittal": 5,
+      "off_axis": 15
+    },
+    "body_shape": {
+      "tuck": 36,
+      "pike": 1,
+      "layout": 3,
+      "open": 1
+    },
+    "entry": {
+      "wall": 33,
+      "running": 6,
+      "edge": 2
+    },
+    "family": {
+      "bar": 37,
+      "vault": 4
+    },
+    "_support": 41
+  },
+  "hyper": {
+    "direction": {
+      "left": 11,
+      "backward": 29
+    },
+    "rotation_axis": {
+      "longitudinal": 13,
+      "lateral": 18,
+      "sagittal": 2,
+      "off_axis": 7
+    },
+    "body_shape": {
+      "tuck": 37,
+      "layout": 3
+    },
+    "entry": {
+      "standing": 35,
+      "running": 4,
+      "wall": 1
+    },
+    "family": {
+      "flip": 37,
+      "vault": 3
+    },
+    "_support": 40
+  },
+  "up": {
+    "direction": {
+      "backward": 24,
+      "forward": 7,
+      "left": 9
+    },
+    "rotation_axis": {
+      "lateral": 23,
+      "longitudinal": 10,
+      "sagittal": 6,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 38,
+      "layout": 1,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 24,
+      "wall": 7,
+      "edge": 4,
+      "running": 5
+    },
+    "family": {
+      "flip": 28,
+      "roll": 6,
+      "wall": 5,
+      "bar": 1
+    },
+    "_support": 40
+  },
+  "running": {
+    "direction": {
+      "backward": 35,
+      "forward": 4
+    },
+    "rotation_axis": {
+      "lateral": 39
+    },
+    "body_shape": {
+      "tuck": 35,
+      "layout": 3,
+      "pike": 1
+    },
+    "entry": {
+      "running": 38,
+      "wall": 1
+    },
+    "family": {
+      "flip": 28,
+      "bar": 2,
+      "wall": 1,
+      "vault": 8
+    },
+    "_support": 39
+  },
+  "webster": {
+    "direction": {
+      "forward": 30,
+      "backward": 2,
+      "left": 7
+    },
+    "rotation_axis": {
+      "lateral": 32,
+      "sagittal": 7
+    },
+    "body_shape": {
+      "tuck": 38,
+      "open": 1
+    },
+    "entry": {
+      "one_leg": 35,
+      "wall": 2,
+      "edge": 2
+    },
+    "family": {
+      "flip": 28,
+      "roll": 6,
+      "bar": 3,
+      "vault": 2
+    },
+    "_support": 39
+  },
+  "triple": {
+    "direction": {
+      "left": 5,
+      "backward": 32,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 10,
+      "lateral": 24,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 26,
+      "layout": 12
+    },
+    "entry": {
+      "standing": 23,
+      "running": 11,
+      "edge": 2,
+      "wall": 2
+    },
+    "family": {
+      "flip": 28,
+      "vault": 7,
+      "bar": 2,
+      "wall": 1
+    },
+    "_support": 38
+  },
+  "snapu": {
+    "direction": {
+      "backward": 33,
+      "left": 4,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 20,
+      "longitudinal": 14,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 34,
+      "pike": 1,
+      "layout": 3
+    },
+    "entry": {
+      "standing": 35,
+      "running": 2,
+      "wall": 1
+    },
+    "family": {
+      "flip": 35,
+      "vault": 2,
+      "wall": 1
+    },
+    "_support": 38
+  },
+  "dismount": {
+    "direction": {
+      "forward": 9,
+      "backward": 28,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 24,
+      "off_axis": 1,
+      "longitudinal": 12,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 32,
+      "layout": 6
+    },
+    "entry": {
+      "edge": 38
+    },
+    "family": {
+      "bar": 35,
+      "vault": 3
+    },
+    "_support": 38
+  },
+  "and": {
+    "direction": {
+      "forward": 21,
+      "backward": 12,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 27,
+      "longitudinal": 7,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 36
+    },
+    "entry": {
+      "standing": 16,
+      "running": 3,
+      "edge": 8,
+      "one_leg": 5,
+      "wall": 4
+    },
+    "family": {
+      "roll": 11,
+      "vault": 3,
+      "flip": 14,
+      "bar": 4,
+      "wall": 4
+    },
+    "_support": 36
+  },
+  "dash": {
+    "direction": {
+      "backward": 30,
+      "forward": 5
+    },
+    "rotation_axis": {
+      "lateral": 29,
+      "longitudinal": 6
+    },
+    "body_shape": {
+      "tuck": 33,
+      "pike": 1,
+      "layout": 1
+    },
+    "entry": {
+      "running": 35
+    },
+    "family": {
+      "vault": 35
+    },
+    "_support": 35
+  },
+  "a": {
+    "direction": {
+      "forward": 18,
+      "backward": 14,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 27,
+      "longitudinal": 6,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 35
+    },
+    "entry": {
+      "standing": 16,
+      "running": 3,
+      "edge": 7,
+      "one_leg": 5,
+      "wall": 4
+    },
+    "family": {
+      "roll": 11,
+      "vault": 3,
+      "flip": 13,
+      "bar": 4,
+      "wall": 4
+    },
+    "_support": 35
+  },
+  "tunnel": {
+    "direction": {
+      "backward": 33,
+      "forward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 33,
+      "off_axis": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 30,
+      "pike": 5
+    },
+    "entry": {
+      "standing": 14,
+      "running": 5,
+      "wall": 15,
+      "edge": 1
+    },
+    "family": {
+      "wall": 25,
+      "vault": 3,
+      "flip": 5,
+      "bar": 2
+    },
+    "_support": 35
+  },
+  "devil": {
+    "direction": {
+      "left": 8,
+      "forward": 2,
+      "backward": 24
+    },
+    "rotation_axis": {
+      "longitudinal": 3,
+      "off_axis": 22,
+      "sagittal": 6,
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 31,
+      "layout": 2,
+      "pike": 1
+    },
+    "entry": {
+      "edge": 32,
+      "wall": 2
+    },
+    "family": {
+      "flip": 22,
+      "wall": 3,
+      "bar": 3,
+      "vault": 6
+    },
+    "_support": 34
+  },
+  "wrap": {
+    "direction": {
+      "left": 24,
+      "backward": 3,
+      "forward": 6
+    },
+    "rotation_axis": {
+      "longitudinal": 23,
+      "lateral": 8,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 27,
+      "pike": 1,
+      "layout": 5
+    },
+    "entry": {
+      "standing": 21,
+      "wall": 10,
+      "edge": 2
+    },
+    "family": {
+      "flip": 20,
+      "wall": 6,
+      "bar": 2,
+      "vault": 4,
+      "roll": 1
+    },
+    "_support": 33
+  },
+  "pike": {
+    "direction": {
+      "forward": 6,
+      "backward": 23,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 30,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "pike": 32
+    },
+    "entry": {
+      "standing": 11,
+      "running": 9,
+      "edge": 5,
+      "wall": 7
+    },
+    "family": {
+      "flip": 17,
+      "vault": 4,
+      "bar": 4,
+      "wall": 7
+    },
+    "_support": 32
+  },
+  "sitting": {
+    "direction": {
+      "backward": 26,
+      "forward": 1,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 20,
+      "longitudinal": 5,
+      "sagittal": 3,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 28,
+      "pike": 1,
+      "open": 1
+    },
+    "entry": {
+      "running": 15,
+      "standing": 8,
+      "wall": 6,
+      "edge": 1
+    },
+    "family": {
+      "vault": 10,
+      "flip": 20
+    },
+    "_support": 30
+  },
+  "caster": {
+    "direction": {
+      "backward": 29,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 26,
+      "longitudinal": 2,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 28,
+      "layout": 2
+    },
+    "entry": {
+      "standing": 4,
+      "edge": 7,
+      "wall": 9,
+      "running": 10
+    },
+    "family": {
+      "flip": 15,
+      "bar": 5,
+      "vault": 7,
+      "ground": 2,
+      "wall": 1
+    },
+    "_support": 30
+  },
+  "feilong": {
+    "direction": {
+      "backward": 19,
+      "left": 10
+    },
+    "rotation_axis": {
+      "lateral": 8,
+      "longitudinal": 16,
+      "off_axis": 5
+    },
+    "body_shape": {
+      "tuck": 29
+    },
+    "entry": {
+      "standing": 28,
+      "wall": 1
+    },
+    "family": {
+      "flip": 29
+    },
+    "_support": 29
+  },
+  "rodeo": {
+    "direction": {
+      "backward": 24,
+      "forward": 2,
+      "left": 3
+    },
+    "rotation_axis": {
+      "off_axis": 4,
+      "lateral": 19,
+      "longitudinal": 5,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 29
+    },
+    "entry": {
+      "standing": 24,
+      "running": 2,
+      "edge": 2,
+      "one_leg": 1
+    },
+    "family": {
+      "flip": 27,
+      "bar": 2
+    },
+    "_support": 29
+  },
+  "raiz": {
+    "direction": {
+      "backward": 29
+    },
+    "rotation_axis": {
+      "longitudinal": 11,
+      "off_axis": 18
+    },
+    "body_shape": {
+      "tuck": 28,
+      "open": 1
+    },
+    "entry": {
+      "standing": 16,
+      "wall": 8,
+      "edge": 4,
+      "running": 1
+    },
+    "family": {
+      "flip": 14,
+      "wall": 8,
+      "bar": 4,
+      "vault": 1,
+      "ground": 1,
+      "roll": 1
+    },
+    "_support": 29
+  },
+  "x": {
+    "direction": {
+      "backward": 22,
+      "forward": 4,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 21,
+      "longitudinal": 7
+    },
+    "body_shape": {
+      "tuck": 21,
+      "open": 6,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 14,
+      "edge": 4,
+      "running": 6,
+      "wall": 3,
+      "one_leg": 1
+    },
+    "family": {
+      "flip": 18,
+      "bar": 4,
+      "vault": 3,
+      "wall": 3
+    },
+    "_support": 28
+  },
+  "flash": {
+    "direction": {
+      "backward": 27,
+      "left": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 8,
+      "lateral": 19,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 27,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 12,
+      "running": 8,
+      "edge": 4,
+      "wall": 4
+    },
+    "family": {
+      "flip": 20,
+      "vault": 1,
+      "bar": 3,
+      "wall": 4
+    },
+    "_support": 28
+  },
+  "handstand": {
+    "direction": {
+      "backward": 22,
+      "forward": 5
+    },
+    "rotation_axis": {
+      "longitudinal": 2,
+      "lateral": 23,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 25,
+      "layout": 2
+    },
+    "entry": {
+      "standing": 12,
+      "running": 7,
+      "edge": 7,
+      "wall": 1
+    },
+    "family": {
+      "ground": 17,
+      "roll": 3,
+      "bar": 4,
+      "vault": 3
+    },
+    "_support": 27
+  },
+  "bomb": {
+    "direction": {
+      "backward": 17,
+      "forward": 10
+    },
+    "rotation_axis": {
+      "lateral": 24,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 27
+    },
+    "entry": {
+      "standing": 10,
+      "running": 16,
+      "edge": 1
+    },
+    "family": {
+      "roll": 12,
+      "vault": 15
+    },
+    "_support": 27
+  },
+  "circle": {
+    "direction": {
+      "backward": 21,
+      "forward": 4,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 20,
+      "longitudinal": 3,
+      "off_axis": 2,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 18,
+      "open": 7,
+      "layout": 2
+    },
+    "entry": {
+      "standing": 5,
+      "edge": 12,
+      "running": 8,
+      "wall": 2
+    },
+    "family": {
+      "flip": 17,
+      "vault": 3,
+      "bar": 5,
+      "wall": 1,
+      "ground": 1
+    },
+    "_support": 27
+  },
+  "swipe": {
+    "direction": {
+      "backward": 22,
+      "left": 4
+    },
+    "rotation_axis": {
+      "lateral": 16,
+      "longitudinal": 6,
+      "off_axis": 3,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "layout": 2,
+      "tuck": 24
+    },
+    "entry": {
+      "standing": 23,
+      "running": 2,
+      "edge": 1
+    },
+    "family": {
+      "flip": 24,
+      "ground": 1,
+      "vault": 1
+    },
+    "_support": 26
+  },
+  "frisbee": {
+    "direction": {
+      "backward": 25,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 5,
+      "lateral": 17,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 26
+    },
+    "entry": {
+      "wall": 8,
+      "edge": 4,
+      "standing": 11,
+      "running": 3
+    },
+    "family": {
+      "wall": 6,
+      "bar": 2,
+      "flip": 13,
+      "vault": 5
+    },
+    "_support": 26
+  },
+  "scissor": {
+    "direction": {
+      "forward": 9,
+      "backward": 16,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 19,
+      "sagittal": 1,
+      "longitudinal": 4,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 25,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 17,
+      "running": 5,
+      "edge": 3,
+      "wall": 1
+    },
+    "family": {
+      "flip": 22,
+      "bar": 3,
+      "ground": 1
+    },
+    "_support": 26
+  },
+  "unwind": {
+    "direction": {
+      "forward": 10,
+      "backward": 14,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 17,
+      "longitudinal": 7,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 25,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 13,
+      "edge": 8,
+      "running": 3,
+      "wall": 2
+    },
+    "family": {
+      "flip": 15,
+      "bar": 7,
+      "ground": 1,
+      "vault": 1,
+      "wall": 2
+    },
+    "_support": 26
+  },
+  "handspring": {
+    "direction": {
+      "backward": 16,
+      "forward": 9
+    },
+    "rotation_axis": {
+      "lateral": 22,
+      "longitudinal": 2,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 24,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 12,
+      "edge": 3,
+      "running": 2,
+      "wall": 8
+    },
+    "family": {
+      "ground": 14,
+      "wall": 5,
+      "bar": 3,
+      "vault": 3
+    },
+    "_support": 25
+  },
+  "safety": {
+    "direction": {
+      "backward": 23,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 17,
+      "longitudinal": 7,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 25
+    },
+    "entry": {
+      "standing": 2,
+      "running": 21,
+      "wall": 2
+    },
+    "family": {
+      "vault": 14,
+      "flip": 9,
+      "wall": 2
+    },
+    "_support": 25
+  },
+  "touchdown": {
+    "direction": {
+      "backward": 23,
+      "forward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 8,
+      "lateral": 10,
+      "off_axis": 7
+    },
+    "body_shape": {
+      "tuck": 23,
+      "layout": 2
+    },
+    "entry": {
+      "standing": 17,
+      "wall": 5,
+      "running": 3
+    },
+    "family": {
+      "flip": 19,
+      "vault": 1,
+      "ground": 1,
+      "roll": 1,
+      "wall": 3
+    },
+    "_support": 25
+  },
+  "turn": {
+    "direction": {
+      "forward": 2,
+      "backward": 11,
+      "left": 12
+    },
+    "rotation_axis": {
+      "lateral": 9,
+      "longitudinal": 1,
+      "off_axis": 7,
+      "sagittal": 8
+    },
+    "body_shape": {
+      "tuck": 22,
+      "layout": 2,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 13,
+      "running": 2,
+      "wall": 9,
+      "edge": 1
+    },
+    "family": {
+      "flip": 20,
+      "vault": 2,
+      "bar": 1,
+      "wall": 2
+    },
+    "_support": 25
+  },
+  "cast": {
+    "direction": {
+      "backward": 18,
+      "forward": 3,
+      "left": 4
+    },
+    "rotation_axis": {
+      "lateral": 21,
+      "sagittal": 4
+    },
+    "body_shape": {
+      "tuck": 25
+    },
+    "entry": {
+      "standing": 2,
+      "edge": 5,
+      "running": 16,
+      "wall": 2
+    },
+    "family": {
+      "flip": 16,
+      "vault": 5,
+      "roll": 2,
+      "bar": 2
+    },
+    "_support": 25
+  },
+  "knife": {
+    "direction": {
+      "backward": 15,
+      "left": 9
+    },
+    "rotation_axis": {
+      "lateral": 7,
+      "longitudinal": 14,
+      "off_axis": 3
+    },
+    "body_shape": {
+      "tuck": 24
+    },
+    "entry": {
+      "standing": 23,
+      "edge": 1
+    },
+    "family": {
+      "flip": 23,
+      "bar": 1
+    },
+    "_support": 24
+  },
+  "gargoyle": {
+    "direction": {
+      "backward": 18,
+      "forward": 4,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 21,
+      "off_axis": 1,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 23,
+      "layout": 1
+    },
+    "entry": {
+      "wall": 13,
+      "edge": 1,
+      "running": 10
+    },
+    "family": {
+      "flip": 17,
+      "roll": 1,
+      "vault": 2,
+      "wall": 3,
+      "bar": 1
+    },
+    "_support": 24
+  },
+  "toe": {
+    "direction": {
+      "forward": 13,
+      "backward": 6,
+      "left": 4
+    },
+    "rotation_axis": {
+      "lateral": 13,
+      "longitudinal": 6,
+      "sagittal": 4
+    },
+    "body_shape": {
+      "tuck": 23
+    },
+    "entry": {
+      "edge": 15,
+      "wall": 8
+    },
+    "family": {
+      "roll": 5,
+      "ground": 1,
+      "flip": 10,
+      "bar": 6,
+      "vault": 1
+    },
+    "_support": 23
+  },
+  "backside": {
+    "direction": {
+      "left": 22
+    },
+    "rotation_axis": {
+      "longitudinal": 22
+    },
+    "body_shape": {
+      "tuck": 22
+    },
+    "entry": {
+      "standing": 22
+    },
+    "family": {
+      "flip": 22
+    },
+    "_support": 22
+  },
+  "gyro": {
+    "direction": {
+      "backward": 14,
+      "left": 6,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 11,
+      "lateral": 6,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 21
+    },
+    "entry": {
+      "standing": 14,
+      "running": 3,
+      "wall": 4
+    },
+    "family": {
+      "flip": 18,
+      "vault": 2,
+      "wall": 1
+    },
+    "_support": 21
+  },
+  "hook": {
+    "direction": {
+      "backward": 19,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 12,
+      "longitudinal": 5,
+      "sagittal": 1,
+      "off_axis": 3
+    },
+    "body_shape": {
+      "tuck": 20,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 19,
+      "running": 2
+    },
+    "family": {
+      "flip": 21
+    },
+    "_support": 21
+  },
+  "awakener": {
+    "direction": {
+      "left": 3,
+      "backward": 17,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 9,
+      "lateral": 6,
+      "off_axis": 6
+    },
+    "body_shape": {
+      "tuck": 16,
+      "open": 4,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 18,
+      "running": 3
+    },
+    "family": {
+      "flip": 19,
+      "vault": 2
+    },
+    "_support": 21
+  },
+  "crowd": {
+    "direction": {
+      "left": 3,
+      "backward": 17,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 9,
+      "lateral": 6,
+      "off_axis": 6
+    },
+    "body_shape": {
+      "tuck": 16,
+      "open": 4,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 18,
+      "running": 3
+    },
+    "family": {
+      "flip": 19,
+      "vault": 2
+    },
+    "_support": 21
+  },
+  "cartwheel": {
+    "direction": {
+      "left": 1,
+      "backward": 15,
+      "forward": 5
+    },
+    "rotation_axis": {
+      "lateral": 14,
+      "longitudinal": 6,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 21
+    },
+    "entry": {
+      "standing": 12,
+      "wall": 8,
+      "running": 1
+    },
+    "family": {
+      "ground": 10,
+      "wall": 9,
+      "bar": 1,
+      "vault": 1
+    },
+    "_support": 21
+  },
+  "switch": {
+    "direction": {
+      "backward": 20,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 19,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 21
+    },
+    "entry": {
+      "standing": 13,
+      "running": 7,
+      "wall": 1
+    },
+    "family": {
+      "flip": 17,
+      "vault": 2,
+      "ground": 2
+    },
+    "_support": 21
+  },
+  "regrab": {
+    "direction": {
+      "backward": 10,
+      "forward": 7,
+      "left": 4
+    },
+    "rotation_axis": {
+      "lateral": 7,
+      "longitudinal": 11,
+      "sagittal": 1,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 21
+    },
+    "entry": {
+      "running": 1,
+      "edge": 19,
+      "wall": 1
+    },
+    "family": {
+      "vault": 2,
+      "flip": 7,
+      "bar": 12
+    },
+    "_support": 21
+  },
+  "pistol": {
+    "direction": {
+      "backward": 8,
+      "left": 11,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 8,
+      "sagittal": 10,
+      "off_axis": 2,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 20,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 7,
+      "edge": 3,
+      "wall": 11
+    },
+    "family": {
+      "flip": 9,
+      "bar": 4,
+      "wall": 8
+    },
+    "_support": 21
+  },
+  "catch": {
+    "direction": {
+      "backward": 11,
+      "forward": 6,
+      "left": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 2,
+      "lateral": 13,
+      "sagittal": 2,
+      "off_axis": 3
+    },
+    "body_shape": {
+      "tuck": 19,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 1,
+      "edge": 17,
+      "running": 2
+    },
+    "family": {
+      "ground": 1,
+      "vault": 3,
+      "bar": 8,
+      "flip": 8
+    },
+    "_support": 20
+  },
+  "trapdoor": {
+    "direction": {
+      "backward": 19,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 19,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 17,
+      "layout": 3
+    },
+    "entry": {
+      "wall": 14,
+      "running": 2,
+      "edge": 4
+    },
+    "family": {
+      "flip": 8,
+      "bar": 8,
+      "vault": 1,
+      "wall": 3
+    },
+    "_support": 20
+  },
+  "tak": {
+    "direction": {
+      "backward": 18,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 19
+    },
+    "body_shape": {
+      "tuck": 13,
+      "layout": 6
+    },
+    "entry": {
+      "standing": 19
+    },
+    "family": {
+      "flip": 19
+    },
+    "_support": 19
+  },
+  "late": {
+    "direction": {
+      "backward": 18,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 13,
+      "longitudinal": 2,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 19
+    },
+    "entry": {
+      "standing": 16,
+      "running": 3
+    },
+    "family": {
+      "ground": 1,
+      "flip": 17,
+      "vault": 1
+    },
+    "_support": 19
+  },
+  "knee": {
+    "direction": {
+      "forward": 5,
+      "backward": 12,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 13,
+      "longitudinal": 3,
+      "sagittal": 1,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 19
+    },
+    "entry": {
+      "edge": 7,
+      "running": 3,
+      "wall": 7,
+      "standing": 2
+    },
+    "family": {
+      "vault": 2,
+      "flip": 17
+    },
+    "_support": 19
+  },
+  "elbow": {
+    "direction": {
+      "backward": 16,
+      "left": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 3,
+      "lateral": 11,
+      "sagittal": 2,
+      "off_axis": 3
+    },
+    "body_shape": {
+      "tuck": 18,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 5,
+      "wall": 8,
+      "edge": 4,
+      "running": 2
+    },
+    "family": {
+      "ground": 2,
+      "flip": 8,
+      "bar": 5,
+      "vault": 1,
+      "wall": 3
+    },
+    "_support": 19
+  },
+  "quarter": {
+    "direction": {
+      "backward": 6,
+      "left": 10,
+      "forward": 3
+    },
+    "rotation_axis": {
+      "lateral": 7,
+      "longitudinal": 2,
+      "sagittal": 10
+    },
+    "body_shape": {
+      "tuck": 18,
+      "layout": 1
+    },
+    "entry": {
+      "edge": 6,
+      "standing": 7,
+      "wall": 1,
+      "running": 5
+    },
+    "family": {
+      "flip": 12,
+      "bar": 2,
+      "vault": 4,
+      "ground": 1
+    },
+    "_support": 19
+  },
+  "helicoptero": {
+    "direction": {
+      "backward": 17,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 5,
+      "lateral": 12,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 18
+    },
+    "entry": {
+      "standing": 13,
+      "running": 2,
+      "edge": 3
+    },
+    "family": {
+      "flip": 14,
+      "bar": 3,
+      "vault": 1
+    },
+    "_support": 18
+  },
+  "straddle": {
+    "direction": {
+      "backward": 15,
+      "forward": 2,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 14,
+      "sagittal": 1,
+      "off_axis": 3
+    },
+    "body_shape": {
+      "open": 17,
+      "layout": 1
+    },
+    "entry": {
+      "edge": 5,
+      "running": 6,
+      "wall": 5,
+      "standing": 2
+    },
+    "family": {
+      "vault": 5,
+      "flip": 8,
+      "bar": 3,
+      "wall": 2
+    },
+    "_support": 18
+  },
+  "speed": {
+    "direction": {
+      "forward": 1,
+      "backward": 17
+    },
+    "rotation_axis": {
+      "lateral": 13,
+      "longitudinal": 5
+    },
+    "body_shape": {
+      "tuck": 17,
+      "pike": 1
+    },
+    "entry": {
+      "running": 18
+    },
+    "family": {
+      "vault": 18
+    },
+    "_support": 18
+  },
+  "ew": {
+    "direction": {
+      "left": 1,
+      "backward": 15,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 18
+    },
+    "body_shape": {
+      "tuck": 15,
+      "layout": 2,
+      "pike": 1
+    },
+    "entry": {
+      "wall": 1,
+      "running": 17
+    },
+    "family": {
+      "wall": 1,
+      "bar": 2,
+      "flip": 13,
+      "vault": 2
+    },
+    "_support": 18
+  },
+  "shoulder": {
+    "direction": {
+      "backward": 14,
+      "forward": 2,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 12,
+      "sagittal": 1,
+      "longitudinal": 4
+    },
+    "body_shape": {
+      "tuck": 17
+    },
+    "entry": {
+      "standing": 4,
+      "running": 7,
+      "edge": 5,
+      "wall": 1
+    },
+    "family": {
+      "roll": 2,
+      "vault": 6,
+      "flip": 5,
+      "wall": 1,
+      "bar": 2,
+      "ground": 1
+    },
+    "_support": 17
+  },
+  "kip": {
+    "direction": {
+      "forward": 4,
+      "backward": 12,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 12,
+      "longitudinal": 4,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 16,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 10,
+      "running": 3,
+      "edge": 3,
+      "wall": 1
+    },
+    "family": {
+      "flip": 11,
+      "roll": 5,
+      "wall": 1
+    },
+    "_support": 17
+  },
+  "tac": {
+    "direction": {
+      "forward": 3,
+      "backward": 13,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 16,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 17
+    },
+    "entry": {
+      "wall": 10,
+      "running": 5,
+      "edge": 1,
+      "standing": 1
+    },
+    "family": {
+      "flip": 10,
+      "bar": 6,
+      "wall": 1
+    },
+    "_support": 17
+  },
+  "slant": {
+    "direction": {
+      "backward": 16,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 17
+    },
+    "body_shape": {
+      "tuck": 14,
+      "layout": 3
+    },
+    "entry": {
+      "running": 14,
+      "wall": 3
+    },
+    "family": {
+      "vault": 10,
+      "flip": 5,
+      "wall": 2
+    },
+    "_support": 17
+  },
+  "dragonfly": {
+    "direction": {
+      "backward": 16
+    },
+    "rotation_axis": {
+      "longitudinal": 2,
+      "lateral": 2,
+      "off_axis": 12
+    },
+    "body_shape": {
+      "tuck": 16
+    },
+    "entry": {
+      "standing": 16
+    },
+    "family": {
+      "flip": 16
+    },
+    "_support": 16
+  },
+  "giant": {
+    "direction": {
+      "backward": 13,
+      "forward": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 2,
+      "lateral": 14
+    },
+    "body_shape": {
+      "tuck": 16
+    },
+    "entry": {
+      "standing": 1,
+      "edge": 13,
+      "running": 1,
+      "wall": 1
+    },
+    "family": {
+      "ground": 1,
+      "vault": 5,
+      "flip": 10
+    },
+    "_support": 16
+  },
+  "macaco": {
+    "direction": {
+      "backward": 16
+    },
+    "rotation_axis": {
+      "lateral": 13,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 15,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 15,
+      "wall": 1
+    },
+    "family": {
+      "ground": 13,
+      "wall": 3
+    },
+    "_support": 16
+  },
+  "cork": {
+    "direction": {
+      "backward": 14,
+      "left": 2
+    },
+    "rotation_axis": {
+      "off_axis": 16
+    },
+    "body_shape": {
+      "tuck": 16
+    },
+    "entry": {
+      "standing": 12,
+      "wall": 2,
+      "running": 1,
+      "edge": 1
+    },
+    "family": {
+      "flip": 15,
+      "vault": 1
+    },
+    "_support": 16
+  },
+  "corner": {
+    "direction": {
+      "backward": 14,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 12,
+      "longitudinal": 3,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 15,
+      "layout": 1
+    },
+    "entry": {
+      "wall": 13,
+      "standing": 3
+    },
+    "family": {
+      "flip": 8,
+      "wall": 6,
+      "vault": 2
+    },
+    "_support": 16
+  },
+  "moon": {
+    "direction": {
+      "backward": 15
+    },
+    "rotation_axis": {
+      "lateral": 11,
+      "longitudinal": 4
+    },
+    "body_shape": {
+      "tuck": 14,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 13,
+      "wall": 1,
+      "running": 1
+    },
+    "family": {
+      "flip": 13,
+      "wall": 1,
+      "vault": 1
+    },
+    "_support": 15
+  },
+  "wackknife": {
+    "direction": {
+      "backward": 14,
+      "left": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 6,
+      "lateral": 7,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 15
+    },
+    "entry": {
+      "standing": 14,
+      "running": 1
+    },
+    "family": {
+      "flip": 15
+    },
+    "_support": 15
+  },
+  "shoot": {
+    "direction": {
+      "forward": 11,
+      "backward": 1,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 9,
+      "longitudinal": 3,
+      "sagittal": 3
+    },
+    "body_shape": {
+      "tuck": 15
+    },
+    "entry": {
+      "edge": 12,
+      "wall": 3
+    },
+    "family": {
+      "roll": 2,
+      "ground": 1,
+      "flip": 9,
+      "bar": 3
+    },
+    "_support": 15
+  },
+  "sailor": {
+    "direction": {
+      "backward": 14
+    },
+    "rotation_axis": {
+      "lateral": 11,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 14
+    },
+    "entry": {
+      "standing": 13,
+      "running": 1
+    },
+    "family": {
+      "flip": 13,
+      "vault": 1
+    },
+    "_support": 14
+  },
+  "tic": {
+    "direction": {
+      "forward": 2,
+      "backward": 12
+    },
+    "rotation_axis": {
+      "lateral": 14
+    },
+    "body_shape": {
+      "tuck": 14
+    },
+    "entry": {
+      "wall": 7,
+      "running": 5,
+      "edge": 1,
+      "standing": 1
+    },
+    "family": {
+      "flip": 9,
+      "bar": 5
+    },
+    "_support": 14
+  },
+  "angel": {
+    "direction": {
+      "backward": 12,
+      "forward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 13,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 12,
+      "layout": 2
+    },
+    "entry": {
+      "edge": 7,
+      "wall": 7
+    },
+    "family": {
+      "flip": 8,
+      "vault": 1,
+      "wall": 5
+    },
+    "_support": 14
+  },
+  "snapuswipe": {
+    "direction": {
+      "backward": 11,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 8,
+      "longitudinal": 3,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 13
+    },
+    "entry": {
+      "standing": 12,
+      "wall": 1
+    },
+    "family": {
+      "flip": 12,
+      "wall": 1
+    },
+    "_support": 13
+  },
+  "grab": {
+    "direction": {
+      "forward": 2,
+      "backward": 11
+    },
+    "rotation_axis": {
+      "lateral": 10,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 13
+    },
+    "entry": {
+      "standing": 7,
+      "running": 6
+    },
+    "family": {
+      "flip": 9,
+      "vault": 4
+    },
+    "_support": 13
+  },
+  "spider": {
+    "direction": {
+      "backward": 12,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 7,
+      "longitudinal": 1,
+      "sagittal": 1,
+      "off_axis": 4
+    },
+    "body_shape": {
+      "tuck": 12,
+      "layout": 1
+    },
+    "entry": {
+      "running": 3,
+      "edge": 7,
+      "one_leg": 1,
+      "wall": 2
+    },
+    "family": {
+      "ground": 1,
+      "bar": 7,
+      "vault": 1,
+      "flip": 4
+    },
+    "_support": 13
+  },
+  "dark": {
+    "direction": {
+      "forward": 12,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 13
+    },
+    "body_shape": {
+      "tuck": 13
+    },
+    "entry": {
+      "edge": 5,
+      "standing": 1,
+      "wall": 5,
+      "one_leg": 2
+    },
+    "family": {
+      "flip": 2,
+      "bar": 6,
+      "vault": 4,
+      "wall": 1
+    },
+    "_support": 13
+  },
+  "tsukahara": {
+    "direction": {
+      "backward": 11,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 7,
+      "lateral": 6
+    },
+    "body_shape": {
+      "tuck": 10,
+      "layout": 3
+    },
+    "entry": {
+      "running": 4,
+      "edge": 9
+    },
+    "family": {
+      "vault": 4,
+      "bar": 9
+    },
+    "_support": 13
+  },
+  "counter": {
+    "direction": {
+      "backward": 11,
+      "forward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 3,
+      "off_axis": 6,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 11,
+      "layout": 2
+    },
+    "entry": {
+      "wall": 5,
+      "edge": 1,
+      "standing": 7
+    },
+    "family": {
+      "wall": 1,
+      "bar": 1,
+      "flip": 9,
+      "vault": 2
+    },
+    "_support": 13
+  },
+  "slide": {
+    "direction": {
+      "backward": 11,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 12
+    },
+    "body_shape": {
+      "tuck": 12
+    },
+    "entry": {
+      "standing": 4,
+      "wall": 3,
+      "running": 3,
+      "edge": 2
+    },
+    "family": {
+      "flip": 7,
+      "vault": 3,
+      "bar": 1,
+      "wall": 1
+    },
+    "_support": 12
+  },
+  "rocketboi": {
+    "direction": {
+      "backward": 12
+    },
+    "rotation_axis": {
+      "lateral": 11,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 11,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 9,
+      "running": 1,
+      "wall": 2
+    },
+    "family": {
+      "flip": 10,
+      "wall": 2
+    },
+    "_support": 12
+  },
+  "bar": {
+    "direction": {
+      "forward": 2,
+      "backward": 10
+    },
+    "rotation_axis": {
+      "lateral": 12
+    },
+    "body_shape": {
+      "tuck": 11,
+      "layout": 1
+    },
+    "entry": {
+      "edge": 12
+    },
+    "family": {
+      "flip": 4,
+      "bar": 7,
+      "roll": 1
+    },
+    "_support": 12
+  },
+  "parallel": {
+    "direction": {
+      "forward": 2,
+      "backward": 10
+    },
+    "rotation_axis": {
+      "lateral": 12
+    },
+    "body_shape": {
+      "tuck": 11,
+      "layout": 1
+    },
+    "entry": {
+      "edge": 12
+    },
+    "family": {
+      "flip": 4,
+      "bar": 7,
+      "roll": 1
+    },
+    "_support": 12
+  },
+  "walking": {
+    "direction": {
+      "backward": 7,
+      "forward": 2,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 10,
+      "sagittal": 2
+    },
+    "body_shape": {
+      "tuck": 12
+    },
+    "entry": {
+      "standing": 12
+    },
+    "family": {
+      "flip": 12
+    },
+    "_support": 12
+  },
+  "swipeknife": {
+    "direction": {
+      "backward": 10,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 6,
+      "longitudinal": 2,
+      "off_axis": 3
+    },
+    "body_shape": {
+      "tuck": 10,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 11
+    },
+    "family": {
+      "flip": 11
+    },
+    "_support": 11
+  },
+  "gumbi": {
+    "direction": {
+      "forward": 2,
+      "backward": 9
+    },
+    "rotation_axis": {
+      "lateral": 5,
+      "longitudinal": 6
+    },
+    "body_shape": {
+      "tuck": 11
+    },
+    "entry": {
+      "standing": 9,
+      "wall": 2
+    },
+    "family": {
+      "flip": 9,
+      "wall": 2
+    },
+    "_support": 11
+  },
+  "sole": {
+    "direction": {
+      "backward": 9,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 11
+    },
+    "body_shape": {
+      "open": 7,
+      "tuck": 3,
+      "layout": 1
+    },
+    "entry": {
+      "edge": 5,
+      "running": 6
+    },
+    "family": {
+      "vault": 3,
+      "flip": 7,
+      "bar": 1
+    },
+    "_support": 11
+  },
+  "raiden": {
+    "direction": {
+      "backward": 7,
+      "forward": 3,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 6,
+      "longitudinal": 3,
+      "sagittal": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 11
+    },
+    "entry": {
+      "wall": 8,
+      "one_leg": 2,
+      "edge": 1
+    },
+    "family": {
+      "bar": 2,
+      "flip": 9
+    },
+    "_support": 11
+  },
+  "lonestar": {
+    "direction": {
+      "forward": 1,
+      "backward": 9
+    },
+    "rotation_axis": {
+      "lateral": 7,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "pike": 3,
+      "tuck": 7
+    },
+    "entry": {
+      "standing": 5,
+      "edge": 2,
+      "wall": 3
+    },
+    "family": {
+      "flip": 5,
+      "bar": 2,
+      "wall": 3
+    },
+    "_support": 10
+  },
+  "man": {
+    "direction": {
+      "backward": 9,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 5,
+      "longitudinal": 1,
+      "sagittal": 1,
+      "off_axis": 3
+    },
+    "body_shape": {
+      "tuck": 9,
+      "layout": 1
+    },
+    "entry": {
+      "running": 3,
+      "edge": 4,
+      "one_leg": 1,
+      "wall": 2
+    },
+    "family": {
+      "ground": 1,
+      "vault": 1,
+      "bar": 5,
+      "flip": 3
+    },
+    "_support": 10
+  },
+  "run": {
+    "direction": {
+      "backward": 8,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 10
+    },
+    "body_shape": {
+      "tuck": 10
+    },
+    "entry": {
+      "wall": 9,
+      "standing": 1
+    },
+    "family": {
+      "wall": 8,
+      "ground": 1,
+      "vault": 1
+    },
+    "_support": 10
+  },
+  "flare": {
+    "direction": {
+      "backward": 8,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 8,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 8,
+      "open": 1
+    },
+    "entry": {
+      "standing": 5,
+      "wall": 4
+    },
+    "family": {
+      "flip": 5,
+      "wall": 4
+    },
+    "_support": 9
+  },
+  "backward": {
+    "direction": {
+      "backward": 9
+    },
+    "rotation_axis": {
+      "lateral": 8,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "standing": 5,
+      "running": 1,
+      "wall": 2,
+      "edge": 1
+    },
+    "family": {
+      "roll": 3,
+      "vault": 2,
+      "flip": 2,
+      "wall": 1,
+      "bar": 1
+    },
+    "_support": 9
+  },
+  "boy": {
+    "direction": {
+      "backward": 7,
+      "left": 2
+    },
+    "rotation_axis": {
+      "off_axis": 1,
+      "lateral": 6,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "pike": 2,
+      "tuck": 7
+    },
+    "entry": {
+      "standing": 5,
+      "wall": 1,
+      "edge": 1,
+      "running": 2
+    },
+    "family": {
+      "flip": 5,
+      "wall": 1,
+      "bar": 1,
+      "vault": 2
+    },
+    "_support": 9
+  },
+  "lotus": {
+    "direction": {
+      "forward": 1,
+      "backward": 8
+    },
+    "rotation_axis": {
+      "lateral": 9
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "standing": 7,
+      "edge": 2
+    },
+    "family": {
+      "ground": 1,
+      "flip": 7,
+      "bar": 1
+    },
+    "_support": 9
+  },
+  "split": {
+    "direction": {
+      "backward": 8,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 9
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "running": 7,
+      "standing": 1,
+      "edge": 1
+    },
+    "family": {
+      "vault": 5,
+      "flip": 4
+    },
+    "_support": 9
+  },
+  "pole": {
+    "direction": {
+      "backward": 8,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 9
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "standing": 2,
+      "running": 3,
+      "edge": 2,
+      "wall": 2
+    },
+    "family": {
+      "flip": 4,
+      "vault": 3,
+      "bar": 1,
+      "wall": 1
+    },
+    "_support": 9
+  },
+  "human": {
+    "direction": {
+      "backward": 7,
+      "forward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 6,
+      "sagittal": 1,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "standing": 5,
+      "running": 2,
+      "wall": 2
+    },
+    "family": {
+      "flip": 8,
+      "wall": 1
+    },
+    "_support": 9
+  },
+  "flag": {
+    "direction": {
+      "backward": 7,
+      "forward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 6,
+      "sagittal": 1,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "standing": 5,
+      "running": 2,
+      "wall": 2
+    },
+    "family": {
+      "flip": 8,
+      "wall": 1
+    },
+    "_support": 9
+  },
+  "russian": {
+    "direction": {
+      "forward": 8,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 9
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "standing": 7,
+      "running": 2
+    },
+    "family": {
+      "flip": 5,
+      "roll": 2,
+      "vault": 2
+    },
+    "_support": 9
+  },
+  "horizontal": {
+    "direction": {
+      "backward": 8,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 9
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "wall": 9
+    },
+    "family": {
+      "wall": 8,
+      "vault": 1
+    },
+    "_support": 9
+  },
+  "walkdown": {
+    "direction": {
+      "forward": 2,
+      "backward": 6,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 8,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 8,
+      "open": 1
+    },
+    "entry": {
+      "wall": 6,
+      "edge": 1,
+      "running": 2
+    },
+    "family": {
+      "wall": 2,
+      "bar": 1,
+      "vault": 2,
+      "flip": 4
+    },
+    "_support": 9
+  },
+  "ceiling": {
+    "direction": {
+      "backward": 9
+    },
+    "rotation_axis": {
+      "lateral": 8,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "layout": 1,
+      "tuck": 7,
+      "pike": 1
+    },
+    "entry": {
+      "running": 2,
+      "wall": 7
+    },
+    "family": {
+      "bar": 2,
+      "flip": 6,
+      "wall": 1
+    },
+    "_support": 9
+  },
+  "zero": {
+    "direction": {
+      "forward": 1,
+      "backward": 6,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "off_axis": 7
+    },
+    "body_shape": {
+      "tuck": 9
+    },
+    "entry": {
+      "edge": 2,
+      "standing": 4,
+      "wall": 2,
+      "running": 1
+    },
+    "family": {
+      "bar": 2,
+      "flip": 6,
+      "vault": 1
+    },
+    "_support": 9
+  },
+  "frog": {
+    "direction": {
+      "forward": 9
+    },
+    "rotation_axis": {
+      "lateral": 9
+    },
+    "body_shape": {
+      "tuck": 8,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 2,
+      "running": 7
+    },
+    "family": {
+      "flip": 9
+    },
+    "_support": 9
+  },
+  "terada": {
+    "direction": {
+      "backward": 8
+    },
+    "rotation_axis": {
+      "lateral": 6,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 8
+    },
+    "entry": {
+      "standing": 8
+    },
+    "family": {
+      "flip": 8
+    },
+    "_support": 8
+  },
+  "rail": {
+    "direction": {
+      "backward": 7,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 6,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 8
+    },
+    "entry": {
+      "standing": 6,
+      "running": 2
+    },
+    "family": {
+      "ground": 2,
+      "flip": 5,
+      "roll": 1
+    },
+    "_support": 8
+  },
+  "tornado": {
+    "direction": {
+      "left": 1,
+      "backward": 7
+    },
+    "rotation_axis": {
+      "longitudinal": 6,
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 8
+    },
+    "entry": {
+      "standing": 6,
+      "wall": 2
+    },
+    "family": {
+      "flip": 6,
+      "wall": 2
+    },
+    "_support": 8
+  },
+  "turbo": {
+    "direction": {
+      "backward": 7,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 4,
+      "longitudinal": 3,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 7,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 8
+    },
+    "family": {
+      "flip": 8
+    },
+    "_support": 8
+  },
+  "touchup": {
+    "direction": {
+      "backward": 8
+    },
+    "rotation_axis": {
+      "longitudinal": 6,
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 8
+    },
+    "entry": {
+      "standing": 7,
+      "wall": 1
+    },
+    "family": {
+      "flip": 7,
+      "vault": 1
+    },
+    "_support": 8
+  },
+  "dyno": {
+    "direction": {
+      "backward": 8
+    },
+    "rotation_axis": {
+      "lateral": 7,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 5,
+      "layout": 3
+    },
+    "entry": {
+      "wall": 8
+    },
+    "family": {
+      "flip": 4,
+      "wall": 4
+    },
+    "_support": 8
+  },
+  "walk": {
+    "direction": {
+      "backward": 6,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 8
+    },
+    "body_shape": {
+      "tuck": 8
+    },
+    "entry": {
+      "edge": 3,
+      "wall": 4,
+      "running": 1
+    },
+    "family": {
+      "bar": 3,
+      "wall": 3,
+      "vault": 1,
+      "flip": 1
+    },
+    "_support": 8
+  },
+  "kash": {
+    "direction": {
+      "backward": 8
+    },
+    "rotation_axis": {
+      "lateral": 8
+    },
+    "body_shape": {
+      "layout": 1,
+      "tuck": 7
+    },
+    "entry": {
+      "running": 7,
+      "edge": 1
+    },
+    "family": {
+      "vault": 8
+    },
+    "_support": 8
+  },
+  "quadruple": {
+    "direction": {
+      "backward": 8
+    },
+    "rotation_axis": {
+      "lateral": 5,
+      "longitudinal": 2,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 7,
+      "layout": 1
+    },
+    "entry": {
+      "running": 2,
+      "edge": 2,
+      "standing": 4
+    },
+    "family": {
+      "vault": 1,
+      "bar": 2,
+      "flip": 5
+    },
+    "_support": 8
+  },
+  "donut": {
+    "direction": {
+      "backward": 5,
+      "left": 2
+    },
+    "rotation_axis": {
+      "off_axis": 1,
+      "lateral": 4,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "pike": 2,
+      "tuck": 5
+    },
+    "entry": {
+      "standing": 5,
+      "wall": 1,
+      "edge": 1
+    },
+    "family": {
+      "flip": 5,
+      "wall": 1,
+      "bar": 1
+    },
+    "_support": 7
+  },
+  "boxcutter": {
+    "direction": {
+      "backward": 7
+    },
+    "rotation_axis": {
+      "off_axis": 4,
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 7
+    },
+    "entry": {
+      "standing": 6,
+      "wall": 1
+    },
+    "family": {
+      "flip": 6,
+      "wall": 1
+    },
+    "_support": 7
+  },
+  "scoot": {
+    "direction": {
+      "backward": 7
+    },
+    "rotation_axis": {
+      "lateral": 6,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 7
+    },
+    "entry": {
+      "standing": 6,
+      "wall": 1
+    },
+    "family": {
+      "flip": 7
+    },
+    "_support": 7
+  },
+  "to": {
+    "direction": {
+      "backward": 7
+    },
+    "rotation_axis": {
+      "lateral": 7
+    },
+    "body_shape": {
+      "tuck": 7
+    },
+    "entry": {
+      "standing": 7
+    },
+    "family": {
+      "flip": 6,
+      "ground": 1
+    },
+    "_support": 7
+  },
+  "shurikane": {
+    "direction": {
+      "backward": 6,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 4,
+      "longitudinal": 2,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 6,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 7
+    },
+    "family": {
+      "flip": 7
+    },
+    "_support": 7
+  },
+  "swingthru": {
+    "direction": {
+      "backward": 7
+    },
+    "rotation_axis": {
+      "lateral": 7
+    },
+    "body_shape": {
+      "tuck": 7
+    },
+    "entry": {
+      "standing": 6,
+      "wall": 1
+    },
+    "family": {
+      "flip": 6,
+      "vault": 1
+    },
+    "_support": 7
+  },
+  "shant": {
+    "direction": {
+      "backward": 7
+    },
+    "rotation_axis": {
+      "lateral": 7
+    },
+    "body_shape": {
+      "tuck": 6,
+      "open": 1
+    },
+    "entry": {
+      "standing": 3,
+      "running": 4
+    },
+    "family": {
+      "flip": 7
+    },
+    "_support": 7
+  },
+  "the": {
+    "direction": {
+      "backward": 6,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 4,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "pike": 1,
+      "tuck": 6
+    },
+    "entry": {
+      "edge": 3,
+      "wall": 1,
+      "running": 1,
+      "standing": 2
+    },
+    "family": {
+      "flip": 6,
+      "wall": 1
+    },
+    "_support": 7
+  },
+  "lazy": {
+    "direction": {
+      "backward": 7
+    },
+    "rotation_axis": {
+      "lateral": 7
+    },
+    "body_shape": {
+      "tuck": 7
+    },
+    "entry": {
+      "running": 7
+    },
+    "family": {
+      "vault": 7
+    },
+    "_support": 7
+  },
+  "rudi": {
+    "direction": {
+      "backward": 5,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 3,
+      "lateral": 3,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 7
+    },
+    "entry": {
+      "standing": 4,
+      "one_leg": 1,
+      "edge": 1,
+      "wall": 1
+    },
+    "family": {
+      "flip": 6,
+      "wall": 1
+    },
+    "_support": 7
+  },
+  "jacknife": {
+    "direction": {
+      "left": 4,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 4,
+      "lateral": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "kyro": {
+    "direction": {
+      "backward": 6
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 1,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "parafuso": {
+    "direction": {
+      "backward": 4,
+      "left": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 6
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "alien": {
+    "direction": {
+      "backward": 5,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 6
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 3,
+      "running": 3
+    },
+    "family": {
+      "flip": 3,
+      "vault": 3
+    },
+    "_support": 6
+  },
+  "sidekick": {
+    "direction": {
+      "backward": 3,
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "longitudinal": 4
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 4,
+      "running": 1,
+      "edge": 1
+    },
+    "family": {
+      "flip": 5,
+      "bar": 1
+    },
+    "_support": 6
+  },
+  "axe": {
+    "direction": {
+      "forward": 4,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 4,
+      "longitudinal": 1,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 4,
+      "one_leg": 2
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "master": {
+    "direction": {
+      "backward": 5,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 5,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "grand": {
+    "direction": {
+      "backward": 5,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 5,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "hawkeye": {
+    "direction": {
+      "backward": 6
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 5,
+      "running": 1
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "standing": {
+    "direction": {
+      "backward": 1,
+      "forward": 5
+    },
+    "rotation_axis": {
+      "lateral": 6
+    },
+    "body_shape": {
+      "tuck": 5,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 4,
+      "roll": 1,
+      "vault": 1
+    },
+    "_support": 6
+  },
+  "fighter": {
+    "direction": {
+      "left": 2,
+      "backward": 4
+    },
+    "rotation_axis": {
+      "longitudinal": 3,
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "tai": {
+    "direction": {
+      "left": 2,
+      "backward": 4
+    },
+    "rotation_axis": {
+      "longitudinal": 3,
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "stride": {
+    "direction": {
+      "backward": 6
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 6
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "cutter": {
+    "direction": {
+      "backward": 6
+    },
+    "rotation_axis": {
+      "off_axis": 6
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "standing": 5,
+      "wall": 1
+    },
+    "family": {
+      "flip": 6
+    },
+    "_support": 6
+  },
+  "thief": {
+    "direction": {
+      "backward": 5,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 5,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 6
+    },
+    "entry": {
+      "running": 6
+    },
+    "family": {
+      "vault": 6
+    },
+    "_support": 6
+  },
+  "pull": {
+    "direction": {
+      "backward": 6
+    },
+    "rotation_axis": {
+      "lateral": 6
+    },
+    "body_shape": {
+      "tuck": 5,
+      "layout": 1
+    },
+    "entry": {
+      "wall": 6
+    },
+    "family": {
+      "wall": 4,
+      "flip": 2
+    },
+    "_support": 6
+  },
+  "alley": {
+    "direction": {
+      "forward": 1,
+      "backward": 3,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 5,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 5,
+      "layout": 1
+    },
+    "entry": {
+      "one_leg": 1,
+      "wall": 5
+    },
+    "family": {
+      "flip": 4,
+      "vault": 2
+    },
+    "_support": 6
+  },
+  "jackknife": {
+    "direction": {
+      "left": 1,
+      "backward": 4
+    },
+    "rotation_axis": {
+      "longitudinal": 5
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "standing": 5
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "leap": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "lateral": 5
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "wall": 5
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "envergado": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 4,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 5
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "forward": {
+    "direction": {
+      "forward": 4,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 5
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "standing": 5
+    },
+    "family": {
+      "roll": 3,
+      "flip": 2
+    },
+    "_support": 5
+  },
+  "grandmaster": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "lateral": 4,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "standing": 5
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "mount": {
+    "direction": {
+      "forward": 1,
+      "backward": 3,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 4,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "standing": 1,
+      "edge": 2,
+      "wall": 1,
+      "running": 1
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "sidewinder": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "sagittal": 1,
+      "longitudinal": 1,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "running": 1,
+      "standing": 4
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "glitch": {
+    "direction": {
+      "backward": 4,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 4,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "running": 4,
+      "standing": 1
+    },
+    "family": {
+      "ground": 1,
+      "flip": 3,
+      "vault": 1
+    },
+    "_support": 5
+  },
+  "underbar": {
+    "direction": {
+      "backward": 4,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "edge": 5
+    },
+    "family": {
+      "flip": 2,
+      "vault": 3
+    },
+    "_support": 5
+  },
+  "splat": {
+    "direction": {
+      "backward": 3,
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 5
+    },
+    "body_shape": {
+      "tuck": 4,
+      "layout": 1
+    },
+    "entry": {
+      "wall": 5
+    },
+    "family": {
+      "flip": 4,
+      "wall": 1
+    },
+    "_support": 5
+  },
+  "illusion": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "longitudinal": 5
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "wall": 1,
+      "standing": 4
+    },
+    "family": {
+      "wall": 1,
+      "flip": 4
+    },
+    "_support": 5
+  },
+  "top": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "lateral": 5
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "standing": 5
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "hip": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "layout": 1,
+      "tuck": 4
+    },
+    "entry": {
+      "edge": 4,
+      "running": 1
+    },
+    "family": {
+      "bar": 2,
+      "flip": 2,
+      "ground": 1
+    },
+    "_support": 5
+  },
+  "three": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "lateral": 5
+    },
+    "body_shape": {
+      "tuck": 5
+    },
+    "entry": {
+      "wall": 4,
+      "standing": 1
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "kumquat": {
+    "direction": {
+      "backward": 5
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 4,
+      "layout": 1
+    },
+    "entry": {
+      "edge": 5
+    },
+    "family": {
+      "flip": 5
+    },
+    "_support": 5
+  },
+  "cross": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "lateral": 4
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 4
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "singleleg": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 4
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "through": {
+    "direction": {
+      "backward": 2,
+      "left": 2
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 2,
+      "edge": 2
+    },
+    "family": {
+      "flip": 2,
+      "bar": 1,
+      "ground": 1
+    },
+    "_support": 4
+  },
+  "mega": {
+    "direction": {
+      "backward": 3,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "sagittal": 2,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 3,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 4
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "suicide": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "lateral": 4
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 3,
+      "edge": 1
+    },
+    "family": {
+      "flip": 3,
+      "bar": 1
+    },
+    "_support": 4
+  },
+  "au": {
+    "direction": {
+      "backward": 2,
+      "left": 1,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 3,
+      "wall": 1
+    },
+    "family": {
+      "flip": 3,
+      "wall": 1
+    },
+    "_support": 4
+  },
+  "sit": {
+    "direction": {
+      "forward": 2,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 4
+    },
+    "family": {
+      "ground": 1,
+      "flip": 3
+    },
+    "_support": 4
+  },
+  "janitor": {
+    "direction": {
+      "forward": 4
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 4
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "wheel": {
+    "direction": {
+      "left": 4
+    },
+    "rotation_axis": {
+      "longitudinal": 4
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 4
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "backflip": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "lateral": 4
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 3,
+      "wall": 1
+    },
+    "family": {
+      "flip": 3,
+      "wall": 1
+    },
+    "_support": 4
+  },
+  "figure": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 3,
+      "layout": 1
+    },
+    "entry": {
+      "running": 2,
+      "edge": 2
+    },
+    "family": {
+      "flip": 2,
+      "bar": 2
+    },
+    "_support": 4
+  },
+  "penny": {
+    "direction": {
+      "forward": 1,
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 4
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "edge": 4
+    },
+    "family": {
+      "flip": 3,
+      "vault": 1
+    },
+    "_support": 4
+  },
+  "chair": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "wall": 1,
+      "running": 3
+    },
+    "family": {
+      "wall": 1,
+      "flip": 3
+    },
+    "_support": 4
+  },
+  "skin": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "pike": 1,
+      "tuck": 3
+    },
+    "entry": {
+      "edge": 3,
+      "running": 1
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "turtle": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "longitudinal": 3,
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 2,
+      "running": 2
+    },
+    "family": {
+      "flip": 2,
+      "vault": 2
+    },
+    "_support": 4
+  },
+  "on": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "longitudinal": 3,
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "edge": 3,
+      "wall": 1
+    },
+    "family": {
+      "roll": 3,
+      "flip": 1
+    },
+    "_support": 4
+  },
+  "level": {
+    "direction": {
+      "backward": 4
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "standing": 4
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "tripod": {
+    "direction": {
+      "backward": 3,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 3,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "running": 1,
+      "wall": 1,
+      "standing": 1,
+      "edge": 1
+    },
+    "family": {
+      "flip": 3,
+      "wall": 1
+    },
+    "_support": 4
+  },
+  "ankle": {
+    "direction": {
+      "forward": 2,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "edge": 1,
+      "standing": 3
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "korbut": {
+    "direction": {
+      "left": 1,
+      "backward": 3
+    },
+    "rotation_axis": {
+      "sagittal": 1,
+      "longitudinal": 1,
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 3,
+      "layout": 1
+    },
+    "entry": {
+      "edge": 4
+    },
+    "family": {
+      "flip": 4
+    },
+    "_support": 4
+  },
+  "handcuffs": {
+    "direction": {
+      "forward": 3,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 4
+    },
+    "entry": {
+      "wall": 2,
+      "standing": 1,
+      "edge": 1
+    },
+    "family": {
+      "wall": 2,
+      "flip": 1,
+      "bar": 1
+    },
+    "_support": 4
+  },
+  "rocketboii": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 2,
+      "running": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "seat": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "edge": 2,
+      "running": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "spyder": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "banol": {
+    "direction": {
+      "backward": 2,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "sagittal": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "edge": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "batido": {
+    "direction": {
+      "backward": 2,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "gate": {
+    "direction": {
+      "backward": 2,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "running": 3
+    },
+    "family": {
+      "vault": 2,
+      "flip": 1
+    },
+    "_support": 3
+  },
+  "baby": {
+    "direction": {
+      "forward": 1,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "edge": 2,
+      "running": 1
+    },
+    "family": {
+      "vault": 1,
+      "flip": 2
+    },
+    "_support": 3
+  },
+  "frente": {
+    "direction": {
+      "backward": 2,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 2,
+      "wall": 1
+    },
+    "family": {
+      "flip": 2,
+      "wall": 1
+    },
+    "_support": 3
+  },
+  "de": {
+    "direction": {
+      "backward": 2,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 2,
+      "wall": 1
+    },
+    "family": {
+      "flip": 2,
+      "wall": 1
+    },
+    "_support": 3
+  },
+  "broken": {
+    "direction": {
+      "backward": 2,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "coffee": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 2,
+      "running": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "grinder": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 2,
+      "running": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "cradle": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 2,
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "inverted": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "off_axis": 2
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 1,
+      "wall": 2
+    },
+    "family": {
+      "flip": 1,
+      "bar": 2
+    },
+    "_support": 3
+  },
+  "masterswipe": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "palmkick": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "squat": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 2,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "reversao": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "roundoff": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 1,
+      "wall": 2
+    },
+    "family": {
+      "ground": 1,
+      "wall": 2
+    },
+    "_support": 3
+  },
+  "sideflip": {
+    "direction": {
+      "left": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 2,
+      "edge": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "sideswipe": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "stomach": {
+    "direction": {
+      "backward": 2,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "edge": 1,
+      "standing": 1,
+      "one_leg": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "swan": {
+    "direction": {
+      "forward": 1,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 2,
+      "edge": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "pirouette": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "running": 1,
+      "wall": 2
+    },
+    "family": {
+      "flip": 1,
+      "wall": 2
+    },
+    "_support": 3
+  },
+  "climb": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "wall": 1,
+      "edge": 2
+    },
+    "family": {
+      "flip": 1,
+      "bar": 2
+    },
+    "_support": 3
+  },
+  "thread": {
+    "direction": {
+      "backward": 2,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "wall": 2,
+      "standing": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "spring": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "running": 1,
+      "wall": 2
+    },
+    "family": {
+      "vault": 1,
+      "wall": 2
+    },
+    "_support": 3
+  },
+  "barani": {
+    "direction": {
+      "forward": 1,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 2,
+      "edge": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "mcdirty": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 1,
+      "off_axis": 1,
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 2,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "jonah": {
+    "direction": {
+      "forward": 1,
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "crucifix": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 2,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "edge": 2,
+      "running": 1
+    },
+    "family": {
+      "bar": 2,
+      "flip": 1
+    },
+    "_support": 3
+  },
+  "crescent": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 1,
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "running": 3
+    },
+    "family": {
+      "vault": 3
+    },
+    "_support": 3
+  },
+  "peter": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 1,
+      "off_axis": 1,
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 2,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 2,
+      "running": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "pan": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 1,
+      "off_axis": 1,
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 2,
+      "layout": 1
+    },
+    "entry": {
+      "standing": 2,
+      "running": 1
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "hyperswipe": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "longitudinal": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 2,
+      "vault": 1
+    },
+    "_support": 3
+  },
+  "ballout": {
+    "direction": {
+      "backward": 3
+    },
+    "rotation_axis": {
+      "lateral": 3
+    },
+    "body_shape": {
+      "tuck": 3
+    },
+    "entry": {
+      "standing": 3
+    },
+    "family": {
+      "flip": 3
+    },
+    "_support": 3
+  },
+  "sweep": {
+    "direction": {
+      "backward": 1,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "butter": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "kickflip": {
+    "direction": {
+      "forward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "crash": {
+    "direction": {
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 1,
+      "edge": 1
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "gyroknife": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "handcuff": {
+    "direction": {
+      "forward": 1,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "roll": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "ironman": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "takuraba": {
+    "direction": {
+      "forward": 1,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "l": {
+    "direction": {
+      "forward": 1,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "ground": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "press": {
+    "direction": {
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "ground": 2
+    },
+    "_support": 2
+  },
+  "handed": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "ground": 2
+    },
+    "_support": 2
+  },
+  "shaolin": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "scrubba": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "moonkick": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "e": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "machine": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "masterscoot": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "outstretched": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "popcorn": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 1,
+      "pike": 1
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "swivel": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 1,
+      "wall": 1
+    },
+    "family": {
+      "flip": 1,
+      "wall": 1
+    },
+    "_support": 2
+  },
+  "toehook": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "vault": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "tucked": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 1,
+      "ground": 1
+    },
+    "_support": 2
+  },
+  "tuck": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 1,
+      "standing": 1
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "kovac": {
+    "direction": {
+      "forward": 1,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "edge": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "crane": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 1,
+      "edge": 1
+    },
+    "family": {
+      "flip": 1,
+      "bar": 1
+    },
+    "_support": 2
+  },
+  "descent": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "hurdle": {
+    "direction": {
+      "backward": 1,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "shun": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "japan": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 2
+    },
+    "family": {
+      "vault": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "valdez": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 1,
+      "standing": 1
+    },
+    "family": {
+      "wall": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "assisted": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "wall": 2
+    },
+    "_support": 2
+  },
+  "freeze": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 1,
+      "edge": 1
+    },
+    "family": {
+      "wall": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "bridge": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "wall": 1,
+      "vault": 1
+    },
+    "_support": 2
+  },
+  "chest": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "wall": 2
+    },
+    "_support": 2
+  },
+  "paraknife": {
+    "direction": {
+      "backward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "pullover": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "lever": {
+    "direction": {
+      "backward": 1,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "edge": 2
+    },
+    "family": {
+      "vault": 2
+    },
+    "_support": 2
+  },
+  "touch": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "off_axis": 1,
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "wall": 2
+    },
+    "_support": 2
+  },
+  "cobra": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "gallop": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 2
+    },
+    "family": {
+      "vault": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "ring": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "spiral": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 1,
+      "wall": 1
+    },
+    "family": {
+      "flip": 1,
+      "wall": 1
+    },
+    "_support": 2
+  },
+  "knuckle": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 1,
+      "wall": 1
+    },
+    "family": {
+      "flip": 1,
+      "wall": 1
+    },
+    "_support": 2
+  },
+  "worm": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 1,
+      "wall": 1
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "parsva": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "balasana": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "method": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 2
+    },
+    "family": {
+      "vault": 2
+    },
+    "_support": 2
+  },
+  "dong": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 2
+    },
+    "family": {
+      "vault": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "psychocrusher": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "wall": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "scissorswipe": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "vampire": {
+    "direction": {
+      "backward": 1,
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "flat": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "edge": 2
+    },
+    "family": {
+      "bar": 2
+    },
+    "_support": 2
+  },
+  "headspin": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "longitudinal": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 1,
+      "standing": 1
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "foot": {
+    "direction": {
+      "forward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 2
+    },
+    "family": {
+      "vault": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "single": {
+    "direction": {
+      "forward": 1,
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "pendulum": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "quad": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "off_axis": 1
+    },
+    "body_shape": {
+      "layout": 1,
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "flyway": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "standing": 2
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "over": {
+    "direction": {
+      "backward": 1,
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 1,
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "wall": 1,
+      "running": 1
+    },
+    "family": {
+      "flip": 2
+    },
+    "_support": 2
+  },
+  "outside": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 1,
+      "standing": 1
+    },
+    "family": {
+      "vault": 1,
+      "flip": 1
+    },
+    "_support": 2
+  },
+  "yurchenko": {
+    "direction": {
+      "backward": 2
+    },
+    "rotation_axis": {
+      "lateral": 2
+    },
+    "body_shape": {
+      "tuck": 2
+    },
+    "entry": {
+      "running": 1,
+      "edge": 1
+    },
+    "family": {
+      "flip": 1,
+      "bar": 1
+    },
+    "_support": 2
+  },
+  "air": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "arashiswipe": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "auto": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "bahn": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "balance": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "butt": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "running": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "cali": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "roll": 1
+    },
+    "_support": 1
+  },
+  "carry": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "crouch": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "rollsomersault": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "dleg": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "release": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "ground": 1
+    },
+    "_support": 1
+  },
+  "graham": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "cracker": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "harold": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "herald": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "inout": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "j": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "missleg": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "roundhouse": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "vaultstep": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "spindle": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "stepover": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "splits": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "toeshoot": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "pocketknife": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "jump": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "movement": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "quadrupedal": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "leapeuro": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "extension": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "roll": 1
+    },
+    "_support": 1
+  },
+  "squirrel": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "stronghold": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "backwards": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "roll": 1
+    },
+    "_support": 1
+  },
+  "blasterscoot": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "coin": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "crackknife": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "fred": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "astaire": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "henglin": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "kaydem": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "macaron": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "plyo": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "hige": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "shattermoon": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "shin": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "superman": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "hips": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "quat": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "flair": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "mute": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "running": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "rolling": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "running": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "slice": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "pike": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "ascent": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "chimney": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "revert": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "crashmoon": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "flak": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "flik": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "cut": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "ground": 1
+    },
+    "_support": 1
+  },
+  "pivot": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "shushunova": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "open": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "skip": {
+    "direction": {
+      "left": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "cruise": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "wackest": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "unhalf": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "return": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "pops": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "ghost": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "ground": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "bounce": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "sketchdown": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "2d": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "bar": 1
+    },
+    "_support": 1
+  },
+  "brandy": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "filipino": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "frappe": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "kickback": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "rebound": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "running": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "snatch": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "cannon": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "pizzaboy": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "vertical": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "pounce": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "axe2aerial": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "demon": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "nike": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "gumbygumbi": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "hypertwist": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "narabong": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "neck": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "breaker": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "push": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "bar": 1
+    },
+    "_support": 1
+  },
+  "star": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "whip": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "layout": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "jack": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "kroc": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "suicideswipe": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "aeriola": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "bergen": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "skullsnapper": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "needle": {
+    "direction": {
+      "left": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "windmill": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "false": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "bowl": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "toilet": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "overbar": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "bar": 1
+    },
+    "_support": 1
+  },
+  "sheep": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "shearer": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "handplant": {
+    "direction": {
+      "left": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "running": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "daywalker": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "hutson": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "misleg": {
+    "direction": {
+      "left": 1
+    },
+    "rotation_axis": {
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "one_leg": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "mukhametshin": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "starfish": {
+    "direction": {
+      "left": 1
+    },
+    "rotation_axis": {
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "one_leg": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "sideways": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "hurricane": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "rudy": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "randolph": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "randy": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "websterloser": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "mid": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "bar": 1
+    },
+    "_support": 1
+  },
+  "randi": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "transfer": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "twist540": {
+    "direction": {
+      "left": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "switchblade": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "longitudinal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "sumi": {
+    "direction": {
+      "left": 1
+    },
+    "rotation_axis": {
+      "sagittal": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "tinsica": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "open": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "plank": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "upward": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "corkswipe": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "doubleg": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "hero": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "holy": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "kneel": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "running": 1
+    },
+    "family": {
+      "vault": 1
+    },
+    "_support": 1
+  },
+  "loser": {
+    "direction": {
+      "forward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "edge": 1
+    },
+    "family": {
+      "bar": 1
+    },
+    "_support": 1
+  },
+  "walkover": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "wall": 1
+    },
+    "_support": 1
+  },
+  "pocket": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "pushup": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "quintuple": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "swipenife": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "off_axis": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "standing": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  },
+  "supinated": {
+    "direction": {
+      "backward": 1
+    },
+    "rotation_axis": {
+      "lateral": 1
+    },
+    "body_shape": {
+      "tuck": 1
+    },
+    "entry": {
+      "wall": 1
+    },
+    "family": {
+      "flip": 1
+    },
+    "_support": 1
+  }
+}
