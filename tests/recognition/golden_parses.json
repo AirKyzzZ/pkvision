@@ -1,0 +1,75 @@
+{
+  "gainer_full": {
+    "twist": 1.0,
+    "flip": 1.0,
+    "direction": "backward"
+  },
+  "back_double_full": {
+    "twist": 2.0,
+    "direction": "backward"
+  },
+  "1080_dive_roll": {
+    "flip": 3.0
+  },
+  "180_cat": {
+    "twist": 0.5,
+    "context": "pk_basics"
+  },
+  "wall_gainer": {
+    "flip": 1.0,
+    "context": "wall",
+    "direction": "backward"
+  },
+  "back_layout_full": {
+    "twist": 1.0,
+    "direction": "backward",
+    "body_shape": "layout"
+  },
+  "arabian": {
+    "direction": "forward",
+    "twist": 0.5
+  },
+  "cork_double_full": {
+    "twist": 2.0,
+    "flip": 1.0,
+    "axis": "off_axis"
+  },
+  "frontflip": {
+    "flip": 1.0,
+    "direction": "forward"
+  },
+  "kong_gainer": {
+    "flip": 1.0,
+    "context": "pk_basics",
+    "direction": "backward"
+  },
+  "back_full_in_full_out": {
+    "twist": 2.0,
+    "direction": "backward"
+  },
+  "double_backflip": {
+    "flip": 2.0,
+    "direction": "backward"
+  },
+  "one_and_a_half_frontflip": {
+    "flip": 1.5,
+    "direction": "forward"
+  },
+  "butterfly_twist": {},
+  "flyaway_full": {
+    "twist": 1.0,
+    "context": "swing"
+  },
+  "castaway": {
+    "context": "swing"
+  },
+  "palm_flip": {
+    "context": "wall"
+  },
+  "precision": {
+    "context": "pk_basics"
+  },
+  "side_flip": {
+    "direction": "side"
+  }
+}
