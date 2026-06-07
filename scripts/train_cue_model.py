@@ -52,8 +52,8 @@ def _twist_bin(v) -> int:
     return 0 if v < 0.25 else 1 if v < 0.75 else 2 if v < 1.25 else 3
 
 
-def load_labels() -> dict[str, dict]:
-    clips = json.loads(MANIFEST.read_text())["clips"]
+def load_labels(manifest_path) -> dict[str, dict]:
+    clips = json.loads(Path(manifest_path).read_text())["clips"]
     out = {}
     for c in clips:
         out[c["slug"]] = {
@@ -84,6 +84,7 @@ def macro_f1(y_true: np.ndarray, y_pred: np.ndarray) -> float:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(ROOT / "data" / "models" / "cue_model_v2.pt"))
+    ap.add_argument("--manifest", default=str(MANIFEST))
     ap.add_argument("--epochs", type=int, default=70)
     ap.add_argument("--batch", type=int, default=64)
     ap.add_argument("--t", type=int, default=48)
@@ -102,7 +103,7 @@ def main() -> None:
     print(f"device={device}")
 
     skel = load_skeletons()
-    labels = load_labels()
+    labels = load_labels(args.manifest)
     slugs = sorted(set(skel) & set(labels))
     print(f"joined: {len(slugs)}")
 
