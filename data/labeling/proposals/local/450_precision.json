@@ -1,0 +1,14 @@
+{
+  "slug": "450_precision",
+  "trick": "Tsukahara 360",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "backward",
+    "flip": 1.0,
+    "twist": 1.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 5.4,
+  "confidence": 0.6207894206047058,
+  "source": "local"
+}

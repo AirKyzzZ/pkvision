@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_one_hand_reverse_double_alien",
+  "trick": "Double Frontflip",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 2.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": 5.4,
+  "confidence": 0.7473927736282349,
+  "source": "local"
+}

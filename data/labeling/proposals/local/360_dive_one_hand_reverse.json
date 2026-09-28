@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_one_hand_reverse",
+  "trick": null,
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.5857949912548065,
+  "source": "local"
+}

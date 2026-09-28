@@ -1,0 +1,23 @@
+{
+ "label": "claude_s1",
+ "ckpt": "data/models/cue_claude_s1.pt",
+ "missing_skeleton": 0,
+ "per_cue": {
+  "flip_bin": {
+   "acc": 0.43902439024390244,
+   "n": 82
+  },
+  "twist_bin": {
+   "acc": 0.640625,
+   "n": 64
+  },
+  "direction": {
+   "acc": 0.4823529411764706,
+   "n": 85
+  },
+  "context": {
+   "acc": 0.5897435897435898,
+   "n": 78
+  }
+ }
+}

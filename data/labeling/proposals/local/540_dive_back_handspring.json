@@ -1,0 +1,14 @@
+{
+  "slug": "540_dive_back_handspring",
+  "trick": "Swing Castaway Backflip Regrab",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "backward",
+    "flip": 1.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": 5.5,
+  "confidence": 0.5520527243614197,
+  "source": "local"
+}

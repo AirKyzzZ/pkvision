@@ -1,0 +1,14 @@
+{
+  "slug": "wall_corkscrew_wall_back_handspring_half",
+  "trick": "360 Precision",
+  "cues": {
+    "context": "wall",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 1.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 1.5,
+  "confidence": 0.5872165083885192,
+  "source": "local"
+}

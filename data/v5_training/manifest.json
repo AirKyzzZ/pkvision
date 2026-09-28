@@ -1,0 +1,1365 @@
+{
+  "classes": [
+    "(Straddle) Sole Circle",
+    "360 Precision",
+    "A-180",
+    "Aerial",
+    "Angel Drop",
+    "B-Twist",
+    "Backflip",
+    "Backflip 1440",
+    "Backflip 360",
+    "Backhandspring",
+    "Cartwheel",
+    "Cast Gainer",
+    "Castaway Backflip",
+    "Castaway Double Backflip",
+    "Caster Double Gainer",
+    "Caster Gainer",
+    "Cheat Gainer",
+    "Climb Up",
+    "Cork",
+    "Dark Arabian",
+    "Devil Drop",
+    "Dong Vault",
+    "Double Backflip",
+    "Double Cork",
+    "Double Frisbee",
+    "Double Frontflip",
+    "Double Kong Vault",
+    "Double Kroc",
+    "Double Palm Flip",
+    "Double Sideflip",
+    "Dyno",
+    "Frisbee",
+    "Front 180",
+    "Front Half-In Back-Out",
+    "Frontflip",
+    "Frontflip 360",
+    "Gaet Pimp Backflip 360",
+    "Gaet Pimp Backflip 720",
+    "Gainer",
+    "Gainer 1080",
+    "Gainer 360",
+    "Giant",
+    "Gumbi",
+    "Handstand Gainer",
+    "Hang Cast Backflip",
+    "Inward Tsukahara",
+    "Kash Vault",
+    "Kong Gainer",
+    "Kong Vault",
+    "Kroc",
+    "Macaco",
+    "Macaco-in",
+    "Palm Backflip",
+    "Pimp Backflip",
+    "Pistol Spin",
+    "Plyo",
+    "Pop Castaway Backflip",
+    "Pop Vault",
+    "Raiz",
+    "Reverse Vault",
+    "Roll Bomb",
+    "Side Vault",
+    "Sideflip",
+    "Sitting Dash Gainer",
+    "Straddle Sole Circle Gainer",
+    "Stride",
+    "Swing 180",
+    "Swing Castaway Backflip 360",
+    "Swing Castaway Backflip 720",
+    "Swing Castaway Backflip Regrab",
+    "Swing Castaway Double Backflip",
+    "Swing Double Gainer",
+    "Swing Gainer 1260",
+    "Swing Gainer 1440",
+    "Swing Gainer 360",
+    "Swing Gainer 720",
+    "Tic Tac",
+    "Triple Cork",
+    "Triple Kroc",
+    "Tsukahara",
+    "Tunnel Flip",
+    "Wall Backflip",
+    "Wall Backflip 1080",
+    "Wall Backflip 360",
+    "Wall Backflip 720",
+    "Wall Backhandspring",
+    "Wall Cork",
+    "Wall Double Backflip",
+    "Wall Double Cork",
+    "Wall Gainer",
+    "Wall Gainer 360",
+    "Wall Inward Frontflip",
+    "Wall Triple Cork",
+    "Wallrun",
+    "Wallspin",
+    "Webster"
+  ],
+  "class_info": {
+    "360 Precision": {
+      "category": "pk_basics",
+      "score": 1.5,
+      "idx": 146
+    },
+    "Aerial": {
+      "category": "acrobatics",
+      "score": 1.2,
+      "idx": 65
+    },
+    "Angel Drop": {
+      "category": "wall",
+      "score": 1.9,
+      "idx": 35
+    },
+    "A-180": {
+      "category": "acrobatics",
+      "score": 1.8,
+      "idx": 73,
+      "rotation_variants": [
+        "Arabian"
+      ]
+    },
+    "Backflip 360": {
+      "category": "acrobatics",
+      "score": 2.2,
+      "idx": 82,
+      "rotation_variants": [
+        "A-360",
+        "Backflip 540",
+        "A-540",
+        "B-720",
+        "Backflip 720",
+        "A-720",
+        "Backflip 900",
+        "Backflip 1080",
+        "Backflip 1260"
+      ]
+    },
+    "Backhandspring": {
+      "category": "acrobatics",
+      "score": 1.1,
+      "idx": 63
+    },
+    "Backflip": {
+      "category": "acrobatics",
+      "score": 1.5,
+      "idx": 67
+    },
+    "Backflip 1440": {
+      "category": "acrobatics",
+      "score": 7.1,
+      "idx": 131
+    },
+    "B-Twist": {
+      "category": "acrobatics",
+      "score": 1.8,
+      "idx": 80,
+      "rotation_variants": [
+        "B-360"
+      ]
+    },
+    "Cartwheel": {
+      "category": "acrobatics",
+      "score": 0.8,
+      "idx": 60,
+      "rotation_variants": [
+        "Cartahara"
+      ]
+    },
+    "Cast Gainer": {
+      "category": "acrobatics",
+      "score": 4.3,
+      "idx": 107,
+      "rotation_variants": [
+        "Frontflip 900"
+      ]
+    },
+    "Castaway Backflip": {
+      "category": "wall",
+      "score": 2.6,
+      "idx": 41,
+      "rotation_variants": [
+        "Swing Castaway Backflip"
+      ]
+    },
+    "Castaway Double Backflip": {
+      "category": "wall",
+      "score": 7.3,
+      "idx": 57
+    },
+    "Caster Double Gainer": {
+      "category": "acrobatics",
+      "score": 5.0,
+      "idx": 115
+    },
+    "Caster Gainer": {
+      "category": "acrobatics",
+      "score": 1.7,
+      "idx": 71,
+      "rotation_variants": [
+        "Caster Frontflip"
+      ]
+    },
+    "Climb Up": {
+      "category": "pk_basics",
+      "score": 1.1,
+      "idx": 144
+    },
+    "Cork": {
+      "category": "acrobatics",
+      "score": 2.3,
+      "idx": 84
+    },
+    "Kroc": {
+      "category": "acrobatics",
+      "score": 2.4,
+      "idx": 89
+    },
+    "Double Kroc": {
+      "category": "acrobatics",
+      "score": 3.7,
+      "idx": 102
+    },
+    "Triple Kroc": {
+      "category": "acrobatics",
+      "score": 6.0,
+      "idx": 127
+    },
+    "Devil Drop": {
+      "category": "wall",
+      "score": 2.5,
+      "idx": 40
+    },
+    "Dong Vault": {
+      "category": "pk_basics",
+      "score": 1.6,
+      "idx": 147
+    },
+    "Double Backflip": {
+      "category": "acrobatics",
+      "score": 5.3,
+      "idx": 118,
+      "rotation_variants": [
+        "Double Backflip 360",
+        "Double Backflip 720"
+      ]
+    },
+    "Double Cork": {
+      "category": "acrobatics",
+      "score": 3.3,
+      "idx": 99,
+      "rotation_variants": [
+        "Cork-in Backflip"
+      ]
+    },
+    "Double Frisbee": {
+      "category": "acrobatics",
+      "score": 4.8,
+      "idx": 114
+    },
+    "Double Frontflip": {
+      "category": "acrobatics",
+      "score": 5.4,
+      "idx": 121
+    },
+    "Swing Double Gainer": {
+      "category": "swing",
+      "score": 3.8,
+      "idx": 19,
+      "rotation_variants": [
+        "Swing Double Gainer 360",
+        "Double Gainer",
+        "Swing Double Gainer 720",
+        "Swing Double Gainer 1080 (Miller)"
+      ]
+    },
+    "Double Kong Vault": {
+      "category": "pk_basics",
+      "score": 1.8,
+      "idx": 148
+    },
+    "Double Palm Flip": {
+      "category": "wall",
+      "score": 7.0,
+      "idx": 58
+    },
+    "Double Sideflip": {
+      "category": "acrobatics",
+      "score": 4.5,
+      "idx": 113
+    },
+    "Dyno": {
+      "category": "pk_basics",
+      "score": 1.2,
+      "idx": 145
+    },
+    "Swing 180": {
+      "category": "swing",
+      "score": 0.8,
+      "idx": 1,
+      "rotation_variants": [
+        "Swing Gainer"
+      ]
+    },
+    "Swing Gainer 720": {
+      "category": "swing",
+      "score": 3.1,
+      "idx": 15,
+      "rotation_variants": [
+        "Swing Gainer 900"
+      ]
+    },
+    "Swing Gainer 360": {
+      "category": "swing",
+      "score": 2.1,
+      "idx": 7,
+      "rotation_variants": [
+        "Swing Gainer 540"
+      ]
+    },
+    "Swing Gainer 1440": {
+      "category": "swing",
+      "score": 7.1,
+      "idx": 28
+    },
+    "Swing Gainer 1260": {
+      "category": "swing",
+      "score": 5.7,
+      "idx": 25,
+      "rotation_variants": [
+        "Swing Triple Gainer"
+      ]
+    },
+    "Frisbee": {
+      "category": "acrobatics",
+      "score": 1.2,
+      "idx": 64
+    },
+    "Frontflip 360": {
+      "category": "acrobatics",
+      "score": 2.4,
+      "idx": 87,
+      "rotation_variants": [
+        "Frontflip 540",
+        "Frontflip 720",
+        "Frontflip 1080"
+      ]
+    },
+    "Front 180": {
+      "category": "acrobatics",
+      "score": 1.9,
+      "idx": 75,
+      "rotation_variants": [
+        "Looser Frontflip 180"
+      ]
+    },
+    "Front Half-In Back-Out": {
+      "category": "acrobatics",
+      "score": 5.5,
+      "idx": 123
+    },
+    "Frontflip": {
+      "category": "acrobatics",
+      "score": 1.5,
+      "idx": 68,
+      "rotation_variants": [
+        "Looser Frontflip"
+      ]
+    },
+    "Gaet Pimp Backflip 360": {
+      "category": "wall",
+      "score": 3.1,
+      "idx": 45
+    },
+    "Gaet Pimp Backflip 720": {
+      "category": "wall",
+      "score": 4.5,
+      "idx": 50,
+      "rotation_variants": [
+        "Gaet Pimp Double Backflip"
+      ]
+    },
+    "Cheat Gainer": {
+      "category": "acrobatics",
+      "score": 1.4,
+      "idx": 66
+    },
+    "Gainer 360": {
+      "category": "acrobatics",
+      "score": 2.8,
+      "idx": 92
+    },
+    "Gainer 1080": {
+      "category": "acrobatics",
+      "score": 6.5,
+      "idx": 130
+    },
+    "Pop Vault": {
+      "category": "pk_basics",
+      "score": 0.5,
+      "idx": 138
+    },
+    "Stride": {
+      "category": "pk_basics",
+      "score": 0.1,
+      "idx": 134
+    },
+    "Giant": {
+      "category": "swing",
+      "score": 1.7,
+      "idx": 4
+    },
+    "Gumbi": {
+      "category": "acrobatics",
+      "score": 1.0,
+      "idx": 62
+    },
+    "Handstand Gainer": {
+      "category": "acrobatics",
+      "score": 4.5,
+      "idx": 112,
+      "rotation_variants": [
+        "Gainer 720"
+      ]
+    },
+    "Hang Cast Backflip": {
+      "category": "wall",
+      "score": 2.7,
+      "idx": 42
+    },
+    "Wall Inward Frontflip": {
+      "category": "wall",
+      "score": 2.1,
+      "idx": 36
+    },
+    "Inward Tsukahara": {
+      "category": "acrobatics",
+      "score": 6.3,
+      "idx": 129
+    },
+    "Kash Vault": {
+      "category": "pk_basics",
+      "score": 1.0,
+      "idx": 143
+    },
+    "Kong Gainer": {
+      "category": "acrobatics",
+      "score": 3.5,
+      "idx": 101,
+      "rotation_variants": [
+        "Kong Gainer 360"
+      ]
+    },
+    "Kong Vault": {
+      "category": "pk_basics",
+      "score": 0.7,
+      "idx": 140
+    },
+    "Dark Arabian": {
+      "category": "acrobatics",
+      "score": 2.3,
+      "idx": 85
+    },
+    "Macaco": {
+      "category": "acrobatics",
+      "score": 0.9,
+      "idx": 61
+    },
+    "Macaco-in": {
+      "category": "acrobatics",
+      "score": 4.4,
+      "idx": 108
+    },
+    "Palm Backflip": {
+      "category": "wall",
+      "score": 2.0,
+      "idx": 34,
+      "rotation_variants": [
+        "Palm Backflip 360",
+        "Palm Backflip 720"
+      ]
+    },
+    "Pistol Spin": {
+      "category": "pk_basics",
+      "score": 0.9,
+      "idx": 142
+    },
+    "Pimp Backflip": {
+      "category": "wall",
+      "score": 2.2,
+      "idx": 37
+    },
+    "Pop Castaway Backflip": {
+      "category": "wall",
+      "score": 2.8,
+      "idx": 43
+    },
+    "Raiz": {
+      "category": "acrobatics",
+      "score": 2.1,
+      "idx": 81
+    },
+    "Reverse Vault": {
+      "category": "pk_basics",
+      "score": 0.8,
+      "idx": 141
+    },
+    "Roll Bomb": {
+      "category": "acrobatics",
+      "score": 3.2,
+      "idx": 98
+    },
+    "Gainer": {
+      "category": "acrobatics",
+      "score": 2.0,
+      "idx": 76,
+      "rotation_variants": [
+        "Running Gainer"
+      ]
+    },
+    "Sideflip": {
+      "category": "acrobatics",
+      "score": 1.5,
+      "idx": 70,
+      "rotation_variants": [
+        "Sideflip 360",
+        "Sideflip 720"
+      ]
+    },
+    "Side Vault": {
+      "category": "pk_basics",
+      "score": 0.4,
+      "idx": 137
+    },
+    "Sitting Dash Gainer": {
+      "category": "acrobatics",
+      "score": 4.1,
+      "idx": 105
+    },
+    "(Straddle) Sole Circle": {
+      "category": "swing",
+      "score": 1.0,
+      "idx": 2
+    },
+    "Plyo": {
+      "category": "pk_basics",
+      "score": 0.2,
+      "idx": 135
+    },
+    "Webster": {
+      "category": "acrobatics",
+      "score": 1.5,
+      "idx": 69
+    },
+    "Straddle Sole Circle Gainer": {
+      "category": "swing",
+      "score": 3.4,
+      "idx": 16
+    },
+    "Swing Castaway Backflip Regrab": {
+      "category": "swing",
+      "score": 5.5,
+      "idx": 23
+    },
+    "Swing Castaway Double Backflip": {
+      "category": "swing",
+      "score": 6.8,
+      "idx": 27
+    },
+    "Swing Castaway Backflip 720": {
+      "category": "swing",
+      "score": 5.6,
+      "idx": 24
+    },
+    "Swing Castaway Backflip 360": {
+      "category": "swing",
+      "score": 3.6,
+      "idx": 18
+    },
+    "Tic Tac": {
+      "category": "pk_basics",
+      "score": 0.3,
+      "idx": 136
+    },
+    "Triple Cork": {
+      "category": "acrobatics",
+      "score": 5.4,
+      "idx": 119,
+      "rotation_variants": [
+        "Quad Cork"
+      ]
+    },
+    "Tsukahara": {
+      "category": "acrobatics",
+      "score": 4.4,
+      "idx": 109,
+      "rotation_variants": [
+        "Tsukahara 360"
+      ]
+    },
+    "Tunnel Flip": {
+      "category": "acrobatics",
+      "score": 2.0,
+      "idx": 78
+    },
+    "Wallrun": {
+      "category": "pk_basics",
+      "score": 0.6,
+      "idx": 139
+    },
+    "Wall Backhandspring": {
+      "category": "wall",
+      "score": 1.2,
+      "idx": 32
+    },
+    "Wall Cork": {
+      "category": "wall",
+      "score": 2.3,
+      "idx": 38
+    },
+    "Wall Double Backflip": {
+      "category": "wall",
+      "score": 6.2,
+      "idx": 55
+    },
+    "Wall Double Cork": {
+      "category": "wall",
+      "score": 3.5,
+      "idx": 46
+    },
+    "Wall Backflip 720": {
+      "category": "wall",
+      "score": 3.7,
+      "idx": 48
+    },
+    "Wall Backflip": {
+      "category": "wall",
+      "score": 1.3,
+      "idx": 33
+    },
+    "Wall Backflip 360": {
+      "category": "wall",
+      "score": 2.4,
+      "idx": 39
+    },
+    "Wall Gainer": {
+      "category": "wall",
+      "score": 3.0,
+      "idx": 44,
+      "rotation_variants": [
+        "Wall Gainer 720",
+        "Wall Gainer 1080"
+      ]
+    },
+    "Wall Gainer 360": {
+      "category": "wall",
+      "score": 4.3,
+      "idx": 49
+    },
+    "Wallspin": {
+      "category": "wall",
+      "score": 1.1,
+      "idx": 31
+    },
+    "Wall Triple Cork": {
+      "category": "wall",
+      "score": 6.0,
+      "idx": 54
+    },
+    "Wall Backflip 1080": {
+      "category": "wall",
+      "score": 6.3,
+      "idx": 56
+    }
+  },
+  "samples": [
+    {
+      "file": "pk_basics/360_precision.npy",
+      "class": "360 Precision",
+      "category": "pk_basics",
+      "source_clip": "360_precision.mp4"
+    },
+    {
+      "file": "acrobatics/aerial.npy",
+      "class": "Aerial",
+      "category": "acrobatics",
+      "source_clip": "aerial.mp4"
+    },
+    {
+      "file": "wall/angel_drop.npy",
+      "class": "Angel Drop",
+      "category": "wall",
+      "source_clip": "angel_drop.mp4"
+    },
+    {
+      "file": "acrobatics/arabian.npy",
+      "class": "A-180",
+      "category": "acrobatics",
+      "source_clip": "arabian.mp4"
+    },
+    {
+      "file": "acrobatics/back_double_full.npy",
+      "class": "Backflip 360",
+      "category": "acrobatics",
+      "source_clip": "back_double_full.mp4"
+    },
+    {
+      "file": "acrobatics/back_handspring.npy",
+      "class": "Backhandspring",
+      "category": "acrobatics",
+      "source_clip": "back_handspring.mp4"
+    },
+    {
+      "file": "acrobatics/back_layout.npy",
+      "class": "Backflip",
+      "category": "acrobatics",
+      "source_clip": "back_layout.mp4"
+    },
+    {
+      "file": "acrobatics/back_quadruple_full.npy",
+      "class": "Backflip 1440",
+      "category": "acrobatics",
+      "source_clip": "back_quadruple_full.mp4"
+    },
+    {
+      "file": "acrobatics/butterfly_twist.npy",
+      "class": "B-Twist",
+      "category": "acrobatics",
+      "source_clip": "butterfly_twist.mp4"
+    },
+    {
+      "file": "acrobatics/cartwheel.npy",
+      "class": "Cartwheel",
+      "category": "acrobatics",
+      "source_clip": "cartwheel.mp4"
+    },
+    {
+      "file": "acrobatics/cast_gainer.npy",
+      "class": "Cast Gainer",
+      "category": "acrobatics",
+      "source_clip": "cast_gainer.mp4"
+    },
+    {
+      "file": "wall/castaway_back.npy",
+      "class": "Castaway Backflip",
+      "category": "wall",
+      "source_clip": "castaway_back.mp4"
+    },
+    {
+      "file": "wall/castaway_double_back.npy",
+      "class": "Castaway Double Backflip",
+      "category": "wall",
+      "source_clip": "castaway_double_back.mp4"
+    },
+    {
+      "file": "acrobatics/caster_double_gainer.npy",
+      "class": "Caster Double Gainer",
+      "category": "acrobatics",
+      "source_clip": "caster_double_gainer.mp4"
+    },
+    {
+      "file": "acrobatics/caster_gainer.npy",
+      "class": "Caster Gainer",
+      "category": "acrobatics",
+      "source_clip": "caster_gainer.mp4"
+    },
+    {
+      "file": "pk_basics/climb_up.npy",
+      "class": "Climb Up",
+      "category": "pk_basics",
+      "source_clip": "climb_up.mp4"
+    },
+    {
+      "file": "acrobatics/cork_zero.npy",
+      "class": "Cork",
+      "category": "acrobatics",
+      "source_clip": "cork_zero.mp4"
+    },
+    {
+      "file": "acrobatics/corkscrew.npy",
+      "class": "Kroc",
+      "category": "acrobatics",
+      "source_clip": "corkscrew.mp4"
+    },
+    {
+      "file": "acrobatics/corkscrew_counter_double_full.npy",
+      "class": "Double Kroc",
+      "category": "acrobatics",
+      "source_clip": "corkscrew_counter_double_full.mp4"
+    },
+    {
+      "file": "acrobatics/corkscrew_counter_triple_full.npy",
+      "class": "Triple Kroc",
+      "category": "acrobatics",
+      "source_clip": "corkscrew_counter_triple_full.mp4"
+    },
+    {
+      "file": "wall/devil_drop.npy",
+      "class": "Devil Drop",
+      "category": "wall",
+      "source_clip": "devil_drop.mp4"
+    },
+    {
+      "file": "pk_basics/dong_vault.npy",
+      "class": "Dong Vault",
+      "category": "pk_basics",
+      "source_clip": "dong_vault.mp4"
+    },
+    {
+      "file": "acrobatics/double_back_flip.npy",
+      "class": "Double Backflip",
+      "category": "acrobatics",
+      "source_clip": "double_back_flip.mp4"
+    },
+    {
+      "file": "acrobatics/double_corkscrew.npy",
+      "class": "Double Cork",
+      "category": "acrobatics",
+      "source_clip": "double_corkscrew.mp4"
+    },
+    {
+      "file": "acrobatics/double_frisbee.npy",
+      "class": "Double Frisbee",
+      "category": "acrobatics",
+      "source_clip": "double_frisbee.mp4"
+    },
+    {
+      "file": "acrobatics/double_front_flip.npy",
+      "class": "Double Frontflip",
+      "category": "acrobatics",
+      "source_clip": "double_front_flip.mp4"
+    },
+    {
+      "file": "swing/double_gainer.npy",
+      "class": "Swing Double Gainer",
+      "category": "swing",
+      "source_clip": "double_gainer.mp4"
+    },
+    {
+      "file": "pk_basics/double_kong.npy",
+      "class": "Double Kong Vault",
+      "category": "pk_basics",
+      "source_clip": "double_kong.mp4"
+    },
+    {
+      "file": "wall/double_palm_flip.npy",
+      "class": "Double Palm Flip",
+      "category": "wall",
+      "source_clip": "double_palm_flip.mp4"
+    },
+    {
+      "file": "acrobatics/double_side_flip.npy",
+      "class": "Double Sideflip",
+      "category": "acrobatics",
+      "source_clip": "double_side_flip.mp4"
+    },
+    {
+      "file": "pk_basics/dyno.npy",
+      "class": "Dyno",
+      "category": "pk_basics",
+      "source_clip": "dyno.mp4"
+    },
+    {
+      "file": "swing/flyaway.npy",
+      "class": "Swing 180",
+      "category": "swing",
+      "source_clip": "flyaway.mp4"
+    },
+    {
+      "file": "swing/flyaway_double_full.npy",
+      "class": "Swing Gainer 720",
+      "category": "swing",
+      "source_clip": "flyaway_double_full.mp4"
+    },
+    {
+      "file": "swing/flyaway_full.npy",
+      "class": "Swing Gainer 360",
+      "category": "swing",
+      "source_clip": "flyaway_full.mp4"
+    },
+    {
+      "file": "swing/flyaway_quadruple_full.npy",
+      "class": "Swing Gainer 1440",
+      "category": "swing",
+      "source_clip": "flyaway_quadruple_full.mp4"
+    },
+    {
+      "file": "swing/flyaway_triple_full.npy",
+      "class": "Swing Gainer 1260",
+      "category": "swing",
+      "source_clip": "flyaway_triple_full.mp4"
+    },
+    {
+      "file": "acrobatics/frisbee.npy",
+      "class": "Frisbee",
+      "category": "acrobatics",
+      "source_clip": "frisbee.mp4"
+    },
+    {
+      "file": "acrobatics/front_full.npy",
+      "class": "Frontflip 360",
+      "category": "acrobatics",
+      "source_clip": "front_full.mp4"
+    },
+    {
+      "file": "acrobatics/front_half.npy",
+      "class": "Front 180",
+      "category": "acrobatics",
+      "source_clip": "front_half.mp4"
+    },
+    {
+      "file": "acrobatics/front_half_in_back_out.npy",
+      "class": "Front Half-In Back-Out",
+      "category": "acrobatics",
+      "source_clip": "front_half_in_back_out.mp4"
+    },
+    {
+      "file": "acrobatics/front_pike.npy",
+      "class": "Frontflip",
+      "category": "acrobatics",
+      "source_clip": "front_pike.mp4"
+    },
+    {
+      "file": "wall/gaet_pimp.npy",
+      "class": "Gaet Pimp Backflip 360",
+      "category": "wall",
+      "source_clip": "gaet_pimp.mp4"
+    },
+    {
+      "file": "wall/gaet_pimp_double_full.npy",
+      "class": "Gaet Pimp Backflip 720",
+      "category": "wall",
+      "source_clip": "gaet_pimp_double_full.mp4"
+    },
+    {
+      "file": "acrobatics/gainer.npy",
+      "class": "Cheat Gainer",
+      "category": "acrobatics",
+      "source_clip": "gainer.mp4"
+    },
+    {
+      "file": "acrobatics/gainer_full.npy",
+      "class": "Gainer 360",
+      "category": "acrobatics",
+      "source_clip": "gainer_full.mp4"
+    },
+    {
+      "file": "acrobatics/gainer_triple_full.npy",
+      "class": "Gainer 1080",
+      "category": "acrobatics",
+      "source_clip": "gainer_triple_full.mp4"
+    },
+    {
+      "file": "pk_basics/gate_vault.npy",
+      "class": "Pop Vault",
+      "category": "pk_basics",
+      "source_clip": "gate_vault.mp4"
+    },
+    {
+      "file": "pk_basics/ghost_step_stride_precision.npy",
+      "class": "Stride",
+      "category": "pk_basics",
+      "source_clip": "ghost_step_stride_precision.mp4"
+    },
+    {
+      "file": "swing/giant.npy",
+      "class": "Giant",
+      "category": "swing",
+      "source_clip": "giant.mp4"
+    },
+    {
+      "file": "acrobatics/gumbi.npy",
+      "class": "Gumbi",
+      "category": "acrobatics",
+      "source_clip": "gumbi.mp4"
+    },
+    {
+      "file": "acrobatics/handstand_gainer.npy",
+      "class": "Handstand Gainer",
+      "category": "acrobatics",
+      "source_clip": "handstand_gainer.mp4"
+    },
+    {
+      "file": "wall/hang_castaway_back.npy",
+      "class": "Hang Cast Backflip",
+      "category": "wall",
+      "source_clip": "hang_castaway_back.mp4"
+    },
+    {
+      "file": "wall/inward_front.npy",
+      "class": "Wall Inward Frontflip",
+      "category": "wall",
+      "source_clip": "inward_front.mp4"
+    },
+    {
+      "file": "acrobatics/inward_webster_front_dark_arabian_down_monkey_in_back_out.npy",
+      "class": "Inward Tsukahara",
+      "category": "acrobatics",
+      "source_clip": "inward_webster_front_dark_arabian_down_monkey_in_back_out.mp4"
+    },
+    {
+      "file": "pk_basics/kash_vault.npy",
+      "class": "Kash Vault",
+      "category": "pk_basics",
+      "source_clip": "kash_vault.mp4"
+    },
+    {
+      "file": "acrobatics/kong_gainer_full.npy",
+      "class": "Kong Gainer",
+      "category": "acrobatics",
+      "source_clip": "kong_gainer_full.mp4"
+    },
+    {
+      "file": "pk_basics/kong_vault.npy",
+      "class": "Kong Vault",
+      "category": "pk_basics",
+      "source_clip": "kong_vault.mp4"
+    },
+    {
+      "file": "acrobatics/lache_dark_arabian.npy",
+      "class": "Dark Arabian",
+      "category": "acrobatics",
+      "source_clip": "lache_dark_arabian.mp4"
+    },
+    {
+      "file": "acrobatics/macaco.npy",
+      "class": "Macaco",
+      "category": "acrobatics",
+      "source_clip": "macaco.mp4"
+    },
+    {
+      "file": "acrobatics/macaco_in_back_out.npy",
+      "class": "Macaco-in",
+      "category": "acrobatics",
+      "source_clip": "macaco_in_back_out.mp4"
+    },
+    {
+      "file": "wall/palm_flip.npy",
+      "class": "Palm Backflip",
+      "category": "wall",
+      "source_clip": "palm_flip.mp4"
+    },
+    {
+      "file": "pk_basics/palm_spin.npy",
+      "class": "Pistol Spin",
+      "category": "pk_basics",
+      "source_clip": "palm_spin.mp4"
+    },
+    {
+      "file": "wall/pimp_flip.npy",
+      "class": "Pimp Backflip",
+      "category": "wall",
+      "source_clip": "pimp_flip.mp4"
+    },
+    {
+      "file": "wall/pop_castaway_back.npy",
+      "class": "Pop Castaway Backflip",
+      "category": "wall",
+      "source_clip": "pop_castaway_back.mp4"
+    },
+    {
+      "file": "acrobatics/raiz_dismount_push_half_twist.npy",
+      "class": "Raiz",
+      "category": "acrobatics",
+      "source_clip": "raiz_dismount_push_half_twist.mp4"
+    },
+    {
+      "file": "pk_basics/reverse_vault.npy",
+      "class": "Reverse Vault",
+      "category": "pk_basics",
+      "source_clip": "reverse_vault.mp4"
+    },
+    {
+      "file": "acrobatics/roll_bomb.npy",
+      "class": "Roll Bomb",
+      "category": "acrobatics",
+      "source_clip": "roll_bomb.mp4"
+    },
+    {
+      "file": "acrobatics/running_gainer.npy",
+      "class": "Gainer",
+      "category": "acrobatics",
+      "source_clip": "running_gainer.mp4"
+    },
+    {
+      "file": "acrobatics/side_double_full.npy",
+      "class": "Sideflip",
+      "category": "acrobatics",
+      "source_clip": "side_double_full.mp4"
+    },
+    {
+      "file": "pk_basics/side_vault.npy",
+      "class": "Side Vault",
+      "category": "pk_basics",
+      "source_clip": "side_vault.mp4"
+    },
+    {
+      "file": "acrobatics/sitting_dash_gainer.npy",
+      "class": "Sitting Dash Gainer",
+      "category": "acrobatics",
+      "source_clip": "sitting_dash_gainer.mp4"
+    },
+    {
+      "file": "swing/sole_circle.npy",
+      "class": "(Straddle) Sole Circle",
+      "category": "swing",
+      "source_clip": "sole_circle.mp4"
+    },
+    {
+      "file": "pk_basics/speed_vault.npy",
+      "class": "Plyo",
+      "category": "pk_basics",
+      "source_clip": "speed_vault.mp4"
+    },
+    {
+      "file": "acrobatics/stomach_webster.npy",
+      "class": "Webster",
+      "category": "acrobatics",
+      "source_clip": "stomach_webster.mp4"
+    },
+    {
+      "file": "swing/straddle_sole_circle_gainer.npy",
+      "class": "Straddle Sole Circle Gainer",
+      "category": "swing",
+      "source_clip": "straddle_sole_circle_gainer.mp4"
+    },
+    {
+      "file": "swing/swing_castaway_back_regrab.npy",
+      "class": "Swing Castaway Backflip Regrab",
+      "category": "swing",
+      "source_clip": "swing_castaway_back_regrab.mp4"
+    },
+    {
+      "file": "swing/swing_castaway_double_back.npy",
+      "class": "Swing Castaway Double Backflip",
+      "category": "swing",
+      "source_clip": "swing_castaway_double_back.mp4"
+    },
+    {
+      "file": "swing/swing_castaway_double_full.npy",
+      "class": "Swing Castaway Backflip 720",
+      "category": "swing",
+      "source_clip": "swing_castaway_double_full.mp4"
+    },
+    {
+      "file": "swing/swing_castaway_full.npy",
+      "class": "Swing Castaway Backflip 360",
+      "category": "swing",
+      "source_clip": "swing_castaway_full.mp4"
+    },
+    {
+      "file": "pk_basics/tic_tac.npy",
+      "class": "Tic Tac",
+      "category": "pk_basics",
+      "source_clip": "tic_tac.mp4"
+    },
+    {
+      "file": "acrobatics/triple_corkscrew.npy",
+      "class": "Triple Cork",
+      "category": "acrobatics",
+      "source_clip": "triple_corkscrew.mp4"
+    },
+    {
+      "file": "acrobatics/tsukahara_vault.npy",
+      "class": "Tsukahara",
+      "category": "acrobatics",
+      "source_clip": "tsukahara_vault.mp4"
+    },
+    {
+      "file": "acrobatics/tunnel_flip.npy",
+      "class": "Tunnel Flip",
+      "category": "acrobatics",
+      "source_clip": "tunnel_flip.mp4"
+    },
+    {
+      "file": "pk_basics/underbar.npy",
+      "class": "Wallrun",
+      "category": "pk_basics",
+      "source_clip": "underbar.mp4"
+    },
+    {
+      "file": "wall/wall_back_handspring.npy",
+      "class": "Wall Backhandspring",
+      "category": "wall",
+      "source_clip": "wall_back_handspring.mp4"
+    },
+    {
+      "file": "wall/wall_cork_zero.npy",
+      "class": "Wall Cork",
+      "category": "wall",
+      "source_clip": "wall_cork_zero.mp4"
+    },
+    {
+      "file": "wall/wall_double_back.npy",
+      "class": "Wall Double Backflip",
+      "category": "wall",
+      "source_clip": "wall_double_back.mp4"
+    },
+    {
+      "file": "wall/wall_double_corkscrew.npy",
+      "class": "Wall Double Cork",
+      "category": "wall",
+      "source_clip": "wall_double_corkscrew.mp4"
+    },
+    {
+      "file": "wall/wall_double_full.npy",
+      "class": "Wall Backflip 720",
+      "category": "wall",
+      "source_clip": "wall_double_full.mp4"
+    },
+    {
+      "file": "wall/wall_flip.npy",
+      "class": "Wall Backflip",
+      "category": "wall",
+      "source_clip": "wall_flip.mp4"
+    },
+    {
+      "file": "wall/wall_full.npy",
+      "class": "Wall Backflip 360",
+      "category": "wall",
+      "source_clip": "wall_full.mp4"
+    },
+    {
+      "file": "wall/wall_gainer.npy",
+      "class": "Wall Gainer",
+      "category": "wall",
+      "source_clip": "wall_gainer.mp4"
+    },
+    {
+      "file": "wall/wall_gainer_full.npy",
+      "class": "Wall Gainer 360",
+      "category": "wall",
+      "source_clip": "wall_gainer_full.mp4"
+    },
+    {
+      "file": "wall/wall_spin.npy",
+      "class": "Wallspin",
+      "category": "wall",
+      "source_clip": "wall_spin.mp4"
+    },
+    {
+      "file": "wall/wall_triple_corkscrew.npy",
+      "class": "Wall Triple Cork",
+      "category": "wall",
+      "source_clip": "wall_triple_corkscrew.mp4"
+    },
+    {
+      "file": "wall/wall_triple_full.npy",
+      "class": "Wall Backflip 1080",
+      "category": "wall",
+      "source_clip": "wall_triple_full.mp4"
+    }
+  ],
+  "splits": {
+    "train": [
+      "acrobatics/frisbee.npy",
+      "acrobatics/stomach_webster.npy",
+      "acrobatics/gainer.npy",
+      "acrobatics/gumbi.npy",
+      "acrobatics/triple_corkscrew.npy",
+      "acrobatics/back_layout.npy",
+      "acrobatics/tunnel_flip.npy",
+      "acrobatics/front_half_in_back_out.npy",
+      "acrobatics/cartwheel.npy",
+      "acrobatics/handstand_gainer.npy",
+      "acrobatics/double_corkscrew.npy",
+      "acrobatics/back_quadruple_full.npy",
+      "acrobatics/front_pike.npy",
+      "acrobatics/raiz_dismount_push_half_twist.npy",
+      "acrobatics/macaco_in_back_out.npy",
+      "acrobatics/kong_gainer_full.npy",
+      "acrobatics/double_front_flip.npy",
+      "acrobatics/gainer_triple_full.npy",
+      "acrobatics/front_full.npy",
+      "acrobatics/side_double_full.npy",
+      "acrobatics/caster_gainer.npy",
+      "acrobatics/back_handspring.npy",
+      "acrobatics/running_gainer.npy",
+      "acrobatics/lache_dark_arabian.npy",
+      "acrobatics/double_frisbee.npy",
+      "acrobatics/gainer_full.npy",
+      "acrobatics/butterfly_twist.npy",
+      "acrobatics/double_back_flip.npy",
+      "acrobatics/cork_zero.npy",
+      "acrobatics/inward_webster_front_dark_arabian_down_monkey_in_back_out.npy",
+      "acrobatics/caster_double_gainer.npy",
+      "acrobatics/sitting_dash_gainer.npy",
+      "acrobatics/front_half.npy",
+      "acrobatics/double_side_flip.npy",
+      "acrobatics/aerial.npy",
+      "pk_basics/reverse_vault.npy",
+      "pk_basics/kash_vault.npy",
+      "pk_basics/ghost_step_stride_precision.npy",
+      "pk_basics/speed_vault.npy",
+      "pk_basics/kong_vault.npy",
+      "pk_basics/360_precision.npy",
+      "pk_basics/gate_vault.npy",
+      "pk_basics/climb_up.npy",
+      "pk_basics/palm_spin.npy",
+      "pk_basics/dong_vault.npy",
+      "pk_basics/tic_tac.npy",
+      "pk_basics/underbar.npy",
+      "swing/double_gainer.npy",
+      "swing/giant.npy",
+      "swing/swing_castaway_double_full.npy",
+      "swing/flyaway_full.npy",
+      "swing/flyaway_quadruple_full.npy",
+      "swing/straddle_sole_circle_gainer.npy",
+      "swing/swing_castaway_double_back.npy",
+      "swing/flyaway_double_full.npy",
+      "swing/flyaway.npy",
+      "swing/sole_circle.npy",
+      "wall/gaet_pimp_double_full.npy",
+      "wall/wall_gainer.npy",
+      "wall/castaway_double_back.npy",
+      "wall/inward_front.npy",
+      "wall/wall_cork_zero.npy",
+      "wall/double_palm_flip.npy",
+      "wall/pop_castaway_back.npy",
+      "wall/palm_flip.npy",
+      "wall/wall_double_full.npy",
+      "wall/wall_spin.npy",
+      "wall/wall_double_back.npy",
+      "wall/wall_back_handspring.npy",
+      "wall/castaway_back.npy",
+      "wall/devil_drop.npy",
+      "wall/wall_double_corkscrew.npy",
+      "wall/hang_castaway_back.npy",
+      "wall/gaet_pimp.npy",
+      "wall/wall_full.npy",
+      "wall/wall_flip.npy"
+    ],
+    "val": [
+      "acrobatics/corkscrew.npy",
+      "acrobatics/corkscrew_counter_triple_full.npy",
+      "acrobatics/tsukahara_vault.npy",
+      "acrobatics/back_double_full.npy",
+      "pk_basics/dyno.npy",
+      "swing/swing_castaway_back_regrab.npy",
+      "wall/angel_drop.npy",
+      "wall/wall_triple_corkscrew.npy"
+    ],
+    "test": [
+      "acrobatics/roll_bomb.npy",
+      "acrobatics/macaco.npy",
+      "acrobatics/arabian.npy",
+      "acrobatics/corkscrew_counter_double_full.npy",
+      "acrobatics/cast_gainer.npy",
+      "pk_basics/double_kong.npy",
+      "pk_basics/side_vault.npy",
+      "swing/flyaway_triple_full.npy",
+      "swing/swing_castaway_full.npy",
+      "wall/wall_triple_full.npy",
+      "wall/pimp_flip.npy",
+      "wall/wall_gainer_full.npy"
+    ]
+  },
+  "config": {
+    "num_frames": 16,
+    "seed": 42,
+    "num_classes": 96,
+    "num_samples": 96
+  }
+}

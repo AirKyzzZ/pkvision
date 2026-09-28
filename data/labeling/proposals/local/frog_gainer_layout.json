@@ -1,0 +1,13 @@
+{
+  "slug": "frog_gainer_layout",
+  "trick": "Swing Castaway Backflip Regrab",
+  "cues": {
+    "context": "acrobatics",
+    "direction": "backward",
+    "flip": 1.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 5.5,
+  "confidence": 0.6160115778446198,
+  "source": "local"
+}

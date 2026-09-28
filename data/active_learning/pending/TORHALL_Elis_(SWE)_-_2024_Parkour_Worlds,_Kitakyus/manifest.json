@@ -1,0 +1,184 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/TORHALL Elis (SWE) - 2024 Parkour Worlds, Kitakyushu (JPN) Qualification Parkour Freestyle Run 1.mp4",
+  "video_name": "TORHALL Elis (SWE) - 2024 Parkour Worlds, Kitakyushu (JPN) Qualification Parkour Freestyle Run 1.mp4",
+  "fps": 25.0,
+  "total_frames": 1246,
+  "duration_s": 49.84,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_001_preview.jpg",
+      "start_s": 14.68,
+      "end_s": 15.96,
+      "duration_s": 1.2800000000000011,
+      "num_frames": 33,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3093273639678955
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.30857253074645996
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.31338536739349365
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_002_preview.jpg",
+      "start_s": 16.4,
+      "end_s": 17.04,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31882452964782715
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31437021493911743
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.32534536719322205
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_003_preview.jpg",
+      "start_s": 19.36,
+      "end_s": 22.92,
+      "duration_s": 3.5600000000000023,
+      "num_frames": 90,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3073640465736389
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31349658966064453
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3182869553565979
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_004_preview.jpg",
+      "start_s": 24.16,
+      "end_s": 25.48,
+      "duration_s": 1.3200000000000003,
+      "num_frames": 34,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30797144770622253
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3143174648284912
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.32144027948379517
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_005_preview.jpg",
+      "start_s": 28.16,
+      "end_s": 29.92,
+      "duration_s": 1.7600000000000016,
+      "num_frames": 45,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3125423192977905
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32117027044296265
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3325558304786682
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_006_preview.jpg",
+      "start_s": 31.16,
+      "end_s": 31.84,
+      "duration_s": 0.6799999999999997,
+      "num_frames": 18,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.29825592041015625
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.29436028003692627
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.302955687046051
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/TORHALL_Elis_(SWE)_-_2024_Parkour_Worlds,_Kitakyus/trick_007_preview.jpg",
+      "start_s": 39.0,
+      "end_s": 40.16,
+      "duration_s": 1.1599999999999966,
+      "num_frames": 30,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31202051043510437
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3206329047679901
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3263408839702606
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    }
+  ]
+}

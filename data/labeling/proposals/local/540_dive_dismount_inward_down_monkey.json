@@ -1,0 +1,14 @@
+{
+  "slug": "540_dive_dismount_inward_down_monkey",
+  "trick": null,
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.5759248793125152,
+  "source": "local"
+}

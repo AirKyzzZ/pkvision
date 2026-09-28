@@ -1,0 +1,14 @@
+{
+  "slug": "270_dive_down_monkey_quarter",
+  "trick": null,
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "longitudinal"
+  },
+  "d_score": null,
+  "confidence": 0.5463600516319275,
+  "source": "local"
+}

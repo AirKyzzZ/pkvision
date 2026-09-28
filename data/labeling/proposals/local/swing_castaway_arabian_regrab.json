@@ -1,0 +1,14 @@
+{
+  "slug": "swing_castaway_arabian_regrab",
+  "trick": "Swing Double Sideflip",
+  "cues": {
+    "context": "swing",
+    "direction": "side",
+    "flip": 2.0,
+    "twist": 0.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 5.2,
+  "confidence": 0.6450934946537018,
+  "source": "local"
+}

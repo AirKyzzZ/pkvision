@@ -1,0 +1,9 @@
+Device: cpu
+objc[18854]: Class AVFFrameReceiver is implemented in both /Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/venv/lib/python3.14/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x10e5d83a8) and /Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/venv/lib/python3.14/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1172683a8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[18854]: Class AVFAudioReceiver is implemented in both /Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/venv/lib/python3.14/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x10e5d83f8) and /Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/venv/lib/python3.14/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1172683f8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+Extracting keypoints from 1618 clips...
+  [1/1618] 1080_dive_roll.mp4
+  [50/1618] 540_dive_roll_bomb.mp4
+  [100/1618] back_1_12_dive_roll.mp4
+  [150/1618] cast_front.mp4
+  [200/1618] caster_gainer_in_stall_out.mp4

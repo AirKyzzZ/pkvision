@@ -1,0 +1,14 @@
+{
+  "slug": "180_dive_down_monkey",
+  "trick": "360 Precision",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 1.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 1.5,
+  "confidence": 0.6238775014877319,
+  "source": "local"
+}

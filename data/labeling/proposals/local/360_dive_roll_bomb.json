@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_roll_bomb",
+  "trick": "Swing Counter Sideflip",
+  "cues": {
+    "context": "acrobatics",
+    "direction": "side",
+    "flip": 1.0,
+    "twist": 0.0,
+    "axis": "sagittal"
+  },
+  "d_score": 2.8,
+  "confidence": 0.619450181722641,
+  "source": "local"
+}

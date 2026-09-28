@@ -1,0 +1,409 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/BUCIO Ella (MEX) - 2022 Parkour Worlds, Tokyo (JPN) Qualification Parkour Freestyle Run 1.mp4",
+  "video_name": "BUCIO Ella (MEX) - 2022 Parkour Worlds, Tokyo (JPN) Qualification Parkour Freestyle Run 1.mp4",
+  "fps": 25.0,
+  "total_frames": 2337,
+  "duration_s": 93.48,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_001_preview.jpg",
+      "start_s": 4.24,
+      "end_s": 5.04,
+      "duration_s": 0.7999999999999998,
+      "num_frames": 21,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30547040700912476
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.30825185775756836
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3072636127471924
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_002_preview.jpg",
+      "start_s": 7.88,
+      "end_s": 9.56,
+      "duration_s": 1.6800000000000006,
+      "num_frames": 43,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31614747643470764
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3189462125301361
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.33226701617240906
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_003_preview.jpg",
+      "start_s": 10.32,
+      "end_s": 11.4,
+      "duration_s": 1.08,
+      "num_frames": 28,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.29388174414634705
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3008764982223511
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3117713928222656
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_004_preview.jpg",
+      "start_s": 14.08,
+      "end_s": 16.52,
+      "duration_s": 2.4399999999999995,
+      "num_frames": 62,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.317716121673584
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3218706548213959
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3275398910045624
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_005_preview.jpg",
+      "start_s": 18.68,
+      "end_s": 21.96,
+      "duration_s": 3.280000000000001,
+      "num_frames": 83,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30910903215408325
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31983524560928345
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3249576687812805
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_006_preview.jpg",
+      "start_s": 22.36,
+      "end_s": 24.0,
+      "duration_s": 1.6400000000000006,
+      "num_frames": 42,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3122369050979614
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3205873370170593
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.33287712931632996
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_007_preview.jpg",
+      "start_s": 24.88,
+      "end_s": 26.16,
+      "duration_s": 1.2800000000000011,
+      "num_frames": 33,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31567859649658203
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3130016028881073
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.32473593950271606
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_008",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_008.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_008_preview.jpg",
+      "start_s": 28.48,
+      "end_s": 29.28,
+      "duration_s": 0.8000000000000007,
+      "num_frames": 21,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.29895684123039246
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3022909164428711
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.31329137086868286
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_009",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_009.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_009_preview.jpg",
+      "start_s": 29.68,
+      "end_s": 30.28,
+      "duration_s": 0.6000000000000014,
+      "num_frames": 16,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3065323531627655
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.30288735032081604
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.32394301891326904
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_010",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_010.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_010_preview.jpg",
+      "start_s": 31.96,
+      "end_s": 32.64,
+      "duration_s": 0.6799999999999997,
+      "num_frames": 18,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30026519298553467
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31218793988227844
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3228895664215088
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_011",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_011.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_011_preview.jpg",
+      "start_s": 44.52,
+      "end_s": 45.32,
+      "duration_s": 0.7999999999999972,
+      "num_frames": 21,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31775325536727905
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31318122148513794
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3229108154773712
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_012",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_012.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_012_preview.jpg",
+      "start_s": 46.88,
+      "end_s": 47.56,
+      "duration_s": 0.6799999999999997,
+      "num_frames": 18,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.29133155941963196
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2851412892341614
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.2925563454627991
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_013",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_013.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_013_preview.jpg",
+      "start_s": 50.6,
+      "end_s": 52.24,
+      "duration_s": 1.6400000000000006,
+      "num_frames": 42,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.26726803183555603
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2793577313423157
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.29484111070632935
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_014",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_014.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_014_preview.jpg",
+      "start_s": 57.8,
+      "end_s": 59.48,
+      "duration_s": 1.6799999999999997,
+      "num_frames": 43,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.30258142948150635
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32221466302871704
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.32116928696632385
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_015",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_015.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_015_preview.jpg",
+      "start_s": 60.04,
+      "end_s": 61.16,
+      "duration_s": 1.1199999999999974,
+      "num_frames": 29,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.30082523822784424
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3178856372833252
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3169892728328705
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_016",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_016.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_(MEX)_-_2022_Parkour_Worlds,_Tokyo_(JPN/trick_016_preview.jpg",
+      "start_s": 77.2,
+      "end_s": 77.84,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "forward",
+          "confidence": 0.23160529136657715
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2222934365272522
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.23424777388572693
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    }
+  ]
+}

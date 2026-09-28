@@ -1,0 +1,14 @@
+{
+  "slug": "wall_corkscrew_double_leg",
+  "trick": null,
+  "cues": {
+    "context": "pk_basics",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.6048870205879211,
+  "source": "local"
+}

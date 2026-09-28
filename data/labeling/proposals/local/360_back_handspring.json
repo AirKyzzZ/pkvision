@@ -1,0 +1,14 @@
+{
+  "slug": "360_back_handspring",
+  "trick": null,
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.7332561492919922,
+  "source": "local"
+}

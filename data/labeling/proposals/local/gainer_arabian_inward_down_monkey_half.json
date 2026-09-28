@@ -1,0 +1,14 @@
+{
+  "slug": "gainer_arabian_inward_down_monkey_half",
+  "trick": null,
+  "cues": {
+    "context": "wall",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.6129653513431549,
+  "source": "local"
+}

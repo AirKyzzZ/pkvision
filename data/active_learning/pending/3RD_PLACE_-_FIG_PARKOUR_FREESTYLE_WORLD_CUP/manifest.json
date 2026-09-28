@@ -1,0 +1,152 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/3RD PLACE - FIG PARKOUR FREESTYLE WORLD CUP.mp4",
+  "video_name": "3RD PLACE - FIG PARKOUR FREESTYLE WORLD CUP.mp4",
+  "fps": 25.0,
+  "total_frames": 879,
+  "duration_s": 35.16,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_001_preview.jpg",
+      "start_s": 3.56,
+      "end_s": 4.92,
+      "duration_s": 1.3599999999999999,
+      "num_frames": 35,
+      "suggested_label": {
+        "direction": {
+          "value": "forward",
+          "confidence": 0.3120742440223694
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31319886445999146
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3169119358062744
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "2+",
+        "context": "wall",
+        "trick_name": "wall gainer double full"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_002_preview.jpg",
+      "start_s": 6.76,
+      "end_s": 7.84,
+      "duration_s": 1.08,
+      "num_frames": 28,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.30952414870262146
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.30963242053985596
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.31291139125823975
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_003_preview.jpg",
+      "start_s": 15.32,
+      "end_s": 16.84,
+      "duration_s": 1.5199999999999996,
+      "num_frames": 39,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2963593304157257
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3014117479324341
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.31271326541900635
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "twist_count": "1",
+        "context": "acrobatics",
+        "trick_name": "raiz"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_004_preview.jpg",
+      "start_s": 21.44,
+      "end_s": 23.8,
+      "duration_s": 2.3599999999999994,
+      "num_frames": 60,
+      "suggested_label": {
+        "direction": {
+          "value": "forward",
+          "confidence": 0.31532567739486694
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3156711459159851
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.31339865922927856
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "2+",
+        "context": "acrobatics",
+        "trick_name": "triple full"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP/trick_005_preview.jpg",
+      "start_s": 28.08,
+      "end_s": 30.96,
+      "duration_s": 2.8800000000000026,
+      "num_frames": 73,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.28705909848213196
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2786385416984558
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.2891811728477478
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    }
+  ]
+}

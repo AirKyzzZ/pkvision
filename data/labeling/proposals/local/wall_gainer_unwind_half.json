@@ -1,0 +1,14 @@
+{
+  "slug": "wall_gainer_unwind_half",
+  "trick": null,
+  "cues": {
+    "context": "wall",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "longitudinal"
+  },
+  "d_score": null,
+  "confidence": 0.5173611998558044,
+  "source": "local"
+}

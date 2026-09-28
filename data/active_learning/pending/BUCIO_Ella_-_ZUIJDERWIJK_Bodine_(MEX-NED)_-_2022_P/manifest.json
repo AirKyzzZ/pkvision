@@ -1,0 +1,309 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/BUCIO Ella - ZUIJDERWIJK Bodine (MEX-NED) - 2022 Parkour Worlds, Tokyo (JPN) Qualification Parkour.mp4",
+  "video_name": "BUCIO Ella - ZUIJDERWIJK Bodine (MEX-NED) - 2022 Parkour Worlds, Tokyo (JPN) Qualification Parkour.mp4",
+  "fps": 25.0,
+  "total_frames": 2048,
+  "duration_s": 81.92,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_001_preview.jpg",
+      "start_s": 14.0,
+      "end_s": 14.64,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2979292869567871
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.2826676070690155
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.29836857318878174
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_002_preview.jpg",
+      "start_s": 18.36,
+      "end_s": 19.0,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3149174451828003
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31454604864120483
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.31234073638916016
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_003_preview.jpg",
+      "start_s": 20.0,
+      "end_s": 21.24,
+      "duration_s": 1.2399999999999984,
+      "num_frames": 32,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3186001777648926
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3105719983577728
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.32663583755493164
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_004_preview.jpg",
+      "start_s": 31.28,
+      "end_s": 31.92,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2959001660346985
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2905914783477783
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3064456284046173
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_005_preview.jpg",
+      "start_s": 32.64,
+      "end_s": 34.88,
+      "duration_s": 2.240000000000002,
+      "num_frames": 57,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30892491340637207
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3089938163757324
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.31693166494369507
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_006_preview.jpg",
+      "start_s": 37.44,
+      "end_s": 38.56,
+      "duration_s": 1.1200000000000045,
+      "num_frames": 29,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31873488426208496
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3169035315513611
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3169311583042145
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_007_preview.jpg",
+      "start_s": 39.04,
+      "end_s": 40.24,
+      "duration_s": 1.2000000000000028,
+      "num_frames": 31,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.32386618852615356
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31648901104927063
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.32980597019195557
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_008",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_008.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_008_preview.jpg",
+      "start_s": 40.68,
+      "end_s": 43.44,
+      "duration_s": 2.759999999999998,
+      "num_frames": 70,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.32581815123558044
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.3118421137332916
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.32984617352485657
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_009",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_009.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_009_preview.jpg",
+      "start_s": 50.68,
+      "end_s": 51.44,
+      "duration_s": 0.759999999999998,
+      "num_frames": 20,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3016554117202759
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.301364541053772
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3112667500972748
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_010",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_010.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_010_preview.jpg",
+      "start_s": 64.08,
+      "end_s": 64.72,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "forward",
+          "confidence": 0.24539819359779358
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.23056435585021973
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.24339160323143005
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_011",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_011.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_011_preview.jpg",
+      "start_s": 65.6,
+      "end_s": 66.44,
+      "duration_s": 0.8400000000000034,
+      "num_frames": 22,
+      "suggested_label": {
+        "direction": {
+          "value": "forward",
+          "confidence": 0.22906069457530975
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2216888666152954
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.23003599047660828
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_012",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_012.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/BUCIO_Ella_-_ZUIJDERWIJK_Bodine_(MEX-NED)_-_2022_P/trick_012_preview.jpg",
+      "start_s": 66.84,
+      "end_s": 67.64,
+      "duration_s": 0.7999999999999972,
+      "num_frames": 21,
+      "suggested_label": {
+        "direction": {
+          "value": "forward",
+          "confidence": 0.24185800552368164
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.23738425970077515
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.24769550561904907
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    }
+  ]
+}

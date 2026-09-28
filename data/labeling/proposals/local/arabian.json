@@ -1,0 +1,14 @@
+{
+  "slug": "arabian",
+  "trick": null,
+  "cues": {
+    "context": "acrobatics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.5963407576084137,
+  "source": "local"
+}

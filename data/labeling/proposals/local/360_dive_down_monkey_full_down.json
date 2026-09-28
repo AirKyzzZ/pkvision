@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_down_monkey_full_down",
+  "trick": "Geinger",
+  "cues": {
+    "context": "wall",
+    "direction": "backward",
+    "flip": 1.0,
+    "twist": 0.5,
+    "axis": "off_axis"
+  },
+  "d_score": 3.0,
+  "confidence": 0.4940751850605011,
+  "source": "local"
+}

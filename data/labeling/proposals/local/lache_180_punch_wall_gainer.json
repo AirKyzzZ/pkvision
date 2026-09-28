@@ -1,0 +1,14 @@
+{
+  "slug": "lache_180_punch_wall_gainer",
+  "trick": null,
+  "cues": {
+    "context": "wall",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.5023895859718323,
+  "source": "local"
+}

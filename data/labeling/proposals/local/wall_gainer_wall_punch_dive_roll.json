@@ -1,0 +1,14 @@
+{
+  "slug": "wall_gainer_wall_punch_dive_roll",
+  "trick": "360 Precision",
+  "cues": {
+    "context": "wall",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 1.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 1.5,
+  "confidence": 0.5258788406848908,
+  "source": "local"
+}

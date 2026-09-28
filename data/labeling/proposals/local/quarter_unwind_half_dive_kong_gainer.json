@@ -1,0 +1,14 @@
+{
+  "slug": "quarter_unwind_half_dive_kong_gainer",
+  "trick": null,
+  "cues": {
+    "context": "acrobatics",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "longitudinal"
+  },
+  "d_score": null,
+  "confidence": 0.5469192087650299,
+  "source": "local"
+}

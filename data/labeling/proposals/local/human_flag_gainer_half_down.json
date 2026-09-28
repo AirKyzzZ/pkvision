@@ -1,0 +1,14 @@
+{
+  "slug": "human_flag_gainer_half_down",
+  "trick": null,
+  "cues": {
+    "context": "wall",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.5609423339366912,
+  "source": "local"
+}

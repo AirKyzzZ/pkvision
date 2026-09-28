@@ -1,0 +1,23 @@
+{
+ "label": "claude_noeval",
+ "ckpt": "data/models/cue_claude_noeval.pt",
+ "missing_skeleton": 0,
+ "per_cue": {
+  "flip_bin": {
+   "acc": 0.524390243902439,
+   "n": 82
+  },
+  "twist_bin": {
+   "acc": 0.59375,
+   "n": 64
+  },
+  "direction": {
+   "acc": 0.5294117647058824,
+   "n": 85
+  },
+  "context": {
+   "acc": 0.47435897435897434,
+   "n": 78
+  }
+ }
+}

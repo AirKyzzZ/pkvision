@@ -1,0 +1,14 @@
+{
+  "slug": "hang_castaway_wall_gainer",
+  "trick": null,
+  "cues": {
+    "context": "wall",
+    "direction": "side",
+    "flip": 2.0,
+    "twist": 0.5,
+    "axis": "off_axis"
+  },
+  "d_score": null,
+  "confidence": 0.6735834121704102,
+  "source": "local"
+}

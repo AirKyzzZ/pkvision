@@ -1,0 +1,234 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/DELGERDALAI Dandar (MGL) - 2024 Parkour Worlds, Kitakyushu (JPN) Qualification Parkour Freestyle Ru.mp4",
+  "video_name": "DELGERDALAI Dandar (MGL) - 2024 Parkour Worlds, Kitakyushu (JPN) Qualification Parkour Freestyle Ru.mp4",
+  "fps": 25.0,
+  "total_frames": 1257,
+  "duration_s": 50.28,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_001_preview.jpg",
+      "start_s": 5.32,
+      "end_s": 6.56,
+      "duration_s": 1.2399999999999993,
+      "num_frames": 32,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3056046962738037
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31576570868492126
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3023932874202728
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_002_preview.jpg",
+      "start_s": 7.8,
+      "end_s": 8.52,
+      "duration_s": 0.7199999999999998,
+      "num_frames": 19,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3124023675918579
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31396055221557617
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3217838406562805
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_003_preview.jpg",
+      "start_s": 15.32,
+      "end_s": 15.92,
+      "duration_s": 0.5999999999999996,
+      "num_frames": 16,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2976730465888977
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3040616810321808
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.30999472737312317
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_004_preview.jpg",
+      "start_s": 18.4,
+      "end_s": 19.68,
+      "duration_s": 1.2800000000000011,
+      "num_frames": 33,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3167474567890167
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3202264904975891
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3284207582473755
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_005_preview.jpg",
+      "start_s": 21.08,
+      "end_s": 21.96,
+      "duration_s": 0.8800000000000026,
+      "num_frames": 23,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2989763617515564
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.29405736923217773
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3057548701763153
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_006_preview.jpg",
+      "start_s": 22.44,
+      "end_s": 24.32,
+      "duration_s": 1.879999999999999,
+      "num_frames": 48,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.29626747965812683
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2975907325744629
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3066645860671997
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_007_preview.jpg",
+      "start_s": 30.64,
+      "end_s": 31.36,
+      "duration_s": 0.7199999999999989,
+      "num_frames": 19,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.25377750396728516
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2487211972475052
+        },
+        "context": {
+          "value": "swing",
+          "confidence": 0.26940664649009705
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_008",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_008.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_008_preview.jpg",
+      "start_s": 34.6,
+      "end_s": 35.28,
+      "duration_s": 0.6799999999999997,
+      "num_frames": 18,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2693736255168915
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.26178234815597534
+        },
+        "context": {
+          "value": "swing",
+          "confidence": 0.27177754044532776
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_009",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_009.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/DELGERDALAI_Dandar_(MGL)_-_2024_Parkour_Worlds,_Ki/trick_009_preview.jpg",
+      "start_s": 39.88,
+      "end_s": 42.0,
+      "duration_s": 2.1199999999999974,
+      "num_frames": 54,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30943626165390015
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31903430819511414
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.327593594789505
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    }
+  ]
+}

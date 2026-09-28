@@ -1,0 +1,14 @@
+{
+  "slug": "knee_frog_gainer",
+  "trick": null,
+  "cues": {
+    "context": "wall",
+    "direction": "side",
+    "flip": 2.0,
+    "twist": 0.5,
+    "axis": "off_axis"
+  },
+  "d_score": null,
+  "confidence": 0.5565937697887421,
+  "source": "local"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "castaway_180_gainer",
+  "trick": "Swing Double Sideflip",
+  "cues": {
+    "context": "wall",
+    "direction": "side",
+    "flip": 2.0,
+    "twist": 0.0,
+    "axis": "sagittal"
+  },
+  "d_score": 5.2,
+  "confidence": 0.6261271834373474,
+  "source": "local"
+}

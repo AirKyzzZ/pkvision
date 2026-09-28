@@ -1,0 +1,200 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4",
+  "video_name": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4",
+  "fps": 50.0,
+  "total_frames": 2600,
+  "duration_s": 52.0,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_001_preview.jpg",
+      "start_s": 10.72,
+      "end_s": 11.44,
+      "duration_s": 0.7199999999999989,
+      "num_frames": 37,
+      "suggested_label": {
+        "direction": {
+          "value": "forward",
+          "confidence": 0.2976852357387543
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2914831042289734
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.30766060948371887
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "context": "pk_basics"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_002_preview.jpg",
+      "start_s": 15.52,
+      "end_s": 16.72,
+      "duration_s": 1.1999999999999993,
+      "num_frames": 61,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.29997947812080383
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2985055148601532
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.31579849123954773
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "context": "pk_basics"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_003_preview.jpg",
+      "start_s": 18.7,
+      "end_s": 22.18,
+      "duration_s": 3.4800000000000004,
+      "num_frames": 175,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3147088587284088
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.3018478751182556
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3201529383659363
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_004_preview.jpg",
+      "start_s": 23.36,
+      "end_s": 24.14,
+      "duration_s": 0.7800000000000011,
+      "num_frames": 40,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3047221302986145
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.29625117778778076
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3157944679260254
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "context": "pk_basics"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_005_preview.jpg",
+      "start_s": 26.84,
+      "end_s": 27.64,
+      "duration_s": 0.8000000000000007,
+      "num_frames": 41,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.29516276717185974
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2942030131816864
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3071100413799286
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "context": "pk_basics"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_006_preview.jpg",
+      "start_s": 28.9,
+      "end_s": 31.04,
+      "duration_s": 2.1400000000000006,
+      "num_frames": 108,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3041573166847229
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.29734376072883606
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.31485655903816223
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_007_preview.jpg",
+      "start_s": 41.7,
+      "end_s": 43.02,
+      "duration_s": 1.3200000000000003,
+      "num_frames": 67,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2985166907310486
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2913408875465393
+        },
+        "context": {
+          "value": "swing",
+          "confidence": 0.3058079481124878
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    }
+  ]
+}

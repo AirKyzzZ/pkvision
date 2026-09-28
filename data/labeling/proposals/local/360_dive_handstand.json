@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_handstand",
+  "trick": "Inward Tsukahara",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 1.0,
+    "twist": 0.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 6.3,
+  "confidence": 0.5164563953876495,
+  "source": "local"
+}

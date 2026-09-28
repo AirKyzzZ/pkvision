@@ -1,0 +1,14 @@
+{
+  "slug": "gainer_half_inward_down_monkey_half",
+  "trick": null,
+  "cues": {
+    "context": "acrobatics",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.5696416199207306,
+  "source": "local"
+}

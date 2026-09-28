@@ -1,0 +1,14 @@
+{
+  "slug": "one_hand_frog_gainer",
+  "trick": "Double Backflip 360",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "backward",
+    "flip": 2.0,
+    "twist": 1.0,
+    "axis": "lateral"
+  },
+  "d_score": 5.9,
+  "confidence": 0.5061413288116455,
+  "source": "local"
+}

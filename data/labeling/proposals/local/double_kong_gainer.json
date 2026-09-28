@@ -1,0 +1,14 @@
+{
+  "slug": "double_kong_gainer",
+  "trick": null,
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.61673983335495,
+  "source": "local"
+}

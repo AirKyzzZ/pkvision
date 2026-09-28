@@ -1,0 +1,13 @@
+{
+  "slug": "360_precision",
+  "trick": null,
+  "cues": {
+    "context": "pk_basics",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.7456986665725708,
+  "source": "local"
+}

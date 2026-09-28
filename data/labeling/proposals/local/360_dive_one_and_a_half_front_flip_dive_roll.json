@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_one_and_a_half_front_flip_dive_roll",
+  "trick": null,
+  "cues": {
+    "context": "acrobatics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "longitudinal"
+  },
+  "d_score": null,
+  "confidence": 0.5359962999820709,
+  "source": "local"
+}

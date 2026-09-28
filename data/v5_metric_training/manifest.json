@@ -1,0 +1,1235 @@
+{
+  "type": "metric_learning",
+  "families": {
+    "backflip": {
+      "clips": [
+        "back_flip_wall_dive_roll",
+        "back_layout",
+        "back_layout_in_back_out",
+        "double_back_flip",
+        "pistol_squat_back_flip",
+        "stall_back_flip",
+        "triple_back_flip"
+      ],
+      "fig_tricks": [
+        "Backflip"
+      ],
+      "category": "acrobatics",
+      "count": 7
+    },
+    "frontflip": {
+      "clips": [
+        "360_dive_front_flip",
+        "360_dive_one_and_a_half_front_flip_dive_roll",
+        "540_dive_front_flip",
+        "dive_front_flip",
+        "double_front_flip",
+        "front_pike",
+        "hurdle_dive_front_flip",
+        "inward_front_pike",
+        "knee_360_dive_front_flip",
+        "knee_front_flip",
+        "russian_front_flip",
+        "standing_pike_double_front_flip",
+        "wall_inward_front_pike"
+      ],
+      "fig_tricks": [
+        "Frontflip"
+      ],
+      "category": "acrobatics",
+      "count": 13
+    },
+    "sideflip": {
+      "clips": [
+        "double_side_flip",
+        "knee_side_flip",
+        "side_flip_precision",
+        "stall_side_flip",
+        "touchdown_side_flip",
+        "triple_side_flip",
+        "tripod_side_flip",
+        "wall_side_flip"
+      ],
+      "fig_tricks": [
+        "Sideflip"
+      ],
+      "category": "acrobatics",
+      "count": 8
+    },
+    "gainer": {
+      "clips": [
+        "baby_knee_giant_gainer",
+        "back_hip_circle_gainer",
+        "cast_half_pirouette_gainer",
+        "cast_stall_gainer",
+        "castaway_180_gainer",
+        "cat_hang_ew_gainer",
+        "chair_spin_gainer",
+        "chair_spin_gainer_full",
+        "chair_spin_gainer_full_down",
+        "crucifix_gargoyle_gainer",
+        "devil_drop_gainer",
+        "devil_drop_gainer_down_monkey",
+        "devil_drop_gainer_full",
+        "devil_drop_gainer_layout",
+        "devil_drop_gainer_one_hand_down_monkey_flash_kick",
+        "devil_drop_gainer_one_hand_down_monkey_full_down",
+        "devil_drop_stall_gainer",
+        "dive_one_hand_palm_gainer",
+        "dive_palm_gainer",
+        "dive_palm_gainer_full",
+        "dong_gainer",
+        "double_kong_slant_gainer",
+        "elbow_gargoyle_gainer",
+        "ew_gainer",
+        "ew_gainer_arabian",
+        "ew_gainer_arabian_quarter_down",
+        "ew_gainer_double_full",
+        "ew_gainer_down_monkey",
+        "ew_gainer_full",
+        "ew_gainer_full_down",
+        "ew_gainer_full_down_monkey",
+        "ew_gainer_layout",
+        "ew_gainer_pike",
+        "ew_gainer_unwind_half",
+        "ew_gainer_walkdown",
+        "ew_stall_gainer",
+        "ew_step_270_ew_gainer",
+        "frog_gainer",
+        "frog_gainer_full",
+        "frog_gainer_full_down",
+        "frog_gainer_layout",
+        "full_up_gainer",
+        "full_up_gainer_arabian",
+        "full_up_gainer_full_down",
+        "full_up_gainer_pike",
+        "gainer",
+        "gainer_arabian",
+        "gainer_arabian_half",
+        "gainer_arabian_inward_down_monkey_half",
+        "gainer_cat",
+        "gainer_down_monkey",
+        "gainer_full",
+        "gainer_full_down",
+        "gainer_full_down_monkey",
+        "gainer_full_in_back_out",
+        "gainer_full_precision",
+        "gainer_half_inward_down_monkey_half",
+        "gainer_half_unwind_half",
+        "gainer_in_punch_wall_flip_out",
+        "gainer_in_stall_out",
+        "gainer_layout",
+        "gainer_one_hand_down_monkey",
+        "gainer_one_hand_down_monkey_full",
+        "gainer_pike",
+        "gainer_precision",
+        "gainer_quadruple_full",
+        "gainer_quarter_side",
+        "gainer_stall_in_back_out",
+        "gainer_triple_full",
+        "gargoyle_ew_gainer",
+        "gargoyle_ew_gainer_full",
+        "gargoyle_gainer",
+        "gargoyle_gainer_full",
+        "gargoyle_gainer_quarter_inward_side",
+        "gargoyle_stall_gainer",
+        "glitch_gainer",
+        "glitch_gainer_full",
+        "handstand_stall_gainer",
+        "hang_gainer",
+        "human_flag_gainer",
+        "human_flag_gainer_half_down",
+        "kip_gainer",
+        "kip_gainer_full",
+        "kip_gainer_full_down",
+        "knee_frog_gainer",
+        "knee_gainer",
+        "kneel_gainer_down_monkey",
+        "kong_dive_palm_gainer",
+        "kong_glitch_gainer",
+        "kong_one_hand_palm_gainer",
+        "kong_stall_gainer",
+        "lazy_boy_gainer_full",
+        "lazy_boy_running_gainer",
+        "lazy_gainer",
+        "monkey_gainer",
+        "one_hand_frog_gainer",
+        "one_hand_hang_gainer",
+        "one_hand_palm_gainer",
+        "one_hand_palm_gainer_double_full",
+        "one_hand_palm_gainer_full",
+        "one_hand_palm_gainer_layout",
+        "one_hand_palm_gainer_pike",
+        "one_hand_palm_gainer_wall_back_walkover",
+        "one_hand_palm_gainer_wall_flip",
+        "one_step_one_hand_palm_gainer",
+        "palm_gainer",
+        "palm_gainer_full",
+        "palm_spin_gainer",
+        "parallel_bar_gainer_dismount_suicide_roll",
+        "penny_drop_gainer",
+        "penny_drop_gainer_full",
+        "peter_pan_running_gainer_layout",
+        "pimp_spin_gainer",
+        "punch_wall_full_up_gainer",
+        "punch_wall_stall_gainer",
+        "running_dash_gainer",
+        "running_gainer",
+        "running_gainer_arabian_dive_roll",
+        "running_gainer_arabian_inward_down_monkey_half",
+        "running_gainer_catch",
+        "running_gainer_down_monkey",
+        "running_gainer_down_monkey_in_back_out",
+        "running_gainer_flash_kick_full_down",
+        "running_gainer_full",
+        "running_gainer_full_down",
+        "running_gainer_full_down_monkey",
+        "running_gainer_full_in_back_out",
+        "running_gainer_full_up",
+        "running_gainer_in_full_out",
+        "running_gainer_layout",
+        "running_gainer_pike",
+        "running_gainer_rodeo",
+        "running_gainer_triple_flash_kick",
+        "running_slant_gainer_precision",
+        "russian_gainer",
+        "safety_gainer",
+        "seat_circle_gainer",
+        "shoulder_mount_gainer",
+        "sitting_gainer",
+        "sitting_gainer_full",
+        "sitting_gainer_walkdown",
+        "skin_the_cat_gainer",
+        "slant_gainer",
+        "slant_palm_gainer",
+        "spider_man_gainer",
+        "split_sole_circle_gainer",
+        "split_sole_circle_gainer_full",
+        "stall_gainer",
+        "straddle_sole_circle_gainer",
+        "straddle_sole_circle_gainer_full",
+        "straddle_sole_circle_gainer_layout",
+        "straddle_sole_circle_stall_gainer",
+        "tripod_gainer",
+        "two_step_360_horizontal_wall_run_gainer",
+        "two_step_360_horizontal_wall_run_gainer_full",
+        "two_step_wall_stall_gainer",
+        "worm_gainer"
+      ],
+      "fig_tricks": [
+        "Gainer",
+        "Running Gainer",
+        "Cheat Gainer"
+      ],
+      "category": "acrobatics",
+      "count": 157
+    },
+    "kong_gainer": {
+      "clips": [
+        "180_dive_kong_gainer",
+        "dive_kong_gainer",
+        "double_kong_gainer",
+        "double_kong_gainer_full",
+        "elbow_kong_gainer",
+        "flyaway_in_kong_gainer_full_out",
+        "flyaway_in_kong_gainer_out",
+        "gallop_kong_gainer",
+        "kong_gainer_cat",
+        "kong_gainer_catch",
+        "kong_gainer_double_full",
+        "kong_gainer_full",
+        "kong_gainer_full_down",
+        "kong_gainer_in_punch_wall_flip_out",
+        "kong_gainer_inward_360_dive_roll",
+        "kong_gainer_kong",
+        "kong_gainer_layout",
+        "kong_gainer_pike",
+        "kong_gainer_precision",
+        "kong_gainer_x_out",
+        "kong_one_hand_kong_gainer",
+        "lache_kong_gainer",
+        "one_hand_kong_gainer",
+        "one_step_front_1_13_dive_kong_gainer",
+        "quarter_unwind_half_dive_kong_gainer",
+        "slant_kong_gainer",
+        "slant_kong_gainer_cat",
+        "slant_kong_gainer_full_down",
+        "slant_kong_gainer_safety",
+        "spider_man_kong_gainer",
+        "straddle_kong_gainer",
+        "triple_kong_gainer"
+      ],
+      "fig_tricks": [
+        "Kong Gainer"
+      ],
+      "category": "acrobatics",
+      "count": 32
+    },
+    "cartwheel": {
+      "clips": [
+        "aerial_twist_vault_dive_cartwheel",
+        "cartwheel",
+        "lache_wall_one_hand_cartwheel_twist",
+        "one_hand_cartwheel",
+        "one_hand_wall_cartwheel",
+        "palm_cartwheel",
+        "palm_tac_dive_cartwheel",
+        "touchdown_raiz_cartwheel",
+        "tunnel_cartwheel",
+        "tunnel_one_hand_cartwheel",
+        "wall_inward_cartwheel",
+        "wall_inward_cartwheel_full",
+        "wall_tunnel_wall_cartwheel"
+      ],
+      "fig_tricks": [
+        "Cartwheel"
+      ],
+      "category": "acrobatics",
+      "count": 13
+    },
+    "aerial": {
+      "clips": [
+        "aerial",
+        "aerial_spin"
+      ],
+      "fig_tricks": [
+        "Aerial"
+      ],
+      "category": "acrobatics",
+      "count": 2
+    },
+    "macaco": {
+      "clips": [
+        "elbow_macaco_in_back_out",
+        "macaco",
+        "macaco_full",
+        "macaco_full_in_back_out",
+        "macaco_in_back_out",
+        "macaco_in_full_out",
+        "macaco_quarter_unwind_quarter",
+        "macaco_scissor_switch",
+        "macaco_twist",
+        "one_step_palm_macaco_twist",
+        "rail_macaco",
+        "shoulder_macaco_in_back_out",
+        "tucked_macaco",
+        "wall_macaco"
+      ],
+      "fig_tricks": [
+        "Macaco",
+        "Macaco-in"
+      ],
+      "category": "acrobatics",
+      "count": 14
+    },
+    "webster": {
+      "clips": [
+        "alley_webster_raiden",
+        "inward_webster_double_front",
+        "inward_webster_double_side_dismount",
+        "inward_webster_front",
+        "inward_webster_front_540_dive_roll",
+        "inward_webster_front_dark_arabian_dismount",
+        "inward_webster_front_dark_arabian_down_monkey",
+        "inward_webster_front_dark_arabian_down_monkey_in_back_out",
+        "inward_webster_front_half",
+        "inward_webster_front_raiden",
+        "inward_webster_rudi",
+        "inward_webster_side",
+        "misleg_webster_side",
+        "rodeo_webster_side",
+        "spider_man_webster_side",
+        "stall_inward_webster_front",
+        "starfish_webster_side",
+        "stomach_webster",
+        "wall_inward_webster_punch_wall_flip",
+        "webster_double_front",
+        "webster_front",
+        "webster_front_one_and_a_half_360_dive_roll",
+        "webster_front_one_and_a_half_dive_roll",
+        "webster_half",
+        "webster_half_in_punch_wall_flip_out",
+        "webster_one_and_a_half_full",
+        "webster_precision",
+        "webster_side",
+        "webster_two_and_a_half_dive_roll"
+      ],
+      "fig_tricks": [
+        "Webster"
+      ],
+      "category": "acrobatics",
+      "count": 29
+    },
+    "arabian": {
+      "clips": [
+        "arabian",
+        "arabian_dive_roll",
+        "arabian_double_side",
+        "arabian_in_half_out",
+        "arabian_inward_down_monkey",
+        "arabian_one_and_a_half_dive_roll",
+        "arabian_one_and_a_half_full_down",
+        "arabian_unwind_half",
+        "arabian_unwind_half_unwind_half",
+        "back_in_arabian_dive_roll_out",
+        "cast_bomb_arabian",
+        "castaway_arabian",
+        "castaway_arabian_dive_roll",
+        "castaway_arabian_unwind_half",
+        "corkscrew_arabian_1_12_dive_roll",
+        "corkscrew_counter_arabian",
+        "double_arabian",
+        "ew_gainer_arabian",
+        "ew_gainer_arabian_quarter_down",
+        "flyaway_arabian",
+        "flyaway_arabian_half",
+        "flyaway_arabian_in_front_out",
+        "flyaway_arabian_unwind_half",
+        "flyaway_full_in_trapdoor_arabian_dive_roll_out",
+        "full_up_arabian_dive_roll",
+        "full_up_gainer_arabian",
+        "gaet_pimp_arabian",
+        "gainer_arabian",
+        "gainer_arabian_half",
+        "gainer_arabian_inward_down_monkey_half",
+        "hang_castaway_arabian",
+        "hang_castaway_arabian_inward_down_monkey",
+        "kong_reverse_kong_castaway_arabian_dive_roll",
+        "running_gainer_arabian_dive_roll",
+        "running_gainer_arabian_inward_down_monkey_half",
+        "swing_castaway_arabian",
+        "swing_castaway_arabian_regrab",
+        "tsukahara_double_arabian_vault",
+        "wall_arabian",
+        "wall_arabian_inward_down_monkey",
+        "wall_arabian_layout",
+        "wall_arabian_one_and_a_half_dive_roll",
+        "wall_arabian_unwind_half",
+        "wall_arabian_wall_punch_dive_roll",
+        "wall_corkscrew_arabian_1_13_dive_roll",
+        "wall_corkscrew_arabian_pistol_gyro",
+        "wall_corkscrew_arabian_scissor",
+        "wall_corkscrew_in_arabian_dive_roll_out",
+        "wall_flip_wall_punch_arabian_dive_roll",
+        "wall_wrap_arabian",
+        "wall_wrap_arabian_au_de_frente",
+        "wall_wrap_arabian_down_monkey",
+        "wall_wrap_arabian_inward_down_monkey_half",
+        "wall_wrap_arabian_one_hand_inward_down_monkey"
+      ],
+      "fig_tricks": [
+        "Arabian",
+        "A-180"
+      ],
+      "category": "acrobatics",
+      "count": 54
+    },
+    "cork": {
+      "clips": [
+        "cork_zero",
+        "cork_zero_full_down",
+        "gaet_pimp_cork_zero",
+        "inward_cork_zero",
+        "palm_cork_zero",
+        "side_vault_cork_zero"
+      ],
+      "fig_tricks": [
+        "Cork"
+      ],
+      "category": "acrobatics",
+      "count": 6
+    },
+    "corkscrew": {
+      "clips": [
+        "caster_wall_corkscrew_counter_full",
+        "corkscrew",
+        "corkscrew_arabian_1_12_dive_roll",
+        "corkscrew_counter_arabian",
+        "corkscrew_counter_double_full",
+        "corkscrew_counter_full",
+        "corkscrew_counter_full_down_monkey",
+        "corkscrew_counter_full_in_back_out",
+        "corkscrew_counter_triple_full",
+        "corkscrew_in_back_out",
+        "corkscrew_in_full_out",
+        "double_corkscrew",
+        "double_corkscrew_in_back_out",
+        "knee_corkscrew",
+        "trapdoor_wall_corkscrew",
+        "triple_corkscrew",
+        "wall_corkscrew",
+        "wall_corkscrew_arabian_1_13_dive_roll",
+        "wall_corkscrew_arabian_pistol_gyro",
+        "wall_corkscrew_arabian_scissor",
+        "wall_corkscrew_counter_full",
+        "wall_corkscrew_double_leg",
+        "wall_corkscrew_down_monkey_450",
+        "wall_corkscrew_feilong",
+        "wall_corkscrew_gyro",
+        "wall_corkscrew_hyper",
+        "wall_corkscrew_in_arabian_dive_roll_out",
+        "wall_corkscrew_in_back_out",
+        "wall_corkscrew_psychocrusher",
+        "wall_corkscrew_shuriken",
+        "wall_corkscrew_shuriken_cutter",
+        "wall_corkscrew_shuriken_gyro",
+        "wall_corkscrew_wall_back_handspring_half",
+        "wall_double_corkscrew",
+        "wall_triple_corkscrew"
+      ],
+      "fig_tricks": [
+        "Kroc",
+        "Double Kroc",
+        "Triple Kroc"
+      ],
+      "category": "acrobatics",
+      "count": 35
+    },
+    "double_cork": {
+      "clips": [
+        "double_corkscrew",
+        "double_corkscrew_in_back_out",
+        "wall_double_corkscrew"
+      ],
+      "fig_tricks": [
+        "Double Cork"
+      ],
+      "category": "acrobatics",
+      "count": 3
+    },
+    "triple_cork": {
+      "clips": [
+        "triple_corkscrew",
+        "wall_triple_corkscrew"
+      ],
+      "fig_tricks": [
+        "Triple Cork"
+      ],
+      "category": "acrobatics",
+      "count": 2
+    },
+    "b_twist": {
+      "clips": [
+        "butterfly_twist",
+        "butterfly_twist_in_back_out",
+        "butterfly_twist_vault",
+        "double_butterfly_twist",
+        "double_butterfly_twist_vault",
+        "palm_butterfly_twist",
+        "palm_double_butterfly_twist",
+        "sitting_touchup_butterfly_twist",
+        "sitting_touchup_butterfly_twist_down_monkey",
+        "triple_butterfly_twist_vault",
+        "two_hand_butterfly_twist_vault",
+        "two_hand_palm_butterfly_twist"
+      ],
+      "fig_tricks": [
+        "B-Twist"
+      ],
+      "category": "acrobatics",
+      "count": 12
+    },
+    "raiz": {
+      "clips": [
+        "double_raiz_twist_dismount",
+        "one_hand_palm_spin_raiz",
+        "one_hand_raiz_twist",
+        "one_step_touchdown_raiz_twist_vault",
+        "palm_spin_raiz",
+        "palm_spin_raiz_180_inward_roll",
+        "palm_spin_raiz_twist",
+        "raiz_dismount_push_half_twist",
+        "raiz_in_back_out",
+        "raiz_in_frisbee_out",
+        "raiz_twist_dismount",
+        "touchdown_raiz",
+        "touchdown_raiz_cartwheel",
+        "touchdown_raiz_in_back_out",
+        "touchdown_raiz_roll",
+        "touchup_raiz_touchdown_twist",
+        "two_hand_wall_touch_down_raiz",
+        "wall_inward_touchdown_raiz",
+        "wall_one_hand_raiz",
+        "wall_touchdown_raiz"
+      ],
+      "fig_tricks": [
+        "Raiz"
+      ],
+      "category": "acrobatics",
+      "count": 20
+    },
+    "frisbee": {
+      "clips": [
+        "devil_drop_frisbee_full_down",
+        "dive_palm_inward_frisbee",
+        "double_pistol_frisbee",
+        "frisbee",
+        "frisbee_full_down",
+        "frisbee_vault",
+        "frisbee_vault_gyro",
+        "inward_frisbee_full_down",
+        "one_step_wall_spin_frisbee_full_down",
+        "palm_inward_frisbee",
+        "palm_spin_frisbee",
+        "pistol_frisbee",
+        "pull_palm_frisbee",
+        "raiz_in_frisbee_out",
+        "reverse_palm_spin_inward_frisbee",
+        "reverse_palm_spin_inward_frisbee_vault",
+        "sit_turn_castaway_frisbee"
+      ],
+      "fig_tricks": [
+        "Frisbee"
+      ],
+      "category": "acrobatics",
+      "count": 17
+    },
+    "double_frisbee": {
+      "clips": [
+        "double_frisbee",
+        "double_frisbee_vault",
+        "inward_flyaway_double_frisbee",
+        "touchup_double_frisbee"
+      ],
+      "fig_tricks": [
+        "Double Frisbee"
+      ],
+      "category": "acrobatics",
+      "count": 4
+    },
+    "back_handspring": {
+      "clips": [
+        "360_back_handspring",
+        "540_dive_back_handspring",
+        "back_handspring",
+        "caster_360_back_handspring",
+        "caster_360_back_handspring_twist",
+        "inward_back_handspring_down_monkey_in_back_out",
+        "palm_back_handspring",
+        "wall_flip_back_handspring"
+      ],
+      "fig_tricks": [
+        "Backhandspring"
+      ],
+      "category": "acrobatics",
+      "count": 8
+    },
+    "gumbi": {
+      "clips": [
+        "dive_gumbi",
+        "gumbi",
+        "gumbi_360_twist_in_back_out",
+        "wall_gumbi_half",
+        "wall_swivel_gumbi"
+      ],
+      "fig_tricks": [
+        "Gumbi"
+      ],
+      "category": "acrobatics",
+      "count": 5
+    },
+    "roll_bomb": {
+      "clips": [
+        "360_dive_roll_bomb",
+        "540_dive_roll_bomb",
+        "720_dive_roll_bomb",
+        "backward_roll_bomb",
+        "forward_roll_bomb",
+        "inward_360_dive_roll_bomb",
+        "inward_dive_roll_bomb",
+        "roll_bomb",
+        "roll_bomb_360_dive_roll",
+        "roll_bomb_full"
+      ],
+      "fig_tricks": [
+        "Roll Bomb"
+      ],
+      "category": "acrobatics",
+      "count": 10
+    },
+    "tunnel_flip": {
+      "clips": [
+        "180_palm_inward_tunnel",
+        "devil_drop_inward_tunnel",
+        "ew_tunnel",
+        "hutson_gargoyle_tunnel",
+        "inward_double_tunnel",
+        "inward_tunnel_double_leg_full",
+        "inward_tunnel_flip",
+        "kong_tunnel",
+        "mukhametshin_gargoyle_tunnel",
+        "palm_double_tunnel",
+        "palm_inward_tunnel",
+        "palm_tunnel",
+        "palm_wall_inward_tunnel_pike_half_down",
+        "running_stall_tunnel_flip",
+        "running_tunnel_flip",
+        "speed_tunnel",
+        "speed_tunnel_pike",
+        "stall_tunnel",
+        "tunnel_cartwheel",
+        "tunnel_double_leg_full",
+        "tunnel_flip",
+        "tunnel_full",
+        "tunnel_handspring",
+        "tunnel_one_hand_cartwheel",
+        "wall_inward_tunnel",
+        "wall_tunnel_cat",
+        "wall_tunnel_flip",
+        "wall_tunnel_wall_cartwheel"
+      ],
+      "fig_tricks": [
+        "Tunnel Flip"
+      ],
+      "category": "acrobatics",
+      "count": 28
+    },
+    "tsukahara": {
+      "clips": [
+        "one_hand_tsukahara_dismount",
+        "one_hand_tsukahara_double_full_dismount",
+        "tsukahara_double_arabian_vault",
+        "tsukahara_double_full_dismount",
+        "tsukahara_full_dismount",
+        "tsukahara_full_vault",
+        "tsukahara_half_dismount",
+        "tsukahara_layout_dismount",
+        "tsukahara_vault"
+      ],
+      "fig_tricks": [
+        "Tsukahara"
+      ],
+      "category": "acrobatics",
+      "count": 9
+    },
+    "double_backflip": {
+      "clips": [
+        "double_back_flip",
+        "flyaway_full_in_double_back_out"
+      ],
+      "fig_tricks": [
+        "Double Backflip"
+      ],
+      "category": "acrobatics",
+      "count": 2
+    },
+    "double_frontflip": {
+      "clips": [
+        "dive_double_front",
+        "double_front_flip",
+        "inward_double_front",
+        "inward_webster_double_front",
+        "kong_double_front",
+        "lache_double_front",
+        "punch_wall_inward_double_front",
+        "russian_double_front",
+        "standing_pike_double_front_flip",
+        "webster_double_front"
+      ],
+      "fig_tricks": [
+        "Double Frontflip"
+      ],
+      "category": "acrobatics",
+      "count": 10
+    },
+    "wall_flip": {
+      "clips": [
+        "270_tic_tac_wall_flip",
+        "360_precision_trapdoor_wall_flip",
+        "angel_drop_punch_wall_flip",
+        "angel_drop_wall_flip",
+        "cat_hang_tac_180_trapdoor_wall_flip",
+        "circle_pimp_wall_flip",
+        "corner_worm_punch_wall_flip",
+        "elbow_gaet_pimp_punch_wall_flip",
+        "flyaway_precision_in_punch_wall_flip_out",
+        "gaet_pimp_in_punch_wall_flip_out",
+        "gaet_pimp_punch_wall_flip",
+        "gaet_pimp_wall_flip",
+        "gainer_in_punch_wall_flip_out",
+        "giant_over_180_trapdoor_wall_flip",
+        "human_flag_castaway_wall_flip",
+        "kong_front_in_punch_wall_flip_out",
+        "kong_gainer_in_punch_wall_flip_out",
+        "kong_trapdoor_wall_flip",
+        "lache_precision_punch_wall_flip",
+        "lache_punch_tic_tac_trapdoor_wall_flip",
+        "lache_punch_wall_flip",
+        "one_hand_palm_gainer_wall_flip",
+        "one_leg_two_step_wall_flip",
+        "one_step_punch_wall_flip",
+        "one_step_thread_wall_flip",
+        "palm_wall_flip",
+        "punch_wall_flip",
+        "sitting_pimp_wall_flip",
+        "spider_man_stall_wall_flip",
+        "three_step_ceiling_wall_flip_two_step_walkdown",
+        "three_step_wall_flip",
+        "toe_on_trapdoor_wall_flip",
+        "toeshoot_trapdoor_wall_flip",
+        "trapdoor_wall_flip",
+        "turn_gaet_pimp_wall_flip",
+        "two_step_ceiling_wall_flip",
+        "two_step_wall_flip",
+        "wall_flip",
+        "wall_flip_walkdown",
+        "wall_front_two_foot_wall_flip",
+        "wall_inward_webster_punch_wall_flip",
+        "wall_roll_punch_wall_flip",
+        "webster_half_in_punch_wall_flip_out"
+      ],
+      "fig_tricks": [
+        "Wall Backflip"
+      ],
+      "category": "wall",
+      "count": 43
+    },
+    "wall_spin": {
+      "clips": [
+        "back_270_full_down_monkey_in_wall_spin_out",
+        "chest_wall_spin",
+        "chest_wall_spin_full_down",
+        "corner_one_hand_wall_spin_palm_twist",
+        "devil_drop_wall_spin_half",
+        "elbow_wall_spin_palm_twist",
+        "ground_assisted_wall_spin",
+        "half_wall_spin_bounce_360",
+        "lache_side_wall_spin",
+        "one_hand_reverse_wall_spin",
+        "one_hand_wall_spin_palm_twist",
+        "one_step_wall_spin",
+        "one_step_wall_spin_double_full",
+        "one_step_wall_spin_frisbee_full_down",
+        "reverse_wall_spin",
+        "wall_flip_wall_spin",
+        "wall_safety_step_wall_spin",
+        "wall_spin",
+        "wall_spin_flip",
+        "wall_spin_in_back_out",
+        "wall_spin_twist"
+      ],
+      "fig_tricks": [
+        "Wallspin"
+      ],
+      "category": "wall",
+      "count": 21
+    },
+    "wall_gainer": {
+      "clips": [
+        "flyaway_half_in_punch_wall_gainer_out",
+        "hang_castaway_wall_gainer",
+        "lache_180_punch_wall_gainer",
+        "lache_punch_dark_arabian_stall_wall_gainer",
+        "lache_punch_dark_arabian_wall_gainer_full",
+        "punch_dark_arabian_wall_gainer",
+        "punch_wall_gainer",
+        "punch_wall_gainer_full",
+        "punch_wall_gainer_full_down",
+        "two_step_wall_gainer",
+        "two_step_wall_gainer_down_monkey",
+        "two_step_wall_gainer_layout",
+        "wall_gainer",
+        "wall_gainer_down_monkey",
+        "wall_gainer_down_monkey_half",
+        "wall_gainer_down_monkey_in_back_out",
+        "wall_gainer_full",
+        "wall_gainer_one_hand_down_monkey",
+        "wall_gainer_one_hand_down_monkey_full_down",
+        "wall_gainer_unwind_half",
+        "wall_gainer_wall_punch_dive_roll",
+        "wall_gainer_x_out"
+      ],
+      "fig_tricks": [
+        "Wall Gainer"
+      ],
+      "category": "wall",
+      "count": 22
+    },
+    "palm_flip": {
+      "clips": [
+        "alley_palm_flip",
+        "ceiling_palm_flip",
+        "ceiling_palm_flip_half",
+        "corner_palm_flip",
+        "dive_one_hand_palm_flip",
+        "dive_palm_flip",
+        "dyno_palm_flip",
+        "dyno_pull_palm_flip",
+        "elbow_palm_flip",
+        "flyaway_zero_in_palm_flip_out",
+        "one_hand_palm_flip",
+        "one_step_360_palm_flip",
+        "one_step_ceiling_palm_flip",
+        "one_step_corner_palm_flip",
+        "one_step_palm_flip",
+        "one_step_palm_flip_down_monkey",
+        "one_step_straddle_palm_flip",
+        "palm_back_handspring",
+        "palm_flip",
+        "palm_flip_in_wall_punch_out",
+        "palm_flip_layout",
+        "palm_flip_precision",
+        "pull_palm_flip",
+        "straddle_palm_flip",
+        "supinated_palm_flip",
+        "trapdoor_palm_flip"
+      ],
+      "fig_tricks": [
+        "Palm Backflip"
+      ],
+      "category": "wall",
+      "count": 26
+    },
+    "pimp_flip": {
+      "clips": [
+        "flare_pimp_flip",
+        "knee_giant_pimp_flip",
+        "kong_outside_hand_pimp_flip",
+        "outside_hand_pimp_flip",
+        "pimp_flip",
+        "scoot_pimp_flip",
+        "sitting_pimp_flip"
+      ],
+      "fig_tricks": [
+        "Pimp Backflip"
+      ],
+      "category": "wall",
+      "count": 7
+    },
+    "gaet_pimp": {
+      "clips": [
+        "alley_gaet_pimp",
+        "alley_gaet_pimp_layout",
+        "circle_double_gaet_pimp",
+        "circle_gaet_pimp",
+        "dive_palm_spin_gaet_pimp",
+        "double_elbow_gaet_pimp",
+        "double_gaet_pimp",
+        "elbow_gaet_pimp",
+        "elbow_gaet_pimp_punch_wall_flip",
+        "gaet_pimp",
+        "gaet_pimp_arabian",
+        "gaet_pimp_cat",
+        "gaet_pimp_catch",
+        "gaet_pimp_cork_zero",
+        "gaet_pimp_counter_full",
+        "gaet_pimp_double_full",
+        "gaet_pimp_down_monkey",
+        "gaet_pimp_full",
+        "gaet_pimp_full_double_leg",
+        "gaet_pimp_full_down",
+        "gaet_pimp_full_in_back_out",
+        "gaet_pimp_in_punch_wall_flip_out",
+        "gaet_pimp_in_stall_out",
+        "gaet_pimp_kick_full_down",
+        "gaet_pimp_layout",
+        "gaet_pimp_layout_catch",
+        "gaet_pimp_layout_in_back_out",
+        "gaet_pimp_punch_wall_flip",
+        "gaet_pimp_wall_flip",
+        "gaet_pimp_wall_wrap_full",
+        "over_hand_gaet_pimp",
+        "palm_spin_gaet_pimp",
+        "palm_spin_gaet_pimp_full",
+        "reverse_palm_spin_gaet_pimp",
+        "sitting_turn_gaet_pimp",
+        "turn_gaet_pimp",
+        "turn_gaet_pimp_double_full",
+        "turn_gaet_pimp_full",
+        "turn_gaet_pimp_layout",
+        "turn_gaet_pimp_pike",
+        "turn_gaet_pimp_wall_flip",
+        "turn_gaet_pimp_wall_full",
+        "turn_gaet_pimp_wall_wrap_full"
+      ],
+      "fig_tricks": [
+        "Gaet Pimp Backflip 360"
+      ],
+      "category": "wall",
+      "count": 43
+    },
+    "angel_drop": {
+      "clips": [
+        "angel_drop",
+        "angel_drop_down_monkey",
+        "angel_drop_full",
+        "angel_drop_punch_wall_flip",
+        "angel_drop_wall_back_handspring_half_down",
+        "angel_drop_wall_double_full",
+        "angel_drop_wall_flip",
+        "cat_split_angel_drop",
+        "cheat_angel_drop",
+        "tripod_angel_drop"
+      ],
+      "fig_tricks": [
+        "Angel Drop"
+      ],
+      "category": "wall",
+      "count": 10
+    },
+    "devil_drop": {
+      "clips": [
+        "cheat_devil_drop",
+        "devil_drop",
+        "devil_drop_castaway_inward_front",
+        "devil_drop_catch",
+        "devil_drop_frisbee_full_down",
+        "devil_drop_gainer",
+        "devil_drop_gainer_down_monkey",
+        "devil_drop_gainer_full",
+        "devil_drop_gainer_layout",
+        "devil_drop_gainer_one_hand_down_monkey_flash_kick",
+        "devil_drop_gainer_one_hand_down_monkey_full_down",
+        "devil_drop_half",
+        "devil_drop_inward_down_monkey",
+        "devil_drop_inward_tunnel",
+        "devil_drop_raiden",
+        "devil_drop_rudi",
+        "devil_drop_side",
+        "devil_drop_side_catch",
+        "devil_drop_side_full",
+        "devil_drop_side_full_down",
+        "devil_drop_stall",
+        "devil_drop_stall_gainer",
+        "devil_drop_stall_side",
+        "devil_drop_turn_gargoyle_front",
+        "devil_drop_wall_spin_half",
+        "double_devil_drop",
+        "double_devil_drop_side"
+      ],
+      "fig_tricks": [
+        "Devil Drop"
+      ],
+      "category": "wall",
+      "count": 27
+    },
+    "castaway_back": {
+      "clips": [
+        "banol_drop_castaway_back",
+        "castaway_back",
+        "castaway_back_full_down",
+        "castaway_back_in_punch_wall_layout_out",
+        "castaway_back_quarter_side",
+        "castaway_back_regrab",
+        "caster_castaway_back",
+        "dive_castaway_back",
+        "drop_castaway_back",
+        "elbow_castaway_back",
+        "gate_castaway_back",
+        "handstand_castaway_back",
+        "human_flag_castaway_back",
+        "inverted_hang_spider_man_castaway_back",
+        "one_hand_castaway_back",
+        "one_hand_handstand_castaway_back",
+        "reverse_hyper_castaway_back",
+        "sitting_turn_castaway_back",
+        "spider_freeze_castaway_back",
+        "turn_castaway_back",
+        "turn_castaway_back_full_down"
+      ],
+      "fig_tricks": [
+        "Castaway Backflip"
+      ],
+      "category": "wall",
+      "count": 21
+    },
+    "flyaway": {
+      "clips": [
+        "2d_flyaway",
+        "double_flyaway",
+        "double_inward_flyaway",
+        "elbow_flyaway",
+        "flyaway",
+        "flyaway_1_34_full_in_side_out",
+        "flyaway_270_down_monkey_90",
+        "flyaway_34_full_down_in_side_out",
+        "flyaway_inward_double_side",
+        "flyaway_pistol_side_in_pistol_side_out",
+        "flyaway_two_and_a_half_full_regrab",
+        "inward_flyaway",
+        "inward_flyaway_donut_boy",
+        "inward_flyaway_inward_down_monkey",
+        "inward_flyaway_regrab",
+        "inward_flyaway_side",
+        "inward_flyaway_side_regrab",
+        "inward_flyaway_wall_punch_dive_roll",
+        "lotus_flyaway",
+        "one_hand_double_flyaway",
+        "one_hand_flyaway",
+        "overbar_double_flyaway",
+        "quadruple_flyaway",
+        "reverse_lever_inward_flyaway",
+        "shoulder_flyaway",
+        "triple_flyaway"
+      ],
+      "fig_tricks": [
+        "Swing 180",
+        "Swing Gainer"
+      ],
+      "category": "swing",
+      "count": 26
+    },
+    "flyaway_full": {
+      "clips": [
+        "crucifix_flyaway_full",
+        "elbow_flyaway_full",
+        "flyaway_full",
+        "inward_flyaway_full"
+      ],
+      "fig_tricks": [
+        "Swing Gainer 360"
+      ],
+      "category": "swing",
+      "count": 4
+    },
+    "giant": {
+      "clips": [
+        "360_dive_catch_reverse_giant",
+        "back_hip_circle_half_knee_giant",
+        "dive_catch_reverse_giant",
+        "giant",
+        "giant_over_180_trapdoor_wall_flip",
+        "giant_pimp",
+        "knee_giant",
+        "knee_giant_pimp_flip",
+        "lotus_giant",
+        "reverse_giant",
+        "reverse_knee_giant_down_monkey",
+        "shoulder_giant"
+      ],
+      "fig_tricks": [
+        "Giant"
+      ],
+      "category": "swing",
+      "count": 12
+    },
+    "sole_circle": {
+      "clips": [
+        "reverse_straddle_sole_circle",
+        "reverse_straddle_sole_circle_inward_front",
+        "reverse_straddle_sole_circle_inward_front_half",
+        "sole_circle",
+        "split_sole_circle_gainer",
+        "split_sole_circle_gainer_full",
+        "straddle_sole_circle",
+        "straddle_sole_circle_gainer",
+        "straddle_sole_circle_gainer_full",
+        "straddle_sole_circle_gainer_layout",
+        "straddle_sole_circle_stall_gainer"
+      ],
+      "fig_tricks": [
+        "(Straddle) Sole Circle"
+      ],
+      "category": "swing",
+      "count": 11
+    },
+    "kong_vault": {
+      "clips": [
+        "kong_cat",
+        "kong_precision",
+        "kong_vault"
+      ],
+      "fig_tricks": [
+        "Kong Vault"
+      ],
+      "category": "pk_basics",
+      "count": 3
+    },
+    "side_vault": {
+      "clips": [
+        "cast_gainer_side_vault",
+        "kong_360_side_vault",
+        "side_vault",
+        "side_vault_cork_zero",
+        "side_vault_pimp",
+        "side_vault_pimp_full",
+        "side_vault_pimp_layout",
+        "side_vault_stall_pimp"
+      ],
+      "fig_tricks": [
+        "Side Vault"
+      ],
+      "category": "pk_basics",
+      "count": 8
+    },
+    "speed_vault": {
+      "clips": [
+        "360_speed_vault",
+        "crowd_awakener_speed_vault",
+        "speed_vault",
+        "speed_vault_360",
+        "speed_vault_540"
+      ],
+      "fig_tricks": [
+        "Plyo"
+      ],
+      "category": "pk_basics",
+      "count": 5
+    },
+    "precision": {
+      "clips": [
+        "180_precision",
+        "450_precision",
+        "540_precision",
+        "720_precision",
+        "aerial_twist_double_leg_precision",
+        "backward_precision",
+        "dash_precision",
+        "flyaway_precision_in_punch_wall_flip_out",
+        "full_up_side_precision",
+        "gainer_full_precision",
+        "gainer_precision",
+        "ghost_step_stride_precision",
+        "hurdle_precision",
+        "kong_180_precision",
+        "kong_gainer_precision",
+        "kong_side_precision",
+        "lache_precision",
+        "lache_precision_punch_wall_flip",
+        "lache_precision_punch_wall_full",
+        "lache_punch_tic_tac_trapdoor_precision_full",
+        "one_step_360_horizontal_wall_run_precision",
+        "palm_flip_precision",
+        "precision",
+        "punch_tic_tac_precision",
+        "reverse_precision",
+        "running_slant_gainer_precision",
+        "safety_precision",
+        "speed_double_safety_precision",
+        "speed_precision",
+        "split_vault_precision",
+        "stride_540_precision",
+        "thief_precision",
+        "three_step_tic_tac_precision",
+        "tic_tac_precision",
+        "webster_precision"
+      ],
+      "fig_tricks": [
+        "Stride"
+      ],
+      "category": "pk_basics",
+      "count": 35
+    },
+    "tic_tac": {
+      "clips": [
+        "270_tic_tac_wall_flip",
+        "flyaway_tic_tac_180_regrab",
+        "lache_punch_tic_tac_trapdoor_precision_full",
+        "lache_punch_tic_tac_trapdoor_wall_flip",
+        "punch_tic_tac_precision",
+        "three_step_tic_tac_precision",
+        "tic_tac",
+        "tic_tac_front",
+        "tic_tac_precision"
+      ],
+      "fig_tricks": [
+        "Tic Tac"
+      ],
+      "category": "pk_basics",
+      "count": 9
+    }
+  },
+  "num_families": 43,
+  "total_clips": 833,
+  "clips_dir": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/parkourtheory_clips_cropped"
+}

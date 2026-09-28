@@ -1,0 +1,14 @@
+{
+  "slug": "180_palm_inward_tunnel",
+  "trick": "Swing Counter Sideflip",
+  "cues": {
+    "context": "wall",
+    "direction": "side",
+    "flip": 1.0,
+    "twist": 0.0,
+    "axis": "sagittal"
+  },
+  "d_score": 2.8,
+  "confidence": 0.7648131787776947,
+  "source": "local"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "360_safety_pimp_full",
+  "trick": "Sideflip 360",
+  "cues": {
+    "context": "wall",
+    "direction": "side",
+    "flip": 1.0,
+    "twist": 1.0,
+    "axis": "sagittal"
+  },
+  "d_score": 2.4,
+  "confidence": 0.6349126100540161,
+  "source": "local"
+}

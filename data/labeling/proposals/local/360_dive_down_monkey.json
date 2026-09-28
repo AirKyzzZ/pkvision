@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_down_monkey",
+  "trick": "360 Precision",
+  "cues": {
+    "context": "swing",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 1.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 1.5,
+  "confidence": 0.6517423987388611,
+  "source": "local"
+}

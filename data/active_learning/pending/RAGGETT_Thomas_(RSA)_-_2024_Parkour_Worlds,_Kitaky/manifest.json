@@ -1,0 +1,259 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/RAGGETT Thomas (RSA) - 2024 Parkour Worlds, Kitakyushu (JPN) Qualification Parkour Freestyle Run 1.mp4",
+  "video_name": "RAGGETT Thomas (RSA) - 2024 Parkour Worlds, Kitakyushu (JPN) Qualification Parkour Freestyle Run 1.mp4",
+  "fps": 25.0,
+  "total_frames": 1316,
+  "duration_s": 52.64,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_001_preview.jpg",
+      "start_s": 5.4,
+      "end_s": 6.04,
+      "duration_s": 0.6399999999999997,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3025893568992615
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3009902536869049
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3088860809803009
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_002_preview.jpg",
+      "start_s": 6.96,
+      "end_s": 8.16,
+      "duration_s": 1.2000000000000002,
+      "num_frames": 31,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3154205083847046
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32357150316238403
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3362591862678528
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_003_preview.jpg",
+      "start_s": 13.04,
+      "end_s": 13.68,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2881999611854553
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.28994035720825195
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3130565881729126
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_004_preview.jpg",
+      "start_s": 19.8,
+      "end_s": 20.84,
+      "duration_s": 1.0399999999999991,
+      "num_frames": 27,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.297039270401001
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.30233150720596313
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.30584925413131714
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_005_preview.jpg",
+      "start_s": 26.08,
+      "end_s": 26.72,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2721252143383026
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.2666802406311035
+        },
+        "context": {
+          "value": "swing",
+          "confidence": 0.27843937277793884
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_006_preview.jpg",
+      "start_s": 29.4,
+      "end_s": 30.24,
+      "duration_s": 0.8399999999999999,
+      "num_frames": 22,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3077303469181061
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31468087434768677
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3150928020477295
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_007_preview.jpg",
+      "start_s": 31.64,
+      "end_s": 32.64,
+      "duration_s": 1.0,
+      "num_frames": 26,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3102648854255676
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3201099932193756
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3207079768180847
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_008",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_008.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_008_preview.jpg",
+      "start_s": 35.6,
+      "end_s": 37.12,
+      "duration_s": 1.519999999999996,
+      "num_frames": 39,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31318819522857666
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3171917200088501
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3214277923107147
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_009",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_009.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_009_preview.jpg",
+      "start_s": 41.76,
+      "end_s": 42.64,
+      "duration_s": 0.8800000000000026,
+      "num_frames": 23,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3095504641532898
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3179973065853119
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3214438855648041
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_010",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_010.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/RAGGETT_Thomas_(RSA)_-_2024_Parkour_Worlds,_Kitaky/trick_010_preview.jpg",
+      "start_s": 43.52,
+      "end_s": 44.64,
+      "duration_s": 1.1199999999999974,
+      "num_frames": 29,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.32024502754211426
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3248140513896942
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3290712833404541
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    }
+  ]
+}

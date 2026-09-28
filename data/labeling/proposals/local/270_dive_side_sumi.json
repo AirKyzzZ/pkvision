@@ -1,0 +1,14 @@
+{
+  "slug": "270_dive_side_sumi",
+  "trick": null,
+  "cues": {
+    "context": "wall",
+    "direction": "side",
+    "flip": 2.0,
+    "twist": 0.5,
+    "axis": "sagittal"
+  },
+  "d_score": null,
+  "confidence": 0.7413710534572602,
+  "source": "local"
+}

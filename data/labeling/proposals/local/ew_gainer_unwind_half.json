@@ -1,0 +1,14 @@
+{
+  "slug": "ew_gainer_unwind_half",
+  "trick": null,
+  "cues": {
+    "context": "acrobatics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.6063016831874848,
+  "source": "local"
+}

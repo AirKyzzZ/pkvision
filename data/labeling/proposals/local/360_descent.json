@@ -1,0 +1,14 @@
+{
+  "slug": "360_descent",
+  "trick": "Swing Counter Sideflip",
+  "cues": {
+    "context": "wall",
+    "direction": "side",
+    "flip": 1.0,
+    "twist": 0.0,
+    "axis": "sagittal"
+  },
+  "d_score": 2.8,
+  "confidence": 0.6030967116355896,
+  "source": "local"
+}

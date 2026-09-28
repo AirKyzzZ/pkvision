@@ -1,0 +1,369 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4",
+  "video_name": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4",
+  "fps": 25.0,
+  "total_frames": 1475,
+  "duration_s": 59.0,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_001_preview.jpg",
+      "start_s": 5.68,
+      "end_s": 8.4,
+      "duration_s": 2.7200000000000006,
+      "num_frames": 69,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3168886601924896
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3268812894821167
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3358249068260193
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "1",
+        "context": "wall",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_002_preview.jpg",
+      "start_s": 12.08,
+      "end_s": 13.56,
+      "duration_s": 1.4800000000000004,
+      "num_frames": 38,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.317622572183609
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3358135223388672
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3344860374927521
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_003_preview.jpg",
+      "start_s": 15.56,
+      "end_s": 16.56,
+      "duration_s": 0.9999999999999982,
+      "num_frames": 26,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.308859258890152
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31396880745887756
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.31162357330322266
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "2+",
+        "context": "acrobatics",
+        "trick_name": "double full"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_004_preview.jpg",
+      "start_s": 19.0,
+      "end_s": 21.32,
+      "duration_s": 2.3200000000000003,
+      "num_frames": 59,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3178766369819641
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32352393865585327
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.32163339853286743
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "1",
+        "twist_count": "0",
+        "context": "wall",
+        "trick_name": "kong gainer"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_005_preview.jpg",
+      "start_s": 21.88,
+      "end_s": 24.44,
+      "duration_s": 2.5600000000000023,
+      "num_frames": 65,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.32014477252960205
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32324904203414917
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.32654374837875366
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "1",
+        "twist_count": "1",
+        "context": "acrobatics",
+        "trick_name": "gainer full"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_006_preview.jpg",
+      "start_s": 26.08,
+      "end_s": 27.12,
+      "duration_s": 1.0400000000000027,
+      "num_frames": 27,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.31725770235061646
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.33195704221725464
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.32800307869911194
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "2+",
+        "context": "acrobatics",
+        "trick_name": "triple cork"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_007_preview.jpg",
+      "start_s": 27.68,
+      "end_s": 28.96,
+      "duration_s": 1.2800000000000011,
+      "num_frames": 33,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3118476867675781
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31597423553466797
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.316551148891449
+        }
+      },
+      "confirmed_label": {
+        "direction": "side",
+        "flip_count": "1",
+        "twist_count": "0",
+        "context": "acrobatics",
+        "trick_name": "sideflip"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_008",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_008.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_008_preview.jpg",
+      "start_s": 30.52,
+      "end_s": 31.6,
+      "duration_s": 1.0800000000000018,
+      "num_frames": 28,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.31988584995269775
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32696712017059326
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3264557123184204
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "2+",
+        "context": "acrobatics",
+        "trick_name": "double full"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_009",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_009.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_009_preview.jpg",
+      "start_s": 32.2,
+      "end_s": 32.92,
+      "duration_s": 0.7199999999999989,
+      "num_frames": 19,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31128251552581787
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3151642978191376
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.31896454095840454
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "0",
+        "context": "acrobatics",
+        "trick_name": "backflip"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_010",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_010.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_010_preview.jpg",
+      "start_s": 34.84,
+      "end_s": 35.68,
+      "duration_s": 0.8399999999999963,
+      "num_frames": 22,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.31859904527664185
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3182610869407654
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.314399391412735
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "2+",
+        "context": "acrobatics",
+        "trick_name": "triple cork"
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_011",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_011.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_011_preview.jpg",
+      "start_s": 36.8,
+      "end_s": 39.48,
+      "duration_s": 2.6799999999999997,
+      "num_frames": 68,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.31212925910949707
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32533136010169983
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3278820812702179
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_012",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_012.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/Parkour_FIG_Parkour_Virtual_Competition_Freestyle_/trick_012_preview.jpg",
+      "start_s": 50.36,
+      "end_s": 51.4,
+      "duration_s": 1.0399999999999991,
+      "num_frames": 27,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3171180486679077
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3197253942489624
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3315567970275879
+        }
+      },
+      "confirmed_label": {
+        "direction": "backward",
+        "flip_count": "1",
+        "twist_count": "0",
+        "context": "wall",
+        "trick_name": "trapdoor"
+      },
+      "status": "confirmed"
+    }
+  ]
+}

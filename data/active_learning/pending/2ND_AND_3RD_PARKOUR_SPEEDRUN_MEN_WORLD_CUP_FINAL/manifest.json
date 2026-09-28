@@ -1,0 +1,282 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4",
+  "video_name": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4",
+  "fps": 50.0,
+  "total_frames": 2164,
+  "duration_s": 43.28,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_001_preview.jpg",
+      "start_s": 10.56,
+      "end_s": 11.22,
+      "duration_s": 0.6600000000000001,
+      "num_frames": 34,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.304950475692749
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.30343809723854065
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.31329989433288574
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "twist_count": "0",
+        "context": "pk_basics",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_002_preview.jpg",
+      "start_s": 13.74,
+      "end_s": 14.5,
+      "duration_s": 0.7599999999999998,
+      "num_frames": 39,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3133871555328369
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3024529218673706
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.31912961602211
+        }
+      },
+      "confirmed_label": {
+        "direction": "none",
+        "flip_count": "0",
+        "twist_count": "0",
+        "context": "pk_basics",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_003_preview.jpg",
+      "start_s": 15.4,
+      "end_s": 16.9,
+      "duration_s": 1.4999999999999982,
+      "num_frames": 76,
+      "suggested_label": {
+        "direction": {
+          "value": "forward",
+          "confidence": 0.27604150772094727
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2756272852420807
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.3033530116081238
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_004_preview.jpg",
+      "start_s": 18.98,
+      "end_s": 22.48,
+      "duration_s": 3.5,
+      "num_frames": 176,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3055930435657501
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.3017381727695465
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.315176784992218
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "twist_count": "0",
+        "context": "pk_basics",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_005_preview.jpg",
+      "start_s": 24.18,
+      "end_s": 24.86,
+      "duration_s": 0.6799999999999997,
+      "num_frames": 35,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31097057461738586
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.306419312953949
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.31334084272384644
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "twist_count": "0",
+        "context": "pk_basics",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_006_preview.jpg",
+      "start_s": 25.74,
+      "end_s": 26.66,
+      "duration_s": 0.9200000000000017,
+      "num_frames": 47,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31194591522216797
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.30821144580841064
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.31754082441329956
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "twist_count": "0",
+        "context": "pk_basics",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_007_preview.jpg",
+      "start_s": 27.78,
+      "end_s": 28.7,
+      "duration_s": 0.9199999999999982,
+      "num_frames": 47,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3111006021499634
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.3016875684261322
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3170228600502014
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "twist_count": "0",
+        "context": "pk_basics",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_008",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_008.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_008_preview.jpg",
+      "start_s": 30.76,
+      "end_s": 31.62,
+      "duration_s": 0.8599999999999994,
+      "num_frames": 44,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31131118535995483
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.3106786906719208
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3180072605609894
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "twist_count": "0",
+        "context": "pk_basics",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    },
+    {
+      "name": "trick_009",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_009.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL/trick_009_preview.jpg",
+      "start_s": 32.2,
+      "end_s": 32.84,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 33,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.2924288213253021
+        },
+        "flip_count": {
+          "value": "0",
+          "confidence": 0.2855655550956726
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.2915269136428833
+        }
+      },
+      "confirmed_label": {
+        "direction": "forward",
+        "flip_count": "0",
+        "twist_count": "0",
+        "context": "pk_basics",
+        "trick_name": ""
+      },
+      "status": "confirmed"
+    }
+  ]
+}

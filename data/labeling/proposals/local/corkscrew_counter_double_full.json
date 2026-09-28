@@ -1,0 +1,13 @@
+{
+  "slug": "corkscrew_counter_double_full",
+  "trick": null,
+  "cues": {
+    "context": "acrobatics",
+    "direction": "forward",
+    "flip": 0.0,
+    "axis": "longitudinal"
+  },
+  "d_score": null,
+  "confidence": 0.6021332800388336,
+  "source": "local"
+}

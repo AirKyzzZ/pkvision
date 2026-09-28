@@ -1,0 +1,361 @@
+[
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_007",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_007.npy",
+    "direction": "none",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_008",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_008.npy",
+    "direction": "none",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_009",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_009.npy",
+    "direction": "none",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_010",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_010.npy",
+    "direction": "none",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_011",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_011.npy",
+    "direction": "none",
+    "flip_count": "1",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_012",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_012.npy",
+    "direction": "none",
+    "flip_count": "0",
+    "context": "wall",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_013",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_013.npy",
+    "direction": "none",
+    "flip_count": "0",
+    "context": "wall",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_001",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_001.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_002",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_002.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_004",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_004.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_005",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_-_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_005.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST - PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "1ST_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_001",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_001.npy",
+    "direction": "forward",
+    "flip_count": "2+",
+    "context": "acrobatics",
+    "source": "active_learning",
+    "video": "1ST PLACE - FIG PARKOUR FREESTYLE WORLD CUP.mp4"
+  },
+  {
+    "slug": "1ST_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_002",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_002.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "context": "pk_basics",
+    "source": "active_learning",
+    "video": "1ST PLACE - FIG PARKOUR FREESTYLE WORLD CUP.mp4"
+  },
+  {
+    "slug": "1ST_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_003",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/1ST_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_003.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "2+",
+    "context": "acrobatics",
+    "trick_name": "double full",
+    "source": "active_learning",
+    "video": "1ST PLACE - FIG PARKOUR FREESTYLE WORLD CUP.mp4"
+  },
+  {
+    "slug": "2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_001",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_001.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "twist_count": "0",
+    "context": "pk_basics",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_002",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_002.npy",
+    "direction": "none",
+    "flip_count": "0",
+    "twist_count": "0",
+    "context": "pk_basics",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_004",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_004.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "twist_count": "0",
+    "context": "pk_basics",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_005",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_005.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "twist_count": "0",
+    "context": "pk_basics",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_006",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_006.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "twist_count": "0",
+    "context": "pk_basics",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_007",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_007.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "twist_count": "0",
+    "context": "pk_basics",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_008",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_008.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "twist_count": "0",
+    "context": "pk_basics",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_009",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/2ND_AND_3RD_PARKOUR_SPEEDRUN_MEN_WORLD_CUP_FINAL_trick_009.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "twist_count": "0",
+    "context": "pk_basics",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "2ND AND 3RD PARKOUR SPEEDRUN MEN WORLD CUP FINAL.mp4"
+  },
+  {
+    "slug": "3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_001",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_001.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "2+",
+    "context": "wall",
+    "trick_name": "wall gainer double full",
+    "source": "active_learning",
+    "video": "3RD PLACE - FIG PARKOUR FREESTYLE WORLD CUP.mp4"
+  },
+  {
+    "slug": "3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_003",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_003.npy",
+    "direction": "forward",
+    "flip_count": "0",
+    "twist_count": "1",
+    "context": "acrobatics",
+    "trick_name": "raiz",
+    "source": "active_learning",
+    "video": "3RD PLACE - FIG PARKOUR FREESTYLE WORLD CUP.mp4"
+  },
+  {
+    "slug": "3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_004",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/3RD_PLACE_-_FIG_PARKOUR_FREESTYLE_WORLD_CUP_trick_004.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "2+",
+    "context": "acrobatics",
+    "trick_name": "triple full",
+    "source": "active_learning",
+    "video": "3RD PLACE - FIG PARKOUR FREESTYLE WORLD CUP.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_001",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_001.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "1",
+    "context": "wall",
+    "trick_name": "",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_003",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_003.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "2+",
+    "context": "acrobatics",
+    "trick_name": "double full",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_004",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_004.npy",
+    "direction": "forward",
+    "flip_count": "1",
+    "twist_count": "0",
+    "context": "wall",
+    "trick_name": "kong gainer",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_005",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_005.npy",
+    "direction": "forward",
+    "flip_count": "1",
+    "twist_count": "1",
+    "context": "acrobatics",
+    "trick_name": "gainer full",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_006",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_006.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "2+",
+    "context": "acrobatics",
+    "trick_name": "triple cork",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_007",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_007.npy",
+    "direction": "side",
+    "flip_count": "1",
+    "twist_count": "0",
+    "context": "acrobatics",
+    "trick_name": "sideflip",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_008",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_008.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "2+",
+    "context": "acrobatics",
+    "trick_name": "double full",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_009",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_009.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "0",
+    "context": "acrobatics",
+    "trick_name": "backflip",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_010",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_010.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "2+",
+    "context": "acrobatics",
+    "trick_name": "triple cork",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  },
+  {
+    "slug": "Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_012",
+    "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/confirmed/Parkour_FIG_Parkour_Virtual_Competition_Freestyle__trick_012.npy",
+    "direction": "backward",
+    "flip_count": "1",
+    "twist_count": "0",
+    "context": "wall",
+    "trick_name": "trapdoor",
+    "source": "active_learning",
+    "video": "Parkour FIG Parkour Virtual Competition Freestyle - Finalists MEN.mp4"
+  }
+]

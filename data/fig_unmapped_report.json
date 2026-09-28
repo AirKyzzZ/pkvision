@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Pole Swing",
+    "category": "swing",
+    "score": 0.4,
+    "flip": 0,
+    "twist": 0
+  },
+  {
+    "name": "Swing Frontflip",
+    "category": "swing",
+    "score": 1.8,
+    "flip": 1,
+    "twist": 0
+  },
+  {
+    "name": "Swing Sideflip",
+    "category": "swing",
+    "score": 1.9,
+    "flip": 1,
+    "twist": 0
+  },
+  {
+    "name": "Swing Frontflip 180",
+    "category": "swing",
+    "score": 2.2,
+    "flip": 1,
+    "twist": 0.5
+  },
+  {
+    "name": "Swing Frontflip 360",
+    "category": "swing",
+    "score": 2.5,
+    "flip": 1,
+    "twist": 1
+  },
+  {
+    "name": "Swing Counter Sideflip",
+    "category": "swing",
+    "score": 2.8,
+    "flip": 1,
+    "twist": 0
+  },
+  {
+    "name": "Swing Counter Frontflip",
+    "category": "swing",
+    "score": 2.9,
+    "flip": 1,
+    "twist": 0
+  },
+  {
+    "name": "Geinger",
+    "category": "swing",
+    "score": 3.0,
+    "flip": 1,
+    "twist": 0.5
+  },
+  {
+    "name": "Swing Double Frontflip",
+    "category": "swing",
+    "score": 5.1,
+    "flip": 2,
+    "twist": 0
+  },
+  {
+    "name": "Swing Double Sideflip",
+    "category": "swing",
+    "score": 5.2,
+    "flip": 2,
+    "twist": 0
+  }
+]

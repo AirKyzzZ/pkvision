@@ -1,0 +1,14 @@
+{
+  "slug": "180_dive_kong_gainer",
+  "trick": null,
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 0.5,
+    "axis": "off_axis"
+  },
+  "d_score": null,
+  "confidence": 0.586099362373352,
+  "source": "local"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_roll",
+  "trick": "Front Half-In Back-Out",
+  "cues": {
+    "context": "acrobatics",
+    "direction": "forward",
+    "flip": 2.0,
+    "twist": 0.5,
+    "axis": "lateral"
+  },
+  "d_score": 5.5,
+  "confidence": 0.6215229094028473,
+  "source": "local"
+}

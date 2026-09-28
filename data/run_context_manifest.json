@@ -1,0 +1,6 @@
+{
+  "_comment": "Parent-run cue overrides for auto-segmented clips whose paths carry no context hint. Keyed by '<run_stem>/<clip_stem>'. Only overrides known from the POOL-A run listings in paper/experiments/ground_truth.csv — nothing inferred.",
+  "test_run_2_zoomed/trick_07": {
+    "context": "wall"
+  }
+}

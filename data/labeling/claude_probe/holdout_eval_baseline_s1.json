@@ -1,0 +1,23 @@
+{
+ "label": "baseline_s1",
+ "ckpt": "data/models/cue_baseline_s1.pt",
+ "missing_skeleton": 0,
+ "per_cue": {
+  "flip_bin": {
+   "acc": 0.4146341463414634,
+   "n": 82
+  },
+  "twist_bin": {
+   "acc": 0.734375,
+   "n": 64
+  },
+  "direction": {
+   "acc": 0.43529411764705883,
+   "n": 85
+  },
+  "context": {
+   "acc": 0.6794871794871795,
+   "n": 78
+  }
+ }
+}

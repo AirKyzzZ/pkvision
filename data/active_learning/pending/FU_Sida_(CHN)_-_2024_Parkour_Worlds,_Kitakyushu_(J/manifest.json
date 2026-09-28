@@ -1,0 +1,284 @@
+{
+  "video": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/videos/FU Sida (CHN) - 2024 Parkour Worlds, Kitakyushu (JPN) Qualification Parkour Freestyle Run 1.mp4",
+  "video_name": "FU Sida (CHN) - 2024 Parkour Worlds, Kitakyushu (JPN) Qualification Parkour Freestyle Run 1.mp4",
+  "fps": 25.0,
+  "total_frames": 1473,
+  "duration_s": 58.92,
+  "tricks": [
+    {
+      "name": "trick_001",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_001.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_001_preview.jpg",
+      "start_s": 18.6,
+      "end_s": 20.04,
+      "duration_s": 1.4399999999999977,
+      "num_frames": 37,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.31536534428596497
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31968629360198975
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3226172924041748
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_002",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_002.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_002_preview.jpg",
+      "start_s": 23.64,
+      "end_s": 25.4,
+      "duration_s": 1.759999999999998,
+      "num_frames": 45,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.32219529151916504
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32178953289985657
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.32315221428871155
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_003",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_003.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_003_preview.jpg",
+      "start_s": 26.6,
+      "end_s": 28.12,
+      "duration_s": 1.5199999999999996,
+      "num_frames": 39,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.29752224683761597
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2947917580604553
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.2994351387023926
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_004",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_004.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_004_preview.jpg",
+      "start_s": 28.84,
+      "end_s": 29.48,
+      "duration_s": 0.6400000000000006,
+      "num_frames": 17,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3178122937679291
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.30676260590553284
+        },
+        "context": {
+          "value": "pk_basics",
+          "confidence": 0.3162948489189148
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_005",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_005.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_005_preview.jpg",
+      "start_s": 31.76,
+      "end_s": 32.72,
+      "duration_s": 0.9599999999999973,
+      "num_frames": 25,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3157179653644562
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.32016798853874207
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.32615023851394653
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_006",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_006.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_006_preview.jpg",
+      "start_s": 33.28,
+      "end_s": 34.88,
+      "duration_s": 1.6000000000000014,
+      "num_frames": 41,
+      "suggested_label": {
+        "direction": {
+          "value": "backward",
+          "confidence": 0.3205474615097046
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3320024013519287
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.33230000734329224
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_007",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_007.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_007_preview.jpg",
+      "start_s": 36.36,
+      "end_s": 37.08,
+      "duration_s": 0.7199999999999989,
+      "num_frames": 19,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30344611406326294
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3054487705230713
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.31573164463043213
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_008",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_008.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_008_preview.jpg",
+      "start_s": 37.56,
+      "end_s": 38.24,
+      "duration_s": 0.6799999999999997,
+      "num_frames": 18,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3105291426181793
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.31124448776245117
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3176058530807495
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_009",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_009.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_009_preview.jpg",
+      "start_s": 42.12,
+      "end_s": 43.68,
+      "duration_s": 1.5600000000000023,
+      "num_frames": 40,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30250996351242065
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.30250585079193115
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.30208882689476013
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_010",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_010.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_010_preview.jpg",
+      "start_s": 49.04,
+      "end_s": 50.52,
+      "duration_s": 1.480000000000004,
+      "num_frames": 38,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.3119281828403473
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.3164469003677368
+        },
+        "context": {
+          "value": "wall",
+          "confidence": 0.31967198848724365
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    },
+    {
+      "name": "trick_011",
+      "npy_path": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_011.npy",
+      "preview": "/Users/samsepiol/Downloads/GithubRepos/Work/Projets-perso/computer-vision/pkvision/data/active_learning/pending/FU_Sida_(CHN)_-_2024_Parkour_Worlds,_Kitakyushu_(J/trick_011_preview.jpg",
+      "start_s": 54.36,
+      "end_s": 55.36,
+      "duration_s": 1.0,
+      "num_frames": 26,
+      "suggested_label": {
+        "direction": {
+          "value": "none",
+          "confidence": 0.30391377210617065
+        },
+        "flip_count": {
+          "value": "1",
+          "confidence": 0.2996371388435364
+        },
+        "context": {
+          "value": "acrobatics",
+          "confidence": 0.3105427622795105
+        }
+      },
+      "confirmed_label": null,
+      "status": "skipped"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "360_shoulder_vault_360",
+  "trick": "360 Precision",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "forward",
+    "flip": 0.0,
+    "twist": 1.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 1.5,
+  "confidence": 0.639768648147583,
+  "source": "local"
+}

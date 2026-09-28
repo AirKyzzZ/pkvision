@@ -1,0 +1,14 @@
+{
+  "slug": "flyaway_half_in_punch_wall_gainer_out",
+  "trick": null,
+  "cues": {
+    "context": "swing",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.5521887123584748,
+  "source": "local"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_front_handcuffs",
+  "trick": "Inward Tsukahara",
+  "cues": {
+    "context": "acrobatics",
+    "direction": "forward",
+    "flip": 1.0,
+    "twist": 0.0,
+    "axis": "lateral"
+  },
+  "d_score": 6.3,
+  "confidence": 0.7305534601211547,
+  "source": "local"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "270_dive_kong_360_dive_roll",
+  "trick": "Swing Triple Gainer",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "backward",
+    "flip": 3.0,
+    "axis": "lateral"
+  },
+  "d_score": 7.5,
+  "confidence": 0.6881620168685914,
+  "source": "local"
+}

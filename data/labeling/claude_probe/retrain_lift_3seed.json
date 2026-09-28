@@ -1,0 +1,46 @@
+{
+ "flip": {
+  "baseline": 0.407,
+  "claude": 0.492,
+  "delta": 0.085,
+  "seed_deltas": [
+   0.146,
+   0.024,
+   0.085
+  ],
+  "all_positive": true
+ },
+ "twist": {
+  "baseline": 0.646,
+  "claude": 0.599,
+  "delta": -0.047,
+  "seed_deltas": [
+   0.016,
+   -0.093,
+   -0.063
+  ],
+  "all_positive": false
+ },
+ "dir": {
+  "baseline": 0.463,
+  "claude": 0.49,
+  "delta": 0.027,
+  "seed_deltas": [
+   0.082,
+   0.047,
+   -0.047
+  ],
+  "all_positive": false
+ },
+ "ctx": {
+  "baseline": 0.577,
+  "claude": 0.543,
+  "delta": -0.034,
+  "seed_deltas": [
+   -0.013,
+   -0.089,
+   0.0
+  ],
+  "all_positive": false
+ }
+}

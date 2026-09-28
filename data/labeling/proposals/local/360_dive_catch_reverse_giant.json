@@ -1,0 +1,14 @@
+{
+  "slug": "360_dive_catch_reverse_giant",
+  "trick": "Front Half-In Back-Out",
+  "cues": {
+    "context": "swing",
+    "direction": "forward",
+    "flip": 2.0,
+    "twist": 0.5,
+    "axis": "off_axis"
+  },
+  "d_score": 5.5,
+  "confidence": 0.5573776960372925,
+  "source": "local"
+}

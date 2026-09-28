@@ -1,0 +1,13 @@
+{
+  "slug": "cast_gainer",
+  "trick": "Castaway Double Backflip",
+  "cues": {
+    "context": "acrobatics",
+    "direction": "backward",
+    "flip": 2.0,
+    "axis": "lateral"
+  },
+  "d_score": 7.3,
+  "confidence": 0.6066846013069153,
+  "source": "local"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "corkscrew_counter_triple_full",
+  "trick": "Swing Triple Gainer",
+  "cues": {
+    "context": "swing",
+    "direction": "backward",
+    "flip": 3.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 7.5,
+  "confidence": 0.6613344013690948,
+  "source": "local"
+}

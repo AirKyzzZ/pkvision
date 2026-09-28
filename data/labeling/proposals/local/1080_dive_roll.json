@@ -1,0 +1,13 @@
+{
+  "slug": "1080_dive_roll",
+  "trick": null,
+  "cues": {
+    "context": "swing",
+    "direction": "forward",
+    "flip": 3.0,
+    "axis": "lateral"
+  },
+  "d_score": null,
+  "confidence": 0.6314886927604675,
+  "source": "local"
+}

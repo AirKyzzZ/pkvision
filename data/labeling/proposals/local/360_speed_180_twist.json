@@ -1,0 +1,14 @@
+{
+  "slug": "360_speed_180_twist",
+  "trick": "360 Precision",
+  "cues": {
+    "context": "pk_basics",
+    "direction": "backward",
+    "flip": 0.0,
+    "twist": 1.0,
+    "axis": "longitudinal"
+  },
+  "d_score": 1.5,
+  "confidence": 0.662734991312027,
+  "source": "local"
+}
