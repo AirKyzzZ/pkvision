@@ -1,0 +1,50 @@
+% Figure 4: Prompt structure (column-wide TikZ).
+
+\begin{tikzpicture}[
+    font=\small,
+    >={Stealth[round]},
+    box/.style={draw, rounded corners=2pt, thick, align=left, text width=6.6cm, inner sep=4pt},
+    header/.style={font=\small\bfseries, cvprblue!80!black},
+    arrow/.style={-Stealth, thick, cvprblue!80!black},
+    every node/.style={align=left},
+]
+
+\node[box, fill=cvprblue!6] (role) {%
+    \textbf{Role} \\
+    \scriptsize\emph{``You are an expert FIG parkour judge. Identify every
+    trick in this competition run.''}
+};
+
+\node[box, fill=cvprblue!10, below=4mm of role] (tab) {%
+    \textbf{FIG Trick Table (149 entries)} \\[1pt]
+    \scriptsize
+    {\ttfamily | Name | Flips | Twists | Direction | Category |} \\
+    {\ttfamily | Back Flip | 1 | 0 | back | acrobatics |} \\
+    {\ttfamily | Gainer Full | 1 | 1 | back | acrobatics |} \\
+    {\ttfamily | Double Cork | 2 | 2 | back | acrobatics |} \\
+    {\ttfamily ... 146 rows ...}
+};
+
+\node[box, fill=cvprblue!14, below=4mm of tab] (dis) {%
+    \textbf{Disambiguation Guide} \\[1pt]
+    \scriptsize
+    Same physics (1 flip, 0 twist, back): \\
+    \quad Back Flip --- two-foot standing takeoff \\
+    \quad Gainer --- one-foot running takeoff \\
+    \quad Palm Flip --- hand contact on takeoff
+};
+
+\node[box, fill=cvprblue!18, below=4mm of dis] (schema) {%
+    \textbf{Strict JSON Response Schema} \\[1pt]
+    \scriptsize\ttfamily
+    \{"tricks": [\{"trick\_name": ..., \\
+    \hspace*{1em}"category": ..., "direction": ..., \\
+    \hspace*{1em}"flip\_count": ..., "twist\_count": ..., \\
+    \hspace*{1em}"confidence": ..., "reasoning": ...\}]\}
+};
+
+\draw[arrow] (role.south)  -- (tab.north);
+\draw[arrow] (tab.south)   -- (dis.north);
+\draw[arrow] (dis.south)   -- (schema.north);
+
+\end{tikzpicture}

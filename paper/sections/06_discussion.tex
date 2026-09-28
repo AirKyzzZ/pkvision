@@ -1,0 +1,94 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Why we still think the VLM route is correct.}
+Our main results are unflattering but the broader argument of the
+paper stands: a parkour trick name is a \emph{linguistic} label over
+a set of physical motions, not a set of motions in itself. ``Cork''
+is a word that athletes and judges agreed means ``a backflip with a
+half twist on a tilted axis''. It is a compositional entry in a
+shared taxonomy that VLMs have absorbed from the parkour and tricking
+internet at scale. A trained video classifier has to discover that
+taxonomy from a few hundred clips per family and---as we show in
+Sec.~\ref{sec:journey}---consistently fails to do so on our dataset.
+The finding from our benchmark is not ``VLMs don't know parkour''
+but rather ``frontier VLMs know parkour nouns better than they count
+parkour revolutions, and in headless automation mode they have a
+tendency to answer the wrong noun anyway.''
+
+\paragraph{The automation gap.}
+The most surprising and practically actionable result of the paper
+is the gap between interactive and headless behaviour of the same
+VLM on the same clips. In the absence of a clean explanation we
+cannot, in good conscience, claim that a one-shot headless pipeline
+is a solved problem. But we can name the gap and invite follow-up
+work. Hypotheses worth testing in future work include:
+\begin{itemize}
+  \setlength\itemsep{-1pt}
+  \item Interactive chat sessions carry a richer system prompt that
+        includes instructions to reason carefully before answering.
+  \item Headless mode's default temperature produces more
+        confident-but-wrong samples than a human user would see,
+        because the human would retry or ask a follow-up question.
+  \item Tool-call accounting: interactive mode may allow the model
+        more internal scratchpad reasoning before producing a final
+        answer.
+  \item Sampling variance: with 13 clips and one shot per model,
+        every run is a draw from a noisy distribution.
+\end{itemize}
+Each of these is a small empirical study that would sharpen the
+present result. We explicitly position this paper as a baseline that
+the next wave of experiments can improve on.
+
+\paragraph{The matcher is load-bearing, even when the predictions are
+wrong.}
+Table~\ref{tab:matcher_levels} shows that whenever a VLM returns a
+trick name, the fuzzy matcher snaps it to a FIG entry with high
+confidence, usually at the L1 exact level. The cascade therefore
+carries very little of the load on our benchmark---the VLMs happen
+to emit in-table names, even when those names are wrong. We still
+believe the cascade is a load-bearing piece of the system because
+(i)~it is the component that makes the VLM interface deterministic
+and auditable, and (ii)~we saw informal VLM queries produce names
+like ``back double full'', ``cork screw'', and ``krok'' that do need
+the L2--L4 levels. A longer benchmark would likely exercise the
+full cascade more thoroughly.
+
+\paragraph{What the failure gallery tells us about the next system.}
+All three of the recurring errors documented in
+Sec.~\ref{sec:experiments:failures}---twist under-counting, takeoff
+confusion, wall-context loss---are \emph{physics} errors that a
+classical pose-tracking pipeline would be well-positioned to fix if
+its input were reliable. That observation suggests a very concrete
+next architecture: use the VLM only for the trick \emph{noun} (what
+family of move is this), and delegate the \emph{attributes} (flip
+count, twist count, direction, takeoff) to a deterministic physics
+component driven by a 3D pose estimator fine-tuned on acrobatic
+motion. The FIG table is compositional, so two small, well-aligned
+signals would cover the whole space without the VLM having to count
+twists at all. We leave this hybrid to future work; the present
+paper argues only that the noun-only VLM path is the right starting
+point and that the physics path remains necessary.
+
+\paragraph{Cost, latency, deployability.}
+Across the three configurations we benchmarked, a single trick
+identification costs tens of seconds and a few cents or nothing
+at all (Claude via an existing CLI subscription). A full competition
+run of eight tricks is therefore fast and cheap enough to be useful
+as an advisory tool during a live event, even if the accuracy
+remains low: a human judge could in principle be shown the full
+D-score card and correct only the entries the system flagged as
+uncertain. None of our experiments tested this interactive
+judge-assistance mode, but the system's text-level interfaces
+(FIG name + match level + reasoning in every output) make it
+straightforward to plug in.
+
+\paragraph{Ethical note.}
+We explicitly do not recommend using the raw \sys{} scorecard as a
+substitute for a human judge's final score. The current accuracy is
+too low, and the system is deliberately transparent about which
+decisions it was confident in and which it was not. We hope the
+fact that \sys{} is open-source and fully auditable---every
+prediction records its model version, prompt hash, match level,
+and raw text---means that any follow-up deployment will be on terms
+a parkour federation can inspect before trusting.

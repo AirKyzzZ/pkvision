@@ -1,0 +1,63 @@
+% PkVision preprint — CVPR template
+% Compile: cd paper && pdflatex -output-directory=build main.tex
+%          (then bibtex and two more pdflatex passes)
+
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+% Use the arXiv variant: page numbers on, no "review" linenumbers,
+% not a camera-ready submission.
+\usepackage[pagenumbers]{template/cvpr}
+
+\input{template/preamble}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, backgrounds, calc, decorations.pathreplacing}
+\usepackage{xspace}
+\newcommand{\sys}{PkVision\xspace}
+
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+
+\def\paperID{pkvision-2026}
+\def\confName{arXiv preprint}
+\def\confYear{2026}
+
+\title{Toward Automated FIG Parkour Judging:\\An Open-Source Pipeline and an Empirical Study\\of Vision--Language Models}
+
+\author{Maxime Mansiet\\
+Independent Researcher\\
+Bordeaux, France\\
+{\tt\small contact@maximemansiet.fr}
+}
+
+\begin{document}
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_related}
+\input{sections/03_system}
+\input{sections/04_journey}
+\input{sections/05_experiments}
+\input{sections/06_discussion}
+\input{sections/07_limitations}
+\input{sections/08_conclusion}
+
+{
+    \small
+    \bibliographystyle{ieeenat_fullname}
+    \bibliography{references}
+}
+
+\appendix
+\input{sections/A_appendix}
+
+\end{document}

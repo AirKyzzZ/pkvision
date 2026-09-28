@@ -1,0 +1,49 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Action recognition and the acrobatic gap.}
+Large-scale action recognition benchmarks such as Kinetics-700~\cite{kay2017kinetics,carreira2019shortkinetics}
+and NTU-RGBD~\cite{shahroudy2016ntu} have driven rapid progress in generic
+video classification, but their label sets are dominated by daily activities
+and contain essentially no acrobatic motion. AMASS~\cite{mahmood2019amass}, the
+de-facto training corpus for human mesh recovery, has the same blind spot:
+motion-capture sequences of walking, dancing, and sitting, with no flips,
+inversions, or multi-twist rotations. Models trained on these distributions
+transfer poorly to parkour and gymnastics footage.
+
+\paragraph{Human mesh recovery for sports.}
+GVHMR~\cite{shen2024gvhmr}, WHAM~\cite{shin2024wham}, TRAM~\cite{wang2024tram},
+and TokenHMR~\cite{dwivedi2024tokenhmr} estimate SMPL~\cite{loper2015smpl}
+bodies in world coordinates from monocular video. GVHMR reports
+gravity-aligned trajectories, which in principle should allow clean
+flip-and-twist decomposition from the global orientation. In practice, all of
+these models inherit AMASS's distribution gap and produce unreliable
+rotations on acrobatic motion~--- a finding we confirm empirically in
+Sec.~\ref{sec:journey}. AthletePose3D~\cite{yeung2025athletepose3d} attacks
+the problem directly by fine-tuning on extreme poses, but its target
+disciplines are diving and gymnastics, not parkour, and public checkpoints
+are limited.
+
+\paragraph{Vision--language models as zero-shot recognizers.}
+A recent line of work uses general-purpose vision--language models
+(VLMs)~--- Flamingo~\cite{alayrac2022flamingo}, GPT-4V~\cite{openai2023gpt4v},
+Claude~\cite{anthropic2024claude3}, Gemini~\cite{team2024gemini},
+Qwen-VL~\cite{bai2023qwen}~--- as zero-shot recognizers for tasks with no
+labeled training set. These models inherit broad world knowledge from
+internet-scale pretraining; several of them demonstrably recognize FIG parkour
+trick names from a handful of frames. Our contribution is not a new VLM, but
+a pragmatic system that turns this raw naming capability into a
+FIG-compliant judge through segmentation, a fuzzy trick matcher, and a
+D-score assembly pipeline.
+
+\paragraph{Automated judging in gymnastics and related sports.}
+Fujitsu's Judging Support System~\cite{fujitsu2023jss} is the most visible
+deployed example: a multi-camera 3D setup that tracks joints with custom
+hardware and reports element-level scores to FIG judges for artistic
+gymnastics. The ISU has published similar pilots for figure
+skating~\cite{isu2023automation}. These systems achieve high precision but
+require bespoke capture rigs, closed datasets, and per-element engineering.
+No open-source equivalent exists for parkour, and the FIG Parkour Code of
+Points~\cite{fig2025codepoints} itself is only three years old. \sys{} targets
+the monocular smartphone-footage regime that parkour competitions actually
+use, trading precision for deployability.

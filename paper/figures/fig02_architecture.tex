@@ -1,0 +1,45 @@
+% Figure 2: PkVision system architecture (full-width TikZ).
+% Included directly in sections/03_system.tex via \input.
+
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+    node distance=5mm and 5mm,
+    font=\small,
+    >={Stealth[round]},
+    every node/.style={align=center},
+    stage/.style={draw, rounded corners=2pt, thick, minimum height=10mm, minimum width=22mm, fill=cvprblue!10},
+    data/.style ={draw, rounded corners=2pt, thick, minimum height=9mm, minimum width=20mm, fill=gray!8, dashed},
+    arrow/.style={-Stealth, thick, cvprblue!80!black},
+]
+
+% --- Row: pipeline stages left-to-right
+\node[data]  (video)    {Competition\\video};
+\node[stage, right=of video]     (track)   {YOLO-pose\\tracking};
+\node[stage, right=of track]     (seg)     {Inversion\\segmentation};
+\node[stage, right=of seg]       (clip)    {Per-trick\\clip};
+\node[stage, right=of clip]      (vlm)     {VLM\\(Claude / Gemini /\\open-weights)};
+\node[stage, right=of vlm]       (match)   {Fuzzy FIG\\matcher};
+\node[stage, right=of match]     (score)   {D-score\\assembler};
+\node[data,  right=of score]     (out)     {FIG\\scorecard};
+
+% --- Arrows
+\draw[arrow] (video) -- (track);
+\draw[arrow] (track) -- (seg);
+\draw[arrow] (seg)   -- (clip);
+\draw[arrow] (clip)  -- (vlm);
+\draw[arrow] (vlm)   -- node[above,font=\scriptsize]{free-form name} (match);
+\draw[arrow] (match) -- node[above,font=\scriptsize]{FIG name + D-score} (score);
+\draw[arrow] (score) -- (out);
+
+% --- Annotations below a couple of stages
+\node[font=\scriptsize, below=1mm of track, text=gray!60!black]
+    {\texttt{core/video.py}};
+\node[font=\scriptsize, below=1mm of seg, text=gray!60!black]
+    {\texttt{core/segmentation.py}};
+\node[font=\scriptsize, below=1mm of vlm, text=gray!60!black]
+    {\texttt{core/vlm/*}};
+\node[font=\scriptsize, below=1mm of match, text=gray!60!black]
+    {5-level cascade};
+
+\end{tikzpicture}%
+}

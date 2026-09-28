@@ -1,0 +1,30 @@
+\begin{abstract}
+Parkour became a FIG World-Championship discipline in 2018 and has a
+149-entry Code of Points~2025 that closes the door on ad-hoc trick
+naming. Despite this, no open-source system exists that takes a
+monocular competition video and produces a FIG-compliant D-score.
+We present \sys{}, a deliberately modular pipeline that combines
+an inversion-based trick segmenter, an off-the-shelf vision--language
+model (VLM), a five-level fuzzy matcher that snaps free-form model
+output onto the 149 FIG entries, and a deterministic D-score assembler.
+Every component has a text-level interface and can be swapped in
+isolation.
+
+We report an honest empirical study of the system on real smartphone
+and GoPro parkour footage. Across five trained-model approaches we
+abandoned in eighteen months of work (2D pose plus physics, 3D human
+mesh recovery with GVHMR, metric learning on 1\,618 parkourtheory
+clips, hierarchical attribute classifiers, and CLIP zero-shot), none
+reached usable accuracy on competition video. We therefore turned to
+frontier VLMs. On a curated 13-clip single-trick benchmark, Claude
+Sonnet~4.5 (via composite frame strips), Gemini~2.5, and Qwen2.5-VL
+each identify the correct FIG trick on only a small fraction of
+clips in headless automation mode---even though the same models
+routinely succeed when queried interactively on the same clips.
+We document this automation gap, catalogue the recurring failure
+modes (twist under-counting, takeoff confusion, wall-context loss),
+show that the fuzzy matcher and inversion segmenter remain useful
+regardless of which VLM is plugged in, and release the full system,
+prompts, ground-truth labels, and raw result files so the community
+can build on the components that do work.
+\end{abstract}

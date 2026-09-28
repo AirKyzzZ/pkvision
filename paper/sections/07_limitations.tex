@@ -1,0 +1,55 @@
+\section{Limitations}
+\label{sec:limitations}
+
+\sys{} has several concrete limitations, some of which are artefacts of
+this study and some of which are structural.
+
+\paragraph{Small evaluation set.}
+POOL-A contains four competition runs and POOL-B contains tens of
+single-trick segments. This is a case study, not a statistically powered
+benchmark. We report per-clip numbers rather than only aggregate means so
+readers can form their own picture, and we release the clips and labels
+so the community can extend the set. A larger, multi-annotator benchmark
+is the natural next paper.
+
+\paragraph{Single-annotator ground truth.}
+All labels were assigned by the author. For tricks with clear visual
+identity (backflip, frontflip, gainer), this is uncontroversial. For
+multi-twist tricks and off-axis variants, human judges themselves
+disagree, and a single annotator is insufficient. We release
+\texttt{ground\_truth.csv} with a \texttt{notes} column so external
+annotators can propose corrections.
+
+\paragraph{Closed-model dependence.}
+The strongest configurations in the leaderboard are closed-weight
+frontier models (Gemini 2.5, Claude Sonnet 4.5). Their behaviour may
+change between versions, which is a reproducibility risk. We mitigate
+this by (i) always including an open-weight comparison point
+(Qwen2.5-VL 72B), (ii) logging the exact model version string in every
+\texttt{results.jsonl} record, and (iii) releasing the full prompt and
+fuzzy matcher so the \emph{system} is reproducible even if specific
+weights drift.
+
+\paragraph{Monocular video only.}
+Real competitions film from multiple synchronised angles. A
+multi-camera extension of \sys{} would plausibly resolve most
+off-axis and wall-context failures documented in
+Sec.~\ref{sec:experiments:failures}, but is out of scope here. We
+note only that the fuzzy matcher and D-score assembler are camera-count
+agnostic and could be reused as-is.
+
+\paragraph{D-score only.}
+FIG judging decomposes into a D-score (difficulty, from the table of
+tricks) and an E-score (execution, deductions for safety, landing
+quality, and flow). \sys{} addresses only the D-score; landing quality
+and flow scoring require frame-level body-pose analysis that VLMs are
+currently not precise enough to provide. We explicitly position the
+E-score as future work, not as a broken promise.
+
+\paragraph{Segmentation robustness.}
+The inversion segmenter assumes the athlete becomes inverted during the
+aerial phase. This holds for all acrobatic and wall tricks in the FIG
+2025 table, but misses low-rotation moves (swing 180, wall spins) and
+is confused by crowd members who happen to bend over at the wrong
+moment. A context-aware segmenter driven by an additional VLM call is a
+natural next step.

@@ -1,0 +1,18 @@
+clip_path,pool,fig_name,d_score,flip_count,twist_count,direction,takeoff,notes
+data/run_testing/IMG_5985.mov,POOL-A,"Gainer 360, Kroc, Double Cork",2.0,1,0,backward,running_forward,"FULL RUN --- list GT tricks in fig_name as comma-separated, in order"
+data/run_testing/IMG_4243.MOV,POOL-A,"Double Backflip 720, Castaway Backflip, Aerial, Palm Backflip, Cork",,,,,,"FULL RUN --- list GT tricks in fig_name as comma-separated, in order"
+data/run_testing/elis-final-run-japan.mp4,POOL-A,"Backflip 1440, Sideflip, Swing Triple Gainer, Kong Gainer, Sideflip, Swing Gainer 720",,,,,,"FULL RUN --- list GT tricks in fig_name as comma-separated, in order"
+data/run_testing/test_run_2.mp4,POOL-A,"Gainer 360, Kroc, Double Cork, Backflip 720, Sideflip, B-Twist, Wall Inward Frontflip",,,,,,"FULL RUN --- list GT tricks in fig_name as comma-separated, in order"
+data/final_clips/back_double_full.mp4,POOL-B,Backflip 720,3.1,1,2,backward,,
+data/final_clips/backflip.mp4,POOL-B,Backflip,1.5,1,0,backward,,
+data/final_clips/double_cork.mp4,POOL-B,Double Cork,3.3,2,1,backward,,
+data/final_clips/frontflip.mp4,POOL-B,Frontflip,1.5,1,0,forward,,
+data/final_clips/gainer.MOV,POOL-B,Gainer,2.0,1,0,backward,running_forward,
+data/vlm_clips/IMG_5985/trick_01.mp4,POOL-B,Gainer 360,2.8,1,1,backward,running_forward,AUTO-GUESS FAILED --- fill manually
+data/vlm_clips/IMG_5985/trick_02.mp4,POOL-B,Kroc,2.4,1,0.5,backward,,AUTO-GUESS FAILED --- fill manually
+data/vlm_clips/IMG_5985/trick_04.mp4,POOL-B,Double Cork,3.3,2,1,backward,,AUTO-GUESS FAILED --- fill manually
+data/vlm_clips/test_run_2_zoomed/trick_01.mp4,POOL-B,Gainer 360,2.8,1,1,backward,running_forward,AUTO-GUESS FAILED --- fill manually
+data/vlm_clips/test_run_2_zoomed/trick_02.mp4,POOL-B,Kroc,2.4,1,0.5,backward,,AUTO-GUESS FAILED --- fill manually
+data/vlm_clips/test_run_2_zoomed/trick_03.mp4,POOL-B,Double Cork,3.3,2,1,backward,,AUTO-GUESS FAILED --- fill manually
+data/vlm_clips/test_run_2_zoomed/trick_05.mp4,POOL-B,Backflip 720,3.1,1,2,backward,,AUTO-GUESS FAILED --- fill manually
+data/vlm_clips/test_run_2_zoomed/trick_07.mp4,POOL-B,Wall Inward Frontflip,2.1,1,0,forward,,AUTO-GUESS FAILED --- fill manually

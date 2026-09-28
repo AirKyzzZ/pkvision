@@ -1,0 +1,38 @@
+% Figure 5: Fuzzy FIG matcher 5-level cascade with worked example.
+
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}[
+    font=\small,
+    >={Stealth[round]},
+    level/.style={draw, rounded corners=2pt, thick, minimum width=1.6cm, minimum height=8mm, align=center, fill=cvprblue!10},
+    hit/.style  ={draw, rounded corners=2pt, thick, minimum width=1.6cm, minimum height=8mm, align=center, fill=green!15},
+    miss/.style ={draw, rounded corners=2pt, thick, minimum width=1.6cm, minimum height=8mm, align=center, fill=gray!8, dashed},
+    arrow/.style={-Stealth, thick, cvprblue!80!black},
+    ex/.style={font=\scriptsize\ttfamily, text=gray!60!black},
+]
+
+% Input on the left
+\node[miss] (in) {VLM output\\\scriptsize\texttt{"back full twist"}};
+
+\node[miss, right=3mm of in] (l1) {L1\\exact};
+\node[miss, right=2mm of l1] (l2) {L2\\alias};
+\node[hit,  right=2mm of l2] (l3) {L3\\normalised};
+\node[level,right=2mm of l3] (l4) {L4\\Jaccard};
+\node[level,right=2mm of l4] (l5) {L5\\physics};
+
+\node[hit, right=3mm of l5] (out) {FIG name\\\textbf{Back Full}\\\scriptsize D$=2.0$};
+
+% Arrows
+\draw[arrow] (in)  -- (l1);
+\draw[arrow] (l1)  -- (l2);
+\draw[arrow] (l2)  -- (l3);
+\draw[arrow] (l3)  -- (l4);
+\draw[arrow] (l4)  -- (l5);
+\draw[arrow] (l5)  -- (out);
+
+% "Match found" dashed arrow
+\draw[arrow, dashed, cvprblue!60!black]
+    (l3.south) to[out=-90,in=-90,looseness=0.6] (out.south);
+
+\end{tikzpicture}%
+}

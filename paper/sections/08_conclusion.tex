@@ -1,0 +1,45 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We presented \sys{}, an open-source pipeline that takes a monocular
+parkour video and produces a FIG-compliant D-score scorecard
+without a single training label. The system is deliberately built
+out of components that any researcher with a laptop and an API key
+can run today: YOLO-pose for tracking, an inversion signal for
+segmentation, an off-the-shelf vision--language model for naming,
+a five-level fuzzy matcher against the 149-entry FIG table, and a
+deterministic D-score assembler. Over eighteen months we
+abandoned five trained-model configurations before arriving at
+this one; Sec.~\ref{sec:journey} records why each of them failed.
+
+Our empirical contribution is a deliberately honest one. On 13
+curated single-trick clips, three frontier vision--language models
+(Claude Sonnet~4.5, Gemini~2.5 Flash, Qwen2.5-VL~72B) achieve low
+top-1 accuracy in headless automation mode, even though the same
+models correctly name the same tricks when queried interactively
+through a chat interface. We have named the resulting
+\emph{automation gap}, catalogued the three recurring physics
+failures (twist under-counting, takeoff confusion, wall-context
+loss), and shown that the non-VLM components of the pipeline---the
+segmenter, the fuzzy matcher, the D-score assembler---continue to
+work independently of which VLM is plugged in.
+
+We believe the parkour judging problem decomposes cleanly into a
+\emph{naming} problem and a \emph{physics} problem. The present
+paper argues that VLMs are already on the right side of the naming
+problem but not yet reliable in automation, and that a hybrid
+pipeline that pairs a VLM noun with a physics twist counter is the
+natural next step. We release the full system, prompts, ground-truth
+labels, raw \texttt{results.jsonl}, and figure-generation scripts at
+\url{https://github.com/AirKyzzZ/pkvision} and actively invite
+corrections to the FIG trick table, external labels, and experiments
+that push any component of the pipeline forward.
+
+Our immediate next steps are (i)~a multi-annotator, multi-shot
+benchmark drawn from public FIG competition footage, with temperature
+zero and multi-vote aggregation to separate the automation gap from
+pure sampling noise; (ii)~a VLM-plus-physics hybrid that delegates
+twist counting to a fine-tuned 3D pose module trained on acrobatic
+data; and (iii)~integration with a live-event web interface so the
+system can act as an advisory tool during FIG qualifiers, with every
+decision auditable by the judges on the panel.

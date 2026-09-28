@@ -1,0 +1,185 @@
+\section{The \sys{} System}
+\label{sec:system}
+
+\sys{} is a monocular, zero-shot FIG D-scoring pipeline. Given a raw
+competition video, it detects and tracks the athlete, segments the run into
+individual tricks, sends each trick clip to a vision--language model with
+a FIG-grounded prompt, snaps the model's free-form trick name to the official
+FIG table via a fuzzy matcher, and assembles a D-score card for the run.
+Figure~\ref{fig:architecture} shows the overall flow. The system is
+deliberately modular: the VLM is replaceable and every stage has a testable
+text-level interface.
+
+\begin{figure*}[t]
+  \centering
+  \input{figures/fig02_architecture}
+  \caption{\textbf{\sys{} architecture.} A raw monocular run passes through
+  YOLO-pose athlete tracking, inversion-based segmentation, and per-clip VLM
+  judging. A five-level fuzzy matcher snaps each free-form VLM name to the
+  official FIG Table of Tricks, and the D-score assembler produces a
+  scorecard. Arrows show the flow of a single trick through the pipeline;
+  every box has a text-level interface and can be swapped in isolation.}
+  \label{fig:architecture}
+\end{figure*}
+
+\subsection{Athlete Tracking and Inversion Segmentation}
+\label{sec:system:segmentation}
+
+Parkour competition footage usually contains a single athlete performing a
+continuous line of tricks, interrupted by running, setup, and crowd
+reactions. We use YOLO-pose~\cite{jocher2023yolo} on every frame (module
+\texttt{core/video.py}) and keep the detection that is both largest in area
+and closest to the previously tracked bounding box centre, producing a
+single stable track for the athlete. Per-frame signals we retain are the
+nose $y$, hip midpoint $y$, and torso inclination angle derived from the
+shoulder--hip vector.
+
+Each FIG acrobatic trick has the same signature: during the aerial phase
+the athlete becomes at least partially \emph{inverted}~--- the head passes
+below the hips in image coordinates. We exploit this to segment the run
+without ever computing a 3D pose. Concretely, for each frame $t$ we compute
+the inversion signal
+\begin{equation}
+i_t = \max(0, y^{\text{head}}_t - y^{\text{hip}}_t),
+\end{equation}
+normalise it by the 90th percentile of its positive values, and smooth with
+a $0.1\,\text{s}$ box kernel. A second smoothed signal $a_t$ measures
+frame-to-frame angular velocity of the torso, wrapped into $[0,\pi]$.
+The combined score $s_t = 0.7\, \tilde\imath_t + 0.3\, \tilde a_t$ is
+thresholded to mark active frames; contiguous active regions become candidate
+segments, padded by $0.3\,\text{s}$ on each side, merged if closer than
+$0.4\,\text{s}$, and filtered to the $[0.3, 4.0]\,\text{s}$ duration window.
+A segment is kept only if it contains at least one inverted frame or a
+strong rotational burst (\texttt{core/segmentation.py}, lines 27--145).
+
+The design deliberately avoids any appearance-based classifier. The
+inversion cue is language- and clothing-invariant, does not depend on
+apparatus type, and fails gracefully under heavy camera motion
+(Sec.~\ref{sec:experiments}). Figure~\ref{fig:segmentation} visualises the
+three signals and the resulting segments on \texttt{IMG\_5985.mov}.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/fig03_segmentation.pdf}
+  \caption{\textbf{Inversion-based segmentation on a real run.}
+  Top: nose $y$ (orange) and hip $y$ (blue). Middle: smoothed combined score
+  $s_t$. Bottom: detected segments (shaded). The three acrobatic tricks in
+  \texttt{IMG\_5985.mov} (Gainer Full, Krok, Double Cork) are cleanly
+  isolated from run-ups and crowd transitions.}
+  \label{fig:segmentation}
+\end{figure}
+
+\subsection{Vision--Language Model Prompting}
+\label{sec:system:vlm}
+
+Each candidate segment is re-encoded as a short MP4 and submitted to a
+vision--language model through a common \texttt{VLMProvider} interface
+(\texttt{core/vlm/base.py}). We implement three concrete providers:
+Gemini~\cite{team2024gemini} accepts the clip natively as a video input,
+Claude~\cite{anthropic2024claude3} and OpenAI models receive eight uniformly
+sampled key frames, and OpenRouter routes the same interface to a pool of
+open-weight models such as Qwen2-VL~\cite{bai2023qwen} and
+Kimi-VL~\cite{moonshot2024kimi}.
+
+The prompt is constructed once per run from
+\texttt{core/vlm/prompt.py} and is identical across providers for a fair
+comparison. It contains three sections (Figure~\ref{fig:prompt}): (i) a
+markdown table of the 149 official FIG tricks with their physical
+properties (flips, twists, direction, category, aliases), (ii) a manually
+curated disambiguation guide for visually confusable tricks (e.g., backflip
+vs.\ gainer vs.\ palm flip), and (iii) a strict JSON response schema asking
+for trick name, category, direction, flip count, twist count, confidence
+level, and free-text reasoning. The prompt never names the target clip or
+its expected answer; the VLM must ground every identification in the
+submitted frames or video.
+
+\begin{figure}[t]
+  \centering
+  \input{figures/fig04_prompt}
+  \caption{\textbf{Prompt structure.} Every provider receives the same
+  three-part message: the full FIG Table of Tricks, a disambiguation guide
+  for visually confusable variants, and a strict JSON response schema. The
+  VLM returns one JSON record per identified trick; its free-form name is
+  then fuzzy-matched against the FIG table in the next stage.}
+  \label{fig:prompt}
+\end{figure}
+
+Parsing is robust to markdown fences, stray prose, and truncated JSON: we
+extract the first balanced \texttt{\{...\}} block and accept any that
+satisfies the minimum schema. A consensus mode
+(\texttt{core/vlm/consensus.py}) queries $N$ models in parallel and returns
+the modal FIG name along with an agreement score; we report both
+single-model and consensus numbers in Sec.~\ref{sec:experiments}.
+
+\subsection{The Five-Level Fuzzy FIG Matcher}
+\label{sec:system:matcher}
+
+VLMs happily emit names such as ``Gainer Full 360'', ``Corkscrew'', ``back
+full twist'', or ``double half cork''. These are all valid colloquial
+references to tricks in the FIG table, but none are exact FIG names.
+Without a matcher, VLMs would be penalised for stylistic rather than
+semantic errors. The \texttt{FIGMatcher} (\texttt{core/vlm/fig\_matcher.py})
+is a deterministic five-level cascade, shown in Figure~\ref{fig:matcher},
+that snaps any free-form name to one of the 149 FIG entries or declines to
+match:
+
+\begin{enumerate}
+  \item[\textbf{L1}] \textbf{Exact match} (case-insensitive) against the
+        FIG name index.
+  \item[\textbf{L2}] \textbf{Alias match} against the curated alias lists
+        embedded in \texttt{fig\_tricks\_2025.json} (e.g., ``Ginger''
+        $\rightarrow$ ``Palm Backflip'').
+  \item[\textbf{L3}] \textbf{Normalised match}: rewrite informal tokens
+        (\emph{full}$\rightarrow$360, \emph{half}$\rightarrow$180,
+        \emph{double full}$\rightarrow$720, \ldots) and retry L1 in both
+        directions.
+  \item[\textbf{L4}] \textbf{Jaccard token overlap}: the highest-overlap
+        FIG name wins if its Jaccard similarity exceeds $0.5$.
+  \item[\textbf{L5}] \textbf{Physics fallback}: if the VLM reports flip and
+        twist counts, pick the unique FIG entry with the same
+        $(\text{flip}, \text{twist}, \text{direction})$; if several match,
+        prefer the highest D-score.
+\end{enumerate}
+
+\begin{figure}[t]
+  \centering
+  \input{figures/fig05_matcher}
+  \caption{\textbf{The five-level fuzzy matcher.} Free-form VLM output
+  is snapped to an official FIG name via a deterministic cascade. A worked
+  example (\emph{``back full twist''} $\rightarrow$ L3 normalised
+  $\rightarrow$ \textbf{Back Full}) is shown. Every match records its
+  level, which we report as an ablation in Table~\ref{tab:matcher_levels}.}
+  \label{fig:matcher}
+\end{figure}
+
+The cascade is fully auditable: each match records which level produced it,
+which lets us report (Table~\ref{tab:matcher_levels}) how much of the
+benchmark accuracy is carried by the matcher versus the VLM itself. We show
+in Sec.~\ref{sec:experiments} that removing the matcher drops
+trick-top-1 accuracy substantially, which is why we argue the matcher is a
+first-class contribution and not just glue code.
+
+\subsection{D-Score Assembly}
+\label{sec:system:dscore}
+
+The final stage applies the FIG scoring rules to the list of matched
+tricks. FIG rewards only a run's top-3 difficulty contributions in the
+final D-score, so \sys{} sums the three highest matched base values and
+emits a scorecard with per-trick reasoning, match level, and the total.
+Repeated tricks do not count even if their form, entry, or exit differ, as
+per the 2025 Code of Points~\cite{fig2025codepoints}; the assembler
+deduplicates by FIG name. Failed tricks (those the VLM flags with confidence
+\texttt{low}) are reported but excluded from the total, matching FIG's
+$-4.00$ / $-6.00$ deduction rule. The scorecard is the system's final
+output; an example is shown in Figure~\ref{fig:scorecards}.
+
+\begin{table}[t]
+  \centering
+  \small
+  \input{figures/tab01_matcher_levels}
+  \caption{\textbf{Fuzzy matcher cascade hit rate} on POOL-B.
+  Most VLM outputs already match at L1 (exact) or L3 (normalised); the
+  token-overlap and physics fallback levels absorb informal names that
+  would otherwise be scored as wrong. See Sec.~\ref{sec:experiments}.}
+  \label{tab:matcher_levels}
+\end{table}
