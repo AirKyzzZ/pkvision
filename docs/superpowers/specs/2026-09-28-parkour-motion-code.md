@@ -1,6 +1,6 @@
 # Parkour Motion Code (PMC) v1: draft for owner review
 
-**Status:** DRAFT v1, 2026-09-29. It replaces v0 after the owner's review ("decompose as much as possible"; tricking in scope) and the naming glossary (`docs/science-superpowers/survey/2026-09-29/08-naming-glossary.md`).
+**Status:** DRAFT v1.1, 2026-10-03 (v1 dated 2026-09-29; v1.1 adds the judge-training amendments at the end). It replaces v0 after the owner's review ("decompose as much as possible"; tricking in scope) and the naming glossary (`docs/science-superpowers/survey/2026-09-29/08-naming-glossary.md`).
 
 **Purpose:** a precise, machine-readable description of any parkour, freerunning or tricking move, sitting between video and names:
 
@@ -141,6 +141,27 @@ See `data/splits/g1_name_split.json`:
 - **Design:** `sha1(canonical_name) % 10 < 3`, plus the 229 test names that research notes 08, 09 or this spec had quoted. 1,049 names in total.
 - **Test:** the other 1,628.
 - **FIG:** the FIG Tables of Tricks form a separate test set. `data/fig_tricks_2025.json` misreads the table (same-row tricks stored as aliases, wrong cork/double-cork/B-360 values; verified 2026-09-29). It must be rebuilt from the official 2025/2026 PDFs before use.
+
+## v1.1 amendments from judge training (2026-10-03)
+
+Sources: FIG ToT 2025/2026, the FFGym 2026 grid, the FIG CoP and the owner's judge-training session, distilled in `data/private/judge/judge_knowledge.md` (private, gitignored).
+
+1. **What a somersault is.** Judges count a somersault when the head passes down through the inversion. Hand-supported inversions count too: a Macaco-in = 2 rotations. So `som_q` counts rotation through support phases as well.
+2. **Axis is graded, not binary.** FIG 2026 takes 0.3–0.5 off unintended tilt. Designed off-axis tricks (cork, b-twist, raiz, butterfly) are exempt, and trainers scale the value down as tilt grows. The fix:
+   - add `AIR.tilt_deg` (L2, continuous);
+   - `axis` becomes a lexicon property (`designed_off_axis`), not something measured.
+3. **Under-rotation matters.** 1¾ twists is worth less than a double. Add `AIR.som_deg` and `AIR.twist_deg` (L2, measured degrees). `som_q` and `twist_h` stay as the nominal (named) counts.
+4. **New fields**, all L2 except where noted:
+   - `SETUP.height_change` and `EXIT.height_change` (signed metres);
+   - `AIR.distance` (m);
+   - `SETUP.takeoff_width` and `EXIT.landing_width` (flat / narrow);
+   - `CONTACT.wall_incline` (deg; vertical walls are valued higher);
+   - a ground `swing` setup (L1);
+   - `standard_entry` (lexicon tag for entries that add no difficulty: scoot, round-off, kip, J-step).
+5. **Run structure.** A run is a list of **moments**. A moment is one trick, or a combo linked by pop/punch/swing with no stop. Setups belong to their trick. Add a `connection_s` gap between segments.
+6. **Repeat key.** Trick identity used for the no-repeat rule ignores `shape` (tuck vs layout is the same move for FIG and for the trainer; FFGym allows one shape variation).
+7. **Twist-family bases differ.** A-twist counts from 180 ("Double A-twist" = A-540); B-twist counts from 360. This is a lexicon fact, not arithmetic.
+8. **Free coarse labels.** FIG and FFGym colour-code ~380 names by direction (blue back, red front, green side, black other/off-axis). This is usable as weak supervision; the two federations disagree on 19 off-axis tricks.
 
 ## Owner answers (2026-10-03)
 
