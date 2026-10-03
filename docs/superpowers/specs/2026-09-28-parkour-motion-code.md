@@ -142,10 +142,14 @@ See `data/splits/g1_name_split.json`:
 - **Test:** the other 1,628.
 - **FIG:** the FIG Tables of Tricks form a separate test set. `data/fig_tricks_2025.json` misreads the table (same-row tricks stored as aliases, wrong cork/double-cork/B-360 values; verified 2026-09-29). It must be rebuilt from the official 2025/2026 PDFs before use.
 
+## Owner answers (2026-10-03)
+
+- **Tic tac** = one step off a wall. **Wall run** = horizontal: running along a wall face.
+- **Aerial vs Sideflip** are separated by axis and biomechanics, not by shape. The lexicon will define them through `axis`, take-off and rotation fields, to be detailed from judge-training material.
+- **Parkourtheory** has explicitly allowed use of its data. Credit is required in the README and the paper.
+
 ## Open questions for the owner
 
 1. Is **take-off facing** the right reference for all directions? With it, an Arabian is "back + half twist" and a Barani is "front + half twist".
-2. **Tic tac:** one wall step or two? **Wall run:** horizontal or vertical? (Sources disagree.)
-3. **Aerial vs Sideflip:** what separates them for you? Shape, footwork, or something else?
-4. **Hyper / stances:** keep LK's modern stance system as the default?
-5. Are there fields you'd add that name a trick differently in practice: hand placement, height, which leg kicks?
+2. **Hyper / stances:** keep Loopkicks' modern stance system as the default?
+3. Are there fields you'd add that name a trick differently in practice: hand placement, height, which leg kicks?

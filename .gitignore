@@ -74,3 +74,12 @@ data/reference_clips/
 outputs/
 *.bat
 *.log
+.gitnexus
+
+# private / licensed / large data (repo is public)
+data/private/
+data/raw/**/videos/
+data/raw/videonet/
+*.ogg
+*.mp3
+*.wav
