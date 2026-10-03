@@ -1,0 +1,320 @@
+{
+ "source": "https://huggingface.co/api/datasets and /api/models",
+ "fetched_at": "2026-10-03",
+ "method": "Hub search API on ~70 terms (parkour, freerun, tricking, acrobatic, gymnastics, trampoline, diving, figure skating, somersault, flip, FineGym, FineDiving, Diving48, skating jumps, plus sport/AQA/mocap variants); per-id metadata + treesize; cards read where public. No dataset files downloaded except the 3.9 MB ActionAtlas parquet.",
+ "searched_no_hits": [
+  "freerun",
+  "freerunning",
+  "tricking",
+  "acrobatic",
+  "somersault",
+  "finediving",
+  "fsd-10",
+  "finefs",
+  "skatingverse",
+  "jump3d",
+  "athletepose",
+  "sportspose",
+  "tumbling (datasets)"
+ ],
+ "datasets": [
+  {
+   "id": "raivn/VideoNet",
+   "modality": "video+text",
+   "labels": "40 parkour actions (+cheerleading 20, break dance 32, figure skating 38, skateboarding 46); benchmark 200 parkour clips; training-data/parkour/{single_action,transcript,transcript_title,val}.parquet = 1.08 MB of YouTube IDs+timestamps+labels",
+   "license": null,
+   "gated": "auto",
+   "last_modified": "2026-05-06",
+   "size_gb": 95.376,
+   "usefulness": "vocab: low (40 basics); pose: low; eval: HIGH (only human-checked named parkour clips)"
+  },
+  {
+   "id": "Lozumi/FineGym-skeleton",
+   "modality": "pose (2D COCO-17, HRNet)",
+   "labels": "Gym99 (34,803 samples) / Gym288 (38,935); FX/BB/UB/VT elements; pkl 171 MB (Gym99-V2) / 199 MB (Gym288-V2)",
+   "license": "cc-by-4.0",
+   "gated": false,
+   "last_modified": "2026-08-19",
+   "size_gb": 9.752,
+   "usefulness": "pose pretraining for saltos/twists: HIGH; vocab: FIG element names; eval: no. Card says CC-BY-4.0 but FineGym annotations upstream are CC BY-NC 4.0"
+  },
+  {
+   "id": "Mercity/Figure-Skating-Classification-Data",
+   "modality": "pose (2D COCO-17)",
+   "labels": "5,405 sequences, 64 classes: 1-4 rotation Axel/Flip/Lutz/Loop/Salchow/Toeloop, combos, spins",
+   "license": "mit",
+   "gated": false,
+   "last_modified": "2026-02-12",
+   "size_gb": 0.356,
+   "usefulness": "pose pretraining for longitudinal rotation counting: HIGH; licence MIT declared but source is competition video"
+  },
+  {
+   "id": "meghna2801/Figure_Skating_Data",
+   "modality": "pose (2D, 150x17x3)",
+   "labels": "MMFS processed: action names + scores",
+   "license": null,
+   "gated": false,
+   "last_modified": "2026-02-06",
+   "size_gb": 0.349,
+   "usefulness": "rotation-count pretraining: MEDIUM; no licence"
+  },
+  {
+   "id": "mteb/diving48",
+   "modality": "video",
+   "labels": "18,039 clips (15,943 train / 2,096 test), 48 dive classes = takeoff x somersault x twist x position",
+   "license": null,
+   "gated": false,
+   "last_modified": "2026-04-29",
+   "size_gb": 10.113,
+   "usefulness": "rotation/twist pretraining: HIGH but 10 GB video; better to extract pose remotely"
+  },
+  {
+   "id": "mteb/diving48v2",
+   "modality": "video",
+   "labels": "16,997 clips, cleaned v2 labels",
+   "license": null,
+   "gated": false,
+   "last_modified": "2026-04-29",
+   "size_gb": 9.637,
+   "usefulness": "same as diving48, preferred version"
+  },
+  {
+   "id": "bkprocovid19/diving48",
+   "modality": "video",
+   "labels": "Diving48 mirror",
+   "license": null,
+   "gated": false,
+   "last_modified": "2024-06-06",
+   "size_gb": 10.287,
+   "usefulness": "duplicate of mteb/diving48"
+  },
+  {
+   "id": "Samoed/diving48",
+   "modality": "video",
+   "labels": "Diving48 mirror",
+   "license": null,
+   "gated": false,
+   "last_modified": "2026-04-29",
+   "size_gb": 10.315,
+   "usefulness": "duplicate"
+  },
+  {
+   "id": "OpenSportsLab/soccernetpro-localization-gymnastics",
+   "modality": "video+json",
+   "labels": "artistic gymnastics action spotting (VT/UB/BB/FX), clips named by YouTube ID",
+   "license": "agpl-3.0",
+   "gated": "manual",
+   "last_modified": "2026-03-03",
+   "size_gb": 13.03,
+   "usefulness": "temporal localisation of flips: MEDIUM; gated manual, AGPL-3.0, 13 GB"
+  },
+  {
+   "id": "OpenSportsLab/soccernetpro-localization-diving",
+   "modality": "json",
+   "labels": "diving action spotting annotations only (3 MB)",
+   "license": null,
+   "gated": "manual",
+   "last_modified": "2026-02-18",
+   "size_gb": 0.003,
+   "usefulness": "localisation labels: LOW-MEDIUM; gated manual"
+  },
+  {
+   "id": "qleandataset/video-artistic-gymnastics",
+   "modality": "video",
+   "labels": "78 rights-cleared clips, 4 gymnasts, 2 cameras",
+   "license": "other",
+   "gated": "manual",
+   "last_modified": "2026-09-09",
+   "size_gb": 15.4,
+   "usefulness": "rights-clean multi-view: MEDIUM; gated manual, institutional email required, non-commercial model release only"
+  },
+  {
+   "id": "qleandataset/video-figure-skating",
+   "modality": "video",
+   "labels": "6 recordings, 2 cameras",
+   "license": "other",
+   "gated": "manual",
+   "last_modified": "2026-09-09",
+   "size_gb": 14.306,
+   "usefulness": "LOW; same Qlean gating"
+  },
+  {
+   "id": "groundmore/SportsQA_FineGym",
+   "modality": "video",
+   "labels": "FineGym QA videos, 36 GB zip",
+   "license": null,
+   "gated": false,
+   "last_modified": "2023-10-11",
+   "size_gb": 36.239,
+   "usefulness": "LOW (too big, QA format)"
+  },
+  {
+   "id": "groundmore/BEAR-FineGym",
+   "modality": "video",
+   "labels": "FineGym videos, 32 GB tar",
+   "license": null,
+   "gated": false,
+   "last_modified": "2023-12-04",
+   "size_gb": 31.979,
+   "usefulness": "LOW"
+  },
+  {
+   "id": "HopLeeTop/Sports-QA",
+   "modality": "video",
+   "labels": "Sports-QA incl. aerobic gymnastics + FineGym zips, 82 GB",
+   "license": "mit",
+   "gated": false,
+   "last_modified": "2025-12-09",
+   "size_gb": 81.972,
+   "usefulness": "LOW"
+  },
+  {
+   "id": "mrsalehi/ActionAtlas-v1.0",
+   "modality": "text (YouTube refs)",
+   "labels": "934 MCQ rows; Parkour 2, Cheerleading 63 (back tuck, layout, full up, cartwheel full twist...), Figure skating 41",
+   "license": null,
+   "gated": false,
+   "last_modified": "2024-10-10",
+   "size_gb": 0.004,
+   "usefulness": "eval: small tumbling set; saved to data/raw/actionatlas/"
+  },
+  {
+   "id": "FrancophonIA/Vocabulaire_panlatin_trampoline",
+   "modality": "text",
+   "labels": "trampoline terms in 8 Romance languages + EN (DGLFLF/REALITER)",
+   "license": null,
+   "gated": false,
+   "last_modified": "2025-03-29",
+   "size_gb": 0.0,
+   "usefulness": "vocab: FR/ES/IT aliases for trampoline elements; tiny"
+  },
+  {
+   "id": "FrancophonIA/Termcat_Figure_Skating",
+   "modality": "text",
+   "labels": "figure skating terms ca/en/fr/es",
+   "license": "cc-by-nd-4.0",
+   "gated": false,
+   "last_modified": "2025-03-29",
+   "size_gb": 0.0,
+   "usefulness": "vocab: LOW; CC-BY-ND"
+  },
+  {
+   "id": "FrancophonIA/Termcat_Olympic_Sports",
+   "modality": "text",
+   "labels": "olympic sports terms",
+   "license": "cc-by-nd-4.0",
+   "gated": false,
+   "last_modified": "2025-03-29",
+   "size_gb": 0.007,
+   "usefulness": "vocab: LOW; CC-BY-ND"
+  },
+  {
+   "id": "qingy2024/backflip_train",
+   "modality": "video",
+   "labels": "~200 10-s Kinetics-style backflip clips (YouTubeID_start_end.mp4)",
+   "license": null,
+   "gated": false,
+   "last_modified": "2025-05-12",
+   "size_gb": 0.334,
+   "usefulness": "LOW; no licence"
+  },
+  {
+   "id": "seil-umd/STL-Parkour",
+   "modality": "robot sim",
+   "labels": "quadruped parkour rollouts",
+   "license": "cc-by-4.0",
+   "gated": "auto",
+   "last_modified": "2026-05-29",
+   "size_gb": 0.039,
+   "usefulness": "not human; irrelevant"
+  },
+  {
+   "id": "xyntechx/parkour",
+   "modality": "RL episodes",
+   "labels": "UE5 first-person parkour game transitions",
+   "license": null,
+   "gated": false,
+   "last_modified": "2026-09-13",
+   "size_gb": 5.039,
+   "usefulness": "irrelevant"
+  },
+  {
+   "id": "Nihilux/backflip-datasets-small",
+   "modality": "text",
+   "labels": "code dataset named backflip",
+   "license": null,
+   "gated": false,
+   "last_modified": "2026-09-13",
+   "size_gb": 0.012,
+   "usefulness": "irrelevant"
+  },
+  {
+   "id": "maxspiri/breakdance-pose-detection",
+   "modality": "image",
+   "labels": "breakdance frames, 2.8 GB",
+   "license": null,
+   "gated": false,
+   "last_modified": "2025-07-29",
+   "size_gb": 2.805,
+   "usefulness": "LOW"
+  },
+  {
+   "id": "OpenRobotLab/MotionMillion",
+   "modality": "mocap text-motion",
+   "labels": "large text-to-motion corpus",
+   "license": "apache-2.0",
+   "gated": false,
+   "last_modified": "2025-07-22",
+   "size_gb": 8.072,
+   "usefulness": "LOW for rotations"
+  },
+  {
+   "id": "zhixingsun/FineSports",
+   "modality": "video",
+   "labels": "FineSports CVPR 2024 zip (basketball), gated manual",
+   "license": null,
+   "gated": "manual",
+   "last_modified": "2026-04-06",
+   "size_gb": 16.486,
+   "usefulness": "irrelevant"
+  },
+  {
+   "id": "MCG-NJU/SportsHHI",
+   "modality": "video",
+   "labels": "human-human interaction (basketball/football/volleyball)",
+   "license": [
+    "cc-by-nc-4.0"
+   ],
+   "gated": "auto",
+   "last_modified": "2024-05-21",
+   "size_gb": 24.014,
+   "usefulness": "irrelevant"
+  }
+ ],
+ "models": [
+  {
+   "id": "facebook/vjepa2-vitl-fpc32-256-diving48",
+   "license": "mit",
+   "last_modified": "2025-08-11",
+   "use": "Diving48-finetuned V-JEPA2 ViT-L: off-the-shelf rotation/twist-sensitive video encoder baseline"
+  },
+  {
+   "id": "facebook/vjepa2-vitg-fpc32-384-diving48",
+   "license": "mit",
+   "last_modified": "2025-08-11",
+   "use": "ViT-g version, heavier"
+  },
+  {
+   "id": "Mercity/figure-skating-gcn",
+   "license": "other",
+   "last_modified": "2026-07-21",
+   "use": "skeleton GCN on the 64-class skating set; init for rotation-count head (unverified quality)"
+  },
+  {
+   "id": "donghuna/timesformer-base-finetuned-k400-diving48",
+   "license": null,
+   "last_modified": "2024-07-11",
+   "use": "TimeSformer Diving48; low priority"
+  }
+ ]
+}

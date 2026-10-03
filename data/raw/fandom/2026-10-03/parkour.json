@@ -1,0 +1,2926 @@
+{
+ "source": "https://parkour.fandom.com",
+ "fetched_at": "2026-10-03T12:43:59+00:00",
+ "method": "MediaWiki API: generator=allpages (ns0, nonredirects) + prop=revisions (section-0 wikitext, stripped locally); redirects via generator=allpages&gapfilterredir=redirects&redirects=1",
+ "license": {
+  "url": "https://www.fandom.com/licensing",
+  "text": "CC-BY-SA"
+ },
+ "credit": "Text from Parkour Wiki (https://parkour.fandom.com), contributors, CC-BY-SA",
+ "siteinfo_statistics": {
+  "pages": 1925,
+  "articles": 142,
+  "edits": 5342,
+  "images": 221,
+  "users": 43361082,
+  "activeusers": 2,
+  "admins": 2,
+  "jobs": 0
+ },
+ "mediawiki_version": "MediaWiki 1.43.9",
+ "n_pages_nonredirect_ns0": 141,
+ "n_redirects_ns0": 161,
+ "articles": [
+  {
+   "page_id": 2490,
+   "title": "360 vault",
+   "url": "https://parkour.fandom.com/wiki/360_vault",
+   "last_rev_timestamp": "2025-09-17T02:10:21Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 678,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Basic\n}}\nThe '''360 Vault''' is a [[vault]] used in [[freerunning]] to perform a 360° spin after doing a [[side vault]].\n\nIt should not be confused with the [[reverse vault]] which also involves doing a 360° spin, but in an efficient manner.",
+   "lead_text": "The 360 Vault is a vault used in freerunning to perform a 360° spin after doing a side vault.\n\nIt should not be confused with the reverse vault which also involves doing a 360° spin, but in an efficient manner."
+  },
+  {
+   "page_id": 3544,
+   "title": "3RUN",
+   "url": "https://parkour.fandom.com/wiki/3RUN",
+   "last_rev_timestamp": "2025-08-22T16:17:08Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Groups",
+    "WIP"
+   ],
+   "wikitext_chars": 938,
+   "lead_wikitext": "[[File:3run.jpg|thumb]]\n'''3RUN''' are a professional performance team based in Basingstoke, UK specialising in free running, parkour and martial arts. There is some confusion over whether the term '3RUN' should be used as a team name or the name of a discipline, with many foreign teams using 3run in their teams name. The 3RUN team used to go by the name ''Team Evolution'', with 3RUN being described as the discipline they practiced, although the original team name does not appear to be used much any more.",
+   "lead_text": "3RUN are a professional performance team based in Basingstoke, UK specialising in free running, parkour and martial arts. There is some confusion over whether the term '3RUN' should be used as a team name or the name of a discipline, with many foreign teams using 3run in their teams name. The 3RUN team used to go by the name Team Evolution, with 3RUN being described as the discipline they practiced, although the original team name does not appear to be used much any more."
+  },
+  {
+   "page_id": 2455,
+   "title": "540 kick",
+   "url": "https://parkour.fandom.com/wiki/540_kick",
+   "last_rev_timestamp": "2025-09-01T23:42:44Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Tricking"
+   ],
+   "wikitext_chars": 899,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Tricking]]\n|difficulty = Basic\n}}\nThe '''540 Kick''' is a technique used in [[tricking]]. The name refers to a spin of approximately 540 degrees, accompanied by either a roundhouse or crescent kick. The same leg is used for the takeoff, kick and landing while the other is mainly used for momentum. It is often accompanied by a spin either before or after the kick.",
+   "lead_text": "The 540 Kick is a technique used in tricking. The name refers to a spin of approximately 540 degrees, accompanied by either a roundhouse or crescent kick. The same leg is used for the takeoff, kick and landing while the other is mainly used for momentum. It is often accompanied by a spin either before or after the kick."
+  },
+  {
+   "page_id": 2070,
+   "title": "Aerial",
+   "url": "https://parkour.fandom.com/wiki/Aerial",
+   "last_rev_timestamp": "2025-08-22T16:17:16Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 849,
+   "lead_wikitext": "An '''Aerial''' is a movement commonly utilized in [[tricking]] and [[freerunning]]. It is also common in martial arts. It is almost identical to a cartwheel, except without placing the hands on the ground (and as a result must be faster).",
+   "lead_text": "An Aerial is a movement commonly utilized in tricking and freerunning. It is also common in martial arts. It is almost identical to a cartwheel, except without placing the hands on the ground (and as a result must be faster)."
+  },
+  {
+   "page_id": 3546,
+   "title": "Airborn Entertainment",
+   "url": "https://parkour.fandom.com/wiki/Airborn_Entertainment",
+   "last_rev_timestamp": "2025-08-22T16:17:20Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Groups",
+    "WIP"
+   ],
+   "wikitext_chars": 2300,
+   "lead_wikitext": "",
+   "lead_text": ""
+  },
+  {
+   "page_id": 3685,
+   "title": "Angel flip",
+   "url": "https://parkour.fandom.com/wiki/Angel_flip",
+   "last_rev_timestamp": "2025-08-23T22:47:22Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Flips",
+    "Freerunning"
+   ],
+   "wikitext_chars": 761,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Intermediate\n}}\nThe '''Angel Flip''', also known as the '''Angel Drop''', is a technique in [[freerunning]] where the practitioner performs a [[back flip]] off a wall out of a [[cat grab]] position. Generally this is done with a layout position while having their arms extended to the side to mimic angel wings.\n\nThe inverse of this trick is the [[devil drop]] which involves doing a [[front flip]] from the same position instead.",
+   "lead_text": "The Angel Flip, also known as the Angel Drop, is a technique in freerunning where the practitioner performs a back flip off a wall out of a cat grab position. Generally this is done with a layout position while having their arms extended to the side to mimic angel wings.\n\nThe inverse of this trick is the devil drop which involves doing a front flip from the same position instead."
+  },
+  {
+   "page_id": 2063,
+   "title": "Back Flip",
+   "url": "https://parkour.fandom.com/wiki/Back_Flip",
+   "last_rev_timestamp": "2025-08-22T18:34:14Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Body Flip",
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 4280,
+   "lead_wikitext": "A '''Back Flip''' is a movement used in [[Freerunning]] and [[tricking]]. The term \"Backflip\" can actually refer to several different types of a flip, but always refers to a flip that rotates backwards. Backflips have very little practical use in [[Parkour]] but are commonly used by Freerunners and Trickers.",
+   "lead_text": "A Back Flip is a movement used in Freerunning and tricking. The term \"Backflip\" can actually refer to several different types of a flip, but always refers to a flip that rotates backwards. Backflips have very little practical use in Parkour but are commonly used by Freerunners and Trickers."
+  },
+  {
+   "page_id": 2276,
+   "title": "Back Handspring",
+   "url": "https://parkour.fandom.com/wiki/Back_Handspring",
+   "last_rev_timestamp": "2025-08-22T18:34:16Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 1848,
+   "lead_wikitext": "A '''back handspring''' or '''flick flack''' is an acrobatic move used in [[tricking]]. It consists of pushing off backwards and landing in a handstand position, then quickly pushing off with the hands to land on the feet. It is one of the most fundamental tricking movements, and one of the most common moves seen in a [[tumbling]] line. It can be preformed with feet together of with one in front of the other (called a back step-out).",
+   "lead_text": "A back handspring or flick flack is an acrobatic move used in tricking. It consists of pushing off backwards and landing in a handstand position, then quickly pushing off with the hands to land on the feet. It is one of the most fundamental tricking movements, and one of the most common moves seen in a tumbling line. It can be preformed with feet together of with one in front of the other (called a back step-out)."
+  },
+  {
+   "page_id": 2868,
+   "title": "Backwards Roll",
+   "url": "https://parkour.fandom.com/wiki/Backwards_Roll",
+   "last_rev_timestamp": "2025-08-22T16:17:34Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "WIP"
+   ],
+   "wikitext_chars": 529,
+   "lead_wikitext": "A backwards roll is a roll going backwards along the spine, rather than forwards or sideways. A backwards roll can be used when dropping from a hanging position to dampen the fall. It can also be used if a forward roll is not possible in your particular situation. Here is how to perform a backwards roll\n* Stand parallel to the ground\n* Enter a squatting position using a little bit of momentum\n* Push backwards diagonally along your spine\n* Get up, optionally using hands for support\n[[Category:Article stubs]]\n[[Category:WIP]]",
+   "lead_text": "A backwards roll is a roll going backwards along the spine, rather than forwards or sideways. A backwards roll can be used when dropping from a hanging position to dampen the fall. It can also be used if a forward roll is not possible in your particular situation. Here is how to perform a backwards roll\n* Stand parallel to the ground\n* Enter a squatting position using a little bit of momentum\n* Push backwards diagonally along your spine\n* Get up, optionally using hands for support"
+  },
+  {
+   "page_id": 2240,
+   "title": "Bar kip",
+   "url": "https://parkour.fandom.com/wiki/Bar_kip",
+   "last_rev_timestamp": "2025-08-22T16:17:38Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 515,
+   "lead_wikitext": "{{stub}}\nThe '''bar kip''' is a move used in [[Parkour]] and [[freerunning]] to go from a hanging position to a [[Glossary_of_Terms#C|cast]] position (with the bar at the waist). It can be used on a pipe, branch or any similar object.",
+   "lead_text": "The bar kip is a move used in Parkour and freerunning to go from a hanging position to a cast position (with the bar at the waist). It can be used on a pipe, branch or any similar object."
+  },
+  {
+   "page_id": 2201,
+   "title": "Barani",
+   "url": "https://parkour.fandom.com/wiki/Barani",
+   "last_rev_timestamp": "2025-08-22T16:17:42Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 728,
+   "lead_wikitext": "A '''Barani''' is an aerial [[frontflip]] with 180 degree turn or half twist. \n[[File:Barani.gif|right]]\nIn [[tricking]], this maneuver is occasionally used for ending a tricking line cleanly. The 180 degree turn is carried out usually halfway through the frontflip, though earlier attempts are possible but more dangerous and are unrecommended.\n\nThe Barani is historically named after an Italian circus acrobat and tumbler named Alfonso Baroni, performed the front salto with half twist around 1881.",
+   "lead_text": "A Barani is an aerial frontflip with 180 degree turn or half twist. \n\nIn tricking, this maneuver is occasionally used for ending a tricking line cleanly. The 180 degree turn is carried out usually halfway through the frontflip, though earlier attempts are possible but more dangerous and are unrecommended.\n\nThe Barani is historically named after an Italian circus acrobat and tumbler named Alfonso Baroni, performed the front salto with half twist around 1881."
+  },
+  {
+   "page_id": 3530,
+   "title": "Barrel vault",
+   "url": "https://parkour.fandom.com/wiki/Barrel_vault",
+   "last_rev_timestamp": "2025-08-23T20:25:06Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 664,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Intermediate\n}}\nThe '''Barrel Vault''' (also known as the '''Double Leg Reverse Vault''') is a [[vault]] used in [[freerunning]] where the practitioner performs a [[reverse vault]] while keeping both legs together for style.",
+   "lead_text": "The Barrel Vault (also known as the Double Leg Reverse Vault) is a vault used in freerunning where the practitioner performs a reverse vault while keeping both legs together for style."
+  },
+  {
+   "page_id": 2266,
+   "title": "Blocking",
+   "url": "https://parkour.fandom.com/wiki/Blocking",
+   "last_rev_timestamp": "2025-08-22T16:17:50Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Parkour",
+    "Parkour movements",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 1627,
+   "lead_wikitext": "'''Blocking''' is a technique used in [[Parkour]], [[Free running]], and [[tricking]] to convert momentum in one direction to momentum in another direction. Normal blocking, used by trickers and freerunners, converts forwards (in the case of a run-up) or backwards (in the case of a [[tumbling]] line) momentum into upwards momentum (usually used to preform [[flip]]s). Reverse blocking is used in [[Parkour]] to convert downward momentum into forward momentum in order to preform a [[roll]].",
+   "lead_text": "Blocking is a technique used in Parkour, Free running, and tricking to convert momentum in one direction to momentum in another direction. Normal blocking, used by trickers and freerunners, converts forwards (in the case of a run-up) or backwards (in the case of a tumbling line) momentum into upwards momentum (usually used to preform flips). Reverse blocking is used in Parkour to convert downward momentum into forward momentum in order to preform a roll."
+  },
+  {
+   "page_id": 2181,
+   "title": "Breakfalls",
+   "url": "https://parkour.fandom.com/wiki/Breakfalls",
+   "last_rev_timestamp": "2025-08-22T16:17:54Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Safety",
+    "WIP"
+   ],
+   "wikitext_chars": 2747,
+   "lead_wikitext": "A '''breakfall''' is a movement performed lesson the impact of a drop when landing. The most commonly used breakfall in parkour is the [[roll]]. A roll is very useful in that it dissipates energy but allows the traceur to quickly get back up on their feet; however, rolls require forward momentum, making them useless when falling straight down. If a roll cannot be used, the best way to land is to make use of a [[safety tap]] to absorb the impact.",
+   "lead_text": "A breakfall is a movement performed lesson the impact of a drop when landing. The most commonly used breakfall in parkour is the roll. A roll is very useful in that it dissipates energy but allows the traceur to quickly get back up on their feet; however, rolls require forward momentum, making them useless when falling straight down. If a roll cannot be used, the best way to land is to make use of a safety tap to absorb the impact."
+  },
+  {
+   "page_id": 2224,
+   "title": "Butterfly Kick",
+   "url": "https://parkour.fandom.com/wiki/Butterfly_Kick",
+   "last_rev_timestamp": "2025-08-22T16:17:58Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 607,
+   "lead_wikitext": "[[File:Sam_bkick_wiki.gif|thumb|A butterfly kick.]]\nA '''butterfly kick''' or '''b-kick''' is a [[tricking]] movement, originating in martial arts such as Chinese Wushu and Brazilian Capoeira. It consists of a twist of the body (which is kept horizontal) while the legs swing around. It is one of the easiest tricks to learn and is an important progression towards many other tricks, such as the [[butterfly twist]], [[Scoot]] and an [[aerial]].",
+   "lead_text": "A butterfly kick or b-kick is a tricking movement, originating in martial arts such as Chinese Wushu and Brazilian Capoeira. It consists of a twist of the body (which is kept horizontal) while the legs swing around. It is one of the easiest tricks to learn and is an important progression towards many other tricks, such as the butterfly twist, Scoot and an aerial."
+  },
+  {
+   "page_id": 2219,
+   "title": "Butterfly Twist",
+   "url": "https://parkour.fandom.com/wiki/Butterfly_Twist",
+   "last_rev_timestamp": "2025-08-22T16:18:02Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 715,
+   "lead_wikitext": "[[File:Btwist_1.gif|right]]\nA '''butterfly twist''' or '''b-twist''' is a [[tricking]] movement, originating in martial arts such as Wushu. It consists of a 360° twist in the air while the body is kept horizontal.",
+   "lead_text": "A butterfly twist or b-twist is a tricking movement, originating in martial arts such as Wushu. It consists of a 360° twist in the air while the body is kept horizontal."
+  },
+  {
+   "page_id": 2309,
+   "title": "Cartwheel",
+   "url": "https://parkour.fandom.com/wiki/Cartwheel",
+   "last_rev_timestamp": "2025-08-22T16:18:07Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 508,
+   "lead_wikitext": "A '''Cartwheel''' is a movement used in [[tricking]]. It is performed by rotating the body sideways, placing the hands on the ground, letting the legs move over the head and placing them on the ground again. It is a simple movement, and one of the easiest in tricking. It is an important progression to many other moves such as the [[roundoff]] and [[aerial]].",
+   "lead_text": "A Cartwheel is a movement used in tricking. It is performed by rotating the body sideways, placing the hands on the ground, letting the legs move over the head and placing them on the ground again. It is a simple movement, and one of the easiest in tricking. It is an important progression to many other moves such as the roundoff and aerial."
+  },
+  {
+   "page_id": 3549,
+   "title": "Cast bomb",
+   "url": "https://parkour.fandom.com/wiki/Cast_bomb",
+   "last_rev_timestamp": "2025-09-19T01:34:26Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 947,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Advanced\n}}\nThe '''Cast Bomb''' is a [[vault]] used in [[freerunning]] in which a practicioner performs a [[reverse kong vault]] directly into a [[castaway]] [[back flip]].",
+   "lead_text": "The Cast Bomb is a vault used in freerunning in which a practicioner performs a reverse kong vault directly into a castaway back flip."
+  },
+  {
+   "page_id": 1839,
+   "title": "Cat leap",
+   "url": "https://parkour.fandom.com/wiki/Cat_leap",
+   "last_rev_timestamp": "2025-08-22T18:34:18Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "WIP"
+   ],
+   "wikitext_chars": 865,
+   "lead_wikitext": "[[File:Cat_Leap.gif|frame|Animation of Cat Leap from www.americanparkour.com]]\nThe '''Cat Leap''' is a technique used in [[parkour]] to jump into a [[cat grab]] by landing on a vertical object, such as a ledge, a wall, or a fence. Cat leaps are one of the most common techniques used, and should be learned and practiced at an early stage. They can be done from a running jump, a [[precision]], a [[lache]] or a number of other techniques.",
+   "lead_text": "The Cat Leap is a technique used in parkour to jump into a cat grab by landing on a vertical object, such as a ledge, a wall, or a fence. Cat leaps are one of the most common techniques used, and should be learned and practiced at an early stage. They can be done from a running jump, a precision, a lache or a number of other techniques."
+  },
+  {
+   "page_id": 3551,
+   "title": "Cat Leap",
+   "url": "https://parkour.fandom.com/wiki/Cat_Leap",
+   "last_rev_timestamp": "2025-08-23T22:53:43Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Moves",
+    "Parkour",
+    "WIP"
+   ],
+   "wikitext_chars": 2399,
+   "lead_wikitext": "[[File:K jdubois mtoorock parkour 07-29-08 009 009 preview.jpg|thumb|400px|right]]The '''cat leap '''is a [[Parkour|parkour]] move which involves landing a jump by grabbing onto the edge of the wall. The legs usually hit the side of the wall first and are used to absorb the impact of the jump before the fingers grip over the top of the wall. Cat leaps are often seen from running or standing, depending on the set-up and the distance of the gap.",
+   "lead_text": "The cat leap is a parkour move which involves landing a jump by grabbing onto the edge of the wall. The legs usually hit the side of the wall first and are used to absorb the impact of the jump before the fingers grip over the top of the wall. Cat leaps are often seen from running or standing, depending on the set-up and the distance of the gap."
+  },
+  {
+   "page_id": 2322,
+   "title": "Cat to Cat",
+   "url": "https://parkour.fandom.com/wiki/Cat_to_Cat",
+   "last_rev_timestamp": "2025-08-22T18:34:21Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 1114,
+   "lead_wikitext": "{{Stub}}\n\nA '''[[Cat]] to cat''' or '''Prince of Persia''' (named after [[w:c:princeofpersia:Prince of Persia series|the video game franchise]]) is a technique used in [[Parkour]] and [[freerunning]]. It is a leap from a cat position into another cat on an opposing wall (it can also be done into a [[lache]], [[crane]], [[precision]] or just about any other technique). Most of the time, you can only do 3 Cat to cats on 1 wall since after 3, you start losing power to push off and gravity will start to win that battle with your [https://en.wikipedia.org/wiki/Momentum?wprov=sfla1]momentum and you'll start to fall.",
+   "lead_text": "A Cat to cat or Prince of Persia (named after the video game franchise) is a technique used in Parkour and freerunning. It is a leap from a cat position into another cat on an opposing wall (it can also be done into a lache, crane, precision or just about any other technique). Most of the time, you can only do 3 Cat to cats on 1 wall since after 3, you start losing power to push off and gravity will start to win that battle with your momentum and you'll start to fall."
+  },
+  {
+   "page_id": 2243,
+   "title": "Climb Up",
+   "url": "https://parkour.fandom.com/wiki/Climb_Up",
+   "last_rev_timestamp": "2025-08-22T16:18:37Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 2854,
+   "lead_wikitext": "A '''Climb Up''' is a movement used in [[Parkour]] and [[freerunning]] to go from a hanging position to the top of a wall. It is similar to a [[muscle up]], but also using the feet to push off with.",
+   "lead_text": "A Climb Up is a movement used in Parkour and freerunning to go from a hanging position to the top of a wall. It is similar to a muscle up, but also using the feet to push off with."
+  },
+  {
+   "page_id": 2012,
+   "title": "Climbing",
+   "url": "https://parkour.fandom.com/wiki/Climbing",
+   "last_rev_timestamp": "2025-08-22T18:34:23Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Climbing",
+    "Training",
+    "Urban Movement",
+    "WIP"
+   ],
+   "wikitext_chars": 1990,
+   "lead_wikitext": "{{Stub}}\n\n'''Climbing''' movement using the hands and feet up a vertical or very steep obect. It is commonly practiced in combination with [[Parkour]] and [[Freerunning]] but also serves as a competitive sport in several cultures and areas. It is often considered a part of [[Parkour]] since it may be the quickest route to a given place. It is also heavily utilized in [[urban exploration]]. Climbing is an excellent means of [[conditioning]].",
+   "lead_text": "Climbing movement using the hands and feet up a vertical or very steep obect. It is commonly practiced in combination with Parkour and Freerunning but also serves as a competitive sport in several cultures and areas. It is often considered a part of Parkour since it may be the quickest route to a given place. It is also heavily utilized in urban exploration. Climbing is an excellent means of conditioning."
+  },
+  {
+   "page_id": 1889,
+   "title": "Conditioning",
+   "url": "https://parkour.fandom.com/wiki/Conditioning",
+   "last_rev_timestamp": "2025-08-22T16:18:47Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Conditioning",
+    "Safety",
+    "WIP"
+   ],
+   "wikitext_chars": 4111,
+   "lead_wikitext": "[[File:Morzine02.jpg|thumb|250px|right|A group of traceurs training with the '[[Méthode Naturelle]]' during a Parkour Generations Training Camp. 'Méthode naturelle' is the oldest form of conditioning used for Parkour.]]\n'''Conditioning''' is a vital part of a Traceur's or Traceuses' training. Conditioning prepares and maintains a healthy body and mind before, during, and even after training. Conditioning can be used with a variety of methods, and styles. General areas conditioned include stamina, strength, various techniques, and even the conditioning one's way of thought. Proper conditioning has a great number all long term health benefits, even outside of Parkour training.",
+   "lead_text": "' during a Parkour Generations Training Camp. 'Méthode naturelle' is the oldest form of conditioning used for Parkour.]]\nConditioning is a vital part of a Traceur's or Traceuses' training. Conditioning prepares and maintains a healthy body and mind before, during, and even after training. Conditioning can be used with a variety of methods, and styles. General areas conditioned include stamina, strength, various techniques, and even the conditioning one's way of thought. Proper conditioning has a great number all long term health benefits, even outside of Parkour training."
+  },
+  {
+   "page_id": 2408,
+   "title": "Corkscrew",
+   "url": "https://parkour.fandom.com/wiki/Corkscrew",
+   "last_rev_timestamp": "2025-08-22T18:34:25Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 541,
+   "lead_wikitext": "{{Stub}}\nThe '''corkscrew '''or '''cork''' is an acrobatic movement used in [[tricking]]. It is similar to a [[b-twist]], as the body rotates while staying horizontal, although the takeoff more closely resembles a [[Glossary of Terms#J|J-step]] [[gainer]]. Both moves are important progressions to the corkscrew.",
+   "lead_text": "The corkscrew or cork is an acrobatic movement used in tricking. It is similar to a b-twist, as the body rotates while staying horizontal, although the takeoff more closely resembles a J-step gainer. Both moves are important progressions to the corkscrew."
+  },
+  {
+   "page_id": 1859,
+   "title": "Crane",
+   "url": "https://parkour.fandom.com/wiki/Crane",
+   "last_rev_timestamp": "2025-08-22T18:34:28Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 1046,
+   "lead_wikitext": "{{stub}}\n\n[[File:9529 1215292257940 1097825131 30671305 6035853 n.jpg|thumb|200px|right]]\nThe '''Crane''' is a technique used for landing a jump in [[Parkour]]. Cranes also serve as an accurate way to land onto of an obstacle from a running jump, [[precision]] , or [[vault]]. The landing of a crane involves the practitioner landing with his or her leg on top of the object, with the toe of the other foot perpendicularly touching the side of that object. There are some variations to the crane, though rather than personal taste, each variation is used for different speeds and environments.",
+   "lead_text": "The Crane is a technique used for landing a jump in Parkour. Cranes also serve as an accurate way to land onto of an obstacle from a running jump, precision , or vault. The landing of a crane involves the practitioner landing with his or her leg on top of the object, with the toe of the other foot perpendicularly touching the side of that object. There are some variations to the crane, though rather than personal taste, each variation is used for different speeds and environments."
+  },
+  {
+   "page_id": 3552,
+   "title": "Crane Landing",
+   "url": "https://parkour.fandom.com/wiki/Crane_Landing",
+   "last_rev_timestamp": "2025-08-22T16:19:01Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Moves",
+    "Parkour",
+    "WIP"
+   ],
+   "wikitext_chars": 517,
+   "lead_wikitext": "The '''crane''' is a landing position in which a traceur lands with one foot on top of an obstacle (usually a wall) and the other foot trailing below. This technique is most commonly used when a traceur is trying a running precision jump but doesn't have the height to make it with both feet on top of the wall.",
+   "lead_text": "The crane is a landing position in which a traceur lands with one foot on top of an obstacle (usually a wall) and the other foot trailing below. This technique is most commonly used when a traceur is trying a running precision jump but doesn't have the height to make it with both feet on top of the wall."
+  },
+  {
+   "page_id": 2461,
+   "title": "Crunch",
+   "url": "https://parkour.fandom.com/wiki/Crunch",
+   "last_rev_timestamp": "2025-08-22T16:19:06Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Conditioning",
+    "WIP"
+   ],
+   "wikitext_chars": 859,
+   "lead_wikitext": "A '''Crunch''' is a [[conditioning]] exercise for the abdominal muscles.",
+   "lead_text": "A Crunch is a conditioning exercise for the abdominal muscles."
+  },
+  {
+   "page_id": 3554,
+   "title": "Damien Walters",
+   "url": "https://parkour.fandom.com/wiki/Damien_Walters",
+   "last_rev_timestamp": "2025-08-22T16:19:12Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Athletes",
+    "WIP"
+   ],
+   "wikitext_chars": 3073,
+   "lead_wikitext": "[[File:Dw.jpg|thumb]]\n\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">'''Damien Gareth Walters''' (born April 6, 1982), from Derby, United Kingdom is a professional stuntman, gymnastics coach and free runner. Before retiring from his career as a gymnast in 2007, he represented Great Britain in several championships. At his peak he was ranked 4th in the world, winning the European and world championships with his team.</p>\n\n<h2 style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">Career</h2>\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">He remembers his first attempt at a trick being a frontflip on grass when he was 4 or 5 years old, which he failed, leading to his mother enrolling him in gymnastics. He has had over 20 years training experience, and currently trains for approximately 3-4 hours each day.</p>\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">With Damien's extensive tumbling and gymnastics skills, many free running moves come naturally to him. He was first noticed in the community after releasing his 2007 showreel, which featured many movements inspired by free running. This video got him scouted by Jackie Chan's stunt agent. Subsequently, he retired from gymnastics to pursue a career as a stuntman, where he is currently a part of a core group of stuntmen who work for Brad Allan, the first non-Asian member of Jackie Chan's stunt team. He was awarded with the 2010 Taurus World Stunt Award for ''Best Fight'' for his performance in the film ''Ninja Assassin''.</p>\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">He has featured in several videos with free runner Tim \"Livewire\" Shieff, including the popular Youtube series The Walters & Shieff Show. Damien's 2009 showreel became one of the most popular videos of all time on Youtube after spreading virally online. His YouTube channel is one of the most popular freerunning channels with over 100,000 subscribers and 36 million upload views, as of April 2011.</p>",
+   "lead_text": "Damien Gareth Walters (born April 6, 1982), from Derby, United Kingdom is a professional stuntman, gymnastics coach and free runner. Before retiring from his career as a gymnast in 2007, he represented Great Britain in several championships. At his peak he was ranked 4th in the world, winning the European and world championships with his team.\n\nCareer\n\nHe remembers his first attempt at a trick being a frontflip on grass when he was 4 or 5 years old, which he failed, leading to his mother enrolling him in gymnastics. He has had over 20 years training experience, and currently trains for approximately 3-4 hours each day.\n\nWith Damien's extensive tumbling and gymnastics skills, many free running moves come naturally to him. He was first noticed in the community after releasing his 2007 showreel, which featured many movements inspired by free running. This video got him scouted by Jackie Chan's stunt agent. Subsequently, he retired from gymnastics to pursue a career as a stuntman, where he is currently a part of a core group of stuntmen who work for Brad Allan, the first non-Asian member of Jackie Chan's stunt team. He was awarded with the 2010 Taurus World Stunt Award for Best Fight for his performance in the film Ninja Assassin.\n\nHe has featured in several videos with free runner Tim \"Livewire\" Shieff, including the popular Youtube series The Walters & Shieff Show. Damien's 2009 showreel became one of the most popular videos of all time on Youtube after spreading virally online. His YouTube channel is one of the most popular freerunning channels with over 100,000 subscribers and 36 million upload views, as of April 2011."
+  },
+  {
+   "page_id": 2453,
+   "title": "Daniel Ilabaca",
+   "url": "https://parkour.fandom.com/wiki/Daniel_Ilabaca",
+   "last_rev_timestamp": "2025-08-22T16:19:17Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "People",
+    "WIP"
+   ],
+   "wikitext_chars": 1148,
+   "lead_wikitext": "[[File:Daniel_Ilabaca.jpg|thumb]]\n'''Daniel Ilabaca''' (born 23 January, 1988) is known as the Godfather of Parkour and Freerunning. A British [[Free running|freerunner]], [[Parkour|Traceur]], and martial artist. He, along with [[Ryan Doyle]], founded the [[World Freerunning and Parkour Federation]] (WFPF).",
+   "lead_text": "Daniel Ilabaca (born 23 January, 1988) is known as the Godfather of Parkour and Freerunning. A British freerunner, Traceur, and martial artist. He, along with Ryan Doyle, founded the World Freerunning and Parkour Federation (WFPF)."
+  },
+  {
+   "page_id": 3556,
+   "title": "Dash bomb",
+   "url": "https://parkour.fandom.com/wiki/Dash_bomb",
+   "last_rev_timestamp": "2025-08-23T20:25:23Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 1784,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Advanced\n}}\nThe '''Dash Bomb''' is a [[vault]] used in [[freerunning]] where the practitioner performs a [[front flip]] immediately out of a [[dash vault]] without their feet touching the ground in-between. It is considered to be one of the most difficult vaults to learn.",
+   "lead_text": "The Dash Bomb is a vault used in freerunning where the practitioner performs a front flip immediately out of a dash vault without their feet touching the ground in-between. It is considered to be one of the most difficult vaults to learn."
+  },
+  {
+   "page_id": 1853,
+   "title": "Dash Vault",
+   "url": "https://parkour.fandom.com/wiki/Dash_Vault",
+   "last_rev_timestamp": "2026-07-20T13:11:07Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "Parkour movements",
+    "Vaults"
+   ],
+   "wikitext_chars": 1892,
+   "lead_wikitext": "{{Infobox technique\n|image = 6-73cc938fd7581f062127632b608d9fd5.jpg\n|discipline = [[Parkour]]\n|difficulty = Intermediate\n}}\nThe '''Dash Vault''' is a [[vault]] used in [[Parkour]] in which a practitioner jumps over an obstacle feet first then leads the body away from the object with the hands. This vault is considered a more difficult vault to perform because of its difficulty to transfer momentum.",
+   "lead_text": "The Dash Vault is a vault used in Parkour in which a practitioner jumps over an obstacle feet first then leads the body away from the object with the hands. This vault is considered a more difficult vault to perform because of its difficulty to transfer momentum."
+  },
+  {
+   "page_id": 2081,
+   "title": "David Belle",
+   "url": "https://parkour.fandom.com/wiki/David_Belle",
+   "last_rev_timestamp": "2025-08-22T16:19:31Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Featured articles",
+    "Parkour",
+    "People",
+    "WIP"
+   ],
+   "wikitext_chars": 3923,
+   "lead_wikitext": "{{Featured Icon}}[[File:David_Belle_NewYorker.jpg|thumb|David Belle New York.]]\n'''David Belle''' (born 29 April 1973) is considered by many to be the founder of modern [[Parkour]]. Belle founded Parkour based on his training and the teachings from his father {{w|Raymond Belle}}. The discipline has since spread around the world and now has adherents in virtually every country. Belle is also an actor and choreographer, and he is well known for his work incorporating Parkour into films such as in ''{{w|District B13}}'', ''{{w|Babylon A.D.}}'' and ''{{w|Prince of Persia: The Sands of Time (film)|Prince of Persia}}''.",
+   "lead_text": "David Belle (born 29 April 1973) is considered by many to be the founder of modern Parkour. Belle founded Parkour based on his training and the teachings from his father . The discipline has since spread around the world and now has adherents in virtually every country. Belle is also an actor and choreographer, and he is well known for his work incorporating Parkour into films such as in , and ."
+  },
+  {
+   "page_id": 2460,
+   "title": "Deadlift",
+   "url": "https://parkour.fandom.com/wiki/Deadlift",
+   "last_rev_timestamp": "2025-08-22T16:19:36Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Conditioning",
+    "WIP"
+   ],
+   "wikitext_chars": 734,
+   "lead_wikitext": "The '''deadlift''' is a conditioning exercise, where a barbell is lifted from the floor (dead) to a position near the waist. It is very helpful in [[Parkour]] and [[Freerunning]] [[training]], as it is an excellent way to build lower and upper body strength. It is one of the most important exercises needed for safe [[landing]]s. The primary muscles used are the quadriceps, glutes, and hamstrings, as well as indirectly working a number of other muscles.",
+   "lead_text": "The deadlift is a conditioning exercise, where a barbell is lifted from the floor (dead) to a position near the waist. It is very helpful in Parkour and Freerunning training, as it is an excellent way to build lower and upper body strength. It is one of the most important exercises needed for safe landings. The primary muscles used are the quadriceps, glutes, and hamstrings, as well as indirectly working a number of other muscles."
+  },
+  {
+   "page_id": 3686,
+   "title": "Devil drop",
+   "url": "https://parkour.fandom.com/wiki/Devil_drop",
+   "last_rev_timestamp": "2025-08-24T04:11:25Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Flips",
+    "Freerunning"
+   ],
+   "wikitext_chars": 1102,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Advanced\n}}\nThe '''Devil Drop''' is a technique in [[freerunning]] where the practitioner performs an inverted [[loser flip|front flip]] off a wall out of a [[cat grab]] position.\n\nThe inverse of this trick is the [[angel drop]] which involves doing a [[back flip]] from the same position instead.",
+   "lead_text": "The Devil Drop is a technique in freerunning where the practitioner performs an inverted front flip off a wall out of a cat grab position.\n\nThe inverse of this trick is the angel drop which involves doing a back flip from the same position instead."
+  },
+  {
+   "page_id": 2194,
+   "title": "Dive Roll",
+   "url": "https://parkour.fandom.com/wiki/Dive_Roll",
+   "last_rev_timestamp": "2025-08-22T18:34:32Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 542,
+   "lead_wikitext": "A '''dive roll''' is a [[roll]] where one is completely in the air before rolling (the feet and hands never touch the ground at the same time). Dive rolls can be used as [[breakfall]]s in certain situations, to get over certain obstacles, or for aesthetic purposes.",
+   "lead_text": "A dive roll is a roll where one is completely in the air before rolling (the feet and hands never touch the ground at the same time). Dive rolls can be used as breakfalls in certain situations, to get over certain obstacles, or for aesthetic purposes."
+  },
+  {
+   "page_id": 2152,
+   "title": "Double kong vault",
+   "url": "https://parkour.fandom.com/wiki/Double_kong_vault",
+   "last_rev_timestamp": "2025-09-12T01:10:37Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 2561,
+   "lead_wikitext": "{{Infobox technique\n|image = DK.jpg\n|discipline = [[Parkour]]\n|difficulty = Intermediate\n}}\nA '''Double Kong Vault''' is a [[vault]] used in [[parkour]]. It is similar to a regular [[Kong Vault|Kong]], but is used to get over two obstacles (or one long obstacle). The approach and takeoff is exactly like a regular kong, but rather than letting one's feet touch, the traceur pushes off twice.",
+   "lead_text": "A Double Kong Vault is a vault used in parkour. It is similar to a regular Kong, but is used to get over two obstacles (or one long obstacle). The approach and takeoff is exactly like a regular kong, but rather than letting one's feet touch, the traceur pushes off twice."
+  },
+  {
+   "page_id": 2097,
+   "title": "Dyno",
+   "url": "https://parkour.fandom.com/wiki/Dyno",
+   "last_rev_timestamp": "2025-08-23T00:27:56Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "WIP"
+   ],
+   "wikitext_chars": 1412,
+   "lead_wikitext": "{{stub}}\n\nA '''Dyno''' is a technique used in [[parkour]] in which the practitioner leaps from a hanging position and edge. Their are two types of dyno's- a one legged dyno and a two legged dyno.\n\none legged dyno Instructions\n# be hanging on a ledge with your feet on the wall to start out, with your feet on the wall. Make sure thier is another ledge above you.\n# release the tension on your arms so that they are straight. \n# pull up with your arms to do pull up so that your head is above your hands (you can push off the wall with your leg to gain additional momentum for the pull up), and your feet are right below your hand\n# using the momentum of your pull up, stick one knee between your legs and push off with that. As you go up, thrust out your knee to gain additonal momentum.\n# as you go up grab onto the next ledge. \n# If you miss then grab onto the ledge you were just hanging on as you fall down. \n# once the preferred ledge is grabbed. prepare to perform another dyno or pull your self up to the top.\ntwo legged dyno instructions\n# be hanging on a ledge with your feet on the wall to start out, with your feet on the wall . Make sure there is another ledge above you.\n# release the tension in your arms so that they are straight and your waist is between your legs.\n# push off with both legs, while thrusting your knee up to gain additional momentum\n# grab on to the upper ledge\n\n[[Category:WIP]]",
+   "lead_text": "A Dyno is a technique used in parkour in which the practitioner leaps from a hanging position and edge. Their are two types of dyno's- a one legged dyno and a two legged dyno.\n\none legged dyno Instructions\n# be hanging on a ledge with your feet on the wall to start out, with your feet on the wall. Make sure thier is another ledge above you.\n# release the tension on your arms so that they are straight. \n# pull up with your arms to do pull up so that your head is above your hands (you can push off the wall with your leg to gain additional momentum for the pull up), and your feet are right below your hand\n# using the momentum of your pull up, stick one knee between your legs and push off with that. As you go up, thrust out your knee to gain additonal momentum.\n# as you go up grab onto the next ledge. \n# If you miss then grab onto the ledge you were just hanging on as you fall down. \n# once the preferred ledge is grabbed. prepare to perform another dyno or pull your self up to the top.\ntwo legged dyno instructions\n# be hanging on a ledge with your feet on the wall to start out, with your feet on the wall . Make sure there is another ledge above you.\n# release the tension in your arms so that they are straight and your waist is between your legs.\n# push off with both legs, while thrusting your knee up to gain additional momentum\n# grab on to the upper ledge"
+  },
+  {
+   "page_id": 2421,
+   "title": "Flashkick",
+   "url": "https://parkour.fandom.com/wiki/Flashkick",
+   "last_rev_timestamp": "2025-10-06T05:05:08Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 628,
+   "lead_wikitext": "{{Stub}}\n\nA '''flashkick''' is a backflip with the feet staggered and at least one of them extended. The basic flashkick is done from a standing position with the rear leg tucked and forward leg extended.",
+   "lead_text": "A flashkick is a backflip with the feet staggered and at least one of them extended. The basic flashkick is done from a standing position with the rear leg tucked and forward leg extended."
+  },
+  {
+   "page_id": 2171,
+   "title": "Flip",
+   "url": "https://parkour.fandom.com/wiki/Flip",
+   "last_rev_timestamp": "2025-08-22T18:34:43Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 2463,
+   "lead_wikitext": "[[File:882871 365983896844387 554345111 o.jpg|thumb|208px|right|A backflip mid-rotation]]\nA '''Flip''' is an acrobatic maneuver in which the practitioner preforms one or more rotations while airborne. They are rarely used in [[Parkour]], as they rarely aid in efficient movement; however, they are very often performed in [[freerunning]] and [[tricking]] as they are often quite visually impressive.",
+   "lead_text": "A Flip is an acrobatic maneuver in which the practitioner preforms one or more rotations while airborne. They are rarely used in Parkour, as they rarely aid in efficient movement; however, they are very often performed in freerunning and tricking as they are often quite visually impressive."
+  },
+  {
+   "page_id": 2318,
+   "title": "Flyaway",
+   "url": "https://parkour.fandom.com/wiki/Flyaway",
+   "last_rev_timestamp": "2025-09-14T00:51:41Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Flips",
+    "Freerunning"
+   ],
+   "wikitext_chars": 1400,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Intermediate\n}}\nA '''flyaway''', also sometimes simply called a '''swing gainer''', is a [[flip]] used in [[freerunning]] where the practitioner does a [[lache]] bar swing directly into a [[gainer]] backflip.",
+   "lead_text": "A flyaway, also sometimes simply called a swing gainer, is a flip used in freerunning where the practitioner does a lache bar swing directly into a gainer backflip."
+  },
+  {
+   "page_id": 1851,
+   "title": "Freerunning",
+   "url": "https://parkour.fandom.com/wiki/Freerunning",
+   "last_rev_timestamp": "2025-08-22T16:20:10Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "WIP"
+   ],
+   "wikitext_chars": 3036,
+   "lead_wikitext": "[[File:Parkour5.jpg|thumb|200px|[[Sébastien Foucan|Sebastien Foucan]], the creator of the Free running community.]] '''Freerunning''' (often abbreviated '''FR''' or '''Free running''') has multiple meanings in the urban movement community. The term \"Freerunning\" was originally coined during the filming of \"Jump London\" by [[Sébastien Foucan]]; it was originally intended to be used as an English translation of [[Parkour]]. However, after the split in ideals between [[David Belle]] and Sébastien Foucan, it Foucan adopted the name for the emerging art, while Belle choose to keep using the term Parkour. Freerunning—although often used erroneously interchangeably with the word Parkour—has come to mean the artistic expression using the movements of the human body rather than focusing on efficiency and swiftness. Much debate occurs on the subject of definitions.",
+   "lead_text": ", the creator of the Free running community.]] Freerunning (often abbreviated FR or Free running) has multiple meanings in the urban movement community. The term \"Freerunning\" was originally coined during the filming of \"Jump London\" by Sébastien Foucan; it was originally intended to be used as an English translation of Parkour. However, after the split in ideals between David Belle and Sébastien Foucan, it Foucan adopted the name for the emerging art, while Belle choose to keep using the term Parkour. Freerunning—although often used erroneously interchangeably with the word Parkour—has come to mean the artistic expression using the movements of the human body rather than focusing on efficiency and swiftness. Much debate occurs on the subject of definitions."
+  },
+  {
+   "page_id": 2756,
+   "title": "Freerunning movements",
+   "url": "https://parkour.fandom.com/wiki/Freerunning_movements",
+   "last_rev_timestamp": "2026-09-10T17:42:39Z",
+   "last_rev_user": "Fruiteebat",
+   "categories": [
+    "WIP"
+   ],
+   "wikitext_chars": 3022,
+   "lead_wikitext": "",
+   "lead_text": ""
+  },
+  {
+   "page_id": 1844,
+   "title": "Front Flip",
+   "url": "https://parkour.fandom.com/wiki/Front_Flip",
+   "last_rev_timestamp": "2025-08-22T18:34:46Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 2650,
+   "lead_wikitext": "[[File:Front_tuck.jpg|thumb|A front tuck]]\nA '''Front Flip''' is a movement used in [[Freerunning]] and [[tricking]]. The term \"Frontflip\" can actually refer to several different types",
+   "lead_text": "A Front Flip is a movement used in Freerunning and tricking. The term \"Frontflip\" can actually refer to several different types"
+  },
+  {
+   "page_id": 2300,
+   "title": "Front Handspring",
+   "url": "https://parkour.fandom.com/wiki/Front_Handspring",
+   "last_rev_timestamp": "2025-08-22T18:34:49Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 1007,
+   "lead_wikitext": "A '''Front Handspring''' is an acrobatic move used in [[tricking]] and occasionally [[Freerunning]]. It consists of leaping forwards and momentarily landing on the hands, then quickly pushing off to land on the feet. It is one of the easiest tricking movements. It can be performed with feet together of with one in front of the other (called a front step-out).",
+   "lead_text": "A Front Handspring is an acrobatic move used in tricking and occasionally Freerunning. It consists of leaping forwards and momentarily landing on the hands, then quickly pushing off to land on the feet. It is one of the easiest tricking movements. It can be performed with feet together of with one in front of the other (called a front step-out)."
+  },
+  {
+   "page_id": 2314,
+   "title": "Gainer",
+   "url": "https://parkour.fandom.com/wiki/Gainer",
+   "last_rev_timestamp": "2025-08-22T16:20:31Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 578,
+   "lead_wikitext": "A '''gainer''' is a backflip  performed moving forwards. It is usually either a [[Backflip#Types of Backflip|tuck or flashkick]]. The former is usually performed off of an object, whereas the latter is usually done with a [[Glossary of Terms#J|J-step]]\n\nEven though it consists of a backwards rotating   mid-air somersault , it is not actually a backflip variation . A gainer has it’s own variations and is an entirely different flip.",
+   "lead_text": "A gainer is a backflip performed moving forwards. It is usually either a tuck or flashkick. The former is usually performed off of an object, whereas the latter is usually done with a J-step\n\nEven though it consists of a backwards rotating mid-air somersault , it is not actually a backflip variation . A gainer has it’s own variations and is an entirely different flip."
+  },
+  {
+   "page_id": 1854,
+   "title": "Gate Vault",
+   "url": "https://parkour.fandom.com/wiki/Gate_Vault",
+   "last_rev_timestamp": "2025-08-22T18:34:52Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 1432,
+   "lead_wikitext": "[[File:9529 1215272737452 1097825131 30671171 4593012 n.jpg|thumb|246px|right|A Traceur using a gate vault to traverse to the sidewalk below from an elevated walkway.]]\nThe '''Gate Vault''' is a [[vault]] used in [[Parkour]] to lower oneself over a fence, gate or wall, allowing a traceur or traceuse to quickly move over the obstacle and retain most of their forward momentum.",
+   "lead_text": "The Gate Vault is a vault used in Parkour to lower oneself over a fence, gate or wall, allowing a traceur or traceuse to quickly move over the obstacle and retain most of their forward momentum."
+  },
+  {
+   "page_id": 2119,
+   "title": "Gather Front",
+   "url": "https://parkour.fandom.com/wiki/Gather_Front",
+   "last_rev_timestamp": "2025-08-22T18:34:55Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "WIP"
+   ],
+   "wikitext_chars": 630,
+   "lead_wikitext": "The '''Gather Front''' is a type of [[Frontflip]]. However, rather than jumping and landing with feet together like a regular front tuck, the gather front is preformed with a [[Glossary_of_Terms#G|gather step]] (with feet staggered). The freerunner then dives forward and upwards, then tucks tight just like a regular frontflip.",
+   "lead_text": "The Gather Front is a type of Frontflip. However, rather than jumping and landing with feet together like a regular front tuck, the gather front is preformed with a gather step (with feet staggered). The freerunner then dives forward and upwards, then tucks tight just like a regular frontflip."
+  },
+  {
+   "page_id": 1898,
+   "title": "Gear",
+   "url": "https://parkour.fandom.com/wiki/Gear",
+   "last_rev_timestamp": "2025-08-22T16:29:30Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Safety",
+    "Training",
+    "WIP"
+   ],
+   "wikitext_chars": 2707,
+   "lead_wikitext": "'''Gear''' used in [[Parkour]] and [[Free running]] ranges from shoes, clothing, gloves, etc. Almost all pieces of clothing or gear are used on the basis of personal preference on the style of training and the environment in which the Traceur or Traceuse is training in. The uses of many pieces of gear are a common spot for debate in the communities.",
+   "lead_text": "Gear used in Parkour and Free running ranges from shoes, clothing, gloves, etc. Almost all pieces of clothing or gear are used on the basis of personal preference on the style of training and the environment in which the Traceur or Traceuse is training in. The uses of many pieces of gear are a common spot for debate in the communities."
+  },
+  {
+   "page_id": 2327,
+   "title": "Giant",
+   "url": "https://parkour.fandom.com/wiki/Giant",
+   "last_rev_timestamp": "2025-08-22T18:34:58Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "WIP"
+   ],
+   "wikitext_chars": 783,
+   "lead_wikitext": "{{Stub}}\n\nA '''giant''' is a bar technique used in [[freerunning]]. It involves swinging completely around the bar. A basic giant is done with the arms and knees straight. There are many variations, some of them listed below.",
+   "lead_text": "A giant is a bar technique used in freerunning. It involves swinging completely around the bar. A basic giant is done with the arms and knees straight. There are many variations, some of them listed below."
+  },
+  {
+   "page_id": 2302,
+   "title": "Glossary of Terms",
+   "url": "https://parkour.fandom.com/wiki/Glossary_of_Terms",
+   "last_rev_timestamp": "2025-08-22T16:20:54Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Urban Movement",
+    "WIP"
+   ],
+   "wikitext_chars": 3068,
+   "lead_wikitext": "A the following is a glossary of terms commonly used in [[Parkour]], [[Freerunning]], and [[tricking]].",
+   "lead_text": "A the following is a glossary of terms commonly used in Parkour, Freerunning, and tricking."
+  },
+  {
+   "page_id": 3563,
+   "title": "Grab Vault",
+   "url": "https://parkour.fandom.com/wiki/Grab_Vault",
+   "last_rev_timestamp": "2025-08-22T16:20:58Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 223,
+   "lead_wikitext": "The '''Grab Vault '''is preformed like a [[speed Vault|speed vault]] except while moving over the obstacle the person grabs his feet before finishing the vault.\n[[Category:Vaults]]\n[[Category:Free Running]]\n[[Category:WIP]]",
+   "lead_text": "The Grab Vault is preformed like a speed vault except while moving over the obstacle the person grabs his feet before finishing the vault."
+  },
+  {
+   "page_id": 2535,
+   "title": "Handstand",
+   "url": "https://parkour.fandom.com/wiki/Handstand",
+   "last_rev_timestamp": "2025-08-22T18:35:02Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Conditioning",
+    "Other",
+    "WIP"
+   ],
+   "wikitext_chars": 566,
+   "lead_wikitext": "[[File:14513369_9d95717c15.jpg|thumb|200px|right]]\nA '''handstand''' is a position in which the body is supported by the arms and held v [[Handstand]] in the city vertically. It requires good balance and some amount of upper body strength. A more difficult variation is the one-handed handstand. Handstand [[pushup]]s can also be performed as a [[conditioning]] exercise. Many athletic activities such as gymnastics, acrobatics, cheerleaders, yoga practicionars, dancers and free-runners would use this.\n[[Category:Other]]\n[[Category:Conditioning]]\n[[Category:WIP]]",
+   "lead_text": "A handstand is a position in which the body is supported by the arms and held v Handstand in the city vertically. It requires good balance and some amount of upper body strength. A more difficult variation is the one-handed handstand. Handstand pushups can also be performed as a conditioning exercise. Many athletic activities such as gymnastics, acrobatics, cheerleaders, yoga practicionars, dancers and free-runners would use this."
+  },
+  {
+   "page_id": 3386,
+   "title": "How to Train",
+   "url": "https://parkour.fandom.com/wiki/How_to_Train",
+   "last_rev_timestamp": "2025-08-22T16:21:06Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "How-to",
+    "Training",
+    "WIP"
+   ],
+   "wikitext_chars": 1626,
+   "lead_wikitext": "Many traceurs may wonder how to design a good fitness regime, and how to train in general. There are at least two ways to do it: alone or with others. Here are easy, three-step instructions for both.",
+   "lead_text": "Many traceurs may wonder how to design a good fitness regime, and how to train in general. There are at least two ways to do it: alone or with others. Here are easy, three-step instructions for both."
+  },
+  {
+   "page_id": 3566,
+   "title": "Human Flag",
+   "url": "https://parkour.fandom.com/wiki/Human_Flag",
+   "last_rev_timestamp": "2025-08-25T02:50:51Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Strength Feats",
+    "WIP"
+   ],
+   "wikitext_chars": 556,
+   "lead_wikitext": "The '''human flag''' is a kind of body position when the body is parallel (or almost parallel) with the ground by holding it with your arms. The arms and the body make a straight line. It is mostly done on poles. This trick requires a great amount of upper body and core strength but also the right technique is important.\n\n[[File:532118 348998258528466 38474048 n.jpg|thumb|250px]]\n[[File:Flag.jpg|thumb|400px]]",
+   "lead_text": "The human flag is a kind of body position when the body is parallel (or almost parallel) with the ground by holding it with your arms. The arms and the body make a straight line. It is mostly done on poles. This trick requires a great amount of upper body and core strength but also the right technique is important."
+  },
+  {
+   "page_id": 3569,
+   "title": "Jackie Chan vault",
+   "url": "https://parkour.fandom.com/wiki/Jackie_Chan_vault",
+   "last_rev_timestamp": "2025-08-23T22:00:58Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 1858,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Parkour]]\n|difficulty = Basic\n}}\nThe '''Jackie Chan Vault''' (or more commonly just the '''Chan Vault''') is a [[vault]] used in [[parkour]] where the practitioner performs a no-handed [[dash vault]]. It is a technique that mimics the flying kicks of Jackie Chan. Because of this, it is one of the only vaults where no contact is made with the obstacle at any point during the movement.",
+   "lead_text": "The Jackie Chan Vault (or more commonly just the Chan Vault) is a vault used in parkour where the practitioner performs a no-handed dash vault. It is a technique that mimics the flying kicks of Jackie Chan. Because of this, it is one of the only vaults where no contact is made with the obstacle at any point during the movement."
+  },
+  {
+   "page_id": 2466,
+   "title": "Jump",
+   "url": "https://parkour.fandom.com/wiki/Jump",
+   "last_rev_timestamp": "2025-08-22T16:21:31Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Training",
+    "Urban Movement",
+    "WIP"
+   ],
+   "wikitext_chars": 1385,
+   "lead_wikitext": "[[File:4508_1002576923124_1785871406_700_918771_n.jpg|thumb|386px|A Traceur using a [[Precision Techniques#Precision Leap|Precision leap]] to get over a gap.]]\nA '''jump''' is an explosive movement upwards with enough power to cause the body (in this case the practitioner) to become airborne. Jumps are one of the most common movements in [[Parkour]], [[Freerunning]] and [[tricking]], as they are used for clearing obstacles and distances in the former two and to give enough time in the air for a [[flip]] in the latter two.",
+   "lead_text": "to get over a gap.]]\nA jump is an explosive movement upwards with enough power to cause the body (in this case the practitioner) to become airborne. Jumps are one of the most common movements in Parkour, Freerunning and tricking, as they are used for clearing obstacles and distances in the former two and to give enough time in the air for a flip in the latter two."
+  },
+  {
+   "page_id": 1857,
+   "title": "Kash vault",
+   "url": "https://parkour.fandom.com/wiki/Kash_vault",
+   "last_rev_timestamp": "2025-10-17T00:55:29Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 1279,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Parkour]]\n|difficulty = Intermediate\n}}\nThe '''Kash Vault''' is a [[vault]] used in [[parkour]] consisting of a combination of the [[kong vault]] and [[dash vault]] where the practitioner begins with a kong vault, but during the middle of the vault swings their legs through their arms instead of going straight over. This vault is considered a relatively easy vault because of its slow speed, but for beginners this vault can be tricky.",
+   "lead_text": "The Kash Vault is a vault used in parkour consisting of a combination of the kong vault and dash vault where the practitioner begins with a kong vault, but during the middle of the vault swings their legs through their arms instead of going straight over. This vault is considered a relatively easy vault because of its slow speed, but for beginners this vault can be tricky."
+  },
+  {
+   "page_id": 2227,
+   "title": "Kip Up",
+   "url": "https://parkour.fandom.com/wiki/Kip_Up",
+   "last_rev_timestamp": "2026-05-26T19:24:10Z",
+   "last_rev_user": "H-Tech3",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 1462,
+   "lead_wikitext": "The '''Kip Up''' also called the '''Flip Up''' or '''Kick Up''' is a movement used in [[tricking]]. Originating in martial arts, it consists of kicking up from a supine position to a standing position. The hands are often placed beside the ears to push off with.",
+   "lead_text": "The Kip Up also called the Flip Up or Kick Up is a movement used in tricking. Originating in martial arts, it consists of kicking up from a supine position to a standing position. The hands are often placed beside the ears to push off with."
+  },
+  {
+   "page_id": 3707,
+   "title": "Koala climb",
+   "url": "https://parkour.fandom.com/wiki/Koala_climb",
+   "last_rev_timestamp": "2026-08-03T17:36:11Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "Parkour movements"
+   ],
+   "wikitext_chars": 2910,
+   "lead_wikitext": "{{Infobox technique\n|image = Koala Climb.png\n|discipline = [[Parkour]]\n|difficulty = Intermediate\n}}\n'''Koala Climb''' is a climbing technique in [[Parkour]] used to easily scale pole-like obstacles.",
+   "lead_text": "Koala Climb is a climbing technique in Parkour used to easily scale pole-like obstacles."
+  },
+  {
+   "page_id": 3516,
+   "title": "Kong PRE",
+   "url": "https://parkour.fandom.com/wiki/Kong_PRE",
+   "last_rev_timestamp": "2025-08-22T16:21:53Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "WIP"
+   ],
+   "wikitext_chars": 1094,
+   "lead_wikitext": "",
+   "lead_text": ""
+  },
+  {
+   "page_id": 1856,
+   "title": "Kong vault",
+   "url": "https://parkour.fandom.com/wiki/Kong_vault",
+   "last_rev_timestamp": "2026-02-08T07:46:21Z",
+   "last_rev_user": "Marsupilami1958",
+   "categories": [
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 3878,
+   "lead_wikitext": "{{Infobox technique\n|image = Blog-parkour-kong.jpg\n|discipline = [[Parkour]]\n|difficulty = Intermediate\n}}\nThe '''Kong Vault''' (also originally known as the '''Cat Pass''') is a [[vault]] used in [[parkour]] for moving over an object and gaining distance. It is an advanced variation of the [[monkey vault]]. Kongs are useful for moving over long objects, such as large barriers. The same movement can be used to move over rails and fences. Kong Vaults are commonly used for distance and power, instead of speed. Though they take extra time to learn, they are one of the most common and should be trained early on. There are a number of variations of the Kong Vault. Take note that when you use the Kong Vault, you have to dive towards the obstacle on which the Kong Vault will be performed, such as a picnic bench",
+   "lead_text": "The Kong Vault (also originally known as the Cat Pass) is a vault used in parkour for moving over an object and gaining distance. It is an advanced variation of the monkey vault. Kongs are useful for moving over long objects, such as large barriers. The same movement can be used to move over rails and fences. Kong Vaults are commonly used for distance and power, instead of speed. Though they take extra time to learn, they are one of the most common and should be trained early on. There are a number of variations of the Kong Vault. Take note that when you use the Kong Vault, you have to dive towards the obstacle on which the Kong Vault will be performed, such as a picnic bench"
+  },
+  {
+   "page_id": 3512,
+   "title": "Kong-saftey",
+   "url": "https://parkour.fandom.com/wiki/Kong-saftey",
+   "last_rev_timestamp": "2025-08-22T16:21:49Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "WIP"
+   ],
+   "wikitext_chars": 2215,
+   "lead_wikitext": "{{DISPLAYTITLE:Kong-safety}}<blockquote>'''<u>This move is advanced, please try in a gym before applying it outside.</u>'''</blockquote>The [[Kong Vault|Kong]]-safety is a move combining the [[Kong Vault|Kong]] and the [[Safety Vault|safety]] vault. It is an advanced move used by free runners to get over a long block or 2 blocks spaced apart. The move is performed when someone approaches a block and does a [[Kong Vault|Kong]] and [[Safety Vault|safety]] over 1 or 2 blocks without letting their legs touch the ground. This move is difficult as it requires you to change your center of mass while in the air, and have the reaction time to put your hands and legs down at the same time[https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fparkour%2Fimages%2F9%2F9e%2FKongvault.gif%2Frevision%2Flatest%2Fscale-to-width-down%2F320%3Fcb%3D20100225224912&imgrefurl=https%3A%2F%2Fparkour.fandom.com%2Fwiki%2FKong_Vault&tbnid=62bJky3H3aPTkM&vet=12ahUKEwjWiYmP9sn8AhU7i9gFHbHpDTcQMygAegUIARDjAQ..i&docid=qjLcBIsQ_jACFM&w=320&h=240&q=kong%20vault&client=opera-gx&ved=2ahUKEwjWiYmP9sn8AhU7i9gFHbHpDTcQMygAegUIARDjAQ .]\n[[File:Crop-nathan-kong-750x410.jpg|thumb|Kong Vault]]\n[[File:Download.jpg|thumb|Step Vault]]",
+   "lead_text": "This move is advanced, please try in a gym before applying it outside.The Kong-safety is a move combining the Kong and the safety vault. It is an advanced move used by free runners to get over a long block or 2 blocks spaced apart. The move is performed when someone approaches a block and does a Kong and safety over 1 or 2 blocks without letting their legs touch the ground. This move is difficult as it requires you to change your center of mass while in the air, and have the reaction time to put your hands and legs down at the same time."
+  },
+  {
+   "page_id": 1920,
+   "title": "Lache",
+   "url": "https://parkour.fandom.com/wiki/Lache",
+   "last_rev_timestamp": "2025-08-22T18:36:20Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 1522,
+   "lead_wikitext": "{{stub}} \n\nThe '''Lache''' is [[parkour]] or [[freerunning]] move used to swing off of a bar or branch. After swinging the traceur can grab onto another bar or branch, or land in a [[precision]], [[crane]] or [[cat]].",
+   "lead_text": "The Lache is parkour or freerunning move used to swing off of a bar or branch. After swinging the traceur can grab onto another bar or branch, or land in a precision, crane or cat."
+  },
+  {
+   "page_id": 1838,
+   "title": "Landing",
+   "url": "https://parkour.fandom.com/wiki/Landing",
+   "last_rev_timestamp": "2025-08-22T18:35:44Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour movements",
+    "Safety",
+    "WIP"
+   ],
+   "wikitext_chars": 2522,
+   "lead_wikitext": "[[File:Land_and_roll.jpg|thumb|An example of landing and rolling (preceded by a [[frontflip]])|250px]]\n'''Landing''' is the technique used when landing from a fall. Landing properly is very important, as it greatly decreases the chance of injury. Learning the proper ways to land is one of the most important areas for practitioners to focus on.",
+   "lead_text": ")|250px]]\nLanding is the technique used when landing from a fall. Landing properly is very important, as it greatly decreases the chance of injury. Learning the proper ways to land is one of the most important areas for practitioners to focus on."
+  },
+  {
+   "page_id": 1872,
+   "title": "Lazy Vault",
+   "url": "https://parkour.fandom.com/wiki/Lazy_Vault",
+   "last_rev_timestamp": "2025-08-22T16:22:10Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 1496,
+   "lead_wikitext": "The '''Lazy Vault''' is a [[vault]] used for moving over an obstacle sideways or diagonally while still running or moving forwards. It is also sometimes confused with a [[Thief Vault]]; however, the thief vault is a hybrid vault consisting of elements of the [[Dash Vault]] and the lazy vault.",
+   "lead_text": "The Lazy Vault is a vault used for moving over an obstacle sideways or diagonally while still running or moving forwards. It is also sometimes confused with a Thief Vault; however, the thief vault is a hybrid vault consisting of elements of the Dash Vault and the lazy vault."
+  },
+  {
+   "page_id": 3577,
+   "title": "Magic Vault",
+   "url": "https://parkour.fandom.com/wiki/Magic_Vault",
+   "last_rev_timestamp": "2025-08-22T16:22:22Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 215,
+   "lead_wikitext": "A '''Magic Vault''' is a combo of [[side Vault|side vault]] to a [[speed Vault|speed vault]] finishing with a [[lazy Vault|lazy vault]] all in one jump.\n[[Category:Vaults]]\n[[Category:Free Running]]\n[[Category:WIP]]",
+   "lead_text": "A Magic Vault is a combo of side vault to a speed vault finishing with a lazy vault all in one jump."
+  },
+  {
+   "page_id": 3537,
+   "title": "Monkey gainer",
+   "url": "https://parkour.fandom.com/wiki/Monkey_gainer",
+   "last_rev_timestamp": "2025-09-02T01:50:52Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 3473,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Advanced\n}}\nThe '''Monkey Gainer''', or similarly the '''Kong Gainer''', is a [[vault]] used in [[freerunning]] which involves a practitioner performing a [[monkey vault]]/[[kong vault]] and using the leverage from their arms to push themselves immediately into a [[gainer]] without their feet coming into contact with the ground. Due to the high level of difficulty regarding this trick a distinction is generally not made over whether the practitioner uses a monkey vault (hands touch first) or a kong vault (jump before hands touch).",
+   "lead_text": "The Monkey Gainer, or similarly the Kong Gainer, is a vault used in freerunning which involves a practitioner performing a monkey vault/kong vault and using the leverage from their arms to push themselves immediately into a gainer without their feet coming into contact with the ground. Due to the high level of difficulty regarding this trick a distinction is generally not made over whether the practitioner uses a monkey vault (hands touch first) or a kong vault (jump before hands touch)."
+  },
+  {
+   "page_id": 1873,
+   "title": "Monkey vault",
+   "url": "https://parkour.fandom.com/wiki/Monkey_vault",
+   "last_rev_timestamp": "2025-08-23T20:23:57Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 2337,
+   "lead_wikitext": "{{Infobox technique\n|image = Monkey vault.jpg\n|discipline = [[Parkour]]\n|difficulty = Basic\n}}\nThe '''Monkey Vault''' is a [[vault]] used in [[parkour]] which involves planting two hands side-by-side on an obstacle and bringing both legs in-between, shortly after pushing off with the hands. When the hands are placed on the object before the feet leave the ground, it is known as a monkey vault, however if the feet leave the ground before the hands reach the object, it is referred to as a kong vault.\n\nThe vault is designed to mimick the way a monkey walks, with their hands on the outside and then bringing their feet in-between their arms.",
+   "lead_text": "The Monkey Vault is a vault used in parkour which involves planting two hands side-by-side on an obstacle and bringing both legs in-between, shortly after pushing off with the hands. When the hands are placed on the object before the feet leave the ground, it is known as a monkey vault, however if the feet leave the ground before the hands reach the object, it is referred to as a kong vault.\n\nThe vault is designed to mimick the way a monkey walks, with their hands on the outside and then bringing their feet in-between their arms."
+  },
+  {
+   "page_id": 3579,
+   "title": "Moves",
+   "url": "https://parkour.fandom.com/wiki/Moves",
+   "last_rev_timestamp": "2025-08-22T16:22:36Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Parkour",
+    "WIP"
+   ],
+   "wikitext_chars": 15219,
+   "lead_wikitext": "'''Every Parkour movement'''",
+   "lead_text": "Every Parkour movement"
+  },
+  {
+   "page_id": 1975,
+   "title": "Muscle Up",
+   "url": "https://parkour.fandom.com/wiki/Muscle_Up",
+   "last_rev_timestamp": "2025-08-22T16:22:46Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Conditioning",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 897,
+   "lead_wikitext": "{{stub}}\n[[File:Muscle-up.jpg|thumb]]\nA '''Muscle Up''' is an exercise in which one goes from a overhand pull-up position to a cast position (where the bar is at the waist). It can be performed on rings, a branch, a bar, or any sturdy surface that's easy to hang from. Although it is most commonly used as an exercise (since the [[bar kip]] is easier to use), it is occasionally used in [[Parkour]] as there are places were both a [[climb up]] and a bar kip would be impossible (such as under an overhanging ledge).",
+   "lead_text": "A Muscle Up is an exercise in which one goes from a overhand pull-up position to a cast position (where the bar is at the waist). It can be performed on rings, a branch, a bar, or any sturdy surface that's easy to hang from. Although it is most commonly used as an exercise (since the bar kip is easier to use), it is occasionally used in Parkour as there are places were both a climb up and a bar kip would be impossible (such as under an overhanging ledge)."
+  },
+  {
+   "page_id": 3580,
+   "title": "Muscle-Up",
+   "url": "https://parkour.fandom.com/wiki/Muscle-Up",
+   "last_rev_timestamp": "2025-08-22T16:22:41Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Parkour",
+    "Strength Feats",
+    "WIP"
+   ],
+   "wikitext_chars": 721,
+   "lead_wikitext": "<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">'''Muscle up''' is a very useful [[Parkour|parkour]] element. It is used to get on the top of an object (bars, overhanging ledges etc.) ''without'' using your feet, as opposed to the [[Cat Leap#Climb-up|climb-up]] which does use the feet.</p>\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">It requires a great amount of body strength. The main point of it is to get from a hanging position to supported ([[Cat Leap#cat grab|half&nbsp;cat]]) position.</p>\n[[Category:Strength Feats]]\n[[Category:Parkour]]\n[[Category:Free Running]]\n[[Category:WIP]]",
+   "lead_text": "Muscle up is a very useful parkour element. It is used to get on the top of an object (bars, overhanging ledges etc.) without using your feet, as opposed to the climb-up which does use the feet.\n\nIt requires a great amount of body strength. The main point of it is to get from a hanging position to supported (half&nbsp;cat) position."
+  },
+  {
+   "page_id": 2332,
+   "title": "Méthode Naturelle",
+   "url": "https://parkour.fandom.com/wiki/M%C3%A9thode_Naturelle",
+   "last_rev_timestamp": "2025-08-22T16:22:51Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Urban Movement",
+    "WIP"
+   ],
+   "wikitext_chars": 2456,
+   "lead_wikitext": "[[File:Morzine02.jpg|thumb|300px|A group of traceurs training the '[[Méthode Naturelle]]' during a Parkour Generations Training Camp.]]\nThe '''Méthode Naturelle''' (natural method) is a system of movement pioneered by Georges Hébert (27 April 1875 – 2 August 1957). It is often considered the predecessor of [[Lé Parkour]].",
+   "lead_text": "' during a Parkour Generations Training Camp.]]\nThe Méthode Naturelle (natural method) is a system of movement pioneered by Georges Hébert (27 April 1875 – 2 August 1957). It is often considered the predecessor of Lé Parkour."
+  },
+  {
+   "page_id": 2602,
+   "title": "New York Parkour (NYPK)",
+   "url": "https://parkour.fandom.com/wiki/New_York_Parkour_(NYPK)",
+   "last_rev_timestamp": "2025-08-22T16:23:00Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "WIP"
+   ],
+   "wikitext_chars": 640,
+   "lead_wikitext": "'''New York Parkour '''(NYPK) is the home of parkour in the New York metropolitan area. Founded by a group of local traceurs including Exo in 2005. The organization's goal is to guide practitioners towards their own path, and help them discover and respect the art. In addition, they act as an information conduit between both local practitioners and the international parkour scene, sharing information, events, pictures, and videos with the community.",
+   "lead_text": "New York Parkour (NYPK) is the home of parkour in the New York metropolitan area. Founded by a group of local traceurs including Exo in 2005. The organization's goal is to guide practitioners towards their own path, and help them discover and respect the art. In addition, they act as an information conduit between both local practitioners and the international parkour scene, sharing information, events, pictures, and videos with the community."
+  },
+  {
+   "page_id": 1842,
+   "title": "Palm flip",
+   "url": "https://parkour.fandom.com/wiki/Palm_flip",
+   "last_rev_timestamp": "2025-09-19T14:56:32Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Flips",
+    "Freerunning"
+   ],
+   "wikitext_chars": 966,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Intermediate\n}}\nThe '''Palm Flip''' is a [[wall flip]] used in [[freerunning]] where the practioner runs towards a wall and then pushes off the wall to rotate themselves backward directly into a [[back flip]]. One or more [[wallrun|steps]] can also be added before the flip for added height.",
+   "lead_text": "The Palm Flip is a wall flip used in freerunning where the practioner runs towards a wall and then pushes off the wall to rotate themselves backward directly into a back flip. One or more steps can also be added before the flip for added height."
+  },
+  {
+   "page_id": 1855,
+   "title": "Palm Spin",
+   "url": "https://parkour.fandom.com/wiki/Palm_Spin",
+   "last_rev_timestamp": "2025-08-22T18:35:46Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "WIP"
+   ],
+   "wikitext_chars": 840,
+   "lead_wikitext": "{{Stub}}\n\n'''Palm spin''' is a movement in freerunning similar to a [[The Wall Spin|Wall Spin]].  The traceur executes the same technique as a Wall Spin, but instead of being vertical during the flip, he/she is horizontally spinning.",
+   "lead_text": "Palm spin is a movement in freerunning similar to a Wall Spin.  The traceur executes the same technique as a Wall Spin, but instead of being vertical during the flip, he/she is horizontally spinning."
+  },
+  {
+   "page_id": 1774,
+   "title": "Parkour",
+   "url": "https://parkour.fandom.com/wiki/Parkour",
+   "last_rev_timestamp": "2026-09-10T03:36:59Z",
+   "last_rev_user": "Fruiteebat",
+   "categories": [
+    "Featured articles",
+    "Parkour",
+    "WIP"
+   ],
+   "wikitext_chars": 8652,
+   "lead_wikitext": "{{Featured Icon}}[[Image:David-Belle-parkour.jpg|200px|right|thumb|[[David Belle]], the founder of modern Parkour, preforming a [[speed vault]].]]\n'''''Parkour''''' (''' PK''' or (French: '''''l'art du déplacement''''' English: '''''the art of movement''''')), is a physical discipline in which practitioners aim to move as fast and efficiently as possible through an environment by traversing over, under, or through obstacles using only their bodies. It was founded by [[David Belle]] and the [[Yamakasi]] in the 1990s. Male participants in Parkour are referred to as traceurs (usually spelled as tracers in English) and females practitioners are called traceuses. Parkour is often referred to as the \"martial art of escape\", stemming from its roots in French military training.",
+   "lead_text": ", the founder of modern Parkour, preforming a speed vault.]]\nParkour ( PK or (French: l'art du déplacement English: the art of movement)), is a physical discipline in which practitioners aim to move as fast and efficiently as possible through an environment by traversing over, under, or through obstacles using only their bodies. It was founded by David Belle and the Yamakasi in the 1990s. Male participants in Parkour are referred to as traceurs (usually spelled as tracers in English) and females practitioners are called traceuses. Parkour is often referred to as the \"martial art of escape\", stemming from its roots in French military training."
+  },
+  {
+   "page_id": 2142,
+   "title": "Parkour movements",
+   "url": "https://parkour.fandom.com/wiki/Parkour_movements",
+   "last_rev_timestamp": "2026-07-20T13:04:58Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 790,
+   "lead_wikitext": "[[File:David Belle NewYorker.jpg|thumb|right|[[David Belle]], the founder of parkour.]]\nThe following is a list of [[Parkour]] movements. This should not be confused with [[Free running]]. It is by no means exhaustive.",
+   "lead_text": ", the founder of parkour.]]\nThe following is a list of Parkour movements. This should not be confused with Free running. It is by no means exhaustive."
+  },
+  {
+   "page_id": 2010,
+   "title": "Parkour Roll",
+   "url": "https://parkour.fandom.com/wiki/Parkour_Roll",
+   "last_rev_timestamp": "2025-08-22T16:23:17Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Moves",
+    "Parkour",
+    "WIP"
+   ],
+   "wikitext_chars": 1716,
+   "lead_wikitext": "<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">The '''Parkour''' '''roll''' (or '''PK Roll''') is an important movement in [[:Category:Free Running|free running]] and [[:Category:Parkour|parkour]] to absorb large amounts of impact of a drop or jump from height in a controlled way which can also allow the athlete to continue their run without losing their flow. The roll is often seen after flips from height, or large running jumps.</p>\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">The move consists of collapsing the knees, and performing a forward roll over the shoulder and onto the back, before coming over the hip and back onto the feet. The parkour roll involves rolling diagonally over one shoulder to the opposite hip. The idea is to avoid putting pressure on the spine, which could cause injury, especially on the hard surfaces such as concrete which free runners often roll on. The roll can take some of the pressure off your joints if you land hard. To do the roll, start with your feet on the ground and spring into a roll, keeping your body weight on your shoulders rather than your neck or back. If preformed correctly a roll can disapate 2400 pounds of force into a harmless, low, amount of force.</p>\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">[[File:Roll-tutorial.jpg|thumb|325px]]</p>",
+   "lead_text": "The Parkour roll (or PK Roll) is an important movement in free running and parkour to absorb large amounts of impact of a drop or jump from height in a controlled way which can also allow the athlete to continue their run without losing their flow. The roll is often seen after flips from height, or large running jumps.\n\nThe move consists of collapsing the knees, and performing a forward roll over the shoulder and onto the back, before coming over the hip and back onto the feet. The parkour roll involves rolling diagonally over one shoulder to the opposite hip. The idea is to avoid putting pressure on the spine, which could cause injury, especially on the hard surfaces such as concrete which free runners often roll on. The roll can take some of the pressure off your joints if you land hard. To do the roll, start with your feet on the ground and spring into a roll, keeping your body weight on your shoulders rather than your neck or back. If preformed correctly a roll can disapate 2400 pounds of force into a harmless, low, amount of force."
+  },
+  {
+   "page_id": 1461,
+   "title": "Parkour Wiki",
+   "url": "https://parkour.fandom.com/wiki/Parkour_Wiki",
+   "last_rev_timestamp": "2025-08-22T22:08:08Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Browse",
+    "Home page",
+    "Main page",
+    "Parkour Wiki",
+    "WIP"
+   ],
+   "wikitext_chars": 787,
+   "lead_wikitext": "<!--Main page left-column start-->\n<mainpage-leftcolumn-start />\n{{Main Page Slider}}\n{{maintop}}\n{{Portal/Component/Welcome}}\n{{clr}}\n<mainpage-endcolumn />\n<!--Main page right-column start-->\n<mainpage-rightcolumn-start />\n'''Notice:''' If you are going to attempt any movements on this wiki then it is extremely important to start small, know your limits, and make safe progression your number 1 priority. Parkour is not inherently dangerous, and in fact can even make the environment around you safer by preparing you, but with recklessness it can cause harm. If you are not 100% confident attempting a difficult maneuver then '''do not attempt it'''.\n<mainpage-endcolumn />\n[[Category:Browse]]\n[[Category:Main page]]\n[[Category:Parkour Wiki]]\n[[Category:Home page]]\n[[Category:WIP]]",
+   "lead_text": "Notice: If you are going to attempt any movements on this wiki then it is extremely important to start small, know your limits, and make safe progression your number 1 priority. Parkour is not inherently dangerous, and in fact can even make the environment around you safer by preparing you, but with recklessness it can cause harm. If you are not 100% confident attempting a difficult maneuver then do not attempt it."
+  },
+  {
+   "page_id": 3581,
+   "title": "Pavel Petkuns",
+   "url": "https://parkour.fandom.com/wiki/Pavel_Petkuns",
+   "last_rev_timestamp": "2025-08-22T16:23:29Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Athletes",
+    "WIP"
+   ],
+   "wikitext_chars": 602,
+   "lead_wikitext": "'''Pavel Petkuns''' (born 1992/1993, more commonly known as '''Pasha''', is a [[:Category:Free Running|Freerunner]] from Daugavplis, Latvia. He stands out with his creative bar work and the bounciness of his movement. He first became widely recognised after the release of his first showreel in May 2009 which contained many original movements including a 360 bar gainer to cat leap.",
+   "lead_text": "Pavel Petkuns (born 1992/1993, more commonly known as Pasha, is a Freerunner from Daugavplis, Latvia. He stands out with his creative bar work and the bounciness of his movement. He first became widely recognised after the release of his first showreel in May 2009 which contained many original movements including a 360 bar gainer to cat leap."
+  },
+  {
+   "page_id": 1997,
+   "title": "Planche",
+   "url": "https://parkour.fandom.com/wiki/Planche",
+   "last_rev_timestamp": "2025-08-27T15:41:06Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Calisthenics",
+    "Strength Feats"
+   ],
+   "wikitext_chars": 1027,
+   "lead_wikitext": "{{Infobox technique\n|image = Planche3.jpg\n|discipline = [[Calisthenics]]\n|difficulty = Advanced\n}}\nA '''Planche''' is a [[strength feat]] in which the entire body is supported on the arms and held horizontally. hold is similar to a [[handstand]] in the sense that your entire body weight is supported only by your hands. The planche is made so much harder by the fact that your body is parallel to the floor, so it relies a lot more on upper body strength than balance. Those with a high level of strength can even perform planche [[pushup]]s.\n\nThe technique is often used by practitioners of [[parkour]] to show the results of their intense training.",
+   "lead_text": "A Planche is a strength feat in which the entire body is supported on the arms and held horizontally. hold is similar to a handstand in the sense that your entire body weight is supported only by your hands. The planche is made so much harder by the fact that your body is parallel to the floor, so it relies a lot more on upper body strength than balance. Those with a high level of strength can even perform planche pushups.\n\nThe technique is often used by practitioners of parkour to show the results of their intense training."
+  },
+  {
+   "page_id": 1875,
+   "title": "Pop Vault",
+   "url": "https://parkour.fandom.com/wiki/Pop_Vault",
+   "last_rev_timestamp": "2025-08-22T18:35:52Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour movements",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 1468,
+   "lead_wikitext": "The '''Pop Vault''' is a [[vault]] used to get over small ledges. It is similar to a [[wall run]], but without the need for a [[Climb Up|climb up]]. It is useful for getting over obstacles too high for most vaults while continuing forward momentum. It is a generic term for any vault down after a small wallrun up a wall, however, the exit is generally like a [[side vault]] or a [[monkey vault]].",
+   "lead_text": "The Pop Vault is a vault used to get over small ledges. It is similar to a wall run, but without the need for a climb up. It is useful for getting over obstacles too high for most vaults while continuing forward momentum. It is a generic term for any vault down after a small wallrun up a wall, however, the exit is generally like a side vault or a monkey vault."
+  },
+  {
+   "page_id": 3122,
+   "title": "PoP Vault",
+   "url": "https://parkour.fandom.com/wiki/PoP_Vault",
+   "last_rev_timestamp": "2025-08-22T16:23:37Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "WIP"
+   ],
+   "wikitext_chars": 1047,
+   "lead_wikitext": "",
+   "lead_text": ""
+  },
+  {
+   "page_id": 1894,
+   "title": "Precision Jump",
+   "url": "https://parkour.fandom.com/wiki/Precision_Jump",
+   "last_rev_timestamp": "2025-08-22T16:23:45Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 5699,
+   "lead_wikitext": "[[File:4508_1002576923124_1785871406_700_918771_n.jpg|thumb|386px|A Traceur uses a Precision Jump to get from one stone block to another.]]\n'''Precision Jump''' is a technique used in [[parkour]] to accurately jump from one obstacle to another. Most precision jumps both start and landing on a precise spot, with limited or no extra momentum. Many [[vaults]], [[cat leap]]s, and even [[flip]]s can be incorporated into precision jumps.",
+   "lead_text": "Precision Jump is a technique used in parkour to accurately jump from one obstacle to another. Most precision jumps both start and landing on a precise spot, with limited or no extra momentum. Many vaults, cat leaps, and even flips can be incorporated into precision jumps."
+  },
+  {
+   "page_id": 2292,
+   "title": "Pull-up",
+   "url": "https://parkour.fandom.com/wiki/Pull-up",
+   "last_rev_timestamp": "2025-08-22T16:23:49Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Conditioning",
+    "WIP"
+   ],
+   "wikitext_chars": 2066,
+   "lead_wikitext": "A '''Pull-up''' or '''Pullup''' is a [[conditioning]] exercise. It is very helpful in [[Parkour]] and [[Freerunning]] [[training]], as it is an excellent way to build upper body strength (this is especially useful for [[climb up]]s and [[muscle up]]s). This exercise primarily works the latissimus, biceps, deltoids, rhomboid muscles, trapezius and forearm muscles. A common variant is the chin-up, which is mostly the same except the palms face towards the body.",
+   "lead_text": "A Pull-up or Pullup is a conditioning exercise. It is very helpful in Parkour and Freerunning training, as it is an excellent way to build upper body strength (this is especially useful for climb ups and muscle ups). This exercise primarily works the latissimus, biceps, deltoids, rhomboid muscles, trapezius and forearm muscles. A common variant is the chin-up, which is mostly the same except the palms face towards the body."
+  },
+  {
+   "page_id": 2293,
+   "title": "Push Up",
+   "url": "https://parkour.fandom.com/wiki/Push_Up",
+   "last_rev_timestamp": "2025-08-22T16:23:53Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Conditioning",
+    "WIP"
+   ],
+   "wikitext_chars": 1938,
+   "lead_wikitext": "[[File:Push_Up.jpg|thumb|A man doing a Push Up]]A '''Pushup''', '''Push-up''' or '''Press-up''' is a [[conditioning]] exercise. It is very helpful in [[Parkour]] and [[Freerunning]] [[training]], as it is an excellent way to build upper body strength. Pushups primarily work the abdominals, deltoids, the pectoralis, and the triceps.",
+   "lead_text": "A Pushup, Push-up or Press-up is a conditioning exercise. It is very helpful in Parkour and Freerunning training, as it is an excellent way to build upper body strength. Pushups primarily work the abdominals, deltoids, the pectoralis, and the triceps."
+  },
+  {
+   "page_id": 2869,
+   "title": "Quadrupedal Landing",
+   "url": "https://parkour.fandom.com/wiki/Quadrupedal_Landing",
+   "last_rev_timestamp": "2025-08-22T16:23:57Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 840,
+   "lead_wikitext": "{{Stub}}\n\n'''Quadrupedal landing, also known as four-point landing,''' is the act of [[landing]] on all four limbs to dampen a drop as much as possible. This movement can be used when falling from a height too far to land with only the feet or when a landing from a jump or trick can't be [[sticking|stuck]]. There are two ways to execute a quadrupedal landing:",
+   "lead_text": "Quadrupedal landing, also known as four-point landing, is the act of landing on all four limbs to dampen a drop as much as possible. This movement can be used when falling from a height too far to land with only the feet or when a landing from a jump or trick can't be stuck. There are two ways to execute a quadrupedal landing:"
+  },
+  {
+   "page_id": 1922,
+   "title": "Quadrupedal Movement",
+   "url": "https://parkour.fandom.com/wiki/Quadrupedal_Movement",
+   "last_rev_timestamp": "2025-08-22T16:24:01Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Conditioning",
+    "Training",
+    "WIP"
+   ],
+   "wikitext_chars": 580,
+   "lead_wikitext": "{{stub}}\n'''Quadrupedal Movement''' is a conditioning exercise used in [[Parkour]]. It involves moving on all four limbs. It can also be useful in [[urban exploration]] for moving through narrow spaces.",
+   "lead_text": "Quadrupedal Movement is a conditioning exercise used in Parkour. It involves moving on all four limbs. It can also be useful in urban exploration for moving through narrow spaces."
+  },
+  {
+   "page_id": 3582,
+   "title": "Rail flip",
+   "url": "https://parkour.fandom.com/wiki/Rail_flip",
+   "last_rev_timestamp": "2025-09-03T20:55:14Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 1275,
+   "lead_wikitext": "{{Infobox technique\n|image = Parkour_Rail_Flip_2_by_Rusty_Photos.jpg\n|discipline = [[Freerunning]]\n|difficulty = Intermediate\n}}\nA '''Rail Flip''' is a [[vault]] used in [[freerunning]] where two hands are placed on top of an obstacle and a [[front handspring]] is executed to get over it. This move may also be started with a dive.",
+   "lead_text": "A Rail Flip is a vault used in freerunning where two hands are placed on top of an obstacle and a front handspring is executed to get over it. This move may also be started with a dive."
+  },
+  {
+   "page_id": 2622,
+   "title": "Rail Flow",
+   "url": "https://parkour.fandom.com/wiki/Rail_Flow",
+   "last_rev_timestamp": "2025-08-22T16:24:09Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "WIP"
+   ],
+   "wikitext_chars": 458,
+   "lead_wikitext": "{{Stub}}\nA '''rail flow''' is a combination of [[vault]]s and going under a rail.\n\nSince there are multiple ways to do a rail flow, there is no proper way to do it.\n\nExample:\n# [[Lazy vault]] over the rails\n# [[Underbar|Swing under the rail]]\n# Lazy vault landing on top of the rail, and 180° jump off the rail\n\nIt is very easy to do a rail flow, so just let your mind flow and think of the endless  ways to do them.\n[[Category:Freerunning]]\n[[Category:WIP]]",
+   "lead_text": "A rail flow is a combination of vaults and going under a rail.\n\nSince there are multiple ways to do a rail flow, there is no proper way to do it.\n\nExample:\n# Lazy vault over the rails\n# Swing under the rail\n# Lazy vault landing on top of the rail, and 180° jump off the rail\n\nIt is very easy to do a rail flow, so just let your mind flow and think of the endless ways to do them."
+  },
+  {
+   "page_id": 3583,
+   "title": "Red Bull Art of Motion",
+   "url": "https://parkour.fandom.com/wiki/Red_Bull_Art_of_Motion",
+   "last_rev_timestamp": "2025-08-22T16:24:13Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Competitions",
+    "WIP"
+   ],
+   "wikitext_chars": 1360,
+   "lead_wikitext": "[[File:Redbull_motion.png]]\n\n'''Red Bull Art of Motion''' is a recurring competition, based around ''freedom of movement'' although it was primarily a free running competition. The competition places competitors in a crafted arena of plateaus at varying heights, sizes and distances, as well as a variety of other obstacles such as bars and walls. There have so far been several Art of Motion competitions, in a variety of countries, since the first in 2007.",
+   "lead_text": "Red Bull Art of Motion is a recurring competition, based around freedom of movement although it was primarily a free running competition. The competition places competitors in a crafted arena of plateaus at varying heights, sizes and distances, as well as a variety of other obstacles such as bars and walls. There have so far been several Art of Motion competitions, in a variety of countries, since the first in 2007."
+  },
+  {
+   "page_id": 2248,
+   "title": "Reverse Kong Push",
+   "url": "https://parkour.fandom.com/wiki/Reverse_Kong_Push",
+   "last_rev_timestamp": "2025-08-22T18:35:55Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 299,
+   "lead_wikitext": "The '''Reverse Kong Push''' is a [[vault]] used primarily in [[Free running]]. It is based on the regular [[Kong Vault]].",
+   "lead_text": "The Reverse Kong Push is a vault used primarily in Free running. It is based on the regular Kong Vault."
+  },
+  {
+   "page_id": 1874,
+   "title": "Reverse Vault",
+   "url": "https://parkour.fandom.com/wiki/Reverse_Vault",
+   "last_rev_timestamp": "2026-09-10T17:46:12Z",
+   "last_rev_user": "Fruiteebat",
+   "categories": [
+    "Parkour movements",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 2413,
+   "lead_wikitext": "[[File:IMG_20131014_150907_249.jpg|thumb|A still shot taken during a reverse vault.]]\nA '''Reverse Vault''' is a [[vault]] used in [[parkour]] in which the traceur rotates 360º backwards over an obstacle. It is mostly used for removing momentum, while still moving forwards over an obstacle. Reverse vaults can also be used as a break-fall after a medium drop instead of a roll; for example, if the traceur lands on a wall and a roll is not suitable, he can use a reverse vault to remove momentum whilst getting down from the wall.\n\nSome consider the reverse vault to be a separate vault where the traceur/freerunner begins with their back towards the obstacle and with only one hand placed on said obstacle, whereas others consider it to be identical to the [[360 Vault]]. A variant is the double leg reverse vault, where the legs are kept straight.",
+   "lead_text": "A Reverse Vault is a vault used in parkour in which the traceur rotates 360º backwards over an obstacle. It is mostly used for removing momentum, while still moving forwards over an obstacle. Reverse vaults can also be used as a break-fall after a medium drop instead of a roll; for example, if the traceur lands on a wall and a roll is not suitable, he can use a reverse vault to remove momentum whilst getting down from the wall.\n\nSome consider the reverse vault to be a separate vault where the traceur/freerunner begins with their back towards the obstacle and with only one hand placed on said obstacle, whereas others consider it to be identical to the 360 Vault. A variant is the double leg reverse vault, where the legs are kept straight."
+  },
+  {
+   "page_id": 3584,
+   "title": "Rocket vault",
+   "url": "https://parkour.fandom.com/wiki/Rocket_vault",
+   "last_rev_timestamp": "2025-09-02T01:49:48Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 586,
+   "lead_wikitext": "{{Infobox technique\n|image = 370790160 340b641f1d.jpg\n|discipline = [[Freerunning]]\n|difficulty = Basic\n}}\nThe '''Rocket Vault''' is a [[vault]] used in [[freerunning]] where the practitioner moves in a [[lazy vault]] fashion but both legs are brought together perfectly straight and the feet are grabbed by their hand and is held above their head at a 45 degree angle.",
+   "lead_text": "The Rocket Vault is a vault used in freerunning where the practitioner moves in a lazy vault fashion but both legs are brought together perfectly straight and the feet are grabbed by their hand and is held above their head at a 45 degree angle."
+  },
+  {
+   "page_id": 1840,
+   "title": "Roll",
+   "url": "https://parkour.fandom.com/wiki/Roll",
+   "last_rev_timestamp": "2025-08-22T16:24:29Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Parkour movements",
+    "Safety",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 4617,
+   "lead_wikitext": "[[File:Land_and_roll.jpg|thumb|An example of landing and rolling (preceded by a [[frontflip]])|250px]]\nThe '''Parkour Roll''' (also commonly known as the '''Shoulder Roll''') is a [[breakfall]] widely used in both [[parkour]] and [[freerunning]] to minimize the impact of landings. It is preformed by rolling from one shoulder to the opposite hip.",
+   "lead_text": ")|250px]]\nThe Parkour Roll (also commonly known as the Shoulder Roll) is a breakfall widely used in both parkour and freerunning to minimize the impact of landings. It is preformed by rolling from one shoulder to the opposite hip."
+  },
+  {
+   "page_id": 2304,
+   "title": "Roundoff",
+   "url": "https://parkour.fandom.com/wiki/Roundoff",
+   "last_rev_timestamp": "2025-08-22T16:24:33Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 500,
+   "lead_wikitext": "A '''roundoff''' is a movement used in [[tricking]]. It is similar to a cartwheel, except the tricker lands with both feet together. It is most commonly used with a run up to [[blocking|convert forward momentum into upwards momentum]]. It is often seen at the start of a tumbling line or followed by moves such as [[back handspring]] or [[backflip]].",
+   "lead_text": "A roundoff is a movement used in tricking. It is similar to a cartwheel, except the tricker lands with both feet together. It is most commonly used with a run up to convert forward momentum into upwards momentum. It is often seen at the start of a tumbling line or followed by moves such as back handspring or backflip."
+  },
+  {
+   "page_id": 1877,
+   "title": "Running",
+   "url": "https://parkour.fandom.com/wiki/Running",
+   "last_rev_timestamp": "2025-08-22T16:24:37Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Parkour movements",
+    "Training",
+    "Urban Movement",
+    "WIP"
+   ],
+   "wikitext_chars": 1406,
+   "lead_wikitext": "{{stub}}\n'''Running''' is a means of rapid locomotion on foot. It is a crucial aspect of [[Parkour]], as nearly all movements should start and end in running (as the philosophy or Parkour is getting from one place to another as fast as possible). It is also practiced in [[Freerunning]], albeit with more personal style added. Many Freerunning and [[tricking]] movements also require momentum to preform, making running necessary. It is also useful in [[training]] to build endurance.",
+   "lead_text": "Running is a means of rapid locomotion on foot. It is a crucial aspect of Parkour, as nearly all movements should start and end in running (as the philosophy or Parkour is getting from one place to another as fast as possible). It is also practiced in Freerunning, albeit with more personal style added. Many Freerunning and tricking movements also require momentum to preform, making running necessary. It is also useful in training to build endurance."
+  },
+  {
+   "page_id": 2413,
+   "title": "Ryan Doyle",
+   "url": "https://parkour.fandom.com/wiki/Ryan_Doyle",
+   "last_rev_timestamp": "2025-08-22T16:24:41Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "People",
+    "WIP"
+   ],
+   "wikitext_chars": 1056,
+   "lead_wikitext": "[[File:Ryan-doyle-in-baku.jpg|thumb|Ryan Doyle in Baku, Azerbaijan]]\n'''Ryan Doyle''' (born 22 September, 1984) is a British [[Free running|freerunner]], [[Parkour|Traceur]], martial artist, actor, and coach. He, along with [[Daniel Ilabaca]], founded the [[World Freerunning and Parkour Federation]] (WFPF). He is also sponsored by Red Bull.",
+   "lead_text": "Ryan Doyle (born 22 September, 1984) is a British freerunner, Traceur, martial artist, actor, and coach. He, along with Daniel Ilabaca, founded the World Freerunning and Parkour Federation (WFPF). He is also sponsored by Red Bull."
+  },
+  {
+   "page_id": 2231,
+   "title": "Safety Tap",
+   "url": "https://parkour.fandom.com/wiki/Safety_Tap",
+   "last_rev_timestamp": "2025-08-22T18:36:00Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour movements",
+    "Safety",
+    "WIP"
+   ],
+   "wikitext_chars": 1256,
+   "lead_wikitext": "The '''Safety Tap''' is a type of [[landing]]. It is often used for smaller drops and when [[roll]]ing is not possible.",
+   "lead_text": "The Safety Tap is a type of landing. It is often used for smaller drops and when rolling is not possible."
+  },
+  {
+   "page_id": 1863,
+   "title": "Safety vault",
+   "url": "https://parkour.fandom.com/wiki/Safety_vault",
+   "last_rev_timestamp": "2025-09-07T05:01:55Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 1602,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Parkour]]\n|difficulty = Beginner\n}}\nThe '''Safety Vault''' is a  [[vault]] used in [[parkour]] that is much easier variation of the [[side vault]], except the the outside foot is placed on top of the obstacle and the inside arm is then released, while the outside foot pushes the practitioner off the obstacle.",
+   "lead_text": "The Safety Vault is a vault used in parkour that is much easier variation of the side vault, except the the outside foot is placed on top of the obstacle and the inside arm is then released, while the outside foot pushes the practitioner off the obstacle."
+  },
+  {
+   "page_id": 3585,
+   "title": "Scissor vault",
+   "url": "https://parkour.fandom.com/wiki/Scissor_vault",
+   "last_rev_timestamp": "2025-09-18T03:31:13Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 700,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Basic\n}}\nThe '''Scissor Vault''' is a [[vault]] used in [[freerunning]] where the practitioner performs a [[lazy vault]], but instead of just bringing their legs in the air they imitate a running, scissor-kick-like motion with their legs before landing for added style.",
+   "lead_text": "The Scissor Vault is a vault used in freerunning where the practitioner performs a lazy vault, but instead of just bringing their legs in the air they imitate a running, scissor-kick-like motion with their legs before landing for added style."
+  },
+  {
+   "page_id": 2509,
+   "title": "Scoot",
+   "url": "https://parkour.fandom.com/wiki/Scoot",
+   "last_rev_timestamp": "2025-08-22T16:25:01Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 401,
+   "lead_wikitext": "The '''scoot''' is a move used in [[freerunning]] and [[tricking]] to create momentum for tricks that involve a \"kick\" into them, such as a [[Cheat Gainer|cheat gainer]], [[flashkick]], or [[cork]]. It consists of swinging the leg from a crouched position.",
+   "lead_text": "The scoot is a move used in freerunning and tricking to create momentum for tricks that involve a \"kick\" into them, such as a cheat gainer, flashkick, or cork. It consists of swinging the leg from a crouched position."
+  },
+  {
+   "page_id": 3654,
+   "title": "Shoulder vault",
+   "url": "https://parkour.fandom.com/wiki/Shoulder_vault",
+   "last_rev_timestamp": "2025-08-23T20:23:43Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 720,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Parkour]]\n|difficulty = Basic\n}}\nThe '''Shoulder Vault''' is a [[vault]] used in [[parkour]] where the practitioner performs a [[roll|shoulder roll]] over an obstacle. Generally this is done by approaching the obstacles from the side or back and then quickly rolling over it before popping off and landing on their feet.",
+   "lead_text": "The Shoulder Vault is a vault used in parkour where the practitioner performs a shoulder roll over an obstacle. Generally this is done by approaching the obstacles from the side or back and then quickly rolling over it before popping off and landing on their feet."
+  },
+  {
+   "page_id": 2066,
+   "title": "Side Flip",
+   "url": "https://parkour.fandom.com/wiki/Side_Flip",
+   "last_rev_timestamp": "2025-08-22T18:36:02Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 1316,
+   "lead_wikitext": "*'''Double leg''' Looks very similar to the sideflip, but performed with straight legs and with a different technique.\n*'''Tunnel flip''' A sideflip performed while moving forwards, rather than to the side.\n*'''Double sideflip''' Two consecutive sideflips made without touching the ground. A very advanced move.\n*'''Inward wall sideflip''' A sideflip preformed off a [[wallflip|wall]], with the upper body rotating towards the wall.\n*'''Outward wall sideflip''' Similar to an inward wall sideflip, only with the upper body rotating away from the wall.\n* '''Webster sideflip '''A sideflip executed off one foot where the other is lifting up to create the rotation. Technique is similar to inward sideflip",
+   "lead_text": "*Double leg Looks very similar to the sideflip, but performed with straight legs and with a different technique.\n*Tunnel flip A sideflip performed while moving forwards, rather than to the side.\n*Double sideflip Two consecutive sideflips made without touching the ground. A very advanced move.\n*Inward wall sideflip A sideflip preformed off a wall, with the upper body rotating towards the wall.\n*Outward wall sideflip Similar to an inward wall sideflip, only with the upper body rotating away from the wall.\n* Webster sideflip A sideflip executed off one foot where the other is lifting up to create the rotation. Technique is similar to inward sideflip"
+  },
+  {
+   "page_id": 1864,
+   "title": "Side vault",
+   "url": "https://parkour.fandom.com/wiki/Side_vault",
+   "last_rev_timestamp": "2025-09-17T02:04:15Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 2007,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Parkour]]\n|difficulty = Beginner\n}}\nThe '''Side Vault''' (also known as the '''Two-Handed Vault''', '''Basic Vault''' or '''Simple Vault''') is a [[vault]] used in [[parkour]] that is performed by putting both hands on the obstacle on entrance then pushing yourself up with both of your hands and your legs sideways over the object.",
+   "lead_text": "The Side Vault (also known as the Two-Handed Vault, Basic Vault or Simple Vault) is a vault used in parkour that is performed by putting both hands on the obstacle on entrance then pushing yourself up with both of your hands and your legs sideways over the object."
+  },
+  {
+   "page_id": 3703,
+   "title": "Sit Vault",
+   "url": "https://parkour.fandom.com/wiki/Sit_Vault",
+   "last_rev_timestamp": "2026-05-27T15:47:00Z",
+   "last_rev_user": "H-Tech3",
+   "categories": [],
+   "wikitext_chars": 835,
+   "lead_wikitext": "The sit vault is a more beginner friendly version of the [[Reverse Vault|reverse vault]]. You approach the obstacle like you would with a reverse vault. Where you would start a jump , you instead sit on the obstacle, eventually bringing both your legs over the obstacle one by one.",
+   "lead_text": "The sit vault is a more beginner friendly version of the reverse vault. You approach the obstacle like you would with a reverse vault. Where you would start a jump , you instead sit on the obstacle, eventually bringing both your legs over the obstacle one by one."
+  },
+  {
+   "page_id": 2445,
+   "title": "Slant Gainer",
+   "url": "https://parkour.fandom.com/wiki/Slant_Gainer",
+   "last_rev_timestamp": "2025-08-22T18:36:05Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 850,
+   "lead_wikitext": "{{Stub}}\n\nThe '''Slant Gainer''' or '''Cheat Gainer''' is a [[tricking]] movement. It consists of a [[Glossary of Terms#J|J-step]] followed by a slanted [[flashkick]] (some think of it more as J-step into a [[butterfly kick]], similar to a [[cork]]; as suck, a butterfly kick is a good prerequisite).",
+   "lead_text": "The Slant Gainer or Cheat Gainer is a tricking movement. It consists of a J-step followed by a slanted flashkick (some think of it more as J-step into a butterfly kick, similar to a cork; as suck, a butterfly kick is a good prerequisite)."
+  },
+  {
+   "page_id": 1860,
+   "title": "Speed Vault",
+   "url": "https://parkour.fandom.com/wiki/Speed_Vault",
+   "last_rev_timestamp": "2025-08-22T16:25:17Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 1843,
+   "lead_wikitext": "[[File:Speed_Vault.gif|right|Speed vault animation from www.americanparkour.com|alt=]]\n[[Image:David-Belle-parkour.jpg|200px|right|thumb|[[David Belle]] performing a speed vault.]]\nThe '''Speed Vault''' is a [[vault]] used in [[Parkour]]. A Traceur or Traceuses will use this vault to quickly overpass an obstacle, such as a low wall, railing or barrier, while preserving forward momentum for additional movements such as a [[roll]] or [[underbar]]. It is used frequently in all types of urban environments.\n\nIt is performed by:\n- Running up to the obstacle.\n- Pushing off of one foot.\n- Placing one hand on the obstacle (if you jumped off of your right foot use your right hand and vice versa).\n- Swinging both legs over the obstacle to one side.\n- Landing on the ground and continuing running.\n\nIt can be turned into a safety vault, the most basic vault in parkour, by placing the outside leg on the obstacle as you pass (to maintain height) and then swinging the inside leg through.\nIt can also be turned into a [[Two-handed vault]] by placing the outside hand next to the inside hand on the obstacle.",
+   "lead_text": "performing a speed vault.]]\nThe Speed Vault is a vault used in Parkour. A Traceur or Traceuses will use this vault to quickly overpass an obstacle, such as a low wall, railing or barrier, while preserving forward momentum for additional movements such as a roll or underbar. It is used frequently in all types of urban environments.\n\nIt is performed by:\n- Running up to the obstacle.\n- Pushing off of one foot.\n- Placing one hand on the obstacle (if you jumped off of your right foot use your right hand and vice versa).\n- Swinging both legs over the obstacle to one side.\n- Landing on the ground and continuing running.\n\nIt can be turned into a safety vault, the most basic vault in parkour, by placing the outside leg on the obstacle as you pass (to maintain height) and then swinging the inside leg through.\nIt can also be turned into a Two-handed vault by placing the outside hand next to the inside hand on the obstacle."
+  },
+  {
+   "page_id": 2579,
+   "title": "Spinning Vault",
+   "url": "https://parkour.fandom.com/wiki/Spinning_Vault",
+   "last_rev_timestamp": "2025-08-22T18:36:07Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 404,
+   "lead_wikitext": "{{Stub}}\nA '''spinning vault''' is a [[vault]] used primarily in [[freerunning]]. It is similar to a [[speed vault]] but with a 360 degree twist.",
+   "lead_text": "A spinning vault is a vault used primarily in freerunning. It is similar to a speed vault but with a 360 degree twist."
+  },
+  {
+   "page_id": 3591,
+   "title": "Split One Vault",
+   "url": "https://parkour.fandom.com/wiki/Split_One_Vault",
+   "last_rev_timestamp": "2025-08-22T16:25:25Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 182,
+   "lead_wikitext": "The '''Split One Vault''' is done in a[[ lazy Vault| lazy vault]] fashion, but at the peak of power the legs are split.\n[[Category:Vaults]]\n[[Category:Free Running]]\n[[Category:WIP]]",
+   "lead_text": "The Split One Vault is done in a lazy vault fashion, but at the peak of power the legs are split."
+  },
+  {
+   "page_id": 2295,
+   "title": "Squat",
+   "url": "https://parkour.fandom.com/wiki/Squat",
+   "last_rev_timestamp": "2025-08-22T16:25:29Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Conditioning",
+    "WIP"
+   ],
+   "wikitext_chars": 1323,
+   "lead_wikitext": "A '''Squat''' is a [[conditioning]] exercise. It is very helpful in [[Parkour]] and [[Freerunning]] [[training]], as it is an excellent way to build lower body strength. It is one of the most important exercises needed for safe [[landing]]s. The primary muscles used are the quadriceps, glutes, and hamstrings, as well as indirectly working a number of other muscles.",
+   "lead_text": "A Squat is a conditioning exercise. It is very helpful in Parkour and Freerunning training, as it is an excellent way to build lower body strength. It is one of the most important exercises needed for safe landings. The primary muscles used are the quadriceps, glutes, and hamstrings, as well as indirectly working a number of other muscles."
+  },
+  {
+   "page_id": 3592,
+   "title": "Star vault",
+   "url": "https://parkour.fandom.com/wiki/Star_vault",
+   "last_rev_timestamp": "2025-09-01T14:45:47Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 805,
+   "lead_wikitext": "{{Infobox technique\n|image = 0.jpg\n|discipline = [[Freerunning]]\n|difficulty = Basic\n}}\nA '''Star Vault''' is a [[vault]] used in [[freerunning]] where the practitioner does a two-handed [[cartwheel]] over an object.",
+   "lead_text": "A Star Vault is a vault used in freerunning where the practitioner does a two-handed cartwheel over an object."
+  },
+  {
+   "page_id": 2614,
+   "title": "Straddle Vault",
+   "url": "https://parkour.fandom.com/wiki/Straddle_Vault",
+   "last_rev_timestamp": "2025-09-19T01:28:44Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 1449,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Intermediate\n}}\nThe'''Straddle Vault''' is a [[vault]] used in [[freerunning]] where the practitioner does a [[monkey vault]], but instead of pulling their legs in-between their arms their legs perform a split to the left and right over the obstacle for added style.",
+   "lead_text": "TheStraddle Vault is a vault used in freerunning where the practitioner does a monkey vault, but instead of pulling their legs in-between their arms their legs perform a split to the left and right over the obstacle for added style."
+  },
+  {
+   "page_id": 2154,
+   "title": "Stretching",
+   "url": "https://parkour.fandom.com/wiki/Stretching",
+   "last_rev_timestamp": "2025-08-22T16:25:41Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Safety",
+    "Training",
+    "WIP"
+   ],
+   "wikitext_chars": 5649,
+   "lead_wikitext": "'''Stretching''' is a very important, but often overlooked, aspect of [[Parkour]], [[Freerunning]], and [[tricking]]. It consists of stretching muscles, either to increase their range of motion or prevent cohesion.",
+   "lead_text": "Stretching is a very important, but often overlooked, aspect of Parkour, Freerunning, and tricking. It consists of stretching muscles, either to increase their range of motion or prevent cohesion."
+  },
+  {
+   "page_id": 2469,
+   "title": "Stride",
+   "url": "https://parkour.fandom.com/wiki/Stride",
+   "last_rev_timestamp": "2025-08-22T16:25:46Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 1451,
+   "lead_wikitext": "'''Strides''' are a series of [[jump]]s combined into one fluid movement, used in [[Parkour]] and [[Freerunning]]. They are similar to a series of [[Precision Techniques#Precision Leap|precision leaps]], but without the precision landing (instead, the landing is only on one foot and the momentum is immediately used to go into another leap). They are used when there are a number of obstacles on a given path.",
+   "lead_text": "Strides are a series of jumps combined into one fluid movement, used in Parkour and Freerunning. They are similar to a series of precision leaps, but without the precision landing (instead, the landing is only on one foot and the momentum is immediately used to go into another leap). They are used when there are a number of obstacles on a given path."
+  },
+  {
+   "page_id": 3594,
+   "title": "Swing vault",
+   "url": "https://parkour.fandom.com/wiki/Swing_vault",
+   "last_rev_timestamp": "2025-09-17T02:06:17Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour",
+    "Parkour Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 1980,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Parkour]]\n|difficulty = Basic\n}}\nA '''Swing Vault''', also known as a '''Cradle Vault''', is a [[vault]] used in [[parkour]] where the practioner grabs onto two separate parallel rails and swings over one side of it similar to a [[lazy vault|lazy]] or [[thief vault]].",
+   "lead_text": "A Swing Vault, also known as a Cradle Vault, is a vault used in parkour where the practioner grabs onto two separate parallel rails and swings over one side of it similar to a lazy or thief vault."
+  },
+  {
+   "page_id": 2256,
+   "title": "Sébastien Foucan",
+   "url": "https://parkour.fandom.com/wiki/S%C3%A9bastien_Foucan",
+   "last_rev_timestamp": "2025-08-22T16:25:53Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Parkour",
+    "People",
+    "WIP"
+   ],
+   "wikitext_chars": 824,
+   "lead_wikitext": "[[File:Parkour5.jpg|thumb|200px|[[Sebastian Foucan]], the creator of the [[Freerunning]].]]\n'''Sébastien Foucan''' (born 27 May 1974; Paris, France) is a member of the [[Yamakasi]] and the founder of [[freerunning]]. He is a childhood friend of [[David Belle]]. Foucan was one of the founders of [[Parkour]], however, he decided to create his own movement, now known as freerunning, because he wanted to add more self-expression into the art. He is also an actor and has played a role in several films and documentaries.",
+   "lead_text": ", the creator of the Freerunning.]]\nSébastien Foucan (born 27 May 1974; Paris, France) is a member of the Yamakasi and the founder of freerunning. He is a childhood friend of David Belle. Foucan was one of the founders of Parkour, however, he decided to create his own movement, now known as freerunning, because he wanted to add more self-expression into the art. He is also an actor and has played a role in several films and documentaries."
+  },
+  {
+   "page_id": 1865,
+   "title": "Thief Vault",
+   "url": "https://parkour.fandom.com/wiki/Thief_Vault",
+   "last_rev_timestamp": "2025-08-22T18:36:09Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 1107,
+   "lead_wikitext": "The '''Thief Vault''' is a slightly modified or hybrid movement of the [[Lazy Vault]] and the [[Dash Vault]]. It is less well-known and is considered by some to not be a useful technique or even a proper movement. It is used as a slightly faster alternative to the Lazy Vault, and the exit is more perpendicular to the obstacle as in a Dash Vault, rather than being parallel to the obstacle as in a Lazy Vault.",
+   "lead_text": "The Thief Vault is a slightly modified or hybrid movement of the Lazy Vault and the Dash Vault. It is less well-known and is considered by some to not be a useful technique or even a proper movement. It is used as a slightly faster alternative to the Lazy Vault, and the exit is more perpendicular to the obstacle as in a Dash Vault, rather than being parallel to the obstacle as in a Lazy Vault."
+  },
+  {
+   "page_id": 1876,
+   "title": "Tic Tac",
+   "url": "https://parkour.fandom.com/wiki/Tic_Tac",
+   "last_rev_timestamp": "2025-08-22T16:26:06Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 2183,
+   "lead_wikitext": "[[File:TicTac-Parkour.png|centre|thumb|A picture of a free-runner performing the Tic Tac (or Tac).]]\n\nA '''Tic Tac''' or simply '''Tac''' is a movement used in [[Parkour]] and [[Freerunning]]. It consists of pushing off of a wall, similar to a [[wallrun]], but moving across the wall rather than up it. It is usually used to get over an obstacle next to a wall.",
+   "lead_text": "A Tic Tac or simply Tac is a movement used in Parkour and Freerunning. It consists of pushing off of a wall, similar to a wallrun, but moving across the wall rather than up it. It is usually used to get over an obstacle next to a wall."
+  },
+  {
+   "page_id": 3596,
+   "title": "Tic-Tac",
+   "url": "https://parkour.fandom.com/wiki/Tic-Tac",
+   "last_rev_timestamp": "2025-08-22T16:26:02Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Moves",
+    "Parkour",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 569,
+   "lead_wikitext": "A '''Tic-Tac '''is when you run and [[wallrun#pop up|pop off]] of the wall at an angle and is useful for getting up stairs or over small objects.",
+   "lead_text": "A Tic-Tac is when you run and pop off of the wall at an angle and is useful for getting up stairs or over small objects."
+  },
+  {
+   "page_id": 3598,
+   "title": "Tim Shieff",
+   "url": "https://parkour.fandom.com/wiki/Tim_Shieff",
+   "last_rev_timestamp": "2025-08-22T16:26:10Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Athletes",
+    "WIP"
+   ],
+   "wikitext_chars": 2781,
+   "lead_wikitext": "'''Timothy \"Livewire\" Shieff''' (born March 24, 1988 in Hartford, Connecticut) is a professional English [[:Category:Free Running|Freerunner]] . He is best known for winning the 2009 ''Barclaycard World Freerun Championship'' and participating on the television programme MTV's Ultimate Parkour Challenge. Shieff uses the nickname ''Livewire'' while performing freerunning. In 2011 and 2012 he appeared in the televised ''American Ninja Warrior'' competition, and in 2014 he appeared on a special \"USA vs. The World\" edition of ''American Ninja Warrior'', where he helped lead Team Europe to victory over Team USA and Team Japan. In terms of Freerunning competitions won, Tim Shieff is currently one of the most successful athletes in the world, achieving victories and runner up places in events such as The Barclaycard World Freerun Championships, and the Red Bull Art Of Motion. He was a judge in the 2013 Art of Motion in Santorini for the criteria of creativity.",
+   "lead_text": "Timothy \"Livewire\" Shieff (born March 24, 1988 in Hartford, Connecticut) is a professional English Freerunner . He is best known for winning the 2009 Barclaycard World Freerun Championship and participating on the television programme MTV's Ultimate Parkour Challenge. Shieff uses the nickname Livewire while performing freerunning. In 2011 and 2012 he appeared in the televised American Ninja Warrior competition, and in 2014 he appeared on a special \"USA vs. The World\" edition of American Ninja Warrior, where he helped lead Team Europe to victory over Team USA and Team Japan. In terms of Freerunning competitions won, Tim Shieff is currently one of the most successful athletes in the world, achieving victories and runner up places in events such as The Barclaycard World Freerun Championships, and the Red Bull Art Of Motion. He was a judge in the 2013 Art of Motion in Santorini for the criteria of creativity."
+  },
+  {
+   "page_id": 3229,
+   "title": "Tornado Kick",
+   "url": "https://parkour.fandom.com/wiki/Tornado_Kick",
+   "last_rev_timestamp": "2025-08-22T16:26:14Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 158,
+   "lead_wikitext": "{{Stub}}The tornado kick is a kick in Taekwondo. It's like a 45 kick but you need to be in the air to deliver the kick.\n[[Category:Tricking]]\n[[Category:WIP]]",
+   "lead_text": "The tornado kick is a kick in Taekwondo. It's like a 45 kick but you need to be in the air to deliver the kick."
+  },
+  {
+   "page_id": 2750,
+   "title": "Traceur",
+   "url": "https://parkour.fandom.com/wiki/Traceur",
+   "last_rev_timestamp": "2026-05-27T17:11:37Z",
+   "last_rev_user": "H-Tech3",
+   "categories": [
+    "WIP"
+   ],
+   "wikitext_chars": 378,
+   "lead_wikitext": "'''The Traceur''' is the concept for a person that's using, and/or exercising [[Lé Parkour|Parkour]]. Traceurs mostly are well known in the sport of Parkour.",
+   "lead_text": "The Traceur is the concept for a person that's using, and/or exercising Parkour. Traceurs mostly are well known in the sport of Parkour."
+  },
+  {
+   "page_id": 2290,
+   "title": "Training",
+   "url": "https://parkour.fandom.com/wiki/Training",
+   "last_rev_timestamp": "2025-08-22T16:26:22Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Training",
+    "WIP"
+   ],
+   "wikitext_chars": 2289,
+   "lead_wikitext": "[[File:Morzine02.jpg|thumb|250px|A group of traceurs conditioning with logs]]\n'''Training''' is practice in order to acquire skills (or to become better at already existing skills). It is a fundamental aspect of [[Parkour]], [[Freerunning]], [[tricking]], or any other skill.",
+   "lead_text": "Training is practice in order to acquire skills (or to become better at already existing skills). It is a fundamental aspect of Parkour, Freerunning, tricking, or any other skill."
+  },
+  {
+   "page_id": 2196,
+   "title": "Tricking",
+   "url": "https://parkour.fandom.com/wiki/Tricking",
+   "last_rev_timestamp": "2025-08-22T16:26:26Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 1306,
+   "lead_wikitext": "[[File:Vellusta_-_Trick_Line.gif|right]]'''Tricking''' is a freestyle underground sport done purely for aesthetic purposes. It is similar in aspects to [[freerunning]], although it often does not involve [[running]]. There is no formal definition of what is a tricking movement and what is not. Trickers often utilize gymnastics, tumbling, breakdancing, freerunning and martial arts in their movements. Acrobatic movements such as those used in tricking are not a new invention; classical tumblers and jesters have been using such movements for thousands of years for entertainment purposes.",
+   "lead_text": "Tricking is a freestyle underground sport done purely for aesthetic purposes. It is similar in aspects to freerunning, although it often does not involve running. There is no formal definition of what is a tricking movement and what is not. Trickers often utilize gymnastics, tumbling, breakdancing, freerunning and martial arts in their movements. Acrobatic movements such as those used in tricking are not a new invention; classical tumblers and jesters have been using such movements for thousands of years for entertainment purposes."
+  },
+  {
+   "page_id": 2418,
+   "title": "Tumbling",
+   "url": "https://parkour.fandom.com/wiki/Tumbling",
+   "last_rev_timestamp": "2025-08-22T16:26:30Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 449,
+   "lead_wikitext": "[[File:Vellusta_-_Trick_Line.gif|right]]\n'''Tumbling''' is a set of acrobatics moves performed in combination, most commonly used in [[tricking]]. Among the most commonly used moves are the [[roundoff]] and [[Back Handspring|back handspring]], as they are useful in converting running momentum into forward and upward momentum. Tumbling originated in ancient times and is most famously performed in gymnastics.\n[[Category:Tricking]]\n[[Category:WIP]]",
+   "lead_text": "Tumbling is a set of acrobatics moves performed in combination, most commonly used in tricking. Among the most commonly used moves are the roundoff and back handspring, as they are useful in converting running momentum into forward and upward momentum. Tumbling originated in ancient times and is most famously performed in gymnastics."
+  },
+  {
+   "page_id": 3602,
+   "title": "Turbine Vault",
+   "url": "https://parkour.fandom.com/wiki/Turbine_Vault",
+   "last_rev_timestamp": "2025-08-22T16:26:34Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Free Running",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 170,
+   "lead_wikitext": "The '''Turbine Vault''' is [[lazy Vault|lazy vault]] to a late or delayed[[ reverse Vault| reverse vault]].\n[[Category:Vaults]]\n[[Category:Free Running]]\n[[Category:WIP]]",
+   "lead_text": "The Turbine Vault is lazy vault to a late or delayed reverse vault."
+  },
+  {
+   "page_id": 1871,
+   "title": "Turn Vault",
+   "url": "https://parkour.fandom.com/wiki/Turn_Vault",
+   "last_rev_timestamp": "2025-08-22T18:36:11Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Parkour movements",
+    "Vaults",
+    "WIP"
+   ],
+   "wikitext_chars": 2331,
+   "lead_wikitext": "'''Turn vaults''' are among one of the most commonly used as well as one of the most necessary [[vault]]s to learn at an early stage. Turn vaults place the Traceur or Traceuse on the opposite side of an object in the [[cat]] position ready to dismount to the next obstacle or ground. They are commonly applied to rails, fences, ledges, normally on the edge of a drop or side of an obstacle. Turn vaults provide a fast, but safe, way to move onto the outside or edge of an obstacle, maintaining forward progression.",
+   "lead_text": "Turn vaults are among one of the most commonly used as well as one of the most necessary vaults to learn at an early stage. Turn vaults place the Traceur or Traceuse on the opposite side of an object in the cat position ready to dismount to the next obstacle or ground. They are commonly applied to rails, fences, ledges, normally on the edge of a drop or side of an obstacle. Turn vaults provide a fast, but safe, way to move onto the outside or edge of an obstacle, maintaining forward progression."
+  },
+  {
+   "page_id": 3604,
+   "title": "Ultimate Parkour Challenge",
+   "url": "https://parkour.fandom.com/wiki/Ultimate_Parkour_Challenge",
+   "last_rev_timestamp": "2025-08-22T16:26:43Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Competitions",
+    "WIP"
+   ],
+   "wikitext_chars": 2688,
+   "lead_wikitext": "'''Ultimate Parkour Challenge''' also known as '''MTV's Ultimate Parkour Challenge '''is a free running and Parkour oriented show produced by the [[World Freerunning & Parkour Federation]] and MTV.\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px;\">The pilot was initially going to air on 26 July 2009, however it was postponed so that MTV could advertise it more. It was finally broadcast on MTV on October 22, 2009 at 10pm.</p>\n\n<p style=\"margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; line-height: 1.5em;\">News was released in Feburary 2010 that the pilot was popular enough to warrant the production of the rest of the series. The series finally began to air in May 2010.</p>",
+   "lead_text": "Ultimate Parkour Challenge also known as MTV's Ultimate Parkour Challenge is a free running and Parkour oriented show produced by the World Freerunning & Parkour Federation and MTV.\n\nThe pilot was initially going to air on 26 July 2009, however it was postponed so that MTV could advertise it more. It was finally broadcast on MTV on October 22, 2009 at 10pm.\n\nNews was released in Feburary 2010 that the pilot was popular enough to warrant the production of the rest of the series. The series finally began to air in May 2010."
+  },
+  {
+   "page_id": 1862,
+   "title": "Underbar",
+   "url": "https://parkour.fandom.com/wiki/Underbar",
+   "last_rev_timestamp": "2025-08-22T18:36:13Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 1203,
+   "lead_wikitext": "The '''Underbar''' is a [[Parkour]] movement where one swings one's body under a bar in a fluid manner.",
+   "lead_text": "The Underbar is a Parkour movement where one swings one's body under a bar in a fluid manner."
+  },
+  {
+   "page_id": 2011,
+   "title": "Urban Exploration",
+   "url": "https://parkour.fandom.com/wiki/Urban_Exploration",
+   "last_rev_timestamp": "2025-08-22T16:26:52Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Parkour",
+    "Urban Movement",
+    "WIP"
+   ],
+   "wikitext_chars": 656,
+   "lead_wikitext": "{{stub}}\n'''Urban Exploration''' is the exploration of man-made environments, usually abandoned or seldom visited. Urban exploration is commonly used together with [[Parkour]], and [[Climbing]] in order to access hard-to-reach areas.",
+   "lead_text": "Urban Exploration is the exploration of man-made environments, usually abandoned or seldom visited. Urban exploration is commonly used together with Parkour, and Climbing in order to access hard-to-reach areas."
+  },
+  {
+   "page_id": 1784,
+   "title": "Vaults",
+   "url": "https://parkour.fandom.com/wiki/Vaults",
+   "last_rev_timestamp": "2026-05-27T15:33:50Z",
+   "last_rev_user": "H-Tech3",
+   "categories": [
+    "WIP"
+   ],
+   "wikitext_chars": 863,
+   "lead_wikitext": "[[Image:David-Belle-parkour.jpg|200px|right|thumb|[[David Belle]] performing a [[speed vault]].]]\n'''Vaults''' are a [[parkour]] technique used to quickly traverse over, under, or through obstacles.",
+   "lead_text": "performing a speed vault.]]\nVaults are a parkour technique used to quickly traverse over, under, or through obstacles."
+  },
+  {
+   "page_id": 3607,
+   "title": "Vert vault",
+   "url": "https://parkour.fandom.com/wiki/Vert_vault",
+   "last_rev_timestamp": "2025-09-17T02:02:57Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "Freerunning Vaults",
+    "Vaults"
+   ],
+   "wikitext_chars": 535,
+   "lead_wikitext": "{{Infobox technique\n|image = \n|discipline = [[Freerunning]]\n|difficulty = Basic\n}}\nA '''Vert Vault''' is a [[vault]] used in [[freerunning]] where the practitioners hands are placed in a [[side vault]] fashion and one leg is kicked up over their head.",
+   "lead_text": "A Vert Vault is a vault used in freerunning where the practitioners hands are placed in a side vault fashion and one leg is kicked up over their head."
+  },
+  {
+   "page_id": 3523,
+   "title": "Wall Jump",
+   "url": "https://parkour.fandom.com/wiki/Wall_Jump",
+   "last_rev_timestamp": "2026-03-07T15:19:23Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "WIP"
+   ],
+   "wikitext_chars": 374,
+   "lead_wikitext": "A walljump.",
+   "lead_text": "A walljump."
+  },
+  {
+   "page_id": 1778,
+   "title": "Wall Run",
+   "url": "https://parkour.fandom.com/wiki/Wall_Run",
+   "last_rev_timestamp": "2025-08-22T16:27:07Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "Parkour movements",
+    "WIP"
+   ],
+   "wikitext_chars": 2881,
+   "lead_wikitext": "[[File:Got_it.jpg|thumb|A traceur executing a wall run]]\nThe '''Wall Run''' is a widely used movement in [[Parkour]], used to get over a wall too high for a [[vault]]. It is also used in [[Freerunning]] ( [[wallflip|Wallflips]] are based on wallruns).",
+   "lead_text": "The Wall Run is a widely used movement in Parkour, used to get over a wall too high for a vault. It is also used in Freerunning ( Wallflips are based on wallruns)."
+  },
+  {
+   "page_id": 1843,
+   "title": "Wall Spin",
+   "url": "https://parkour.fandom.com/wiki/Wall_Spin",
+   "last_rev_timestamp": "2025-08-22T16:27:11Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Article stubs",
+    "Freerunning",
+    "WIP"
+   ],
+   "wikitext_chars": 151,
+   "lead_wikitext": "{{Stub}}\n<gallery>\nHow to do a wallspin- wall spin tutorial freerunning parkour|Wall spin tutorial\n</gallery>\n[[Category:Freerunning]]\n[[Category:WIP]]",
+   "lead_text": "How to do a wallspin- wall spin tutorial freerunning parkour|Wall spin tutorial"
+  },
+  {
+   "page_id": 2221,
+   "title": "Wallflip",
+   "url": "https://parkour.fandom.com/wiki/Wallflip",
+   "last_rev_timestamp": "2025-08-22T18:36:16Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 578,
+   "lead_wikitext": "[[File:MeParkour.png|thumb|A wallflip performed off of a tree]]\nA '''wallflip''' is a type of [[flip]] preformed by pushing off of a wall (or other vertical surface), either horizontally, like a [[tic tac]], or vertically, like a [[wallrun]]. While the term is most commonly used to refer to a [[backflip]] done off of a wall, it can be used for a number of different types.",
+   "lead_text": "A wallflip is a type of flip preformed by pushing off of a wall (or other vertical surface), either horizontally, like a tic tac, or vertically, like a wallrun. While the term is most commonly used to refer to a backflip done off of a wall, it can be used for a number of different types."
+  },
+  {
+   "page_id": 2216,
+   "title": "Webster",
+   "url": "https://parkour.fandom.com/wiki/Webster",
+   "last_rev_timestamp": "2025-08-22T18:36:18Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Freerunning",
+    "Tricking",
+    "WIP"
+   ],
+   "wikitext_chars": 843,
+   "lead_wikitext": "A '''webster, created by Risima Muvba, is when you do a flip with one leg'''",
+   "lead_text": "A webster, created by Risima Muvba, is when you do a flip with one leg"
+  },
+  {
+   "page_id": 3608,
+   "title": "World Freerunning & Parkour Federation",
+   "url": "https://parkour.fandom.com/wiki/World_Freerunning_%26_Parkour_Federation",
+   "last_rev_timestamp": "2025-08-22T16:27:24Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Groups",
+    "WIP"
+   ],
+   "wikitext_chars": 1659,
+   "lead_wikitext": "",
+   "lead_text": ""
+  },
+  {
+   "page_id": 1885,
+   "title": "Yamakasi",
+   "url": "https://parkour.fandom.com/wiki/Yamakasi",
+   "last_rev_timestamp": "2025-08-22T16:27:32Z",
+   "last_rev_user": "Black60dragon",
+   "categories": [
+    "Parkour",
+    "WIP"
+   ],
+   "wikitext_chars": 1358,
+   "lead_wikitext": "[[File:G-2.jpg|thumb|268px|The Yamakasi.]]\n\nThe '''Yamakasi '''\n\nwere a group from France who were practitioners of l'art du déplacement, and pioneers of Parkour and Freerunning.Yamakasi is also a name of a French film from 2001 written by Luc Besson, which starred the members of the Yamakasi, and a documentary, called ''Génération Yamakasi.''Yamakasi is also a term used by Traceurs and Freerunners to describe a style and method of training that involves the traditional training of l'art du déplacement, before the Parkour / Freerunning split.\n\n\nThe word ''yamakasi'' is taken from the Lingala language, which is spoken in Central Africa. ''Ya makási'' can mean \"strong body\", \"strong spirit\", or \"strong person.\"",
+   "lead_text": "The Yamakasi \n\nwere a group from France who were practitioners of l'art du déplacement, and pioneers of Parkour and Freerunning.Yamakasi is also a name of a French film from 2001 written by Luc Besson, which starred the members of the Yamakasi, and a documentary, called Génération Yamakasi.Yamakasi is also a term used by Traceurs and Freerunners to describe a style and method of training that involves the traditional training of l'art du déplacement, before the Parkour / Freerunning split.\n\nThe word yamakasi is taken from the Lingala language, which is spoken in Central Africa. Ya makási can mean \"strong body\", \"strong spirit\", or \"strong person.\""
+  }
+ ],
+ "redirects": [
+  {
+   "from": "360 Cat Leap",
+   "to": "Cat Leap",
+   "tofragment": null
+  },
+  {
+   "from": "360 Dash Vault",
+   "to": "Dash Vault",
+   "tofragment": null
+  },
+  {
+   "from": "360 Precision Jump",
+   "to": "Precision Jump",
+   "tofragment": null
+  },
+  {
+   "from": "360 Speed Vault",
+   "to": "Speed Vault",
+   "tofragment": null
+  },
+  {
+   "from": "360 Tic Tac Vault",
+   "to": "Tic-Tac",
+   "tofragment": null
+  },
+  {
+   "from": "360 Tic-Tac",
+   "to": "Tic-Tac",
+   "tofragment": null
+  },
+  {
+   "from": "360 Underbar",
+   "to": "Underbar",
+   "tofragment": "360 Underbar"
+  },
+  {
+   "from": "360 Vault",
+   "to": "360 vault",
+   "tofragment": null
+  },
+  {
+   "from": "540 Kick",
+   "to": "540 kick",
+   "tofragment": null
+  },
+  {
+   "from": "540 Kick",
+   "to": "540 kick",
+   "tofragment": null
+  },
+  {
+   "from": "720 Reverse Vault",
+   "to": "Reverse Vault",
+   "tofragment": null
+  },
+  {
+   "from": "A-twist",
+   "to": "Corkscrew",
+   "tofragment": null
+  },
+  {
+   "from": "Angel drop",
+   "to": "Angel flip",
+   "tofragment": null
+  },
+  {
+   "from": "B-twist",
+   "to": "Butterfly Twist",
+   "tofragment": null
+  },
+  {
+   "from": "Back flip",
+   "to": "Back Flip",
+   "tofragment": null
+  },
+  {
+   "from": "Back handspring",
+   "to": "Back Handspring",
+   "tofragment": null
+  },
+  {
+   "from": "Back pike",
+   "to": "Back Flip",
+   "tofragment": null
+  },
+  {
+   "from": "Backflip",
+   "to": "Back Flip",
+   "tofragment": null
+  },
+  {
+   "from": "Barrel Vault",
+   "to": "Barrel vault",
+   "tofragment": null
+  },
+  {
+   "from": "Basic vault",
+   "to": "Side vault",
+   "tofragment": null
+  },
+  {
+   "from": "Breakfall",
+   "to": "Breakfalls",
+   "tofragment": null
+  },
+  {
+   "from": "Butterfly kick",
+   "to": "Butterfly Kick",
+   "tofragment": null
+  },
+  {
+   "from": "Butterfly twist",
+   "to": "Butterfly Twist",
+   "tofragment": null
+  },
+  {
+   "from": "Cast Bomb",
+   "to": "Cast bomb",
+   "tofragment": null
+  },
+  {
+   "from": "Cat",
+   "to": "Cat leap",
+   "tofragment": null
+  },
+  {
+   "from": "Cat Grab",
+   "to": "Cat Leap",
+   "tofragment": null
+  },
+  {
+   "from": "Cat grab",
+   "to": "Cat Leap",
+   "tofragment": null
+  },
+  {
+   "from": "Cat to cat",
+   "to": "Cat to Cat",
+   "tofragment": null
+  },
+  {
+   "from": "Catpass",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Chan vault",
+   "to": "Jackie Chan vault",
+   "tofragment": null
+  },
+  {
+   "from": "Cheat Gainer",
+   "to": "Slant Gainer",
+   "tofragment": null
+  },
+  {
+   "from": "Cheat gainer",
+   "to": "Slant Gainer",
+   "tofragment": null
+  },
+  {
+   "from": "Chin-up",
+   "to": "Pull-up",
+   "tofragment": null
+  },
+  {
+   "from": "Climb up",
+   "to": "Climb Up",
+   "tofragment": null
+  },
+  {
+   "from": "Cork",
+   "to": "Corkscrew",
+   "tofragment": null
+  },
+  {
+   "from": "Crane Step",
+   "to": "Crane Landing",
+   "tofragment": null
+  },
+  {
+   "from": "Dash Barani",
+   "to": "Dash Bomb",
+   "tofragment": null
+  },
+  {
+   "from": "Dash Bomb",
+   "to": "Dash bomb",
+   "tofragment": null
+  },
+  {
+   "from": "Dash Bomb",
+   "to": "Dash bomb",
+   "tofragment": null
+  },
+  {
+   "from": "Dash Gainer",
+   "to": "Dash Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Dash Roll",
+   "to": "Dash Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Dash vault",
+   "to": "Dash Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Dive roll",
+   "to": "Dive Roll",
+   "tofragment": null
+  },
+  {
+   "from": "Diving Kong Vault",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Double In",
+   "to": "Kash Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Double kong",
+   "to": "Double Kong",
+   "tofragment": null
+  },
+  {
+   "from": "Double Kong",
+   "to": "Double kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Double leg reverse vault",
+   "to": "Barrel vault",
+   "tofragment": null
+  },
+  {
+   "from": "Flare Vault",
+   "to": "Star Vault",
+   "tofragment": "Flare Vault"
+  },
+  {
+   "from": "Flare vault",
+   "to": "Star vault",
+   "tofragment": null
+  },
+  {
+   "from": "Flexibility",
+   "to": "Stretching",
+   "tofragment": null
+  },
+  {
+   "from": "Free running",
+   "to": "Freerunning",
+   "tofragment": null
+  },
+  {
+   "from": "Frog Gainer",
+   "to": "Monkey gainer",
+   "tofragment": null
+  },
+  {
+   "from": "Front flip",
+   "to": "Front Flip",
+   "tofragment": null
+  },
+  {
+   "from": "Front handspring",
+   "to": "Front Handspring",
+   "tofragment": null
+  },
+  {
+   "from": "Front pike",
+   "to": "Front Flip",
+   "tofragment": "Types of Frontflip"
+  },
+  {
+   "from": "Front tuck",
+   "to": "Front Flip",
+   "tofragment": null
+  },
+  {
+   "from": "Frontflip",
+   "to": "Front Flip",
+   "tofragment": null
+  },
+  {
+   "from": "Gate vault",
+   "to": "Gate Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Gather front",
+   "to": "Gather Front",
+   "tofragment": null
+  },
+  {
+   "from": "Hand Spin",
+   "to": "Palm Spin",
+   "tofragment": null
+  },
+  {
+   "from": "Handstand Kong",
+   "to": "Handstand",
+   "tofragment": null
+  },
+  {
+   "from": "Inside Dash",
+   "to": "Dash Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Inside Monkey",
+   "to": "Monkey vault",
+   "tofragment": null
+  },
+  {
+   "from": "Jackie Chan Vault",
+   "to": "Jackie Chan vault",
+   "tofragment": null
+  },
+  {
+   "from": "Jackknife",
+   "to": "540 Kick",
+   "tofragment": null
+  },
+  {
+   "from": "Kash bomb",
+   "to": "Dash bomb",
+   "tofragment": "Kash Bomb"
+  },
+  {
+   "from": "Kash Vault",
+   "to": "Kash vault",
+   "tofragment": null
+  },
+  {
+   "from": "Kash Vault",
+   "to": "Kash vault",
+   "tofragment": null
+  },
+  {
+   "from": "Kick the Moon",
+   "to": "Flashkick",
+   "tofragment": null
+  },
+  {
+   "from": "Kick the moon",
+   "to": "Flashkick",
+   "tofragment": null
+  },
+  {
+   "from": "Kick up",
+   "to": "Kip Up",
+   "tofragment": null
+  },
+  {
+   "from": "Kong",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Kong Front",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Kong gainer",
+   "to": "Monkey gainer",
+   "tofragment": null
+  },
+  {
+   "from": "Kong Vault",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Laché",
+   "to": "Lache",
+   "tofragment": null
+  },
+  {
+   "from": "Land Bomb",
+   "to": "Dash Bomb",
+   "tofragment": null
+  },
+  {
+   "from": "Lazy Bomb",
+   "to": "Dash Bomb",
+   "tofragment": null
+  },
+  {
+   "from": "Lazy Turn",
+   "to": "Turn Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Lazy Turn Vault",
+   "to": "Turn Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Lazy vault",
+   "to": "Lazy Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Le Parkour",
+   "to": "Parkour",
+   "tofragment": null
+  },
+  {
+   "from": "List of Freerunning movements",
+   "to": "Freerunning movements",
+   "tofragment": null
+  },
+  {
+   "from": "List of Parkour movements",
+   "to": "Parkour movements",
+   "tofragment": null
+  },
+  {
+   "from": "Lé Parkour",
+   "to": "Parkour",
+   "tofragment": null
+  },
+  {
+   "from": "Main Page",
+   "to": "Parkour Wiki",
+   "tofragment": null
+  },
+  {
+   "from": "Methode Naturelle",
+   "to": "Méthode Naturelle",
+   "tofragment": null
+  },
+  {
+   "from": "Monkey Gainer",
+   "to": "Monkey gainer",
+   "tofragment": null
+  },
+  {
+   "from": "Monkey Vault",
+   "to": "Monkey vault",
+   "tofragment": null
+  },
+  {
+   "from": "Muscle up",
+   "to": "Muscle Up",
+   "tofragment": null
+  },
+  {
+   "from": "Palm spin",
+   "to": "Palm Spin",
+   "tofragment": null
+  },
+  {
+   "from": "Parkour / Free-running Wiki",
+   "to": "Parkour Wiki",
+   "tofragment": null
+  },
+  {
+   "from": "Parkour Moves",
+   "to": "Parkour movements",
+   "tofragment": null
+  },
+  {
+   "from": "PK",
+   "to": "Parkour",
+   "tofragment": null
+  },
+  {
+   "from": "PK Roll",
+   "to": "Roll",
+   "tofragment": null
+  },
+  {
+   "from": "Pop vault",
+   "to": "Pop Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Precision",
+   "to": "Precision Jump",
+   "tofragment": null
+  },
+  {
+   "from": "Precision Techniques",
+   "to": "Precision Jump",
+   "tofragment": null
+  },
+  {
+   "from": "Pull up",
+   "to": "Pull-up",
+   "tofragment": null
+  },
+  {
+   "from": "Pullup",
+   "to": "Pull-up",
+   "tofragment": null
+  },
+  {
+   "from": "Pushup",
+   "to": "Push Up",
+   "tofragment": null
+  },
+  {
+   "from": "Quadrupedal movement",
+   "to": "Quadrupedal Movement",
+   "tofragment": null
+  },
+  {
+   "from": "Rail Flip",
+   "to": "Rail flip",
+   "tofragment": null
+  },
+  {
+   "from": "Rail flow",
+   "to": "Rail Flow",
+   "tofragment": null
+  },
+  {
+   "from": "Reverse blocking",
+   "to": "Blocking",
+   "tofragment": null
+  },
+  {
+   "from": "Reverse vault",
+   "to": "Reverse Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Rocket Vault",
+   "to": "Rocket vault",
+   "tofragment": null
+  },
+  {
+   "from": "Run",
+   "to": "Running",
+   "tofragment": null
+  },
+  {
+   "from": "Safety tap",
+   "to": "Safety Tap",
+   "tofragment": null
+  },
+  {
+   "from": "Safety Vault",
+   "to": "Safety vault",
+   "tofragment": null
+  },
+  {
+   "from": "Sandbox",
+   "to": "Parkour Wiki:Sandbox",
+   "tofragment": null
+  },
+  {
+   "from": "Scissor Vault",
+   "to": "Scissor vault",
+   "tofragment": null
+  },
+  {
+   "from": "Screwdriver",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Sebastian Foucan",
+   "to": "Sébastien Foucan",
+   "tofragment": null
+  },
+  {
+   "from": "Sebastien Foucan",
+   "to": "Sébastien Foucan",
+   "tofragment": null
+  },
+  {
+   "from": "Shoulder Vault",
+   "to": "Shoulder vault",
+   "tofragment": null
+  },
+  {
+   "from": "Side flip",
+   "to": "Side Flip",
+   "tofragment": null
+  },
+  {
+   "from": "Side Vault",
+   "to": "Side vault",
+   "tofragment": null
+  },
+  {
+   "from": "Sideflip",
+   "to": "Side Flip",
+   "tofragment": null
+  },
+  {
+   "from": "Simple vault",
+   "to": "Side vault",
+   "tofragment": null
+  },
+  {
+   "from": "Sky Vault",
+   "to": "Star Vault",
+   "tofragment": "Sky Vault"
+  },
+  {
+   "from": "Sky vault",
+   "to": "Star vault",
+   "tofragment": null
+  },
+  {
+   "from": "Speed Pimp Flip",
+   "to": "Speed Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Speed Side",
+   "to": "Speed Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Speed vault",
+   "to": "Speed Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Star Vault",
+   "to": "Star vault",
+   "tofragment": null
+  },
+  {
+   "from": "Star Vault",
+   "to": "Star vault",
+   "tofragment": null
+  },
+  {
+   "from": "Sticking",
+   "to": "Glossary of Terms",
+   "tofragment": "S"
+  },
+  {
+   "from": "Stinger Vault",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Straddle vault",
+   "to": "Straddle Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Stride run",
+   "to": "Stride",
+   "tofragment": null
+  },
+  {
+   "from": "Swing",
+   "to": "Lache",
+   "tofragment": null
+  },
+  {
+   "from": "Swing (Lache)",
+   "to": "Lache",
+   "tofragment": null
+  },
+  {
+   "from": "Swing Vault",
+   "to": "Swing vault",
+   "tofragment": null
+  },
+  {
+   "from": "Tap landing",
+   "to": "Safety Tap",
+   "tofragment": null
+  },
+  {
+   "from": "The Front Flip",
+   "to": "Front Flip",
+   "tofragment": null
+  },
+  {
+   "from": "The Wall Spin",
+   "to": "Wall Spin",
+   "tofragment": null
+  },
+  {
+   "from": "Thief 360",
+   "to": "Thief Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Thief vault",
+   "to": "Thief Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Tic tac",
+   "to": "Tic Tac",
+   "tofragment": null
+  },
+  {
+   "from": "Tic Tac Vault",
+   "to": "Tic Tac",
+   "tofragment": null
+  },
+  {
+   "from": "Tic-Tac 360",
+   "to": "Tic-Tac",
+   "tofragment": null
+  },
+  {
+   "from": "Traveling Kong",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Triple Kong",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Triple Vault",
+   "to": "Kong vault",
+   "tofragment": null
+  },
+  {
+   "from": "Turn Underbar",
+   "to": "Turn Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Turn vault",
+   "to": "Turn Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Two handed vault",
+   "to": "Side vault",
+   "tofragment": null
+  },
+  {
+   "from": "Two-handed vault",
+   "to": "Side vault",
+   "tofragment": null
+  },
+  {
+   "from": "Underbar 360",
+   "to": "Underbar",
+   "tofragment": null
+  },
+  {
+   "from": "Upward Wallrun",
+   "to": "Wall Run",
+   "tofragment": null
+  },
+  {
+   "from": "Urban exploration",
+   "to": "Urban Exploration",
+   "tofragment": null
+  },
+  {
+   "from": "Vault",
+   "to": "Vaults",
+   "tofragment": null
+  },
+  {
+   "from": "Vert Vault",
+   "to": "Vert vault",
+   "tofragment": null
+  },
+  {
+   "from": "Wall flip",
+   "to": "Wallflip",
+   "tofragment": null
+  },
+  {
+   "from": "Wall run",
+   "to": "Wall Run",
+   "tofragment": null
+  },
+  {
+   "from": "Wall spin",
+   "to": "Wall Spin",
+   "tofragment": null
+  },
+  {
+   "from": "Wallrun",
+   "to": "Wall Run",
+   "tofragment": null
+  },
+  {
+   "from": "WFPF",
+   "to": "World Freerunning & Parkour Federation",
+   "tofragment": null
+  },
+  {
+   "from": "World Freerunning and Parkour Federation",
+   "to": "World Freerunning & Parkour Federation",
+   "tofragment": null
+  }
+ ]
+}

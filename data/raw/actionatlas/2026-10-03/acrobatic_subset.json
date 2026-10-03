@@ -1,0 +1,1842 @@
+{
+ "source": "https://huggingface.co/datasets/mrsalehi/ActionAtlas-v1.0 (data/test-00000-of-00001.parquet, 3.9 MB)",
+ "fetched_at": "2026-10-03",
+ "method": "Downloaded the public 3.9 MB test parquet to a scratch dir, kept rows whose domain is parkour, cheerleading, gymnastics, diving or skating. Metadata only, no video.",
+ "license": "Code repo github.com/mrsalehi/action-atlas is Apache-2.0; the HF dataset card declares no licence. Clips are YouTube references (IDs + timestamps).",
+ "n_rows_total_in_parquet": 934,
+ "n_rows_kept": 114,
+ "domain_counts": {
+  "Cheerleading": 63,
+  "Figure skating": 24,
+  "Figure Skating": 16,
+  "Rhythmic Gymnastics": 3,
+  "Diving": 2,
+  "Gymnastics": 2,
+  "Parkour": 2,
+  "Gymanstics": 1,
+  "Ice Skating": 1
+ },
+ "rows": [
+  {
+   "id": "3c06a3a16ec54f39a623bb6468d2dd67",
+   "domain": "Figure Skating",
+   "action": "Flying camel spin",
+   "youtube_id": "8Ncw0gOVQFI",
+   "start_s": 3.0,
+   "end_s": 7.0,
+   "youtube_title": "Flying Camel Spin",
+   "choices": [
+    "1. Biellmann Spin",
+    "2. Layback Spin",
+    "3. Death Drop",
+    "4. Flying camel spin",
+    "5. Loop Jump"
+   ]
+  },
+  {
+   "id": "7e06f662ef84457099b5db12f3a0d5cc",
+   "domain": "Cheerleading",
+   "action": "All-girl stunt",
+   "youtube_id": "3WCjBdBTtEg",
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "youtube_title": "2021 USA cheer all girl stunt",
+   "choices": [
+    "1. All-girl stunt",
+    "2. Liberty",
+    "3. Extension",
+    "4. Full Up",
+    "5. Basket Toss"
+   ]
+  },
+  {
+   "id": "c123fc2ecf5a42ffbe9f332344ff77b5",
+   "domain": "Cheerleading",
+   "action": "Double back handspring",
+   "youtube_id": "MIbQ6reqGoI",
+   "start_s": 9.5,
+   "end_s": 13.0,
+   "youtube_title": "5 year old double back handspring!!!",
+   "choices": [
+    "1. Front handspring",
+    "2. Round-off back handspring",
+    "3. Double back handspring",
+    "4. Back tuck",
+    "5. Full twist"
+   ]
+  },
+  {
+   "id": "b5db631750ed475b877223b918f43eb8",
+   "domain": "Cheerleading",
+   "action": "Double-based thigh stand",
+   "youtube_id": "sJVqWWWy4Ck",
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "youtube_title": "Thigh Stand Prep to Elevator",
+   "choices": [
+    "1. Extension",
+    "2. Double-based thigh stand",
+    "3. Cradle",
+    "4. Full Down",
+    "5. Shoulder sit stunt"
+   ]
+  },
+  {
+   "id": "a89b868459c741b7a0d455c0c1714097",
+   "domain": "Figure skating",
+   "action": "Broken leg spin",
+   "youtube_id": "M6MgyOsHihg",
+   "start_s": 9.0,
+   "end_s": 12.0,
+   "youtube_title": "Flying camel-broken leg spin combo #shorts #iceskating #spins",
+   "choices": [
+    "1. Layback Spin",
+    "2. Sit Spin",
+    "3. Broken leg spin",
+    "4. Camel Spin",
+    "5. Death Drop"
+   ]
+  },
+  {
+   "id": "ed1dd44a99474fdcb01baf39de4eaf39",
+   "domain": "Cheerleading",
+   "action": "Double back handspring",
+   "youtube_id": "1umSOL8y3FY",
+   "start_s": 0.0,
+   "end_s": 7.0,
+   "youtube_title": "Standing double back handspring tuck",
+   "choices": [
+    "1. Full twisting layout",
+    "2. Back handspring",
+    "3. Back handspring step-out",
+    "4. Double back handspring",
+    "5. Front handspring"
+   ]
+  },
+  {
+   "id": "9008db8e3c5a436d8545221ad2aa0a90",
+   "domain": "Figure skating",
+   "action": "Double flip jump",
+   "youtube_id": "QjX6miBBBAI",
+   "start_s": 0.0,
+   "end_s": 5.0,
+   "youtube_title": "Elizabeth Practices Double Flip Jump",
+   "choices": [
+    "1. Lutz jump",
+    "2. Double flip jump",
+    "3. Triple flip jump",
+    "4. Double Axel jump",
+    "5. Double Salchow jump"
+   ]
+  },
+  {
+   "id": "8bab508d968346319c503cbdee3d29f7",
+   "domain": "Figure skating",
+   "action": "Double flip jump",
+   "youtube_id": "kuiNIExCfIg",
+   "start_s": 0.0,
+   "end_s": 13.0,
+   "youtube_title": "Slow motion double flip jump",
+   "choices": [
+    "1. Double axel",
+    "2. Triple flip jump",
+    "3. Double loop jump",
+    "4. Double lutz jump",
+    "5. Double flip jump"
+   ]
+  },
+  {
+   "id": "c4b462a5df7d4efb9602fe98e5958761",
+   "domain": "Figure skating",
+   "action": "Double salchow jump",
+   "youtube_id": "ADYgJHf7sPA",
+   "start_s": 44.5,
+   "end_s": 49.0,
+   "youtube_title": "The Double Salchow Jump",
+   "choices": [
+    "1. Double axel",
+    "2. Double lutz",
+    "3. Triple salchow",
+    "4. Double salchow jump",
+    "5. Double loop"
+   ]
+  },
+  {
+   "id": "0033f4b65a9b4a709f3169c79a859fe7",
+   "domain": "Cheerleading",
+   "action": "Tuck",
+   "youtube_id": "jtAwxNTV2BU",
+   "start_s": 1.0,
+   "end_s": 6.0,
+   "youtube_title": "STANDING TUCK",
+   "choices": [
+    "1. Herkey",
+    "2. Layout",
+    "3. Full Twist",
+    "4. Pike",
+    "5. Tuck"
+   ]
+  },
+  {
+   "id": "6a5d196b4da74439a12a0851a4a15b31",
+   "domain": "Cheerleading",
+   "action": "Full up",
+   "youtube_id": "216nexavc78",
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "youtube_title": "Full Up Cupie",
+   "choices": [
+    "1. Half Up",
+    "2. Full Twist",
+    "3. Full Down",
+    "4. Basket Toss",
+    "5. Full up"
+   ]
+  },
+  {
+   "id": "5e1f4b69cc324272b0abfb03ecf83d73",
+   "domain": "Cheerleading",
+   "action": "Tuck",
+   "youtube_id": "-kVpwlfuqT0",
+   "start_s": 0.0,
+   "end_s": 6.0,
+   "youtube_title": "Front tuck round off back tuck",
+   "choices": [
+    "1. Layout",
+    "2. Tuck",
+    "3. Full Twist",
+    "4. Pike",
+    "5. Herkie"
+   ]
+  },
+  {
+   "id": "c767694a99d3465091e53a48be5c2df7",
+   "domain": "Cheerleading",
+   "action": "Kick double basket",
+   "youtube_id": "FiWrm8aP7NE",
+   "start_s": 0.0,
+   "end_s": 10.0,
+   "youtube_title": "Midge's kick double basket",
+   "choices": [
+    "1. Kick double basket",
+    "2. Hitch Kick Basket",
+    "3. Toe Touch Basket",
+    "4. Tuck Double Basket",
+    "5. Full Twisting Basket"
+   ]
+  },
+  {
+   "id": "87826740c076403990646453150e808d",
+   "domain": "Figure skating",
+   "action": "Cantilever",
+   "youtube_id": "r9NwqdzT6vA",
+   "start_s": 162.0,
+   "end_s": 166.0,
+   "youtube_title": "Ice Skating: Cantilever Tutorial",
+   "choices": [
+    "1. Hydroblading",
+    "2. Ina Bauer",
+    "3. Cantilever",
+    "4. Spread Eagle",
+    "5. Layback Spin"
+   ]
+  },
+  {
+   "id": "fe3735600efd41848f5c1ffa0184e598",
+   "domain": "Cheerleading",
+   "action": "Kick double basket",
+   "youtube_id": "iKdI4CX3f5I",
+   "start_s": 0.0,
+   "end_s": 6.0,
+   "youtube_title": "kick double basket toss",
+   "choices": [
+    "1. Pike Jump Basket",
+    "2. Double Down Basket",
+    "3. Hurdler Basket",
+    "4. Full Twisting Basket",
+    "5. Kick double basket"
+   ]
+  },
+  {
+   "id": "74e8cd5c66b04784ac5a0dcfe899254a",
+   "domain": "Gymanstics",
+   "action": "Back handspring",
+   "youtube_id": "HRoVFwD3Pro",
+   "start_s": 0.0,
+   "end_s": 13.0,
+   "youtube_title": "Round off back handspring whip back handspring tuck",
+   "choices": [
+    "1. Front Handspring",
+    "2. Back Tuck",
+    "3. Back handspring",
+    "4. Back Pike",
+    "5. Back Layout"
+   ]
+  },
+  {
+   "id": "1d72be234e9e4cc6883757cdb3d527ef",
+   "domain": "Cheerleading",
+   "action": "Back tuck",
+   "youtube_id": "r4i1ZZTog6M",
+   "start_s": 0.0,
+   "end_s": 16.0,
+   "youtube_title": "Back Tuck Flight #Shorts",
+   "choices": [
+    "1. Back tuck",
+    "2. Standing tuck",
+    "3. Front handspring",
+    "4. Toe touch",
+    "5. Front tuck"
+   ]
+  },
+  {
+   "id": "0a38525a6d2c4921b99824d46833c131",
+   "domain": "Cheerleading",
+   "action": "Jump",
+   "youtube_id": "oDqu0Nc9TXY",
+   "start_s": 4.5,
+   "end_s": 8.0,
+   "youtube_title": "Jump Sequence",
+   "choices": [
+    "1. Tumbling pass",
+    "2. Bow and arrow",
+    "3. Jump",
+    "4. Pike",
+    "5. Hurdler"
+   ]
+  },
+  {
+   "id": "deefdadeada94efd8d96be9a6099c32c",
+   "domain": "Cheerleading",
+   "action": "Toe touch",
+   "youtube_id": "lREYoQGmhI8",
+   "start_s": 0.0,
+   "end_s": 9.0,
+   "youtube_title": "Single Toe Touch",
+   "choices": [
+    "1. Pike Jump",
+    "2. Toe touch",
+    "3. Front Hurdler",
+    "4. Herkey Jump",
+    "5. Tuck Jump"
+   ]
+  },
+  {
+   "id": "8d3f38647aab4aefa0a547abedc10bde",
+   "domain": "Figure skating",
+   "action": "Cantilever",
+   "youtube_id": "b8hgiOX4wxY",
+   "start_s": 4.0,
+   "end_s": 7.0,
+   "youtube_title": "Figure skating cantilever",
+   "choices": [
+    "1. Charlotte spiral",
+    "2. Sit spin",
+    "3. Death spiral",
+    "4. Cantilever",
+    "5. Hydroblading"
+   ]
+  },
+  {
+   "id": "8826f3fc1e7c425f9cb43b9264de3e29",
+   "domain": "Figure skating",
+   "action": "Illusion spin",
+   "youtube_id": "OEi4OYce3Ak",
+   "start_s": 242.0,
+   "end_s": 247.0,
+   "youtube_title": "Illusion Spin | Figure Skating Tutorial",
+   "choices": [
+    "1. Scratch spin",
+    "2. Illusion spin",
+    "3. Layback spin",
+    "4. Biellmann spin",
+    "5. Camel spin"
+   ]
+  },
+  {
+   "id": "30001d6690ad46a085f876a2602ccd59",
+   "domain": "Cheerleading",
+   "action": "Full up",
+   "youtube_id": "5_xebz61NH8",
+   "start_s": 0.0,
+   "end_s": 2.5,
+   "youtube_title": "Full Up-Power Press-Full Up",
+   "choices": [
+    "1. Liberty",
+    "2. Full up",
+    "3. Full down",
+    "4. Twist up",
+    "5. Herkie"
+   ]
+  },
+  {
+   "id": "9adb0ee94b434eccb3fe9369a24c0893",
+   "domain": "Cheerleading",
+   "action": "Stunt",
+   "youtube_id": "V_fVFD26VlU",
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "youtube_title": "Crazy stunt #cheer #kentucky #cheerleading #stunt",
+   "choices": [
+    "1. Cupie",
+    "2. Liberty",
+    "3. Basket Toss",
+    "4. Scorpion",
+    "5. Stunt"
+   ]
+  },
+  {
+   "id": "14ba7070da3c47fa9525b74832aa8234",
+   "domain": "Cheerleading",
+   "action": "Back Handspring",
+   "youtube_id": "KeN843c8dts",
+   "start_s": 0.0,
+   "end_s": 6.0,
+   "youtube_title": "BACK HANDSPRING BACKTUCK",
+   "choices": [
+    "1. Round off",
+    "2. Back Walkover",
+    "3. Back Handspring",
+    "4. Cartwheel",
+    "5. Back Tuck"
+   ]
+  },
+  {
+   "id": "572ea14851894a3792887b8eefeb0c70",
+   "domain": "Figure skating",
+   "action": "Toe loop jump",
+   "youtube_id": "iAhHOTqVkdM",
+   "start_s": 0.0,
+   "end_s": 5.0,
+   "youtube_title": "Double Salchow - Toe Loop Jump Sequence",
+   "choices": [
+    "1. Toe loop jump",
+    "2. Salchow jump",
+    "3. Loop jump",
+    "4. Flip jump",
+    "5. Lutz jump"
+   ]
+  },
+  {
+   "id": "911f12c910404bb1ad0674aa643cb623",
+   "domain": "Cheerleading",
+   "action": "Kick double basket",
+   "youtube_id": "G71niMPBOLA",
+   "start_s": 14.0,
+   "end_s": 34.0,
+   "youtube_title": "Kick Double Basket",
+   "choices": [
+    "1. Arabesque Basket",
+    "2. Tuck Jump Basket",
+    "3. Toe Touch Basket",
+    "4. Kick double basket",
+    "5. Full-up Basket"
+   ]
+  },
+  {
+   "id": "f5f13adfa38b4b66b1d905d152020c7d",
+   "domain": "Cheerleading",
+   "action": "Back tuck",
+   "youtube_id": "Z05xXDPzsA4",
+   "start_s": 0.0,
+   "end_s": 9.0,
+   "youtube_title": "my awesome back tuck!!!!!",
+   "choices": [
+    "1. Front Tuck",
+    "2. Round Off",
+    "3. Layout",
+    "4. Back tuck",
+    "5. Back Handspring"
+   ]
+  },
+  {
+   "id": "9f0e9d9f74ee444dbd46c532f89d3555",
+   "domain": "Figure skating",
+   "action": "Illusion spin",
+   "youtube_id": "DPPRKd_0_MM",
+   "start_s": 1.5,
+   "end_s": 6.0,
+   "youtube_title": "Illusion spin #iceskating #shorts #spins",
+   "choices": [
+    "1. Illusion spin",
+    "2. Camel Spin",
+    "3. Butterfly Spin",
+    "4. Layback Spin",
+    "5. Biellmann Spin"
+   ]
+  },
+  {
+   "id": "c60115b99e484dd0b72333248ddc082f",
+   "domain": "Cheerleading",
+   "action": "Arabesque",
+   "youtube_id": "0qTAzvDeEjE",
+   "start_s": 0.0,
+   "end_s": 9.0,
+   "youtube_title": "Arabesque waterfall",
+   "choices": [
+    "1. Scale",
+    "2. Liberty",
+    "3. Bow and arrow",
+    "4. Heel stretch",
+    "5. Arabesque"
+   ]
+  },
+  {
+   "id": "676e6652a9ae47a9850205858d2a6859",
+   "domain": "Cheerleading",
+   "action": "Waterfall",
+   "youtube_id": "0qTAzvDeEjE",
+   "start_s": 10.0,
+   "end_s": 14.0,
+   "youtube_title": "Arabesque waterfall",
+   "choices": [
+    "1. Basket toss",
+    "2. Full up",
+    "3. Waterfall",
+    "4. Pike jump",
+    "5. Liberty"
+   ]
+  },
+  {
+   "id": "5ce93d29a74f4e269ac211737b21c538",
+   "domain": "Cheerleading",
+   "action": "Jump",
+   "youtube_id": "MfHfao--0WQ",
+   "start_s": 5.0,
+   "end_s": 7.5,
+   "youtube_title": "Pike Jump",
+   "choices": [
+    "1. Jump",
+    "2. Toe Touch",
+    "3. Power Jump",
+    "4. Tuck Jump",
+    "5. Herkie Jump"
+   ]
+  },
+  {
+   "id": "08d697225c4240679914d60c4074cb02",
+   "domain": "Cheerleading",
+   "action": "Kick double basket",
+   "youtube_id": "G71niMPBOLA",
+   "start_s": 36.0,
+   "end_s": 40.0,
+   "youtube_title": "Kick Double Basket",
+   "choices": [
+    "1. Full Up Basket",
+    "2. Pike Basket",
+    "3. Bow and Arrow Basket",
+    "4. Liberty Basket",
+    "5. Kick double basket"
+   ]
+  },
+  {
+   "id": "1c9c035ad3df4182a921f504ae9317db",
+   "domain": "Cheerleading",
+   "action": "Arabesque",
+   "youtube_id": "C3tS8qU-tPo",
+   "start_s": 3.0,
+   "end_s": 10.0,
+   "youtube_title": "arabesque lift",
+   "choices": [
+    "1. Basket Toss",
+    "2. Scale",
+    "3. Liberty",
+    "4. Heel Stretch",
+    "5. Arabesque"
+   ]
+  },
+  {
+   "id": "6cacb8e9ed174fa1b9595fd57fb51c3d",
+   "domain": "Figure skating",
+   "action": "Double Salchow",
+   "youtube_id": "iAhHOTqVkdM",
+   "start_s": 0.0,
+   "end_s": 5.0,
+   "youtube_title": "Double Salchow - Toe Loop Jump Sequence",
+   "choices": [
+    "1. Double Lutz",
+    "2. Single Salchow",
+    "3. Triple Toe Loop",
+    "4. Double Salchow",
+    "5. Double Flip"
+   ]
+  },
+  {
+   "id": "d960eb58e2384a20a21a1d1d43d02585",
+   "domain": "Cheerleading",
+   "action": "Arabesque",
+   "youtube_id": "f6GllmZw3eE",
+   "start_s": 1.0,
+   "end_s": 5.0,
+   "youtube_title": "arabesque full",
+   "choices": [
+    "1. Heel Stretch",
+    "2. Basket Toss",
+    "3. Arabesque",
+    "4. Cupie",
+    "5. Liberty"
+   ]
+  },
+  {
+   "id": "c88239c4e01a43149c10f531f2da9259",
+   "domain": "Cheerleading",
+   "action": "Tuck Basket",
+   "youtube_id": "BSn_0PLwDl4",
+   "start_s": 15.0,
+   "end_s": 30.0,
+   "youtube_title": "Tuck Basket",
+   "choices": [
+    "1. Layout Basket",
+    "2. Tuck Basket",
+    "3. Pike Basket",
+    "4. Twisting Basket",
+    "5. Full Basket"
+   ]
+  },
+  {
+   "id": "8d7be28a8a7f4cc6b317591387b26365",
+   "domain": "Cheerleading",
+   "action": "Front tuck",
+   "youtube_id": "4Ghbv9ayN1M",
+   "start_s": 0.0,
+   "end_s": 7.0,
+   "youtube_title": "Front Handspring Front Tuck Front Tuck! #gymnastics #floor",
+   "choices": [
+    "1. Full Twist",
+    "2. Pike Jump",
+    "3. Roundoff",
+    "4. Front tuck",
+    "5. Back Handspring"
+   ]
+  },
+  {
+   "id": "fe447f9475564b16abb9e5c891f2847d",
+   "domain": "Cheerleading",
+   "action": "Whip back",
+   "youtube_id": "TmGR4DGPVw8",
+   "start_s": 0.0,
+   "end_s": 20.0,
+   "youtube_title": "Tumbling whip back handspring",
+   "choices": [
+    "1. Back tuck",
+    "2. Whip back",
+    "3. Arabian flip",
+    "4. Round-off back handspring",
+    "5. Back walkover"
+   ]
+  },
+  {
+   "id": "bd4e44776c3341d5a3704c3b2c0cc78a",
+   "domain": "Cheerleading",
+   "action": "Extension",
+   "youtube_id": "aLPFj5ljaDk",
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "youtube_title": "Extension fold down",
+   "choices": [
+    "1. Extension",
+    "2. Liberty",
+    "3. Cupie",
+    "4. Basket toss",
+    "5. Heel stretch"
+   ]
+  },
+  {
+   "id": "a5f6aa8c6ce04f83a7b50c5ae6041387",
+   "domain": "Cheerleading",
+   "action": "Layout",
+   "youtube_id": "h1uplzMCUus",
+   "start_s": 0.0,
+   "end_s": 7.0,
+   "youtube_title": "Double Layout",
+   "choices": [
+    "1. Toe Touch",
+    "2. Full Twist",
+    "3. Layout",
+    "4. Pike Jump",
+    "5. Tuck Jump"
+   ]
+  },
+  {
+   "id": "6b2599df18014607a85a3ef7af4fb1d6",
+   "domain": "Cheerleading",
+   "action": "Back walkover",
+   "youtube_id": "Rf-oeUoawkc",
+   "start_s": 0.0,
+   "end_s": 6.0,
+   "youtube_title": "Back walkover back handspring",
+   "choices": [
+    "1. Roundoff",
+    "2. Back walkover",
+    "3. Back handspring",
+    "4. Front walkover",
+    "5. Back layout"
+   ]
+  },
+  {
+   "id": "c9ee37633b2147489a5b4983e1154edf",
+   "domain": "Figure skating",
+   "action": "Flying camel spin",
+   "youtube_id": "P1Pno-Z2S0g",
+   "start_s": 20.0,
+   "end_s": 25.0,
+   "youtube_title": "Layback & Flying Camel Spin",
+   "choices": [
+    "1. Layback Spin",
+    "2. Biellmann Spin",
+    "3. Death Drop",
+    "4. Loop Jump",
+    "5. Flying camel spin"
+   ]
+  },
+  {
+   "id": "ecd846c9b3164f6587a347d5c0f67a07",
+   "domain": "Cheerleading",
+   "action": "Dance",
+   "youtube_id": "hXOC1KazWjA",
+   "start_s": 53.0,
+   "end_s": 63.0,
+   "youtube_title": "CHEER FITNESS DANCE | CHEER DANCE | WITH MUSIC",
+   "choices": [
+    "1. Pom-pom shake",
+    "2. High kick",
+    "3. Dance",
+    "4. Toe touch",
+    "5. Liberty stunt"
+   ]
+  },
+  {
+   "id": "dee0a285335e4ef993ed0e08f2cdab48",
+   "domain": "Cheerleading",
+   "action": "Scorpion",
+   "youtube_id": "d_CzpfJlDeY",
+   "start_s": 408.0,
+   "end_s": 416.0,
+   "youtube_title": "DETAILED Scorpion Tutorial!!!",
+   "choices": [
+    "1. Bow and arrow",
+    "2. Scorpion",
+    "3. Arabesque",
+    "4. Needle",
+    "5. Heel stretch"
+   ]
+  },
+  {
+   "id": "c616f59991d94683ae1dbc7057a2fdc8",
+   "domain": "Figure skating",
+   "action": "Axel jump",
+   "youtube_id": "cB1aapQo2fI",
+   "start_s": 7.0,
+   "end_s": 11.0,
+   "youtube_title": "Axel jump 🙌🙌",
+   "choices": [
+    "1. Axel jump",
+    "2. Flip jump",
+    "3. Double Axel",
+    "4. Salchow jump",
+    "5. Lutz jump"
+   ]
+  },
+  {
+   "id": "cec84c05227d4c3c91d50b274d039227",
+   "domain": "Figure Skating",
+   "action": "Hydroblade",
+   "youtube_id": "8HfIF0n9TIU",
+   "start_s": 190.0,
+   "end_s": 196.0,
+   "youtube_title": "HYDROBLADE Tutorial - Figure Skating Moves",
+   "choices": [
+    "1. Death spiral",
+    "2. Hydroblade",
+    "3. Sit spin",
+    "4. Russian split",
+    "5. Lunge"
+   ]
+  },
+  {
+   "id": "d0c7f3391a414417936cd659733dfe54",
+   "domain": "Figure skating",
+   "action": "Double flip jump",
+   "youtube_id": "QKNrAtDSd-M",
+   "start_s": 3.0,
+   "end_s": 5.7,
+   "youtube_title": "double flip jump figure skating🤯💥⛸ #shorts",
+   "choices": [
+    "1. Salchow jump",
+    "2. Quad jump",
+    "3. Double flip jump",
+    "4. Camel spin",
+    "5. Axel jump"
+   ]
+  },
+  {
+   "id": "d1db181ce1ed4dd4b54a71e7b513af21",
+   "domain": "Figure skating",
+   "action": "Double salchow jump",
+   "youtube_id": "ZdlkABitTE0",
+   "start_s": 0.5,
+   "end_s": 3.0,
+   "youtube_title": "Axel + Double Salchow Jump Combo | Figure Skating #shorts",
+   "choices": [
+    "1. Triple salchow",
+    "2. Double salchow jump",
+    "3. Single flip jump",
+    "4. Double lutz",
+    "5. Double axel"
+   ]
+  },
+  {
+   "id": "e78fa7d0d9cf45ea9ca6a56174d2e07a",
+   "domain": "Cheerleading",
+   "action": "Whip back",
+   "youtube_id": "Rnf90S3cj4M",
+   "start_s": 0.0,
+   "end_s": 5.0,
+   "youtube_title": "Round off whip back handspring",
+   "choices": [
+    "1. Round off back handspring",
+    "2. Whip back",
+    "3. Full twisting layout",
+    "4. Back handspring step out",
+    "5. Back tuck"
+   ]
+  },
+  {
+   "id": "6f875a2faafd4369a381e1df695a6969",
+   "domain": "Figure Skating",
+   "action": "Flying camel spin",
+   "youtube_id": "G34Pl-f_HAk",
+   "start_s": 198.0,
+   "end_s": 202.0,
+   "youtube_title": "How to do a FLYING CAMEL Spin!",
+   "choices": [
+    "1. Salchow Jump",
+    "2. Death Drop",
+    "3. Biellmann Spin",
+    "4. Layback Spin",
+    "5. Flying camel spin"
+   ]
+  },
+  {
+   "id": "99b7bd85bd7647e0a5e9bf6746b88d17",
+   "domain": "Cheerleading",
+   "action": "Kick double basket",
+   "youtube_id": "HScQWF6hOeY",
+   "start_s": 10.0,
+   "end_s": 21.0,
+   "youtube_title": "kick double basket toss",
+   "choices": [
+    "1. Full Twist Cradle",
+    "2. Kick double basket",
+    "3. Toe Touch Basket",
+    "4. Pike Basket",
+    "5. Hurdler Basket"
+   ]
+  },
+  {
+   "id": "8b8d73cabed1416ab28cfca534484565",
+   "domain": "Cheerleading",
+   "action": "Front tuck",
+   "youtube_id": "SHdRHoULuEw",
+   "start_s": 268.0,
+   "end_s": 278.0,
+   "youtube_title": "How To Front Tuck.",
+   "choices": [
+    "1. Back Tuck",
+    "2. Back handspring",
+    "3. Front Handspring",
+    "4. Front tuck",
+    "5. Round off"
+   ]
+  },
+  {
+   "id": "301aab842a87486795640f286e408f11",
+   "domain": "Figure Skating",
+   "action": "Flip jump",
+   "youtube_id": "8EirjlfB8s0",
+   "start_s": 7.0,
+   "end_s": 10.0,
+   "youtube_title": "Single Flip Jump | Figure Skating",
+   "choices": [
+    "1. Loop jump",
+    "2. Flip jump",
+    "3. Toe loop jump",
+    "4. Salchow jump",
+    "5. Lutz jump"
+   ]
+  },
+  {
+   "id": "0fcce2e97d7141bfadf43c078072fdf7",
+   "domain": "Figure skating",
+   "action": "Double lutz",
+   "youtube_id": "F3Tps4WsFfY",
+   "start_s": 9.0,
+   "end_s": 18.0,
+   "youtube_title": "Lutz Jump Exercise + Double Lutz",
+   "choices": [
+    "1. Double lutz",
+    "2. Double Loop",
+    "3. Triple Lutz",
+    "4. Double Salchow",
+    "5. Double Axel"
+   ]
+  },
+  {
+   "id": "cf3c9b05350d4a02a9d317abb3615fed",
+   "domain": "Figure skating",
+   "action": "Lutz jump",
+   "youtube_id": "F3Tps4WsFfY",
+   "start_s": 3.0,
+   "end_s": 8.5,
+   "youtube_title": "Lutz Jump Exercise + Double Lutz",
+   "choices": [
+    "1. Double axel",
+    "2. Salchow jump",
+    "3. Lutz jump",
+    "4. Axel jump",
+    "5. Toe loop jump"
+   ]
+  },
+  {
+   "id": "1bb9b6173320479fbf10a50f2451706f",
+   "domain": "Figure skating",
+   "action": "Flip jump",
+   "youtube_id": "8EirjlfB8s0",
+   "start_s": 7.0,
+   "end_s": 10.0,
+   "youtube_title": "Single Flip Jump | Figure Skating",
+   "choices": [
+    "1. Flip jump",
+    "2. Lutz jump",
+    "3. Toe loop jump",
+    "4. Salchow jump",
+    "5. Loop jump"
+   ]
+  },
+  {
+   "id": "4948e8579e73431190fc67d5a1d8522a",
+   "domain": "Cheerleading",
+   "action": "Double toe touch",
+   "youtube_id": "CGflKu5ds70",
+   "start_s": 0.0,
+   "end_s": 6.0,
+   "youtube_title": "Double toe touch back tuck!:)",
+   "choices": [
+    "1. Tuck jump",
+    "2. Pike jump",
+    "3. Single toe touch",
+    "4. Tripe toe touch",
+    "5. Double toe touch"
+   ]
+  },
+  {
+   "id": "9aefa99d548d405db1dc68f82d03aa3e",
+   "domain": "Cheerleading",
+   "action": "Back handspring",
+   "youtube_id": "OUK6raHFHUY",
+   "start_s": 0.0,
+   "end_s": 4.0,
+   "youtube_title": "RUNNING BACK HANDSPRING",
+   "choices": [
+    "1. Layout",
+    "2. Back handspring",
+    "3. Back tuck",
+    "4. Front Handspring",
+    "5. Full Twist"
+   ]
+  },
+  {
+   "id": "023463713db1460abe0fdf800fde9ab9",
+   "domain": "Cheerleading",
+   "action": "Standing back tuck",
+   "youtube_id": "XlETUjKVSM4",
+   "start_s": 177.0,
+   "end_s": 181.0,
+   "youtube_title": "Gymnastics Tutorial:  Standing Back Tuck",
+   "choices": [
+    "1. Back handspring step-out",
+    "2. Standing back tuck",
+    "3. Back tuck",
+    "4. Front tuck",
+    "5. Round-off back handspring"
+   ]
+  },
+  {
+   "id": "86ef0e12a8ca421982997d7493f033fd",
+   "domain": "Figure Skating",
+   "action": "Flying sit spin",
+   "youtube_id": "Xy0rDDyzbB4",
+   "start_s": 5.0,
+   "end_s": 9.0,
+   "youtube_title": "Flying Sit Spin",
+   "choices": [
+    "1. Butterfly Spin",
+    "2. Flying sit spin",
+    "3. Scratch Spin",
+    "4. Layback Spin",
+    "5. Death Drop"
+   ]
+  },
+  {
+   "id": "aab0ef46335a4236b328ed19b3509798",
+   "domain": "Cheerleading",
+   "action": "Cartwheel Full Twist",
+   "youtube_id": "4xygVP6hw9s",
+   "start_s": 0.0,
+   "end_s": 5.0,
+   "youtube_title": "Cartwheel 🤸‍♀️ full #cheer #tumbling #cartwheel",
+   "choices": [
+    "1. Front Handspring",
+    "2. Cartwheel Full Twist",
+    "3. Double Full Twist",
+    "4. Full Twisting Layout",
+    "5. Round-off Back Handspring"
+   ]
+  },
+  {
+   "id": "0b488dd6ff4f4ff987b0a68c6cab683b",
+   "domain": "Cheerleading",
+   "action": "Herkie",
+   "youtube_id": "JBuAOviwwhg",
+   "start_s": 16.0,
+   "end_s": 26.0,
+   "youtube_title": "Left Herkie Cheer Jump!",
+   "choices": [
+    "1. Tuck Jump",
+    "2. Pike Jump",
+    "3. Scorpion",
+    "4. Herkie",
+    "5. Toe Touch"
+   ]
+  },
+  {
+   "id": "3f2af876bbf94264b58220cd72d9c116",
+   "domain": "Cheerleading",
+   "action": "Kick full twist",
+   "youtube_id": "8cG9uZhswgk",
+   "start_s": 0.0,
+   "end_s": 10.0,
+   "youtube_title": "Kick full dismounts",
+   "choices": [
+    "1. Scorpion",
+    "2. Kick double basket",
+    "3. Arabesque",
+    "4. Kick full twist",
+    "5. Liberty"
+   ]
+  },
+  {
+   "id": "34c58063b24e4e5b859877c3464b5cf6",
+   "domain": "Cheerleading",
+   "action": "One person Thigh stand",
+   "youtube_id": "mm5LWQVHpVw",
+   "start_s": 5.0,
+   "end_s": 12.0,
+   "youtube_title": "One Person Thigh Stand",
+   "choices": [
+    "1. One person Thigh stand",
+    "2. Liberty",
+    "3. Elevator",
+    "4. Shoulder sit stunt",
+    "5. Basket toss"
+   ]
+  },
+  {
+   "id": "02730b175fa2433a81c5ecc07d528f7c",
+   "domain": "Cheerleading",
+   "action": "Scorpion",
+   "youtube_id": "Q9EKf5GARj8",
+   "start_s": 0.0,
+   "end_s": 15.0,
+   "youtube_title": "first time scorpion",
+   "choices": [
+    "1. Basket Toss",
+    "2. Scorpion",
+    "3. Arabesque",
+    "4. Bow and Arrow",
+    "5. Heel Stretch"
+   ]
+  },
+  {
+   "id": "e7a558b987f9433bbb365a630f46c670",
+   "domain": "Cheerleading",
+   "action": "Arabesque",
+   "youtube_id": "5EpT80oAoNA",
+   "start_s": 0.0,
+   "end_s": 6.0,
+   "youtube_title": "Arabesque Double",
+   "choices": [
+    "1. Heel stretch",
+    "2. Scorpion",
+    "3. Arabesque",
+    "4. Basket toss",
+    "5. Liberty"
+   ]
+  },
+  {
+   "id": "3bc463b40095437d8e68813c0a51bf15",
+   "domain": "Cheerleading",
+   "action": "Cartwheel",
+   "youtube_id": "EZk3xbWStNU",
+   "start_s": 0.0,
+   "end_s": 10.0,
+   "youtube_title": "Cartwheel Tuck #Shorts",
+   "choices": [
+    "1. Tumbling pass",
+    "2. Aerial",
+    "3. Handspring step-out",
+    "4. Cartwheel",
+    "5. Roundoff"
+   ]
+  },
+  {
+   "id": "92bd9b73a42144b0b12746ce1025494d",
+   "domain": "Figure skating",
+   "action": "Knee slide",
+   "youtube_id": "bNH5pLIfhpk",
+   "start_s": 0.0,
+   "end_s": 7.0,
+   "youtube_title": "Knee Slide Into Double Axel!! #shorts",
+   "choices": [
+    "1. Sit spin",
+    "2. Ina Bauer",
+    "3. Spiral sequence",
+    "4. Knee slide",
+    "5. Hydroblade"
+   ]
+  },
+  {
+   "id": "adadf45f7c3647b899e2b800d094cecf",
+   "domain": "Figure Skating",
+   "action": "Double lutz",
+   "youtube_id": "F3Tps4WsFfY",
+   "start_s": 10.0,
+   "end_s": 16.0,
+   "youtube_title": "Lutz Jump Exercise + Double Lutz",
+   "choices": [
+    "1. Double lutz",
+    "2. Double Axel",
+    "3. Double Salchow",
+    "4. Triple Lutz",
+    "5. Double Loop"
+   ]
+  },
+  {
+   "id": "85b7aceed68a416eb10c8f0bcb753675",
+   "domain": "Figure Skating",
+   "action": "Death drop",
+   "youtube_id": "ImJypXvQpYY",
+   "start_s": 0.0,
+   "end_s": 11.0,
+   "youtube_title": "Death drop figure skating spin ⛸",
+   "choices": [
+    "1. Flying Camel Spin",
+    "2. Double Axel",
+    "3. Flip Jump",
+    "4. Death drop",
+    "5. Salchow Jump"
+   ]
+  },
+  {
+   "id": "48f38d1454f540b2ac6483e214f2b79c",
+   "domain": "Figure Skating",
+   "action": "Waltz jump",
+   "youtube_id": "ijSVJEaMbFU",
+   "start_s": 0.0,
+   "end_s": 5.0,
+   "youtube_title": "Ella waltz jump / loop",
+   "choices": [
+    "1. Toe loop",
+    "2. Salchow",
+    "3. Waltz jump",
+    "4. Lutz",
+    "5. Loop jump"
+   ]
+  },
+  {
+   "id": "deb66bf509554e529e876a2af7f868d1",
+   "domain": "Figure Skating",
+   "action": "Backward Outside Double 3 Turn",
+   "youtube_id": "fmhNAgQjLoU",
+   "start_s": 148.0,
+   "end_s": 152.0,
+   "youtube_title": "100. Senior 5: Serpentine Step Sequence",
+   "choices": [
+    "1. Forward Outside Double 3 Turn",
+    "2. Forward Inside Double 3 Turn",
+    "3. Backward Outside Double 3 Turn",
+    "4. Forward Outside Single 3 Turn",
+    "5. Backward Outside Triple 3 Turn"
+   ]
+  },
+  {
+   "id": "ecc31d7b5ace4350ab9d3d604d939814",
+   "domain": "Figure skating",
+   "action": "Double Axel",
+   "youtube_id": "bNH5pLIfhpk",
+   "start_s": 0.0,
+   "end_s": 7.0,
+   "youtube_title": "Knee Slide Into Double Axel!! #shorts",
+   "choices": [
+    "1. Salchow jump",
+    "2. Lutz jump",
+    "3. Triple toe loop",
+    "4. Loop jump",
+    "5. Double Axel"
+   ]
+  },
+  {
+   "id": "579b63fe63bb473fa2b79e27b20a9ab1",
+   "domain": "Figure Skating",
+   "action": "Twizzle",
+   "youtube_id": "hFk_QPrimlc",
+   "start_s": 13.0,
+   "end_s": 16.0,
+   "youtube_title": "Jessica Twizzle Exercise",
+   "choices": [
+    "1. Camel spin",
+    "2. Ina Bauer",
+    "3. Sit spin",
+    "4. Twizzle",
+    "5. Flip jump"
+   ]
+  },
+  {
+   "id": "50e232d38a22476197d1f50598007ee5",
+   "domain": "Figure skating",
+   "action": "I-spin",
+   "youtube_id": "gZWtDiXAfUA",
+   "start_s": 0.0,
+   "end_s": 15.0,
+   "youtube_title": "I spin figure skating spin",
+   "choices": [
+    "1. Camel spin",
+    "2. I-spin",
+    "3. Sit spin",
+    "4. Layback spin",
+    "5. Flying camel spin"
+   ]
+  },
+  {
+   "id": "ab9a6137de0944cdae1edfbc2e478411",
+   "domain": "Cheerleading",
+   "action": "Double down",
+   "youtube_id": "kaK9xvgAQHI",
+   "start_s": 0.0,
+   "end_s": 10.0,
+   "youtube_title": "arabesque double down",
+   "choices": [
+    "1. Full-up",
+    "2. Herkie",
+    "3. Basket toss",
+    "4. Liberty",
+    "5. Double down"
+   ]
+  },
+  {
+   "id": "a4999f1fd7cb4cae883df1a1f32b17ca",
+   "domain": "Cheerleading",
+   "action": "Valdez",
+   "youtube_id": "OtxHCqcBR_Y",
+   "start_s": 0.0,
+   "end_s": 7.0,
+   "youtube_title": "Valdez back handspring",
+   "choices": [
+    "1. Front walkover",
+    "2. Standing backflip",
+    "3. Back handspring",
+    "4. Valdez",
+    "5. Round off"
+   ]
+  },
+  {
+   "id": "4464c7f9fb1f4e5e9bcc9483c129d685",
+   "domain": "Figure Skating",
+   "action": "Forward Outside 3 Turn",
+   "youtube_id": "fmhNAgQjLoU",
+   "start_s": 145.5,
+   "end_s": 148.5,
+   "youtube_title": "100. Senior 5: Serpentine Step Sequence",
+   "choices": [
+    "1. Forward Outside 3 Turn",
+    "2. Forward Inside 3 Turn",
+    "3. Backward Inside 3 Turn",
+    "4. Forward Outside Rocker",
+    "5. Forward Inside Loop"
+   ]
+  },
+  {
+   "id": "1c0d44c2c35648ed82c0726a07531f26",
+   "domain": "Cheerleading",
+   "action": "Bow and arrow",
+   "youtube_id": "Os7il03nD5M",
+   "start_s": 87.0,
+   "end_s": 92.0,
+   "youtube_title": "second cheerleading bow and arrow tutorial (requested)",
+   "choices": [
+    "1. Scale",
+    "2. Bow and arrow",
+    "3. Liberty",
+    "4. Heel Stretch",
+    "5. Toe Touch"
+   ]
+  },
+  {
+   "id": "9bf6311e63a348fe8596eabdd2e56317",
+   "domain": "Figure Skating",
+   "action": "Lutz jump",
+   "youtube_id": "F3Tps4WsFfY",
+   "start_s": 5.0,
+   "end_s": 9.0,
+   "youtube_title": "Lutz Jump Exercise + Double Lutz",
+   "choices": [
+    "1. Toe loop jump",
+    "2. Salchow jump",
+    "3. Lutz jump",
+    "4. Triple Lutz",
+    "5. Double Axel"
+   ]
+  },
+  {
+   "id": "b682bf9644a24c3aac78e0d4068b4b32",
+   "domain": "Cheerleading",
+   "action": "High kick",
+   "youtube_id": "GgyfLxSU_0Q",
+   "start_s": 0.0,
+   "end_s": 14.0,
+   "youtube_title": "Basketball cheer high kick",
+   "choices": [
+    "1. Front Hurdler",
+    "2. High kick",
+    "3. Toe Touch",
+    "4. Pike Jump",
+    "5. Herky Jump"
+   ]
+  },
+  {
+   "id": "d978fbb69c17430aab170d56fb57a799",
+   "domain": "Cheerleading",
+   "action": "Punch front",
+   "youtube_id": "h6-f13zvMY0",
+   "start_s": 0.0,
+   "end_s": 5.0,
+   "youtube_title": "punch front to double",
+   "choices": [
+    "1. Back tuck",
+    "2. Front aerial",
+    "3. Punch front",
+    "4. Full-twisting layout",
+    "5. Tuck jump"
+   ]
+  },
+  {
+   "id": "c55577063a1145838e7b002d5a102ed1",
+   "domain": "Figure Skating",
+   "action": "Toe loop jump",
+   "youtube_id": "6a3URzAHPGQ",
+   "start_s": 232.0,
+   "end_s": 236.0,
+   "youtube_title": "How To Do The Toe Loop Jump - In Figure Skates!",
+   "choices": [
+    "1. Loop jump",
+    "2. Half loop jump",
+    "3. Toe loop jump",
+    "4. Flip jump",
+    "5. Salchow jump"
+   ]
+  },
+  {
+   "id": "e96bbe1ec53e42448200252af2465150",
+   "domain": "Figure Skating",
+   "action": "Twizzle",
+   "youtube_id": "hFk_QPrimlc",
+   "start_s": 0.0,
+   "end_s": 4.0,
+   "youtube_title": "Jessica Twizzle Exercise",
+   "choices": [
+    "1. Loop Jump",
+    "2. Camel Spin",
+    "3. Twizzle",
+    "4. Ina Bauer",
+    "5. Lutz Jump"
+   ]
+  },
+  {
+   "id": "fca29101bbd44c70a09f77eacdf7528c",
+   "domain": "Cheerleading",
+   "action": "Front flip",
+   "youtube_id": "CJkujaJG8QU",
+   "start_s": 0.0,
+   "end_s": 9.0,
+   "youtube_title": "front flip dismount 2",
+   "choices": [
+    "1. Pike Jump",
+    "2. Tuck Jump",
+    "3. Toe Touch",
+    "4. Front flip",
+    "5. Back flip"
+   ]
+  },
+  {
+   "id": "3aef335c064a426b9bcee7e1abbc755e",
+   "domain": "Cheerleading",
+   "action": "Aerial",
+   "youtube_id": "Q82oJMGyxOc",
+   "start_s": 138.0,
+   "end_s": 141.0,
+   "youtube_title": "How to do an Aerial",
+   "choices": [
+    "1. Round-off",
+    "2. Aerial",
+    "3. Front handspring",
+    "4. Back tuck",
+    "5. Cartwheel"
+   ]
+  },
+  {
+   "id": "16b553c629504701afa50d4bd331c8b5",
+   "domain": "Cheerleading",
+   "action": "Double twist",
+   "youtube_id": "oHVpoCt3-9o",
+   "start_s": 20.0,
+   "end_s": 23.0,
+   "youtube_title": "Cheerleading Double Twist Down Stunt",
+   "choices": [
+    "1. Full twist",
+    "2. Double twist",
+    "3. Herkey jump",
+    "4. Liberty stunt",
+    "5. Basket toss"
+   ]
+  },
+  {
+   "id": "75e7b8d6a8604ebd952e8af8d8f74c9e",
+   "domain": "Figure skating",
+   "action": "Half loop",
+   "youtube_id": "Zl7O_HLaVns",
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "youtube_title": "Axel + Half Loop + Triple Sal Combo!! #shorts",
+   "choices": [
+    "1. Lutz jump",
+    "2. Flip jump",
+    "3. Salchow jump",
+    "4. Half loop",
+    "5. Toe loop jump"
+   ]
+  },
+  {
+   "id": "4a726631eb61426592ba914aeaf517ad",
+   "domain": "Figure skating",
+   "action": "Triple salchow",
+   "youtube_id": "Zl7O_HLaVns",
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "youtube_title": "Axel + Half Loop + Triple Sal Combo!! #shorts",
+   "choices": [
+    "1. Triple Lutz",
+    "2. Triple Toe Walley",
+    "3. Triple salchow",
+    "4. Triple Loop",
+    "5. Double Axel"
+   ]
+  },
+  {
+   "id": "f1c50df5a9b1488cbaa49c68874796f7",
+   "domain": "Figure skating",
+   "action": "Axel",
+   "youtube_id": "Zl7O_HLaVns",
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "youtube_title": "Axel + Half Loop + Triple Sal Combo!! #shorts",
+   "choices": [
+    "1. Salchow Jump",
+    "2. Flip Jump",
+    "3. Axel ",
+    "4. Walley Jump",
+    "5. Loop Jump"
+   ]
+  },
+  {
+   "id": "67d0c14504ef49d2bfc69742f54cc739",
+   "domain": "Cheerleading",
+   "action": "Twist cradle",
+   "youtube_id": "CKmAhsBn588",
+   "start_s": 5.0,
+   "end_s": 17.0,
+   "youtube_title": "Twist cradle",
+   "choices": [
+    "1. Pike jump",
+    "2. Toe touch basket",
+    "3. Basket toss",
+    "4. Twist cradle",
+    "5. Full-up stunt"
+   ]
+  },
+  {
+   "id": "66b2ca0ed0464bcbaf30c27515dfb1eb",
+   "domain": "Cheerleading",
+   "action": "Liberty",
+   "youtube_id": "Df_5Ri6qMCs",
+   "start_s": 8.0,
+   "end_s": 10.0,
+   "youtube_title": "Liberty Cheer Stunt",
+   "choices": [
+    "1. Cupie",
+    "2. Arabesque",
+    "3. Liberty",
+    "4. Torch",
+    "5. Scale"
+   ]
+  },
+  {
+   "id": "99d69e3519ae4acd9512e79dd4baaea7",
+   "domain": "Cheerleading",
+   "action": "Double cupie",
+   "youtube_id": "PRH3Nc-DpGA",
+   "start_s": 0.0,
+   "end_s": 9.0,
+   "youtube_title": "Double Cupie",
+   "choices": [
+    "1. Double cupie",
+    "2. Liberty",
+    "3. Scale",
+    "4. Rewind",
+    "5. Cupie"
+   ]
+  },
+  {
+   "id": "f88b4a9776f74e83bf827b64e39af5d8",
+   "domain": "Cheerleading",
+   "action": "Aerial",
+   "youtube_id": "Q82oJMGyxOc",
+   "start_s": 146.0,
+   "end_s": 149.0,
+   "youtube_title": "How to do an Aerial",
+   "choices": [
+    "1. Back Handspring",
+    "2. Roundoff",
+    "3. Aerial",
+    "4. Front Walkover",
+    "5. Cartwheel"
+   ]
+  },
+  {
+   "id": "2aab7e19661f479f89e24bfb6bdc73f8",
+   "domain": "Diving",
+   "action": "Inward flip",
+   "youtube_id": "hMMgJOETmoA",
+   "start_s": 0.0,
+   "end_s": 6.0,
+   "youtube_title": "Inward flip #tuck",
+   "choices": [
+    "1. Forward flip",
+    "2. Backward flip",
+    "3. Inward flip",
+    "4. Backward somersault",
+    "5. Pike dive"
+   ]
+  },
+  {
+   "id": "06dc58660fef49f3933672eec8af611e",
+   "domain": "Cheerleading",
+   "action": "Basket toss",
+   "youtube_id": "A7kOVWtpiwM",
+   "start_s": 260.0,
+   "end_s": 266.0,
+   "youtube_title": "Básicos Basket Toss",
+   "choices": [
+    "1. Twist cradle",
+    "2. Basket toss",
+    "3. Cradle catch",
+    "4. Scorpion stunt",
+    "5. Full-up stunt"
+   ]
+  },
+  {
+   "id": "9ab5fba22c1c4d0f903dec68c06b9888",
+   "domain": "Cheerleading",
+   "action": "Triple toe touch",
+   "youtube_id": "WWHoYBLzN3M",
+   "start_s": 0.0,
+   "end_s": 20.0,
+   "youtube_title": "Triple Toe Touch- Cheer",
+   "choices": [
+    "1. Double Toe Touch",
+    "2. Pike Jump",
+    "3. Toe touch",
+    "4. Front Hurdler",
+    "5. Triple toe touch"
+   ]
+  },
+  {
+   "id": "a30644467a964ca58ecacb523aeb79e8",
+   "domain": "Diving",
+   "action": "Back flip straight",
+   "youtube_id": "PmF7MjQS6Ro",
+   "start_s": 0.0,
+   "end_s": 13.0,
+   "youtube_title": "back flip straight dive",
+   "choices": [
+    "1. Reverse two and a half somersault",
+    "2. Inward two and a half somersault tuck",
+    "3. Inward dive pike",
+    "4. Back flip straight",
+    "5. Back two and a half somersault pike"
+   ]
+  },
+  {
+   "id": "d981cf4c18514552b94b0c31af5f2a32",
+   "domain": "Cheerleading",
+   "action": "Cupie Rewind",
+   "youtube_id": "UgBPqYxK9IM",
+   "start_s": 0.0,
+   "end_s": 6.0,
+   "youtube_title": "Cupie Rewind",
+   "choices": [
+    "1. Basket Toss",
+    "2. Full Down",
+    "3. Cupie Rewind",
+    "4. Liberty",
+    "5. Scale"
+   ]
+  },
+  {
+   "id": "9518b62a-c73e-4071-a437-90dacc81cfa3",
+   "domain": "Cheerleading",
+   "action": "Castaway half twist",
+   "youtube_id": "qNZHPwH3W5o",
+   "start_s": 34.5,
+   "end_s": 37.0,
+   "youtube_title": "Check the link in bio if you wanna learn acro!",
+   "choices": [
+    "1. Double full twist",
+    "2. Round off back handspring",
+    "3. Castaway half twist",
+    "4. Full twisting layout",
+    "5. Front layout with a full twist"
+   ]
+  },
+  {
+   "id": "bf56ff4a-64be-4c0c-a818-19e05c86ef78",
+   "domain": "Cheerleading",
+   "action": "Partner stunt",
+   "youtube_id": "pXXmSCd2_ts",
+   "start_s": 189.0,
+   "end_s": 195.0,
+   "youtube_title": "Hand In Hand | Partner Stunt Tutorial",
+   "choices": [
+    "1. Partner stunt",
+    "2. Liberty stunt",
+    "3. Cradle catch",
+    "4. Full up",
+    "5. Extension prep"
+   ]
+  },
+  {
+   "id": "f68ba3a4-afa2-44c6-a1f3-2ec62000323d",
+   "domain": "Cheerleading",
+   "action": "Partner stunt",
+   "youtube_id": "yBuz63SgOYE",
+   "start_s": 68.0,
+   "end_s": 71.0,
+   "youtube_title": "How to Partner Stunt in 2021 (8 Tips)",
+   "choices": [
+    "1. Scorpion stunt",
+    "2. Full down",
+    "3. Liberty stunt",
+    "4. Partner stunt",
+    "5. Basket toss"
+   ]
+  },
+  {
+   "id": "6f463f2c-5787-4c6f-bf03-bee1b29e5371",
+   "domain": "Rhythmic Gymnastics",
+   "action": "Contortion",
+   "youtube_id": "Nqg6TxR7QHg",
+   "start_s": 52.0,
+   "end_s": 54.0,
+   "youtube_title": "Contortion, gymnastics - extra splits, Reptile skin, FOCUS ON RHYTHMIC GYMNAST",
+   "choices": [
+    "1. Contortion",
+    "2. Fouetté",
+    "3. Ring leap",
+    "4. Penché",
+    "5. Backscale"
+   ]
+  },
+  {
+   "id": "5d75b998-5360-4513-a28f-0add5d11bf44",
+   "domain": "Rhythmic Gymnastics",
+   "action": "Contortion",
+   "youtube_id": "EEMmN7miHAg",
+   "start_s": 303.0,
+   "end_s": 313.0,
+   "youtube_title": "Teaching an Olympian Contortion (ft. Shawn Johnson)",
+   "choices": [
+    "1. Backscale",
+    "2. Contortion",
+    "3. Attitude turn",
+    "4. Penché"
+   ]
+  },
+  {
+   "id": "8fd71d80-8d4e-40a7-b787-bcc4b78d7a4a",
+   "domain": "Rhythmic Gymnastics",
+   "action": "Contortion",
+   "youtube_id": "Nqg6TxR7QHg",
+   "start_s": 36.0,
+   "end_s": 44.0,
+   "youtube_title": "Contortion, gymnastics - extra splits, Reptile skin, FOCUS ON RHYTHMIC GYMNAST",
+   "choices": [
+    "1. Penche",
+    "2. Contortion",
+    "3. Scale",
+    "4. Illusion turn",
+    "5. Pivot"
+   ]
+  },
+  {
+   "id": "4c15f6ad-72c3-4820-9fcb-e260b5013908",
+   "domain": "Cheerleading",
+   "action": "Scale",
+   "youtube_id": "WrXCdLyvLvk",
+   "start_s": 44.0,
+   "end_s": 47.0,
+   "youtube_title": "Scale Full Down",
+   "choices": [
+    "1. Arabesque",
+    "2. Scorpion",
+    "3. Scale",
+    "4. Heel Stretch",
+    "5. Bow and Arrow"
+   ]
+  },
+  {
+   "id": "e4ced00e-fb4d-4d57-8ab3-214c4614d870",
+   "domain": "Gymnastics",
+   "action": "Cassina",
+   "youtube_id": "NdDrw7Qzjhs",
+   "start_s": 3.0,
+   "end_s": 7.0,
+   "youtube_title": "Cassina",
+   "choices": [
+    "1. Tkatchev",
+    "2. Kovacs",
+    "3. Kolman",
+    "4. Bretschneider",
+    "5. Cassina"
+   ]
+  },
+  {
+   "id": "29a0f965-1014-41cc-8d6d-fca72ae0415d",
+   "domain": "Gymnastics",
+   "action": "Cassina",
+   "youtube_id": "c7Mf2_qSaqc",
+   "start_s": 10.0,
+   "end_s": 17.5,
+   "youtube_title": "Cassina going in 💥",
+   "choices": [
+    "1. Kolman",
+    "2. Tkatchev",
+    "3. Kovacs",
+    "4. Cassina"
+   ]
+  },
+  {
+   "id": "258ce64d-2a2a-4d1d-9f8e-491ba35bb6ff",
+   "domain": "Parkour",
+   "action": "Parkour roll",
+   "youtube_id": "XdTNFW-VZCA",
+   "start_s": 89.0,
+   "end_s": 91.0,
+   "youtube_title": "How To Do Parkour: Parkour Roll tutorial (Zoic Nation Parkour and Freerunning)",
+   "choices": [
+    "1. Parkour roll",
+    "2. Lazy vault",
+    "3. Precision jump",
+    "4. Cat leap",
+    "5. Dash vault"
+   ]
+  },
+  {
+   "id": "cbcb13bd-3cd5-4971-bfc6-b7eebb42c0f0",
+   "domain": "Parkour",
+   "action": "Parkour roll",
+   "youtube_id": "lQ9U-IAdyG0",
+   "start_s": 12.0,
+   "end_s": 14.0,
+   "youtube_title": "Parkour Tips Vol. II - PARKOUR ROLL",
+   "choices": [
+    "1. Dash vault",
+    "2. Precision Jump",
+    "3. Parkour roll",
+    "4. Lazy vault"
+   ]
+  },
+  {
+   "id": "4cb4e380-7927-4bb6-a697-aa60beea0103",
+   "domain": "Figure skating",
+   "action": "Loop jump",
+   "youtube_id": "8qsW31N5K8A",
+   "start_s": 157.0,
+   "end_s": 161.0,
+   "youtube_title": "How to do the LOOP JUMP! Figure Skating Lesson",
+   "choices": [
+    "1. Toe loop jump",
+    "2. Salchow jump",
+    "3. Loop jump",
+    "4. Flip jump",
+    "5. Lutz jump"
+   ]
+  },
+  {
+   "id": "ebca1eb591d5468f8d38a57510883116",
+   "domain": "Figure Skating",
+   "action": "Layback spin",
+   "youtube_id": "P1Pno-Z2S0g",
+   "start_s": 4.0,
+   "end_s": 11.0,
+   "youtube_title": "Layback & Flying Camel Spin",
+   "choices": [
+    "1. Camel spin",
+    "2. Biellmann Spin",
+    "3. Layback spin",
+    "4. Attitude spin",
+    "5. Sit Spin"
+   ]
+  },
+  {
+   "id": "b741e003ab8d41179781b3bdf3027a74",
+   "domain": "Ice Skating",
+   "action": "Toe loop jump",
+   "youtube_id": "iAhHOTqVkdM",
+   "start_s": 0.0,
+   "end_s": 5.0,
+   "youtube_title": "Double Salchow - Toe Loop Jump Sequence",
+   "choices": [
+    "1. 1. Loop jump",
+    "2. Toe loop jump",
+    "3. Salchow jump",
+    "4. Axel jump",
+    "5. Flip jump"
+   ]
+  },
+  {
+   "id": "fb35e8fbf5504fb3aa088d0fceca978f",
+   "domain": "Figure Skating",
+   "action": "Mohawk",
+   "youtube_id": "WT-fNOfBdG8",
+   "start_s": 10.0,
+   "end_s": 17.0,
+   "youtube_title": "Mohawk Turn",
+   "choices": [
+    "1. Mohawk",
+    "2. Choctaw",
+    "3. Bracket",
+    "4. Rocker",
+    "5. Counter"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,970 @@
+{
+  "listed_at": "2026-10-03",
+  "old_file": "data/parkourtheory_detailed.json",
+  "counts": {
+    "live_moves": 1990,
+    "live_variations": 31,
+    "old_moves": 1837,
+    "new": 166,
+    "removed": 13,
+    "rename_candidates_by_slug": 3,
+    "lastmod_after_old_scrape": 4,
+    "failed_in_old_scrape": 3
+  },
+  "variation_slugs": [
+    "counter",
+    "donut_boy",
+    "double_leg",
+    "down",
+    "feilong",
+    "flash_kick",
+    "handcuffs",
+    "hook",
+    "hyper",
+    "in",
+    "japan_grab",
+    "layout",
+    "lazy_boy",
+    "lonestar",
+    "lotus",
+    "method_grab",
+    "out",
+    "peter_pan",
+    "pike",
+    "pistol",
+    "psychocrusher",
+    "rodeo",
+    "shuriken",
+    "spider-man",
+    "stall",
+    "straddle",
+    "stretched",
+    "unwind",
+    "up",
+    "walkdown",
+    "x-out"
+  ],
+  "new": [
+    {
+      "slug": "180_backward_spider_climb",
+      "url": "https://www.parkourtheory.com/move/180_backward_spider_climb",
+      "lastmod": "2026-06-19T12:48:17+00:00"
+    },
+    {
+      "slug": "180_punch_wall_gainer_trapdoor",
+      "url": "https://www.parkourtheory.com/move/180_punch_wall_gainer_trapdoor",
+      "lastmod": "2026-03-30T12:19:09+00:00"
+    },
+    {
+      "slug": "270_dive_down_monkey_270",
+      "url": "https://www.parkourtheory.com/move/270_dive_down_monkey_270",
+      "lastmod": "2026-09-20T19:56:50+00:00"
+    },
+    {
+      "slug": "360_dive_side_vault",
+      "url": "https://www.parkourtheory.com/move/360_dive_side_vault",
+      "lastmod": "2026-03-25T23:12:03+00:00"
+    },
+    {
+      "slug": "360_pole_slide",
+      "url": "https://www.parkourtheory.com/move/360_pole_slide",
+      "lastmod": "2026-06-18T11:29:16+00:00"
+    },
+    {
+      "slug": "360_stall_360_dive_roll",
+      "url": "https://www.parkourtheory.com/move/360_stall_360_dive_roll",
+      "lastmod": "2026-06-14T12:40:50+00:00"
+    },
+    {
+      "slug": "720_dive_one-hand_reverse",
+      "url": "https://www.parkourtheory.com/move/720_dive_one-hand_reverse",
+      "lastmod": "2026-04-21T17:07:44+00:00"
+    },
+    {
+      "slug": "aerial_twist_vault_punch_wall_roll",
+      "url": "https://www.parkourtheory.com/move/aerial_twist_vault_punch_wall_roll",
+      "lastmod": "2026-06-14T12:41:13+00:00"
+    },
+    {
+      "slug": "angel_drop_full-in_back-out",
+      "url": "https://www.parkourtheory.com/move/angel_drop_full-in_back-out",
+      "lastmod": "2026-03-28T13:49:32+00:00"
+    },
+    {
+      "slug": "back_full-in_double_full-out",
+      "url": "https://www.parkourtheory.com/move/back_full-in_double_full-out",
+      "lastmod": "2026-04-11T22:04:51+00:00"
+    },
+    {
+      "slug": "back_quarter_unwind_quarter",
+      "url": "https://www.parkourtheory.com/move/back_quarter_unwind_quarter",
+      "lastmod": "2026-09-14T23:45:52+00:00"
+    },
+    {
+      "slug": "back_quarter_unwind_quarter-in_back-out",
+      "url": "https://www.parkourtheory.com/move/back_quarter_unwind_quarter-in_back-out",
+      "lastmod": "2026-09-14T23:43:47+00:00"
+    },
+    {
+      "slug": "back_splat_dash_gainer",
+      "url": "https://www.parkourtheory.com/move/back_splat_dash_gainer",
+      "lastmod": "2026-04-10T21:17:34+00:00"
+    },
+    {
+      "slug": "back_swing_180_palm_flip",
+      "url": "https://www.parkourtheory.com/move/back_swing_180_palm_flip",
+      "lastmod": "2026-04-25T16:20:16+00:00"
+    },
+    {
+      "slug": "back_swing_180_punch_wall_flip",
+      "url": "https://www.parkourtheory.com/move/back_swing_180_punch_wall_flip",
+      "lastmod": "2026-04-25T16:33:02+00:00"
+    },
+    {
+      "slug": "back_toss",
+      "url": "https://www.parkourtheory.com/move/back_toss",
+      "lastmod": "2026-09-20T20:25:07+00:00"
+    },
+    {
+      "slug": "back_uprise_monkey_gainer",
+      "url": "https://www.parkourtheory.com/move/back_uprise_monkey_gainer",
+      "lastmod": "2026-03-24T16:21:31+00:00"
+    },
+    {
+      "slug": "backward_spider_climb",
+      "url": "https://www.parkourtheory.com/move/backward_spider_climb",
+      "lastmod": "2026-06-19T11:35:09+00:00"
+    },
+    {
+      "slug": "backward_swing_360_palm_frisbee",
+      "url": "https://www.parkourtheory.com/move/backward_swing_360_palm_frisbee",
+      "lastmod": "2026-06-19T11:35:09+00:00"
+    },
+    {
+      "slug": "cast_inward_180_dive_roll",
+      "url": "https://www.parkourtheory.com/move/cast_inward_180_dive_roll",
+      "lastmod": "2026-06-18T01:17:44+00:00"
+    },
+    {
+      "slug": "cast_twist",
+      "url": "https://www.parkourtheory.com/move/cast_twist",
+      "lastmod": "2026-06-17T10:48:34+00:00"
+    },
+    {
+      "slug": "castaway_inward_540_dive_roll",
+      "url": "https://www.parkourtheory.com/move/castaway_inward_540_dive_roll",
+      "lastmod": "2026-06-17T10:48:34+00:00"
+    },
+    {
+      "slug": "caster_one-hand_back_handspring-in_back-out",
+      "url": "https://www.parkourtheory.com/move/caster_one-hand_back_handspring-in_back-out",
+      "lastmod": "2023-10-09T00:00:00+00:00"
+    },
+    {
+      "slug": "caster_one-hand_back_handspring-in_full-out",
+      "url": "https://www.parkourtheory.com/move/caster_one-hand_back_handspring-in_full-out",
+      "lastmod": "2026-04-04T22:04:51+00:00"
+    },
+    {
+      "slug": "caster_wall_flip-in_punch_wall_layout-out",
+      "url": "https://www.parkourtheory.com/move/caster_wall_flip-in_punch_wall_layout-out",
+      "lastmod": "2026-06-15T11:00:16+00:00"
+    },
+    {
+      "slug": "cat_hang_ew_gainer_full",
+      "url": "https://www.parkourtheory.com/move/cat_hang_ew_gainer_full",
+      "lastmod": "2026-03-30T12:05:45+00:00"
+    },
+    {
+      "slug": "cat_hang_kong_double_side",
+      "url": "https://www.parkourtheory.com/move/cat_hang_kong_double_side",
+      "lastmod": "2026-03-28T13:49:42+00:00"
+    },
+    {
+      "slug": "cat_hang_kong_side",
+      "url": "https://www.parkourtheory.com/move/cat_hang_kong_side",
+      "lastmod": "2026-03-28T14:27:34+00:00"
+    },
+    {
+      "slug": "cat_hang_raiden_inverted_pole_slide",
+      "url": "https://www.parkourtheory.com/move/cat_hang_raiden_inverted_pole_slide",
+      "lastmod": "2026-04-11T22:04:44+00:00"
+    },
+    {
+      "slug": "cat_hang_wall_spin",
+      "url": "https://www.parkourtheory.com/move/cat_hang_wall_spin",
+      "lastmod": "2026-06-22T12:06:43+00:00"
+    },
+    {
+      "slug": "cat_hang_wall_spin_half",
+      "url": "https://www.parkourtheory.com/move/cat_hang_wall_spin_half",
+      "lastmod": "2014-12-13T00:00:00+00:00"
+    },
+    {
+      "slug": "catch_descent",
+      "url": "https://www.parkourtheory.com/move/catch_descent",
+      "lastmod": "2026-06-21T12:08:51+00:00"
+    },
+    {
+      "slug": "cheat_gainer_one-hand_down_monkey",
+      "url": "https://www.parkourtheory.com/move/cheat_gainer_one-hand_down_monkey",
+      "lastmod": "2026-04-20T11:36:59+00:00"
+    },
+    {
+      "slug": "corkscrew-up-in_back-out",
+      "url": "https://www.parkourtheory.com/move/corkscrew-up-in_back-out",
+      "lastmod": "2026-09-13T21:43:37+00:00"
+    },
+    {
+      "slug": "corkscrew_double_double_leg",
+      "url": "https://www.parkourtheory.com/move/corkscrew_double_double_leg",
+      "lastmod": "2026-03-31T17:26:39+00:00"
+    },
+    {
+      "slug": "corkscrew_double_leg",
+      "url": "https://www.parkourtheory.com/move/corkscrew_double_leg",
+      "lastmod": "2026-03-31T17:32:37+00:00"
+    },
+    {
+      "slug": "corner_ew_gainer",
+      "url": "https://www.parkourtheory.com/move/corner_ew_gainer",
+      "lastmod": "2026-04-12T21:12:40+00:00"
+    },
+    {
+      "slug": "corner_ew_gainer_pistol",
+      "url": "https://www.parkourtheory.com/move/corner_ew_gainer_pistol",
+      "lastmod": "2026-04-12T20:32:58+00:00"
+    },
+    {
+      "slug": "corner_wall_pop",
+      "url": "https://www.parkourtheory.com/move/corner_wall_pop",
+      "lastmod": "2026-04-05T15:21:29+00:00"
+    },
+    {
+      "slug": "devil_drop_quarter_inward_wall_spin_quarter",
+      "url": "https://www.parkourtheory.com/move/devil_drop_quarter_inward_wall_spin_quarter",
+      "lastmod": "2026-04-19T22:16:11+00:00"
+    },
+    {
+      "slug": "devil_drop_regrab",
+      "url": "https://www.parkourtheory.com/move/devil_drop_regrab",
+      "lastmod": "2026-04-05T15:21:21+00:00"
+    },
+    {
+      "slug": "dive_back_toss",
+      "url": "https://www.parkourtheory.com/move/dive_back_toss",
+      "lastmod": "2026-09-20T19:56:50+00:00"
+    },
+    {
+      "slug": "dive_half-in_back-out",
+      "url": "https://www.parkourtheory.com/move/dive_half-in_back-out",
+      "lastmod": "2026-06-17T10:48:34+00:00"
+    },
+    {
+      "slug": "double_angel_drop",
+      "url": "https://www.parkourtheory.com/move/double_angel_drop",
+      "lastmod": "2026-03-28T13:54:29+00:00"
+    },
+    {
+      "slug": "double_full-up_gainer",
+      "url": "https://www.parkourtheory.com/move/double_full-up_gainer",
+      "lastmod": "2026-06-17T10:48:34+00:00"
+    },
+    {
+      "slug": "double_full-up_side_late_full_twist",
+      "url": "https://www.parkourtheory.com/move/double_full-up_side_late_full_twist",
+      "lastmod": "2026-04-04T22:04:38+00:00"
+    },
+    {
+      "slug": "double_kong_double_gainer",
+      "url": "https://www.parkourtheory.com/move/double_kong_double_gainer",
+      "lastmod": "2026-04-13T15:06:06+00:00"
+    },
+    {
+      "slug": "double_kong_punch_wall_flip",
+      "url": "https://www.parkourtheory.com/move/double_kong_punch_wall_flip",
+      "lastmod": "2026-03-25T23:11:54+00:00"
+    },
+    {
+      "slug": "drop_castaway_side",
+      "url": "https://www.parkourtheory.com/move/drop_castaway_side",
+      "lastmod": "2026-06-18T11:29:16+00:00"
+    },
+    {
+      "slug": "elbow_back_handspring",
+      "url": "https://www.parkourtheory.com/move/elbow_back_handspring",
+      "lastmod": "2026-04-11T22:04:37+00:00"
+    },
+    {
+      "slug": "ew_full-up_gainer",
+      "url": "https://www.parkourtheory.com/move/ew_full-up_gainer",
+      "lastmod": "2026-03-25T23:12:20+00:00"
+    },
+    {
+      "slug": "ew_gainer_full_gyro",
+      "url": "https://www.parkourtheory.com/move/ew_gainer_full_gyro",
+      "lastmod": "2026-04-13T15:01:02+00:00"
+    },
+    {
+      "slug": "flamingo_gainer",
+      "url": "https://www.parkourtheory.com/move/flamingo_gainer",
+      "lastmod": "2026-03-29T15:11:17+00:00"
+    },
+    {
+      "slug": "flash_kick_double_full",
+      "url": "https://www.parkourtheory.com/move/flash_kick_double_full",
+      "lastmod": "2026-03-28T15:20:11+00:00"
+    },
+    {
+      "slug": "flyaway_full_shuriken_hyperhook",
+      "url": "https://www.parkourtheory.com/move/flyaway_full_shuriken_hyperhook",
+      "lastmod": "2026-04-13T15:01:08+00:00"
+    },
+    {
+      "slug": "flyaway_half_catch",
+      "url": "https://www.parkourtheory.com/move/flyaway_half_catch",
+      "lastmod": "2026-06-23T12:37:31+00:00"
+    },
+    {
+      "slug": "flyaway_stretched",
+      "url": "https://www.parkourtheory.com/move/flyaway_stretched",
+      "lastmod": "2026-06-19T12:08:51+00:00"
+    },
+    {
+      "slug": "flyaway_stretched_full",
+      "url": "https://www.parkourtheory.com/move/flyaway_stretched_full",
+      "lastmod": "2026-06-19T12:07:25+00:00"
+    },
+    {
+      "slug": "flyaway_stretched_one-and-a-half_full",
+      "url": "https://www.parkourtheory.com/move/flyaway_stretched_one-and-a-half_full",
+      "lastmod": "2026-06-19T11:35:09+00:00"
+    },
+    {
+      "slug": "flyaway_zero_palm_catch",
+      "url": "https://www.parkourtheory.com/move/flyaway_zero_palm_catch",
+      "lastmod": "2026-04-12T20:32:42+00:00"
+    },
+    {
+      "slug": "forward_swing_turn_castaway_side",
+      "url": "https://www.parkourtheory.com/move/forward_swing_turn_castaway_side",
+      "lastmod": "2026-06-17T10:48:34+00:00"
+    },
+    {
+      "slug": "gainer-in_palm_gainer-out",
+      "url": "https://www.parkourtheory.com/move/gainer-in_palm_gainer-out",
+      "lastmod": "2026-09-20T19:56:50+00:00"
+    },
+    {
+      "slug": "gainer_three-quarters_full_one-fourth_down_monkey",
+      "url": "https://www.parkourtheory.com/move/gainer_three-quarters_full_one-fourth_down_monkey",
+      "lastmod": "2026-03-29T15:46:01+00:00"
+    },
+    {
+      "slug": "gargoyle_double_gainer",
+      "url": "https://www.parkourtheory.com/move/gargoyle_double_gainer",
+      "lastmod": "2026-03-31T17:26:54+00:00"
+    },
+    {
+      "slug": "gate_inward_down_monkey",
+      "url": "https://www.parkourtheory.com/move/gate_inward_down_monkey",
+      "lastmod": "2026-04-21T17:07:53+00:00"
+    },
+    {
+      "slug": "inverted_pole_slide",
+      "url": "https://www.parkourtheory.com/move/inverted_pole_slide",
+      "lastmod": "2026-04-11T22:16:09+00:00"
+    },
+    {
+      "slug": "inward_double_side_flip",
+      "url": "https://www.parkourtheory.com/move/inward_double_side_flip",
+      "lastmod": "2026-04-04T22:04:31+00:00"
+    },
+    {
+      "slug": "inward_flyaway_down_monkey",
+      "url": "https://www.parkourtheory.com/move/inward_flyaway_down_monkey",
+      "lastmod": "2026-03-24T16:35:59+00:00"
+    },
+    {
+      "slug": "inward_flyaway_down_monkey-in_back-out",
+      "url": "https://www.parkourtheory.com/move/inward_flyaway_down_monkey-in_back-out",
+      "lastmod": "2026-03-24T16:21:46+00:00"
+    },
+    {
+      "slug": "inward_flyaway_down_monkey_regrab",
+      "url": "https://www.parkourtheory.com/move/inward_flyaway_down_monkey_regrab",
+      "lastmod": "2026-03-24T16:21:38+00:00"
+    },
+    {
+      "slug": "inward_flyaway_full_inward_down_monkey",
+      "url": "https://www.parkourtheory.com/move/inward_flyaway_full_inward_down_monkey",
+      "lastmod": "2026-04-06T16:13:19+00:00"
+    },
+    {
+      "slug": "inward_flyaway_three-fourths_unwind_three-fourths",
+      "url": "https://www.parkourtheory.com/move/inward_flyaway_three-fourths_unwind_three-fourths",
+      "lastmod": "2026-06-23T12:37:31+00:00"
+    },
+    {
+      "slug": "inward_front_handspring",
+      "url": "https://www.parkourtheory.com/move/inward_front_handspring",
+      "lastmod": "2026-04-07T15:42:53+00:00"
+    },
+    {
+      "slug": "inward_palm_walk",
+      "url": "https://www.parkourtheory.com/move/inward_palm_walk",
+      "lastmod": "2026-04-11T22:50:44+00:00"
+    },
+    {
+      "slug": "inward_wall_spin",
+      "url": "https://www.parkourtheory.com/move/inward_wall_spin",
+      "lastmod": "2026-04-19T22:17:40+00:00"
+    },
+    {
+      "slug": "knee_gainer_full",
+      "url": "https://www.parkourtheory.com/move/knee_gainer_full",
+      "lastmod": "2026-04-19T21:09:46+00:00"
+    },
+    {
+      "slug": "kong_corner_thread",
+      "url": "https://www.parkourtheory.com/move/kong_corner_thread",
+      "lastmod": "2026-04-21T00:12:01+00:00"
+    },
+    {
+      "slug": "kong_front_kong_front",
+      "url": "https://www.parkourtheory.com/move/kong_front_kong_front",
+      "lastmod": "2026-04-04T22:04:45+00:00"
+    },
+    {
+      "slug": "kong_gainer_down_monkey",
+      "url": "https://www.parkourtheory.com/move/kong_gainer_down_monkey",
+      "lastmod": "2026-08-05T12:56:40+00:00"
+    },
+    {
+      "slug": "kong_gainer_rodeo",
+      "url": "https://www.parkourtheory.com/move/kong_gainer_rodeo",
+      "lastmod": "2026-03-30T12:05:37+00:00"
+    },
+    {
+      "slug": "kong_gainer_splat",
+      "url": "https://www.parkourtheory.com/move/kong_gainer_splat",
+      "lastmod": "2026-09-13T21:32:31+00:00"
+    },
+    {
+      "slug": "kong_glitch_gainer_full",
+      "url": "https://www.parkourtheory.com/move/kong_glitch_gainer_full",
+      "lastmod": "2026-03-31T17:26:31+00:00"
+    },
+    {
+      "slug": "kong_one-hand_reverse",
+      "url": "https://www.parkourtheory.com/move/kong_one-hand_reverse",
+      "lastmod": "2026-04-20T11:37:37+00:00"
+    },
+    {
+      "slug": "kong_punch_dark_arabian_wall_gainer",
+      "url": "https://www.parkourtheory.com/move/kong_punch_dark_arabian_wall_gainer",
+      "lastmod": "2026-03-31T17:26:46+00:00"
+    },
+    {
+      "slug": "kong_raiden",
+      "url": "https://www.parkourtheory.com/move/kong_raiden",
+      "lastmod": "2026-04-07T15:43:01+00:00"
+    },
+    {
+      "slug": "kong_speed",
+      "url": "https://www.parkourtheory.com/move/kong_speed",
+      "lastmod": "2026-09-14T23:14:49+00:00"
+    },
+    {
+      "slug": "lache_dark_arabian_unwind_half_dive_roll",
+      "url": "https://www.parkourtheory.com/move/lache_dark_arabian_unwind_half_dive_roll",
+      "lastmod": "2026-03-24T16:21:55+00:00"
+    },
+    {
+      "slug": "lazy_gainer-in_trapdoor-out",
+      "url": "https://www.parkourtheory.com/move/lazy_gainer-in_trapdoor-out",
+      "lastmod": "2026-04-21T17:07:26+00:00"
+    },
+    {
+      "slug": "macaco_1990",
+      "url": "https://www.parkourtheory.com/move/macaco_1990",
+      "lastmod": "2026-04-25T19:10:16+00:00"
+    },
+    {
+      "slug": "macaco_cat",
+      "url": "https://www.parkourtheory.com/move/macaco_cat",
+      "lastmod": "2026-06-17T10:48:34+00:00"
+    },
+    {
+      "slug": "one-and-a-half_arabian_unwind_half_unwind_dive_roll",
+      "url": "https://www.parkourtheory.com/move/one-and-a-half_arabian_unwind_half_unwind_dive_roll",
+      "lastmod": "2026-04-07T15:42:46+00:00"
+    },
+    {
+      "slug": "one-and-a-half_back_one-and-a-half_full_dive_roll",
+      "url": "https://www.parkourtheory.com/move/one-and-a-half_back_one-and-a-half_full_dive_roll",
+      "lastmod": "2025-08-08T03:46:16+00:00"
+    },
+    {
+      "slug": "one-hand_double_kong_gainer",
+      "url": "https://www.parkourtheory.com/move/one-hand_double_kong_gainer",
+      "lastmod": "2026-06-21T01:53:55+00:00"
+    },
+    {
+      "slug": "one-hand_flyaway_one-hand_catch",
+      "url": "https://www.parkourtheory.com/move/one-hand_flyaway_one-hand_catch",
+      "lastmod": "2026-04-09T22:33:31+00:00"
+    },
+    {
+      "slug": "one-hand_kong_kong",
+      "url": "https://www.parkourtheory.com/move/one-hand_kong_kong",
+      "lastmod": "2026-09-13T22:50:53+00:00"
+    },
+    {
+      "slug": "one-hand_reverse_one-hand_reverse",
+      "url": "https://www.parkourtheory.com/move/one-hand_reverse_one-hand_reverse",
+      "lastmod": "2026-09-13T22:50:53+00:00"
+    },
+    {
+      "slug": "one-step_horizontal_wall_kong",
+      "url": "https://www.parkourtheory.com/move/one-step_horizontal_wall_kong",
+      "lastmod": "2026-04-20T11:37:11+00:00"
+    },
+    {
+      "slug": "one-step_pop_castaway_inward_front_quarter_down_monkey",
+      "url": "https://www.parkourtheory.com/move/one-step_pop_castaway_inward_front_quarter_down_monkey",
+      "lastmod": "2026-04-19T22:11:29+00:00"
+    },
+    {
+      "slug": "one-step_wall_dash_roll",
+      "url": "https://www.parkourtheory.com/move/one-step_wall_dash_roll",
+      "lastmod": "2026-04-06T16:12:41+00:00"
+    },
+    {
+      "slug": "palm_flat",
+      "url": "https://www.parkourtheory.com/move/palm_flat",
+      "lastmod": "2026-04-12T21:23:05+00:00"
+    },
+    {
+      "slug": "palm_flat_180",
+      "url": "https://www.parkourtheory.com/move/palm_flat_180",
+      "lastmod": "2026-04-12T20:32:51+00:00"
+    },
+    {
+      "slug": "palm_frisbee",
+      "url": "https://www.parkourtheory.com/move/palm_frisbee",
+      "lastmod": "2026-06-19T13:05:04+00:00"
+    },
+    {
+      "slug": "parallel_bar_double_gainer",
+      "url": "https://www.parkourtheory.com/move/parallel_bar_double_gainer",
+      "lastmod": "2026-04-19T21:33:34+00:00"
+    },
+    {
+      "slug": "parallel_bar_gainer",
+      "url": "https://www.parkourtheory.com/move/parallel_bar_gainer",
+      "lastmod": "2014-12-13T00:00:00+00:00"
+    },
+    {
+      "slug": "parallel_bar_gainer_full",
+      "url": "https://www.parkourtheory.com/move/parallel_bar_gainer_full",
+      "lastmod": "2014-12-13T00:00:00+00:00"
+    },
+    {
+      "slug": "parallel_bar_gainer_suicide_roll",
+      "url": "https://www.parkourtheory.com/move/parallel_bar_gainer_suicide_roll",
+      "lastmod": "2023-10-09T00:00:00+00:00"
+    },
+    {
+      "slug": "pimp_punch_wall_side",
+      "url": "https://www.parkourtheory.com/move/pimp_punch_wall_side",
+      "lastmod": "2026-04-09T22:33:49+00:00"
+    },
+    {
+      "slug": "ping_gainer",
+      "url": "https://www.parkourtheory.com/move/ping_gainer",
+      "lastmod": "2026-03-30T12:05:29+00:00"
+    },
+    {
+      "slug": "pole_giant_precision",
+      "url": "https://www.parkourtheory.com/move/pole_giant_precision",
+      "lastmod": "2026-06-17T10:48:34+00:00"
+    },
+    {
+      "slug": "pop_castaway_inward_front",
+      "url": "https://www.parkourtheory.com/move/pop_castaway_inward_front",
+      "lastmod": "2026-03-27T18:15:16+00:00"
+    },
+    {
+      "slug": "quadruple_aerial_twist",
+      "url": "https://www.parkourtheory.com/move/quadruple_aerial_twist",
+      "lastmod": "2026-04-21T17:07:35+00:00"
+    },
+    {
+      "slug": "quadruple_kong_gainer",
+      "url": "https://www.parkourtheory.com/move/quadruple_kong_gainer",
+      "lastmod": "2026-04-11T22:50:50+00:00"
+    },
+    {
+      "slug": "quintuple_kong",
+      "url": "https://www.parkourtheory.com/move/quintuple_kong",
+      "lastmod": "2026-04-13T15:44:22+00:00"
+    },
+    {
+      "slug": "rail_front_handspring_full",
+      "url": "https://www.parkourtheory.com/move/rail_front_handspring_full",
+      "lastmod": "2026-06-18T11:29:16+00:00"
+    },
+    {
+      "slug": "rail_helicoptero_double_leg",
+      "url": "https://www.parkourtheory.com/move/rail_helicoptero_double_leg",
+      "lastmod": "2026-06-17T10:48:34+00:00"
+    },
+    {
+      "slug": "raiz_helicoptero",
+      "url": "https://www.parkourtheory.com/move/raiz_helicoptero",
+      "lastmod": "2026-03-26T15:34:04+00:00"
+    },
+    {
+      "slug": "raiz_method_grab_shuriken",
+      "url": "https://www.parkourtheory.com/move/raiz_method_grab_shuriken",
+      "lastmod": "2026-03-26T15:29:26+00:00"
+    },
+    {
+      "slug": "raiz_shuriken",
+      "url": "https://www.parkourtheory.com/move/raiz_shuriken",
+      "lastmod": "2026-03-26T12:00:58+00:00"
+    },
+    {
+      "slug": "raiz_shuriken_cutter",
+      "url": "https://www.parkourtheory.com/move/raiz_shuriken_cutter",
+      "lastmod": "2026-04-19T21:25:12+00:00"
+    },
+    {
+      "slug": "raiz_shuriken_hyperhook",
+      "url": "https://www.parkourtheory.com/move/raiz_shuriken_hyperhook",
+      "lastmod": "2026-03-26T11:52:35+00:00"
+    },
+    {
+      "slug": "raiz_shuriken_hyperhook-in_back-out",
+      "url": "https://www.parkourtheory.com/move/raiz_shuriken_hyperhook-in_back-out",
+      "lastmod": "2026-03-25T23:34:28+00:00"
+    },
+    {
+      "slug": "reverse_palm_spin_pimp",
+      "url": "https://www.parkourtheory.com/move/reverse_palm_spin_pimp",
+      "lastmod": "2026-04-19T22:06:58+00:00"
+    },
+    {
+      "slug": "russian_ew_gainer",
+      "url": "https://www.parkourtheory.com/move/russian_ew_gainer",
+      "lastmod": "2026-08-05T12:56:40+00:00"
+    },
+    {
+      "slug": "russian_front_dash_roll",
+      "url": "https://www.parkourtheory.com/move/russian_front_dash_roll",
+      "lastmod": "2026-06-15T11:00:41+00:00"
+    },
+    {
+      "slug": "russian_punch_wall_front",
+      "url": "https://www.parkourtheory.com/move/russian_punch_wall_front",
+      "lastmod": "2026-06-15T10:59:56+00:00"
+    },
+    {
+      "slug": "safety_vault_540",
+      "url": "https://www.parkourtheory.com/move/safety_vault_540",
+      "lastmod": "2026-04-11T22:04:29+00:00"
+    },
+    {
+      "slug": "side_quarter_stall_back",
+      "url": "https://www.parkourtheory.com/move/side_quarter_stall_back",
+      "lastmod": "2026-09-20T19:56:50+00:00"
+    },
+    {
+      "slug": "sitting_caster_270_down_monkey_90",
+      "url": "https://www.parkourtheory.com/move/sitting_caster_270_down_monkey_90",
+      "lastmod": "2026-06-14T12:41:21+00:00"
+    },
+    {
+      "slug": "sitting_double_side_flip",
+      "url": "https://www.parkourtheory.com/move/sitting_double_side_flip",
+      "lastmod": "2026-03-27T18:15:27+00:00"
+    },
+    {
+      "slug": "sitting_side_flip",
+      "url": "https://www.parkourtheory.com/move/sitting_side_flip",
+      "lastmod": "2026-03-27T21:00:03+00:00"
+    },
+    {
+      "slug": "sitting_tunnel_flip",
+      "url": "https://www.parkourtheory.com/move/sitting_tunnel_flip",
+      "lastmod": "2014-12-13T00:00:00+00:00"
+    },
+    {
+      "slug": "sitting_tunnel_full-down",
+      "url": "https://www.parkourtheory.com/move/sitting_tunnel_full-down",
+      "lastmod": "2014-12-13T00:00:00+00:00"
+    },
+    {
+      "slug": "slide_worm_gainer",
+      "url": "https://www.parkourtheory.com/move/slide_worm_gainer",
+      "lastmod": "2026-04-12T20:32:34+00:00"
+    },
+    {
+      "slug": "spider_climb",
+      "url": "https://www.parkourtheory.com/move/spider_climb",
+      "lastmod": "2026-06-19T12:56:43+00:00"
+    },
+    {
+      "slug": "straddle_hang_gainer",
+      "url": "https://www.parkourtheory.com/move/straddle_hang_gainer",
+      "lastmod": "2026-06-21T01:53:55+00:00"
+    },
+    {
+      "slug": "straddle_hang_gainer_full",
+      "url": "https://www.parkourtheory.com/move/straddle_hang_gainer_full",
+      "lastmod": "2026-06-21T01:53:55+00:00"
+    },
+    {
+      "slug": "support_hold_front_dismount",
+      "url": "https://www.parkourtheory.com/move/support_hold_front_dismount",
+      "lastmod": "2026-06-19T11:35:09+00:00"
+    },
+    {
+      "slug": "swing_castaway_arabian_dive_roll",
+      "url": "https://www.parkourtheory.com/move/swing_castaway_arabian_dive_roll",
+      "lastmod": "2026-06-19T12:28:24+00:00"
+    },
+    {
+      "slug": "swing_castaway_step",
+      "url": "https://www.parkourtheory.com/move/swing_castaway_step",
+      "lastmod": "2026-03-25T23:12:11+00:00"
+    },
+    {
+      "slug": "swipe_vault",
+      "url": "https://www.parkourtheory.com/move/swipe_vault",
+      "lastmod": "2026-04-05T15:20:57+00:00"
+    },
+    {
+      "slug": "thread_kong_vault",
+      "url": "https://www.parkourtheory.com/move/thread_kong_vault",
+      "lastmod": "2026-06-22T12:06:43+00:00"
+    },
+    {
+      "slug": "tic_tac_macaco",
+      "url": "https://www.parkourtheory.com/move/tic_tac_macaco",
+      "lastmod": "2014-12-13T00:00:00+00:00"
+    },
+    {
+      "slug": "toe_shoot_front_wall_spin_twist",
+      "url": "https://www.parkourtheory.com/move/toe_shoot_front_wall_spin_twist",
+      "lastmod": "2026-06-15T11:00:28+00:00"
+    },
+    {
+      "slug": "touchdown_raiz-in_punch_wall_flip-out",
+      "url": "https://www.parkourtheory.com/move/touchdown_raiz-in_punch_wall_flip-out",
+      "lastmod": "2026-06-18T11:14:35+00:00"
+    },
+    {
+      "slug": "touchdown_raiz_helicoptero",
+      "url": "https://www.parkourtheory.com/move/touchdown_raiz_helicoptero",
+      "lastmod": "2026-03-26T15:31:46+00:00"
+    },
+    {
+      "slug": "touchup_raiz",
+      "url": "https://www.parkourtheory.com/move/touchup_raiz",
+      "lastmod": "2026-06-22T13:20:57+00:00"
+    },
+    {
+      "slug": "touchup_touchdown_raiz_helicoptero_vault",
+      "url": "https://www.parkourtheory.com/move/touchup_touchdown_raiz_helicoptero_vault",
+      "lastmod": "2026-06-22T12:06:43+00:00"
+    },
+    {
+      "slug": "touchup_touchdown_raiz_twist_vault",
+      "url": "https://www.parkourtheory.com/move/touchup_touchdown_raiz_twist_vault",
+      "lastmod": "2026-02-11T17:15:20+00:00"
+    },
+    {
+      "slug": "touchup_touchdown_raiz_vault",
+      "url": "https://www.parkourtheory.com/move/touchup_touchdown_raiz_vault",
+      "lastmod": "2026-06-22T13:17:40+00:00"
+    },
+    {
+      "slug": "turn_castaway_double_back",
+      "url": "https://www.parkourtheory.com/move/turn_castaway_double_back",
+      "lastmod": "2026-04-06T16:12:49+00:00"
+    },
+    {
+      "slug": "two-step_wall_flat_180",
+      "url": "https://www.parkourtheory.com/move/two-step_wall_flat_180",
+      "lastmod": "2026-06-21T01:53:55+00:00"
+    },
+    {
+      "slug": "wall_corkscrew_double_double_leg",
+      "url": "https://www.parkourtheory.com/move/wall_corkscrew_double_double_leg",
+      "lastmod": "2026-03-29T15:52:49+00:00"
+    },
+    {
+      "slug": "wall_corkscrew_double_side",
+      "url": "https://www.parkourtheory.com/move/wall_corkscrew_double_side",
+      "lastmod": "2026-09-14T23:34:34+00:00"
+    },
+    {
+      "slug": "wall_corkscrew_hyperhook",
+      "url": "https://www.parkourtheory.com/move/wall_corkscrew_hyperhook",
+      "lastmod": "2023-10-09T00:00:00+00:00"
+    },
+    {
+      "slug": "wall_corkscrew_side",
+      "url": "https://www.parkourtheory.com/move/wall_corkscrew_side",
+      "lastmod": "2026-09-14T23:35:48+00:00"
+    },
+    {
+      "slug": "wall_corkscrew_snapu",
+      "url": "https://www.parkourtheory.com/move/wall_corkscrew_snapu",
+      "lastmod": "2026-03-27T18:15:35+00:00"
+    },
+    {
+      "slug": "wall_dash_bomb",
+      "url": "https://www.parkourtheory.com/move/wall_dash_bomb",
+      "lastmod": "2026-06-22T12:09:28+00:00"
+    },
+    {
+      "slug": "wall_double_corkscrew_hyperhook",
+      "url": "https://www.parkourtheory.com/move/wall_double_corkscrew_hyperhook",
+      "lastmod": "2026-03-28T13:49:58+00:00"
+    },
+    {
+      "slug": "wall_flash_kick_walkdown",
+      "url": "https://www.parkourtheory.com/move/wall_flash_kick_walkdown",
+      "lastmod": "2026-08-05T12:56:40+00:00"
+    },
+    {
+      "slug": "wall_flat_180",
+      "url": "https://www.parkourtheory.com/move/wall_flat_180",
+      "lastmod": "2026-06-21T16:11:21+00:00"
+    },
+    {
+      "slug": "wall_flip_360_back_handspring",
+      "url": "https://www.parkourtheory.com/move/wall_flip_360_back_handspring",
+      "lastmod": "2026-04-25T16:15:12+00:00"
+    },
+    {
+      "slug": "wall_flip_down_monkey_alley",
+      "url": "https://www.parkourtheory.com/move/wall_flip_down_monkey_alley",
+      "lastmod": "2026-04-19T21:17:10+00:00"
+    },
+    {
+      "slug": "wall_one-hand_back_handspring",
+      "url": "https://www.parkourtheory.com/move/wall_one-hand_back_handspring",
+      "lastmod": "2026-03-29T15:35:04+00:00"
+    },
+    {
+      "slug": "wall_one-hand_back_handspring_twist",
+      "url": "https://www.parkourtheory.com/move/wall_one-hand_back_handspring_twist",
+      "lastmod": "2026-03-29T15:40:33+00:00"
+    },
+    {
+      "slug": "wall_wrap_arabian_one-hand_inward_down_monkey_half",
+      "url": "https://www.parkourtheory.com/move/wall_wrap_arabian_one-hand_inward_down_monkey_half",
+      "lastmod": "2026-03-27T18:15:05+00:00"
+    },
+    {
+      "slug": "x-out_270_dive_roll",
+      "url": "https://www.parkourtheory.com/move/x-out_270_dive_roll",
+      "lastmod": "2026-04-20T11:37:23+00:00"
+    }
+  ],
+  "removed": [
+    {
+      "name": "Back 1 1/2 Dive Roll",
+      "url": "https://parkourtheory.com/move/back_1_1-2_dive_roll"
+    },
+    {
+      "name": "Caster Valdez-In Back-Out",
+      "url": "https://parkourtheory.com/move/caster_valdez-in_back-out"
+    },
+    {
+      "name": "Devil Drop Wall Spin",
+      "url": "https://parkourtheory.com/move/devil_drop_wall_spin"
+    },
+    {
+      "name": "Devil Drop Wall Spin Half",
+      "url": "https://parkourtheory.com/move/devil_drop_wall_spin_half"
+    },
+    {
+      "name": "Dive Half Double Back",
+      "url": "https://parkourtheory.com/move/dive_half_double_back"
+    },
+    {
+      "name": "Parallel Bar Gainer Dismount",
+      "url": "https://parkourtheory.com/move/parallel_bar_gainer_dismount"
+    },
+    {
+      "name": "Parallel Bar Gainer Dismount Suicide Roll",
+      "url": "https://parkourtheory.com/move/parallel_bar_gainer_dismount_suicide_roll"
+    },
+    {
+      "name": "Parallel Bar Gainer Full Dismount",
+      "url": "https://parkourtheory.com/move/parallel_bar_gainer_full_dismount"
+    },
+    {
+      "name": "Pendulum",
+      "url": "https://parkourtheory.com/move/pendulum"
+    },
+    {
+      "name": "Pendulum Full-Down",
+      "url": "https://parkourtheory.com/move/pendulum_full-down"
+    },
+    {
+      "name": "Touchup Raiz Touchdown Twist",
+      "url": "https://parkourtheory.com/move/touchup_raiz_touchdown_twist"
+    },
+    {
+      "name": "Wall Boxcutter",
+      "url": "https://parkourtheory.com/move/wall_boxcutter"
+    },
+    {
+      "name": "Wall Macaco",
+      "url": "https://parkourtheory.com/move/wall_macaco"
+    }
+  ],
+  "rename_candidates_by_slug": [
+    {
+      "old": "Parallel Bar Gainer Dismount",
+      "new_slug": "parallel_bar_gainer"
+    },
+    {
+      "old": "Parallel Bar Gainer Dismount Suicide Roll",
+      "new_slug": "parallel_bar_gainer_suicide_roll"
+    },
+    {
+      "old": "Parallel Bar Gainer Full Dismount",
+      "new_slug": "parallel_bar_gainer_full"
+    }
+  ],
+  "lastmod_after_old_scrape": [
+    {
+      "name": "Devil Drop Catch",
+      "lastmod": "2026-04-07T15:43:53+00:00"
+    },
+    {
+      "name": "Kip Half Punch Wall Layout",
+      "lastmod": "2026-04-25T16:53:03+00:00"
+    },
+    {
+      "name": "Kovac Half",
+      "lastmod": "2026-06-23T12:25:01+00:00"
+    },
+    {
+      "name": "Side Quarter Back",
+      "lastmod": "2026-09-20T20:08:08+00:00"
+    }
+  ],
+  "failed_in_old_scrape": [
+    "Aú De Frente",
+    "Giant Release Half Twist Handstand Catch",
+    "Rail Aú De Frente"
+  ]
+}

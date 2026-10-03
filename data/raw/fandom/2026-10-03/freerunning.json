@@ -1,0 +1,279 @@
+{
+ "source": "https://freerunning.fandom.com",
+ "fetched_at": "2026-10-03T12:44:09+00:00",
+ "method": "MediaWiki API: generator=allpages (ns0, nonredirects) + prop=revisions (section-0 wikitext, stripped locally); redirects via generator=allpages&gapfilterredir=redirects&redirects=1",
+ "license": {
+  "url": "https://www.fandom.com/licensing",
+  "text": "CC-BY-SA"
+ },
+ "credit": "Text from Freerunning Wiki (https://freerunning.fandom.com), contributors, CC-BY-SA",
+ "siteinfo_statistics": {
+  "pages": 312,
+  "articles": 16,
+  "edits": 553,
+  "images": 35,
+  "users": 35668178,
+  "activeusers": 0,
+  "admins": 4,
+  "jobs": 0
+ },
+ "mediawiki_version": "MediaWiki 1.43.9",
+ "n_pages_nonredirect_ns0": 16,
+ "n_redirects_ns0": 12,
+ "articles": [
+  {
+   "page_id": 2062,
+   "title": "Cat Leap",
+   "url": "https://freerunning.fandom.com/wiki/Cat_Leap",
+   "last_rev_timestamp": "2009-04-15T17:53:33Z",
+   "last_rev_user": "XxTwiztedJoker",
+   "categories": [
+    "Vaults"
+   ],
+   "wikitext_chars": 905,
+   "lead_wikitext": "[[Image:Cat_Leap.gif|frame|Cat Leap]]The Cat Leap is a [[Beginners Vault]].",
+   "lead_text": "The Cat Leap is a Beginners Vault."
+  },
+  {
+   "page_id": 2095,
+   "title": "Double Kong",
+   "url": "https://freerunning.fandom.com/wiki/Double_Kong",
+   "last_rev_timestamp": "2011-11-18T00:19:22Z",
+   "last_rev_user": "Gyro360",
+   "categories": [],
+   "wikitext_chars": 196,
+   "lead_wikitext": "Double Kong is basically a continuous kong vault, but your feet are touching the ground. It takes a lot of speed to vault to the second rail and move your very fast.[[File:Double_kong.jpeg|thumb]]",
+   "lead_text": "Double Kong is basically a continuous kong vault, but your feet are touching the ground. It takes a lot of speed to vault to the second rail and move your very fast."
+  },
+  {
+   "page_id": 2089,
+   "title": "Elvis F\"ING Garcia",
+   "url": "https://freerunning.fandom.com/wiki/Elvis_F%22ING_Garcia",
+   "last_rev_timestamp": "2011-10-19T19:25:39Z",
+   "last_rev_user": "Awesome245",
+   "categories": [],
+   "wikitext_chars": 667,
+   "lead_wikitext": "",
+   "lead_text": ""
+  },
+  {
+   "page_id": 2057,
+   "title": "Free Running",
+   "url": "https://freerunning.fandom.com/wiki/Free_Running",
+   "last_rev_timestamp": "2009-04-13T18:59:47Z",
+   "last_rev_user": "XxTwiztedJoker",
+   "categories": [],
+   "wikitext_chars": 3438,
+   "lead_wikitext": "",
+   "lead_text": ""
+  },
+  {
+   "page_id": 1461,
+   "title": "Freerunning Wiki",
+   "url": "https://freerunning.fandom.com/wiki/Freerunning_Wiki",
+   "last_rev_timestamp": "2013-07-22T14:22:14Z",
+   "last_rev_user": "41.13.20.211",
+   "categories": [
+    "Browse"
+   ],
+   "wikitext_chars": 871,
+   "lead_wikitext": "",
+   "lead_text": ""
+  },
+  {
+   "page_id": 2040,
+   "title": "Kong Vault",
+   "url": "https://freerunning.fandom.com/wiki/Kong_Vault",
+   "last_rev_timestamp": "2009-04-15T17:41:13Z",
+   "last_rev_user": "XxTwiztedJoker",
+   "categories": [
+    "Vaults"
+   ],
+   "wikitext_chars": 1462,
+   "lead_wikitext": "[[Image:Kongvault.gif|frame|Kong Vault]]\n\nthe Kong Vault is a [[Intermediate Vault]] while the other 3 variations are [[Advanced Vaults]].",
+   "lead_text": "the Kong Vault is a Intermediate Vault while the other 3 variations are Advanced Vaults."
+  },
+  {
+   "page_id": 2049,
+   "title": "Lazy Vault",
+   "url": "https://freerunning.fandom.com/wiki/Lazy_Vault",
+   "last_rev_timestamp": "2009-04-09T16:29:53Z",
+   "last_rev_user": "XxTwiztedJoker",
+   "categories": [
+    "Vaults"
+   ],
+   "wikitext_chars": 695,
+   "lead_wikitext": "[[Image:Lazyvault.gif|frame|Lazy Vault]]The Lazy Vault is a [[Beginners Vault]].",
+   "lead_text": "The Lazy Vault is a Beginners Vault."
+  },
+  {
+   "page_id": 2035,
+   "title": "Monkey Vault",
+   "url": "https://freerunning.fandom.com/wiki/Monkey_Vault",
+   "last_rev_timestamp": "2009-04-09T02:52:02Z",
+   "last_rev_user": "XxTwiztedJoker",
+   "categories": [
+    "Vaults"
+   ],
+   "wikitext_chars": 862,
+   "lead_wikitext": "[[Image:Monkey_Vault.gif|thumb|250px|Monkey Vault Animation]]The ''Monkey Vault ''is a [[Beginners Vault]].",
+   "lead_text": "The Monkey Vault is a Beginners Vault."
+  },
+  {
+   "page_id": 2056,
+   "title": "Parkour",
+   "url": "https://freerunning.fandom.com/wiki/Parkour",
+   "last_rev_timestamp": "2011-08-01T03:51:41Z",
+   "last_rev_user": "98.184.164.97",
+   "categories": [],
+   "wikitext_chars": 1235,
+   "lead_wikitext": "Parkour sometimes abbreviated to PK means l'art du déplacement which in English means the art of movement. Parkour is an activity with the aim of moving from one point to another as smoothly, efficiently, and quickly as possible, using principally the abilities of the human body. It is meant to help one overcome obstacles, which can be anything in the surrounding environment—from branches and rocks to rails and concrete walls—and can be practiced in both rural and urban areas. Injuries, sometimes permanent, from jumping, twisting and falling are common. Parkour practitioners are referred to as traceurs, or traceuses for females.\n\nParkour was developed by the French army, soldiers had to learn the technique to escape dangerous areas or when they had been captured; to escape. Later it became popular among the normal people and it had been trained to move around in urban areas at high speed or just for fun.\n\nIn truth there is no difference between Free-Running and Parkour except for the fact that most people who call themselves Freerunners (someone who does Free-Running) learn tricking moves while people who call themselves Traceurs (someone who does parkour) do not. Tricking itself is a completely different disipline.",
+   "lead_text": "Parkour sometimes abbreviated to PK means l'art du déplacement which in English means the art of movement. Parkour is an activity with the aim of moving from one point to another as smoothly, efficiently, and quickly as possible, using principally the abilities of the human body. It is meant to help one overcome obstacles, which can be anything in the surrounding environment—from branches and rocks to rails and concrete walls—and can be practiced in both rural and urban areas. Injuries, sometimes permanent, from jumping, twisting and falling are common. Parkour practitioners are referred to as traceurs, or traceuses for females.\n\nParkour was developed by the French army, soldiers had to learn the technique to escape dangerous areas or when they had been captured; to escape. Later it became popular among the normal people and it had been trained to move around in urban areas at high speed or just for fun.\n\nIn truth there is no difference between Free-Running and Parkour except for the fact that most people who call themselves Freerunners (someone who does Free-Running) learn tricking moves while people who call themselves Traceurs (someone who does parkour) do not. Tricking itself is a completely different disipline."
+  },
+  {
+   "page_id": 2009,
+   "title": "Sandbox",
+   "url": "https://freerunning.fandom.com/wiki/Sandbox",
+   "last_rev_timestamp": "2009-02-03T20:06:10Z",
+   "last_rev_user": "Multimoog",
+   "categories": [],
+   "wikitext_chars": 19,
+   "lead_wikitext": "{{Magazine_Covers}}",
+   "lead_text": ""
+  },
+  {
+   "page_id": 2051,
+   "title": "Speed Vault",
+   "url": "https://freerunning.fandom.com/wiki/Speed_Vault",
+   "last_rev_timestamp": "2011-10-12T23:00:08Z",
+   "last_rev_user": "98.217.155.140",
+   "categories": [
+    "Vaults"
+   ],
+   "wikitext_chars": 1011,
+   "lead_wikitext": "[[Image:Speed_Vault.gif|frame|Speed Vault]]The ''Speed Vault'' is a [[Beginners Vault]].",
+   "lead_text": "The Speed Vault is a Beginners Vault."
+  },
+  {
+   "page_id": 2073,
+   "title": "Tricks",
+   "url": "https://freerunning.fandom.com/wiki/Tricks",
+   "last_rev_timestamp": "2011-07-04T01:12:45Z",
+   "last_rev_user": "Grim Leaper19",
+   "categories": [],
+   "wikitext_chars": 3846,
+   "lead_wikitext": "This page contains all Free-Running tricks, and a brief description of each. For full information on these tricks, follow the links. (Note: You are not allowed to post your own tricks {Made up tricks} here.)\n\n\n\n-'''''Dash Vault:'''''\n\nPerfored mainly over longer objects or walls, mostly park benches or wide walls, the performer jumps at the object getting as far to the end of the obstacle as possible with both legs kept out in front of the body, and places both hands near the end of the obstalce and on either side of their body for support and push off with the palms of their hands for forward momentum and a quick exit.\n\n\n\n-'''''Diving Frontflip/Eagle Flip/Superman Flip:'''''\n\nPerformed mainly over a wall or object, usually with a large drop on the other side of it, the performer dives over the obstacle and tucks into a frontflip motion to execute a complete frontflip out over the obstacle before landing sefely on the ground.\n\n\n\n'''-''Dive Roll:'''''\n\nPerformed mainly over a smaller object or something that can't be held (e.g, chains, wire fences), the performer jumps and dives over the obstacle, and lands in a safety rolling motion to continue their path safely.\n\n\n\n-'''''[[Kong Vault]]:'''''\n\nPerformed over long objects that can't simply be jumped, mostly park benches, the performer throws their body in a diving motion to get as far to the end of the obstacle as possible, placing their hands near the end of the obstacle, they bringing their legs through their arms and push off with the palm of their hands for forward momentum and a quick exit.\n\n\n\n-'''''[[Monkey Vault]]:'''''\n\nPerformed over thin objects, mostly railings, the performer places both hands on the railing, jumps up as hard as necessary and pulls their knees close to their chest for a greater hight and clearance, and pushes off with the palms of their hands for balance and direction and lands safely on the other side of the obstacle.\n\n\n\n-'''''Reverse Kong Vault:'''''\n\nInstead of vaulting over a railing with a Monkey Vault, which may be the most efficient way, the athlete adds a 360 degree spin along the horizontal axis to make the movement more aesthetically pleasing, as well as increasing their coordination.\n\n\n\n-'''''[[Turn Vault]]:'''''\n\nPerformed over a wall or platform that has a large drop below, like a balcony or fence that is above one story high, the performer places both hands on the obstacle and vaults sideways to bring their body around in a 180 degree motion and, while still holding the obstacle, they cling to the other side of the obstacle and hold for a few seconds to perform a safe drop to reduce shock. This may be time consuming, but it is much safer than simply vaulting the object.\n\n\n\n'''-''Wall Flip:'''''\n\nPerformed on any wall surface, mostly the sides of buildings or objects, the performer jumps at and up the surface with one leg and begins to tilt their body backwards, while swinging the other leg through for momentum and spin, they kick off of the surface to execute a complete backflip before landing safely on the ground.\n\n\n\n-'''''Wall Spin:'''''\n\nPerformed on any of the same surfaces as a Wall Flip, the performer jumps at the surface placing both hands securely on the surface and begins to tilt their body to the side, bringing both legs around and over where the hands have been placed, the performer should release one hand (the outside hand) and start to turn so that the side of their body is parallel with the surface (you should be facing along the surface) before pushing away from the surface and making a safe landing.\n\n<gallery captionalign=\"left\">\nBackFlipStroboscobical.jpg|Free-Runner performs a wall-flip.\nKong Vault.jpg|A Kong-/Monkey Vault.\nDive Roll.JPG|Stick figure showing the movements during a dive role.\nDash vault.jpg|Someone perorming a dash vault to jump over a wall.\n</gallery>",
+   "lead_text": "This page contains all Free-Running tricks, and a brief description of each. For full information on these tricks, follow the links. (Note: You are not allowed to post your own tricks {Made up tricks} here.)\n\n-Dash Vault:\n\nPerfored mainly over longer objects or walls, mostly park benches or wide walls, the performer jumps at the object getting as far to the end of the obstacle as possible with both legs kept out in front of the body, and places both hands near the end of the obstalce and on either side of their body for support and push off with the palms of their hands for forward momentum and a quick exit.\n\n-Diving Frontflip/Eagle Flip/Superman Flip:\n\nPerformed mainly over a wall or object, usually with a large drop on the other side of it, the performer dives over the obstacle and tucks into a frontflip motion to execute a complete frontflip out over the obstacle before landing sefely on the ground.\n\n-Dive Roll:\n\nPerformed mainly over a smaller object or something that can't be held (e.g, chains, wire fences), the performer jumps and dives over the obstacle, and lands in a safety rolling motion to continue their path safely.\n\n-Kong Vault:\n\nPerformed over long objects that can't simply be jumped, mostly park benches, the performer throws their body in a diving motion to get as far to the end of the obstacle as possible, placing their hands near the end of the obstacle, they bringing their legs through their arms and push off with the palm of their hands for forward momentum and a quick exit.\n\n-Monkey Vault:\n\nPerformed over thin objects, mostly railings, the performer places both hands on the railing, jumps up as hard as necessary and pulls their knees close to their chest for a greater hight and clearance, and pushes off with the palms of their hands for balance and direction and lands safely on the other side of the obstacle.\n\n-Reverse Kong Vault:\n\nInstead of vaulting over a railing with a Monkey Vault, which may be the most efficient way, the athlete adds a 360 degree spin along the horizontal axis to make the movement more aesthetically pleasing, as well as increasing their coordination.\n\n-Turn Vault:\n\nPerformed over a wall or platform that has a large drop below, like a balcony or fence that is above one story high, the performer places both hands on the obstacle and vaults sideways to bring their body around in a 180 degree motion and, while still holding the obstacle, they cling to the other side of the obstacle and hold for a few seconds to perform a safe drop to reduce shock. This may be time consuming, but it is much safer than simply vaulting the object.\n\n-Wall Flip:\n\nPerformed on any wall surface, mostly the sides of buildings or objects, the performer jumps at and up the surface with one leg and begins to tilt their body backwards, while swinging the other leg through for momentum and spin, they kick off of the surface to execute a complete backflip before landing safely on the ground.\n\n-Wall Spin:\n\nPerformed on any of the same surfaces as a Wall Flip, the performer jumps at the surface placing both hands securely on the surface and begins to tilt their body to the side, bringing both legs around and over where the hands have been placed, the performer should release one hand (the outside hand) and start to turn so that the side of their body is parallel with the surface (you should be facing along the surface) before pushing away from the surface and making a safe landing.\n\nBackFlipStroboscobical.jpg|Free-Runner performs a wall-flip.\nKong Vault.jpg|A Kong-/Monkey Vault.\nDive Roll.JPG|Stick figure showing the movements during a dive role.\nDash vault.jpg|Someone perorming a dash vault to jump over a wall."
+  },
+  {
+   "page_id": 2079,
+   "title": "Tricks by Users",
+   "url": "https://freerunning.fandom.com/wiki/Tricks_by_Users",
+   "last_rev_timestamp": "2011-07-01T12:06:16Z",
+   "last_rev_user": "CoffeeRocks",
+   "categories": [],
+   "wikitext_chars": 133,
+   "lead_wikitext": "On this page you can upload your own Free-Running tricks-, movements and tips. Already existing tricks should be posted in [Reserved]",
+   "lead_text": "On this page you can upload your own Free-Running tricks-, movements and tips. Already existing tricks should be posted in [Reserved]"
+  },
+  {
+   "page_id": 2054,
+   "title": "Turn Vault",
+   "url": "https://freerunning.fandom.com/wiki/Turn_Vault",
+   "last_rev_timestamp": "2009-04-10T02:35:14Z",
+   "last_rev_user": "XxTwiztedJoker",
+   "categories": [
+    "Vaults"
+   ],
+   "wikitext_chars": 825,
+   "lead_wikitext": "[[Image:Turn_Vault.gif|frame|Turn Vault]]The ''Turn Vault'' is a [[beginners vault]].",
+   "lead_text": "The Turn Vault is a beginners vault."
+  },
+  {
+   "page_id": 2064,
+   "title": "Underbar",
+   "url": "https://freerunning.fandom.com/wiki/Underbar",
+   "last_rev_timestamp": "2009-04-15T18:06:04Z",
+   "last_rev_user": "XxTwiztedJoker",
+   "categories": [
+    "Vaults"
+   ],
+   "wikitext_chars": 554,
+   "lead_wikitext": "[[Image:Underbar.gif|frame|An Underbar]]The Underbar is a [[Intermediate Vault]].",
+   "lead_text": "The Underbar is a Intermediate Vault."
+  },
+  {
+   "page_id": 2033,
+   "title": "Vaults",
+   "url": "https://freerunning.fandom.com/wiki/Vaults",
+   "last_rev_timestamp": "2009-04-15T18:15:16Z",
+   "last_rev_user": "XxTwiztedJoker",
+   "categories": [],
+   "wikitext_chars": 2717,
+   "lead_wikitext": "'''Vault \\Vôlt\\ v. :To jump or leap over, especially with the aid of a support such as the hands.'''\n\n\n\n'''Vaults''' are the most common form of movement in ''[[Free Running]]'' (Next to the [[Acrobatics]]) creating the basis of the discipline. Vaults are movements used to get over an object. Vaults are commonly used on gates, fences, walls, trash cans, bike racks and tables. Vaults can also be used on walls. Vault's can be catergorized into 3; ''Beginner Vaults'', ''Intermediate Vaults'','' ''and ''Advanced Vaults'' all dependant on your skill level. \n\n\n\nVaults are just names to communicate with each other easier. No one is limited to these movements, you can combine to vaults, create your own or only do the ones you like. Follow your own way. These Vaults have been categorized by assumption, an which most beginner Free Runners should begin to learn and then move up to learn the next. If they so choose. Remember to practice and to get out their.",
+   "lead_text": "Vault \\Vôlt\\ v. :To jump or leap over, especially with the aid of a support such as the hands.\n\nVaults are the most common form of movement in Free Running (Next to the Acrobatics) creating the basis of the discipline. Vaults are movements used to get over an object. Vaults are commonly used on gates, fences, walls, trash cans, bike racks and tables. Vaults can also be used on walls. Vault's can be catergorized into 3; Beginner Vaults, Intermediate Vaults, and Advanced Vaults all dependant on your skill level. \n\nVaults are just names to communicate with each other easier. No one is limited to these movements, you can combine to vaults, create your own or only do the ones you like. Follow your own way. These Vaults have been categorized by assumption, an which most beginner Free Runners should begin to learn and then move up to learn the next. If they so choose. Remember to practice and to get out their."
+  }
+ ],
+ "redirects": [
+  {
+   "from": "Advanced Vaults",
+   "to": "Vaults",
+   "tofragment": null
+  },
+  {
+   "from": "Begginer Vaults",
+   "to": "Vaults",
+   "tofragment": null
+  },
+  {
+   "from": "Beginners Vault",
+   "to": "Vaults",
+   "tofragment": null
+  },
+  {
+   "from": "Beginners vault",
+   "to": "Vaults",
+   "tofragment": null
+  },
+  {
+   "from": "Intermediate Vault",
+   "to": "Vaults",
+   "tofragment": null
+  },
+  {
+   "from": "King Kong Vault",
+   "to": "Kong Vault",
+   "tofragment": null
+  },
+  {
+   "from": "L'Art du deplacement",
+   "to": "Parkour",
+   "tofragment": null
+  },
+  {
+   "from": "Main Page",
+   "to": "Freerunning Wiki",
+   "tofragment": null
+  },
+  {
+   "from": "Quadruple Kong Vault",
+   "to": "Kong Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Sports Starter Wiki",
+   "to": "Main Page",
+   "tofragment": null
+  },
+  {
+   "from": "Triple Kong Vault",
+   "to": "Kong Vault",
+   "tofragment": null
+  },
+  {
+   "from": "Vault",
+   "to": "Vaults",
+   "tofragment": null
+  }
+ ]
+}

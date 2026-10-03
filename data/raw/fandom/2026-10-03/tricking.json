@@ -1,0 +1,371 @@
+{
+ "source": "https://tricking.fandom.com",
+ "fetched_at": "2026-10-03T12:44:04+00:00",
+ "method": "MediaWiki API: generator=allpages (ns0, nonredirects) + prop=revisions (section-0 wikitext, stripped locally); redirects via generator=allpages&gapfilterredir=redirects&redirects=1",
+ "license": {
+  "url": "https://www.fandom.com/licensing",
+  "text": "CC-BY-SA"
+ },
+ "credit": "Text from Tricking Wiki (https://tricking.fandom.com), contributors, CC-BY-SA",
+ "siteinfo_statistics": {
+  "pages": 193,
+  "articles": 24,
+  "edits": 322,
+  "images": 19,
+  "users": 35668255,
+  "activeusers": 0,
+  "admins": 2,
+  "jobs": 0
+ },
+ "mediawiki_version": "MediaWiki 1.43.9",
+ "n_pages_nonredirect_ns0": 24,
+ "n_redirects_ns0": 6,
+ "articles": [
+  {
+   "page_id": 1955,
+   "title": "360 Kick",
+   "url": "https://tricking.fandom.com/wiki/360_Kick",
+   "last_rev_timestamp": "2024-07-14T21:41:27Z",
+   "last_rev_user": "Raizor7",
+   "categories": [
+    "Kicking Tricks"
+   ],
+   "wikitext_chars": 440,
+   "lead_wikitext": "The '''''360 Kick''''' in Tricking refers to a category of jumping rotational kicks in Tricking, most commonly the '''''Pop 360 Crescent.''''' It is a jumping version of the Spin Crescent, or ''Armada'' in Capoeira.",
+   "lead_text": "The 360 Kick in Tricking refers to a category of jumping rotational kicks in Tricking, most commonly the Pop 360 Crescent. It is a jumping version of the Spin Crescent, or Armada in Capoeira."
+  },
+  {
+   "page_id": 1932,
+   "title": "Acrobolix",
+   "url": "https://tricking.fandom.com/wiki/Acrobolix",
+   "last_rev_timestamp": "2017-08-23T06:39:52Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Websites"
+   ],
+   "wikitext_chars": 196,
+   "lead_wikitext": "'''Acrobolix''' is [[Jujimufu]]'s website that existed as early as 2013: https://web.archive.org/web/20130927045221/acrobolix.com\n\nIt was a successor to [[Tricks Tutorials]].\n[[Category:Websites]]",
+   "lead_text": "Acrobolix is Jujimufu's website that existed as early as 2013: https://web.archive.org/web/20130927045221/acrobolix.com\n\nIt was a successor to Tricks Tutorials."
+  },
+  {
+   "page_id": 1943,
+   "title": "Antoine Vaillant",
+   "url": "https://tricking.fandom.com/wiki/Antoine_Vaillant",
+   "last_rev_timestamp": "2019-07-19T02:14:49Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "The Trickers"
+   ],
+   "wikitext_chars": 94,
+   "lead_wikitext": "'''Antoine Vaillant''' is the \"Physical\" member of [[Tricked Three]]\n[[Category:The Trickers]]",
+   "lead_text": "Antoine Vaillant is the \"Physical\" member of Tricked Three"
+  },
+  {
+   "page_id": 1926,
+   "title": "Arabian",
+   "url": "https://tricking.fandom.com/wiki/Arabian",
+   "last_rev_timestamp": "2016-07-26T23:02:50Z",
+   "last_rev_user": "Rayniku",
+   "categories": [],
+   "wikitext_chars": 325,
+   "lead_wikitext": "\"A trick where the performer jumps up and rotates 360° forwards along the sagittal plane (or about the x-axis) as well as rotating 180° along the transverse plane, before returning to his feet. He should land facing the opposite direction from which he took off.\" - [http://www.club540.com/tricktionary/arabian Club540] desc.",
+   "lead_text": "\"A trick where the performer jumps up and rotates 360° forwards along the sagittal plane (or about the x-axis) as well as rotating 180° along the transverse plane, before returning to his feet. He should land facing the opposite direction from which he took off.\" - Club540 desc."
+  },
+  {
+   "page_id": 1920,
+   "title": "Backflip",
+   "url": "https://tricking.fandom.com/wiki/Backflip",
+   "last_rev_timestamp": "2024-07-14T19:50:01Z",
+   "last_rev_user": "Raizor7",
+   "categories": [
+    "Flipping Tricks",
+    "The Tricks"
+   ],
+   "wikitext_chars": 4488,
+   "lead_wikitext": "[[File:Back flip.gif|thumb|Example of a Standing Back Tuck|280x280px]]\n''Disclaimer: This article is about a move that can be dangerous if performed incorrectly. Perform this movement with caution.''\n\nA '''''Back Flip''''' is a backwards rotating trick where the tricker jumps, rotates 360 degrees backwards, and lands on their feet. Backflips are one of the most basic and fundamental movements in Tricking, or in any acrobatic discipline. While \"Back Flip\" actually refers to a whole category of backwards flipping tricks, the word is most commonly used in reference to the '''''Back Tuck'''.''",
+   "lead_text": "Disclaimer: This article is about a move that can be dangerous if performed incorrectly. Perform this movement with caution.\n\nA Back Flip is a backwards rotating trick where the tricker jumps, rotates 360 degrees backwards, and lands on their feet. Backflips are one of the most basic and fundamental movements in Tricking, or in any acrobatic discipline. While \"Back Flip\" actually refers to a whole category of backwards flipping tricks, the word is most commonly used in reference to the Back Tuck."
+  },
+  {
+   "page_id": 1900,
+   "title": "Barani",
+   "url": "https://tricking.fandom.com/wiki/Barani",
+   "last_rev_timestamp": "2017-08-23T07:09:48Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "The Tricks"
+   ],
+   "wikitext_chars": 310,
+   "lead_wikitext": "A '''Barani''' is a frontflip twisting 180 degrees taking off two feet and landing on two feet.\n\nDan Mackey landed a 15 feet 9 inch Barani flip for longest Berani in the Guinness World Record. It was performed in Wilbraham, MA at the All American Gymnastics Academy on October 22, 2011.\n[[Category:The Tricks]]",
+   "lead_text": "A Barani is a frontflip twisting 180 degrees taking off two feet and landing on two feet.\n\nDan Mackey landed a 15 feet 9 inch Barani flip for longest Berani in the Guinness World Record. It was performed in Wilbraham, MA at the All American Gymnastics Academy on October 22, 2011."
+  },
+  {
+   "page_id": 1931,
+   "title": "Club 540",
+   "url": "https://tricking.fandom.com/wiki/Club_540",
+   "last_rev_timestamp": "2017-08-23T06:39:19Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Websites"
+   ],
+   "wikitext_chars": 117,
+   "lead_wikitext": "'''Club 540''' existed as early as 2003: https://web.archive.org/web/20030321142951/club540.com\n[[Category:Websites]]",
+   "lead_text": "Club 540 existed as early as 2003: https://web.archive.org/web/20030321142951/club540.com"
+  },
+  {
+   "page_id": 1927,
+   "title": "Forums",
+   "url": "https://tricking.fandom.com/wiki/Forums",
+   "last_rev_timestamp": "2017-08-23T06:47:35Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Content"
+   ],
+   "wikitext_chars": 1791,
+   "lead_wikitext": "A variety of '''forums''' (aka '''message boards''') have existed about tricking over the years. All of them are gone.\n\nSites which hosted forums include but are not limited to:\n*[[Tricks Tutorials]]\n*[[Tricksession]]\n*[[Acrobolix]]\n*[[Club 540]]",
+   "lead_text": "A variety of forums (aka message boards) have existed about tricking over the years. All of them are gone.\n\nSites which hosted forums include but are not limited to:\n*Tricks Tutorials\n*Tricksession\n*Acrobolix\n*Club 540"
+  },
+  {
+   "page_id": 1917,
+   "title": "Frontflip",
+   "url": "https://tricking.fandom.com/wiki/Frontflip",
+   "last_rev_timestamp": "2014-11-07T22:04:56Z",
+   "last_rev_user": "Jamesnortheast",
+   "categories": [
+    "The Tricks"
+   ],
+   "wikitext_chars": 238,
+   "lead_wikitext": "The front flip (front tuck) is a skill where the performer does a full 360 degree rotation forwards, landing back on his feet. \n[[File:How to Front Flip (Front Tuck) - Tutorial|thumb|300x300px|Front Flip Tutorial]]\n[[Category:The Tricks]]",
+   "lead_text": "The front flip (front tuck) is a skill where the performer does a full 360 degree rotation forwards, landing back on his feet."
+  },
+  {
+   "page_id": 1933,
+   "title": "Gloryhood",
+   "url": "https://tricking.fandom.com/wiki/Gloryhood",
+   "last_rev_timestamp": "2019-07-19T02:13:29Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Websites"
+   ],
+   "wikitext_chars": 315,
+   "lead_wikitext": "'''Gloryhood''' is a website which existed as early as 2014.<ref>https://archive.fo/fSvL5</ref>\n\nIt hosted a tricking-themed video game starring [[Jamesters]] and [[Jujimufu]] and [[Antoine]].<ref>https://archive.fo/NKCS0</ref>\n\nThis was called [[Tricked Three]].",
+   "lead_text": "Gloryhood is a website which existed as early as 2014.\n\nIt hosted a tricking-themed video game starring Jamesters and Jujimufu and Antoine.\n\nThis was called Tricked Three."
+  },
+  {
+   "page_id": 1945,
+   "title": "Jamesters",
+   "url": "https://tricking.fandom.com/wiki/Jamesters",
+   "last_rev_timestamp": "2021-03-14T04:45:01Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "The Trickers"
+   ],
+   "wikitext_chars": 135,
+   "lead_wikitext": "'''Jamesters''' is the \"Spiritual\" member of [[Tricked Three]].\n\nHis character is based on [[Jamie Stroud]].\n\n[[Category:The Trickers]]",
+   "lead_text": "Jamesters is the \"Spiritual\" member of Tricked Three.\n\nHis character is based on Jamie Stroud."
+  },
+  {
+   "page_id": 1949,
+   "title": "Jamie Stroud",
+   "url": "https://tricking.fandom.com/wiki/Jamie_Stroud",
+   "last_rev_timestamp": "2024-10-01T22:30:47Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "The Trickers"
+   ],
+   "wikitext_chars": 418,
+   "lead_wikitext": "'''Jamie Stroud''' was a tricker in the early 2000s who the character [[Jamesters]] was based on in [[Tricked Three]].\n\nIt appears that he died on 11 December 2020 but then was revealed to still be alive as of 4 October 2021 when he was reported arrested when police tased him for entering a home.",
+   "lead_text": "Jamie Stroud was a tricker in the early 2000s who the character Jamesters was based on in Tricked Three.\n\nIt appears that he died on 11 December 2020 but then was revealed to still be alive as of 4 October 2021 when he was reported arrested when police tased him for entering a home."
+  },
+  {
+   "page_id": 1946,
+   "title": "Jujimufu",
+   "url": "https://tricking.fandom.com/wiki/Jujimufu",
+   "last_rev_timestamp": "2019-07-19T02:15:31Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "The Trickers"
+   ],
+   "wikitext_chars": 88,
+   "lead_wikitext": "'''Jujimufu''' is the \"Energetic\" member of [[Tricked Three]].\n[[Category:The Trickers]]",
+   "lead_text": "Jujimufu is the \"Energetic\" member of Tricked Three."
+  },
+  {
+   "page_id": 1891,
+   "title": "Kicks",
+   "url": "https://tricking.fandom.com/wiki/Kicks",
+   "last_rev_timestamp": "2024-06-15T22:49:40Z",
+   "last_rev_user": "Dragonlord1229",
+   "categories": [
+    "The Tricks"
+   ],
+   "wikitext_chars": 7862,
+   "lead_wikitext": "[[File:Slow Motion Tricking 540 kick|thumb|446x446px]]\n'''Kicks''' in Tricking are a category of tricks that incorporate various martial arts kicking techniques, such as round kicks, crescent kicks and hook kicks. The purpose of kicks in Tricking is simply to add complexity and aesthetic value to basic kicks, rather than any practical fighting value. These kicking techniques were borrowed from a number of martial arts systems, mainly Taekwondo, Capoeira and Wushu. Tricking kicks were central to the development of the sport, and remain a defining element.\n\nThere are many different categories of kicks used in Tricking, often defined by stance and takeoff. Pop Kicks, Cheat Kicks and Swing Kicks for example, are expansive categories of tricks in and of themselves. Kicks may also be variated into other flipping or twisting tricks (e.g. Flash Kick, Full Hyperhook), or simply used as a setup to generate power and momentum.",
+   "lead_text": "Kicks in Tricking are a category of tricks that incorporate various martial arts kicking techniques, such as round kicks, crescent kicks and hook kicks. The purpose of kicks in Tricking is simply to add complexity and aesthetic value to basic kicks, rather than any practical fighting value. These kicking techniques were borrowed from a number of martial arts systems, mainly Taekwondo, Capoeira and Wushu. Tricking kicks were central to the development of the sport, and remain a defining element.\n\nThere are many different categories of kicks used in Tricking, often defined by stance and takeoff. Pop Kicks, Cheat Kicks and Swing Kicks for example, are expansive categories of tricks in and of themselves. Kicks may also be variated into other flipping or twisting tricks (e.g. Flash Kick, Full Hyperhook), or simply used as a setup to generate power and momentum."
+  },
+  {
+   "page_id": 1934,
+   "title": "Publicus",
+   "url": "https://tricking.fandom.com/wiki/Publicus",
+   "last_rev_timestamp": "2017-08-23T06:55:32Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Websites"
+   ],
+   "wikitext_chars": 519,
+   "lead_wikitext": "The '''Publicus''' was an off-topic section of [[Tricks Tutorials]]' forums. It appears to have been introduced some time in 2005.\n\nIt was not visible September 3rd: https://web.archive.org/web/20050903172828/http://www.trickstutorials.com:80/forum/\n\nSeptember 7th the forums were apparently hacked: https://web.archive.org/web/20050907093423/http://www.trickstutorials.com:80/forum/\n\nIt was visible November 24th https://web.archive.org/web/20051124155714/http://www.trickstutorials.com:80/forum/\n[[Category:Websites]]",
+   "lead_text": "The Publicus was an off-topic section of Tricks Tutorials' forums. It appears to have been introduced some time in 2005.\n\nIt was not visible September 3rd: https://web.archive.org/web/20050903172828/http://www.trickstutorials.com:80/forum/\n\nSeptember 7th the forums were apparently hacked: https://web.archive.org/web/20050907093423/http://www.trickstutorials.com:80/forum/\n\nIt was visible November 24th https://web.archive.org/web/20051124155714/http://www.trickstutorials.com:80/forum/"
+  },
+  {
+   "page_id": 1903,
+   "title": "The Origins of Tricking",
+   "url": "https://tricking.fandom.com/wiki/The_Origins_of_Tricking",
+   "last_rev_timestamp": "2024-08-27T17:17:58Z",
+   "last_rev_user": "DToast",
+   "categories": [
+    "Trickalosophy"
+   ],
+   "wikitext_chars": 6367,
+   "lead_wikitext": "In the beginning, there was Aum.\n\nJust a sound in the dark.\n\n\n\nSoon Aum got bored.\n\nShortly after we got light and shit.\n\n\n\nLight and shit started to fuck with eachother until planets smashed on to the scene. Then whoever somewhere sometime did some shit and BAM humans.\n\n\n\n\n\nHumans have been blessed with a goofy star shaped body and a giant gravity canvas to play with.  Starting in the earliest of days came the most basic of movements. \n\n\n\nWe don't know who landed the first forward roll, or the first cartwheel. \n\nBut we do know that we stomped that shit.\n\n(Though odds are good that monkeys actually beat us to those tricks, but fuck monkeys) \n\n\n\nImagine the sights, you're outside of a fucking cave where you live, it's warm and sunny out. Last night you killed a Triceratops so you and your tribe will eat good for weeks. This is your off day.\n\nYour best friend Tu walks over to you and asks if you've seen Kah.\n\nYou don't know, you haven't seen Kah since the hunt.\n\nKah walks from behind an oversized prehistoric tree. \n\n\n\nTogether you, Kah, and Tu form a triangle. (A polygon =D ) \n\n\n\nYou can't remember who started it but someone was making goofy noises and clapping his hands. (Which has just been discovered a week ago) Then before you know it Tu and Kah were pacing back and forth in front of the cave. Soon Kah jumped as far as he could at Tu. That was some tight shit. But Tu kept his cool, he had one up his sleeve too. Tu ran forward and jumped as far as he could PLUS he did a 180. \n\n\n\nholy shit\n\n\n\nTu brought the house down with that. But it wasn't enough. You start making louder banging sounds as Kah winds up his arm. He's never tried this before but he's certain it'll work.\n\n\n\nHe reaches for the floor!\n\n\n\nOne hand touches, THEN THE NEXT!\n\n\n\nHOLY FUCKING SHIT KAH IS UPSIDE DOWN\n\n\n\nhe falls over and catches himself with his feet. Kah stuck it. \n\n\n\nTu started walking away smiling while making a cutting motion with his hand at his neck.\n\n\n\nI'm sure in the very first days, it was simply Tricking at it's purest form. They didn't have dance yet because they'd have to figure out music before dance. They had survival and then slowly but surely, excess skillsets became available to the human. Starting with Tricking. \n\nAt its earliest core Tricking was simply who could do the coolest shit. Caveman didn't know much, but they knew when something was cooler than something else. Mice are cool, but Tigers are way cooler. \n[[File:Screen_Shot_2013-12-10_at_2.21.16_PM.png|thumb|ancient crete ******]]\n\nAlong the way things started to get more complex.\n\nStyles emerged, and with it swag. Which to all those who were there that day later regretted it and it was widely viewed as a bad idea. Tu and Kah quickly became at ends with one another. Competeing to see who could be the coolest caveman in cavesville. Soon word spread of this thing you could do when you were bored. Every village had at least one dude who could do some cool ass shit.\n\nAs Tu and Kah continued their rivalry schools formed placing rules on just what exactly it was they were trying to do. \n\nThen came the copy cat schools who were basically just doing the same thing but they changed a little bit of it, or they incorporated a new prop into the mix. \n\nFast forward to the rise and fall of many nations all the way to modern day.\n\n\n\nTricking by itself was almost forgotten, despite being incorporated into every art form across the globe. We had Gymnasts, Acrobats, Tumblers, Martial Artists, Dancers, Athletes, Olympians, Skiers, Skateboards, etc etc etc etc All we just trying to do the coolest shit possible.",
+   "lead_text": "In the beginning, there was Aum.\n\nJust a sound in the dark.\n\nSoon Aum got bored.\n\nShortly after we got light and shit.\n\nLight and shit started to fuck with eachother until planets smashed on to the scene. Then whoever somewhere sometime did some shit and BAM humans.\n\nHumans have been blessed with a goofy star shaped body and a giant gravity canvas to play with.  Starting in the earliest of days came the most basic of movements. \n\nWe don't know who landed the first forward roll, or the first cartwheel. \n\nBut we do know that we stomped that shit.\n\n(Though odds are good that monkeys actually beat us to those tricks, but fuck monkeys) \n\nImagine the sights, you're outside of a fucking cave where you live, it's warm and sunny out. Last night you killed a Triceratops so you and your tribe will eat good for weeks. This is your off day.\n\nYour best friend Tu walks over to you and asks if you've seen Kah.\n\nYou don't know, you haven't seen Kah since the hunt.\n\nKah walks from behind an oversized prehistoric tree. \n\nTogether you, Kah, and Tu form a triangle. (A polygon =D ) \n\nYou can't remember who started it but someone was making goofy noises and clapping his hands. (Which has just been discovered a week ago) Then before you know it Tu and Kah were pacing back and forth in front of the cave. Soon Kah jumped as far as he could at Tu. That was some tight shit. But Tu kept his cool, he had one up his sleeve too. Tu ran forward and jumped as far as he could PLUS he did a 180. \n\nholy shit\n\nTu brought the house down with that. But it wasn't enough. You start making louder banging sounds as Kah winds up his arm. He's never tried this before but he's certain it'll work.\n\nHe reaches for the floor!\n\nOne hand touches, THEN THE NEXT!\n\nHOLY FUCKING SHIT KAH IS UPSIDE DOWN\n\nhe falls over and catches himself with his feet. Kah stuck it. \n\nTu started walking away smiling while making a cutting motion with his hand at his neck.\n\nI'm sure in the very first days, it was simply Tricking at it's purest form. They didn't have dance yet because they'd have to figure out music before dance. They had survival and then slowly but surely, excess skillsets became available to the human. Starting with Tricking. \n\nAt its earliest core Tricking was simply who could do the coolest shit. Caveman didn't know much, but they knew when something was cooler than something else. Mice are cool, but Tigers are way cooler. \n\nAlong the way things started to get more complex.\n\nStyles emerged, and with it swag. Which to all those who were there that day later regretted it and it was widely viewed as a bad idea. Tu and Kah quickly became at ends with one another. Competeing to see who could be the coolest caveman in cavesville. Soon word spread of this thing you could do when you were bored. Every village had at least one dude who could do some cool ass shit.\n\nAs Tu and Kah continued their rivalry schools formed placing rules on just what exactly it was they were trying to do. \n\nThen came the copy cat schools who were basically just doing the same thing but they changed a little bit of it, or they incorporated a new prop into the mix. \n\nFast forward to the rise and fall of many nations all the way to modern day.\n\nTricking by itself was almost forgotten, despite being incorporated into every art form across the globe. We had Gymnasts, Acrobats, Tumblers, Martial Artists, Dancers, Athletes, Olympians, Skiers, Skateboards, etc etc etc etc All we just trying to do the coolest shit possible."
+  },
+  {
+   "page_id": 1954,
+   "title": "Tornado Kick",
+   "url": "https://tricking.fandom.com/wiki/Tornado_Kick",
+   "last_rev_timestamp": "2024-07-29T14:20:12Z",
+   "last_rev_user": "Raizor7",
+   "categories": [
+    "Kicking Tricks"
+   ],
+   "wikitext_chars": 3123,
+   "lead_wikitext": "[[File:Gnt tornado kick.gif|thumb|280x280px|A Tornado Kick performed by Taekwondo Tricker Aaron Gassor (Ginger Ninja Trickster)]]\nThe '''''Tornado Kick,''''' also called ''360 Round Kick,'' or ''Cheat 360,'' is a basic kicking technique, where the Tricker rotates 360 degrees, jumps off one leg, and performs a kick with the other leg. This kick is usually a round kick or inside crescent kick, but can be variated with other kicks. It is one of the most basic rotational kicks in Tricking, and a prerequisite for more advanced techniques such as the '''''540 Kick'''''. It is the basis of the whole category of ''[[Kicks|cheat kicks]]''.",
+   "lead_text": "The Tornado Kick, also called 360 Round Kick, or Cheat 360, is a basic kicking technique, where the Tricker rotates 360 degrees, jumps off one leg, and performs a kick with the other leg. This kick is usually a round kick or inside crescent kick, but can be variated with other kicks. It is one of the most basic rotational kicks in Tricking, and a prerequisite for more advanced techniques such as the 540 Kick. It is the basis of the whole category of cheat kicks."
+  },
+  {
+   "page_id": 1939,
+   "title": "Tricked Three",
+   "url": "https://tricking.fandom.com/wiki/Tricked_Three",
+   "last_rev_timestamp": "2023-05-05T18:27:42Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Video games"
+   ],
+   "wikitext_chars": 702,
+   "lead_wikitext": "[[File:TrickedThreeLogo.jpg|thumb|left]]\n[[File:JamestersSpiritualJujimufuEnergeticAntoinePhysical.jpg|thumb]]\n[[File:SpiritualNinjaStarsCoolShieldHeavenlyCapCoolSuitBronzeSpiritBracelet.jpg|thumb|left]]\n[[File:TrickedThreeMap.jpg|thumb]]\n'''Tricked Three''' is a tricking-themed free RPG starring Physical [[Antoine]] / Spiritual [[Jamesters]] / Energetic [[Jujimufu]] who defeated enemies using tricking moves.\n\nIt was downloadable as of [https://twitter.com/MarkSwoggle/status/900252431203926016 23 August 2017] but https://www.4shared.com/rar/bfCvnfJlce/TrickedThree.html is gone so a new link is needed to obtain the .exe\n\nArchived description at https://archive.vn/NKCS0\n\n[[Category:Video games]]",
+   "lead_text": "Tricked Three is a tricking-themed free RPG starring Physical Antoine / Spiritual Jamesters / Energetic Jujimufu who defeated enemies using tricking moves.\n\nIt was downloadable as of 23 August 2017 but https://www.4shared.com/rar/bfCvnfJlce/TrickedThree.html is gone so a new link is needed to obtain the .exe\n\nArchived description at https://archive.vn/NKCS0"
+  },
+  {
+   "page_id": 1461,
+   "title": "Tricking Wiki",
+   "url": "https://tricking.fandom.com/wiki/Tricking_Wiki",
+   "last_rev_timestamp": "2021-02-17T06:47:13Z",
+   "last_rev_user": "1.129.109.254",
+   "categories": [
+    "Browse",
+    "The Trickers",
+    "The Tricks",
+    "Trickalosophy"
+   ],
+   "wikitext_chars": 612,
+   "lead_wikitext": "Hello and welcome to the Tricking Wiki!\n\nTricking is a sport that has many definitions, depending on what area you come from and what you Focus on. Although, it is a common conception that it is a multi-disciplined way of showing emotion and feeling, through flips, kicks and twists.\n\n\nThis is an attempt to catalog all the information known about our awesome hobby.\n\n\n\nFeel free to add any info about gatherings, teams, tricks, or anything related to Tricking.\n\n\n[[File:Grass_shots.png|thumb|Classic Tricker Gear]]\n[[Category:Browse]]\n[[Category:The Tricks]]\n[[Category:Trickalosophy]]\n[[Category:The Trickers]]",
+   "lead_text": "Hello and welcome to the Tricking Wiki!\n\nTricking is a sport that has many definitions, depending on what area you come from and what you Focus on. Although, it is a common conception that it is a multi-disciplined way of showing emotion and feeling, through flips, kicks and twists.\n\nThis is an attempt to catalog all the information known about our awesome hobby.\n\nFeel free to add any info about gatherings, teams, tricks, or anything related to Tricking."
+  },
+  {
+   "page_id": 1928,
+   "title": "Tricks Tutorials",
+   "url": "https://tricking.fandom.com/wiki/Tricks_Tutorials",
+   "last_rev_timestamp": "2017-08-23T06:37:31Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Websites"
+   ],
+   "wikitext_chars": 167,
+   "lead_wikitext": "'''Tricks Tutorials''' was a website that existed as early as 2002: https://web.archive.org/web/20020606172026/http://www.trickstutorials.com:80/\n[[Category:Websites]]",
+   "lead_text": "Tricks Tutorials was a website that existed as early as 2002: https://web.archive.org/web/20020606172026/http://www.trickstutorials.com:80/"
+  },
+  {
+   "page_id": 1930,
+   "title": "Tricksession",
+   "url": "https://tricking.fandom.com/wiki/Tricksession",
+   "last_rev_timestamp": "2017-08-23T06:48:28Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Websites"
+   ],
+   "wikitext_chars": 266,
+   "lead_wikitext": "'''Tricksession''' existed as early as 2007: https://web.archive.org/web/20070402055047/http://www.tricksession.com:80/ at which point it had a forum.\n\nWhen [[Tricks Tutorials]] shut down its forum in 2009, many of the posters gravitated there.\n[[Category:Websites]]",
+   "lead_text": "Tricksession existed as early as 2007: https://web.archive.org/web/20070402055047/http://www.tricksession.com:80/ at which point it had a forum.\n\nWhen Tricks Tutorials shut down its forum in 2009, many of the posters gravitated there."
+  },
+  {
+   "page_id": 1941,
+   "title": "True Heroes",
+   "url": "https://tricking.fandom.com/wiki/True_Heroes",
+   "last_rev_timestamp": "2017-08-23T07:10:36Z",
+   "last_rev_user": "Tycio",
+   "categories": [
+    "Websites"
+   ],
+   "wikitext_chars": 42,
+   "lead_wikitext": "They are remembered.\n[[Category:Websites]]",
+   "lead_text": "They are remembered."
+  },
+  {
+   "page_id": 1922,
+   "title": "Twisting",
+   "url": "https://tricking.fandom.com/wiki/Twisting",
+   "last_rev_timestamp": "2014-11-07T22:18:15Z",
+   "last_rev_user": "Jamesnortheast",
+   "categories": [
+    "The Tricks"
+   ],
+   "wikitext_chars": 638,
+   "lead_wikitext": "Twisting is when a performer uses their arms and/or body to spin on the y axis. It can be done in a flip, vertically, or on any axis in between. Twisting is one of the most common aspects of tricking, and probably 90 percent of tricks contain some sort of twisting. Twisting can add difficulty and style to a trick. Examples of twisting are fulls (backflip 360), backside kicks, gyros, and butterfly twists. \n\nTo twist, performers tighten their body (making it straight), and punch their arms in one direction or another. \n[[File:Dovicka's NEW Fulltwist Tutorial - v0.4|thumb|330x330px|Twisting in flips tutorial]]\n[[Category:The Tricks]]",
+   "lead_text": "Twisting is when a performer uses their arms and/or body to spin on the y axis. It can be done in a flip, vertically, or on any axis in between. Twisting is one of the most common aspects of tricking, and probably 90 percent of tricks contain some sort of twisting. Twisting can add difficulty and style to a trick. Examples of twisting are fulls (backflip 360), backside kicks, gyros, and butterfly twists. \n\nTo twist, performers tighten their body (making it straight), and punch their arms in one direction or another."
+  },
+  {
+   "page_id": 1910,
+   "title": "Variations",
+   "url": "https://tricking.fandom.com/wiki/Variations",
+   "last_rev_timestamp": "2013-12-15T18:18:59Z",
+   "last_rev_user": "TowelstheTricker",
+   "categories": [
+    "The Tricks"
+   ],
+   "wikitext_chars": 2411,
+   "lead_wikitext": "[[File:Placeholder|video|right|300px]] [[File:Placeholder|right|300px]]",
+   "lead_text": ""
+  }
+ ],
+ "redirects": [
+  {
+   "from": "Antoine",
+   "to": "Antoine Vaillant",
+   "tofragment": null
+  },
+  {
+   "from": "Berani",
+   "to": "Barani",
+   "tofragment": null
+  },
+  {
+   "from": "Main Page",
+   "to": "Tricking Wiki",
+   "tofragment": null
+  },
+  {
+   "from": "T3",
+   "to": "Tricked Three",
+   "tofragment": null
+  },
+  {
+   "from": "Tricked 3",
+   "to": "Tricked Three",
+   "tofragment": null
+  },
+  {
+   "from": "Tricks",
+   "to": "Kicks",
+   "tofragment": null
+  }
+ ]
+}

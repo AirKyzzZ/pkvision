@@ -1,0 +1,2628 @@
+{
+ "reference": "data/unified_tricks.json (2,677 names; name + canonical_name)",
+ "normalisation": {
+  "strict": "scripts/build_unified_tricks.py normalize_name",
+  "loose": "strict with spaces removed"
+ },
+ "per_source": {
+  "fandom:parkour": {
+   "n_titles": 90,
+   "n_names_incl_aliases": 203,
+   "n_new_strict": 85,
+   "n_new_loose": 79,
+   "n_new_titles_loose": 35,
+   "new_names_loose": [
+    "360 Dash Vault",
+    "360 Precision Jump",
+    "360 Tic Tac Vault",
+    "360 Tic-Tac",
+    "360 Underbar",
+    "540 kick",
+    "720 Reverse Vault",
+    "A-twist",
+    "Angel flip",
+    "B-twist",
+    "Bar kip",
+    "Barani",
+    "Barrel vault",
+    "Basic vault",
+    "Cat grab",
+    "Cat to cat",
+    "Catpass",
+    "Chan vault",
+    "Cheat gainer",
+    "Cork",
+    "Crane",
+    "Crane Landing",
+    "Dash Gainer",
+    "Diving Kong Vault",
+    "Double kong vault",
+    "Double leg reverse vault",
+    "Flare vault",
+    "Front tuck",
+    "Gather front",
+    "Grab Vault",
+    "Hand Spin",
+    "Inside Dash",
+    "Inside Monkey",
+    "Jackie Chan vault",
+    "Kick the moon",
+    "Kick up",
+    "Koala climb",
+    "Kong PRE",
+    "Kong-saftey",
+    "Laché",
+    "Lazy Turn",
+    "Lazy Turn Vault",
+    "Magic Vault",
+    "Parkour Roll",
+    "Pop vault",
+    "Quadrupedal Landing",
+    "Rail flip",
+    "Rail flow",
+    "Reverse Kong Push",
+    "Rocket vault",
+    "Scissor vault",
+    "Screwdriver",
+    "Simple vault",
+    "Sit Vault",
+    "Sky vault",
+    "Speed Pimp Flip",
+    "Speed Side",
+    "Spinning Vault",
+    "Split One Vault",
+    "Star vault",
+    "Stinger Vault",
+    "Stride run",
+    "Swing (Lache)",
+    "Swing vault",
+    "The Front Flip",
+    "The Wall Spin",
+    "Thief 360",
+    "Tic Tac Vault",
+    "Traveling Kong",
+    "Triple Vault",
+    "Turbine Vault",
+    "Turn Underbar",
+    "Two-handed vault",
+    "Underbar 360",
+    "Upward Wallrun",
+    "Urban Exploration",
+    "Vert vault",
+    "Wall Jump",
+    "Wallrun"
+   ]
+  },
+  "fandom:tricking": {
+   "n_titles": 6,
+   "n_names_incl_aliases": 7,
+   "n_new_strict": 5,
+   "n_new_loose": 3,
+   "n_new_titles_loose": 2,
+   "new_names_loose": [
+    "360 Kick",
+    "Barani",
+    "Berani"
+   ]
+  },
+  "fandom:freerunning": {
+   "n_titles": 8,
+   "n_names_incl_aliases": 11,
+   "n_new_strict": 3,
+   "n_new_loose": 3,
+   "n_new_titles_loose": 0,
+   "new_names_loose": [
+    "King Kong Vault",
+    "Quadruple Kong Vault",
+    "Triple Kong Vault"
+   ]
+  },
+  "trickipedia": {
+   "n_titles": 533,
+   "n_names_incl_aliases": 533,
+   "n_new_strict": 47,
+   "n_new_loose": 37,
+   "n_new_titles_loose": 38,
+   "new_names_loose": [
+    "Arabian (Backflip 180)",
+    "B Kick Sidewinder ",
+    "Back Drop",
+    "Back Full Down",
+    "Back Full Up",
+    "Back tuck",
+    "Backflip Combo",
+    "Backflip X Out",
+    "Ball Out",
+    "Barani",
+    "Bullet Flip",
+    "Cat Twist",
+    "Cheat Gainer",
+    "Cody",
+    "Cody Full",
+    "Cork (Tricking)",
+    "Cork-in Back-out (Snatchcannon)",
+    "Fliffus",
+    "FS (Frontswing) Raiz",
+    "FS (Frontswing) Touchdown Raiz",
+    "Full in Back Out (Full in)",
+    "Gainer (Swing Gainer) (Tricking Gainer) ",
+    "Kaboom",
+    "Knee Backflip",
+    "Lightning Twist",
+    "Loser",
+    "Parkour Roll",
+    "Porpoise Full Down",
+    "Porpoise Full Up",
+    "Pullover",
+    "Sailor Moon",
+    "Septuple Full",
+    "Superman (Stall) Frontflip",
+    "True Gainer (Gainer)",
+    "Valdez",
+    "Zach",
+    "“Hack” Flip"
+   ]
+  },
+  "loopkicks": {
+   "n_titles": 558,
+   "n_names_incl_aliases": 761,
+   "n_new_strict": 209,
+   "n_new_loose": 193,
+   "n_new_titles_loose": 6,
+   "new_names_loose": [
+    "\"Hyper\" Jackknife",
+    "Arabian Unwind-In Back-Out",
+    "Armada Dupla (Capoeira)",
+    "Back Tuck",
+    "Backside 720 Feilong",
+    "Barahni",
+    "Border Slicer",
+    "Boxcutter Gyro",
+    "Boxcutter Sidewinder",
+    "Butterfly Twist Jackknife",
+    "Cactus",
+    "Cheat 1080 \"Hyper\"",
+    "Cheat 1080 Katana (TKT)",
+    "Cheat 1080 Parafuso (TKT)",
+    "Cheat 1080 Round",
+    "Cheat 1080 Typhoon (TKT)",
+    "Cheat 1260 Hook (TKT)",
+    "Cheat 1260 Parafuso",
+    "Cheat 1440 Round (TKT)",
+    "Cheat 360 Crowd Awakener (TKT)",
+    "Cheat 360 Crowd Awakener Knife (TKT)",
+    "Cheat 360 Double Round (TKT)",
+    "Cheat 360 Feilong (TKT)",
+    "Cheat 360 Hawkeye (TKT)",
+    "Cheat 360 Katana (TKT)",
+    "Cheat 360 Katana Gyro (TKT)",
+    "Cheat 360 Katana Gyroknife (TKT)",
+    "Cheat 360 Round (TKT)",
+    "Cheat 360 Sidekick (TKT)",
+    "Cheat 540 Cyclone (TKT)",
+    "Cheat 540 Hook (TKT)",
+    "Cheat 540 Hook True-Hyper (TKT)",
+    "Cheat 540 Shuriken (TKT)",
+    "Cheat 720 Crowd Awakener (TKT)",
+    "Cheat 720 Crowd Awakener Knife (TKT)",
+    "Cheat 720 Doubleleg (TKT)",
+    "Cheat 720 Doubleleg Twist (TKT)",
+    "Cheat 720 Feilong (TKT)",
+    "Cheat 720 Illusion",
+    "Cheat 720 Katana (TKT)",
+    "Cheat 720 Katana Gyro(TKT)",
+    "Cheat 720 Knife (TKT)",
+    "Cheat 720 Paraknife (TKT)",
+    "Cheat 720 Rodeo (TKT)",
+    "Cheat 720 Round (TKT)",
+    "Cheat 720 Sidekick (TKT)",
+    "Cheat 720 Tai-Fighter (TKT)",
+    "Cheat 720 Typhoon (TKT)",
+    "Cheat 720 Typhoon Katana (TKT)",
+    "Cheat 720 Typhoon Knife (TKT)",
+    "Cheat 900 Cyclone (TKT)",
+    "Cheat 900 Hook (TKT)",
+    "Cheat 900 Shuriken (TKT)",
+    "Cheat 900 Snapu",
+    "Cheat 900 Switchblade",
+    "Cheat Gainer",
+    "Cork Knife",
+    "Cork-In Back-Out",
+    "Corkscrew Doubleleg Late9",
+    "Corkscrew Doubleleg Mega Round",
+    "Corkscrew Feilong Snapu",
+    "Corkscrew Frappe",
+    "Corkscrew Hyperhook",
+    "Corkscrew Switchblade",
+    "Corksrew Shuriken Hyperhook",
+    "Double Corkscrew Hyperhook",
+    "Double Full Feilong Snapu",
+    "Dragonfly Corkscrew Hyperhook",
+    "Dragonfly Corkscrew Knife",
+    "Dragonfly Corkscrew Shuriken Hyperhook",
+    "Dragonfly Flash Knife",
+    "Dragonfly Gainer Sidewinder Late Round",
+    "Dragonfly Sheep Shearer",
+    "Egg Roll",
+    "Front Tuck",
+    "Full Feilong Late Round",
+    "Full Feilong Late9",
+    "Full Feilong Snapu",
+    "Full Late Swipe",
+    "Full Late9",
+    "Full Mega Round",
+    "Full Shuriken Cutter",
+    "Full Shuriken Hyperhook Feilong",
+    "Full Switchblade",
+    "Gainer Arabian Touchdown",
+    "Gainer Hook Late Hook",
+    "Gainer Hyperook",
+    "Gainer Late Shant",
+    "Gainer Scissor Snapu",
+    "Gainer Switch Switch",
+    "GMT",
+    "Graham Cracker Broken",
+    "H-Bomb",
+    "Horwing-Whacker",
+    "Ironman Full",
+    "Ironman Full Crowd Awakener",
+    "Ironman Full Doubleelg",
+    "Ironman Full Hyperhook",
+    "Ironman Full Rocketboi Twist",
+    "Jack10",
+    "Kick the Moon",
+    "Kim Do Kick",
+    "Lotus Switchblade",
+    "Master Helicoptero",
+    "Masterswing Valdez",
+    "McDirty",
+    "Meia Lua De Compasso (Capoeira)",
+    "Moonkick Late7",
+    "Moonkick Triple",
+    "Para Gyro",
+    "Parkour Gainer",
+    "Pop 1080 Hook (TKT)",
+    "Pop 1260 Hook (TKT)",
+    "Pop 1260 Round (TKT)",
+    "Pop 180 Feilong",
+    "Pop 180 Katana (TKT)",
+    "Pop 180 Round (TKT)",
+    "Pop 180 Shuriken (TKT)",
+    "Pop 180 Shuriken Gyro (TKT)",
+    "Pop 180 Shuriken Gyro Doubleleg (TKT)",
+    "Pop 180 Whirlwind (TKT)",
+    "Pop 360 Hook (TKT)",
+    "Pop 540 Cyclone (TKT)",
+    "Pop 540 Feilong (TKT)",
+    "Pop 540 Hook (TKT)",
+    "Pop 540 Katana (TKT)",
+    "Pop 540 Round (TKT)",
+    "Pop 540 Round Gyro (TKT)",
+    "Pop 540 Round Knife (TKT)",
+    "Pop 540 Sidekick (TKT)",
+    "Pop 720 Hook (TKT)",
+    "Pop 720 Katana (TKT)",
+    "Pop 720 Round (TKT)",
+    "Pop 720 Shuriken (TKT)",
+    "Pop 900 Feilong",
+    "Pop 900 Feilong Knife",
+    "Pop 900 Hook (TKT)",
+    "Pop 900 Knife (TKT)",
+    "Pop 900 Round (TKT)",
+    "Pop 900 Wackknife (TKT)",
+    "Raisin",
+    "Raiz Scissor",
+    "Raiz Twist",
+    "Raiz Twist Hyperhook",
+    "Raiz Twist Round",
+    "Rodeo Corkscrew Hyperhook",
+    "Rodeo Kim Do Kick",
+    "Sailor 7",
+    "Sailor Moon",
+    "Scapuswipe",
+    "Shadowswipe",
+    "Shurikane-Z",
+    "Shuriken Cutter Feilong",
+    "Shuriken Cutter Kyro",
+    "Sideflip Unwind Sideflip",
+    "Sideswipe Late9",
+    "Sideswipe Mega Round",
+    "Sideswipe Wackknife",
+    "Slaughtermelon",
+    "Snapu Double",
+    "Snowbubble",
+    "Spyder Hook",
+    "Squirrel Backflip",
+    "Squirrel Full",
+    "Star Boxcutter",
+    "Star Cork",
+    "Swing 1080 Round",
+    "Swing 720 Knife (TKT)",
+    "Swing 720 Round (TKT)",
+    "Swing 720 Sidekick",
+    "Swing 900 Hook",
+    "Swing Double Shant",
+    "Tak Arabian",
+    "Tak Arabian Scissor",
+    "Tak Front",
+    "Tak Full Shuriken Cutter",
+    "Tak Full Swipe Scissor",
+    "Tak10",
+    "Tornado Twist Kick Knife",
+    "Touchdown Sideswipe",
+    "True Gainer",
+    "Tsunami (TKT)",
+    "Tsunami Hyper (TKT)",
+    "Valdez",
+    "Wackknife \"Hyper\"",
+    "Wackknife Hyperhook",
+    "Wackknife Parafuso",
+    "Windex",
+    "Windex Turbo",
+    "Wrap Full Late9",
+    "Wrap Full Mega Round",
+    "Wrap Shuriken Cutter",
+    "Wraptorcutter"
+   ]
+  },
+  "videonet:Parkour": {
+   "n_titles": 40,
+   "n_names_incl_aliases": 44,
+   "n_new_strict": 16,
+   "n_new_loose": 16,
+   "n_new_titles_loose": 13,
+   "new_names_loose": [
+    "Back Roll",
+    "Bar Kip",
+    "Cat Balance",
+    "Cat Hang",
+    "Coffee Grinder",
+    "Cork",
+    "Corkscrew (Cork)",
+    "Crane Jump",
+    "Crane Jump / Crane Landing",
+    "Crane Landing",
+    "Double Kong Vault",
+    "Muscle Up",
+    "Pop Vault",
+    "Rail Precision",
+    "Safety Roll",
+    "Wall Run"
+   ]
+  },
+  "videonet:Cheerleading": {
+   "n_titles": 20,
+   "n_names_incl_aliases": 20,
+   "n_new_strict": 17,
+   "n_new_loose": 17,
+   "n_new_titles_loose": 17,
+   "new_names_loose": [
+    "Arabesque",
+    "Bow and Arrow",
+    "Chin Chin",
+    "Cupie",
+    "Heel Stretch",
+    "Herkie Jump",
+    "Hitch Kick Double Basket Toss",
+    "Hitch Kick Full Basket Toss",
+    "Hurdler Jump",
+    "Liberty",
+    "Pancake",
+    "Pike Jump",
+    "Scorpion",
+    "Standing Back Tuck",
+    "Table Top",
+    "Toe Touch Jump",
+    "Twist Basket Toss"
+   ]
+  },
+  "videonet:Break Dance": {
+   "n_titles": 32,
+   "n_names_incl_aliases": 32,
+   "n_new_strict": 28,
+   "n_new_loose": 27,
+   "n_new_titles_loose": 27,
+   "new_names_loose": [
+    "1990 Spin",
+    "6-step",
+    "Air Chair",
+    "Baby Freeze",
+    "Baby Love",
+    "CC",
+    "Cricket",
+    "Deadman",
+    "Donkey Kick",
+    "Elbow Freeze",
+    "Elbow Track",
+    "Flag Freeze",
+    "Halo",
+    "Hand Hop",
+    "Head Spin",
+    "Helicopter",
+    "Hollowback",
+    "Indian Step",
+    "Jackhammer",
+    "Kick Side Step",
+    "Munchmill",
+    "Nike Freeze",
+    "Pretzel",
+    "Swipe",
+    "Turtle Freeze",
+    "UFO",
+    "Zulu Spin"
+   ]
+  }
+ },
+ "union_new_loose": [
+  [
+   "\"Hyper\" Jackknife",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "1990 Spin",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "360 Dash Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "360 Kick",
+   [
+    "fandom:tricking"
+   ]
+  ],
+  [
+   "360 Precision Jump",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "360 Tic Tac Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "360 Tic-Tac",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "360 Underbar",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "540 kick",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "6-step",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "720 Reverse Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "A-twist",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Air Chair",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Angel flip",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Arabesque",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Arabian (Backflip 180)",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Arabian Unwind-In Back-Out",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Armada Dupla (Capoeira)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "B Kick Sidewinder ",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "B-twist",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Baby Freeze",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Baby Love",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Back Drop",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Back Full Down",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Back Full Up",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Back Roll",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Back tuck",
+   [
+    "loopkicks",
+    "trickipedia"
+   ]
+  ],
+  [
+   "Backflip Combo",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Backflip X Out",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Backside 720 Feilong",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Ball Out",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Bar kip",
+   [
+    "fandom:parkour",
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Barahni",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Barani",
+   [
+    "fandom:parkour",
+    "fandom:tricking",
+    "trickipedia"
+   ]
+  ],
+  [
+   "Barrel vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Basic vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Berani",
+   [
+    "fandom:tricking"
+   ]
+  ],
+  [
+   "Border Slicer",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Bow and Arrow",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Boxcutter Gyro",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Boxcutter Sidewinder",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Bullet Flip",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Butterfly Twist Jackknife",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cactus",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cat Balance",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Cat grab",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Cat Hang",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Cat to cat",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Cat Twist",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Catpass",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "CC",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Chan vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Cheat 1080 \"Hyper\"",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 1080 Katana (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 1080 Parafuso (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 1080 Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 1080 Typhoon (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 1260 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 1260 Parafuso",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 1440 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Crowd Awakener (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Crowd Awakener Knife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Double Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Feilong (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Hawkeye (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Katana (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Katana Gyro (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Katana Gyroknife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 360 Sidekick (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 540 Cyclone (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 540 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 540 Hook True-Hyper (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 540 Shuriken (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Crowd Awakener (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Crowd Awakener Knife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Doubleleg (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Doubleleg Twist (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Feilong (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Illusion",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Katana (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Katana Gyro(TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Knife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Paraknife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Rodeo (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Sidekick (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Tai-Fighter (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Typhoon (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Typhoon Katana (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 720 Typhoon Knife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 900 Cyclone (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 900 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 900 Shuriken (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 900 Snapu",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat 900 Switchblade",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cheat gainer",
+   [
+    "fandom:parkour",
+    "loopkicks",
+    "trickipedia"
+   ]
+  ],
+  [
+   "Chin Chin",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Cody",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Cody Full",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Coffee Grinder",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Cork",
+   [
+    "fandom:parkour",
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Cork (Tricking)",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Cork Knife",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cork-In Back-Out",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Cork-in Back-out (Snatchcannon)",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Corkscrew (Cork)",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Corkscrew Doubleleg Late9",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Corkscrew Doubleleg Mega Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Corkscrew Feilong Snapu",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Corkscrew Frappe",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Corkscrew Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Corkscrew Switchblade",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Corksrew Shuriken Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Crane",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Crane Jump",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Crane Jump / Crane Landing",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Crane Landing",
+   [
+    "fandom:parkour",
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Cricket",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Cupie",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Dash Gainer",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Deadman",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Diving Kong Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Donkey Kick",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Double Corkscrew Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Double Full Feilong Snapu",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Double kong vault",
+   [
+    "fandom:parkour",
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Double leg reverse vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Dragonfly Corkscrew Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Dragonfly Corkscrew Knife",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Dragonfly Corkscrew Shuriken Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Dragonfly Flash Knife",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Dragonfly Gainer Sidewinder Late Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Dragonfly Sheep Shearer",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Egg Roll",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Elbow Freeze",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Elbow Track",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Flag Freeze",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Flare vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Fliffus",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Front tuck",
+   [
+    "fandom:parkour",
+    "loopkicks"
+   ]
+  ],
+  [
+   "FS (Frontswing) Raiz",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "FS (Frontswing) Touchdown Raiz",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Full Feilong Late Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Full Feilong Late9",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Full Feilong Snapu",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Full in Back Out (Full in)",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Full Late Swipe",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Full Late9",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Full Mega Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Full Shuriken Cutter",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Full Shuriken Hyperhook Feilong",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Full Switchblade",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Gainer (Swing Gainer) (Tricking Gainer) ",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Gainer Arabian Touchdown",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Gainer Hook Late Hook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Gainer Hyperook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Gainer Late Shant",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Gainer Scissor Snapu",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Gainer Switch Switch",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Gather front",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "GMT",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Grab Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Graham Cracker Broken",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "H-Bomb",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Halo",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Hand Hop",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Hand Spin",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Head Spin",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Heel Stretch",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Helicopter",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Herkie Jump",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Hitch Kick Double Basket Toss",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Hitch Kick Full Basket Toss",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Hollowback",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Horwing-Whacker",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Hurdler Jump",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Indian Step",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Inside Dash",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Inside Monkey",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Ironman Full",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Ironman Full Crowd Awakener",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Ironman Full Doubleelg",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Ironman Full Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Ironman Full Rocketboi Twist",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Jack10",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Jackhammer",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Jackie Chan vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Kaboom",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Kick Side Step",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Kick the moon",
+   [
+    "fandom:parkour",
+    "loopkicks"
+   ]
+  ],
+  [
+   "Kick up",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Kim Do Kick",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "King Kong Vault",
+   [
+    "fandom:freerunning"
+   ]
+  ],
+  [
+   "Knee Backflip",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Koala climb",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Kong PRE",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Kong-saftey",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Laché",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Lazy Turn",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Lazy Turn Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Liberty",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Lightning Twist",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Loser",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Lotus Switchblade",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Magic Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Master Helicoptero",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Masterswing Valdez",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "McDirty",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Meia Lua De Compasso (Capoeira)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Moonkick Late7",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Moonkick Triple",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Munchmill",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Muscle Up",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Nike Freeze",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Pancake",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Para Gyro",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Parkour Gainer",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Parkour Roll",
+   [
+    "fandom:parkour",
+    "trickipedia"
+   ]
+  ],
+  [
+   "Pike Jump",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Pop 1080 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 1260 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 1260 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 180 Feilong",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 180 Katana (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 180 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 180 Shuriken (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 180 Shuriken Gyro (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 180 Shuriken Gyro Doubleleg (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 180 Whirlwind (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 360 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 540 Cyclone (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 540 Feilong (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 540 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 540 Katana (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 540 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 540 Round Gyro (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 540 Round Knife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 540 Sidekick (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 720 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 720 Katana (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 720 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 720 Shuriken (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 900 Feilong",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 900 Feilong Knife",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 900 Hook (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 900 Knife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 900 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop 900 Wackknife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Pop vault",
+   [
+    "fandom:parkour",
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Porpoise Full Down",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Porpoise Full Up",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Pretzel",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Pullover",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Quadrupedal Landing",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Quadruple Kong Vault",
+   [
+    "fandom:freerunning"
+   ]
+  ],
+  [
+   "Rail flip",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Rail flow",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Rail Precision",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Raisin",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Raiz Scissor",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Raiz Twist",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Raiz Twist Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Raiz Twist Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Reverse Kong Push",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Rocket vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Rodeo Corkscrew Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Rodeo Kim Do Kick",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Safety Roll",
+   [
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Sailor 7",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Sailor Moon",
+   [
+    "loopkicks",
+    "trickipedia"
+   ]
+  ],
+  [
+   "Scapuswipe",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Scissor vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Scorpion",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Screwdriver",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Septuple Full",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Shadowswipe",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Shurikane-Z",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Shuriken Cutter Feilong",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Shuriken Cutter Kyro",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Sideflip Unwind Sideflip",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Sideswipe Late9",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Sideswipe Mega Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Sideswipe Wackknife",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Simple vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Sit Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Sky vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Slaughtermelon",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Snapu Double",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Snowbubble",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Speed Pimp Flip",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Speed Side",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Spinning Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Split One Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Spyder Hook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Squirrel Backflip",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Squirrel Full",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Standing Back Tuck",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Star Boxcutter",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Star Cork",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Star vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Stinger Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Stride run",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Superman (Stall) Frontflip",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Swing (Lache)",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Swing 1080 Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Swing 720 Knife (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Swing 720 Round (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Swing 720 Sidekick",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Swing 900 Hook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Swing Double Shant",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Swing vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Swipe",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Table Top",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Tak Arabian",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Tak Arabian Scissor",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Tak Front",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Tak Full Shuriken Cutter",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Tak Full Swipe Scissor",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Tak10",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "The Front Flip",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "The Wall Spin",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Thief 360",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Tic Tac Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Toe Touch Jump",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Tornado Twist Kick Knife",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Touchdown Sideswipe",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Traveling Kong",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Triple Kong Vault",
+   [
+    "fandom:freerunning"
+   ]
+  ],
+  [
+   "Triple Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "True Gainer",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "True Gainer (Gainer)",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Tsunami (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Tsunami Hyper (TKT)",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Turbine Vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Turn Underbar",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Turtle Freeze",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Twist Basket Toss",
+   [
+    "videonet:Cheerleading"
+   ]
+  ],
+  [
+   "Two-handed vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "UFO",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "Underbar 360",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Upward Wallrun",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Urban Exploration",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Valdez",
+   [
+    "loopkicks",
+    "trickipedia"
+   ]
+  ],
+  [
+   "Vert vault",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Wackknife \"Hyper\"",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Wackknife Hyperhook",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Wackknife Parafuso",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Wall Jump",
+   [
+    "fandom:parkour"
+   ]
+  ],
+  [
+   "Wallrun",
+   [
+    "fandom:parkour",
+    "videonet:Parkour"
+   ]
+  ],
+  [
+   "Windex",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Windex Turbo",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Wrap Full Late9",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Wrap Full Mega Round",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Wrap Shuriken Cutter",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Wraptorcutter",
+   [
+    "loopkicks"
+   ]
+  ],
+  [
+   "Zach",
+   [
+    "trickipedia"
+   ]
+  ],
+  [
+   "Zulu Spin",
+   [
+    "videonet:Break Dance"
+   ]
+  ],
+  [
+   "“Hack” Flip",
+   [
+    "trickipedia"
+   ]
+  ]
+ ]
+}
