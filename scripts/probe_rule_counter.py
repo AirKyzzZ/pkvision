@@ -163,6 +163,8 @@ def cmd_extract(limit: int | None) -> None:
     if "CUDAExecutionProvider" not in providers:
         sys.exit("CUDA provider missing: refusing a silent CPU run")
     body = Body(mode="performance", backend="onnxruntime", device="cuda")
+    if "CUDAExecutionProvider" not in body.pose_model.session.get_providers():
+        sys.exit("session fell back to CPU: check LD_LIBRARY_PATH for the CUDA libs")
     OUT.mkdir(parents=True, exist_ok=True)
     for i, (slug, path) in enumerate(targets()[:limit]):
         dest = OUT / f"{slug}.npz"
