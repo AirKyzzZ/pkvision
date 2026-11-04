@@ -20,13 +20,13 @@ Exploratory, with no decision weight. It runs on clips already seen, so it canno
 
 ## Wrong-person rate in the corpus
 
-`scripts/extract_pose.py` output, first 1,100 clips in alphabetical order (22 shards done at measurement). A jump is a centre move above 1 median body diagonal across at most 2 frames.
+`scripts/extract_pose.py` output, all 1,618 clips. The 32 coded clips were sampled from the first 1,100 alphabetically, the shards done at that point. A jump is a centre move above 1 median body diagonal across at most 2 frames.
 
 | Jumps | Share of clips | Coded wrong | Unclear |
 |---|---|---|---|
-| ≥ 2 | 13.5% | 9/16 | 1/16 |
-| 0 | 77% | 1/16 | 3/16 |
-| 1 | 9.5% | not sampled | |
+| ≥ 2 | 12.8% | 9/16 | 1/16 |
+| 0 | 78.2% | 1/16 | 3/16 |
+| 1 | 9.0% | not sampled | |
 
 Bounds: low 12% counts only wrong codes and treats the one-jump group as clean. High 37% counts unclear as wrong and the whole one-jump group as wrong. These bounds ignore sampling error, and with 16 clips per group that error is large. Six sampled frames per clip also miss brief errors, and a wrong frame does not always fall during the trick. The effect on CueModel's macro-F1 is **not measured**.
 
