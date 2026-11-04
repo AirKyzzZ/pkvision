@@ -1,0 +1,17 @@
+{
+ "method": "Hash-ordered sample (sha1 of slug) from the first 1100 corpus clips in 22 shards, 16 with >=2 identity jumps and 16 with 0. A jump is a centre move >1 median body diagonal across at most 2 frames. Six evenly spaced overlay frames per clip, coded by one AI agent, not blinded to the group, not owner-checked.",
+ "codes": "wrong = skeleton on someone other than the performer in at least one sampled frame while the performer is plausibly in view; unclear = could not tell, or only an end frame with the performer gone; ok = no wrong frame seen",
+ "flagged": {
+  "back_double_full_in_back_out": "wrong", "dive_half_back_unwind_double_full_down": "wrong", "one_hand_raiden": "wrong",
+  "ew_stall_gainer": "wrong", "lache_180_punch_wall_gainer": "ok", "baby_knee_giant_gainer": "wrong",
+  "1080_dive_roll": "wrong", "lache_scissor_180_double_leg_in_double_leg_out": "unclear", "mukhametshin_gargoyle_tunnel": "wrong",
+  "one_step_wall_flare_back": "wrong", "kong_gainer_cat": "ok", "540_dive_roll_bomb": "ok",
+  "one_elbow_palm_double_gainer": "wrong", "lache_precision_punch_wall_flip": "ok", "castaway_back_regrab": "ok", "kip_inward_side": "ok"
+ },
+ "unflagged": {
+  "elbow_gaet_pimp": "unclear", "circle": "ok", "angel_drop_punch_wall_flip": "ok", "lache_side_full": "ok",
+  "castaway_stall_back": "wrong", "one_step_cast_gainer": "ok", "kong_pole_slide": "ok", "lache_punch_wall_inward_side": "ok",
+  "press_handstand_inward_front": "ok", "one_step_punch_wall_flip": "unclear", "270_dive_side_sumi": "ok", "backward_roll_bomb": "ok",
+  "flyaway_full_in_trapdoor_arabian_dive_roll_out": "ok", "palm_spin_gainer": "unclear", "pull_palm_frisbee": "ok", "one_hand_reverse_double_leg_twist": "ok"
+ }
+}
