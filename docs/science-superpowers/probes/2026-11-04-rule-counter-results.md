@@ -2,6 +2,8 @@
 
 Pre-registration: `2026-11-04-rule-counter-prereg.md` (commit `6982cc0`, before any counter output). Raw numbers: `2026-11-04-rule-counter-results.json`. Run on the RTX 2060, $0.
 
+**Correction, same day:** always answering 0 twists scores 3/12 on Decision-12 and 36/47 on all 47, so these twist scores do not beat a constant. A selector test also weakened the "mostly upstream" reading below: see `2026-11-04-person-selection-audit.md`.
+
 ## Pre-registered result
 
 **Decision-12 exact twist: A baseline 3/12, B upright 3/12, C 4-way 3/12. All are ≤ 6/12, so the rule reads: architecture #1 is killed as specified.**
@@ -35,7 +37,7 @@ Reading, with n this small:
 
 ## Finding beyond this probe
 
-The bystander problem is not specific to this probe's box rule. `scripts/extract_pose.py` picks the person with the widest keypoint spread, so a close spectator can win there too. That is the extractor behind the 33 corpus shards, so CueModel training may include skeletons of the wrong person. **The rate is not measured.** This may contribute to the macro-F1 ~0.4 plateau, alongside label noise.
+The bystander problem is not specific to this probe's box rule. `scripts/extract_pose.py` picks the person with the widest keypoint spread, so a close spectator can win there too. That is the extractor behind the 33 corpus shards, so CueModel training may include skeletons of the wrong person. A rough rate is now in `2026-11-04-person-selection-audit.md`; the effect on CueModel is not measured. This may contribute to the macro-F1 ~0.4 plateau, alongside label noise.
 
 ## Limits
 
@@ -46,7 +48,7 @@ The bystander problem is not specific to this probe's box rule. `scripts/extract
 
 ## Owner decision needed
 
-The rule says kill, but the failure is mostly upstream of the counter. Options:
+The rule says kill. Wrong-person and lost-keypoint failures are real, but the counter also misses with the skeleton on the athlete. Options:
 
-1. **Amend and retest (recommended):** pre-register an athlete-selection fix (the track with the most motion through the clip, or a SAMURAI mask) and test on **fresh clips**, ideally owner-verified or from the filming test.
-2. **Accept the kill:** move to architecture #2 (VLM reader) or #3 (two phones).
+1. **Accept the kill (recommended since the selector test):** move to architecture #2 (VLM reader) or #3 (two phones).
+2. **Amend and retest:** pre-register a better athlete selection and test on **fresh clips**, ideally owner-verified or from the filming test. The selector test suggests this alone will not reach 10/12.
