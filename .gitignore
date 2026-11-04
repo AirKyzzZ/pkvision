@@ -84,3 +84,7 @@ data/raw/videonet/
 *.mp3
 *.wav
 data/raw/loopkicks/
+
+# Clips (copyrighted) and pose arrays (regenerate with scripts/extract_pose.py). JSON reports stay tracked.
+data/parkourtheory_clips_cropped/
+data/keypoints/**/*.npz
