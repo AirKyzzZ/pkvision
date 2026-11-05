@@ -44,7 +44,7 @@ Jump count flags wrong clips well (9/16 vs 1/16) and could triage the corpus, bu
 
 On the 10 audit clips previously coded wrong, by overlay:
 - **Fixed by the selector, 4:** `back_double_full_in_back_out`, `mukhametshin_gargoyle_tunnel`, `one_elbow_palm_double_gainer`, `castaway_stall_back`.
-- **Improved by clean detection, 1:** `1080_dive_roll`. Its wrong frame is gone, but the track stops at about frame 40 while the athlete stays visible.
+- **Improved by clean detection, 1:** `1080_dive_roll`. Its wrong frame is gone, but the track stops at about frame 50 while the athlete stays visible.
 - **Still wrong, 5:** `one_hand_raiden`, `ew_stall_gainer`, `baby_knee_giant_gainer`, `one_step_wall_flare_back`, `dive_half_back_unwind_double_full_down` (no sampled frame is drawn; the track sits on a seated bystander).
 - **New errors:** `palm_spin_gainer` and `lache_scissor_180_double_leg_in_double_leg_out`, both previously unclear, now sit on bystanders in sampled frames.
 

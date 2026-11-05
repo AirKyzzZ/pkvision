@@ -111,17 +111,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--rebuild", action="store_true", help="replace the frozen queue; invalidates any labels made from it")
     args = parser.parse_args()
-    if args.rebuild:
-        queue = build_queue()
-        OUT.mkdir(parents=True, exist_ok=True)
-        (OUT / "queue.json").write_text(json.dumps(queue, indent=1))
-    else:
-        queue = json.loads((OUT / "queue.json").read_text())
+    queue = build_queue() if args.rebuild else json.loads((OUT / "queue.json").read_text())
+    OUT.mkdir(parents=True, exist_ok=True)
     make_playable(queue)
+    if args.rebuild:
+        (OUT / "queue.json").write_text(json.dumps(queue, indent=1))
     (OUT / "label.html").write_text(PAGE.replace("__QUEUE__", json.dumps([c["slug"] for c in queue])))
-    print(len(queue))
-    for clip in queue:
-        print(clip["stratum"], clip["slug"], clip["manifest_flip"], clip["manifest_twist"])
+    print(f"{len(queue)} clips ready")  # never print names or counts: the owner runs this before labeling
 
 
 if __name__ == "__main__":
