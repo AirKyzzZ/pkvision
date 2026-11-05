@@ -14,7 +14,7 @@ The queue was chosen from manifest and name-parser strata by sha1 order, with no
 
 Built by `scripts/prepare_vlm_blind.py` into a gitignored folder: opaque ids, re-encoded with container metadata dropped, audio removed.
 
-**Known gap:** on-screen text is not stripped, although the synthesis asks for it. Burned-in trick names would leak, so the owner's pass or a scan of the grids must catch these first.
+**On-screen text:** nothing is stripped, although the synthesis asks for it. An AI agent viewed 8 evenly spaced frames of each forward clip and saw no captions or trick names, only gym logos, clothing and graffiti. A caption shown between those frames could still leak. The owner should report any he notices while labeling, and those clips are excluded.
 
 ## Arms
 
@@ -25,11 +25,23 @@ Built by `scripts/prepare_vlm_blind.py` into a gitignored folder: opaque ids, re
 | G-grid | Gemini 3.8 Flash | 24-frame grids | settles grid vs native |
 | C-grid | Claude Opus 5.5 | 24-frame grids | |
 
-One vote per clip per arm. Prompt: count flips and twists by tracking body orientation frame by frame, no trick naming, JSON output with `flip`, `twist`, `direction`, `cork`, `unsure`. Exact prompt text is frozen with this file.
+One vote per clip per arm, using this exact prompt:
+
+```text
+This shows one person performing an acrobatic movement, in time order. Grids, when used, are numbered frames.
+Track the person's body orientation frame by frame. Do not try to name the movement.
+Count, for the main airborne movement only:
+- flip: full head-over-heels rotations, in steps of 0.5
+- twist: full rotations about the head-to-toe axis, in steps of 0.5
+- direction: "forward", "backward", "side", or null if there is no flip
+- cork: true if the rotation axis is off-axis, as in a corkscrew
+Set unsure to true if you cannot see enough to count.
+Reply with JSON only: {"flip": number, "twist": number, "direction": string or null, "cork": boolean, "unsure": boolean}
+```
 
 ## Reversed-clip control
 
-Each arm also sees the first 12 scored clips (order: sha1 of `slug`) played backwards. **Fail** if predicted direction flips on under 9 of the clips with a forward or backward forward-pass answer. Models that recognise a trick instead of watching it will repeat the same direction.
+Each arm also sees the first 12 scored clips (order: sha1 of `slug`) played backwards. A clip counts when the forward pass answers `forward` or `backward`. **Fail** if the reversed pass gives the opposite direction on under 75% of those, or if fewer than 6 clips count. Models that recognise a trick instead of watching it will repeat the same direction.
 
 ## Metrics and decision rule
 
@@ -40,7 +52,7 @@ Always report these alongside, because the rule-counter probe showed a constant 
 - accuracy per stratum, especially twist ≥ 1.5 and corks;
 - flip accuracy and the same control results.
 
-Per arm:
+`scripts/score_vlm_blind.py` applies this rule from the labels and a votes file. Per arm:
 - **Killed:** below 75% twist (the synthesis's 9/12), **or** not above the best constant baseline, **or** reversed-clip control fails.
 - **Promising:** at least 75%, above baselines, control passes. Next is the label-source audit, not bulk labeling.
 
@@ -52,6 +64,7 @@ About $2–4 total, using 90 s of forward video, 48 clip passes per arm, and Sep
 
 ## Open before running
 
+- A runner that calls the APIs, written once models and access are confirmed. It does not exist yet.
 - API keys: none on this PC.
 - Model availability and prices.
 - Whether the clips' licence allows sending them to third-party APIs.
