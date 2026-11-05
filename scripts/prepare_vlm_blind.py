@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """Build anonymised inputs for the VLM blind probe. Makes no network calls.
 
-Per clip: forward and reversed mp4 for native-video models, and 24-frame grids
+Per clip: forward and reversed H.264 mp4 for native-video models, and 24-frame grids
 for image-only models. Names are opaque and re-encoding drops container metadata.
-Output stays local and gitignored because the clips are copyrighted. Design:
+Output stays local and gitignored because the clips are copyrighted. Encoding needs
+`pip install imageio-ffmpeg`. Design:
 docs/science-superpowers/probes/2026-11-04-vlm-blind-prereg-DRAFT.md
 """
 from __future__ import annotations
 
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -48,6 +50,14 @@ def write_video(frames: list[np.ndarray], fps: float, path: Path) -> None:
     writer.release()
 
 
+def to_h264(source: Path, dest: Path) -> None:
+    import imageio_ffmpeg
+    subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-loglevel", "error", "-i", str(source),
+                    "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-vf", "pad=ceil(iw/2)*2:ceil(ih/2)*2",
+                    "-an", "-map_metadata", "-1", str(dest)], check=True)
+    source.unlink()
+
+
 def grids(frames: list[np.ndarray]) -> list[np.ndarray]:
     """Evenly sampled frames as numbered tiles on 3x4 sheets, in time order."""
     index = np.linspace(0, len(frames) - 1, GRID_FRAMES).astype(int)
@@ -75,7 +85,9 @@ def main() -> None:
         if not frames:
             sys.exit(f"could not decode {slug}")
         for variant, seq in (("fwd", frames), ("rev", frames[::-1])):
-            write_video(seq, fps, OUT / f"{cid}_{variant}.mp4")
+            raw = OUT / f"{cid}_{variant}.raw.mp4"
+            write_video(seq, fps, raw)
+            to_h264(raw, OUT / f"{cid}_{variant}.mp4")
             for n, sheet in enumerate(grids(seq), 1):
                 cv2.imwrite(str(OUT / f"{cid}_{variant}_grid{n}.jpg"), sheet, [cv2.IMWRITE_JPEG_QUALITY, 85])
         mapping[cid] = slug

@@ -6,13 +6,13 @@
 
 ## Truth
 
-The 36 clips in `data/labeling/retest_2026-11/queue.json`, labeled by the owner on `label.html` **before** any VLM output is seen, so that proposals cannot anchor him. Scored: clips he marks "one trick" with numeric flip and twist. Others are reported and excluded.
+The 36 clips in `data/labeling/retest_2026-11/queue.json` (do not open it before labeling), labeled by the owner on `label.html` **before** any VLM output is seen, so that proposals cannot anchor him. Scored: clips he marks "one trick" with numeric flip and twist. Others are reported and excluded.
 
 The queue was chosen from manifest and name-parser strata by sha1 order, with no pose or VLM output. Its strata are deliberately hard: corks, likely odd twists, twist 2+.
 
 ## Inputs
 
-Built by `scripts/prepare_vlm_blind.py` into a gitignored folder: opaque ids, re-encoded with container metadata dropped, audio removed.
+Built by `scripts/prepare_vlm_blind.py` into a gitignored folder: opaque ids, re-encoded to H.264 with container metadata dropped, audio removed.
 
 **On-screen text:** nothing is stripped, although the synthesis asks for it. An AI agent viewed 8 evenly spaced frames of each forward clip and saw no captions or trick names, only gym logos, clothing and graffiti. A caption shown between those frames could still leak. The owner should report any he notices while labeling, and those clips are excluded.
 
