@@ -4,7 +4,7 @@ Pre-registration: `2026-11-04-rule-counter-prereg.md` (commit `6982cc0`, before 
 
 **Correction, same day:** always answering 0 twists scores 3/12 on Decision-12 and 36/47 on all 47, so these twist scores do not beat a constant. A selector test also weakened the "mostly upstream" reading below: see `2026-11-04-person-selection-audit.md`.
 
-**Disclosure from code review:** the frozen code median-filters angular speed and hip rate when finding the activity window, and takes the rate from the already filtered hip length. The pre-registration specifies that filter for the twist signal only. The code landed in the same commit as the pre-registration, so this is not post-hoc tuning, and the frozen code stays unchanged as the pre-registered result. Under the literal reading the kill line still holds:
+**Disclosure from code review:** the frozen code median-filters angular speed and hip rate when finding the activity window, and takes the rate from the already filtered hip length. The pre-registration specifies that filter for the twist signal only. The code landed in the same commit as the pre-registration, so this is not post-hoc tuning, and the frozen code stays unchanged as the pre-registered result. Under the literal reading (`scripts/probe_window_literal.py`) the kill line still holds:
 
 | Arm | Decision-12: frozen / literal | All-47 twist | All-47 flip | Coverage |
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ The shoulder counter, which has no decision weight, also omits the outlier rejec
 
 Twist 2+ was 0/4 on every arm. The upright crop and 4-way rotation raised coverage from 42 to 45 clips and did not raise twist accuracy.
 
-Own footage (smoke, no decision weight, arms A/B/C): frontflip and gainer correct on flip, twist and direction. Backflip wrong on all arms: flip 0, twist 1/1.5/0.5. Back double full: flip 1 correct, twist 2.5 on all arms (truth 2), direction wrong on arm A only.
+Own footage (smoke, no decision weight, arms A/B/C): frontflip and gainer correct on flip, twist and direction. Backflip wrong on all arms: flip 0, twist 1/1.5/0.5 (the skeleton jumps to a bystander at frames 82–84, and twist stays wrong without those frames). Back double full: flip 1 correct, twist 2.5 on all arms (truth 2), direction wrong on arm A only.
 
 ## Exploratory: why it failed (not pre-registered, no decision weight)
 

@@ -9,6 +9,7 @@ gitignored folder. Making those copies needs `pip install imageio-ffmpeg`.
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import subprocess
@@ -99,16 +100,24 @@ def make_playable(queue: list[dict]) -> None:
     for clip in queue:
         dest = PLAYABLE / f"{clip['slug']}.mp4"
         if not dest.exists():
+            partial = dest.with_suffix(".partial.mp4")
             subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-loglevel", "error", "-i", str(CLIPS / f"{clip['slug']}.mp4"),
                             "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p",
-                            "-vf", "pad=ceil(iw/2)*2:ceil(ih/2)*2", "-an", "-map_metadata", "-1", str(dest)], check=True)
+                            "-vf", "pad=ceil(iw/2)*2:ceil(ih/2)*2", "-an", "-map_metadata", "-1", str(partial)], check=True)
+            partial.replace(dest)
 
 
 def main() -> None:
-    queue = build_queue()
-    OUT.mkdir(parents=True, exist_ok=True)
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--rebuild", action="store_true", help="replace the frozen queue; invalidates any labels made from it")
+    args = parser.parse_args()
+    if args.rebuild:
+        queue = build_queue()
+        OUT.mkdir(parents=True, exist_ok=True)
+        (OUT / "queue.json").write_text(json.dumps(queue, indent=1))
+    else:
+        queue = json.loads((OUT / "queue.json").read_text())
     make_playable(queue)
-    (OUT / "queue.json").write_text(json.dumps(queue, indent=1))
     (OUT / "label.html").write_text(PAGE.replace("__QUEUE__", json.dumps([c["slug"] for c in queue])))
     print(len(queue))
     for clip in queue:
