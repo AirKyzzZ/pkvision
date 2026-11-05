@@ -2,12 +2,16 @@
 """Apply the VLM blind probe's decision rule. Reads local files only; makes no network calls.
 
   score_vlm_blind.py control-ids LABELS         opaque ids the runner must also send reversed
-  score_vlm_blind.py score LABELS VOTES         apply the rule
+  score_vlm_blind.py score LABELS VOTES         apply the rule; prints no clip names
+  --accept-unlabeled                            the unlabeled clips are final, for example unplayable
+  --show-excluded                               also list excluded clips by name; only after labeling
 
 LABELS: blind_labels.json downloaded from label.html, keyed by slug.
 VOTES: JSONL, one row per answer, with exactly one row per (arm, id, variant):
   {"arm", "id", "variant": "fwd"|"rev", "flip", "twist", "direction", "cork", "unsure"}
-A row a model answered badly counts as wrong. A row the runner built badly stops the run.
+A row a model answered badly counts as wrong. A row the runner built badly stops the run, and
+missing votes or labels give "incomplete" rather than a verdict. Check the malformed counts too:
+a runner that stringifies numbers looks like a model failure.
 Design: docs/science-superpowers/probes/2026-11-04-vlm-blind-prereg-DRAFT.md
 """
 from __future__ import annotations
@@ -56,16 +60,20 @@ def usable(vote: dict | None) -> bool:
 
 def split_labels(labels: dict, queue_slugs: set[str]) -> tuple[dict[str, dict], dict[str, str]]:
     """Scored truth, and why each other queue clip is excluded. Unknown slugs stop the run."""
+    if not isinstance(labels, dict) or not all(isinstance(a, dict) for a in labels.values()):
+        raise ValueError("labels are not an object of objects")
     unknown = set(labels) - queue_slugs
     if unknown:
         raise ValueError(f"{len(unknown)} labeled clips are not in the queue")
     truth, excluded = {}, {}
     for slug in sorted(queue_slugs):
         answer = labels.get(slug)
-        if answer is None or not answer.get("done"):
+        if answer is None or answer.get("use") is None:
             excluded[slug] = "not labeled"
-        elif answer.get("use") != "one trick":
-            excluded[slug] = str(answer.get("use"))
+        elif answer["use"] != "one trick":
+            excluded[slug] = str(answer["use"])
+        elif not answer.get("done"):
+            excluded[slug] = "not labeled"
         elif not (is_half_step(answer.get("flip")) and is_half_step(answer.get("twist"))):
             excluded[slug] = "unsure count"
         else:
@@ -100,14 +108,17 @@ def _rate(slugs: list[str], hits: set[str]) -> str:
     return f"{sum(s in hits for s in slugs)}/{len(slugs)}"
 
 
-def score_arm(arm_votes: dict, truth: dict[str, dict]) -> dict:
+def score_arm(arm_votes: dict, truth: dict[str, dict], labels_final: bool = True) -> dict:
     n = len(truth)
     votes = {s: arm_votes.get((opaque_id(s), "fwd")) for s in truth}
     hits = {s for s, t in truth.items() if usable(votes[s]) and float(votes[s]["twist"]) == t["twist"]}
     flips = sum(usable(votes[s]) and float(votes[s]["flip"]) == t["flip"] for s, t in truth.items())
     counts = Counter(t["twist"] for t in truth.values())
     best_constant = counts.most_common(1)[0][1] if counts else 0
-    ctrl = control(arm_votes, control_slugs(truth))
+    chosen = control_slugs(truth)
+    ctrl = control(arm_votes, chosen)
+    missing_reversed = sum((opaque_id(s), "rev") not in arm_votes for s in chosen)
+    unanswered = sum(votes[s] is None for s in truth)
     reasons = []
     if n and len(hits) / n < MIN_ACCURACY:
         reasons.append("twist below 75%")
@@ -115,10 +126,16 @@ def score_arm(arm_votes: dict, truth: dict[str, dict]) -> dict:
         reasons.append("not above the best constant")
     if not ctrl["passed"]:
         reasons.append("reversed-clip control failed")
-    verdict = "not evaluable" if n < MIN_SCORED else "killed" if reasons else "promising"
+    if not labels_final or unanswered or missing_reversed:
+        verdict = "incomplete"
+    elif n < MIN_SCORED or len(chosen) < MIN_CONTROL_ANSWERS:
+        verdict = "not evaluable"
+    else:
+        verdict = "killed" if reasons else "promising"
     return {"twist_exact": len(hits), "n": n, "flip_exact": flips, "always_zero": counts.get(0.0, 0),
             "best_constant": best_constant,
-            "unanswered": sum(votes[s] is None for s in truth),
+            "unanswered": unanswered, "missing_reversed": missing_reversed,
+            "malformed_reversed": sum((opaque_id(s), "rev") in arm_votes and not well_formed(arm_votes[(opaque_id(s), "rev")]) for s in chosen),
             "malformed": sum(votes[s] is not None and not well_formed(votes[s]) for s in truth),
             "unsure": sum(votes[s] is not None and well_formed(votes[s]) and votes[s]["unsure"] for s in truth),
             "twist_1.5_plus": _rate([s for s, t in truth.items() if t["twist"] >= 1.5], hits),
@@ -133,20 +150,21 @@ def index_votes(rows: list, known_ids: set[str]) -> dict[str, dict]:
         if not isinstance(row, dict):
             raise ValueError("vote row is not an object")
         arm, clip, variant = row.get("arm"), row.get("id"), row.get("variant")
-        if arm not in ARMS or clip not in known_ids or variant not in VARIANTS:
-            raise ValueError(f"unknown arm, id or variant: {arm!r}, {clip!r}, {variant!r}")
+        if not all(isinstance(x, str) for x in (arm, clip, variant)) or arm not in ARMS or clip not in known_ids or variant not in VARIANTS:
+            raise ValueError("a vote row has an unknown arm, id or variant")  # never echo it: an id could be a clip name
         key = (clip, variant)
         if key in arms.setdefault(arm, {}):
-            raise ValueError(f"duplicate vote: {arm!r}, {clip!r}, {variant!r}")
+            raise ValueError(f"duplicate vote in arm {arm} for clip {clip}, {variant}")
         arms[arm][key] = row
     return arms
 
 
-def score(labels: dict, rows: list, queue_slugs: set[str]) -> dict:
+def score(labels: dict, rows: list, queue_slugs: set[str], accept_unlabeled: bool = False) -> dict:
     truth, excluded = split_labels(labels, queue_slugs)
     arms = index_votes(rows, {opaque_id(s) for s in queue_slugs})
-    return {"scored": len(truth), "excluded": excluded,
-            "arms": {arm: score_arm(arms[arm], truth) if arm in arms else {"verdict": "missing"} for arm in ARMS}}
+    final = accept_unlabeled or "not labeled" not in excluded.values()
+    return {"scored": len(truth), "excluded_by_reason": dict(Counter(excluded.values())), "excluded": excluded,
+            "arms": {arm: score_arm(arms[arm], truth, final) if arm in arms else {"verdict": "missing"} for arm in ARMS}}
 
 
 def main() -> None:
@@ -154,16 +172,27 @@ def main() -> None:
     parser.add_argument("cmd", choices=("control-ids", "score"))
     parser.add_argument("labels", type=Path)
     parser.add_argument("votes", type=Path, nargs="?")
+    parser.add_argument("--accept-unlabeled", action="store_true")
+    parser.add_argument("--show-excluded", action="store_true")
     args = parser.parse_args()
     slugs = {c["slug"] for c in json.loads(QUEUE.read_text())}
-    labels = json.loads(args.labels.read_text())
+    raw_labels = args.labels.read_bytes()
+    labels = json.loads(raw_labels)
     if args.cmd == "control-ids":
-        print(json.dumps([opaque_id(s) for s in control_slugs(split_labels(labels, slugs)[0])], indent=1))
+        truth, excluded = split_labels(labels, slugs)
+        if "not labeled" in excluded.values() and not args.accept_unlabeled:
+            raise ValueError("labeling is unfinished, and the control set depends on the final labels")
+        print(json.dumps([opaque_id(s) for s in control_slugs(truth)], indent=1))
         return
     if args.votes is None:
         parser.error("score needs VOTES")
     rows = [json.loads(line) for line in args.votes.read_text().splitlines() if line.strip()]
-    print(json.dumps(score(labels, rows, slugs), indent=1))
+    result = score(labels, rows, slugs, args.accept_unlabeled)
+    if not args.show_excluded:
+        del result["excluded"]
+    # Compare with the hash recorded in the freeze commit: labels must not change after that.
+    result["labels_sha256"] = hashlib.sha256(raw_labels).hexdigest()
+    print(json.dumps(result, indent=1))
 
 
 if __name__ == "__main__":

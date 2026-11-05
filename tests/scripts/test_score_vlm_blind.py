@@ -1,6 +1,11 @@
 import pytest
 
 from scripts.prepare_vlm_blind import opaque_id
+import json
+import subprocess
+import sys
+from pathlib import Path
+
 from scripts.score_vlm_blind import ARMS, control_slugs, score, split_labels
 
 
@@ -32,6 +37,10 @@ def test_only_finished_single_tricks_with_numeric_counts_are_scored():
     assert set(truth) == {"s0", "s1"}
     assert excluded == {"several": "several tricks", "caption": "name on screen", "unsure": "unsure count",
                         "early": "not labeled", "never": "not labeled"}
+
+
+def test_name_on_screen_without_counts_keeps_its_reason():
+    assert split_labels({"s": {"use": "name on screen", "done": False}}, {"s"})[1] == {"s": "name on screen"}
 
 
 def test_labels_outside_the_queue_stop_the_run():
@@ -66,6 +75,30 @@ def test_score_must_beat_the_best_constant():
 def test_too_few_scored_clips_are_not_evaluable_even_when_perfect():
     lab = labels(19)
     assert run(lab, votes(lab))["verdict"] == "not evaluable"
+
+
+def test_too_few_control_clips_is_not_evaluable_rather_than_killed():
+    lab = labels(30, twist=lambda i: 0.0 if i < 5 else 0.5)
+    rows = [{**r, "twist": lab[next(s for s in lab if opaque_id(s) == r["id"])]["twist"]} for r in votes(lab)]
+    assert run(lab, rows)["verdict"] == "not evaluable"
+
+
+def test_missing_forward_votes_are_incomplete_not_killed():
+    lab = labels(30)
+    assert run(lab, votes(lab)[:20])["verdict"] == "incomplete"
+
+
+def test_reversed_clips_never_sent_are_incomplete_not_killed():
+    lab = labels(30)
+    out = run(lab, [r for r in votes(lab) if r["variant"] == "fwd"])
+    assert out["verdict"] == "incomplete" and out["missing_reversed"] == 12
+
+
+def test_unfinished_labels_give_no_verdict_unless_accepted():
+    lab = labels(30)
+    queue = set(lab) | {"unplayable"}
+    assert score(lab, votes(lab), queue)["arms"]["G-pro"]["verdict"] == "incomplete"
+    assert score(lab, votes(lab), queue, accept_unlabeled=True)["arms"]["G-pro"]["verdict"] == "promising"
 
 
 def test_control_uses_only_whole_twists_with_a_flip():
@@ -120,6 +153,32 @@ def test_runner_mistakes_stop_the_run_rather_than_look_like_model_failure(change
 def test_non_object_row_stops_the_run():
     with pytest.raises(ValueError):
         run(labels(2), [["not", "a", "row"]])
+
+
+def test_non_string_id_stops_the_run():
+    with pytest.raises(ValueError):
+        run(labels(2), [{"arm": "G-pro", "id": ["x"], "variant": "fwd"}])
+
+
+def test_bad_label_shape_stops_the_run():
+    with pytest.raises(ValueError):
+        split_labels({"s": "not an object"}, {"s"})
+
+
+def test_cli_prints_no_clip_names_and_refuses_unfinished_control_ids(tmp_path):
+    script = Path(__file__).resolve().parents[2] / "scripts/score_vlm_blind.py"
+    queue = json.loads((script.parents[1] / "data/labeling/retest_2026-11/queue.json").read_text())
+    (tmp_path / "labels.json").write_text("{}")
+    (tmp_path / "votes.jsonl").write_text("")
+    out = subprocess.run([sys.executable, str(script), "score", str(tmp_path / "labels.json"), str(tmp_path / "votes.jsonl")],
+                         capture_output=True, text=True, check=True).stdout
+    assert not any(c["slug"] in out for c in queue) and json.loads(out)["excluded_by_reason"] == {"not labeled": len(queue)}
+    bad = (tmp_path / "bad.jsonl")
+    bad.write_text(json.dumps({"arm": "G-pro", "id": queue[0]["slug"], "variant": "fwd"}))
+    failed = subprocess.run([sys.executable, str(script), "score", str(tmp_path / "labels.json"), str(bad)], capture_output=True, text=True)
+    assert failed.returncode != 0 and queue[0]["slug"] not in failed.stdout + failed.stderr
+    refused = subprocess.run([sys.executable, str(script), "control-ids", str(tmp_path / "labels.json")], capture_output=True, text=True)
+    assert refused.returncode != 0 and "unfinished" in refused.stderr
 
 
 def test_missing_arms_are_reported():

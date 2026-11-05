@@ -6,7 +6,9 @@
 
 ## Truth
 
-The 36 clips in `data/labeling/retest_2026-11/queue.json` (do not open it before labeling), labeled by the owner on `label.html` **before** any VLM output is seen, so that proposals cannot anchor him. Scored: finished labels marked "one trick" with numeric flip and twist. Others are reported and excluded. **With under 20 scored clips an arm is not evaluable**, however well it scores. Labels from outside the queue stop the run.
+The 36 clips in `data/labeling/retest_2026-11/queue.json` (do not open it before labeling), labeled by the owner on `label.html` **before** any VLM output is seen, so that proposals cannot anchor him. The labels' sha256 goes in the freeze commit, and the scorer prints it so it can be compared. Labels must not change after that. Clips left unlabeled, such as unplayable ones, must be accepted explicitly with `--accept-unlabeled`.
+
+Scored: finished labels marked "one trick" with numeric flip and twist. Others are reported and excluded. **With under 20 scored clips an arm is not evaluable**, however well it scores. Labels from outside the queue stop the run.
 
 The queue was chosen from manifest and name-parser strata by sha1 order, with no pose or VLM output. Its strata are deliberately hard: corks, likely odd twists, twist 2+.
 
@@ -58,7 +60,7 @@ Always report these alongside, because the rule-counter probe showed a constant 
 - accuracy by the owner's labels, especially twist ≥ 1.5 and corks, because queue strata can be wrong;
 - flip accuracy and the same control results.
 
-`scripts/score_vlm_blind.py` applies this rule from the labels and a votes file. Per arm:
+`scripts/score_vlm_blind.py` applies this rule from the labels and a votes file. It prints no clip names by default. Per arm, with **incomplete** for missing votes or unfinished labels and **not evaluable** for under 20 scored clips or under 6 eligible control clips, in place of a verdict:
 - **Killed:** below 75% twist (the synthesis's 9/12), **or** not above the best constant baseline, **or** reversed-clip control fails.
 - **Promising:** at least 75%, above baselines, control passes. Next is the label-source audit, not bulk labeling.
 
