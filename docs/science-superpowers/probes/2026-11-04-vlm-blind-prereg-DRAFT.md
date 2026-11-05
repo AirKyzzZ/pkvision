@@ -53,7 +53,7 @@ A clip counts when an unsure-free forward pass answers `forward` or `backward`. 
 
 ## Metrics and decision rule
 
-Primary, per arm: exact half-twist accuracy on all scored clips. Unsure and malformed answers, and missing votes, count as wrong. A duplicate vote or an unknown arm, id or variant stops the run, so retries cannot pick a result.
+Primary, per arm: exact half-twist accuracy on all scored clips. Unsure and malformed answers count as wrong. A missing vote also scores as wrong in the accuracy figure, but makes the verdict incomplete. A duplicate vote or an unknown arm, id or variant stops the run, so retries cannot pick a result.
 
 Always report these alongside, because the rule-counter probe showed a constant can match a counter:
 - always-0-twist and most-common-twist baselines;
@@ -71,6 +71,14 @@ With about 30 clips, 75% has a 95% CI near 0.56–0.89, and the bar is really 23
 About $4–7 at standard prices, or $2–3.50 with 50% batch pricing, using 90 s of forward video, 30 s reversed, 48 clip passes per arm, and September survey prices (`survey/2026-09-28/02-video-vlms.md`). The range depends on output length. Those prices need re-checking before any run. Stop at a hard cap of $5, so use batch pricing or drop an arm.
 
 ## Open before running
+
+Scorer work, required before the freeze:
+- Enforce the labels' hash with an explicit expected value, instead of only printing it.
+- Make `control-ids` refuse a set that cannot reach a verdict (under 20 scored or under 6 eligible).
+- Have the runner reject output it cannot parse, because a runner that stringifies numbers still reads as a model failure.
+- Add boundary tests for the thresholds and CLI flags.
+
+Also:
 
 - A runner that calls the APIs, written once models and access are confirmed. It does not exist yet.
 - API keys: none on this PC.

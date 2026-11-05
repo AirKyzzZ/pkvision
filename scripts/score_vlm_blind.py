@@ -37,6 +37,12 @@ MIN_SCORED = 20
 CONTROL_CLIPS = 12
 MIN_CONTROL_ANSWERS = 6
 OPPOSITE = {"forward": "backward", "backward": "forward"}
+ANSWER_FIELDS = ("flip", "twist", "direction", "cork", "unsure")
+# The only values label.html can write.
+LABEL_USES = ("one trick", "several tricks", "can't tell", "name on screen")
+LABEL_CORKS = ("no", "yes", "unsure")
+LABEL_FLIPS = (0, 0.5, 1, 1.5, 2, 2.5, 3)
+LABEL_TWISTS = (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4)
 
 
 def is_half_step(value) -> bool:
@@ -58,10 +64,21 @@ def usable(vote: dict | None) -> bool:
     return vote is not None and well_formed(vote) and not vote["unsure"]
 
 
+def valid_label(answer: dict) -> bool:
+    def count_ok(value, allowed) -> bool:
+        return value is None or value == "unsure" or (is_half_step(value) and value in allowed)
+    return (count_ok(answer.get("flip"), LABEL_FLIPS) and count_ok(answer.get("twist"), LABEL_TWISTS)
+            and (answer.get("use") is None or answer.get("use") in LABEL_USES)
+            and (answer.get("cork") is None or answer.get("cork") in LABEL_CORKS)
+            and (answer.get("done") is None or isinstance(answer.get("done"), bool)))
+
+
 def split_labels(labels: dict, queue_slugs: set[str]) -> tuple[dict[str, dict], dict[str, str]]:
     """Scored truth, and why each other queue clip is excluded. Unknown slugs stop the run."""
     if not isinstance(labels, dict) or not all(isinstance(a, dict) for a in labels.values()):
         raise ValueError("labels are not an object of objects")
+    if not all(valid_label(a) for a in labels.values()):
+        raise ValueError("a label has a value the page cannot write")  # never echo it
     unknown = set(labels) - queue_slugs
     if unknown:
         raise ValueError(f"{len(unknown)} labeled clips are not in the queue")
@@ -141,7 +158,7 @@ def score_arm(arm_votes: dict, truth: dict[str, dict], labels_final: bool = True
             "twist_1.5_plus": _rate([s for s, t in truth.items() if t["twist"] >= 1.5], hits),
             "cork": _rate([s for s, t in truth.items() if t["cork"] == "yes"], hits),
             "by_owner_twist": {str(v): _rate([s for s, t in truth.items() if t["twist"] == v], hits) for v in sorted(counts)},
-            "control": ctrl, "verdict": verdict, "kill_reasons": reasons}
+            "control": ctrl, "verdict": verdict, "kill_reasons": reasons if verdict == "killed" else []}
 
 
 def index_votes(rows: list, known_ids: set[str]) -> dict[str, dict]:
@@ -152,6 +169,8 @@ def index_votes(rows: list, known_ids: set[str]) -> dict[str, dict]:
         arm, clip, variant = row.get("arm"), row.get("id"), row.get("variant")
         if not all(isinstance(x, str) for x in (arm, clip, variant)) or arm not in ARMS or clip not in known_ids or variant not in VARIANTS:
             raise ValueError("a vote row has an unknown arm, id or variant")  # never echo it: an id could be a clip name
+        if not any(field in row for field in ANSWER_FIELDS):
+            continue  # a failed call is a missing vote, and a retry may replace it
         key = (clip, variant)
         if key in arms.setdefault(arm, {}):
             raise ValueError(f"duplicate vote in arm {arm} for clip {clip}, {variant}")

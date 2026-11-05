@@ -65,6 +65,13 @@ def test_arm_that_ignores_reversal_is_killed_despite_accuracy():
     assert out["twist_exact"] == 30 and out["kill_reasons"] == ["reversed-clip control failed"]
 
 
+def test_best_constant_can_be_a_nonzero_twist():
+    lab = labels(30, twist=lambda i: 1.0 if i < 27 else 0.0)
+    out = run(lab, votes(lab, right=lambda i: i < 27))
+    assert out["always_zero"] == 3 and out["best_constant"] == 27
+    assert out["kill_reasons"] == ["not above the best constant"]
+
+
 def test_score_must_beat_the_best_constant():
     lab = labels(30, twist=lambda i: 0.0 if i < 27 else 1.0)
     out = run(lab, votes(lab, right=lambda i: i < 27))
@@ -85,7 +92,35 @@ def test_too_few_control_clips_is_not_evaluable_rather_than_killed():
 
 def test_missing_forward_votes_are_incomplete_not_killed():
     lab = labels(30)
-    assert run(lab, votes(lab)[:20])["verdict"] == "incomplete"
+    dropped = next(s for s in lab if s not in control_slugs(split_labels(lab, set(lab))[0]))
+    rows = [r for r in votes(lab) if not (r["id"] == opaque_id(dropped) and r["variant"] == "fwd")]
+    out = run(lab, rows)
+    assert out["unanswered"] == 1 and out["missing_reversed"] == 0 and out["verdict"] == "incomplete"
+
+
+def test_failed_calls_are_incomplete_and_can_be_retried():
+    lab = labels(30)
+    failed = [{"arm": r["arm"], "id": r["id"], "variant": r["variant"], "error": "429"} for r in votes(lab)]
+    assert run(lab, failed)["verdict"] == "incomplete"
+    assert run(lab, failed + votes(lab))["verdict"] == "promising"
+
+
+def test_incomplete_comes_before_not_evaluable_and_clears_kill_reasons():
+    lab = labels(19)
+    out = run(lab, votes(lab)[:4])
+    assert out["verdict"] == "incomplete" and out["kill_reasons"] == []
+
+
+@pytest.mark.parametrize("change", [
+    {"use": "a typed clip name"}, {"use": "One Trick"}, {"use": False}, {"use": ["x"]}, {"done": "false"},
+    {"flip": "1"}, {"flip": 7}, {"twist": True}, {"twist": 0.3}, {"cork": True},
+])
+def test_labels_the_page_cannot_write_stop_the_run(change):
+    lab = labels(2)
+    lab["s0"].update(change)
+    with pytest.raises(ValueError) as error:
+        split_labels(lab, set(lab))
+    assert "typed clip name" not in str(error.value)
 
 
 def test_reversed_clips_never_sent_are_incomplete_not_killed():
