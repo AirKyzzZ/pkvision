@@ -169,12 +169,13 @@ def index_votes(rows: list, known_ids: set[str]) -> dict[str, dict]:
         arm, clip, variant = row.get("arm"), row.get("id"), row.get("variant")
         if not all(isinstance(x, str) for x in (arm, clip, variant)) or arm not in ARMS or clip not in known_ids or variant not in VARIANTS:
             raise ValueError("a vote row has an unknown arm, id or variant")  # never echo it: an id could be a clip name
+        votes = arms.setdefault(arm, {})
         if not any(field in row for field in ANSWER_FIELDS):
             continue  # a failed call is a missing vote, and a retry may replace it
         key = (clip, variant)
-        if key in arms.setdefault(arm, {}):
+        if key in votes:
             raise ValueError(f"duplicate vote in arm {arm} for clip {clip}, {variant}")
-        arms[arm][key] = row
+        votes[key] = row
     return arms
 
 
