@@ -42,8 +42,10 @@ def extract_clip(path: Path, body) -> dict:
         ok, frame = cap.read()
         if not ok:
             break
-        kp, sc = body(frame)
-        if kp is not None and len(kp):
+        # body(frame) would pose a full-frame box when nobody is detected, inventing a person.
+        boxes = body.det_model(frame)
+        if boxes is not None and len(boxes):
+            kp, sc = body.pose_model(frame, bboxes=boxes)
             people.append(np.concatenate([kp[:, :17], sc[:, :17, None]], axis=2).astype(np.float32))
             index.extend([t] * len(kp))
         t += 1

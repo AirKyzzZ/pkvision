@@ -8,10 +8,10 @@
    "all47_coverage": 42
   },
   "S": {
-   "decision12_twist": 4,
-   "all47_twist": 22,
+   "decision12_twist": 3,
+   "all47_twist": 20,
    "all47_flip": 27,
-   "all47_coverage": 39
+   "all47_coverage": 34
   }
  },
  "decision12": [
@@ -67,7 +67,7 @@
    "A_twist": 0.5,
    "S_twist": 0.0,
    "A_flip": 1.0,
-   "S_flip": 0.0
+   "S_flip": 0.5
   },
   "double_front_flip": {
    "truth_twist": 0.0,
@@ -81,9 +81,9 @@
    "truth_twist": 0.0,
    "truth_flip": 2.0,
    "A_twist": 0.5,
-   "S_twist": 1.5,
+   "S_twist": null,
    "A_flip": 1.5,
-   "S_flip": 1.5
+   "S_flip": null
   },
   "front_pike": {
    "truth_twist": 0.0,
@@ -97,9 +97,9 @@
    "truth_twist": 0.0,
    "truth_flip": 1.0,
    "A_twist": null,
-   "S_twist": 1.0,
+   "S_twist": null,
    "A_flip": null,
-   "S_flip": 0.0
+   "S_flip": null
   },
   "kong_gainer_full": {
    "truth_twist": 1.0,
@@ -147,7 +147,7 @@
    "A_twist": 1.0,
    "S_twist": 1.0,
    "A_flip": 1.0,
-   "S_flip": 0.0
+   "S_flip": 1.0
   },
   "stomach_webster": {
    "truth_twist": 0.0,
@@ -177,17 +177,17 @@
    "truth_twist": 0.0,
    "truth_flip": 2.0,
    "A_twist": 0.0,
-   "S_twist": 0.0,
+   "S_twist": null,
    "A_flip": 0.0,
-   "S_flip": 0.0
+   "S_flip": null
   },
   "devil_drop": {
    "truth_twist": 0.0,
    "truth_flip": 1.0,
    "A_twist": null,
-   "S_twist": 0.5,
+   "S_twist": null,
    "A_flip": null,
-   "S_flip": 0.0
+   "S_flip": null
   },
   "double_palm_flip": {
    "truth_twist": 0.0,
@@ -209,15 +209,15 @@
    "truth_twist": 0.0,
    "truth_flip": 1.0,
    "A_twist": 0.0,
-   "S_twist": 0.5,
+   "S_twist": 0.0,
    "A_flip": 0.0,
-   "S_flip": 1.0
+   "S_flip": 0.0
   },
   "pimp_flip": {
    "truth_twist": 0.0,
    "truth_flip": 1.0,
    "A_twist": 1.0,
-   "S_twist": 0.0,
+   "S_twist": 0.5,
    "A_flip": 1.0,
    "S_flip": 1.0
   },
@@ -225,7 +225,7 @@
    "truth_twist": 0.0,
    "truth_flip": 1.0,
    "A_twist": 0.0,
-   "S_twist": 0.5,
+   "S_twist": 0.0,
    "A_flip": 1.0,
    "S_flip": 1.0
   },
@@ -249,7 +249,7 @@
    "truth_twist": 2.0,
    "truth_flip": 1.0,
    "A_twist": 1.5,
-   "S_twist": 0.5,
+   "S_twist": 1.5,
    "A_flip": 1.0,
    "S_flip": 1.0
   },
@@ -369,7 +369,7 @@
    "truth_twist": 0.0,
    "truth_flip": 0.0,
    "A_twist": 0.5,
-   "S_twist": 0.0,
+   "S_twist": 0.5,
    "A_flip": 0.0,
    "S_flip": 0.0
   },
@@ -377,9 +377,9 @@
    "truth_twist": 1.0,
    "truth_flip": 0.0,
    "A_twist": null,
-   "S_twist": 1.0,
+   "S_twist": null,
    "A_flip": null,
-   "S_flip": 0.5
+   "S_flip": null
   },
   "side_vault": {
    "truth_twist": 0.0,
