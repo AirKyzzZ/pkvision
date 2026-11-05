@@ -1,11 +1,16 @@
 import numpy as np
 
-from scripts.prepare_vlm_blind import COLS, GRID_FRAMES, ROWS, TILE, grids, opaque_id, read_frames, write_video
+from scripts.prepare_vlm_blind import COLS, GRID_FRAMES, ROWS, TILE, file_id, grids, opaque_id, read_frames, write_video
 
 
 def test_opaque_id_is_stable_and_hides_the_name():
     assert opaque_id("double_full") == opaque_id("double_full")
     assert "double" not in opaque_id("double_full")
+
+
+def test_file_names_hide_clip_and_direction():
+    forward, backward = file_id("double_full", "fwd"), file_id("double_full", "rev")
+    assert forward != backward and not any(x in forward + backward for x in ("fwd", "rev", "double"))
 
 
 def test_grids_cover_24_frames_on_two_sheets():

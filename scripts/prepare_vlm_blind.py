@@ -22,11 +22,16 @@ ROOT = Path(__file__).resolve().parent.parent
 QUEUE = ROOT / "data/labeling/retest_2026-11/queue.json"
 CLIPS = ROOT / "data/parkourtheory_clips_cropped"
 OUT = ROOT / "data/labeling/retest_2026-11/vlm_inputs"
+UPLOAD = OUT / "upload"  # only this folder may go to a service; file names do not reveal clip or direction
 GRID_FRAMES, ROWS, COLS, TILE = 24, 3, 4, 300
 
 
 def opaque_id(slug: str) -> str:
     return "c" + hashlib.sha1(("vlm-blind:" + slug).encode()).hexdigest()[:10]
+
+
+def file_id(slug: str, variant: str) -> str:
+    return "f" + hashlib.sha1(f"vlm-blind-file:{slug}:{variant}".encode()).hexdigest()[:12]
 
 
 def read_frames(path: Path) -> tuple[list[np.ndarray], float]:
@@ -77,22 +82,23 @@ def grids(frames: list[np.ndarray]) -> list[np.ndarray]:
 
 def main() -> None:
     queue = json.loads(QUEUE.read_text())
-    OUT.mkdir(parents=True, exist_ok=True)
+    UPLOAD.mkdir(parents=True, exist_ok=True)
     mapping = {}
     for clip in queue:
         slug, cid = clip["slug"], opaque_id(clip["slug"])
         frames, fps = read_frames(CLIPS / f"{slug}.mp4")
         if not frames:
-            sys.exit(f"could not decode {slug}")
+            sys.exit(f"could not decode clip {cid}")
         for variant, seq in (("fwd", frames), ("rev", frames[::-1])):
-            raw = OUT / f"{cid}_{variant}.raw.mp4"
+            fid = file_id(slug, variant)
+            raw = OUT / f"{fid}.raw.mp4"
             write_video(seq, fps, raw)
-            to_h264(raw, OUT / f"{cid}_{variant}.mp4")
+            to_h264(raw, UPLOAD / f"{fid}.mp4")
             for n, sheet in enumerate(grids(seq), 1):
-                cv2.imwrite(str(OUT / f"{cid}_{variant}_grid{n}.jpg"), sheet, [cv2.IMWRITE_JPEG_QUALITY, 85])
-        mapping[cid] = slug
+                cv2.imwrite(str(UPLOAD / f"{fid}_grid{n}.jpg"), sheet, [cv2.IMWRITE_JPEG_QUALITY, 85])
+            mapping[fid] = {"slug": slug, "id": cid, "variant": variant}
     (OUT / "mapping_DO_NOT_SEND.json").write_text(json.dumps(mapping, indent=1))
-    print(f"{len(mapping)} clips in {OUT}")
+    print(f"{len(queue)} clips in {UPLOAD}")
 
 
 if __name__ == "__main__":
