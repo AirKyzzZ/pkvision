@@ -78,13 +78,13 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><meta name="viewport"
 body{background:var(--bg);color:var(--fg);font:16px system-ui;margin:0 auto;max-width:760px;padding:16px}video{width:100%;max-height:60vh;background:#000}
 .row{margin:10px 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center}.lab{width:64px;color:var(--mut)}button{font:inherit;padding:6px 11px;border:1px solid var(--line);background:none;color:inherit;border-radius:6px;cursor:pointer}
 button.on{background:var(--fg);color:var(--bg)}#s{color:var(--mut)}</style></head><body><h1>Blind trick labels</h1>
-<p>Count what you see in the main trick. Names are hidden on purpose. Answers stay in this browser until you press Download.</p>
+<p>Count what you see in the main trick. Names are hidden on purpose; choose "name on screen" if a clip shows one. Answers stay in this browser until you press Download.</p>
 <div id="s"></div><video id="v" controls loop muted playsinline></video><p id="err" role="alert"></p>
 <div class="row"><span class="lab">Speed</span><button data-r=".1">0.1×</button><button data-r=".25">0.25×</button><button data-r=".5">0.5×</button><button data-r="1">1×</button></div>
 <div class="row" id="flip"></div><div class="row" id="twist"></div><div class="row" id="cork"></div><div class="row" id="use"></div>
 <div class="row"><button id="p">Previous</button><button id="n">Next</button><button id="d">Download answers</button></div>
 <script>const Q=__QUEUE__;let A={};try{A=JSON.parse(localStorage.getItem("blind")||"{}")}catch(e){}
-let i=Q.findIndex(s=>!A[s]||!A[s].done);if(i<0)i=0;const F={flip:["flip",[0,.5,1,1.5,2,2.5,3,"unsure"]],twist:["twist",[0,.5,1,1.5,2,2.5,3,3.5,4,"unsure"]],cork:["cork",["no","yes","unsure"]],use:["use",["one trick","several tricks","can't tell"]]};
+let i=Q.findIndex(s=>!A[s]||!A[s].done);if(i<0)i=0;const F={flip:["flip",[0,.5,1,1.5,2,2.5,3,"unsure"]],twist:["twist",[0,.5,1,1.5,2,2.5,3,3.5,4,"unsure"]],cork:["cork",["no","yes","unsure"]],use:["use",["one trick","several tricks","can't tell","name on screen"]]};
 function save(){try{localStorage.setItem("blind",JSON.stringify(A))}catch(e){}}
 function draw(){const s=Q[i],a=A[s]||{};document.getElementById("s").textContent="Clip "+(i+1)+" of "+Q.length+" · "+Object.values(A).filter(x=>x.done).length+" done";const v=document.getElementById("v");if(v.dataset.s!==s){v.dataset.s=s;document.getElementById("err").textContent="";v.src="clips_h264/"+s+".mp4";v.playbackRate=.25}
 for(const k in F){const b=document.getElementById(k);b.replaceChildren();const l=document.createElement("span");l.className="lab";l.textContent=F[k][0];b.append(l);for(const o of F[k][1]){const e=document.createElement("button");e.textContent=o;if(a[k]===o)e.className="on";e.onclick=()=>{a[k]=o;a.done=["flip","twist","cork","use"].every(x=>a[x]!==undefined);A[s]=a;save();draw()};b.append(e)}}}

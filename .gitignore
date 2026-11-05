@@ -90,3 +90,5 @@ data/parkourtheory_clips_cropped/
 data/keypoints/**/*.npz
 data/labeling/retest_2026-11/clips_h264/
 data/labeling/retest_2026-11/vlm_inputs/
+data/labeling/retest_2026-11/blind_labels*.json
+data/labeling/retest_2026-11/votes*.jsonl
