@@ -53,7 +53,7 @@ class TestTrickPhysics:
 
     def test_backflip_cumulative_rotation(self, generator):
         """Back flip should have ~360° cumulative rotation."""
-        trick_def = TRICK_DEFINITIONS["back_flip"]
+        trick_def = TRICK_DEFINITIONS["backflip"]
         samples = generator.generate(trick_def, n=10)
         for arr in samples:
             cum_rot = arr[-1, 64]  # cumulative_rotation is column 64
@@ -62,8 +62,8 @@ class TestTrickPhysics:
 
     def test_double_back_more_rotation(self, generator):
         """Double back should rotate more than single back flip."""
-        single = TRICK_DEFINITIONS["back_flip"]
-        double = TRICK_DEFINITIONS["double_back"]
+        single = TRICK_DEFINITIONS["backflip"]
+        double = TRICK_DEFINITIONS["double_backflip"]
         single_samples = generator.generate(single, n=10)
         double_samples = generator.generate(double, n=10)
 
@@ -91,7 +91,7 @@ class TestTrickPhysics:
 
     def test_side_flip_has_asymmetry(self, generator):
         """Side flip should have significant L/R asymmetry."""
-        trick_def = TRICK_DEFINITIONS["side_flip"]
+        trick_def = TRICK_DEFINITIONS["sideflip"]
         samples = generator.generate(trick_def, n=10)
         for arr in samples:
             max_asym = np.max(np.abs(arr[:, 65]))  # left_right_symmetry
@@ -103,7 +103,7 @@ class TestVariability:
 
     def test_samples_are_different(self, generator):
         """Different samples of the same trick should not be identical."""
-        trick_def = TRICK_DEFINITIONS["front_flip"]
+        trick_def = TRICK_DEFINITIONS["frontflip"]
         samples = generator.generate(trick_def, n=5)
         for i in range(len(samples) - 1):
             diff = np.mean(np.abs(samples[i] - samples[i + 1]))
@@ -113,7 +113,7 @@ class TestVariability:
         """Same seed should produce identical results."""
         gen1 = PhysicsFeatureGenerator(seed=123)
         gen2 = PhysicsFeatureGenerator(seed=123)
-        trick_def = TRICK_DEFINITIONS["back_flip"]
+        trick_def = TRICK_DEFINITIONS["backflip"]
         s1 = gen1.generate(trick_def, n=3)
         s2 = gen2.generate(trick_def, n=3)
         for a, b in zip(s1, s2):
@@ -123,7 +123,7 @@ class TestVariability:
         """Different seeds should produce different results."""
         gen1 = PhysicsFeatureGenerator(seed=1)
         gen2 = PhysicsFeatureGenerator(seed=2)
-        trick_def = TRICK_DEFINITIONS["back_flip"]
+        trick_def = TRICK_DEFINITIONS["backflip"]
         s1 = gen1.generate(trick_def, n=1)[0]
         s2 = gen2.generate(trick_def, n=1)[0]
         assert not np.allclose(s1, s2)
