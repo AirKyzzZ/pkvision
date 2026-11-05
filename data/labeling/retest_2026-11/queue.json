@@ -1,0 +1,218 @@
+[
+ {
+  "slug": "kong_front_full",
+  "stratum": "twist1",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "wall_corkscrew_arabian_pistol_gyro",
+  "stratum": "cork",
+  "manifest_flip": 1.0,
+  "manifest_twist": 0.5
+ },
+ {
+  "slug": "dive_kong_gainer",
+  "stratum": "twist0_flip",
+  "manifest_flip": 1.0,
+  "manifest_twist": 0.0
+ },
+ {
+  "slug": "gaet_pimp_cork_zero",
+  "stratum": "cork",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "full_up_arabian_dive_roll",
+  "stratum": "odd1.5+",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "butterfly_helicoptero_vault",
+  "stratum": "twist1",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "devil_drop_castaway_inward_front",
+  "stratum": "twist0.5",
+  "manifest_flip": 1.5,
+  "manifest_twist": 0.5
+ },
+ {
+  "slug": "540_dive_roll",
+  "stratum": "twist0_flip",
+  "manifest_flip": 1.5,
+  "manifest_twist": 0.0
+ },
+ {
+  "slug": "corkscrew_counter_full_down_monkey",
+  "stratum": "cork",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "wall_corkscrew_arabian_scissor",
+  "stratum": "cork",
+  "manifest_flip": 1.0,
+  "manifest_twist": 0.5
+ },
+ {
+  "slug": "two_step_wall_gainer_down_monkey",
+  "stratum": "twist0_flip",
+  "manifest_flip": 1.0,
+  "manifest_twist": 0.0
+ },
+ {
+  "slug": "handstand_castaway_back",
+  "stratum": "twist0.5",
+  "manifest_flip": 1.5,
+  "manifest_twist": 0.5
+ },
+ {
+  "slug": "wall_tripod_psychocrusher_spiral_knuckle",
+  "stratum": "twist1",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "flyaway_in_stall_half_down_out",
+  "stratum": "twist0.5",
+  "manifest_flip": 0.5,
+  "manifest_twist": 0.5
+ },
+ {
+  "slug": "ew_gainer_double_full",
+  "stratum": "twist2+",
+  "manifest_flip": 1.0,
+  "manifest_twist": 2.0
+ },
+ {
+  "slug": "lache_punch_dark_arabian_wall_gainer_full",
+  "stratum": "odd1.5+",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "dive_half_back_unwind_full_down",
+  "stratum": "odd1.5+",
+  "manifest_flip": 0.5,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "two_step_corner_wall_lonestar_half",
+  "stratum": "twist0.5",
+  "manifest_flip": 0.5,
+  "manifest_twist": 0.5
+ },
+ {
+  "slug": "arabian_unwind_half_unwind_half",
+  "stratum": "odd1.5+",
+  "manifest_flip": 0.5,
+  "manifest_twist": 0.5
+ },
+ {
+  "slug": "tsukahara_double_full_dismount",
+  "stratum": "twist2+",
+  "manifest_flip": 1.0,
+  "manifest_twist": 2.0
+ },
+ {
+  "slug": "one_hand_double_turtle_twist_vault",
+  "stratum": "twist2+",
+  "manifest_flip": 2.0,
+  "manifest_twist": 2.0
+ },
+ {
+  "slug": "flyaway_full_in_unwind_full_out",
+  "stratum": "twist2+",
+  "manifest_flip": 1.0,
+  "manifest_twist": 2.0
+ },
+ {
+  "slug": "three_step_wall_flip",
+  "stratum": "twist0_flip",
+  "manifest_flip": 1.0,
+  "manifest_twist": 0.0
+ },
+ {
+  "slug": "gaet_pimp_wall_wrap_full",
+  "stratum": "twist1",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "wall_corkscrew_hyper",
+  "stratum": "cork",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "dark_arabian_unwind_full",
+  "stratum": "odd1.5+",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "full_up_gainer_arabian",
+  "stratum": "odd1.5+",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "palm_cork_zero",
+  "stratum": "cork",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "double_butterfly_twist_vault",
+  "stratum": "twist2+",
+  "manifest_flip": 2.0,
+  "manifest_twist": 2.0
+ },
+ {
+  "slug": "punch_wall_inward_side_double_full",
+  "stratum": "twist2+",
+  "manifest_flip": 1.0,
+  "manifest_twist": 2.0
+ },
+ {
+  "slug": "dive_castaway_back",
+  "stratum": "twist0.5",
+  "manifest_flip": 1.5,
+  "manifest_twist": 0.5
+ },
+ {
+  "slug": "360_kong",
+  "stratum": "twist1",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "two_step_palm_wall_full",
+  "stratum": "twist1",
+  "manifest_flip": 1.0,
+  "manifest_twist": 1.0
+ },
+ {
+  "slug": "trapdoor_wall_flip",
+  "stratum": "twist0_flip",
+  "manifest_flip": 1.0,
+  "manifest_twist": 0.0
+ },
+ {
+  "slug": "wall_inward_side",
+  "stratum": "twist0_flip",
+  "manifest_flip": 1.0,
+  "manifest_twist": 0.0
+ },
+ {
+  "slug": "one_hand_turtle_twist",
+  "stratum": "twist0.5",
+  "manifest_flip": 1.0,
+  "manifest_twist": 0.5
+ }
+]

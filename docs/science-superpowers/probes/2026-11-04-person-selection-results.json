@@ -1,0 +1,409 @@
+{
+ "exploratory": true,
+ "summary": {
+  "A": {
+   "decision12_twist": 3,
+   "all47_twist": 22,
+   "all47_flip": 30,
+   "all47_coverage": 42
+  },
+  "S": {
+   "decision12_twist": 3,
+   "all47_twist": 20,
+   "all47_flip": 27,
+   "all47_coverage": 34
+  }
+ },
+ "decision12": [
+  "raiz_dismount_push_half_twist",
+  "flyaway_half_down",
+  "lache_dark_arabian",
+  "swing_castaway_double_back",
+  "castaway_back",
+  "stomach_webster",
+  "360_precision",
+  "palm_spin",
+  "kong_gainer_full",
+  "swing_castaway_double_full",
+  "side_double_full",
+  "wall_double_full"
+ ],
+ "clips": {
+  "aerial": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 1.0,
+   "S_twist": 1.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "back_layout": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "caster_double_gainer": {
+   "truth_twist": 0.0,
+   "truth_flip": 2.0,
+   "A_twist": 0.5,
+   "S_twist": 0.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "caster_gainer": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 0.5,
+   "S_flip": 0.5
+  },
+  "dive_front_flip": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.5,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 0.5
+  },
+  "double_front_flip": {
+   "truth_twist": 0.0,
+   "truth_flip": 2.0,
+   "A_twist": 2.0,
+   "S_twist": null,
+   "A_flip": 0.0,
+   "S_flip": null
+  },
+  "double_side_flip": {
+   "truth_twist": 0.0,
+   "truth_flip": 2.0,
+   "A_twist": 0.5,
+   "S_twist": null,
+   "A_flip": 1.5,
+   "S_flip": null
+  },
+  "front_pike": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.5,
+   "S_twist": 0.5,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "gainer": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": null,
+   "S_twist": null,
+   "A_flip": null,
+   "S_flip": null
+  },
+  "kong_gainer_full": {
+   "truth_twist": 1.0,
+   "truth_flip": 1.0,
+   "A_twist": null,
+   "S_twist": null,
+   "A_flip": null,
+   "S_flip": null
+  },
+  "lache_dark_arabian": {
+   "truth_twist": 0.5,
+   "truth_flip": 1.0,
+   "A_twist": 0.5,
+   "S_twist": 0.5,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "macaco": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 1.0,
+   "S_twist": 1.0,
+   "A_flip": 0.5,
+   "S_flip": 0.5
+  },
+  "raiz_dismount_push_half_twist": {
+   "truth_twist": 0.5,
+   "truth_flip": 1.0,
+   "A_twist": 1.0,
+   "S_twist": 1.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "running_gainer": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "side_double_full": {
+   "truth_twist": 2.0,
+   "truth_flip": 1.0,
+   "A_twist": 1.0,
+   "S_twist": 1.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "stomach_webster": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.5,
+   "S_twist": 0.5,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "tunnel_flip": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "castaway_back": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.5,
+   "S_twist": 0.5,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "castaway_double_back": {
+   "truth_twist": 0.0,
+   "truth_flip": 2.0,
+   "A_twist": 0.0,
+   "S_twist": null,
+   "A_flip": 0.0,
+   "S_flip": null
+  },
+  "devil_drop": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": null,
+   "S_twist": null,
+   "A_flip": null,
+   "S_flip": null
+  },
+  "double_palm_flip": {
+   "truth_twist": 0.0,
+   "truth_flip": 2.0,
+   "A_twist": 0.5,
+   "S_twist": null,
+   "A_flip": 1.0,
+   "S_flip": null
+  },
+  "hang_castaway_back": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "inward_front": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "pimp_flip": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 1.0,
+   "S_twist": 0.5,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "pop_castaway_back": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "wall_back_handspring": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "wall_double_back": {
+   "truth_twist": 0.0,
+   "truth_flip": 2.0,
+   "A_twist": 0.0,
+   "S_twist": null,
+   "A_flip": 0.0,
+   "S_flip": null
+  },
+  "wall_double_full": {
+   "truth_twist": 2.0,
+   "truth_flip": 1.0,
+   "A_twist": 1.5,
+   "S_twist": 1.5,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "wall_flip": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": null,
+   "A_flip": 0.0,
+   "S_flip": null
+  },
+  "wall_spin": {
+   "truth_twist": 1.0,
+   "truth_flip": 0.0,
+   "A_twist": 0.5,
+   "S_twist": 0.5,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "wall_triple_full": {
+   "truth_twist": 3.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "flyaway": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.5,
+   "A_flip": 1.0,
+   "S_flip": 0.0
+  },
+  "flyaway_half_down": {
+   "truth_twist": 0.5,
+   "truth_flip": 1.0,
+   "A_twist": 0.5,
+   "S_twist": 0.5,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "pole_slide": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "swing_castaway_double_back": {
+   "truth_twist": 0.0,
+   "truth_flip": 2.0,
+   "A_twist": null,
+   "S_twist": null,
+   "A_flip": null,
+   "S_flip": null
+  },
+  "swing_castaway_double_full": {
+   "truth_twist": 2.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": null,
+   "A_flip": 0.0,
+   "S_flip": null
+  },
+  "swing_castaway_side": {
+   "truth_twist": 0.0,
+   "truth_flip": 1.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 1.0,
+   "S_flip": 1.0
+  },
+  "360_precision": {
+   "truth_twist": 1.0,
+   "truth_flip": 0.0,
+   "A_twist": 1.0,
+   "S_twist": 1.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "climb_up": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "double_kong": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 1.0,
+   "S_twist": 0.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "dyno": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "kash_vault": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "kong_vault": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 0.5,
+   "S_twist": 0.5,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "palm_spin": {
+   "truth_twist": 1.0,
+   "truth_flip": 0.0,
+   "A_twist": null,
+   "S_twist": null,
+   "A_flip": null,
+   "S_flip": null
+  },
+  "side_vault": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 0.0,
+   "S_twist": null,
+   "A_flip": 0.0,
+   "S_flip": null
+  },
+  "speed_vault": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 1.0,
+   "S_twist": 0.5,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  },
+  "tic_tac": {
+   "truth_twist": 0.0,
+   "truth_flip": 0.0,
+   "A_twist": 0.0,
+   "S_twist": 0.0,
+   "A_flip": 0.0,
+   "S_flip": 0.0
+  }
+ }
+}
