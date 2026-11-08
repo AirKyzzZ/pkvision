@@ -128,8 +128,8 @@ def cmd_audit() -> None:
         made_up = int((a[missing, :, 2] > 0).any(axis=1).sum())
         frames += len(b)
         invented += made_up
-        clips_with += made_up > 0
-        clips_over_10pct += missing.mean() > 0.1
+        clips_with += int(made_up > 0)
+        clips_over_10pct += int(missing.mean() > 0.1)
         jumps["old"].append(count_jumps(a))
         jumps["new"].append(count_jumps(b))
     report = {
