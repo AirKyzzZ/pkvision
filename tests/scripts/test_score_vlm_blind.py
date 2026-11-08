@@ -1,12 +1,13 @@
 import pytest
 
 from scripts.prepare_vlm_blind import opaque_id
+import hashlib
 import json
 import subprocess
 import sys
 from pathlib import Path
 
-from scripts.score_vlm_blind import ARMS, control_slugs, score, split_labels
+from scripts.score_vlm_blind import ARMS, control_slugs, parse_reply, score, split_labels
 
 
 def labels(n, twist=lambda i: float(i % 3)):
@@ -200,20 +201,92 @@ def test_bad_label_shape_stops_the_run():
         split_labels({"s": "not an object"}, {"s"})
 
 
-def test_cli_prints_no_clip_names_and_refuses_unfinished_control_ids(tmp_path):
-    script = Path(__file__).resolve().parents[2] / "scripts/score_vlm_blind.py"
-    queue = json.loads((script.parents[1] / "data/labeling/retest_2026-11/queue.json").read_text())
+SCRIPT = Path(__file__).resolve().parents[2] / "scripts/score_vlm_blind.py"
+EMPTY_HASH = hashlib.sha256(b"{}").hexdigest()
+
+
+def cli(*args):
+    return subprocess.run([sys.executable, str(SCRIPT), *map(str, args)], capture_output=True, text=True)
+
+
+def empty_labels(tmp_path):
     (tmp_path / "labels.json").write_text("{}")
     (tmp_path / "votes.jsonl").write_text("")
-    out = subprocess.run([sys.executable, str(script), "score", str(tmp_path / "labels.json"), str(tmp_path / "votes.jsonl")],
-                         capture_output=True, text=True, check=True).stdout
-    assert not any(c["slug"] in out for c in queue) and json.loads(out)["excluded_by_reason"] == {"not labeled": len(queue)}
-    bad = (tmp_path / "bad.jsonl")
+    return tmp_path / "labels.json", tmp_path / "votes.jsonl"
+
+
+def test_cli_prints_no_clip_names(tmp_path):
+    queue = json.loads((SCRIPT.parents[1] / "data/labeling/retest_2026-11/queue.json").read_text())
+    labels_path, votes_path = empty_labels(tmp_path)
+    run_ok = cli("score", labels_path, votes_path, "--labels-sha256", EMPTY_HASH)
+    assert run_ok.returncode == 0 and not any(c["slug"] in run_ok.stdout for c in queue)
+    assert json.loads(run_ok.stdout)["excluded_by_reason"] == {"not labeled": len(queue)}
+    bad = tmp_path / "bad.jsonl"
     bad.write_text(json.dumps({"arm": "G-pro", "id": queue[0]["slug"], "variant": "fwd"}))
-    failed = subprocess.run([sys.executable, str(script), "score", str(tmp_path / "labels.json"), str(bad)], capture_output=True, text=True)
+    failed = cli("score", labels_path, bad, "--labels-sha256", EMPTY_HASH)
     assert failed.returncode != 0 and queue[0]["slug"] not in failed.stdout + failed.stderr
-    refused = subprocess.run([sys.executable, str(script), "control-ids", str(tmp_path / "labels.json")], capture_output=True, text=True)
-    assert refused.returncode != 0 and "unfinished" in refused.stderr
+
+
+def test_cli_requires_and_enforces_the_labels_hash(tmp_path):
+    labels_path, votes_path = empty_labels(tmp_path)
+    assert cli("score", labels_path, votes_path).returncode != 0
+    wrong = cli("score", labels_path, votes_path, "--labels-sha256", "0" * 64)
+    assert wrong.returncode != 0 and "does not match" in wrong.stderr
+    assert cli("score", labels_path, votes_path, "--labels-sha256", EMPTY_HASH.upper()).returncode == 0
+
+
+def test_control_ids_refuses_unfinished_labels_and_sets_without_a_verdict(tmp_path):
+    labels_path, _ = empty_labels(tmp_path)
+    unfinished = cli("control-ids", labels_path, "--labels-sha256", EMPTY_HASH)
+    assert unfinished.returncode != 0 and "unfinished" in unfinished.stderr
+    hopeless = cli("control-ids", labels_path, "--labels-sha256", EMPTY_HASH, "--accept-unlabeled")
+    assert hopeless.returncode != 0 and "cannot reach a verdict" in hopeless.stderr
+
+
+def test_accuracy_bar_is_inclusive_at_75_percent():
+    lab = labels(20)
+    assert run(lab, votes(lab, right=lambda i: i < 15))["verdict"] == "promising"
+    assert run(lab, votes(lab, right=lambda i: i < 14))["kill_reasons"] == ["twist below 75%"]
+
+
+def test_exactly_20_scored_clips_are_evaluable():
+    lab = labels(20)
+    assert run(lab, votes(lab))["verdict"] == "promising"
+
+
+def test_exactly_6_control_clips_are_evaluable():
+    lab = labels(20, twist=lambda i: 0.0 if i < 6 else 0.5)
+    assert len(control_slugs(split_labels(lab, set(lab))[0])) == 6
+    assert run(lab, votes(lab))["verdict"] == "promising"
+
+
+def test_control_bar_is_inclusive_at_75_percent():
+    lab = labels(30)
+    chosen = {opaque_id(s) for s in control_slugs(split_labels(lab, set(lab))[0])}
+
+    def flipped_after(limit):
+        seen, rows = 0, []
+        for row in votes(lab):
+            if row["variant"] == "rev" and row["id"] in chosen:
+                seen += 1
+                if seen > limit:
+                    row = {**row, "direction": "forward"}
+            rows.append(row)
+        return rows
+
+    assert run(lab, flipped_after(9))["control"] == {"answered": 12, "reversed": 9, "passed": True}
+    assert run(lab, flipped_after(8))["control"] == {"answered": 12, "reversed": 8, "passed": False}
+
+
+def test_parse_reply_keeps_model_types_and_strips_a_fence():
+    reply = '```json\n{"flip": 1, "twist": "2", "direction": null, "cork": false, "unsure": false}\n```'
+    assert parse_reply(reply) == {"flip": 1, "twist": "2", "direction": None, "cork": False, "unsure": False}
+
+
+@pytest.mark.parametrize("reply", ["I think two twists", "[1, 2]", '{"flip": 1}', ""])
+def test_parse_reply_rejects_what_it_cannot_read(reply):
+    with pytest.raises(ValueError):
+        parse_reply(reply)
 
 
 def test_missing_arms_are_reported():

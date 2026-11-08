@@ -6,7 +6,7 @@
 
 ## Truth
 
-The 36 clips in `data/labeling/retest_2026-11/queue.json` (do not open it before labeling), labeled by the owner on `label.html` **before** any VLM output is seen, so that proposals cannot anchor him. The labels' sha256 goes in the freeze commit, and the scorer prints it so it can be compared. Labels must not change after that. Clips left unlabeled, such as unplayable ones, must be accepted explicitly with `--accept-unlabeled`.
+The 36 clips in `data/labeling/retest_2026-11/queue.json` (do not open it before labeling), labeled by the owner on `label.html` **before** any VLM output is seen, so that proposals cannot anchor him. The labels' sha256 goes in the freeze commit, and the scorer requires it (`--labels-sha256`) and stops if the file differs. Labels must not change after that. Clips left unlabeled, such as unplayable ones, must be accepted explicitly with `--accept-unlabeled`.
 
 Scored: finished labels marked "one trick" with numeric flip and twist. Others are reported and excluded. **With under 20 scored clips an arm is not evaluable**, however well it scores. Labels from outside the queue stop the run.
 
@@ -72,11 +72,7 @@ About $4–7 at standard prices, or $2–3.50 with 50% batch pricing, using 90 s
 
 ## Open before running
 
-Scorer work, required before the freeze:
-- Enforce the labels' hash with an explicit expected value, instead of only printing it.
-- Make `control-ids` refuse a set that cannot reach a verdict (under 20 scored or under 6 eligible).
-- Have the runner reject output it cannot parse, because a runner that stringifies numbers still reads as a model failure.
-- Add boundary tests for the thresholds and CLI flags.
+Scorer work is done: `score` and `control-ids` require `--labels-sha256` and stop on a mismatch, `control-ids` refuses a set that cannot reach a verdict, `parse_reply` gives the future runner a strict parser, and the thresholds and CLI flags have boundary tests.
 
 Also:
 
