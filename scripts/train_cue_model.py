@@ -32,9 +32,9 @@ AUX = ("entry", "body_shape")
 D = 128
 
 
-def load_skeletons() -> dict[str, np.ndarray]:
+def load_skeletons(pose_glob: str = POSE_GLOB) -> dict[str, np.ndarray]:
     skel = {}
-    shards = sorted(glob.glob(POSE_GLOB, recursive=True))
+    shards = sorted(glob.glob(pose_glob, recursive=True))
     for shard in shards:
         with np.load(shard) as z:
             for s in z.files:
@@ -81,29 +81,19 @@ def macro_f1(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     return float(np.mean(f1s)) if f1s else 0.0
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=str(ROOT / "data" / "models" / "cue_model_v2.pt"))
-    ap.add_argument("--manifest", default=str(MANIFEST))
-    ap.add_argument("--epochs", type=int, default=70)
-    ap.add_argument("--batch", type=int, default=64)
-    ap.add_argument("--t", type=int, default=48)
-    ap.add_argument("--patience", type=int, default=15)
-    ap.add_argument("--seed", type=int, default=0)
-    args = ap.parse_args()
-
+def fit(skel: dict[str, np.ndarray], labels: dict[str, dict], *, t: int = 48, epochs: int = 70,
+        batch: int = 64, patience: int = 15, seed: int = 0) -> dict:
+    """Train on the clips in both `skel` and `labels`, holding out a random 20% for early stopping."""
     import torch
     import torch.nn as nn
     from torch.utils.data import DataLoader, Dataset
 
-    np.random.seed(args.seed)
-    torch.manual_seed(args.seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
     device = ("mps" if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available()
               else "cuda" if torch.cuda.is_available() else "cpu")
     print(f"device={device}")
 
-    skel = load_skeletons()
-    labels = load_labels(args.manifest)
     slugs = sorted(set(skel) & set(labels))
     print(f"joined: {len(slugs)}")
 
@@ -116,7 +106,7 @@ def main() -> None:
         v = labels[s][c]
         return idx_of[c].get(v, -1) if v is not None else -1
 
-    bases = {s: base_seq(skel[s], args.t) for s in slugs}
+    bases = {s: base_seq(skel[s], t) for s in slugs}
     Y = {c: np.array([enc(s, c) for s in slugs]) for c in cues}
 
     n = len(slugs)
@@ -140,7 +130,7 @@ def main() -> None:
             y = np.array([enc(s, c) for c in cues], np.int64)
             return featurize(seq), y
 
-    tr_dl = DataLoader(DS(tr_slugs, True), batch_size=args.batch, shuffle=True)
+    tr_dl = DataLoader(DS(tr_slugs, True), batch_size=batch, shuffle=True)
     va_dl = DataLoader(DS(val_slugs, False), batch_size=256)
 
     cw = {}
@@ -165,7 +155,7 @@ def main() -> None:
             out.update({c: self.aux[c](h) for c in self.aux})
             return out
 
-    model = TrainWrapper(CueModel(CUE_CLASSES, t=args.t)).to(device)
+    model = TrainWrapper(CueModel(CUE_CLASSES, t=t)).to(device)
     opt = torch.optim.AdamW(model.parameters(), lr=4e-4, weight_decay=5e-2)
     losses = {c: nn.CrossEntropyLoss(weight=cw[c], ignore_index=-1) for c in cues}
     w_cue = {**{c: 1.0 for c in CORE}, **{c: 0.3 for c in AUX}}
@@ -191,7 +181,7 @@ def main() -> None:
         return out
 
     best, best_state, wait = -1.0, None, 0
-    for ep in range(args.epochs):
+    for ep in range(epochs):
         model.train()
         for xb, yb in tr_dl:
             xb, yb = xb.to(device), yb.to(device)
@@ -208,7 +198,7 @@ def main() -> None:
             wait += 1
         if (ep + 1) % 10 == 0 or ep == 0:
             print(f"ep{ep+1:>3} core-mF1={score:.3f} " + " ".join(f"{c}={vm[c]:.2f}" for c in CORE))
-        if wait >= args.patience:
+        if wait >= patience:
             print(f"early stop @ ep{ep+1}")
             break
 
@@ -226,6 +216,28 @@ def main() -> None:
     for c in CORE:
         bf = base_f1(c)
         print(f"{c:<10}{bf:<9.3f}{vm[c]:<9.3f}{vm[c]-bf:+.3f}")
+
+    return {"model": model, "val_slugs": val_slugs, "val_f1": vm, "val_core_mf1": best, "device": device}
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=str(ROOT / "data" / "models" / "cue_model_v2.pt"))
+    ap.add_argument("--manifest", default=str(MANIFEST))
+    ap.add_argument("--pose-glob", default=POSE_GLOB)
+    ap.add_argument("--epochs", type=int, default=70)
+    ap.add_argument("--batch", type=int, default=64)
+    ap.add_argument("--t", type=int, default=48)
+    ap.add_argument("--patience", type=int, default=15)
+    ap.add_argument("--seed", type=int, default=0)
+    args = ap.parse_args()
+
+    skel = load_skeletons(args.pose_glob)
+    labels = load_labels(args.manifest)
+    result = fit(skel, labels, t=args.t, epochs=args.epochs, batch=args.batch, patience=args.patience, seed=args.seed)
+    import torch
+
+    model, val_slugs = result["model"], result["val_slugs"]
 
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)

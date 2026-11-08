@@ -69,7 +69,9 @@ def _extract_clip(video_path, body):
         if not ret:
             break
         joints = np.zeros((17, 3), dtype=np.float32)
-        keypoints, scores = body(frame)
+        # body(frame) would pose a full-frame box when nobody is detected, inventing a person.
+        boxes = body.det_model(frame)
+        keypoints, scores = body.pose_model(frame, bboxes=boxes) if boxes is not None and len(boxes) else (None, None)
         if keypoints is not None and len(keypoints) > 0:
             best = _largest_person(keypoints, scores)
             if keypoints[best].shape[0] >= 17:
