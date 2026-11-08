@@ -1,0 +1,20 @@
+{
+  "clips": 1582,
+  "frames": 117957,
+  "invented_frames": 11727,
+  "invented_rate": 0.0994,
+  "clips_with_invented_frames": 1329,
+  "clips_over_10pct_no_detection": 560,
+  "jumps": {
+    "old": {
+      ">=2": 0.1308,
+      "1": 0.0885,
+      "0": 0.7807
+    },
+    "new": {
+      ">=2": 0.1119,
+      "1": 0.086,
+      "0": 0.8021
+    }
+  }
+}
