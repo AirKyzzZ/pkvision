@@ -7,6 +7,7 @@
   --labels-sha256 HEX                           required: the hash recorded in the freeze commit
   --accept-unlabeled                            the unlabeled clips are final, for example unplayable
   --show-excluded                               also list excluded clips by name; only after labeling
+  --stage PATH=SHA256                           an earlier frozen labels file; its clips must be unchanged
 
 LABELS: blind_labels.json downloaded from label.html, keyed by slug. Default: the copy in
 data/labeling/retest_2026-11/. `check-labels` stops while any queue clip is unlabeled and names the
@@ -120,6 +121,20 @@ def parse_reply(text: str) -> dict:
     if not isinstance(answer, dict) or not all(field in answer for field in ANSWER_FIELDS):
         raise ValueError("reply is missing an answer field")
     return {field: answer[field] for field in ANSWER_FIELDS}
+
+
+def verify_stage(final_labels: dict, stage_labels: dict) -> None:
+    """A frozen earlier stage must appear unchanged in the final labels, or a vote was scored against a moved target."""
+    for slug, answer in stage_labels.items():
+        if final_labels.get(slug) != answer:
+            raise ValueError("a clip labeled in an earlier stage differs in the final labels")  # never echo it
+
+
+def verify_vote_hashes(rows: list, allowed: set[str]) -> None:
+    """Every answered vote must have been requested against a frozen labels file."""
+    for row in rows:
+        if isinstance(row, dict) and "twist" in row and row.get("labels_sha256") not in allowed:
+            raise ValueError("a vote was requested against labels that were not frozen")
 
 
 def control_slugs(truth: dict[str, dict]) -> list[str]:
@@ -239,6 +254,7 @@ def main() -> None:
     parser.add_argument("--labels-sha256", help="hash recorded in the freeze commit; required except for check-labels")
     parser.add_argument("--accept-unlabeled", action="store_true")
     parser.add_argument("--show-excluded", action="store_true")
+    parser.add_argument("--stage", action="append", default=[], metavar="PATH=SHA256")
     args = parser.parse_args()
     order = [c["slug"] for c in json.loads(QUEUE.read_text())]
     slugs = set(order)
@@ -252,6 +268,14 @@ def main() -> None:
         if labels_hash != args.labels_sha256.lower():
             raise ValueError("labels file does not match the hash recorded in the freeze commit")  # never echo it
     labels = json.loads(raw_labels)
+    stage_hashes = set()
+    for item in args.stage:
+        path, _, expected = item.rpartition("=")
+        stage_raw = Path(path).read_bytes()
+        if hashlib.sha256(stage_raw).hexdigest() != expected.lower():
+            raise ValueError("a stage file does not match its recorded hash")
+        verify_stage(labels, json.loads(stage_raw))
+        stage_hashes.add(expected.lower())
     if args.cmd == "check-labels":
         report = check_labels(labels, order)
         report["labels_sha256"] = labels_hash
@@ -277,6 +301,7 @@ def main() -> None:
     if args.votes is None:
         parser.error("score needs VOTES")
     rows = [json.loads(line) for line in args.votes.read_text().splitlines() if line.strip()]
+    verify_vote_hashes(rows, stage_hashes | {labels_hash})
     result = score(labels, rows, slugs, args.accept_unlabeled)
     if not args.show_excluded:
         del result["excluded"]

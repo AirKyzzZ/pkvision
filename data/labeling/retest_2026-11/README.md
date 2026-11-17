@@ -11,3 +11,13 @@ Copy the downloaded `blind_labels.json` here (gitignored). Then, from the repo r
     python scripts/score_vlm_blind.py check-labels
 
 It stops while any clip is unlabeled and lists the unfinished ones by page number, never by name. Once all 36 are labeled and a verdict is reachable, it prints the file's sha256; record that hash in the freeze commit and pass it to `control-ids` and `score`. No VLM is called by any of this.
+
+## Running the probe (after the freeze)
+
+1. `python scripts/score_vlm_blind.py check-labels LABELS` until it passes; record the hash in a commit.
+2. `python scripts/run_vlm_blind.py plan --labels LABELS --labels-sha256 HASH` shows what would be sent.
+3. `python scripts/run_vlm_blind.py run ... --provider fake` rehearses with no network; delete the fake `votes.jsonl` afterwards.
+4. With keys in the environment: `run ... --limit 1` per arm as a smoke test, then `run ... --cap-usd 5`.
+5. Once all 36 are labeled: `control-ids`, then `run --control-ids ids.json` for the reversed clips, then `score --stage BATCH=HASH ...`.
+
+Labels may arrive in batches: see "Staged labeling and collection" in the pre-registration.
