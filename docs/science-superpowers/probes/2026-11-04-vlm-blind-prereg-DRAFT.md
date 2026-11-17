@@ -72,7 +72,7 @@ About $4–7 at standard prices, or $2–3.50 with 50% batch pricing, using 90 s
 
 ## Open before running
 
-Scorer work is done: `score` and `control-ids` require `--labels-sha256` and stop on a mismatch, `control-ids` refuses a set that cannot reach a verdict, `parse_reply` gives the future runner a strict parser, and the thresholds and CLI flags have boundary tests.
+Scorer work is done: `check-labels` ingests the owner's download, stops on partial labels and prints the hash to freeze; `score` and `control-ids` require `--labels-sha256` and stop on a mismatch, `control-ids` refuses a set that cannot reach a verdict, `parse_reply` gives the future runner a strict parser, and the thresholds and CLI flags have boundary tests.
 
 Also:
 

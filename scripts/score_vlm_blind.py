@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """Apply the VLM blind probe's decision rule. Reads local files only; makes no network calls.
 
+  score_vlm_blind.py check-labels [LABELS]      progress and readiness of the owner's labels; prints the hash
   score_vlm_blind.py control-ids LABELS         opaque ids the runner must also send reversed
   score_vlm_blind.py score LABELS VOTES         apply the rule; prints no clip names
   --labels-sha256 HEX                           required: the hash recorded in the freeze commit
   --accept-unlabeled                            the unlabeled clips are final, for example unplayable
   --show-excluded                               also list excluded clips by name; only after labeling
 
-LABELS: blind_labels.json downloaded from label.html, keyed by slug.
+LABELS: blind_labels.json downloaded from label.html, keyed by slug. Default: the copy in
+data/labeling/retest_2026-11/. `check-labels` stops while any queue clip is unlabeled and names the
+unfinished ones by their page number only; once all 36 are labeled it prints the sha256 to record in
+the freeze commit, which `control-ids` and `score` then require.
 VOTES: JSONL, one row per answer, with exactly one row per (arm, id, variant):
   {"arm", "id", "variant": "fwd"|"rev", "flip", "twist", "direction", "cork", "unsure"}
 A row a model answered badly counts as wrong. A row the runner built badly stops the run, and
@@ -30,6 +34,7 @@ sys.path.insert(0, str(ROOT))
 
 from scripts.prepare_vlm_blind import QUEUE, opaque_id
 
+DEFAULT_LABELS = ROOT / "data/labeling/retest_2026-11/blind_labels.json"
 ARMS = ("G-pro", "G-flash", "G-grid", "C-grid")
 VARIANTS = ("fwd", "rev")
 DIRECTIONS = ("forward", "backward", "side", None)
@@ -127,6 +132,26 @@ def control_slugs(truth: dict[str, dict]) -> list[str]:
     return sorted(eligible, key=lambda s: hashlib.sha1(("control:" + s).encode()).hexdigest())[:CONTROL_CLIPS]
 
 
+def check_labels(labels: dict, queue_order: list[str]) -> dict:
+    """Progress and readiness of the owner's labels. Clips are named by page number, never by slug."""
+    truth, excluded = split_labels(labels, set(queue_order))
+    not_labeled = [n for n, s in enumerate(queue_order, 1) if excluded.get(s) == "not labeled"]
+    unsure = [n for n, s in enumerate(queue_order, 1) if excluded.get(s) == "unsure count"]
+    counts = Counter(t["twist"] for t in truth.values())
+    chosen = control_slugs(truth)
+    if not_labeled:
+        status = "incomplete"
+    elif len(truth) < MIN_SCORED or len(chosen) < MIN_CONTROL_ANSWERS:
+        status = "cannot reach a verdict"
+    else:
+        status = "ready to freeze"
+    return {"queue": len(queue_order), "labeled": len(queue_order) - len(not_labeled), "scored": len(truth),
+            "excluded_by_reason": dict(Counter(excluded.values())),
+            "not_labeled_clip_numbers": not_labeled, "unsure_count_clip_numbers": unsure,
+            "control_eligible": len(chosen), "owner_twist_counts": {str(k): v for k, v in sorted(counts.items())},
+            "best_constant": max(counts.values()) if counts else 0, "status": status}
+
+
 def control(arm_votes: dict, slugs: list[str]) -> dict:
     """Does predicted direction reverse when the clip plays backwards? Failing is informative; passing does not clear twist."""
     answered = reversed_count = 0
@@ -208,19 +233,38 @@ def score(labels: dict, rows: list, queue_slugs: set[str], accept_unlabeled: boo
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("cmd", choices=("control-ids", "score"))
-    parser.add_argument("labels", type=Path)
+    parser.add_argument("cmd", choices=("check-labels", "control-ids", "score"))
+    parser.add_argument("labels", type=Path, nargs="?", default=DEFAULT_LABELS)
     parser.add_argument("votes", type=Path, nargs="?")
-    parser.add_argument("--labels-sha256", required=True, help="hash recorded in the freeze commit")
+    parser.add_argument("--labels-sha256", help="hash recorded in the freeze commit; required except for check-labels")
     parser.add_argument("--accept-unlabeled", action="store_true")
     parser.add_argument("--show-excluded", action="store_true")
     args = parser.parse_args()
-    slugs = {c["slug"] for c in json.loads(QUEUE.read_text())}
+    order = [c["slug"] for c in json.loads(QUEUE.read_text())]
+    slugs = set(order)
+    if not args.labels.is_file():
+        raise ValueError(f"no labels file at {args.labels}; copy blind_labels.json from the labeling machine there")
     raw_labels = args.labels.read_bytes()
     labels_hash = hashlib.sha256(raw_labels).hexdigest()
-    if labels_hash != args.labels_sha256.lower():
-        raise ValueError("labels file does not match the hash recorded in the freeze commit")  # never echo it
+    if args.cmd != "check-labels":
+        if args.labels_sha256 is None:
+            parser.error(f"{args.cmd} needs --labels-sha256")
+        if labels_hash != args.labels_sha256.lower():
+            raise ValueError("labels file does not match the hash recorded in the freeze commit")  # never echo it
     labels = json.loads(raw_labels)
+    if args.cmd == "check-labels":
+        report = check_labels(labels, order)
+        report["labels_sha256"] = labels_hash
+        print(json.dumps(report, indent=1))
+        if report["status"] == "incomplete" and not args.accept_unlabeled:
+            missing = len(report["not_labeled_clip_numbers"])
+            raise ValueError(f"labeling is unfinished: {missing} of {report['queue']} clips still to label, "
+                             "see not_labeled_clip_numbers (page numbers, not names)")
+        if report["scored"] < MIN_SCORED or report["control_eligible"] < MIN_CONTROL_ANSWERS:
+            raise ValueError("these labels cannot reach a verdict: too few scored or control clips")
+        print(f"labels complete; record labels_sha256 in the freeze commit, then run control-ids with --labels-sha256 {labels_hash}",
+              file=sys.stderr)
+        return
     if args.cmd == "control-ids":
         truth, excluded = split_labels(labels, slugs)
         if "not labeled" in excluded.values() and not args.accept_unlabeled:
