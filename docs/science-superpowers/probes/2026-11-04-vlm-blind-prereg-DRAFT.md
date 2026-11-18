@@ -56,6 +56,17 @@ The owner labels in batches. Collection may follow the batches under these rules
 
 Batch 1: 12 clips, sha256 `b3fe8f68cc0efca5dea2aa23e57f824d53173c4d03539b74ba7969106d8751d8`, labeled 2026-11-17 without seeing the queue.
 
+### Exploratory local arm L-grid (added 2026-11-18, before any API call)
+
+`Qwen/Qwen3-VL-4B-Instruct`, 4-bit NormalFloat (fp16 compute) on the RTX 2060, greedy decoding, 160 new
+tokens at most, the same two grids and the same prompt as G-grid and C-grid. It costs nothing and is run
+by the owner's machine, so it goes through the same runner, votes file and hash checks as the paid arms.
+It is **not a decision arm**: MotionBlind puts models of this size near chance on physical motion, so it
+is scored and reported under `exploratory_arms` with `decision_weight: none`, and the kill rule above
+reads only the four decision arms. Its purpose is to exercise the pipeline with a real model, and to give a
+$0 floor on the full dataset (`scripts/eval_local_vlm_gold.py`, which never touches the 36 queue clips).
+Rule 5 applies to it unchanged: its answers on queue clips are sealed until all 36 are labeled.
+
 ## Reversed-clip control
 
 Each arm also sees 12 clips played backwards: scored clips the owner labeled with at least one flip and whole twists, ordered by a salted sha1 of `slug`. `score_vlm_blind.py control-ids` lists them. Odd half twists are left out because the reversed clip starts facing the other way, which cancels the reversal. Direction means the flip direction at takeoff, relative to the chest.

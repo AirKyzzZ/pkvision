@@ -30,7 +30,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from scripts.prepare_vlm_blind import QUEUE, UPLOAD, file_id, opaque_id  # noqa: E402
-from scripts.score_vlm_blind import ARMS, parse_reply, split_labels  # noqa: E402
+from scripts.score_vlm_blind import ALL_ARMS, ARMS, parse_reply, split_labels  # noqa: E402
 
 VOTES = ROOT / "data/labeling/retest_2026-11/votes.jsonl"
 GRID_SHEETS = 2
@@ -55,8 +55,12 @@ ARM_SPECS = {
     "G-grid": {"provider": "gemini", "model": "gemini-3.8-flash", "input": "grid", "price": (0.75, 3.75)},
     "C-grid": {"provider": "anthropic", "model": "claude-opus-5-5", "input": "grid", "effort": "medium",
                "max_tokens": 1024, "price": (4.00, 20.00)},
+    # Exploratory, no decision weight: a free 4-bit model on the RTX 2060, same grids and prompt, greedy decoding.
+    "L-grid": {"provider": "local", "model": "Qwen/Qwen3-VL-4B-Instruct@nf4", "input": "grid", "price": (0.0, 0.0),
+               "exploratory": True},
 }
-assert set(ARM_SPECS) == set(ARMS)
+assert set(ARM_SPECS) == set(ALL_ARMS)
+KEYLESS_PROVIDERS = ("fake", "local")
 
 
 def cost_usd(spec: dict, usage: dict) -> float:
@@ -172,7 +176,19 @@ class AnthropicProvider:
         return text, usage
 
 
-PROVIDERS = {"fake": FakeProvider, "gemini": GeminiProvider, "anthropic": AnthropicProvider}
+class LocalProvider:
+    """Qwen3-VL-4B in 4-bit on the local GPU; see scripts/local_vlm.py. Imported lazily: it loads torch."""
+
+    def __init__(self):
+        from scripts.local_vlm import LocalQwenProvider
+
+        self.inner = LocalQwenProvider()
+
+    def ask(self, spec: dict, paths: list[Path]) -> tuple[str, dict]:
+        return self.inner.ask(spec, paths)
+
+
+PROVIDERS = {"fake": FakeProvider, "gemini": GeminiProvider, "anthropic": AnthropicProvider, "local": LocalProvider}
 
 
 def run(calls: list[dict], labels_hash: str, votes_path: Path, cap_usd: float, provider_name: str | None,
@@ -219,7 +235,8 @@ def main() -> None:
     parser.add_argument("--labels", type=Path, help="the owner's labels file whose clips are final")
     parser.add_argument("--labels-sha256", help="hash of --labels recorded in the freeze commit")
     parser.add_argument("--control-ids", type=Path, help="JSON list printed by score_vlm_blind.py control-ids")
-    parser.add_argument("--arms", nargs="+", default=list(ARMS), choices=list(ARMS))
+    parser.add_argument("--arms", nargs="+", default=list(ARMS), choices=list(ALL_ARMS),
+                        help="defaults to the four decision arms; L-grid is the free exploratory local arm")
     parser.add_argument("--votes", type=Path, default=VOTES)
     parser.add_argument("--upload", type=Path, default=UPLOAD, help="the anonymised inputs folder; nothing else is ever sent")
     parser.add_argument("--cap-usd", type=float, default=5.0)
@@ -252,8 +269,10 @@ def main() -> None:
                           "reversed": sum(c["variant"] == "rev" for c in calls),
                           "already_answered": len(answered(rows)), "labels_sha256": labels_hash}, indent=1))
         return
-    if args.provider != "fake" and not (os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
-                                        or os.environ.get("ANTHROPIC_API_KEY")):
+    needs_key = args.provider not in KEYLESS_PROVIDERS and any(
+        ARM_SPECS[arm]["provider"] not in KEYLESS_PROVIDERS for arm in args.arms)
+    if needs_key and not (os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+                          or os.environ.get("ANTHROPIC_API_KEY")):
         raise ValueError("no API key in the environment; use --provider fake for a rehearsal")
     if not args.upload.is_dir():
         raise ValueError(f"no upload folder at {args.upload}; run prepare_vlm_blind.py or pass --upload")

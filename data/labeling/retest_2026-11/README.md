@@ -21,3 +21,10 @@ It stops while any clip is unlabeled and lists the unfinished ones by page numbe
 5. Once all 36 are labeled: `control-ids`, then `run --control-ids ids.json` for the reversed clips, then `score --stage BATCH=HASH ...`.
 
 Labels may arrive in batches: see "Staged labeling and collection" in the pre-registration.
+
+## Free local arm (exploratory)
+
+`run_vlm_blind.py run --arms L-grid --provider local ...` answers with Qwen3-VL-4B in 4-bit on the GPU, no key,
+$0; `. .venv/gpu_env.sh` first and set `PKVISION_HF_CACHE` if the weights are not in `~/hf-cache`. It is scored
+under `exploratory_arms` and has no decision weight. The same model runs over the rest of the dataset with
+`scripts/eval_local_vlm_gold.py run` (queue clips excluded) and `report` for the numbers against the noisy gold.

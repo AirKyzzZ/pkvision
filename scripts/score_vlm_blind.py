@@ -36,7 +36,9 @@ sys.path.insert(0, str(ROOT))
 from scripts.prepare_vlm_blind import QUEUE, opaque_id
 
 DEFAULT_LABELS = ROOT / "data/labeling/retest_2026-11/blind_labels.json"
-ARMS = ("G-pro", "G-flash", "G-grid", "C-grid")
+ARMS = ("G-pro", "G-flash", "G-grid", "C-grid")  # decision arms
+EXPLORATORY_ARMS = ("L-grid",)  # free local model, scored and reported, never part of the verdict
+ALL_ARMS = ARMS + EXPLORATORY_ARMS
 VARIANTS = ("fwd", "rev")
 DIRECTIONS = ("forward", "backward", "side", None)
 MIN_ACCURACY = 0.75
@@ -226,7 +228,7 @@ def index_votes(rows: list, known_ids: set[str]) -> dict[str, dict]:
         if not isinstance(row, dict):
             raise ValueError("vote row is not an object")
         arm, clip, variant = row.get("arm"), row.get("id"), row.get("variant")
-        if not all(isinstance(x, str) for x in (arm, clip, variant)) or arm not in ARMS or clip not in known_ids or variant not in VARIANTS:
+        if not all(isinstance(x, str) for x in (arm, clip, variant)) or arm not in ALL_ARMS or clip not in known_ids or variant not in VARIANTS:
             raise ValueError("a vote row has an unknown arm, id or variant")  # never echo it: an id could be a clip name
         votes = arms.setdefault(arm, {})
         if not any(field in row for field in ANSWER_FIELDS):
@@ -243,7 +245,9 @@ def score(labels: dict, rows: list, queue_slugs: set[str], accept_unlabeled: boo
     arms = index_votes(rows, {opaque_id(s) for s in queue_slugs})
     final = accept_unlabeled or "not labeled" not in excluded.values()
     return {"scored": len(truth), "excluded_by_reason": dict(Counter(excluded.values())), "excluded": excluded,
-            "arms": {arm: score_arm(arms[arm], truth, final) if arm in arms else {"verdict": "missing"} for arm in ARMS}}
+            "arms": {arm: score_arm(arms[arm], truth, final) if arm in arms else {"verdict": "missing"} for arm in ARMS},
+            "exploratory_arms": {arm: dict(score_arm(arms[arm], truth, final), decision_weight="none")
+                                 for arm in EXPLORATORY_ARMS if arm in arms}}
 
 
 def main() -> None:
