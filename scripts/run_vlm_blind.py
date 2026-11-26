@@ -162,11 +162,14 @@ class OpenRouterProvider:
         if "refusal" in (choice.get("finish_reason"), choice.get("native_finish_reason")):
             raise RuntimeError("refusal")  # a missing vote, deliberately with no fallback model
         used = reply.get("usage", {})
+        text = choice["message"].get("content") or ""
+        if not text and not used.get("completion_tokens"):
+            raise RuntimeError("empty reply")  # the gateway returned nothing: a failed call, not a model answer
         usage = {"input_tokens": used.get("prompt_tokens", 0), "output_tokens": used.get("completion_tokens", 0),
                  "served_by": reply.get("provider")}
         if used.get("cost") is not None:
             usage["cost_usd"] = used["cost"]
-        return choice["message"].get("content") or "", usage
+        return text, usage
 
 
 class LocalProvider:

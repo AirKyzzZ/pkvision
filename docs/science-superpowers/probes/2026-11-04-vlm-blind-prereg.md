@@ -101,6 +101,7 @@ Written before any queue clip was sent. `scripts/run_vlm_blind.py` holds the sam
 - **Cost** is the amount the gateway reports per call. The hard cap is $15 instead of $5: the owner lifted the budget limit, and the cap stays as a safety stop.
 - **Plumbing test, disclosed.** Five calls were made on one clip that is not in the queue, to check that images and video are accepted. They set the two changes above and nothing else. No arm counted that clip's twists correctly, which carries no weight at n = 1.
 - **Exploratory gold run.** `scripts/eval_vlm_gold.py` sends the 99 concordant gold clips, none of them in the queue, to the four arms with these exact settings. It runs after this freeze so that nothing here can be tuned on it. It has no decision weight: the gold is not owner-verified and was partly built from Claude's July answers.
+- **Added after the freeze, before any queue clip was sent:** a reply with no text and zero output tokens is a failed call and is retried, not a malformed answer. The gateway returned one on the first gold call and answered normally on the next two.
 - **Rule 5 is unchanged.** No answer on a queue clip, per clip or aggregated, is shown to the owner before all 36 are labeled.
 
 ## Cost
