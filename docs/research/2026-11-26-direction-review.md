@@ -24,11 +24,11 @@ Data: the frozen rule counter (`core/pose/rule_counters.py`) run on the "dev" ha
 
 | # | Cause | Evidence | Confidence |
 |---|---|---|---|
-| 1 | **Training labels are wrong in a systematic way.** The manifest has no "no flip" class: 1,519 of 1,523 clips carry a flip and all but 4 a direction. | Parkour Theory says 295 of 1,503 matched clips (19.6%) are not flips (`split_vault`, `wall_kong`, `double_kong_precision` labelled 2 flips). 132 clips are labelled 0 twist while Parkour Theory files them under Twist (`inward_webster_rudi`). The gold set has 16/82 clips at flip 0; the model answered 0 on 5 of 80 such clip-runs. Parkour Theory's categories agree with gold on 77/82 (flip) and 61/64 (twist). | High that the defect exists. Its share of the plateau is what the pre-registered test measures. |
+| 1 | **Training labels are wrong in a systematic way.** The manifest has no "no flip" class: 1,519 of 1,523 clips carry a flip and all but 4 a direction. | Parkour Theory says 295 of 1,503 matched clips (19.6%) are not flips (`split_vault`, `wall_kong`, `double_kong_precision` labelled 2 flips). 133 clips are labelled 0 twist while Parkour Theory files them under Twist (`inward_webster_rudi`). The gold set has 16/82 clips at flip 0; the model answered 0 on 5 of 80 such clip-runs. Parkour Theory's categories agree with gold on 77/82 (flip) and 61/64 (twist). | High that the defect exists. Its share of the plateau is what the pre-registered test measures. |
 | 2 | **The yardstick is too small.** | Gold has 13 clips with twist above 0 (3, 5 and 5 per bin) and is not owner-verified. No twist result can be defended on it. | High |
 | 3 | **Wrong person in the frame.** | Rule flip counter on clips whose flip label the name parser confirms (157 dev clips): 64% exact with nobody else detected (n = 22), 53% with others in up to 30% of frames (n = 58), 26% beyond that (n = 58). Confounded with shot width. The 2026-11-04 audit put wrong-person clips at 12–37%. | Medium |
 | 4 | **Pose and counter fail on the rotation itself.** | A single flip is read as 0 on 40 of 116 dev clips and exact on 55. Torso keypoint validity does not predict success (42%, 48%, 36%, 40% across four validity bands). Where the flip is read right (n = 60) the twist counter is exact on 25% against 65% for a constant, and answers 0 on only 10 of 39 untwisted clips. | Medium |
-| 5 | Too few clips per trick (about one). | Not measured before today. The exploratory learning curve in the pre-registered run gives a first trend. | Unknown |
+| 5 | Too few clips per trick (about one). | Exploratory learning curve on the corrected labels: 0.359 with 368 clips, 0.442 with 737, 0.456 with 1,474. The curve flattens, so more clips of the same kind would add little with these skeletons. | Low to medium |
 | 6 | 2D loses the rotation (viewpoint). | The shoulder-to-torso ratio, a rough view proxy, shows no trend with flip accuracy (31%, 56%, 35%, 50%). | Low either way |
 | 7 | Metric choice. | Below-constant accuracy is partly expected from class-weighted training. On macro-F1 the model is above the constant (0.37 against 0.195). | Low |
 
@@ -75,6 +75,8 @@ A also has two owner-side options that stay open: finishing the 36 blind labels 
 - B, C and F all train or evaluate on these labels, so they would inherit the defect. A goes first whatever comes after.
 - D is how A is scoped: flip presence, count and direction first, twist counts once a trusted twist set exists.
 - If A is killed, B is next, with its yardstick already built (`probe_flip_yardstick.py`, dev and test halves).
+
+**Result, same day.** The pre-registered test says **helps**: gold macro-F1 0.374 → 0.456 (+0.082), five seeds of five positive. Flip macro-F1 went from 0.276 to 0.516 and direction from 0.297 to 0.476. Twist fell from 0.366 to 0.279 against the prediction, on 13 clips. Accuracy stays below the constant on flip, twist and direction. Details: `docs/science-superpowers/probes/2026-11-26-pt-label-fix-results.md`.
 
 ## 6. Plan
 
