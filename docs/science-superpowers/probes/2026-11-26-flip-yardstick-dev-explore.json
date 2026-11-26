@@ -1,0 +1,239 @@
+{
+ "split": "dev",
+ "clips": 737,
+ "flip_label_trusted": 157,
+ "true_flip": {
+  "0.5": 83,
+  "1.0": 534,
+  "1.5": 52,
+  "2.0": 61,
+  "3.0": 6,
+  "4.0": 1
+ },
+ "true_twist": {
+  "0.0": 476,
+  "0.5": 91,
+  "1.0": 155,
+  "2.0": 15
+ },
+ "status": {
+  "no_torso": 3,
+  "counted": 650,
+  "low_valid": 73,
+  "no_motion": 11
+ },
+ "flip_all": {
+  "n": 737,
+  "answered": 661,
+  "coverage": 0.897,
+  "exact": 0.301,
+  "constant": 0.732
+ },
+ "flip_trusted": {
+  "n": 157,
+  "answered": 138,
+  "coverage": 0.879,
+  "exact": 0.435,
+  "constant": 0.841
+ },
+ "flip_by_true": {
+  "0.5": {
+   "n": 2,
+   "answered": 2,
+   "coverage": 1.0,
+   "exact": 0.0,
+   "constant": 1.0
+  },
+  "1.0": {
+   "n": 131,
+   "answered": 116,
+   "coverage": 0.885,
+   "exact": 0.474,
+   "constant": 1.0
+  },
+  "1.5": {
+   "n": 5,
+   "answered": 5,
+   "coverage": 1.0,
+   "exact": 0.4,
+   "constant": 1.0
+  },
+  "2.0": {
+   "n": 18,
+   "answered": 15,
+   "coverage": 0.833,
+   "exact": 0.2,
+   "constant": 1.0
+  },
+  "3.0": {
+   "n": 1,
+   "answered": 0
+  }
+ },
+ "flip_by_valid_frac": {
+  "(-inf, 0.8]": {
+   "n": 36,
+   "answered": 36,
+   "coverage": 1.0,
+   "exact": 0.417,
+   "constant": 0.722
+  },
+  "(0.8, 0.95]": {
+   "n": 61,
+   "answered": 61,
+   "coverage": 1.0,
+   "exact": 0.475,
+   "constant": 0.869
+  },
+  "(0.95, 0.999]": {
+   "n": 11,
+   "answered": 11,
+   "coverage": 1.0,
+   "exact": 0.364,
+   "constant": 0.909
+  },
+  "(0.999, inf]": {
+   "n": 30,
+   "answered": 30,
+   "coverage": 1.0,
+   "exact": 0.4,
+   "constant": 0.9
+  }
+ },
+ "flip_by_multi_person": {
+  "(-inf, 0.0]": {
+   "n": 22,
+   "answered": 22,
+   "coverage": 1.0,
+   "exact": 0.636,
+   "constant": 0.955
+  },
+  "(0.0, 0.3]": {
+   "n": 58,
+   "answered": 58,
+   "coverage": 1.0,
+   "exact": 0.534,
+   "constant": 0.879
+  },
+  "(0.3, inf]": {
+   "n": 58,
+   "answered": 58,
+   "coverage": 1.0,
+   "exact": 0.259,
+   "constant": 0.759
+  }
+ },
+ "flip_by_view": {
+  "(-inf, 0.25]": {
+   "n": 26,
+   "answered": 26,
+   "coverage": 1.0,
+   "exact": 0.308,
+   "constant": 0.808
+  },
+  "(0.25, 0.45]": {
+   "n": 27,
+   "answered": 27,
+   "coverage": 1.0,
+   "exact": 0.556,
+   "constant": 0.852
+  },
+  "(0.45, 0.65]": {
+   "n": 49,
+   "answered": 49,
+   "coverage": 1.0,
+   "exact": 0.347,
+   "constant": 0.796
+  },
+  "(0.65, inf]": {
+   "n": 28,
+   "answered": 28,
+   "coverage": 1.0,
+   "exact": 0.5,
+   "constant": 0.893
+  },
+  "missing": {
+   "n": 8,
+   "answered": 8,
+   "coverage": 1.0,
+   "exact": 0.75,
+   "constant": 1.0
+  }
+ },
+ "flip_by_residual_deg": {
+  "(-inf, 20]": {
+   "n": 52,
+   "answered": 52,
+   "coverage": 1.0,
+   "exact": 0.365,
+   "constant": 0.865
+  },
+  "(20, 45]": {
+   "n": 45,
+   "answered": 45,
+   "coverage": 1.0,
+   "exact": 0.578,
+   "constant": 0.8
+  },
+  "(45, 70]": {
+   "n": 24,
+   "answered": 24,
+   "coverage": 1.0,
+   "exact": 0.333,
+   "constant": 0.792
+  },
+  "(70, inf]": {
+   "n": 17,
+   "answered": 17,
+   "coverage": 1.0,
+   "exact": 0.412,
+   "constant": 0.941
+  }
+ },
+ "flip_confusion": {
+  "true 0.5 -> pred 0.0": 1,
+  "true 0.5 -> pred 1.0": 1,
+  "true 1.0 -> pred 0.0": 40,
+  "true 1.0 -> pred 0.5": 16,
+  "true 1.0 -> pred 1.0": 55,
+  "true 1.0 -> pred 1.5": 1,
+  "true 1.0 -> pred 2.0": 4,
+  "true 1.5 -> pred 0.0": 1,
+  "true 1.5 -> pred 1.0": 2,
+  "true 1.5 -> pred 1.5": 2,
+  "true 2.0 -> pred 0.0": 10,
+  "true 2.0 -> pred 0.5": 1,
+  "true 2.0 -> pred 1.0": 1,
+  "true 2.0 -> pred 2.0": 3
+ },
+ "twist_all": {
+  "n": 737,
+  "answered": 661,
+  "coverage": 0.897,
+  "exact": 0.284,
+  "constant": 0.649
+ },
+ "twist_when_flip_right": {
+  "n": 60,
+  "answered": 60,
+  "coverage": 1.0,
+  "exact": 0.25,
+  "constant": 0.65
+ },
+ "twist_confusion_when_flip_right": {
+  "true 0.0 -> pred 0.0": 10,
+  "true 0.0 -> pred 0.5": 15,
+  "true 0.0 -> pred 1.0": 8,
+  "true 0.0 -> pred 1.5": 3,
+  "true 0.0 -> pred 2.0": 3,
+  "true 0.5 -> pred 0.0": 1,
+  "true 0.5 -> pred 0.5": 1,
+  "true 0.5 -> pred 1.0": 2,
+  "true 0.5 -> pred 1.5": 1,
+  "true 1.0 -> pred 0.5": 3,
+  "true 1.0 -> pred 1.0": 4,
+  "true 1.0 -> pred 1.5": 2,
+  "true 1.0 -> pred 2.0": 6,
+  "true 2.0 -> pred 2.0": 1
+ }
+}

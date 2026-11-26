@@ -1,0 +1,95 @@
+{
+ "graph": "snapshot-2026-11-19-f811b3c8.graph",
+ "train_clips": 1523,
+ "train_matched": 1503,
+ "manifest_flip": {
+  "0.0": 4,
+  "0.5": 153,
+  "1.0": 1092,
+  "1.5": 118,
+  "2.0": 138,
+  "3.0": 15,
+  "4.0": 3
+ },
+ "manifest_twist": {
+  "0.0": 977,
+  "0.5": 187,
+  "1.0": 321,
+  "2.0": 38
+ },
+ "manifest_direction": {
+  "backward": 1018,
+  "forward": 299,
+  "none": 4,
+  "side": 202
+ },
+ "manifest_vs_parser": {
+  "flip": {
+   "agree": 317,
+   "parser_abstains": 1169,
+   "disagree": 37
+  },
+  "twist": {
+   "parser_abstains": 1096,
+   "agree": 326,
+   "disagree": 101
+  }
+ },
+ "train_flip_vs_pt": {
+  "0.5": {
+   "pt_yes": 128,
+   "pt_no": 23
+  },
+  "1.0": {
+   "pt_yes": 846,
+   "pt_no": 232
+  },
+  "1.5": {
+   "pt_yes": 111,
+   "pt_no": 7
+  },
+  "2.0": {
+   "pt_yes": 123,
+   "pt_no": 33
+  }
+ },
+ "train_twist_vs_pt": {
+  "0.0": {
+   "pt_yes": 133,
+   "pt_no": 831
+  },
+  "0.5": {
+   "pt_yes": 102,
+   "pt_no": 82
+  },
+  "1.0": {
+   "pt_yes": 305,
+   "pt_no": 12
+  },
+  "2.0": {
+   "pt_yes": 38,
+   "pt_no": 0
+  }
+ },
+ "gold_clips": 99,
+ "gold_has_flip_vs_pt": {
+  "0.0": {
+   "pt_yes": 1,
+   "pt_no": 15
+  },
+  "1.0": {
+   "pt_yes": 62,
+   "pt_no": 4
+  }
+ },
+ "gold_has_twist_vs_pt": {
+  "0.0": {
+   "pt_yes": 1,
+   "pt_no": 50
+  },
+  "1.0": {
+   "pt_yes": 11,
+   "pt_no": 2
+  }
+ }
+}
