@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 """Apply the VLM blind probe's decision rule. Reads local files only; makes no network calls.
 
+  score_vlm_blind.py check-labels [LABELS]      progress and readiness of the owner's labels; prints the hash
   score_vlm_blind.py control-ids LABELS         opaque ids the runner must also send reversed
   score_vlm_blind.py score LABELS VOTES         apply the rule; prints no clip names
   --labels-sha256 HEX                           required: the hash recorded in the freeze commit
   --accept-unlabeled                            the unlabeled clips are final, for example unplayable
   --show-excluded                               also list excluded clips by name; only after labeling
+  --stage PATH=SHA256                           an earlier frozen labels file; its clips must be unchanged
 
-LABELS: blind_labels.json downloaded from label.html, keyed by slug.
+LABELS: blind_labels.json downloaded from label.html, keyed by slug. Default: the copy in
+data/labeling/retest_2026-11/. `check-labels` stops while any queue clip is unlabeled and names the
+unfinished ones by their page number only; once all 36 are labeled it prints the sha256 to record in
+the freeze commit, which `control-ids` and `score` then require.
 VOTES: JSONL, one row per answer, with exactly one row per (arm, id, variant):
   {"arm", "id", "variant": "fwd"|"rev", "flip", "twist", "direction", "cork", "unsure"}
 A row a model answered badly counts as wrong. A row the runner built badly stops the run, and
@@ -30,7 +35,10 @@ sys.path.insert(0, str(ROOT))
 
 from scripts.prepare_vlm_blind import QUEUE, opaque_id
 
-ARMS = ("G-pro", "G-flash", "G-grid", "C-grid")
+DEFAULT_LABELS = ROOT / "data/labeling/retest_2026-11/blind_labels.json"
+ARMS = ("G-pro", "G-flash", "G-grid", "C-grid")  # decision arms
+EXPLORATORY_ARMS = ("L-grid",)  # free local model, scored and reported, never part of the verdict
+ALL_ARMS = ARMS + EXPLORATORY_ARMS
 VARIANTS = ("fwd", "rev")
 DIRECTIONS = ("forward", "backward", "side", None)
 MIN_ACCURACY = 0.75
@@ -117,6 +125,20 @@ def parse_reply(text: str) -> dict:
     return {field: answer[field] for field in ANSWER_FIELDS}
 
 
+def verify_stage(final_labels: dict, stage_labels: dict) -> None:
+    """A frozen earlier stage must appear unchanged in the final labels, or a vote was scored against a moved target."""
+    for slug, answer in stage_labels.items():
+        if final_labels.get(slug) != answer:
+            raise ValueError("a clip labeled in an earlier stage differs in the final labels")  # never echo it
+
+
+def verify_vote_hashes(rows: list, allowed: set[str]) -> None:
+    """Every answered vote must have been requested against a frozen labels file."""
+    for row in rows:
+        if isinstance(row, dict) and "twist" in row and row.get("labels_sha256") not in allowed:
+            raise ValueError("a vote was requested against labels that were not frozen")
+
+
 def control_slugs(truth: dict[str, dict]) -> list[str]:
     """Clips with a flip and whole twists: only these should reverse apparent direction.
 
@@ -125,6 +147,26 @@ def control_slugs(truth: dict[str, dict]) -> list[str]:
     """
     eligible = [s for s, t in truth.items() if t["flip"] >= 1 and t["twist"] % 1 == 0]
     return sorted(eligible, key=lambda s: hashlib.sha1(("control:" + s).encode()).hexdigest())[:CONTROL_CLIPS]
+
+
+def check_labels(labels: dict, queue_order: list[str]) -> dict:
+    """Progress and readiness of the owner's labels. Clips are named by page number, never by slug."""
+    truth, excluded = split_labels(labels, set(queue_order))
+    not_labeled = [n for n, s in enumerate(queue_order, 1) if excluded.get(s) == "not labeled"]
+    unsure = [n for n, s in enumerate(queue_order, 1) if excluded.get(s) == "unsure count"]
+    counts = Counter(t["twist"] for t in truth.values())
+    chosen = control_slugs(truth)
+    if not_labeled:
+        status = "incomplete"
+    elif len(truth) < MIN_SCORED or len(chosen) < MIN_CONTROL_ANSWERS:
+        status = "cannot reach a verdict"
+    else:
+        status = "ready to freeze"
+    return {"queue": len(queue_order), "labeled": len(queue_order) - len(not_labeled), "scored": len(truth),
+            "excluded_by_reason": dict(Counter(excluded.values())),
+            "not_labeled_clip_numbers": not_labeled, "unsure_count_clip_numbers": unsure,
+            "control_eligible": len(chosen), "owner_twist_counts": {str(k): v for k, v in sorted(counts.items())},
+            "best_constant": max(counts.values()) if counts else 0, "status": status}
 
 
 def control(arm_votes: dict, slugs: list[str]) -> dict:
@@ -186,7 +228,7 @@ def index_votes(rows: list, known_ids: set[str]) -> dict[str, dict]:
         if not isinstance(row, dict):
             raise ValueError("vote row is not an object")
         arm, clip, variant = row.get("arm"), row.get("id"), row.get("variant")
-        if not all(isinstance(x, str) for x in (arm, clip, variant)) or arm not in ARMS or clip not in known_ids or variant not in VARIANTS:
+        if not all(isinstance(x, str) for x in (arm, clip, variant)) or arm not in ALL_ARMS or clip not in known_ids or variant not in VARIANTS:
             raise ValueError("a vote row has an unknown arm, id or variant")  # never echo it: an id could be a clip name
         votes = arms.setdefault(arm, {})
         if not any(field in row for field in ANSWER_FIELDS):
@@ -203,24 +245,54 @@ def score(labels: dict, rows: list, queue_slugs: set[str], accept_unlabeled: boo
     arms = index_votes(rows, {opaque_id(s) for s in queue_slugs})
     final = accept_unlabeled or "not labeled" not in excluded.values()
     return {"scored": len(truth), "excluded_by_reason": dict(Counter(excluded.values())), "excluded": excluded,
-            "arms": {arm: score_arm(arms[arm], truth, final) if arm in arms else {"verdict": "missing"} for arm in ARMS}}
+            "arms": {arm: score_arm(arms[arm], truth, final) if arm in arms else {"verdict": "missing"} for arm in ARMS},
+            "exploratory_arms": {arm: dict(score_arm(arms[arm], truth, final), decision_weight="none")
+                                 for arm in EXPLORATORY_ARMS if arm in arms}}
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("cmd", choices=("control-ids", "score"))
-    parser.add_argument("labels", type=Path)
+    parser.add_argument("cmd", choices=("check-labels", "control-ids", "score"))
+    parser.add_argument("labels", type=Path, nargs="?", default=DEFAULT_LABELS)
     parser.add_argument("votes", type=Path, nargs="?")
-    parser.add_argument("--labels-sha256", required=True, help="hash recorded in the freeze commit")
+    parser.add_argument("--labels-sha256", help="hash recorded in the freeze commit; required except for check-labels")
     parser.add_argument("--accept-unlabeled", action="store_true")
     parser.add_argument("--show-excluded", action="store_true")
+    parser.add_argument("--stage", action="append", default=[], metavar="PATH=SHA256")
     args = parser.parse_args()
-    slugs = {c["slug"] for c in json.loads(QUEUE.read_text())}
+    order = [c["slug"] for c in json.loads(QUEUE.read_text())]
+    slugs = set(order)
+    if not args.labels.is_file():
+        raise ValueError(f"no labels file at {args.labels}; copy blind_labels.json from the labeling machine there")
     raw_labels = args.labels.read_bytes()
     labels_hash = hashlib.sha256(raw_labels).hexdigest()
-    if labels_hash != args.labels_sha256.lower():
-        raise ValueError("labels file does not match the hash recorded in the freeze commit")  # never echo it
+    if args.cmd != "check-labels":
+        if args.labels_sha256 is None:
+            parser.error(f"{args.cmd} needs --labels-sha256")
+        if labels_hash != args.labels_sha256.lower():
+            raise ValueError("labels file does not match the hash recorded in the freeze commit")  # never echo it
     labels = json.loads(raw_labels)
+    stage_hashes = set()
+    for item in args.stage:
+        path, _, expected = item.rpartition("=")
+        stage_raw = Path(path).read_bytes()
+        if hashlib.sha256(stage_raw).hexdigest() != expected.lower():
+            raise ValueError("a stage file does not match its recorded hash")
+        verify_stage(labels, json.loads(stage_raw))
+        stage_hashes.add(expected.lower())
+    if args.cmd == "check-labels":
+        report = check_labels(labels, order)
+        report["labels_sha256"] = labels_hash
+        print(json.dumps(report, indent=1))
+        if report["status"] == "incomplete" and not args.accept_unlabeled:
+            missing = len(report["not_labeled_clip_numbers"])
+            raise ValueError(f"labeling is unfinished: {missing} of {report['queue']} clips still to label, "
+                             "see not_labeled_clip_numbers (page numbers, not names)")
+        if report["scored"] < MIN_SCORED or report["control_eligible"] < MIN_CONTROL_ANSWERS:
+            raise ValueError("these labels cannot reach a verdict: too few scored or control clips")
+        print(f"labels complete; record labels_sha256 in the freeze commit, then run control-ids with --labels-sha256 {labels_hash}",
+              file=sys.stderr)
+        return
     if args.cmd == "control-ids":
         truth, excluded = split_labels(labels, slugs)
         if "not labeled" in excluded.values() and not args.accept_unlabeled:
@@ -233,6 +305,7 @@ def main() -> None:
     if args.votes is None:
         parser.error("score needs VOTES")
     rows = [json.loads(line) for line in args.votes.read_text().splitlines() if line.strip()]
+    verify_vote_hashes(rows, stage_hashes | {labels_hash})
     result = score(labels, rows, slugs, args.accept_unlabeled)
     if not args.show_excluded:
         del result["excluded"]

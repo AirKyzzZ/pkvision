@@ -43,6 +43,30 @@ Set unsure to true if you cannot see enough to count.
 Reply with JSON only: {"flip": number, "twist": number, "direction": string or null, "cork": boolean, "unsure": boolean}
 ```
 
+## Staged labeling and collection (added 2026-11-17, before any API call)
+
+The owner labels in batches. Collection may follow the batches under these rules, which keep the design above intact:
+
+1. **A clip is sent forward only after its label is frozen.** Each batch file gets its sha256 recorded in a commit; `run_vlm_blind.py` refuses a labels file whose hash differs and writes the hash into every vote row. At final scoring, `score_vlm_blind.py --stage PATH=SHA256` checks that every batch appears unchanged in the final labels and that every vote was requested against a frozen file.
+2. **Prompt, models, settings and prices are frozen in `run_vlm_blind.py` before the first call** and do not change between batches. If a model is withdrawn between batches, that arm is reported incomplete; it is not replaced.
+3. **Reversed clips go only at the end**, once `control-ids` can be computed from the full truth set.
+4. **Votes are append-only and never re-requested.** An answered (arm, id, variant) is final; only failed calls are retried. Early votes are reused in the final scoring, never discarded, so staging adds no cost.
+5. **One verdict, on the full set.** Nothing computed on a partial set has decision weight, and no VLM output, aggregate or per clip, is shown to the owner until all 36 clips are labeled. The remaining clips must be labeled with the owner as blind as for the first ones.
+6. **Settings fixed here:** Claude arm at `output_config.effort = "medium"`, `max_tokens = 1024`, thinking left at the model default, no server-side fallback (a refusal is a missing vote); Gemini arms at 10 fps, medium media resolution, JSON response mode. The first live call per arm is a `--limit 1` smoke test counted in the budget.
+
+Batch 1: 12 clips, sha256 `b3fe8f68cc0efca5dea2aa23e57f824d53173c4d03539b74ba7969106d8751d8`, labeled 2026-11-17 without seeing the queue.
+
+### Exploratory local arm L-grid (added 2026-11-18, before any API call)
+
+`Qwen/Qwen3-VL-4B-Instruct`, 4-bit NormalFloat (fp16 compute) on the RTX 2060, greedy decoding, 160 new
+tokens at most, the same two grids and the same prompt as G-grid and C-grid. It costs nothing and is run
+by the owner's machine, so it goes through the same runner, votes file and hash checks as the paid arms.
+It is **not a decision arm**: MotionBlind puts models of this size near chance on physical motion, so it
+is scored and reported under `exploratory_arms` with `decision_weight: none`, and the kill rule above
+reads only the four decision arms. Its purpose is to exercise the pipeline with a real model, and to give a
+$0 floor on the full dataset (`scripts/eval_local_vlm_gold.py`, which never touches the 36 queue clips).
+Rule 5 applies to it unchanged: its answers on queue clips are sealed until all 36 are labeled.
+
 ## Reversed-clip control
 
 Each arm also sees 12 clips played backwards: scored clips the owner labeled with at least one flip and whole twists, ordered by a salted sha1 of `slug`. `score_vlm_blind.py control-ids` lists them. Odd half twists are left out because the reversed clip starts facing the other way, which cancels the reversal. Direction means the flip direction at takeoff, relative to the chest.
@@ -72,11 +96,11 @@ About $4–7 at standard prices, or $2–3.50 with 50% batch pricing, using 90 s
 
 ## Open before running
 
-Scorer work is done: `score` and `control-ids` require `--labels-sha256` and stop on a mismatch, `control-ids` refuses a set that cannot reach a verdict, `parse_reply` gives the future runner a strict parser, and the thresholds and CLI flags have boundary tests.
+Scorer work is done: `check-labels` ingests the owner's download, stops on partial labels and prints the hash to freeze; `score` and `control-ids` require `--labels-sha256` and stop on a mismatch, `control-ids` refuses a set that cannot reach a verdict, `parse_reply` gives the future runner a strict parser, and the thresholds and CLI flags have boundary tests.
 
 Also:
 
-- A runner that calls the APIs, written once models and access are confirmed. It does not exist yet.
+- The runner exists (`scripts/run_vlm_blind.py`, rehearsed end to end with `--provider fake`). Its model ids (`gemini-3.1-pro-preview`, `gemini-3.8-flash`, `claude-opus-5-5`) and prices must be confirmed with `list-models` and the price pages once keys exist.
 - API keys: none on this PC.
 - Model availability and prices.
 - Whether the clips' licence allows sending them to third-party APIs.

@@ -7,7 +7,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from scripts.score_vlm_blind import ARMS, control_slugs, parse_reply, score, split_labels
+from scripts.score_vlm_blind import ARMS, check_labels, control_slugs, parse_reply, score, split_labels
 
 
 def labels(n, twist=lambda i: float(i % 3)):
@@ -300,3 +300,64 @@ def test_breakdowns_use_owner_labels():
     lab["s0"]["cork"] = "yes"
     out = run(lab, votes(lab))
     assert out["twist_1.5_plus"] == "3/3" and out["cork"] == "1/1" and out["by_owner_twist"] == {"0.0": "27/27", "2.0": "3/3"}
+
+
+def test_check_labels_counts_progress_by_page_number_not_name():
+    order = [f"s{i}" for i in range(36)]
+    lab = labels(5)
+    lab["s5"] = {"flip": 1, "twist": "unsure", "cork": "no", "use": "one trick", "done": True}
+    out = check_labels(lab, order)
+    assert out["status"] == "incomplete" and out["queue"] == 36 and out["labeled"] == 6 and out["scored"] == 5
+    assert out["not_labeled_clip_numbers"] == list(range(7, 37)) and out["unsure_count_clip_numbers"] == [6]
+    assert not any(slug in json.dumps(out) for slug in order)
+
+
+def test_check_labels_is_ready_once_every_clip_is_labeled_and_a_verdict_is_possible():
+    lab = labels(36)
+    out = check_labels(lab, list(lab))
+    assert out["status"] == "ready to freeze" and out["not_labeled_clip_numbers"] == []
+    assert out["scored"] == 36 and out["control_eligible"] == 12 and out["best_constant"] == 12
+    assert out["owner_twist_counts"] == {"0.0": 12, "1.0": 12, "2.0": 12}
+
+
+def test_check_labels_complete_but_hopeless_says_so():
+    lab = labels(36)
+    for slug in list(lab)[:30]:
+        lab[slug]["use"] = "several tricks"
+    out = check_labels(lab, list(lab))
+    assert out["status"] == "cannot reach a verdict" and out["scored"] == 6 and out["labeled"] == 36
+
+
+def test_check_labels_cli_stops_on_partial_labels_and_needs_no_hash(tmp_path):
+    queue = json.loads((SCRIPT.parents[1] / "data/labeling/retest_2026-11/queue.json").read_text())
+    partial = tmp_path / "blind_labels.json"
+    partial.write_text(json.dumps({queue[0]["slug"]: {"flip": 1, "twist": 0, "cork": "no", "use": "one trick", "done": True}}))
+    out = cli("check-labels", partial)
+    assert out.returncode != 0 and "unfinished" in out.stderr and f"{len(queue) - 1} of {len(queue)}" in out.stderr
+    report = json.loads(out.stdout)
+    assert report["labeled"] == 1 and report["not_labeled_clip_numbers"] == list(range(2, len(queue) + 1))
+    assert report["labels_sha256"] == hashlib.sha256(partial.read_bytes()).hexdigest()
+    assert not any(c["slug"] in out.stdout + out.stderr for c in queue)
+    accepted = cli("check-labels", partial, "--accept-unlabeled")
+    assert accepted.returncode != 0 and "cannot reach a verdict" in accepted.stderr
+
+
+def test_check_labels_cli_passes_on_a_complete_evaluable_file_without_printing_names(tmp_path):
+    queue = json.loads((SCRIPT.parents[1] / "data/labeling/retest_2026-11/queue.json").read_text())
+    full = tmp_path / "blind_labels.json"
+    full.write_text(json.dumps({c["slug"]: {"flip": 1, "twist": float(i % 3), "cork": "no", "use": "one trick", "done": True}
+                                for i, c in enumerate(queue)}))
+    out = cli("check-labels", full)
+    assert out.returncode == 0 and json.loads(out.stdout)["status"] == "ready to freeze"
+    assert "record labels_sha256" in out.stderr and not any(c["slug"] in out.stdout + out.stderr for c in queue)
+
+
+def test_check_labels_cli_names_the_missing_file(tmp_path):
+    out = cli("check-labels", tmp_path / "nowhere.json")
+    assert out.returncode != 0 and "no labels file" in out.stderr
+
+
+def test_score_and_control_ids_still_require_the_hash(tmp_path):
+    labels_path, votes_path = empty_labels(tmp_path)
+    assert "needs --labels-sha256" in cli("score", labels_path, votes_path).stderr
+    assert "needs --labels-sha256" in cli("control-ids", labels_path).stderr
