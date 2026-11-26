@@ -16,7 +16,7 @@ $0. Dive segments are fetched from the public source videos, used on the PC only
 
 - **Labels:** `final_annotations_dict.pkl` from the MTL-AQA repository: `ss_no` and `tw_no` in half turns, `start_frame` and `end_frame` per dive. Read with a loader that refuses any import.
 - **Videos:** the nine source videos available at 720p (1, 2, 3, 4, 5, 6, 14, 17, 18), all 25 fps. The six others are 360p or 480p and are left out.
-- **Pilot:** 200 dives, drawn by twist count in sha1 order: 60 untwisted, then up to 20, 25, 35, 25, 30, 11 and 5 dives for 0.5 to 3.5 twists, topped up with untwisted dives. A dive that cannot be fetched is replaced by the next one of its stratum. Frozen in `pilot()` of `scripts/probe_diving_counter.py`.
+- **Pilot:** 200 dives, drawn by twist count in sha1 order: up to 20, 25, 35, 25, 30, 11 and 5 dives for 0.5 to 3.5 twists, then untwisted dives up to 200. With what the nine videos hold this gives 3, 14, 35, 25, 30, 11 and 3 twisting dives and 79 untwisted ones. A dive that cannot be fetched is replaced by the next one of its stratum. Frozen in `pilot()` of `scripts/probe_diving_counter.py`.
 - **Frames:** the annotated range of each dive only. Alignment was checked by eye on two dives before this freeze: the dive sits inside the fetched segment.
 
 ## Method, frozen

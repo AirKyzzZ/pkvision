@@ -15,7 +15,7 @@ def test_pilot_is_deterministic_stratified_and_skips_low_resolution_videos():
     assert chosen == probe.pilot(ann) and len(chosen) == len(set(chosen)) == probe.PILOT
     assert all(video in probe.VIDEOS_720P for video, _ in chosen)
     counts = {tw: sum(ann[k]["tw_no"] == tw for k in chosen) for tw in range(8)}
-    assert counts[7] == 5 and counts[6] == 11 and counts[1] == 20 and counts[0] == 200 - sum(v for tw, v in probe.QUOTA.items() if tw)
+    assert counts[7] == 5 and counts[6] == 11 and counts[1] == 20 and counts[0] == probe.PILOT - sum(probe.QUOTA.values())
 
 
 def test_an_unavailable_dive_is_replaced_within_its_stratum():

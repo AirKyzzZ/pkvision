@@ -37,7 +37,7 @@ POSE = DATA / "pose"
 RESULTS = ROOT / "docs/science-superpowers/probes/2026-11-26-diving-counter-results.json"
 SOURCE = "https://raw.githubusercontent.com/ParitoshParmar/MTL-AQA/master/MTL-AQA_dataset_release/Ready_2_Use/MTL-AQA_split_0_data/final_annotations_dict.pkl"
 VIDEOS_720P = (1, 2, 3, 4, 5, 6, 14, 17, 18)
-QUOTA = {0: 60, 1: 20, 2: 25, 3: 35, 4: 25, 5: 30, 6: 11, 7: 5}
+QUOTA = {1: 20, 2: 25, 3: 35, 4: 25, 5: 30, 6: 11, 7: 5}
 PILOT = 200
 FPS = 25.0
 MARGIN_S = 1.5
@@ -66,11 +66,10 @@ def ranked(ann: dict) -> dict[int, list[tuple[int, int]]]:
 
 
 def pilot(ann: dict, unavailable: set = frozenset()) -> list[tuple[int, int]]:
-    """Quota per twist count in hash order; a dive that cannot be fetched is replaced by the next of its stratum."""
+    """Twisting dives by quota in hash order, then untwisted dives up to PILOT; an unavailable dive is skipped."""
     strata = {tw: [k for k in keys if k not in unavailable] for tw, keys in ranked(ann).items()}
-    chosen = [k for tw, quota in QUOTA.items() for k in strata.get(tw, [])[:quota]]
-    spare = [k for k in strata.get(0, [])[QUOTA[0]:]]
-    return (chosen + spare[:max(0, PILOT - len(chosen))])[:PILOT]
+    twisting = [k for tw, quota in QUOTA.items() for k in strata.get(tw, [])[:quota]]
+    return twisting + strata.get(0, [])[:PILOT - len(twisting)]
 
 
 def segment(key: tuple[int, int]) -> Path:
