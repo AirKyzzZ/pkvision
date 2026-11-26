@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 
 from scripts.prepare_vlm_blind import file_id, opaque_id
-from scripts.run_vlm_blind import ARM_SPECS, ARMS, FakeProvider, PROMPT, answered, cost_usd, plan, run
+from scripts.run_vlm_blind import ARM_SPECS, ARMS, FakeProvider, OpenRouterProvider, PROMPT, answered, cost_usd, inputs_for, plan, run
 from scripts.score_vlm_blind import score, verify_stage, verify_vote_hashes
 
 SCRIPT = Path(__file__).resolve().parents[2] / "scripts/run_vlm_blind.py"
@@ -58,7 +58,7 @@ def test_frozen_prompt_matches_the_preregistration():
 
 def test_cost_uses_the_frozen_prices():
     assert cost_usd(ARM_SPECS["C-grid"], {"input_tokens": 1_000_000, "output_tokens": 0}) == 4.0
-    assert cost_usd(ARM_SPECS["G-flash"], {"input_tokens": 0, "output_tokens": 1_000_000}) == 3.75
+    assert cost_usd(ARM_SPECS["G-flash"], {"input_tokens": 0, "output_tokens": 1_000_000}) == 4.12
 
 
 def test_fake_provider_is_deterministic_and_well_formed(tmp_path):
@@ -75,6 +75,7 @@ def fake_upload(tmp_path, slugs, monkeypatch):
         for variant in ("fwd", "rev"):
             fid = file_id(slug, variant)
             (upload / f"{fid}.mp4").write_bytes(b"v")
+            (upload / f"{fid}_slow10.mp4").write_bytes(b"v")
             for n in (1, 2):
                 (upload / f"{fid}_grid{n}.jpg").write_bytes(b"g")
     monkeypatch.setattr("scripts.run_vlm_blind.UPLOAD", upload)
@@ -111,7 +112,7 @@ def test_run_stops_at_the_cap(tmp_path, monkeypatch):
 def test_run_records_a_failure_as_a_row_without_an_answer(tmp_path, monkeypatch):
     lab = labels(2)
     fake_upload(tmp_path, lab, monkeypatch)
-    (tmp_path / "upload" / f"{file_id('s0', 'fwd')}.mp4").unlink()
+    (tmp_path / "upload" / f"{file_id('s0', 'fwd')}_slow10.mp4").unlink()
     votes = tmp_path / "votes.jsonl"
     summary = run(plan(lab, ORDER, [], None, ["G-pro"]), "h" * 64, votes, 5.0, "fake")
     rows = [json.loads(l) for l in votes.read_text().splitlines()]
@@ -142,9 +143,50 @@ def test_cli_refuses_a_labels_file_that_does_not_match_its_hash(tmp_path):
 
 
 def test_cli_run_without_keys_needs_the_fake_provider(tmp_path, monkeypatch):
-    for key in ("GEMINI_API_KEY", "GOOGLE_API_KEY", "ANTHROPIC_API_KEY"):
-        monkeypatch.delenv(key, raising=False)
+    monkeypatch.delenv("OPENROUTER_API_KEY", raising=False)
     path = tmp_path / "labels.json"
     path.write_text("{}")
     out = cli("run", "--labels", path, "--labels-sha256", hashlib.sha256(b"{}").hexdigest(), "--votes", tmp_path / "v.jsonl")
     assert out.returncode != 0 and "no API key" in out.stderr
+
+
+def test_openrouter_request_carries_the_frozen_settings_and_no_file_name(tmp_path, monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "k")
+    upload = fake_upload(tmp_path, ["s0"], monkeypatch)
+    sent = []
+
+    def post(body):
+        sent.append(body)
+        return {"provider": "P", "choices": [{"finish_reason": "stop", "message": {"content": "{}"}}],
+                "usage": {"prompt_tokens": 10, "completion_tokens": 5, "cost": 0.02}}
+
+    provider = OpenRouterProvider(post)
+    fid = file_id("s0", "fwd")
+    text, usage = provider.ask(ARM_SPECS["G-pro"], inputs_for(ARM_SPECS["G-pro"], fid, upload))
+    assert text == "{}" and usage == {"input_tokens": 10, "output_tokens": 5, "served_by": "P", "cost_usd": 0.02}
+    video = sent[0]["messages"][0]["content"]
+    assert video[0]["type"] == "video_url" and video[-1] == {"type": "text", "text": PROMPT}
+    assert sent[0]["provider"] == {"data_collection": "deny", "allow_fallbacks": False}
+
+    provider.ask(ARM_SPECS["C-grid"], inputs_for(ARM_SPECS["C-grid"], fid, upload))
+    assert sent[1]["model"] == "anthropic/claude-opus-5.5" and sent[1]["reasoning"] == {"effort": "medium"}
+    assert [part["type"] for part in sent[1]["messages"][0]["content"]] == ["image_url", "image_url", "text"]
+    assert fid not in json.dumps(sent) and "s0" not in json.dumps(sent[1]["messages"][0]["content"][-1])
+
+
+def test_openrouter_refusal_or_gateway_error_is_a_missing_vote(tmp_path, monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "k")
+    upload = fake_upload(tmp_path, ["s0"], monkeypatch)
+    paths = inputs_for(ARM_SPECS["G-grid"], file_id("s0", "fwd"), upload)
+    refused = OpenRouterProvider(lambda body: {"choices": [{"finish_reason": "refusal", "message": {"content": ""}}]})
+    with pytest.raises(RuntimeError, match="refusal"):
+        refused.ask(ARM_SPECS["G-grid"], paths)
+    broken = OpenRouterProvider(lambda body: {"error": {"code": 502, "message": "upstream"}})
+    with pytest.raises(RuntimeError, match="502"):
+        broken.ask(ARM_SPECS["G-grid"], paths)
+
+
+def test_video_arms_read_the_slowed_file(tmp_path, monkeypatch):
+    upload = fake_upload(tmp_path, ["s0"], monkeypatch)
+    fid = file_id("s0", "fwd")
+    assert inputs_for(ARM_SPECS["G-flash"], fid, upload) == [upload / f"{fid}_slow10.mp4"]

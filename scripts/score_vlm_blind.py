@@ -18,7 +18,7 @@ VOTES: JSONL, one row per answer, with exactly one row per (arm, id, variant):
 A row a model answered badly counts as wrong. A row the runner built badly stops the run, and
 missing votes or labels give "incomplete" rather than a verdict. Check the malformed counts too:
 a runner that stringifies numbers looks like a model failure.
-Design: docs/science-superpowers/probes/2026-11-04-vlm-blind-prereg-DRAFT.md
+Design: docs/science-superpowers/probes/2026-11-04-vlm-blind-prereg.md
 """
 from __future__ import annotations
 

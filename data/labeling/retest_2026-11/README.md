@@ -17,7 +17,7 @@ It stops while any clip is unlabeled and lists the unfinished ones by page numbe
 1. `python scripts/score_vlm_blind.py check-labels LABELS` until it passes; record the hash in a commit.
 2. `python scripts/run_vlm_blind.py plan --labels LABELS --labels-sha256 HASH` shows what would be sent.
 3. `python scripts/run_vlm_blind.py run ... --provider fake` rehearses with no network; delete the fake `votes.jsonl` afterwards.
-4. With keys in the environment: `run ... --limit 1` per arm as a smoke test, then `run ... --cap-usd 5`.
+4. With `OPENROUTER_API_KEY` in the environment: `run ... --limit 1` per arm as a smoke test, then `run ... --cap-usd 15`.
 5. Once all 36 are labeled: `control-ids`, then `run --control-ids ids.json` for the reversed clips, then `score --stage BATCH=HASH ...`.
 
 Labels may arrive in batches: see "Staged labeling and collection" in the pre-registration.

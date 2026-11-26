@@ -2,11 +2,10 @@
 """Runner for the VLM blind probe: sends the anonymised inputs to each arm and appends votes.
 
   run_vlm_blind.py plan  --labels L --labels-sha256 H [--control-ids C] [--arms ...]   what would be sent; no call
-  run_vlm_blind.py run   --labels L --labels-sha256 H [--control-ids C] [--arms ...] --cap-usd 5   the calls
+  run_vlm_blind.py run   --labels L --labels-sha256 H [--control-ids C] [--arms ...] --cap-usd 15  the calls
   run_vlm_blind.py run   ... --provider fake                                             end-to-end rehearsal, $0
-  run_vlm_blind.py list-models                                                           what each key can reach
 
-Rules this enforces, from docs/science-superpowers/probes/2026-11-04-vlm-blind-prereg-DRAFT.md:
+Rules this enforces, from docs/science-superpowers/probes/2026-11-04-vlm-blind-prereg.md:
 - A clip is sent forward only once the owner's label for it is final: the labels file must match
   --labels-sha256, and that hash is written into every vote row so the scorer can verify it.
 - Reversed clips are sent only for the ids `score_vlm_blind.py control-ids` printed, so only at the end.
@@ -24,6 +23,7 @@ import json
 import os
 import sys
 import time
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -45,16 +45,16 @@ Count, for the main airborne movement only:
 Set unsure to true if you cannot see enough to count.
 Reply with JSON only: {"flip": number, "twist": number, "direction": string or null, "cork": boolean, "unsure": boolean}"""
 
-# Frozen arm settings. Prices are $ per 1M tokens (input, output) from the September survey and the
-# Anthropic price table; `list-models` is for checking the ids exist before the freeze.
+# Frozen arm settings. Every paid arm goes through OpenRouter. Prices are $ per 1M tokens (input, output)
+# from its model list on 2026-11-26, used only when a reply carries no cost.
 ARM_SPECS = {
-    "G-pro": {"provider": "gemini", "model": "gemini-3.1-pro-preview", "input": "video", "fps": 10,
-              "resolution": "medium", "price": (2.00, 12.00)},
-    "G-flash": {"provider": "gemini", "model": "gemini-3.8-flash", "input": "video", "fps": 10,
-                "resolution": "medium", "price": (0.75, 3.75)},
-    "G-grid": {"provider": "gemini", "model": "gemini-3.8-flash", "input": "grid", "price": (0.75, 3.75)},
-    "C-grid": {"provider": "anthropic", "model": "claude-opus-5-5", "input": "grid", "effort": "medium",
-               "max_tokens": 1024, "price": (4.00, 20.00)},
+    "G-pro": {"provider": "openrouter", "model": "google/gemini-3.1-pro-preview", "input": "video", "slowdown": 10,
+              "price": (2.00, 12.00)},
+    "G-flash": {"provider": "openrouter", "model": "google/gemini-3.8-flash", "input": "video", "slowdown": 10,
+                "price": (0.83, 4.12)},
+    "G-grid": {"provider": "openrouter", "model": "google/gemini-3.8-flash", "input": "grid", "price": (0.83, 4.12)},
+    "C-grid": {"provider": "openrouter", "model": "anthropic/claude-opus-5.5", "input": "grid", "effort": "medium",
+               "max_tokens": 8192, "price": (4.00, 20.00)},
     # Exploratory, no decision weight: a free 4-bit model on the RTX 2060, same grids and prompt, greedy decoding.
     "L-grid": {"provider": "local", "model": "Qwen/Qwen3-VL-4B-Instruct@nf4", "input": "grid", "price": (0.0, 0.0),
                "exploratory": True},
@@ -104,7 +104,7 @@ def plan(labels: dict, queue_order: list[str], rows: list[dict], control_ids: li
 def inputs_for(spec: dict, fid: str, upload: Path | None = None) -> list[Path]:
     upload = upload or UPLOAD
     if spec["input"] == "video":
-        paths = [upload / f"{fid}.mp4"]
+        paths = [upload / (f"{fid}_slow{spec['slowdown']}.mp4" if spec.get("slowdown") else f"{fid}.mp4")]
     else:
         paths = [upload / f"{fid}_grid{n}.jpg" for n in range(1, GRID_SHEETS + 1)]
     missing = [p.name for p in paths if not p.is_file()]
@@ -127,53 +127,46 @@ class FakeProvider:
         return json.dumps(reply), {"input_tokens": 1000, "output_tokens": 40}
 
 
-class GeminiProvider:
-    def __init__(self):
-        from google import genai  # pip install google-genai
-        self.genai = genai
-        self.types = genai.types
-        self.client = genai.Client()  # reads GEMINI_API_KEY or GOOGLE_API_KEY
+class OpenRouterProvider:
+    URL = "https://openrouter.ai/api/v1/chat/completions"
 
-    def list_models(self) -> list[str]:
-        return sorted(m.name for m in self.client.models.list())
+    def __init__(self, post=None):
+        self.key = os.environ["OPENROUTER_API_KEY"]
+        self.post = post or self._post
 
-    def ask(self, spec: dict, paths: list[Path]) -> tuple[str, dict]:
-        t = self.types
-        if spec["input"] == "video":
-            part = t.Part.from_bytes(data=paths[0].read_bytes(), mime_type="video/mp4")
-            part.video_metadata = t.VideoMetadata(fps=spec["fps"])
-            parts = [part]
-        else:
-            parts = [t.Part.from_bytes(data=p.read_bytes(), mime_type="image/jpeg") for p in paths]
-        config = t.GenerateContentConfig(response_mime_type="application/json",
-                                         media_resolution=f"MEDIA_RESOLUTION_{spec.get('resolution', 'medium').upper()}")
-        response = self.client.models.generate_content(model=spec["model"], contents=parts + [PROMPT], config=config)
-        meta = response.usage_metadata
-        usage = {"input_tokens": getattr(meta, "prompt_token_count", 0) or 0,
-                 "output_tokens": getattr(meta, "candidates_token_count", 0) or 0}
-        return response.text or "", usage
+    def _post(self, body: dict) -> dict:
+        request = urllib.request.Request(self.URL, json.dumps(body).encode(),
+                                         {"Authorization": "Bearer " + self.key, "Content-Type": "application/json"})
+        with urllib.request.urlopen(request, timeout=300) as response:
+            return json.load(response)
 
-
-class AnthropicProvider:
-    def __init__(self):
-        import anthropic  # pip install anthropic
-        self.anthropic = anthropic
-        self.client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY
-
-    def list_models(self) -> list[str]:
-        return sorted(m.id for m in self.client.models.list())
+    @staticmethod
+    def part(path: Path) -> dict:
+        data = base64.standard_b64encode(path.read_bytes()).decode()
+        if path.suffix == ".mp4":
+            return {"type": "video_url", "video_url": {"url": "data:video/mp4;base64," + data}}
+        return {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + data}}
 
     def ask(self, spec: dict, paths: list[Path]) -> tuple[str, dict]:
-        images = [{"type": "image", "source": {"type": "base64", "media_type": "image/jpeg",
-                                               "data": base64.standard_b64encode(p.read_bytes()).decode()}} for p in paths]
-        response = self.client.messages.create(
-            model=spec["model"], max_tokens=spec["max_tokens"], output_config={"effort": spec["effort"]},
-            messages=[{"role": "user", "content": images + [{"type": "text", "text": PROMPT}]}])
-        usage = {"input_tokens": response.usage.input_tokens, "output_tokens": response.usage.output_tokens}
-        if response.stop_reason == "refusal":
+        body = {"model": spec["model"],
+                "messages": [{"role": "user", "content": [self.part(p) for p in paths] + [{"type": "text", "text": PROMPT}]}],
+                "provider": {"data_collection": "deny", "allow_fallbacks": False}}
+        if "max_tokens" in spec:
+            body["max_tokens"] = spec["max_tokens"]
+        if "effort" in spec:
+            body["reasoning"] = {"effort": spec["effort"]}
+        reply = self.post(body)
+        if "error" in reply:
+            raise RuntimeError(f"gateway error {reply['error'].get('code')}")
+        choice = reply["choices"][0]
+        if "refusal" in (choice.get("finish_reason"), choice.get("native_finish_reason")):
             raise RuntimeError("refusal")  # a missing vote, deliberately with no fallback model
-        text = "".join(b.text for b in response.content if b.type == "text")
-        return text, usage
+        used = reply.get("usage", {})
+        usage = {"input_tokens": used.get("prompt_tokens", 0), "output_tokens": used.get("completion_tokens", 0),
+                 "served_by": reply.get("provider")}
+        if used.get("cost") is not None:
+            usage["cost_usd"] = used["cost"]
+        return choice["message"].get("content") or "", usage
 
 
 class LocalProvider:
@@ -188,7 +181,7 @@ class LocalProvider:
         return self.inner.ask(spec, paths)
 
 
-PROVIDERS = {"fake": FakeProvider, "gemini": GeminiProvider, "anthropic": AnthropicProvider, "local": LocalProvider}
+PROVIDERS = {"fake": FakeProvider, "openrouter": OpenRouterProvider, "local": LocalProvider}
 
 
 def run(calls: list[dict], labels_hash: str, votes_path: Path, cap_usd: float, provider_name: str | None,
@@ -211,7 +204,7 @@ def run(calls: list[dict], labels_hash: str, votes_path: Path, cap_usd: float, p
             try:
                 text, usage = provider.ask(spec, inputs_for(spec, call["file"], upload))
                 row["usage"] = usage
-                row["cost_usd"] = 0.0 if name == "fake" else round(cost_usd(spec, usage), 6)
+                row["cost_usd"] = 0.0 if name == "fake" else round(usage.get("cost_usd", cost_usd(spec, usage)), 6)
                 spent += row["cost_usd"]
                 try:
                     row.update(parse_reply(text))
@@ -231,7 +224,7 @@ def run(calls: list[dict], labels_hash: str, votes_path: Path, cap_usd: float, p
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("cmd", choices=("plan", "run", "list-models"))
+    parser.add_argument("cmd", choices=("plan", "run"))
     parser.add_argument("--labels", type=Path, help="the owner's labels file whose clips are final")
     parser.add_argument("--labels-sha256", help="hash of --labels recorded in the freeze commit")
     parser.add_argument("--control-ids", type=Path, help="JSON list printed by score_vlm_blind.py control-ids")
@@ -239,18 +232,10 @@ def main() -> None:
                         help="defaults to the four decision arms; L-grid is the free exploratory local arm")
     parser.add_argument("--votes", type=Path, default=VOTES)
     parser.add_argument("--upload", type=Path, default=UPLOAD, help="the anonymised inputs folder; nothing else is ever sent")
-    parser.add_argument("--cap-usd", type=float, default=5.0)
+    parser.add_argument("--cap-usd", type=float, default=15.0)
     parser.add_argument("--provider", choices=list(PROVIDERS), help="override every arm's provider; `fake` for a rehearsal")
     parser.add_argument("--limit", type=int, help="make at most this many calls, for a live smoke test")
     args = parser.parse_args()
-
-    if args.cmd == "list-models":
-        for name in ("gemini", "anthropic"):
-            try:
-                print(name, json.dumps(PROVIDERS[name]().list_models(), indent=1))
-            except Exception as error:  # noqa: BLE001
-                print(name, "unavailable:", type(error).__name__)  # never echo a key
-        return
 
     if not args.labels or not args.labels_sha256:
         parser.error(f"{args.cmd} needs --labels and --labels-sha256")
@@ -271,8 +256,7 @@ def main() -> None:
         return
     needs_key = args.provider not in KEYLESS_PROVIDERS and any(
         ARM_SPECS[arm]["provider"] not in KEYLESS_PROVIDERS for arm in args.arms)
-    if needs_key and not (os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
-                          or os.environ.get("ANTHROPIC_API_KEY")):
+    if needs_key and not os.environ.get("OPENROUTER_API_KEY"):
         raise ValueError("no API key in the environment; use --provider fake for a rehearsal")
     if not args.upload.is_dir():
         raise ValueError(f"no upload folder at {args.upload}; run prepare_vlm_blind.py or pass --upload")
