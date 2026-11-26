@@ -1,0 +1,186 @@
+{
+ "arms": {
+  "C-grid": {
+   "answered": 99,
+   "unsure": 47,
+   "malformed": 1,
+   "failed_calls": 0,
+   "cost_usd": 2.248,
+   "macro_f1_mean": 0.4,
+   "per_cue": {
+    "flip": {
+     "n": 82,
+     "acc": 0.488,
+     "macro_f1": 0.534,
+     "by_true_class": {
+      "0": "12/16",
+      "1": "27/56",
+      "2": "1/10"
+     }
+    },
+    "twist": {
+     "n": 64,
+     "acc": 0.438,
+     "macro_f1": 0.165,
+     "by_true_class": {
+      "0": "28/51",
+      "1": "0/3",
+      "2": "0/5",
+      "3": "0/5"
+     }
+    },
+    "direction": {
+     "n": 85,
+     "acc": 0.471,
+     "macro_f1": 0.502,
+     "by_true_class": {
+      "backward": "24/56",
+      "forward": "4/9",
+      "none": "12/16",
+      "side": "0/4"
+     }
+    }
+   }
+  },
+  "G-flash": {
+   "answered": 99,
+   "unsure": 8,
+   "malformed": 4,
+   "failed_calls": 0,
+   "cost_usd": 0.996,
+   "macro_f1_mean": 0.587,
+   "per_cue": {
+    "flip": {
+     "n": 82,
+     "acc": 0.805,
+     "macro_f1": 0.759,
+     "by_true_class": {
+      "0": "14/16",
+      "1": "48/56",
+      "2": "4/10"
+     }
+    },
+    "twist": {
+     "n": 64,
+     "acc": 0.75,
+     "macro_f1": 0.406,
+     "by_true_class": {
+      "0": "45/51",
+      "1": "0/3",
+      "2": "2/5",
+      "3": "1/5"
+     }
+    },
+    "direction": {
+     "n": 85,
+     "acc": 0.776,
+     "macro_f1": 0.597,
+     "by_true_class": {
+      "backward": "45/56",
+      "forward": "7/9",
+      "none": "14/16",
+      "side": "0/4"
+     }
+    }
+   }
+  },
+  "G-grid": {
+   "answered": 99,
+   "unsure": 9,
+   "malformed": 5,
+   "failed_calls": 0,
+   "cost_usd": 1.326,
+   "macro_f1_mean": 0.589,
+   "per_cue": {
+    "flip": {
+     "n": 82,
+     "acc": 0.732,
+     "macro_f1": 0.667,
+     "by_true_class": {
+      "0": "13/16",
+      "1": "44/56",
+      "2": "3/10"
+     }
+    },
+    "twist": {
+     "n": 64,
+     "acc": 0.781,
+     "macro_f1": 0.496,
+     "by_true_class": {
+      "0": "46/51",
+      "1": "2/3",
+      "2": "1/5",
+      "3": "1/5"
+     }
+    },
+    "direction": {
+     "n": 85,
+     "acc": 0.682,
+     "macro_f1": 0.603,
+     "by_true_class": {
+      "backward": "36/56",
+      "forward": "8/9",
+      "none": "13/16",
+      "side": "1/4"
+     }
+    }
+   }
+  },
+  "G-pro": {
+   "answered": 99,
+   "unsure": 6,
+   "malformed": 2,
+   "failed_calls": 4,
+   "cost_usd": 3.824,
+   "macro_f1_mean": 0.449,
+   "per_cue": {
+    "flip": {
+     "n": 82,
+     "acc": 0.707,
+     "macro_f1": 0.545,
+     "by_true_class": {
+      "0": "10/16",
+      "1": "47/56",
+      "2": "1/10"
+     }
+    },
+    "twist": {
+     "n": 64,
+     "acc": 0.625,
+     "macro_f1": 0.332,
+     "by_true_class": {
+      "0": "36/51",
+      "1": "3/3",
+      "2": "1/5",
+      "3": "0/5"
+     }
+    },
+    "direction": {
+     "n": 85,
+     "acc": 0.647,
+     "macro_f1": 0.471,
+     "by_true_class": {
+      "backward": "39/56",
+      "forward": "6/9",
+      "none": "10/16",
+      "side": "0/4"
+     }
+    }
+   }
+  }
+ },
+ "constant": {
+  "flip": {
+   "acc": 0.6829268292682927,
+   "macro_f1": 0.27053140096618356
+  },
+  "twist": {
+   "acc": 0.796875,
+   "macro_f1": 0.2217391304347826
+  },
+  "direction": {
+   "acc": 0.6588235294117647,
+   "macro_f1": 0.19858156028368795
+  }
+ }
+}
