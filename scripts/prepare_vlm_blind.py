@@ -5,7 +5,7 @@ Per clip: forward and reversed H.264 mp4 for native-video models, and 24-frame g
 for image-only models. Names are opaque and re-encoding drops container metadata.
 Output stays local and gitignored because the clips are copyrighted. Encoding needs
 `pip install imageio-ffmpeg`. Design:
-docs/science-superpowers/probes/2026-11-04-vlm-blind-prereg-DRAFT.md
+docs/science-superpowers/probes/2026-11-04-vlm-blind-prereg.md
 """
 from __future__ import annotations
 
@@ -24,6 +24,7 @@ CLIPS = ROOT / "data/parkourtheory_clips_cropped"
 OUT = ROOT / "data/labeling/retest_2026-11/vlm_inputs"
 UPLOAD = OUT / "upload"  # only this folder may go to a service; file names do not reveal clip or direction
 GRID_FRAMES, ROWS, COLS, TILE = 24, 3, 4, 300
+SLOWDOWN = 10
 
 
 def opaque_id(slug: str) -> str:
@@ -80,6 +81,16 @@ def grids(frames: list[np.ndarray]) -> list[np.ndarray]:
     return [np.vstack([np.hstack(s[r * COLS:(r + 1) * COLS]) for r in range(ROWS)]) for s in sheets]
 
 
+def write_inputs(frames: list[np.ndarray], fps: float, fid: str, upload: Path) -> None:
+    """One clip's files: the video, the same frames retimed SLOWDOWN times slower, and the grid sheets."""
+    for name, rate in ((fid, fps), (f"{fid}_slow{SLOWDOWN}", fps / SLOWDOWN)):
+        raw = upload.parent / f"{name}.raw.mp4"
+        write_video(frames, rate, raw)
+        to_h264(raw, upload / f"{name}.mp4")
+    for n, sheet in enumerate(grids(frames), 1):
+        cv2.imwrite(str(upload / f"{fid}_grid{n}.jpg"), sheet, [cv2.IMWRITE_JPEG_QUALITY, 85])
+
+
 def main() -> None:
     queue = json.loads(QUEUE.read_text())
     UPLOAD.mkdir(parents=True, exist_ok=True)
@@ -91,11 +102,7 @@ def main() -> None:
             sys.exit(f"could not decode clip {cid}")
         for variant, seq in (("fwd", frames), ("rev", frames[::-1])):
             fid = file_id(slug, variant)
-            raw = OUT / f"{fid}.raw.mp4"
-            write_video(seq, fps, raw)
-            to_h264(raw, UPLOAD / f"{fid}.mp4")
-            for n, sheet in enumerate(grids(seq), 1):
-                cv2.imwrite(str(UPLOAD / f"{fid}_grid{n}.jpg"), sheet, [cv2.IMWRITE_JPEG_QUALITY, 85])
+            write_inputs(seq, fps, fid, UPLOAD)
             mapping[fid] = {"slug": slug, "id": cid, "variant": variant}
     (OUT / "mapping_DO_NOT_SEND.json").write_text(json.dumps(mapping, indent=1))
     print(f"{len(queue)} clips in {UPLOAD}")

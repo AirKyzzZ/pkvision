@@ -1,0 +1,192 @@
+import hashlib
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+import pytest
+
+from scripts.prepare_vlm_blind import file_id, opaque_id
+from scripts.run_vlm_blind import ARM_SPECS, ARMS, FakeProvider, OpenRouterProvider, PROMPT, answered, cost_usd, inputs_for, plan, run
+from scripts.score_vlm_blind import score, verify_stage, verify_vote_hashes
+
+SCRIPT = Path(__file__).resolve().parents[2] / "scripts/run_vlm_blind.py"
+ORDER = [f"s{i}" for i in range(36)]
+
+
+def labels(n):
+    return {f"s{i}": {"flip": 1, "twist": float(i % 3), "cork": "no", "use": "one trick", "done": True} for i in range(n)}
+
+
+def test_plan_sends_forward_only_for_scored_clips_and_reversed_only_for_control_ids():
+    lab = labels(12)
+    lab["s12"] = {"flip": 1, "twist": 0, "cork": "no", "use": "several tricks", "done": True}
+    calls = plan(lab, ORDER, [], None, ["G-pro"])
+    assert len(calls) == 12 and all(c["variant"] == "fwd" for c in calls)
+    assert {c["id"] for c in calls} == {opaque_id(f"s{i}") for i in range(12)}
+    with_control = plan(lab, ORDER, [], [opaque_id("s0"), opaque_id("s1")], ["G-pro"])
+    assert sum(c["variant"] == "rev" for c in with_control) == 2
+    assert all(c["file"] == file_id(ORDER[int(c["id"] == opaque_id("s1"))], "rev") for c in with_control if c["variant"] == "rev")
+
+
+def test_plan_skips_answered_votes_but_retries_failed_calls():
+    lab = labels(3)
+    rows = [{"arm": "G-pro", "id": opaque_id("s0"), "variant": "fwd", "twist": 1.0},
+            {"arm": "G-pro", "id": opaque_id("s1"), "variant": "fwd", "error": "timeout"}]
+    calls = plan(lab, ORDER, rows, None, ["G-pro"])
+    assert {c["id"] for c in calls} == {opaque_id("s1"), opaque_id("s2")}
+    assert answered(rows) == {("G-pro", opaque_id("s0"), "fwd")}
+
+
+def test_plan_refuses_control_ids_outside_the_scored_set():
+    with pytest.raises(ValueError):
+        plan(labels(3), ORDER, [], [opaque_id("s30")], ["G-pro"])
+    with pytest.raises(ValueError):
+        plan(labels(3), ORDER, [], ["c-not-a-clip"], ["G-pro"])
+
+
+def test_plan_never_contains_a_slug():
+    calls = plan(labels(5), ORDER, [], None, list(ARMS))
+    assert len(calls) == 5 * len(ARMS) and not any(s in json.dumps(calls) for s in ORDER)
+
+
+def test_frozen_prompt_matches_the_preregistration():
+    prereg = (Path(__file__).resolve().parents[2] / "docs/science-superpowers/probes").glob("2026-11-04-vlm-blind-prereg*.md")
+    text = next(prereg).read_text()
+    assert PROMPT in text
+
+
+def test_cost_uses_the_frozen_prices():
+    assert cost_usd(ARM_SPECS["C-grid"], {"input_tokens": 1_000_000, "output_tokens": 0}) == 4.0
+    assert cost_usd(ARM_SPECS["G-flash"], {"input_tokens": 0, "output_tokens": 1_000_000}) == 4.12
+
+
+def test_fake_provider_is_deterministic_and_well_formed(tmp_path):
+    f = FakeProvider()
+    a, _ = f.ask(ARM_SPECS["G-grid"], [tmp_path / "x_grid1.jpg"])
+    b, _ = f.ask(ARM_SPECS["G-grid"], [tmp_path / "x_grid1.jpg"])
+    assert a == b and set(json.loads(a)) == {"flip", "twist", "direction", "cork", "unsure"}
+
+
+def fake_upload(tmp_path, slugs, monkeypatch):
+    upload = tmp_path / "upload"
+    upload.mkdir()
+    for slug in slugs:
+        for variant in ("fwd", "rev"):
+            fid = file_id(slug, variant)
+            (upload / f"{fid}.mp4").write_bytes(b"v")
+            (upload / f"{fid}_slow10.mp4").write_bytes(b"v")
+            for n in (1, 2):
+                (upload / f"{fid}_grid{n}.jpg").write_bytes(b"g")
+    monkeypatch.setattr("scripts.run_vlm_blind.UPLOAD", upload)
+    return upload
+
+
+def test_run_appends_rows_with_the_labels_hash_and_feeds_the_scorer(tmp_path, monkeypatch):
+    lab = labels(12)
+    fake_upload(tmp_path, lab, monkeypatch)
+    votes = tmp_path / "votes.jsonl"
+    calls = plan(lab, ORDER, [], None, ["G-pro", "C-grid"])
+    summary = run(calls, "h" * 64, votes, 5.0, "fake")
+    rows = [json.loads(l) for l in votes.read_text().splitlines()]
+    assert summary["made"] == 24 and summary["answered"] == 24 and summary["spent_usd"] == 0
+    assert all(r["labels_sha256"] == "h" * 64 and r["model"] == "fake" for r in rows)
+    verify_vote_hashes(rows, {"h" * 64})
+    with pytest.raises(ValueError):
+        verify_vote_hashes(rows, {"other"})
+    result = score(lab, rows, set(ORDER))
+    assert result["arms"]["G-pro"]["verdict"] == "incomplete"  # 24 queue clips unlabeled
+    assert result["arms"]["G-pro"]["n"] == 12
+    assert plan(lab, ORDER, rows, None, ["G-pro", "C-grid"]) == []
+
+
+def test_run_stops_at_the_cap(tmp_path, monkeypatch):
+    lab = labels(4)
+    fake_upload(tmp_path, lab, monkeypatch)
+    votes = tmp_path / "votes.jsonl"
+    votes.write_text(json.dumps({"arm": "G-pro", "id": "c0", "variant": "fwd", "cost_usd": 5.0}) + "\n")
+    summary = run(plan(lab, ORDER, [], None, ["G-pro"]), "h" * 64, votes, 5.0, "fake")
+    assert summary["made"] == 0 and "cap" in summary["stopped"]
+
+
+def test_run_records_a_failure_as_a_row_without_an_answer(tmp_path, monkeypatch):
+    lab = labels(2)
+    fake_upload(tmp_path, lab, monkeypatch)
+    (tmp_path / "upload" / f"{file_id('s0', 'fwd')}_slow10.mp4").unlink()
+    votes = tmp_path / "votes.jsonl"
+    summary = run(plan(lab, ORDER, [], None, ["G-pro"]), "h" * 64, votes, 5.0, "fake")
+    rows = [json.loads(l) for l in votes.read_text().splitlines()]
+    assert summary["failed"] == 1 and summary["answered"] == 1
+    assert sum("error" in r for r in rows) == 1 and not any(s in votes.read_text() for s in ORDER)
+
+
+def test_stage_must_be_unchanged_in_the_final_labels():
+    stage = labels(12)
+    final = labels(36)
+    verify_stage(final, stage)
+    final["s3"]["twist"] = 2.5
+    with pytest.raises(ValueError):
+        verify_stage(final, stage)
+
+
+def cli(*args):
+    return subprocess.run([sys.executable, str(SCRIPT), *map(str, args)], capture_output=True, text=True)
+
+
+def test_cli_refuses_a_labels_file_that_does_not_match_its_hash(tmp_path):
+    path = tmp_path / "labels.json"
+    path.write_text("{}")
+    out = cli("plan", "--labels", path, "--labels-sha256", "0" * 64)
+    assert out.returncode != 0 and "does not match" in out.stderr
+    ok = cli("plan", "--labels", path, "--labels-sha256", hashlib.sha256(b"{}").hexdigest())
+    assert ok.returncode == 0 and json.loads(ok.stdout)["calls"] == 0
+
+
+def test_cli_run_without_keys_needs_the_fake_provider(tmp_path, monkeypatch):
+    monkeypatch.delenv("OPENROUTER_API_KEY", raising=False)
+    path = tmp_path / "labels.json"
+    path.write_text("{}")
+    out = cli("run", "--labels", path, "--labels-sha256", hashlib.sha256(b"{}").hexdigest(), "--votes", tmp_path / "v.jsonl")
+    assert out.returncode != 0 and "no API key" in out.stderr
+
+
+def test_openrouter_request_carries_the_frozen_settings_and_no_file_name(tmp_path, monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "k")
+    upload = fake_upload(tmp_path, ["s0"], monkeypatch)
+    sent = []
+
+    def post(body):
+        sent.append(body)
+        return {"provider": "P", "choices": [{"finish_reason": "stop", "message": {"content": "{}"}}],
+                "usage": {"prompt_tokens": 10, "completion_tokens": 5, "cost": 0.02}}
+
+    provider = OpenRouterProvider(post)
+    fid = file_id("s0", "fwd")
+    text, usage = provider.ask(ARM_SPECS["G-pro"], inputs_for(ARM_SPECS["G-pro"], fid, upload))
+    assert text == "{}" and usage == {"input_tokens": 10, "output_tokens": 5, "served_by": "P", "cost_usd": 0.02}
+    video = sent[0]["messages"][0]["content"]
+    assert video[0]["type"] == "video_url" and video[-1] == {"type": "text", "text": PROMPT}
+    assert sent[0]["provider"] == {"data_collection": "deny", "allow_fallbacks": False}
+
+    provider.ask(ARM_SPECS["C-grid"], inputs_for(ARM_SPECS["C-grid"], fid, upload))
+    assert sent[1]["model"] == "anthropic/claude-opus-5.5" and sent[1]["reasoning"] == {"effort": "medium"}
+    assert [part["type"] for part in sent[1]["messages"][0]["content"]] == ["image_url", "image_url", "text"]
+    assert fid not in json.dumps(sent) and "s0" not in json.dumps(sent[1]["messages"][0]["content"][-1])
+
+
+def test_openrouter_refusal_or_gateway_error_is_a_missing_vote(tmp_path, monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "k")
+    upload = fake_upload(tmp_path, ["s0"], monkeypatch)
+    paths = inputs_for(ARM_SPECS["G-grid"], file_id("s0", "fwd"), upload)
+    refused = OpenRouterProvider(lambda body: {"choices": [{"finish_reason": "refusal", "message": {"content": ""}}]})
+    with pytest.raises(RuntimeError, match="refusal"):
+        refused.ask(ARM_SPECS["G-grid"], paths)
+    broken = OpenRouterProvider(lambda body: {"error": {"code": 502, "message": "upstream"}})
+    with pytest.raises(RuntimeError, match="502"):
+        broken.ask(ARM_SPECS["G-grid"], paths)
+
+
+def test_video_arms_read_the_slowed_file(tmp_path, monkeypatch):
+    upload = fake_upload(tmp_path, ["s0"], monkeypatch)
+    fid = file_id("s0", "fwd")
+    assert inputs_for(ARM_SPECS["G-flash"], fid, upload) == [upload / f"{fid}_slow10.mp4"]

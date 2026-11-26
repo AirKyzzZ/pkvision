@@ -96,3 +96,9 @@ data/labeling/retest_2026-11/votes*.jsonl
 # Parkour Theory returned sheets and labels: not public without their OK
 data/partner/parkourtheory/returned/
 data/partner/parkourtheory/labels.json
+
+# local VLM predictions on the dataset (large, regenerable)
+data/labeling/local_vlm/
+
+# VLM answers on the gold clips and their anonymised inputs (regenerable)
+data/labeling/vlm_gold/
