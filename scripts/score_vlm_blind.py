@@ -3,6 +3,7 @@
 
   score_vlm_blind.py control-ids LABELS         opaque ids the runner must also send reversed
   score_vlm_blind.py score LABELS VOTES         apply the rule; prints no clip names
+  --labels-sha256 HEX                           required: the hash recorded in the freeze commit
   --accept-unlabeled                            the unlabeled clips are final, for example unplayable
   --show-excluded                               also list excluded clips by name; only after labeling
 
@@ -96,6 +97,24 @@ def split_labels(labels: dict, queue_slugs: set[str]) -> tuple[dict[str, dict], 
         else:
             truth[slug] = {"flip": float(answer["flip"]), "twist": float(answer["twist"]), "cork": answer.get("cork")}
     return truth, excluded
+
+
+def parse_reply(text: str) -> dict:
+    """The model's reply as an answer dict, for the runner. Raises ValueError if it is not JSON with every field.
+
+    Values are kept exactly as the model wrote them, so a string count is scored malformed. A runner that
+    coerces them, or stringifies numbers, would blur a model failure with its own.
+    """
+    body = text.strip()
+    if body.startswith("```"):
+        body = body.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+    try:
+        answer = json.loads(body)
+    except json.JSONDecodeError as error:
+        raise ValueError("reply is not JSON") from error
+    if not isinstance(answer, dict) or not all(field in answer for field in ANSWER_FIELDS):
+        raise ValueError("reply is missing an answer field")
+    return {field: answer[field] for field in ANSWER_FIELDS}
 
 
 def control_slugs(truth: dict[str, dict]) -> list[str]:
@@ -192,17 +211,24 @@ def main() -> None:
     parser.add_argument("cmd", choices=("control-ids", "score"))
     parser.add_argument("labels", type=Path)
     parser.add_argument("votes", type=Path, nargs="?")
+    parser.add_argument("--labels-sha256", required=True, help="hash recorded in the freeze commit")
     parser.add_argument("--accept-unlabeled", action="store_true")
     parser.add_argument("--show-excluded", action="store_true")
     args = parser.parse_args()
     slugs = {c["slug"] for c in json.loads(QUEUE.read_text())}
     raw_labels = args.labels.read_bytes()
+    labels_hash = hashlib.sha256(raw_labels).hexdigest()
+    if labels_hash != args.labels_sha256.lower():
+        raise ValueError("labels file does not match the hash recorded in the freeze commit")  # never echo it
     labels = json.loads(raw_labels)
     if args.cmd == "control-ids":
         truth, excluded = split_labels(labels, slugs)
         if "not labeled" in excluded.values() and not args.accept_unlabeled:
             raise ValueError("labeling is unfinished, and the control set depends on the final labels")
-        print(json.dumps([opaque_id(s) for s in control_slugs(truth)], indent=1))
+        chosen = control_slugs(truth)
+        if len(truth) < MIN_SCORED or len(chosen) < MIN_CONTROL_ANSWERS:
+            raise ValueError("these labels cannot reach a verdict: too few scored or control clips")
+        print(json.dumps([opaque_id(s) for s in chosen], indent=1))
         return
     if args.votes is None:
         parser.error("score needs VOTES")
@@ -210,8 +236,7 @@ def main() -> None:
     result = score(labels, rows, slugs, args.accept_unlabeled)
     if not args.show_excluded:
         del result["excluded"]
-    # Compare with the hash recorded in the freeze commit: labels must not change after that.
-    result["labels_sha256"] = hashlib.sha256(raw_labels).hexdigest()
+    result["labels_sha256"] = labels_hash
     print(json.dumps(result, indent=1))
 
 
