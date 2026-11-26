@@ -102,3 +102,6 @@ data/labeling/local_vlm/
 
 # VLM answers on the gold clips and their anonymised inputs (regenerable)
 data/labeling/vlm_gold/
+
+# third-party datasets fetched for tests of the counter
+data/external/
