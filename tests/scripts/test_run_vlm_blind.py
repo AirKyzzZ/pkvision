@@ -181,6 +181,10 @@ def test_openrouter_refusal_or_gateway_error_is_a_missing_vote(tmp_path, monkeyp
     refused = OpenRouterProvider(lambda body: {"choices": [{"finish_reason": "refusal", "message": {"content": ""}}]})
     with pytest.raises(RuntimeError, match="refusal"):
         refused.ask(ARM_SPECS["G-grid"], paths)
+    empty = OpenRouterProvider(lambda body: {"choices": [{"finish_reason": "stop", "message": {"content": ""}}],
+                                             "usage": {"prompt_tokens": 0, "completion_tokens": 0, "cost": 0}})
+    with pytest.raises(RuntimeError, match="empty reply"):
+        empty.ask(ARM_SPECS["G-grid"], paths)
     broken = OpenRouterProvider(lambda body: {"error": {"code": 502, "message": "upstream"}})
     with pytest.raises(RuntimeError, match="502"):
         broken.ask(ARM_SPECS["G-grid"], paths)
