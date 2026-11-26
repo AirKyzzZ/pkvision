@@ -29,6 +29,8 @@ from scipy.ndimage import uniform_filter1d
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from core.pose.detect_first import detected_people
+
 DEFAULT_CLIPS_DIR = ROOT / "data" / "parkourtheory_clips_cropped"
 DEFAULT_REPORT_PATH = ROOT / "data" / "keypoints" / "pose_audit_report.json"
 
@@ -129,12 +131,11 @@ def run_rtmpose(video_path: Path, body) -> tuple[np.ndarray, np.ndarray, float]:
             break
         kp = np.zeros((17, 2))
         cf = np.zeros(17)
-        keypoints, scores = body(frame)
-        if keypoints is not None and len(keypoints) > 0:
+        keypoints, scores = detected_people(body, frame)
+        if len(keypoints) > 0:
             best = _largest_person(keypoints, scores)
-            if keypoints[best].shape[0] >= 17:
-                kp = keypoints[best][:17]
-                cf = scores[best][:17]
+            kp = keypoints[best]
+            cf = scores[best]
         kps.append(kp)
         confs.append(cf)
     cap.release()

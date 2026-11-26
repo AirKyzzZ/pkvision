@@ -25,6 +25,8 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from core.pose.detect_first import detected_people
+
 DEFAULT_CLIPS_DIR = ROOT / "data" / "parkourtheory_clips_cropped"
 DEFAULT_OUT_DIR = ROOT / "data" / "keypoints" / "parkourtheory_pose"
 SHARD_SIZE = 50
@@ -68,25 +70,38 @@ def _largest_person(keypoints: np.ndarray, scores: np.ndarray) -> int:
     return int(np.argmax(spans)) if spans else 0
 
 
-def extract_clip(video_path: Path, body) -> tuple[np.ndarray, float]:
-    """RTMPose over every frame -> ((T, 17, 3) float32, fps)."""
+def extract_clip(video_path: Path, body) -> dict:
+    """RTMPose on detected people only. A frame with nobody detected stays all zeros.
+
+    Returns the (T, 17, 3) float32 sequence of the selected person, fps, every detected
+    person as `people` (N, 17, 3) with their frame index in `frame`, and `no_detection`.
+    """
     cap = cv2.VideoCapture(str(video_path))
     fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
-    seq = []
+    seq, people, index, no_detection = [], [], [], 0
     while True:
         ret, frame = cap.read()
         if not ret:
             break
         joints = np.zeros((17, 3), dtype=np.float32)
-        keypoints, scores = body(frame)
-        if keypoints is not None and len(keypoints) > 0:
+        keypoints, scores = detected_people(body, frame)
+        if len(keypoints) > 0:
             best = _largest_person(keypoints, scores)
-            if keypoints[best].shape[0] >= 17:
-                joints[:, :2] = keypoints[best][:17]
-                joints[:, 2] = scores[best][:17]
+            joints[:, :2] = keypoints[best]
+            joints[:, 2] = scores[best]
+            people.append(np.concatenate([keypoints, scores[..., None]], axis=2).astype(np.float32))
+            index.extend([len(seq)] * len(keypoints))
+        else:
+            no_detection += 1
         seq.append(joints)
     cap.release()
-    return np.stack(seq) if seq else np.zeros((0, 17, 3), np.float32), fps
+    return {
+        "seq": np.stack(seq) if seq else np.zeros((0, 17, 3), np.float32),
+        "fps": fps,
+        "people": np.concatenate(people) if people else np.zeros((0, 17, 3), np.float32),
+        "frame": np.array(index, np.int32),
+        "no_detection": no_detection,
+    }
 
 
 def main() -> None:
@@ -95,6 +110,10 @@ def main() -> None:
     parser.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     parser.add_argument("--device", default="cuda", choices=["cuda", "cpu"])
     parser.add_argument("--shard-size", type=int, default=SHARD_SIZE)
+    parser.add_argument("--exclude-json", type=Path,
+                        help="JSON list of {slug} (or of slugs) to skip; the names are never printed")
+    parser.add_argument("--people", action="store_true",
+                        help="also write every detected person to people_NNN.npz beside the shards")
     args = parser.parse_args()
 
     clips_dir = args.clips_dir.resolve()
@@ -103,6 +122,10 @@ def main() -> None:
         sys.exit(f"refusing to extract from contaminated dir: {clips_dir}")
 
     clips = sorted(clips_dir.glob("*.mp4"))
+    if args.exclude_json:
+        excluded = {e["slug"] if isinstance(e, dict) else e for e in json.loads(args.exclude_json.read_text())}
+        clips = [c for c in clips if c.stem not in excluded]
+        print(f"excluded {len(excluded)} clips from {args.exclude_json.name}", flush=True)
     if not clips:
         sys.exit(f"no .mp4 clips in {clips_dir}")
     print(f"{len(clips)} clips in {clips_dir}", flush=True)
@@ -110,7 +133,7 @@ def main() -> None:
     args.out_dir.mkdir(parents=True, exist_ok=True)
     manifest_path = args.out_dir / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {
-        "estimator": "rtmpose-x (rtmlib performance)",
+        "estimator": "rtmpose-x (rtmlib performance), detector first",
         "shard_size": args.shard_size,
         "source": token,
         "clips": [],
@@ -133,20 +156,27 @@ def main() -> None:
 
         t0 = time.time()
         arrays: dict[str, np.ndarray] = {}
+        people: dict[str, np.ndarray] = {}
         entries = []
         for clip in chunk:
-            seq, fps = extract_clip(clip, body)
+            result = extract_clip(clip, body)
+            seq = result["seq"]
             arrays[clip.stem] = seq
+            people[f"{clip.stem}__people"] = result["people"]
+            people[f"{clip.stem}__frame"] = result["frame"]
             mean_conf = float(seq[..., 2].mean()) if seq.size else 0.0
             entries.append({
                 "name": clip.stem,
                 "shard": shard_name,
                 "n_frames": int(seq.shape[0]),
-                "fps": round(fps, 3),
+                "fps": round(result["fps"], 3),
                 "mean_conf": round(mean_conf, 4),
+                "frames_no_detection": result["no_detection"],
                 "near_dup": clip.stem.endswith("_in_back_out"),
             })
 
+        if args.people:
+            np.savez_compressed(args.out_dir / f"people_{si:03d}.npz", **people)
         np.savez_compressed(shard_path, **arrays)
         manifest["clips"] = [c for c in manifest["clips"]
                              if c["name"] not in {e["name"] for e in entries}]
