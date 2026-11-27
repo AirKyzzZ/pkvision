@@ -20,6 +20,7 @@ import pickle
 import subprocess
 import sys
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import numpy as np
@@ -97,11 +98,11 @@ def cmd_fetch() -> None:
         todo = [k for k in pilot(ann, missing) if not segment(k).is_file()]
         if not todo:
             break
-        for key in todo:
-            if not fetch_one(key, ann, urls):
-                missing.add(key)
-                (DATA / "unavailable.json").write_text(json.dumps(sorted(missing)))
-            print(f"{sum(segment(k).is_file() for k in pilot(ann, missing))}/{PILOT}", flush=True)
+        with ThreadPoolExecutor(4) as pool:
+            fetched = list(pool.map(lambda key: fetch_one(key, ann, urls), todo))
+        missing |= {key for key, ok in zip(todo, fetched) if not ok}
+        (DATA / "unavailable.json").write_text(json.dumps(sorted(missing)))
+        print(f"{sum(segment(k).is_file() for k in pilot(ann, missing))}/{PILOT}", flush=True)
     print("fetched", sum(segment(k).is_file() for k in pilot(ann, missing)), "unavailable", len(missing))
 
 
@@ -114,11 +115,14 @@ def cmd_pose() -> None:
     import cv2
     from rtmlib import Body
 
+    from scripts.extract_pose import resolve_device
     from scripts.probe_rule_counter import _joints, _pose_rotated
 
     POSE.mkdir(parents=True, exist_ok=True)
     ann = annotations()
-    body = Body(mode="performance", backend="onnxruntime", device="cuda")
+    body = Body(mode="performance", backend="onnxruntime", device=resolve_device("cuda"))
+    if "CUDAExecutionProvider" not in body.pose_model.session.get_providers():
+        sys.exit("the pose model is not on the GPU")
     for key in final_pilot(ann):
         out = POSE / f"{key[0]:02d}_{key[1]:03d}.npz"
         if out.is_file():
