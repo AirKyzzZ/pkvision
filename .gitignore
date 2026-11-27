@@ -105,3 +105,4 @@ data/labeling/vlm_gold/
 
 # third-party datasets fetched for tests of the counter
 data/external/
+data/labeling/vlm_train/ 
