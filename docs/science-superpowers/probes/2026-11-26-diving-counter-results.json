@@ -1,0 +1,51 @@
+{
+ "arms": {
+  "C": {
+   "n": 200,
+   "answered": 200,
+   "coverage": 1.0,
+   "somersault_exact": 0.24,
+   "twist_exact": 0.355,
+   "somersault_within_half": 0.3,
+   "twist_within_half": 0.62,
+   "twist_exact_by_true_twist": {
+    "0.0": "53/79",
+    "0.5": "3/3",
+    "1.0": "3/14",
+    "1.5": "10/35",
+    "2.0": "0/25",
+    "2.5": "2/30",
+    "3.0": "0/11",
+    "3.5": "0/3"
+   },
+   "constant_twist_0": 0.395,
+   "constant_somersault": 0.51,
+   "mean_valid_frac": 0.917,
+   "verdict": "skeleton or counter is the problem"
+  },
+  "A": {
+   "n": 200,
+   "answered": 200,
+   "coverage": 1.0,
+   "somersault_exact": 0.21,
+   "twist_exact": 0.32,
+   "somersault_within_half": 0.265,
+   "twist_within_half": 0.6,
+   "twist_exact_by_true_twist": {
+    "0.0": "53/79",
+    "0.5": "2/3",
+    "1.0": "3/14",
+    "1.5": "6/35",
+    "2.0": "0/25",
+    "2.5": "0/30",
+    "3.0": "0/11",
+    "3.5": "0/3"
+   },
+   "constant_twist_0": 0.395,
+   "constant_somersault": 0.51,
+   "mean_valid_frac": 0.883,
+   "verdict": "skeleton or counter is the problem"
+  }
+ },
+ "dives": 200
+}
